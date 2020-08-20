@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597934519645.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1681527340",
+    "id" : "41906489",
+    "lastKnownWriteTime" : 1597934581,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/kaths/GitHub/rt-comparison-uk-public/compare/plot-ratios.R",
+    "project_path" : "compare/plot-ratios.R",
+    "properties" : {
+        "cursorPosition" : "39,73",
+        "scrollLine" : "22"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

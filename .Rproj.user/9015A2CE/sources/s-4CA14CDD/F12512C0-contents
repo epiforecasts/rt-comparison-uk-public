@@ -63,4 +63,4 @@ if(length(seq.Date(from = min(summary_wide$date), to = max(summary_wide$date), b
   warning("Missing or duplicate days in date sequence")
 }
 
-saveRDS(summary_wide, "summary_wide.rds")
+saveRDS(summary_wide, "rt-estimate/summary_wide.rds")

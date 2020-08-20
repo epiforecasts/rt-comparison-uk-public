@@ -3,7 +3,7 @@ library(magrittr); library(ggplot2)
 
 # Get ratios --------------------------------------------------------------
 
-summary_wide <- readRDS("summary_wide.rds")
+summary_wide <- readRDS("rt-estimate/summary_wide.rds")
 
 summary_ratios <- summary_wide %>%
   dplyr::select(date, region, 
@@ -37,10 +37,11 @@ plot_ratio_national <- summary_ratios %>%
 
 plot(plot_ratio_national)
 
-
+# In-plot ratio calculation to check that they are definitely as intended
 plot_ratio_national <- summary_wide %>%
   ggplot(aes(x = date)) +
-  geom_line(aes(y = median_cases_publish / median_cases_hosp), alpha = 0.6) +
+  geom_line(aes(y = median_cases_publish / median_cases_hosp), 
+            alpha = 0.6) +
   geom_ribbon(aes(ymin = lower_50_cases_publish / lower_50_cases_hosp,
                   ymax = upper_50_cases_publish / upper_50_cases_hosp),
               alpha = 0.2) +
