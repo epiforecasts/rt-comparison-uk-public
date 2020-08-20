@@ -1,0 +1,9 @@
+region,point,lower,upper,mid_lower,mid_upper,metric,Expected change in daily cases
+England,1112,323,2203,641,1308,New confirmed cases by infection date,Unsure
+Northern Ireland,310,22,1197,72,345,New confirmed cases by infection date,Increasing
+Scotland,72,10,141,34,86,New confirmed cases by infection date,Unsure
+Wales,24,1,88,5,26,New confirmed cases by infection date,Unsure
+Northern Ireland,1.82,0.98,2.82,1.44,2.09,Effective reproduction no.,Increasing
+Wales,1.1,0.49,2.06,0.72,1.24,Effective reproduction no.,Unsure
+Scotland,1.06,0.63,1.41,0.95,1.24,Effective reproduction no.,Unsure
+England,1.03,0.67,1.41,0.85,1.12,Effective reproduction no.,Unsure

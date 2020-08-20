@@ -21,8 +21,8 @@ incubation_period <- list(mean = EpiNow2::covid_incubation_period[1, ]$mean,
                           max = 30)
 
 
-saveRDS(generation_time , here::here("rt-forecast-2", "forecast", "delays", "data", "generation_time.rds"))
-saveRDS(incubation_period, here::here("rt-forecast-2", "forecast", "delays", "data", "incubation_period.rds"))
+saveRDS(generation_time , here::here("rt-estimate", "estimate", "delays", "data", "generation_time.rds"))
+saveRDS(incubation_period, here::here("rt-estimate", "estimate", "delays", "data", "incubation_period.rds"))
 
 
 # Set up parallel ---------------------------------------------------------
@@ -37,7 +37,7 @@ plan(multiprocess)
 
 # Fit delay from onset to admission ---------------------------------------
 
-linelist <- readRDS(here::here("delays", "data", "pseudo_linelist.rds"))
+linelist <- readRDS(here::here("rt-estimate", "estimate", "delays", "data", "pseudo_linelist.rds"))
 
 linelist <- data.table::as.data.table(linelist)
 
@@ -46,15 +46,15 @@ onset_to_admission_delay <- EpiNow2::bootstrapped_dist_fit(linelist$report_delay
 ## Set max allowed delay to 30 days to truncate computation
 onset_to_admission_delay$max <- 30
 
-saveRDS(onset_to_admission_delay, here::here("delays", "data", "onset_to_admission_delay.rds"))
+saveRDS(onset_to_admission_delay, here::here("rt-estimate", "estimate", "delays", "data", "onset_to_admission_delay.rds"))
 
 # Fit delay from onset to deaths ------------------------------------------
 
-deaths <- readRDS(here::here("rt-forecast-2", "forecast", "delays", "data", "deaths.rds"))
+deaths <- readRDS(here::here("rt-estimate", "estimate", "delays", "data", "deaths.rds"))
 
 onset_to_death_delay <- EpiNow2::bootstrapped_dist_fit(deaths, bootstraps = 100, bootstrap_samples = 250)
 ## Set max allowed delay to 30 days to truncate computation
 onset_to_death_delay$max <- 30
 
-saveRDS(onset_to_death_delay, here::here("rt-forecast-2", "forecast", "delays", "data", "onset_to_death_delay.rds"))
+saveRDS(onset_to_death_delay, here::here("rt-estimate", "estimate", "delays", "data", "onset_to_death_delay.rds"))
 

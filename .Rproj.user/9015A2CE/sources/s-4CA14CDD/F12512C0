@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597933472420.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F12512C0",
+    "lastKnownWriteTime" : 1597933440,
+    "last_content_update" : 1597933440,
+    "path" : "C:/Users/kaths/GitHub/rt-comparison-uk-public/rt-estimate/update-format.R",
+    "project_path" : "rt-estimate/update-format.R",
+    "properties" : {
+        "cursorPosition" : "49,43",
+        "scrollLine" : "28"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

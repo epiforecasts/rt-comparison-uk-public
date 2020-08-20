@@ -1,0 +1,341 @@
+region,date,confirm
+England,2020-05-26,589
+Northern Ireland,2020-05-26,8
+Scotland,2020-05-26,14
+Wales,2020-05-26,96
+England,2020-05-27,570
+Northern Ireland,2020-05-27,5
+Scotland,2020-05-27,10
+Wales,2020-05-27,106
+England,2020-05-28,499
+Northern Ireland,2020-05-28,6
+Scotland,2020-05-28,6
+Wales,2020-05-28,120
+England,2020-05-29,466
+Northern Ireland,2020-05-29,5
+Scotland,2020-05-29,10
+Wales,2020-05-29,99
+England,2020-05-30,446
+Northern Ireland,2020-05-30,6
+Scotland,2020-05-30,3
+Wales,2020-05-30,93
+England,2020-05-31,522
+Northern Ireland,2020-05-31,4
+Scotland,2020-05-31,10
+Wales,2020-05-31,68
+England,2020-06-01,553
+Northern Ireland,2020-06-01,2
+Scotland,2020-06-01,7
+Wales,2020-06-01,73
+England,2020-06-02,491
+Northern Ireland,2020-06-02,4
+Scotland,2020-06-02,4
+Wales,2020-06-02,106
+England,2020-06-03,458
+Northern Ireland,2020-06-03,3
+Scotland,2020-06-03,7
+Wales,2020-06-03,131
+England,2020-06-04,380
+Northern Ireland,2020-06-04,3
+Scotland,2020-06-04,6
+Wales,2020-06-04,97
+England,2020-06-05,306
+Northern Ireland,2020-06-05,2
+Scotland,2020-06-05,10
+Wales,2020-06-05,82
+England,2020-06-06,323
+Northern Ireland,2020-06-06,3
+Scotland,2020-06-06,5
+Wales,2020-06-06,92
+England,2020-06-07,348
+Northern Ireland,2020-06-07,1
+Scotland,2020-06-07,6
+Wales,2020-06-07,76
+England,2020-06-08,397
+Northern Ireland,2020-06-08,2
+Scotland,2020-06-08,3
+Wales,2020-06-08,59
+England,2020-06-09,402
+Northern Ireland,2020-06-09,7
+Scotland,2020-06-09,4
+Wales,2020-06-09,84
+England,2020-06-10,330
+Northern Ireland,2020-06-10,6
+Scotland,2020-06-10,7
+Wales,2020-06-10,97
+England,2020-06-11,298
+Northern Ireland,2020-06-11,5
+Scotland,2020-06-11,6
+Wales,2020-06-11,104
+England,2020-06-12,265
+Northern Ireland,2020-06-12,2
+Scotland,2020-06-12,1
+Wales,2020-06-12,90
+England,2020-06-13,306
+Northern Ireland,2020-06-13,2
+Scotland,2020-06-13,4
+Wales,2020-06-13,114
+England,2020-06-14,365
+Northern Ireland,2020-06-14,0
+Scotland,2020-06-14,6
+Wales,2020-06-14,52
+England,2020-06-15,354
+Northern Ireland,2020-06-15,0
+Scotland,2020-06-15,6
+Wales,2020-06-15,68
+England,2020-06-16,334
+Northern Ireland,2020-06-16,1
+Scotland,2020-06-16,4
+Wales,2020-06-16,95
+England,2020-06-17,312
+Northern Ireland,2020-06-17,1
+Scotland,2020-06-17,5
+Wales,2020-06-17,91
+England,2020-06-18,253
+Northern Ireland,2020-06-18,0
+Scotland,2020-06-18,2
+Wales,2020-06-18,87
+England,2020-06-19,184
+Northern Ireland,2020-06-19,0
+Scotland,2020-06-19,4
+Wales,2020-06-19,78
+England,2020-06-20,215
+Northern Ireland,2020-06-20,3
+Scotland,2020-06-20,2
+Wales,2020-06-20,68
+England,2020-06-21,318
+Northern Ireland,2020-06-21,3
+Scotland,2020-06-21,1
+Wales,2020-06-21,68
+England,2020-06-22,275
+Northern Ireland,2020-06-22,1
+Scotland,2020-06-22,4
+Wales,2020-06-22,67
+England,2020-06-23,262
+Northern Ireland,2020-06-23,2
+Scotland,2020-06-23,4
+Wales,2020-06-23,79
+England,2020-06-24,256
+Northern Ireland,2020-06-24,1
+Scotland,2020-06-24,2
+Wales,2020-06-24,101
+England,2020-06-25,248
+Northern Ireland,2020-06-25,1
+Scotland,2020-06-25,2
+Wales,2020-06-25,64
+England,2020-06-26,209
+Northern Ireland,2020-06-26,1
+Scotland,2020-06-26,0
+Wales,2020-06-26,88
+England,2020-06-27,155
+Northern Ireland,2020-06-27,0
+Scotland,2020-06-27,2
+Wales,2020-06-27,74
+England,2020-06-28,172
+Northern Ireland,2020-06-28,3
+Scotland,2020-06-28,2
+Wales,2020-06-28,47
+England,2020-06-29,189
+Northern Ireland,2020-06-29,1
+Scotland,2020-06-29,1
+Wales,2020-06-29,46
+England,2020-06-30,201
+Northern Ireland,2020-06-30,1
+Scotland,2020-06-30,0
+Wales,2020-06-30,104
+England,2020-07-01,149
+Northern Ireland,2020-07-01,0
+Scotland,2020-07-01,2
+Wales,2020-07-01,66
+England,2020-07-02,146
+Northern Ireland,2020-07-02,0
+Scotland,2020-07-02,0
+Wales,2020-07-02,64
+England,2020-07-03,120
+Northern Ireland,2020-07-03,1
+Scotland,2020-07-03,1
+Wales,2020-07-03,65
+England,2020-07-04,131
+Northern Ireland,2020-07-04,2
+Scotland,2020-07-04,1
+Wales,2020-07-04,78
+England,2020-07-05,150
+Northern Ireland,2020-07-05,0
+Scotland,2020-07-05,1
+Wales,2020-07-05,63
+England,2020-07-06,148
+Northern Ireland,2020-07-06,1
+Scotland,2020-07-06,2
+Wales,2020-07-06,50
+England,2020-07-07,141
+Northern Ireland,2020-07-07,1
+Scotland,2020-07-07,1
+Wales,2020-07-07,64
+England,2020-07-08,136
+Northern Ireland,2020-07-08,2
+Scotland,2020-07-08,0
+Wales,2020-07-08,63
+England,2020-07-09,104
+Northern Ireland,2020-07-09,0
+Scotland,2020-07-09,0
+Wales,2020-07-09,75
+England,2020-07-10,97
+Northern Ireland,2020-07-10,0
+Scotland,2020-07-10,2
+Wales,2020-07-10,68
+England,2020-07-11,72
+Northern Ireland,2020-07-11,0
+Scotland,2020-07-11,2
+Wales,2020-07-11,76
+England,2020-07-12,137
+Northern Ireland,2020-07-12,0
+Scotland,2020-07-12,1
+Wales,2020-07-12,41
+England,2020-07-13,122
+Northern Ireland,2020-07-13,1
+Scotland,2020-07-13,0
+Wales,2020-07-13,50
+England,2020-07-14,116
+Northern Ireland,2020-07-14,0
+Scotland,2020-07-14,0
+Wales,2020-07-14,63
+England,2020-07-15,114
+Northern Ireland,2020-07-15,1
+Scotland,2020-07-15,0
+Wales,2020-07-15,48
+England,2020-07-16,83
+Northern Ireland,2020-07-16,2
+Scotland,2020-07-16,1
+Wales,2020-07-16,48
+England,2020-07-17,48
+Northern Ireland,2020-07-17,0
+Scotland,2020-07-17,0
+Wales,2020-07-17,59
+England,2020-07-18,72
+Northern Ireland,2020-07-18,0
+Scotland,2020-07-18,0
+Wales,2020-07-18,54
+England,2020-07-19,86
+Northern Ireland,2020-07-19,1
+Scotland,2020-07-19,2
+Wales,2020-07-19,51
+England,2020-07-20,79
+Northern Ireland,2020-07-20,1
+Scotland,2020-07-20,0
+Wales,2020-07-20,43
+England,2020-07-21,82
+Northern Ireland,2020-07-21,0
+Scotland,2020-07-21,0
+Wales,2020-07-21,46
+England,2020-07-22,109
+Northern Ireland,2020-07-22,2
+Scotland,2020-07-22,1
+Wales,2020-07-22,72
+England,2020-07-23,93
+Northern Ireland,2020-07-23,0
+Scotland,2020-07-23,0
+Wales,2020-07-23,88
+England,2020-07-24,65
+Northern Ireland,2020-07-24,1
+Scotland,2020-07-24,0
+Wales,2020-07-24,61
+England,2020-07-25,64
+Northern Ireland,2020-07-25,0
+Scotland,2020-07-25,3
+Wales,2020-07-25,48
+England,2020-07-26,82
+Northern Ireland,2020-07-26,0
+Scotland,2020-07-26,0
+Wales,2020-07-26,45
+England,2020-07-27,69
+Northern Ireland,2020-07-27,2
+Scotland,2020-07-27,1
+Wales,2020-07-27,43
+England,2020-07-28,63
+Northern Ireland,2020-07-28,1
+Scotland,2020-07-28,0
+Wales,2020-07-28,49
+England,2020-07-29,75
+Northern Ireland,2020-07-29,1
+Scotland,2020-07-29,2
+Wales,2020-07-29,64
+England,2020-07-30,55
+Northern Ireland,2020-07-30,1
+Scotland,2020-07-30,0
+Wales,2020-07-30,53
+England,2020-07-31,50
+Northern Ireland,2020-07-31,0
+Scotland,2020-07-31,0
+Wales,2020-07-31,54
+England,2020-08-01,57
+Northern Ireland,2020-08-01,2
+Scotland,2020-08-01,1
+Wales,2020-08-01,73
+England,2020-08-02,74
+Northern Ireland,2020-08-02,0
+Scotland,2020-08-02,0
+Wales,2020-08-02,35
+England,2020-08-03,58
+Northern Ireland,2020-08-03,2
+Scotland,2020-08-03,0
+Wales,2020-08-03,29
+England,2020-08-04,60
+Northern Ireland,2020-08-04,0
+Scotland,2020-08-04,1
+Wales,2020-08-04,65
+England,2020-08-05,52
+Northern Ireland,2020-08-05,1
+Scotland,2020-08-05,1
+Wales,2020-08-05,74
+England,2020-08-06,60
+Northern Ireland,2020-08-06,1
+Scotland,2020-08-06,
+Wales,2020-08-06,45
+England,2020-08-07,78
+Northern Ireland,2020-08-07,0
+Scotland,2020-08-07,
+Wales,2020-08-07,53
+England,2020-08-08,53
+Northern Ireland,2020-08-08,4
+Scotland,2020-08-08,
+Wales,2020-08-08,55
+England,2020-08-09,50
+Northern Ireland,2020-08-09,2
+Scotland,2020-08-09,
+Wales,2020-08-09,51
+England,2020-08-10,63
+Northern Ireland,2020-08-10,0
+Scotland,2020-08-10,
+Wales,2020-08-10,31
+England,2020-08-11,51
+Northern Ireland,2020-08-11,1
+Scotland,2020-08-11,
+Wales,2020-08-11,47
+England,2020-08-12,60
+Northern Ireland,2020-08-12,0
+Scotland,2020-08-12,
+Wales,2020-08-12,45
+England,2020-08-13,55
+Northern Ireland,2020-08-13,0
+Scotland,2020-08-13,
+Wales,2020-08-13,63
+England,2020-08-14,38
+Northern Ireland,2020-08-14,0
+Scotland,2020-08-14,
+Wales,2020-08-14,39
+England,2020-08-15,39
+Northern Ireland,2020-08-15,0
+Scotland,2020-08-15,
+Wales,2020-08-15,52
+England,2020-08-16,15
+Northern Ireland,2020-08-16,0
+Scotland,2020-08-16,
+Wales,2020-08-16,37
+England,2020-08-17,
+Northern Ireland,2020-08-17,
+Scotland,2020-08-17,
+Wales,2020-08-17,38
+England,2020-08-18,
+Northern Ireland,2020-08-18,
+Scotland,2020-08-18,
+Wales,2020-08-18,
