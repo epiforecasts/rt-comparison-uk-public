@@ -1,5 +1,0 @@
-Region,New confirmed cases by infection date,Expected change in daily cases,Effective reproduction no.,Rate of growth,Doubling/halving time (days)
-England,8 (0 -- 25),Decreasing,0.6 (0.27 -- 0.9),-0.12 (-0.23 -- -0.03),-5.9 (-27.6 -- -3)
-Northern Ireland,0 (0 -- 1),Likely decreasing,0.87 (0.4 -- 1.13),-0.04 (-0.18 -- 0.04),-19 (16.5 -- -3.9)
-Scotland,0 (0 -- 0),Likely decreasing,0.77 (0.31 -- 1.03),-0.07 (-0.2 -- 0.03),-10.4 (26.4 -- -3.5)
-Wales,38 (21 -- 50),Likely decreasing,0.95 (0.81 -- 1.03),-0.01 (-0.05 -- 0.01),-47.2 (84.8 -- -13)
