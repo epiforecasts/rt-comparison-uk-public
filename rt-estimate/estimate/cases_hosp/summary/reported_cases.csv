@@ -1,449 +1,2476 @@
 region,date,confirm
-England,2020-05-01,2501
-Northern Ireland,2020-05-01,87
-Scotland,2020-05-01,301
-Wales,2020-05-01,160
-England,2020-05-02,2228
-Northern Ireland,2020-05-02,66
-Scotland,2020-05-02,273
-Wales,2020-05-02,183
-England,2020-05-03,2019
-Northern Ireland,2020-05-03,78
-Scotland,2020-05-03,170
-Wales,2020-05-03,174
-England,2020-05-04,1485
-Northern Ireland,2020-05-04,69
-Scotland,2020-05-04,169
-Wales,2020-05-04,195
-England,2020-05-05,1842
-Northern Ireland,2020-05-05,45
-Scotland,2020-05-05,171
-Wales,2020-05-05,145
-England,2020-05-06,1611
-Northern Ireland,2020-05-06,53
-Scotland,2020-05-06,272
-Wales,2020-05-06,95
-England,2020-05-07,2133
-Northern Ireland,2020-05-07,50
-Scotland,2020-05-07,215
-Wales,2020-05-07,87
-England,2020-05-08,1694
-Northern Ireland,2020-05-08,38
-Scotland,2020-05-08,225
-Wales,2020-05-08,152
-England,2020-05-09,1349
-Northern Ireland,2020-05-09,56
-Scotland,2020-05-09,156
-Wales,2020-05-09,118
-England,2020-05-10,1007
-Northern Ireland,2020-05-10,41
-Scotland,2020-05-10,181
-Wales,2020-05-10,223
-England,2020-05-11,891
-Northern Ireland,2020-05-11,30
-Scotland,2020-05-11,141
-Wales,2020-05-11,124
-England,2020-05-12,1067
-Northern Ireland,2020-05-12,44
-Scotland,2020-05-12,136
-Wales,2020-05-12,105
-England,2020-05-13,1146
-Northern Ireland,2020-05-13,60
-Scotland,2020-05-13,166
-Wales,2020-05-13,133
-England,2020-05-14,1189
-Northern Ireland,2020-05-14,38
-Scotland,2020-05-14,188
-Wales,2020-05-14,128
-England,2020-05-15,1112
-Northern Ireland,2020-05-15,26
-Scotland,2020-05-15,143
-Wales,2020-05-15,126
-England,2020-05-16,1136
-Northern Ireland,2020-05-16,40
-Scotland,2020-05-16,187
-Wales,2020-05-16,183
-England,2020-05-17,788
-Northern Ireland,2020-05-17,28
-Scotland,2020-05-17,90
-Wales,2020-05-17,162
-England,2020-05-18,816
-Northern Ireland,2020-05-18,16
-Scotland,2020-05-18,57
-Wales,2020-05-18,101
-England,2020-05-19,857
-Northern Ireland,2020-05-19,20
-Scotland,2020-05-19,61
-Wales,2020-05-19,166
-England,2020-05-20,824
-Northern Ireland,2020-05-20,18
-Scotland,2020-05-20,96
-Wales,2020-05-20,110
-England,2020-05-21,854
-Northern Ireland,2020-05-21,42
-Scotland,2020-05-21,105
-Wales,2020-05-21,166
-England,2020-05-22,1083
-Northern Ireland,2020-05-22,23
-Scotland,2020-05-22,113
-Wales,2020-05-22,138
-England,2020-05-23,979
-Northern Ireland,2020-05-23,41
-Scotland,2020-05-23,72
-Wales,2020-05-23,185
-England,2020-05-24,584
-Northern Ireland,2020-05-24,25
-Scotland,2020-05-24,60
-Wales,2020-05-24,140
-England,2020-05-25,494
-Northern Ireland,2020-05-25,39
-Scotland,2020-05-25,55
-Wales,2020-05-25,106
-England,2020-05-26,492
-Northern Ireland,2020-05-26,28
-Scotland,2020-05-26,29
-Wales,2020-05-26,141
-England,2020-05-27,609
-Northern Ireland,2020-05-27,26
-Scotland,2020-05-27,55
-Wales,2020-05-27,97
-England,2020-05-28,519
-Northern Ireland,2020-05-28,16
-Scotland,2020-05-28,48
-Wales,2020-05-28,72
-England,2020-05-29,560
-Northern Ireland,2020-05-29,17
-Scotland,2020-05-29,39
-Wales,2020-05-29,102
-England,2020-05-30,715
-Northern Ireland,2020-05-30,13
-Scotland,2020-05-30,55
-Wales,2020-05-30,86
-England,2020-05-31,320
-Northern Ireland,2020-05-31,7
-Scotland,2020-05-31,18
-Wales,2020-05-31,82
-England,2020-06-01,294
-Northern Ireland,2020-06-01,12
-Scotland,2020-06-01,18
-Wales,2020-06-01,59
-England,2020-06-02,444
+East of England,2020-01-03,
+England,2020-01-03,
+London,2020-01-03,
+Midlands,2020-01-03,
+North East and Yorkshire,2020-01-03,
+North West,2020-01-03,
+Northern Ireland,2020-01-03,
+Scotland,2020-01-03,
+South East,2020-01-03,
+South West,2020-01-03,
+Wales,2020-01-03,
+East of England,2020-01-04,
+England,2020-01-04,
+London,2020-01-04,
+Midlands,2020-01-04,
+North East and Yorkshire,2020-01-04,
+North West,2020-01-04,
+Northern Ireland,2020-01-04,
+Scotland,2020-01-04,
+South East,2020-01-04,
+South West,2020-01-04,
+Wales,2020-01-04,
+East of England,2020-01-05,
+England,2020-01-05,
+London,2020-01-05,
+Midlands,2020-01-05,
+North East and Yorkshire,2020-01-05,
+North West,2020-01-05,
+Northern Ireland,2020-01-05,
+Scotland,2020-01-05,
+South East,2020-01-05,
+South West,2020-01-05,
+Wales,2020-01-05,
+East of England,2020-01-06,
+England,2020-01-06,
+London,2020-01-06,
+Midlands,2020-01-06,
+North East and Yorkshire,2020-01-06,
+North West,2020-01-06,
+Northern Ireland,2020-01-06,
+Scotland,2020-01-06,
+South East,2020-01-06,
+South West,2020-01-06,
+Wales,2020-01-06,
+East of England,2020-01-07,
+England,2020-01-07,
+London,2020-01-07,
+Midlands,2020-01-07,
+North East and Yorkshire,2020-01-07,
+North West,2020-01-07,
+Northern Ireland,2020-01-07,
+Scotland,2020-01-07,
+South East,2020-01-07,
+South West,2020-01-07,
+Wales,2020-01-07,
+East of England,2020-01-08,
+England,2020-01-08,
+London,2020-01-08,
+Midlands,2020-01-08,
+North East and Yorkshire,2020-01-08,
+North West,2020-01-08,
+Northern Ireland,2020-01-08,
+Scotland,2020-01-08,
+South East,2020-01-08,
+South West,2020-01-08,
+Wales,2020-01-08,
+East of England,2020-01-09,
+England,2020-01-09,
+London,2020-01-09,
+Midlands,2020-01-09,
+North East and Yorkshire,2020-01-09,
+North West,2020-01-09,
+Northern Ireland,2020-01-09,
+Scotland,2020-01-09,
+South East,2020-01-09,
+South West,2020-01-09,
+Wales,2020-01-09,
+East of England,2020-01-10,
+England,2020-01-10,
+London,2020-01-10,
+Midlands,2020-01-10,
+North East and Yorkshire,2020-01-10,
+North West,2020-01-10,
+Northern Ireland,2020-01-10,
+Scotland,2020-01-10,
+South East,2020-01-10,
+South West,2020-01-10,
+Wales,2020-01-10,
+East of England,2020-01-11,
+England,2020-01-11,
+London,2020-01-11,
+Midlands,2020-01-11,
+North East and Yorkshire,2020-01-11,
+North West,2020-01-11,
+Northern Ireland,2020-01-11,
+Scotland,2020-01-11,
+South East,2020-01-11,
+South West,2020-01-11,
+Wales,2020-01-11,
+East of England,2020-01-12,
+England,2020-01-12,
+London,2020-01-12,
+Midlands,2020-01-12,
+North East and Yorkshire,2020-01-12,
+North West,2020-01-12,
+Northern Ireland,2020-01-12,
+Scotland,2020-01-12,
+South East,2020-01-12,
+South West,2020-01-12,
+Wales,2020-01-12,
+East of England,2020-01-13,
+England,2020-01-13,
+London,2020-01-13,
+Midlands,2020-01-13,
+North East and Yorkshire,2020-01-13,
+North West,2020-01-13,
+Northern Ireland,2020-01-13,
+Scotland,2020-01-13,
+South East,2020-01-13,
+South West,2020-01-13,
+Wales,2020-01-13,
+East of England,2020-01-14,
+England,2020-01-14,
+London,2020-01-14,
+Midlands,2020-01-14,
+North East and Yorkshire,2020-01-14,
+North West,2020-01-14,
+Northern Ireland,2020-01-14,
+Scotland,2020-01-14,
+South East,2020-01-14,
+South West,2020-01-14,
+Wales,2020-01-14,
+East of England,2020-01-15,
+England,2020-01-15,
+London,2020-01-15,
+Midlands,2020-01-15,
+North East and Yorkshire,2020-01-15,
+North West,2020-01-15,
+Northern Ireland,2020-01-15,
+Scotland,2020-01-15,
+South East,2020-01-15,
+South West,2020-01-15,
+Wales,2020-01-15,
+East of England,2020-01-16,
+England,2020-01-16,
+London,2020-01-16,
+Midlands,2020-01-16,
+North East and Yorkshire,2020-01-16,
+North West,2020-01-16,
+Northern Ireland,2020-01-16,
+Scotland,2020-01-16,
+South East,2020-01-16,
+South West,2020-01-16,
+Wales,2020-01-16,
+East of England,2020-01-17,
+England,2020-01-17,
+London,2020-01-17,
+Midlands,2020-01-17,
+North East and Yorkshire,2020-01-17,
+North West,2020-01-17,
+Northern Ireland,2020-01-17,
+Scotland,2020-01-17,
+South East,2020-01-17,
+South West,2020-01-17,
+Wales,2020-01-17,
+East of England,2020-01-18,
+England,2020-01-18,
+London,2020-01-18,
+Midlands,2020-01-18,
+North East and Yorkshire,2020-01-18,
+North West,2020-01-18,
+Northern Ireland,2020-01-18,
+Scotland,2020-01-18,
+South East,2020-01-18,
+South West,2020-01-18,
+Wales,2020-01-18,
+East of England,2020-01-19,
+England,2020-01-19,
+London,2020-01-19,
+Midlands,2020-01-19,
+North East and Yorkshire,2020-01-19,
+North West,2020-01-19,
+Northern Ireland,2020-01-19,
+Scotland,2020-01-19,
+South East,2020-01-19,
+South West,2020-01-19,
+Wales,2020-01-19,
+East of England,2020-01-20,
+England,2020-01-20,
+London,2020-01-20,
+Midlands,2020-01-20,
+North East and Yorkshire,2020-01-20,
+North West,2020-01-20,
+Northern Ireland,2020-01-20,
+Scotland,2020-01-20,
+South East,2020-01-20,
+South West,2020-01-20,
+Wales,2020-01-20,
+East of England,2020-01-21,
+England,2020-01-21,
+London,2020-01-21,
+Midlands,2020-01-21,
+North East and Yorkshire,2020-01-21,
+North West,2020-01-21,
+Northern Ireland,2020-01-21,
+Scotland,2020-01-21,
+South East,2020-01-21,
+South West,2020-01-21,
+Wales,2020-01-21,
+East of England,2020-01-22,
+England,2020-01-22,
+London,2020-01-22,
+Midlands,2020-01-22,
+North East and Yorkshire,2020-01-22,
+North West,2020-01-22,
+Northern Ireland,2020-01-22,
+Scotland,2020-01-22,
+South East,2020-01-22,
+South West,2020-01-22,
+Wales,2020-01-22,
+East of England,2020-01-23,
+England,2020-01-23,
+London,2020-01-23,
+Midlands,2020-01-23,
+North East and Yorkshire,2020-01-23,
+North West,2020-01-23,
+Northern Ireland,2020-01-23,
+Scotland,2020-01-23,
+South East,2020-01-23,
+South West,2020-01-23,
+Wales,2020-01-23,
+East of England,2020-01-24,
+England,2020-01-24,
+London,2020-01-24,
+Midlands,2020-01-24,
+North East and Yorkshire,2020-01-24,
+North West,2020-01-24,
+Northern Ireland,2020-01-24,
+Scotland,2020-01-24,
+South East,2020-01-24,
+South West,2020-01-24,
+Wales,2020-01-24,
+East of England,2020-01-25,
+England,2020-01-25,
+London,2020-01-25,
+Midlands,2020-01-25,
+North East and Yorkshire,2020-01-25,
+North West,2020-01-25,
+Northern Ireland,2020-01-25,
+Scotland,2020-01-25,
+South East,2020-01-25,
+South West,2020-01-25,
+Wales,2020-01-25,
+East of England,2020-01-26,
+England,2020-01-26,
+London,2020-01-26,
+Midlands,2020-01-26,
+North East and Yorkshire,2020-01-26,
+North West,2020-01-26,
+Northern Ireland,2020-01-26,
+Scotland,2020-01-26,
+South East,2020-01-26,
+South West,2020-01-26,
+Wales,2020-01-26,
+East of England,2020-01-27,
+England,2020-01-27,
+London,2020-01-27,
+Midlands,2020-01-27,
+North East and Yorkshire,2020-01-27,
+North West,2020-01-27,
+Northern Ireland,2020-01-27,
+Scotland,2020-01-27,
+South East,2020-01-27,
+South West,2020-01-27,
+Wales,2020-01-27,
+East of England,2020-01-28,
+England,2020-01-28,
+London,2020-01-28,
+Midlands,2020-01-28,
+North East and Yorkshire,2020-01-28,
+North West,2020-01-28,
+Northern Ireland,2020-01-28,
+Scotland,2020-01-28,
+South East,2020-01-28,
+South West,2020-01-28,
+Wales,2020-01-28,
+East of England,2020-01-29,
+England,2020-01-29,
+London,2020-01-29,
+Midlands,2020-01-29,
+North East and Yorkshire,2020-01-29,
+North West,2020-01-29,
+Northern Ireland,2020-01-29,
+Scotland,2020-01-29,
+South East,2020-01-29,
+South West,2020-01-29,
+Wales,2020-01-29,
+East of England,2020-01-30,
+England,2020-01-30,
+London,2020-01-30,
+Midlands,2020-01-30,
+North East and Yorkshire,2020-01-30,
+North West,2020-01-30,
+Northern Ireland,2020-01-30,
+Scotland,2020-01-30,
+South East,2020-01-30,
+South West,2020-01-30,
+Wales,2020-01-30,
+East of England,2020-01-31,
+England,2020-01-31,
+London,2020-01-31,
+Midlands,2020-01-31,
+North East and Yorkshire,2020-01-31,
+North West,2020-01-31,
+Northern Ireland,2020-01-31,
+Scotland,2020-01-31,
+South East,2020-01-31,
+South West,2020-01-31,
+Wales,2020-01-31,
+East of England,2020-02-01,
+England,2020-02-01,
+London,2020-02-01,
+Midlands,2020-02-01,
+North East and Yorkshire,2020-02-01,
+North West,2020-02-01,
+Northern Ireland,2020-02-01,
+Scotland,2020-02-01,
+South East,2020-02-01,
+South West,2020-02-01,
+Wales,2020-02-01,
+East of England,2020-02-02,
+England,2020-02-02,
+London,2020-02-02,
+Midlands,2020-02-02,
+North East and Yorkshire,2020-02-02,
+North West,2020-02-02,
+Northern Ireland,2020-02-02,
+Scotland,2020-02-02,
+South East,2020-02-02,
+South West,2020-02-02,
+Wales,2020-02-02,
+East of England,2020-02-03,
+England,2020-02-03,
+London,2020-02-03,
+Midlands,2020-02-03,
+North East and Yorkshire,2020-02-03,
+North West,2020-02-03,
+Northern Ireland,2020-02-03,
+Scotland,2020-02-03,
+South East,2020-02-03,
+South West,2020-02-03,
+Wales,2020-02-03,
+East of England,2020-02-04,
+England,2020-02-04,
+London,2020-02-04,
+Midlands,2020-02-04,
+North East and Yorkshire,2020-02-04,
+North West,2020-02-04,
+Northern Ireland,2020-02-04,
+Scotland,2020-02-04,
+South East,2020-02-04,
+South West,2020-02-04,
+Wales,2020-02-04,
+East of England,2020-02-05,
+England,2020-02-05,
+London,2020-02-05,
+Midlands,2020-02-05,
+North East and Yorkshire,2020-02-05,
+North West,2020-02-05,
+Northern Ireland,2020-02-05,
+Scotland,2020-02-05,
+South East,2020-02-05,
+South West,2020-02-05,
+Wales,2020-02-05,
+East of England,2020-02-06,
+England,2020-02-06,
+London,2020-02-06,
+Midlands,2020-02-06,
+North East and Yorkshire,2020-02-06,
+North West,2020-02-06,
+Northern Ireland,2020-02-06,
+Scotland,2020-02-06,
+South East,2020-02-06,
+South West,2020-02-06,
+Wales,2020-02-06,
+East of England,2020-02-07,
+England,2020-02-07,
+London,2020-02-07,
+Midlands,2020-02-07,
+North East and Yorkshire,2020-02-07,
+North West,2020-02-07,
+Northern Ireland,2020-02-07,
+Scotland,2020-02-07,
+South East,2020-02-07,
+South West,2020-02-07,
+Wales,2020-02-07,
+East of England,2020-02-08,
+England,2020-02-08,
+London,2020-02-08,
+Midlands,2020-02-08,
+North East and Yorkshire,2020-02-08,
+North West,2020-02-08,
+Northern Ireland,2020-02-08,
+Scotland,2020-02-08,
+South East,2020-02-08,
+South West,2020-02-08,
+Wales,2020-02-08,
+East of England,2020-02-09,
+England,2020-02-09,
+London,2020-02-09,
+Midlands,2020-02-09,
+North East and Yorkshire,2020-02-09,
+North West,2020-02-09,
+Northern Ireland,2020-02-09,
+Scotland,2020-02-09,
+South East,2020-02-09,
+South West,2020-02-09,
+Wales,2020-02-09,
+East of England,2020-02-10,
+England,2020-02-10,
+London,2020-02-10,
+Midlands,2020-02-10,
+North East and Yorkshire,2020-02-10,
+North West,2020-02-10,
+Northern Ireland,2020-02-10,
+Scotland,2020-02-10,
+South East,2020-02-10,
+South West,2020-02-10,
+Wales,2020-02-10,
+East of England,2020-02-11,
+England,2020-02-11,
+London,2020-02-11,
+Midlands,2020-02-11,
+North East and Yorkshire,2020-02-11,
+North West,2020-02-11,
+Northern Ireland,2020-02-11,
+Scotland,2020-02-11,
+South East,2020-02-11,
+South West,2020-02-11,
+Wales,2020-02-11,
+East of England,2020-02-12,
+England,2020-02-12,
+London,2020-02-12,
+Midlands,2020-02-12,
+North East and Yorkshire,2020-02-12,
+North West,2020-02-12,
+Northern Ireland,2020-02-12,
+Scotland,2020-02-12,
+South East,2020-02-12,
+South West,2020-02-12,
+Wales,2020-02-12,
+East of England,2020-02-13,
+England,2020-02-13,
+London,2020-02-13,
+Midlands,2020-02-13,
+North East and Yorkshire,2020-02-13,
+North West,2020-02-13,
+Northern Ireland,2020-02-13,
+Scotland,2020-02-13,
+South East,2020-02-13,
+South West,2020-02-13,
+Wales,2020-02-13,
+East of England,2020-02-14,
+England,2020-02-14,
+London,2020-02-14,
+Midlands,2020-02-14,
+North East and Yorkshire,2020-02-14,
+North West,2020-02-14,
+Northern Ireland,2020-02-14,
+Scotland,2020-02-14,
+South East,2020-02-14,
+South West,2020-02-14,
+Wales,2020-02-14,
+East of England,2020-02-15,
+England,2020-02-15,
+London,2020-02-15,
+Midlands,2020-02-15,
+North East and Yorkshire,2020-02-15,
+North West,2020-02-15,
+Northern Ireland,2020-02-15,
+Scotland,2020-02-15,
+South East,2020-02-15,
+South West,2020-02-15,
+Wales,2020-02-15,
+East of England,2020-02-16,
+England,2020-02-16,
+London,2020-02-16,
+Midlands,2020-02-16,
+North East and Yorkshire,2020-02-16,
+North West,2020-02-16,
+Northern Ireland,2020-02-16,
+Scotland,2020-02-16,
+South East,2020-02-16,
+South West,2020-02-16,
+Wales,2020-02-16,
+East of England,2020-02-17,
+England,2020-02-17,
+London,2020-02-17,
+Midlands,2020-02-17,
+North East and Yorkshire,2020-02-17,
+North West,2020-02-17,
+Northern Ireland,2020-02-17,
+Scotland,2020-02-17,
+South East,2020-02-17,
+South West,2020-02-17,
+Wales,2020-02-17,
+East of England,2020-02-18,
+England,2020-02-18,
+London,2020-02-18,
+Midlands,2020-02-18,
+North East and Yorkshire,2020-02-18,
+North West,2020-02-18,
+Northern Ireland,2020-02-18,
+Scotland,2020-02-18,
+South East,2020-02-18,
+South West,2020-02-18,
+Wales,2020-02-18,
+East of England,2020-02-19,
+England,2020-02-19,
+London,2020-02-19,
+Midlands,2020-02-19,
+North East and Yorkshire,2020-02-19,
+North West,2020-02-19,
+Northern Ireland,2020-02-19,
+Scotland,2020-02-19,
+South East,2020-02-19,
+South West,2020-02-19,
+Wales,2020-02-19,
+East of England,2020-02-20,
+England,2020-02-20,
+London,2020-02-20,
+Midlands,2020-02-20,
+North East and Yorkshire,2020-02-20,
+North West,2020-02-20,
+Northern Ireland,2020-02-20,
+Scotland,2020-02-20,
+South East,2020-02-20,
+South West,2020-02-20,
+Wales,2020-02-20,
+East of England,2020-02-21,
+England,2020-02-21,
+London,2020-02-21,
+Midlands,2020-02-21,
+North East and Yorkshire,2020-02-21,
+North West,2020-02-21,
+Northern Ireland,2020-02-21,
+Scotland,2020-02-21,
+South East,2020-02-21,
+South West,2020-02-21,
+Wales,2020-02-21,
+East of England,2020-02-22,
+England,2020-02-22,
+London,2020-02-22,
+Midlands,2020-02-22,
+North East and Yorkshire,2020-02-22,
+North West,2020-02-22,
+Northern Ireland,2020-02-22,
+Scotland,2020-02-22,
+South East,2020-02-22,
+South West,2020-02-22,
+Wales,2020-02-22,
+East of England,2020-02-23,
+England,2020-02-23,
+London,2020-02-23,
+Midlands,2020-02-23,
+North East and Yorkshire,2020-02-23,
+North West,2020-02-23,
+Northern Ireland,2020-02-23,
+Scotland,2020-02-23,
+South East,2020-02-23,
+South West,2020-02-23,
+Wales,2020-02-23,
+East of England,2020-02-24,
+England,2020-02-24,
+London,2020-02-24,
+Midlands,2020-02-24,
+North East and Yorkshire,2020-02-24,
+North West,2020-02-24,
+Northern Ireland,2020-02-24,
+Scotland,2020-02-24,
+South East,2020-02-24,
+South West,2020-02-24,
+Wales,2020-02-24,
+East of England,2020-02-25,
+England,2020-02-25,
+London,2020-02-25,
+Midlands,2020-02-25,
+North East and Yorkshire,2020-02-25,
+North West,2020-02-25,
+Northern Ireland,2020-02-25,
+Scotland,2020-02-25,
+South East,2020-02-25,
+South West,2020-02-25,
+Wales,2020-02-25,
+East of England,2020-02-26,
+England,2020-02-26,
+London,2020-02-26,
+Midlands,2020-02-26,
+North East and Yorkshire,2020-02-26,
+North West,2020-02-26,
+Northern Ireland,2020-02-26,
+Scotland,2020-02-26,
+South East,2020-02-26,
+South West,2020-02-26,
+Wales,2020-02-26,
+East of England,2020-02-27,
+England,2020-02-27,
+London,2020-02-27,
+Midlands,2020-02-27,
+North East and Yorkshire,2020-02-27,
+North West,2020-02-27,
+Northern Ireland,2020-02-27,
+Scotland,2020-02-27,
+South East,2020-02-27,
+South West,2020-02-27,
+Wales,2020-02-27,
+East of England,2020-02-28,
+England,2020-02-28,
+London,2020-02-28,
+Midlands,2020-02-28,
+North East and Yorkshire,2020-02-28,
+North West,2020-02-28,
+Northern Ireland,2020-02-28,
+Scotland,2020-02-28,
+South East,2020-02-28,
+South West,2020-02-28,
+Wales,2020-02-28,
+East of England,2020-02-29,
+England,2020-02-29,
+London,2020-02-29,
+Midlands,2020-02-29,
+North East and Yorkshire,2020-02-29,
+North West,2020-02-29,
+Northern Ireland,2020-02-29,
+Scotland,2020-02-29,
+South East,2020-02-29,
+South West,2020-02-29,
+Wales,2020-02-29,
+East of England,2020-03-01,
+England,2020-03-01,
+London,2020-03-01,
+Midlands,2020-03-01,
+North East and Yorkshire,2020-03-01,
+North West,2020-03-01,
+Northern Ireland,2020-03-01,
+Scotland,2020-03-01,5
+South East,2020-03-01,
+South West,2020-03-01,
+Wales,2020-03-01,
+East of England,2020-03-02,
+England,2020-03-02,
+London,2020-03-02,
+Midlands,2020-03-02,
+North East and Yorkshire,2020-03-02,
+North West,2020-03-02,
+Northern Ireland,2020-03-02,1
+Scotland,2020-03-02,11
+South East,2020-03-02,
+South West,2020-03-02,
+Wales,2020-03-02,
+East of England,2020-03-03,
+England,2020-03-03,
+London,2020-03-03,
+Midlands,2020-03-03,
+North East and Yorkshire,2020-03-03,
+North West,2020-03-03,
+Northern Ireland,2020-03-03,0
+Scotland,2020-03-03,13
+South East,2020-03-03,
+South West,2020-03-03,
+Wales,2020-03-03,
+East of England,2020-03-04,
+England,2020-03-04,
+London,2020-03-04,
+Midlands,2020-03-04,
+North East and Yorkshire,2020-03-04,
+North West,2020-03-04,
+Northern Ireland,2020-03-04,0
+Scotland,2020-03-04,11
+South East,2020-03-04,
+South West,2020-03-04,
+Wales,2020-03-04,
+East of England,2020-03-05,
+England,2020-03-05,
+London,2020-03-05,
+Midlands,2020-03-05,
+North East and Yorkshire,2020-03-05,
+North West,2020-03-05,
+Northern Ireland,2020-03-05,1
+Scotland,2020-03-05,18
+South East,2020-03-05,
+South West,2020-03-05,
+Wales,2020-03-05,
+East of England,2020-03-06,
+England,2020-03-06,
+London,2020-03-06,
+Midlands,2020-03-06,
+North East and Yorkshire,2020-03-06,
+North West,2020-03-06,
+Northern Ireland,2020-03-06,3
+Scotland,2020-03-06,21
+South East,2020-03-06,
+South West,2020-03-06,
+Wales,2020-03-06,
+East of England,2020-03-07,
+England,2020-03-07,
+London,2020-03-07,
+Midlands,2020-03-07,
+North East and Yorkshire,2020-03-07,
+North West,2020-03-07,
+Northern Ireland,2020-03-07,0
+Scotland,2020-03-07,9
+South East,2020-03-07,
+South West,2020-03-07,
+Wales,2020-03-07,
+East of England,2020-03-08,
+England,2020-03-08,
+London,2020-03-08,
+Midlands,2020-03-08,
+North East and Yorkshire,2020-03-08,
+North West,2020-03-08,
+Northern Ireland,2020-03-08,0
+Scotland,2020-03-08,11
+South East,2020-03-08,
+South West,2020-03-08,
+Wales,2020-03-08,
+East of England,2020-03-09,
+England,2020-03-09,
+London,2020-03-09,
+Midlands,2020-03-09,
+North East and Yorkshire,2020-03-09,
+North West,2020-03-09,
+Northern Ireland,2020-03-09,1
+Scotland,2020-03-09,19
+South East,2020-03-09,
+South West,2020-03-09,
+Wales,2020-03-09,
+East of England,2020-03-10,
+England,2020-03-10,
+London,2020-03-10,
+Midlands,2020-03-10,
+North East and Yorkshire,2020-03-10,
+North West,2020-03-10,
+Northern Ireland,2020-03-10,2
+Scotland,2020-03-10,30
+South East,2020-03-10,
+South West,2020-03-10,
+Wales,2020-03-10,
+East of England,2020-03-11,
+England,2020-03-11,
+London,2020-03-11,
+Midlands,2020-03-11,
+North East and Yorkshire,2020-03-11,
+North West,2020-03-11,
+Northern Ireland,2020-03-11,3
+Scotland,2020-03-11,27
+South East,2020-03-11,
+South West,2020-03-11,
+Wales,2020-03-11,
+East of England,2020-03-12,
+England,2020-03-12,
+London,2020-03-12,
+Midlands,2020-03-12,
+North East and Yorkshire,2020-03-12,
+North West,2020-03-12,
+Northern Ireland,2020-03-12,4
+Scotland,2020-03-12,24
+South East,2020-03-12,
+South West,2020-03-12,
+Wales,2020-03-12,
+East of England,2020-03-13,
+England,2020-03-13,
+London,2020-03-13,
+Midlands,2020-03-13,
+North East and Yorkshire,2020-03-13,
+North West,2020-03-13,
+Northern Ireland,2020-03-13,2
+Scotland,2020-03-13,24
+South East,2020-03-13,
+South West,2020-03-13,
+Wales,2020-03-13,
+East of England,2020-03-14,
+England,2020-03-14,
+London,2020-03-14,
+Midlands,2020-03-14,
+North East and Yorkshire,2020-03-14,
+North West,2020-03-14,
+Northern Ireland,2020-03-14,2
+Scotland,2020-03-14,22
+South East,2020-03-14,
+South West,2020-03-14,
+Wales,2020-03-14,
+East of England,2020-03-15,
+England,2020-03-15,
+London,2020-03-15,
+Midlands,2020-03-15,
+North East and Yorkshire,2020-03-15,
+North West,2020-03-15,
+Northern Ireland,2020-03-15,1
+Scotland,2020-03-15,17
+South East,2020-03-15,
+South West,2020-03-15,
+Wales,2020-03-15,
+East of England,2020-03-16,
+England,2020-03-16,
+London,2020-03-16,
+Midlands,2020-03-16,
+North East and Yorkshire,2020-03-16,
+North West,2020-03-16,
+Northern Ireland,2020-03-16,4
+Scotland,2020-03-16,30
+South East,2020-03-16,
+South West,2020-03-16,
+Wales,2020-03-16,
+East of England,2020-03-17,
+England,2020-03-17,
+London,2020-03-17,
+Midlands,2020-03-17,
+North East and Yorkshire,2020-03-17,
+North West,2020-03-17,
+Northern Ireland,2020-03-17,4
+Scotland,2020-03-17,42
+South East,2020-03-17,
+South West,2020-03-17,
+Wales,2020-03-17,
+East of England,2020-03-18,
+England,2020-03-18,
+London,2020-03-18,
+Midlands,2020-03-18,
+North East and Yorkshire,2020-03-18,
+North West,2020-03-18,
+Northern Ireland,2020-03-18,7
+Scotland,2020-03-18,43
+South East,2020-03-18,
+South West,2020-03-18,
+Wales,2020-03-18,
+East of England,2020-03-19,23
+England,2020-03-19,586
+London,2020-03-19,240
+Midlands,2020-03-19,96
+North East and Yorkshire,2020-03-19,48
+North West,2020-03-19,47
+Northern Ireland,2020-03-19,4
+Scotland,2020-03-19,43
+South East,2020-03-19,103
+South West,2020-03-19,29
+Wales,2020-03-19,
+East of England,2020-03-20,23
+England,2020-03-20,691
+London,2020-03-20,272
+Midlands,2020-03-20,164
+North East and Yorkshire,2020-03-20,43
+North West,2020-03-20,56
+Northern Ireland,2020-03-20,10
+Scotland,2020-03-20,72
+South East,2020-03-20,90
+South West,2020-03-20,43
+Wales,2020-03-20,
+East of England,2020-03-21,37
+England,2020-03-21,777
+London,2020-03-21,311
+Midlands,2020-03-21,151
+North East and Yorkshire,2020-03-21,73
+North West,2020-03-21,71
+Northern Ireland,2020-03-21,11
+Scotland,2020-03-21,63
+South East,2020-03-21,91
+South West,2020-03-21,43
+Wales,2020-03-21,
+East of England,2020-03-22,49
+England,2020-03-22,859
+London,2020-03-22,335
+Midlands,2020-03-22,192
+North East and Yorkshire,2020-03-22,69
+North West,2020-03-22,83
+Northern Ireland,2020-03-22,8
+Scotland,2020-03-22,52
+South East,2020-03-22,94
+South West,2020-03-22,37
+Wales,2020-03-22,
+East of England,2020-03-23,46
+England,2020-03-23,1128
+London,2020-03-23,505
+Midlands,2020-03-23,208
+North East and Yorkshire,2020-03-23,107
+North West,2020-03-23,86
+Northern Ireland,2020-03-23,16
+Scotland,2020-03-23,95
+South East,2020-03-23,114
+South West,2020-03-23,62
+Wales,2020-03-23,32
+East of England,2020-03-24,106
+England,2020-03-24,1544
+London,2020-03-24,637
+Midlands,2020-03-24,329
+North East and Yorkshire,2020-03-24,167
+North West,2020-03-24,122
+Northern Ireland,2020-03-24,15
+Scotland,2020-03-24,98
+South East,2020-03-24,123
+South West,2020-03-24,60
+Wales,2020-03-24,63
+East of England,2020-03-25,76
+England,2020-03-25,1755
+London,2020-03-25,675
+Midlands,2020-03-25,422
+North East and Yorkshire,2020-03-25,160
+North West,2020-03-25,187
+Northern Ireland,2020-03-25,29
+Scotland,2020-03-25,122
+South East,2020-03-25,141
+South West,2020-03-25,94
+Wales,2020-03-25,178
+East of England,2020-03-26,160
+England,2020-03-26,1639
+London,2020-03-26,519
+Midlands,2020-03-26,356
+North East and Yorkshire,2020-03-26,196
+North West,2020-03-26,184
+Northern Ireland,2020-03-26,28
+Scotland,2020-03-26,155
+South East,2020-03-26,138
+South West,2020-03-26,86
+Wales,2020-03-26,107
+East of England,2020-03-27,94
+England,2020-03-27,1931
+London,2020-03-27,639
+Midlands,2020-03-27,404
+North East and Yorkshire,2020-03-27,240
+North West,2020-03-27,219
+Northern Ireland,2020-03-27,28
+Scotland,2020-03-27,146
+South East,2020-03-27,230
+South West,2020-03-27,105
+Wales,2020-03-27,118
+East of England,2020-03-28,124
+England,2020-03-28,1873
+London,2020-03-28,551
+Midlands,2020-03-28,350
+North East and Yorkshire,2020-03-28,258
+North West,2020-03-28,210
+Northern Ireland,2020-03-28,37
+Scotland,2020-03-28,157
+South East,2020-03-28,250
+South West,2020-03-28,130
+Wales,2020-03-28,126
+East of England,2020-03-29,201
+England,2020-03-29,2186
+London,2020-03-29,672
+Midlands,2020-03-29,481
+North East and Yorkshire,2020-03-29,254
+North West,2020-03-29,198
+Northern Ireland,2020-03-29,34
+Scotland,2020-03-29,137
+South East,2020-03-29,273
+South West,2020-03-29,107
+Wales,2020-03-29,133
+East of England,2020-03-30,148
+England,2020-03-30,2817
+London,2020-03-30,883
+Midlands,2020-03-30,581
+North East and Yorkshire,2020-03-30,340
+North West,2020-03-30,420
+Northern Ireland,2020-03-30,34
+Scotland,2020-03-30,189
+South East,2020-03-30,317
+South West,2020-03-30,128
+Wales,2020-03-30,147
+East of England,2020-03-31,146
+England,2020-03-31,2447
+London,2020-03-31,645
+Midlands,2020-03-31,594
+North East and Yorkshire,2020-03-31,303
+North West,2020-03-31,342
+Northern Ireland,2020-03-31,43
+Scotland,2020-03-31,183
+South East,2020-03-31,295
+South West,2020-03-31,122
+Wales,2020-03-31,158
+East of England,2020-04-01,167
+England,2020-04-01,3099
+London,2020-04-01,767
+Midlands,2020-04-01,776
+North East and Yorkshire,2020-04-01,507
+North West,2020-04-01,466
+Northern Ireland,2020-04-01,44
+Scotland,2020-04-01,213
+South East,2020-04-01,304
+South West,2020-04-01,112
+Wales,2020-04-01,207
+East of England,2020-04-02,184
+England,2020-04-02,2932
+London,2020-04-02,835
+Midlands,2020-04-02,582
+North East and Yorkshire,2020-04-02,423
+North West,2020-04-02,434
+Northern Ireland,2020-04-02,43
+Scotland,2020-04-02,168
+South East,2020-04-02,322
+South West,2020-04-02,152
+Wales,2020-04-02,139
+East of England,2020-04-03,192
+England,2020-04-03,2564
+London,2020-04-03,647
+Midlands,2020-04-03,451
+North East and Yorkshire,2020-04-03,373
+North West,2020-04-03,446
+Northern Ireland,2020-04-03,44
+Scotland,2020-04-03,212
+South East,2020-04-03,332
+South West,2020-04-03,123
+Wales,2020-04-03,110
+East of England,2020-04-04,163
+England,2020-04-04,2593
+London,2020-04-04,733
+Midlands,2020-04-04,559
+North East and Yorkshire,2020-04-04,294
+North West,2020-04-04,398
+Northern Ireland,2020-04-04,38
+Scotland,2020-04-04,153
+South East,2020-04-04,348
+South West,2020-04-04,98
+Wales,2020-04-04,134
+East of England,2020-04-05,220
+England,2020-04-05,2592
+London,2020-04-05,732
+Midlands,2020-04-05,489
+North East and Yorkshire,2020-04-05,365
+North West,2020-04-05,379
+Northern Ireland,2020-04-05,27
+Scotland,2020-04-05,160
+South East,2020-04-05,277
+South West,2020-04-05,130
+Wales,2020-04-05,134
+East of England,2020-04-06,231
+England,2020-04-06,2679
+London,2020-04-06,743
+Midlands,2020-04-06,439
+North East and Yorkshire,2020-04-06,404
+North West,2020-04-06,392
+Northern Ireland,2020-04-06,41
+Scotland,2020-04-06,203
+South East,2020-04-06,326
+South West,2020-04-06,144
+Wales,2020-04-06,123
+East of England,2020-04-07,164
+England,2020-04-07,2744
+London,2020-04-07,722
+Midlands,2020-04-07,532
+North East and Yorkshire,2020-04-07,446
+North West,2020-04-07,375
+Northern Ireland,2020-04-07,39
+Scotland,2020-04-07,171
+South East,2020-04-07,353
+South West,2020-04-07,152
+Wales,2020-04-07,196
+East of England,2020-04-08,219
+England,2020-04-08,2619
+London,2020-04-08,744
+Midlands,2020-04-08,536
+North East and Yorkshire,2020-04-08,327
+North West,2020-04-08,410
+Northern Ireland,2020-04-08,30
+Scotland,2020-04-08,156
+South East,2020-04-08,249
+South West,2020-04-08,134
+Wales,2020-04-08,158
+East of England,2020-04-09,192
+England,2020-04-09,2340
+London,2020-04-09,554
+Midlands,2020-04-09,374
+North East and Yorkshire,2020-04-09,336
+North West,2020-04-09,477
+Northern Ireland,2020-04-09,32
+Scotland,2020-04-09,131
+South East,2020-04-09,286
+South West,2020-04-09,121
+Wales,2020-04-09,126
+East of England,2020-04-10,215
+England,2020-04-10,2196
+London,2020-04-10,531
+Midlands,2020-04-10,379
+North East and Yorkshire,2020-04-10,319
+North West,2020-04-10,352
+Northern Ireland,2020-04-10,19
+Scotland,2020-04-10,116
+South East,2020-04-10,269
+South West,2020-04-10,131
+Wales,2020-04-10,129
+East of England,2020-04-11,165
+England,2020-04-11,1955
+London,2020-04-11,490
+Midlands,2020-04-11,335
+North East and Yorkshire,2020-04-11,290
+North West,2020-04-11,313
+Northern Ireland,2020-04-11,19
+Scotland,2020-04-11,79
+South East,2020-04-11,235
+South West,2020-04-11,127
+Wales,2020-04-11,106
+East of England,2020-04-12,144
+England,2020-04-12,1791
+London,2020-04-12,384
+Midlands,2020-04-12,303
+North East and Yorkshire,2020-04-12,309
+North West,2020-04-12,294
+Northern Ireland,2020-04-12,23
+Scotland,2020-04-12,85
+South East,2020-04-12,228
+South West,2020-04-12,129
+Wales,2020-04-12,168
+East of England,2020-04-13,214
+England,2020-04-13,1912
+London,2020-04-13,416
+Midlands,2020-04-13,333
+North East and Yorkshire,2020-04-13,305
+North West,2020-04-13,304
+Northern Ireland,2020-04-13,18
+Scotland,2020-04-13,102
+South East,2020-04-13,227
+South West,2020-04-13,113
+Wales,2020-04-13,130
+East of England,2020-04-14,187
+England,2020-04-14,1859
+London,2020-04-14,447
+Midlands,2020-04-14,359
+North East and Yorkshire,2020-04-14,306
+North West,2020-04-14,269
+Northern Ireland,2020-04-14,22
+Scotland,2020-04-14,101
+South East,2020-04-14,185
+South West,2020-04-14,106
+Wales,2020-04-14,106
+East of England,2020-04-15,113
+England,2020-04-15,1608
+London,2020-04-15,412
+Midlands,2020-04-15,242
+North East and Yorkshire,2020-04-15,254
+North West,2020-04-15,247
+Northern Ireland,2020-04-15,21
+Scotland,2020-04-15,98
+South East,2020-04-15,228
+South West,2020-04-15,112
+Wales,2020-04-15,151
+East of England,2020-04-16,133
+England,2020-04-16,1777
+London,2020-04-16,388
+Midlands,2020-04-16,283
+North East and Yorkshire,2020-04-16,275
+North West,2020-04-16,254
+Northern Ireland,2020-04-16,31
+Scotland,2020-04-16,97
+South East,2020-04-16,326
+South West,2020-04-16,118
+Wales,2020-04-16,104
+East of England,2020-04-17,154
+England,2020-04-17,1674
+London,2020-04-17,358
+Midlands,2020-04-17,291
+North East and Yorkshire,2020-04-17,236
+North West,2020-04-17,273
+Northern Ireland,2020-04-17,29
+Scotland,2020-04-17,110
+South East,2020-04-17,260
+South West,2020-04-17,102
+Wales,2020-04-17,151
+East of England,2020-04-18,191
+England,2020-04-18,1411
+London,2020-04-18,283
+Midlands,2020-04-18,229
+North East and Yorkshire,2020-04-18,231
+North West,2020-04-18,206
+Northern Ireland,2020-04-18,15
+Scotland,2020-04-18,74
+South East,2020-04-18,180
+South West,2020-04-18,91
+Wales,2020-04-18,129
+East of England,2020-04-19,148
+England,2020-04-19,1475
+London,2020-04-19,290
+Midlands,2020-04-19,281
+North East and Yorkshire,2020-04-19,267
+North West,2020-04-19,214
+Northern Ireland,2020-04-19,22
+Scotland,2020-04-19,57
+South East,2020-04-19,199
+South West,2020-04-19,76
+Wales,2020-04-19,102
+East of England,2020-04-20,126
+England,2020-04-20,1522
+London,2020-04-20,308
+Midlands,2020-04-20,280
+North East and Yorkshire,2020-04-20,278
+North West,2020-04-20,226
+Northern Ireland,2020-04-20,32
+Scotland,2020-04-20,67
+South East,2020-04-20,227
+South West,2020-04-20,77
+Wales,2020-04-20,114
+East of England,2020-04-21,148
+England,2020-04-21,1495
+London,2020-04-21,288
+Midlands,2020-04-21,259
+North East and Yorkshire,2020-04-21,253
+North West,2020-04-21,260
+Northern Ireland,2020-04-21,30
+Scotland,2020-04-21,70
+South East,2020-04-21,198
+South West,2020-04-21,89
+Wales,2020-04-21,117
+East of England,2020-04-22,120
+England,2020-04-22,1310
+London,2020-04-22,225
+Midlands,2020-04-22,218
+North East and Yorkshire,2020-04-22,247
+North West,2020-04-22,214
+Northern Ireland,2020-04-22,23
+Scotland,2020-04-22,64
+South East,2020-04-22,202
+South West,2020-04-22,84
+Wales,2020-04-22,127
+East of England,2020-04-23,128
+England,2020-04-23,1289
+London,2020-04-23,266
+Midlands,2020-04-23,221
+North East and Yorkshire,2020-04-23,227
+North West,2020-04-23,182
+Northern Ireland,2020-04-23,23
+Scotland,2020-04-23,66
+South East,2020-04-23,181
+South West,2020-04-23,84
+Wales,2020-04-23,134
+East of England,2020-04-24,141
+England,2020-04-24,1277
+London,2020-04-24,171
+Midlands,2020-04-24,204
+North East and Yorkshire,2020-04-24,223
+North West,2020-04-24,211
+Northern Ireland,2020-04-24,23
+Scotland,2020-04-24,91
+South East,2020-04-24,235
+South West,2020-04-24,92
+Wales,2020-04-24,135
+East of England,2020-04-25,128
+England,2020-04-25,1080
+London,2020-04-25,137
+Midlands,2020-04-25,187
+North East and Yorkshire,2020-04-25,198
+North West,2020-04-25,202
+Northern Ireland,2020-04-25,17
+Scotland,2020-04-25,43
+South East,2020-04-25,168
+South West,2020-04-25,60
+Wales,2020-04-25,112
+East of England,2020-04-26,148
+England,2020-04-26,1208
+London,2020-04-26,187
+Midlands,2020-04-26,210
+North East and Yorkshire,2020-04-26,249
+North West,2020-04-26,181
+Northern Ireland,2020-04-26,11
+Scotland,2020-04-26,39
+South East,2020-04-26,182
+South West,2020-04-26,51
+Wales,2020-04-26,97
+East of England,2020-04-27,127
+England,2020-04-27,1344
+London,2020-04-27,261
+Midlands,2020-04-27,206
+North East and Yorkshire,2020-04-27,259
+North West,2020-04-27,223
+Northern Ireland,2020-04-27,20
+Scotland,2020-04-27,76
+South East,2020-04-27,199
+South West,2020-04-27,69
+Wales,2020-04-27,95
+East of England,2020-04-28,184
+England,2020-04-28,1296
+London,2020-04-28,248
+Midlands,2020-04-28,220
+North East and Yorkshire,2020-04-28,226
+North West,2020-04-28,194
+Northern Ireland,2020-04-28,11
+Scotland,2020-04-28,71
+South East,2020-04-28,153
+South West,2020-04-28,71
+Wales,2020-04-28,139
+East of England,2020-04-29,157
+England,2020-04-29,1295
+London,2020-04-29,212
+Midlands,2020-04-29,223
+North East and Yorkshire,2020-04-29,230
+North West,2020-04-29,227
+Northern Ireland,2020-04-29,16
+Scotland,2020-04-29,47
+South East,2020-04-29,196
+South West,2020-04-29,50
+Wales,2020-04-29,127
+East of England,2020-04-30,198
+England,2020-04-30,1227
+London,2020-04-30,183
+Midlands,2020-04-30,206
+North East and Yorkshire,2020-04-30,192
+North West,2020-04-30,214
+Northern Ireland,2020-04-30,28
+Scotland,2020-04-30,56
+South East,2020-04-30,164
+South West,2020-04-30,70
+Wales,2020-04-30,132
+East of England,2020-05-01,127
+England,2020-05-01,1081
+London,2020-05-01,201
+Midlands,2020-05-01,199
+North East and Yorkshire,2020-05-01,157
+North West,2020-05-01,181
+Northern Ireland,2020-05-01,20
+Scotland,2020-05-01,55
+South East,2020-05-01,154
+South West,2020-05-01,62
+Wales,2020-05-01,107
+East of England,2020-05-02,111
+England,2020-05-02,980
+London,2020-05-02,150
+Midlands,2020-05-02,151
+North East and Yorkshire,2020-05-02,172
+North West,2020-05-02,186
+Northern Ireland,2020-05-02,10
+Scotland,2020-05-02,46
+South East,2020-05-02,142
+South West,2020-05-02,68
+Wales,2020-05-02,142
+East of England,2020-05-03,166
+England,2020-05-03,1044
+London,2020-05-03,157
+Midlands,2020-05-03,142
+North East and Yorkshire,2020-05-03,180
+North West,2020-05-03,194
+Northern Ireland,2020-05-03,9
+Scotland,2020-05-03,39
+South East,2020-05-03,137
+South West,2020-05-03,68
+Wales,2020-05-03,94
+East of England,2020-05-04,106
+England,2020-05-04,1063
+London,2020-05-04,169
+Midlands,2020-05-04,228
+North East and Yorkshire,2020-05-04,180
+North West,2020-05-04,189
+Northern Ireland,2020-05-04,11
+Scotland,2020-05-04,52
+South East,2020-05-04,121
+South West,2020-05-04,70
+Wales,2020-05-04,121
+East of England,2020-05-05,90
+England,2020-05-05,959
+London,2020-05-05,178
+Midlands,2020-05-05,184
+North East and Yorkshire,2020-05-05,146
+North West,2020-05-05,201
+Northern Ireland,2020-05-05,10
+Scotland,2020-05-05,40
+South East,2020-05-05,111
+South West,2020-05-05,49
+Wales,2020-05-05,136
+East of England,2020-05-06,128
+England,2020-05-06,1040
+London,2020-05-06,216
+Midlands,2020-05-06,201
+North East and Yorkshire,2020-05-06,152
+North West,2020-05-06,158
+Northern Ireland,2020-05-06,15
+Scotland,2020-05-06,46
+South East,2020-05-06,127
+South West,2020-05-06,58
+Wales,2020-05-06,103
+East of England,2020-05-07,116
+England,2020-05-07,998
+London,2020-05-07,202
+Midlands,2020-05-07,167
+North East and Yorkshire,2020-05-07,171
+North West,2020-05-07,182
+Northern Ireland,2020-05-07,11
+Scotland,2020-05-07,36
+South East,2020-05-07,107
+South West,2020-05-07,53
+Wales,2020-05-07,119
+East of England,2020-05-08,70
+England,2020-05-08,743
+London,2020-05-08,99
+Midlands,2020-05-08,157
+North East and Yorkshire,2020-05-08,104
+North West,2020-05-08,169
+Northern Ireland,2020-05-08,7
+Scotland,2020-05-08,32
+South East,2020-05-08,91
+South West,2020-05-08,53
+Wales,2020-05-08,127
+East of England,2020-05-09,101
+England,2020-05-09,798
+London,2020-05-09,85
+Midlands,2020-05-09,159
+North East and Yorkshire,2020-05-09,145
+North West,2020-05-09,167
+Northern Ireland,2020-05-09,17
+Scotland,2020-05-09,20
+South East,2020-05-09,96
+South West,2020-05-09,45
+Wales,2020-05-09,106
+East of England,2020-05-10,71
+England,2020-05-10,756
+London,2020-05-10,86
+Midlands,2020-05-10,124
+North East and Yorkshire,2020-05-10,139
+North West,2020-05-10,156
+Northern Ireland,2020-05-10,18
+Scotland,2020-05-10,26
+South East,2020-05-10,139
+South West,2020-05-10,41
+Wales,2020-05-10,114
+East of England,2020-05-11,88
+England,2020-05-11,866
+London,2020-05-11,91
+Midlands,2020-05-11,165
+North East and Yorkshire,2020-05-11,148
+North West,2020-05-11,203
+Northern Ireland,2020-05-11,22
+Scotland,2020-05-11,32
+South East,2020-05-11,113
+South West,2020-05-11,58
+Wales,2020-05-11,108
+East of England,2020-05-12,116
+England,2020-05-12,844
+London,2020-05-12,80
+Midlands,2020-05-12,160
+North East and Yorkshire,2020-05-12,155
+North West,2020-05-12,186
+Northern Ireland,2020-05-12,10
+Scotland,2020-05-12,37
+South East,2020-05-12,109
+South West,2020-05-12,38
+Wales,2020-05-12,92
+East of England,2020-05-13,72
+England,2020-05-13,804
+London,2020-05-13,91
+Midlands,2020-05-13,148
+North East and Yorkshire,2020-05-13,156
+North West,2020-05-13,186
+Northern Ireland,2020-05-13,17
+Scotland,2020-05-13,26
+South East,2020-05-13,99
+South West,2020-05-13,52
+Wales,2020-05-13,119
+East of England,2020-05-14,88
+England,2020-05-14,763
+London,2020-05-14,91
+Midlands,2020-05-14,143
+North East and Yorkshire,2020-05-14,127
+North West,2020-05-14,164
+Northern Ireland,2020-05-14,12
+Scotland,2020-05-14,27
+South East,2020-05-14,113
+South West,2020-05-14,37
+Wales,2020-05-14,105
+East of England,2020-05-15,92
+England,2020-05-15,738
+London,2020-05-15,77
+Midlands,2020-05-15,172
+North East and Yorkshire,2020-05-15,109
+North West,2020-05-15,153
+Northern Ireland,2020-05-15,11
+Scotland,2020-05-15,31
+South East,2020-05-15,85
+South West,2020-05-15,50
+Wales,2020-05-15,88
+East of England,2020-05-16,72
+England,2020-05-16,671
+London,2020-05-16,59
+Midlands,2020-05-16,143
+North East and Yorkshire,2020-05-16,95
+North West,2020-05-16,178
+Northern Ireland,2020-05-16,8
+Scotland,2020-05-16,18
+South East,2020-05-16,71
+South West,2020-05-16,53
+Wales,2020-05-16,117
+East of England,2020-05-17,85
+England,2020-05-17,673
+London,2020-05-17,51
+Midlands,2020-05-17,152
+North East and Yorkshire,2020-05-17,95
+North West,2020-05-17,169
+Northern Ireland,2020-05-17,12
+Scotland,2020-05-17,9
+South East,2020-05-17,94
+South West,2020-05-17,27
+Wales,2020-05-17,98
+East of England,2020-05-18,81
+England,2020-05-18,733
+London,2020-05-18,74
+Midlands,2020-05-18,154
+North East and Yorkshire,2020-05-18,101
+North West,2020-05-18,171
+Northern Ireland,2020-05-18,10
+Scotland,2020-05-18,27
+South East,2020-05-18,104
+South West,2020-05-18,48
+Wales,2020-05-18,77
+East of England,2020-05-19,86
+England,2020-05-19,752
+London,2020-05-19,89
+Midlands,2020-05-19,157
+North East and Yorkshire,2020-05-19,99
+North West,2020-05-19,173
+Northern Ireland,2020-05-19,11
+Scotland,2020-05-19,12
+South East,2020-05-19,96
+South West,2020-05-19,52
+Wales,2020-05-19,105
+East of England,2020-05-20,93
+England,2020-05-20,732
+London,2020-05-20,71
+Midlands,2020-05-20,149
+North East and Yorkshire,2020-05-20,106
+North West,2020-05-20,151
+Northern Ireland,2020-05-20,4
+Scotland,2020-05-20,18
+South East,2020-05-20,107
+South West,2020-05-20,55
+Wales,2020-05-20,95
+East of England,2020-05-21,77
+England,2020-05-21,715
+London,2020-05-21,76
+Midlands,2020-05-21,133
+North East and Yorkshire,2020-05-21,123
+North West,2020-05-21,165
+Northern Ireland,2020-05-21,8
+Scotland,2020-05-21,13
+South East,2020-05-21,88
+South West,2020-05-21,53
+Wales,2020-05-21,105
+East of England,2020-05-22,79
+England,2020-05-22,638
+London,2020-05-22,77
+Midlands,2020-05-22,120
+North East and Yorkshire,2020-05-22,85
+North West,2020-05-22,160
+Northern Ireland,2020-05-22,5
+Scotland,2020-05-22,15
+South East,2020-05-22,78
+South West,2020-05-22,39
+Wales,2020-05-22,81
+East of England,2020-05-23,39
+England,2020-05-23,504
+London,2020-05-23,43
+Midlands,2020-05-23,113
+North East and Yorkshire,2020-05-23,97
+North West,2020-05-23,125
+Northern Ireland,2020-05-23,3
+Scotland,2020-05-23,14
+South East,2020-05-23,59
+South West,2020-05-23,28
+Wales,2020-05-23,121
+East of England,2020-05-24,52
+England,2020-05-24,497
+London,2020-05-24,41
+Midlands,2020-05-24,90
+North East and Yorkshire,2020-05-24,85
+North West,2020-05-24,128
+Northern Ireland,2020-05-24,5
+Scotland,2020-05-24,8
+South East,2020-05-24,78
+South West,2020-05-24,23
+Wales,2020-05-24,78
+East of England,2020-05-25,51
+England,2020-05-25,498
+London,2020-05-25,49
+Midlands,2020-05-25,92
+North East and Yorkshire,2020-05-25,67
+North West,2020-05-25,121
+Northern Ireland,2020-05-25,10
+Scotland,2020-05-25,13
+South East,2020-05-25,82
+South West,2020-05-25,36
+Wales,2020-05-25,82
+East of England,2020-05-26,85
+England,2020-05-26,578
+London,2020-05-26,67
+Midlands,2020-05-26,118
+North East and Yorkshire,2020-05-26,85
+North West,2020-05-26,112
+Northern Ireland,2020-05-26,8
+Scotland,2020-05-26,14
+South East,2020-05-26,74
+South West,2020-05-26,37
+Wales,2020-05-26,96
+East of England,2020-05-27,57
+England,2020-05-27,589
+London,2020-05-27,69
+Midlands,2020-05-27,126
+North East and Yorkshire,2020-05-27,82
+North West,2020-05-27,148
+Northern Ireland,2020-05-27,5
+Scotland,2020-05-27,10
+South East,2020-05-27,72
+South West,2020-05-27,35
+Wales,2020-05-27,106
+East of England,2020-05-28,53
+England,2020-05-28,570
+London,2020-05-28,57
+Midlands,2020-05-28,114
+North East and Yorkshire,2020-05-28,74
+North West,2020-05-28,145
+Northern Ireland,2020-05-28,6
+Scotland,2020-05-28,6
+South East,2020-05-28,79
+South West,2020-05-28,48
+Wales,2020-05-28,120
+East of England,2020-05-29,54
+England,2020-05-29,499
+London,2020-05-29,51
+Midlands,2020-05-29,112
+North East and Yorkshire,2020-05-29,71
+North West,2020-05-29,121
+Northern Ireland,2020-05-29,5
+Scotland,2020-05-29,10
+South East,2020-05-29,65
+South West,2020-05-29,25
+Wales,2020-05-29,99
+East of England,2020-05-30,43
+England,2020-05-30,466
+London,2020-05-30,30
+Midlands,2020-05-30,116
+North East and Yorkshire,2020-05-30,75
+North West,2020-05-30,97
+Northern Ireland,2020-05-30,6
+Scotland,2020-05-30,3
+South East,2020-05-30,74
+South West,2020-05-30,31
+Wales,2020-05-30,93
+East of England,2020-05-31,29
+England,2020-05-31,446
+London,2020-05-31,42
+Midlands,2020-05-31,102
+North East and Yorkshire,2020-05-31,78
+North West,2020-05-31,126
+Northern Ireland,2020-05-31,4
+Scotland,2020-05-31,10
+South East,2020-05-31,46
+South West,2020-05-31,23
+Wales,2020-05-31,68
+East of England,2020-06-01,58
+England,2020-06-01,522
+London,2020-06-01,48
+Midlands,2020-06-01,94
+North East and Yorkshire,2020-06-01,71
+North West,2020-06-01,149
+Northern Ireland,2020-06-01,2
+Scotland,2020-06-01,7
+South East,2020-06-01,56
+South West,2020-06-01,46
+Wales,2020-06-01,73
+East of England,2020-06-02,60
+England,2020-06-02,553
+London,2020-06-02,51
+Midlands,2020-06-02,126
+North East and Yorkshire,2020-06-02,70
+North West,2020-06-02,121
 Northern Ireland,2020-06-02,4
-Scotland,2020-06-02,53
-Wales,2020-06-02,67
-England,2020-06-03,462
-Northern Ireland,2020-06-03,8
-Scotland,2020-06-03,33
-Wales,2020-06-03,82
-England,2020-06-04,431
-Northern Ireland,2020-06-04,33
-Scotland,2020-06-04,49
-Wales,2020-06-04,35
-England,2020-06-05,451
-Northern Ireland,2020-06-05,3
-Scotland,2020-06-05,29
-Wales,2020-06-05,76
-England,2020-06-06,422
-Northern Ireland,2020-06-06,14
-Scotland,2020-06-06,21
-Wales,2020-06-06,42
-England,2020-06-07,228
-Northern Ireland,2020-06-07,6
-Scotland,2020-06-07,18
-Wales,2020-06-07,40
-England,2020-06-08,92
-Northern Ireland,2020-06-08,6
-Scotland,2020-06-08,18
-Wales,2020-06-08,42
-England,2020-06-09,651
-Northern Ireland,2020-06-09,3
-Scotland,2020-06-09,14
-Wales,2020-06-09,42
-England,2020-06-10,63
-Northern Ireland,2020-06-10,13
-Scotland,2020-06-10,12
-Wales,2020-06-10,38
-England,2020-06-11,304
-Northern Ireland,2020-06-11,4
-Scotland,2020-06-11,17
-Wales,2020-06-11,63
-England,2020-06-12,392
-Northern Ireland,2020-06-12,16
-Scotland,2020-06-12,27
-Wales,2020-06-12,77
-England,2020-06-13,372
-Northern Ireland,2020-06-13,3
-Scotland,2020-06-13,21
-Wales,2020-06-13,45
-England,2020-06-14,292
-Northern Ireland,2020-06-14,7
-Scotland,2020-06-14,25
-Wales,2020-06-14,39
-England,2020-06-15,219
-Northern Ireland,2020-06-15,4
-Scotland,2020-06-15,29
-Wales,2020-06-15,62
-England,2020-06-16,252
-Northern Ireland,2020-06-16,2
-Scotland,2020-06-16,15
-Wales,2020-06-16,65
-England,2020-06-17,252
-Northern Ireland,2020-06-17,8
-Scotland,2020-06-17,21
-Wales,2020-06-17,53
-England,2020-06-18,281
-Northern Ireland,2020-06-18,1
-Scotland,2020-06-18,11
-Wales,2020-06-18,48
-England,2020-06-19,323
-Northern Ireland,2020-06-19,3
-Scotland,2020-06-19,27
-Wales,2020-06-19,31
-England,2020-06-20,324
-Northern Ireland,2020-06-20,0
-Scotland,2020-06-20,26
-Wales,2020-06-20,25
+Scotland,2020-06-02,4
+South East,2020-06-02,83
+South West,2020-06-02,42
+Wales,2020-06-02,106
+East of England,2020-06-03,46
+England,2020-06-03,491
+London,2020-06-03,68
+Midlands,2020-06-03,112
+North East and Yorkshire,2020-06-03,53
+North West,2020-06-03,122
+Northern Ireland,2020-06-03,3
+Scotland,2020-06-03,7
+South East,2020-06-03,57
+South West,2020-06-03,33
+Wales,2020-06-03,131
+East of England,2020-06-04,58
+England,2020-06-04,458
+London,2020-06-04,58
+Midlands,2020-06-04,94
+North East and Yorkshire,2020-06-04,52
+North West,2020-06-04,124
+Northern Ireland,2020-06-04,3
+Scotland,2020-06-04,6
+South East,2020-06-04,56
+South West,2020-06-04,16
+Wales,2020-06-04,97
+East of England,2020-06-05,44
+England,2020-06-05,380
+London,2020-06-05,50
+Midlands,2020-06-05,70
+North East and Yorkshire,2020-06-05,69
+North West,2020-06-05,75
+Northern Ireland,2020-06-05,2
+Scotland,2020-06-05,10
+South East,2020-06-05,42
+South West,2020-06-05,30
+Wales,2020-06-05,82
+East of England,2020-06-06,30
+England,2020-06-06,306
+London,2020-06-06,46
+Midlands,2020-06-06,51
+North East and Yorkshire,2020-06-06,46
+North West,2020-06-06,56
+Northern Ireland,2020-06-06,3
+Scotland,2020-06-06,5
+South East,2020-06-06,49
+South West,2020-06-06,28
+Wales,2020-06-06,92
+East of England,2020-06-07,32
+England,2020-06-07,323
+London,2020-06-07,56
+Midlands,2020-06-07,65
+North East and Yorkshire,2020-06-07,39
+North West,2020-06-07,66
+Northern Ireland,2020-06-07,1
+Scotland,2020-06-07,6
+South East,2020-06-07,43
+South West,2020-06-07,22
+Wales,2020-06-07,76
+East of England,2020-06-08,28
+England,2020-06-08,348
+London,2020-06-08,69
+Midlands,2020-06-08,86
+North East and Yorkshire,2020-06-08,52
+North West,2020-06-08,68
+Northern Ireland,2020-06-08,2
+Scotland,2020-06-08,3
+South East,2020-06-08,38
+South West,2020-06-08,7
+Wales,2020-06-08,59
+East of England,2020-06-09,44
+England,2020-06-09,397
+London,2020-06-09,35
+Midlands,2020-06-09,103
+North East and Yorkshire,2020-06-09,61
+North West,2020-06-09,98
+Northern Ireland,2020-06-09,7
+Scotland,2020-06-09,4
+South East,2020-06-09,39
+South West,2020-06-09,17
+Wales,2020-06-09,84
+East of England,2020-06-10,39
+England,2020-06-10,402
+London,2020-06-10,41
+Midlands,2020-06-10,105
+North East and Yorkshire,2020-06-10,58
+North West,2020-06-10,113
+Northern Ireland,2020-06-10,6
+Scotland,2020-06-10,7
+South East,2020-06-10,23
+South West,2020-06-10,23
+Wales,2020-06-10,97
+East of England,2020-06-11,42
+England,2020-06-11,330
+London,2020-06-11,32
+Midlands,2020-06-11,76
+North East and Yorkshire,2020-06-11,45
+North West,2020-06-11,101
+Northern Ireland,2020-06-11,5
+Scotland,2020-06-11,6
+South East,2020-06-11,27
+South West,2020-06-11,7
+Wales,2020-06-11,104
+East of England,2020-06-12,30
+England,2020-06-12,298
+London,2020-06-12,30
+Midlands,2020-06-12,69
+North East and Yorkshire,2020-06-12,45
+North West,2020-06-12,92
+Northern Ireland,2020-06-12,2
+Scotland,2020-06-12,1
+South East,2020-06-12,28
+South West,2020-06-12,4
+Wales,2020-06-12,90
+East of England,2020-06-13,32
+England,2020-06-13,265
+London,2020-06-13,20
+Midlands,2020-06-13,73
+North East and Yorkshire,2020-06-13,37
+North West,2020-06-13,63
+Northern Ireland,2020-06-13,2
+Scotland,2020-06-13,4
+South East,2020-06-13,28
+South West,2020-06-13,12
+Wales,2020-06-13,114
+East of England,2020-06-14,38
+England,2020-06-14,306
+London,2020-06-14,22
+Midlands,2020-06-14,72
+North East and Yorkshire,2020-06-14,43
+North West,2020-06-14,80
+Northern Ireland,2020-06-14,0
+Scotland,2020-06-14,6
+South East,2020-06-14,46
+South West,2020-06-14,5
+Wales,2020-06-14,52
+East of England,2020-06-15,57
+England,2020-06-15,365
+London,2020-06-15,49
+Midlands,2020-06-15,78
+North East and Yorkshire,2020-06-15,49
+North West,2020-06-15,78
+Northern Ireland,2020-06-15,0
+Scotland,2020-06-15,6
+South East,2020-06-15,45
+South West,2020-06-15,9
+Wales,2020-06-15,68
+East of England,2020-06-16,33
+England,2020-06-16,354
+London,2020-06-16,56
+Midlands,2020-06-16,72
+North East and Yorkshire,2020-06-16,62
+North West,2020-06-16,83
+Northern Ireland,2020-06-16,1
+Scotland,2020-06-16,4
+South East,2020-06-16,37
+South West,2020-06-16,11
+Wales,2020-06-16,95
+East of England,2020-06-17,43
+England,2020-06-17,334
+London,2020-06-17,56
+Midlands,2020-06-17,66
+North East and Yorkshire,2020-06-17,54
+North West,2020-06-17,77
+Northern Ireland,2020-06-17,1
+Scotland,2020-06-17,5
+South East,2020-06-17,28
+South West,2020-06-17,10
+Wales,2020-06-17,91
+East of England,2020-06-18,38
+England,2020-06-18,312
+London,2020-06-18,50
+Midlands,2020-06-18,66
+North East and Yorkshire,2020-06-18,52
+North West,2020-06-18,71
+Northern Ireland,2020-06-18,0
+Scotland,2020-06-18,2
+South East,2020-06-18,22
+South West,2020-06-18,13
+Wales,2020-06-18,87
+East of England,2020-06-19,28
+England,2020-06-19,253
+London,2020-06-19,47
+Midlands,2020-06-19,54
+North East and Yorkshire,2020-06-19,33
+North West,2020-06-19,57
+Northern Ireland,2020-06-19,0
+Scotland,2020-06-19,4
+South East,2020-06-19,25
+South West,2020-06-19,9
+Wales,2020-06-19,78
+East of England,2020-06-20,19
+England,2020-06-20,184
+London,2020-06-20,19
+Midlands,2020-06-20,42
+North East and Yorkshire,2020-06-20,30
+North West,2020-06-20,34
+Northern Ireland,2020-06-20,3
+Scotland,2020-06-20,2
+South East,2020-06-20,35
+South West,2020-06-20,5
+Wales,2020-06-20,68
+East of England,2020-06-21,22
 England,2020-06-21,215
-Northern Ireland,2020-06-21,4
-Scotland,2020-06-21,26
-Wales,2020-06-21,100
-England,2020-06-22,178
+London,2020-06-21,25
+Midlands,2020-06-21,61
+North East and Yorkshire,2020-06-21,23
+North West,2020-06-21,54
+Northern Ireland,2020-06-21,3
+Scotland,2020-06-21,1
+South East,2020-06-21,27
+South West,2020-06-21,3
+Wales,2020-06-21,68
+East of England,2020-06-22,43
+England,2020-06-22,318
+London,2020-06-22,60
+Midlands,2020-06-22,55
+North East and Yorkshire,2020-06-22,58
+North West,2020-06-22,69
 Northern Ireland,2020-06-22,1
-Scotland,2020-06-22,14
-Wales,2020-06-22,71
-England,2020-06-23,210
-Northern Ireland,2020-06-23,0
-Scotland,2020-06-23,12
-Wales,2020-06-23,51
-England,2020-06-24,107
-Northern Ireland,2020-06-24,2
-Scotland,2020-06-24,9
-Wales,2020-06-24,47
-England,2020-06-25,261
+Scotland,2020-06-22,4
+South East,2020-06-22,32
+South West,2020-06-22,1
+Wales,2020-06-22,67
+East of England,2020-06-23,21
+England,2020-06-23,275
+London,2020-06-23,69
+Midlands,2020-06-23,59
+North East and Yorkshire,2020-06-23,44
+North West,2020-06-23,52
+Northern Ireland,2020-06-23,2
+Scotland,2020-06-23,4
+South East,2020-06-23,21
+South West,2020-06-23,9
+Wales,2020-06-23,79
+East of England,2020-06-24,20
+England,2020-06-24,262
+London,2020-06-24,51
+Midlands,2020-06-24,55
+North East and Yorkshire,2020-06-24,30
+North West,2020-06-24,71
+Northern Ireland,2020-06-24,1
+Scotland,2020-06-24,2
+South East,2020-06-24,27
+South West,2020-06-24,8
+Wales,2020-06-24,101
+East of England,2020-06-25,42
+England,2020-06-25,256
+London,2020-06-25,47
+Midlands,2020-06-25,39
+North East and Yorkshire,2020-06-25,36
+North West,2020-06-25,53
 Northern Ireland,2020-06-25,1
-Scotland,2020-06-25,5
-Wales,2020-06-25,125
-England,2020-06-26,175
-Northern Ireland,2020-06-26,4
-Scotland,2020-06-26,17
-Wales,2020-06-26,65
-England,2020-06-27,192
-Northern Ireland,2020-06-27,2
-Scotland,2020-06-27,15
-Wales,2020-06-27,46
-England,2020-06-28,142
-Northern Ireland,2020-06-28,1
-Scotland,2020-06-28,8
-Wales,2020-06-28,25
-England,2020-06-29,99
-Northern Ireland,2020-06-29,6
-Scotland,2020-06-29,5
-Wales,2020-06-29,116
-England,2020-06-30,196
-Northern Ireland,2020-06-30,3
-Scotland,2020-06-30,10
-Wales,2020-06-30,26
-England,2020-07-01,177
-Northern Ireland,2020-07-01,1
-Scotland,2020-07-01,8
-Wales,2020-07-01,32
-England,2020-07-02,523
-Northern Ireland,2020-07-02,7
-Scotland,2020-07-02,5
-Wales,2020-07-02,41
-England,2020-07-03,502
-Northern Ireland,2020-07-03,4
-Scotland,2020-07-03,12
-Wales,2020-07-03,26
-England,2020-07-04,579
-Northern Ireland,2020-07-04,0
-Scotland,2020-07-04,11
-Wales,2020-07-04,34
-England,2020-07-05,492
+Scotland,2020-06-25,2
+South East,2020-06-25,27
+South West,2020-06-25,12
+Wales,2020-06-25,64
+East of England,2020-06-26,32
+England,2020-06-26,248
+London,2020-06-26,39
+Midlands,2020-06-26,60
+North East and Yorkshire,2020-06-26,35
+North West,2020-06-26,53
+Northern Ireland,2020-06-26,1
+Scotland,2020-06-26,0
+South East,2020-06-26,22
+South West,2020-06-26,7
+Wales,2020-06-26,88
+East of England,2020-06-27,15
+England,2020-06-27,209
+London,2020-06-27,29
+Midlands,2020-06-27,42
+North East and Yorkshire,2020-06-27,32
+North West,2020-06-27,48
+Northern Ireland,2020-06-27,0
+Scotland,2020-06-27,2
+South East,2020-06-27,31
+South West,2020-06-27,12
+Wales,2020-06-27,74
+East of England,2020-06-28,9
+England,2020-06-28,155
+London,2020-06-28,18
+Midlands,2020-06-28,29
+North East and Yorkshire,2020-06-28,28
+North West,2020-06-28,39
+Northern Ireland,2020-06-28,3
+Scotland,2020-06-28,2
+South East,2020-06-28,24
+South West,2020-06-28,8
+Wales,2020-06-28,47
+East of England,2020-06-29,21
+England,2020-06-29,172
+London,2020-06-29,20
+Midlands,2020-06-29,41
+North East and Yorkshire,2020-06-29,24
+North West,2020-06-29,36
+Northern Ireland,2020-06-29,1
+Scotland,2020-06-29,1
+South East,2020-06-29,23
+South West,2020-06-29,7
+Wales,2020-06-29,46
+East of England,2020-06-30,20
+England,2020-06-30,189
+London,2020-06-30,28
+Midlands,2020-06-30,44
+North East and Yorkshire,2020-06-30,33
+North West,2020-06-30,22
+Northern Ireland,2020-06-30,1
+Scotland,2020-06-30,0
+South East,2020-06-30,31
+South West,2020-06-30,11
+Wales,2020-06-30,104
+East of England,2020-07-01,20
+England,2020-07-01,201
+London,2020-07-01,53
+Midlands,2020-07-01,42
+North East and Yorkshire,2020-07-01,28
+North West,2020-07-01,27
+Northern Ireland,2020-07-01,0
+Scotland,2020-07-01,2
+South East,2020-07-01,27
+South West,2020-07-01,4
+Wales,2020-07-01,66
+East of England,2020-07-02,22
+England,2020-07-02,149
+London,2020-07-02,27
+Midlands,2020-07-02,31
+North East and Yorkshire,2020-07-02,30
+North West,2020-07-02,17
+Northern Ireland,2020-07-02,0
+Scotland,2020-07-02,0
+South East,2020-07-02,20
+South West,2020-07-02,2
+Wales,2020-07-02,64
+East of England,2020-07-03,9
+England,2020-07-03,146
+London,2020-07-03,20
+Midlands,2020-07-03,37
+North East and Yorkshire,2020-07-03,26
+North West,2020-07-03,30
+Northern Ireland,2020-07-03,1
+Scotland,2020-07-03,1
+South East,2020-07-03,19
+South West,2020-07-03,5
+Wales,2020-07-03,65
+East of England,2020-07-04,17
+England,2020-07-04,120
+London,2020-07-04,16
+Midlands,2020-07-04,19
+North East and Yorkshire,2020-07-04,22
+North West,2020-07-04,19
+Northern Ireland,2020-07-04,2
+Scotland,2020-07-04,1
+South East,2020-07-04,21
+South West,2020-07-04,6
+Wales,2020-07-04,78
+East of England,2020-07-05,24
+England,2020-07-05,131
+London,2020-07-05,23
+Midlands,2020-07-05,25
+North East and Yorkshire,2020-07-05,16
+North West,2020-07-05,23
 Northern Ireland,2020-07-05,0
-Scotland,2020-07-05,9
-Wales,2020-07-05,15
-England,2020-07-06,331
-Northern Ireland,2020-07-06,0
-Scotland,2020-07-06,4
-Wales,2020-07-06,8
-England,2020-07-07,572
-Northern Ireland,2020-07-07,5
-Scotland,2020-07-07,2
-Wales,2020-07-07,2
-England,2020-07-08,606
-Northern Ireland,2020-07-08,4
-Scotland,2020-07-08,7
-Wales,2020-07-08,13
-England,2020-07-09,617
-Northern Ireland,2020-07-09,3
-Scotland,2020-07-09,6
-Wales,2020-07-09,16
-England,2020-07-10,480
-Northern Ireland,2020-07-10,4
-Scotland,2020-07-10,18
-Wales,2020-07-10,10
-England,2020-07-11,806
+Scotland,2020-07-05,1
+South East,2020-07-05,15
+South West,2020-07-05,5
+Wales,2020-07-05,63
+East of England,2020-07-06,22
+England,2020-07-06,150
+London,2020-07-06,30
+Midlands,2020-07-06,31
+North East and Yorkshire,2020-07-06,26
+North West,2020-07-06,20
+Northern Ireland,2020-07-06,1
+Scotland,2020-07-06,2
+South East,2020-07-06,19
+South West,2020-07-06,2
+Wales,2020-07-06,50
+East of England,2020-07-07,18
+England,2020-07-07,148
+London,2020-07-07,26
+Midlands,2020-07-07,27
+North East and Yorkshire,2020-07-07,34
+North West,2020-07-07,17
+Northern Ireland,2020-07-07,1
+Scotland,2020-07-07,1
+South East,2020-07-07,23
+South West,2020-07-07,3
+Wales,2020-07-07,64
+East of England,2020-07-08,16
+England,2020-07-08,141
+London,2020-07-08,30
+Midlands,2020-07-08,29
+North East and Yorkshire,2020-07-08,26
+North West,2020-07-08,20
+Northern Ireland,2020-07-08,2
+Scotland,2020-07-08,0
+South East,2020-07-08,19
+South West,2020-07-08,1
+Wales,2020-07-08,63
+East of England,2020-07-09,8
+England,2020-07-09,136
+London,2020-07-09,27
+Midlands,2020-07-09,25
+North East and Yorkshire,2020-07-09,22
+North West,2020-07-09,24
+Northern Ireland,2020-07-09,0
+Scotland,2020-07-09,0
+South East,2020-07-09,25
+South West,2020-07-09,5
+Wales,2020-07-09,75
+East of England,2020-07-10,9
+England,2020-07-10,104
+London,2020-07-10,26
+Midlands,2020-07-10,16
+North East and Yorkshire,2020-07-10,22
+North West,2020-07-10,9
+Northern Ireland,2020-07-10,0
+Scotland,2020-07-10,2
+South East,2020-07-10,16
+South West,2020-07-10,6
+Wales,2020-07-10,68
+East of England,2020-07-11,12
+England,2020-07-11,97
+London,2020-07-11,17
+Midlands,2020-07-11,15
+North East and Yorkshire,2020-07-11,21
+North West,2020-07-11,12
 Northern Ireland,2020-07-11,0
-Scotland,2020-07-11,7
-Wales,2020-07-11,7
-England,2020-07-12,615
+Scotland,2020-07-11,2
+South East,2020-07-11,14
+South West,2020-07-11,6
+Wales,2020-07-11,76
+East of England,2020-07-12,11
+England,2020-07-12,72
+London,2020-07-12,16
+Midlands,2020-07-12,14
+North East and Yorkshire,2020-07-12,13
+North West,2020-07-12,8
 Northern Ireland,2020-07-12,0
-Scotland,2020-07-12,19
-Wales,2020-07-12,16
-England,2020-07-13,497
-Northern Ireland,2020-07-13,0
-Scotland,2020-07-13,6
-Wales,2020-07-13,11
-England,2020-07-14,372
-Northern Ireland,2020-07-14,2
-Scotland,2020-07-14,3
-Wales,2020-07-14,21
-England,2020-07-15,506
-Northern Ireland,2020-07-15,9
-Scotland,2020-07-15,5
-Wales,2020-07-15,18
-England,2020-07-16,597
-Northern Ireland,2020-07-16,16
-Scotland,2020-07-16,11
-Wales,2020-07-16,18
-England,2020-07-17,635
-Northern Ireland,2020-07-17,19
-Scotland,2020-07-17,17
-Wales,2020-07-17,16
-England,2020-07-18,796
+Scotland,2020-07-12,1
+South East,2020-07-12,8
+South West,2020-07-12,2
+Wales,2020-07-12,41
+East of England,2020-07-13,19
+England,2020-07-13,137
+London,2020-07-13,18
+Midlands,2020-07-13,24
+North East and Yorkshire,2020-07-13,27
+North West,2020-07-13,18
+Northern Ireland,2020-07-13,1
+Scotland,2020-07-13,0
+South East,2020-07-13,25
+South West,2020-07-13,6
+Wales,2020-07-13,50
+East of England,2020-07-14,17
+England,2020-07-14,122
+London,2020-07-14,19
+Midlands,2020-07-14,21
+North East and Yorkshire,2020-07-14,25
+North West,2020-07-14,20
+Northern Ireland,2020-07-14,0
+Scotland,2020-07-14,0
+South East,2020-07-14,15
+South West,2020-07-14,5
+Wales,2020-07-14,63
+East of England,2020-07-15,19
+England,2020-07-15,116
+London,2020-07-15,22
+Midlands,2020-07-15,16
+North East and Yorkshire,2020-07-15,20
+North West,2020-07-15,19
+Northern Ireland,2020-07-15,0
+Scotland,2020-07-15,0
+South East,2020-07-15,15
+South West,2020-07-15,5
+Wales,2020-07-15,48
+East of England,2020-07-16,17
+England,2020-07-16,114
+London,2020-07-16,24
+Midlands,2020-07-16,16
+North East and Yorkshire,2020-07-16,19
+North West,2020-07-16,20
+Northern Ireland,2020-07-16,2
+Scotland,2020-07-16,1
+South East,2020-07-16,15
+South West,2020-07-16,3
+Wales,2020-07-16,48
+East of England,2020-07-17,10
+England,2020-07-17,83
+London,2020-07-17,18
+Midlands,2020-07-17,11
+North East and Yorkshire,2020-07-17,15
+North West,2020-07-17,10
+Northern Ireland,2020-07-17,0
+Scotland,2020-07-17,0
+South East,2020-07-17,12
+South West,2020-07-17,7
+Wales,2020-07-17,59
+East of England,2020-07-18,8
+England,2020-07-18,48
+London,2020-07-18,5
+Midlands,2020-07-18,7
+North East and Yorkshire,2020-07-18,5
+North West,2020-07-18,10
 Northern Ireland,2020-07-18,0
-Scotland,2020-07-18,21
-Wales,2020-07-18,10
-England,2020-07-19,672
-Northern Ireland,2020-07-19,0
-Scotland,2020-07-19,23
-Wales,2020-07-19,0
-England,2020-07-20,535
-Northern Ireland,2020-07-20,0
-Scotland,2020-07-20,7
-Wales,2020-07-20,15
-England,2020-07-21,399
-Northern Ireland,2020-07-21,2
-Scotland,2020-07-21,22
-Wales,2020-07-21,22
-England,2020-07-22,519
-Northern Ireland,2020-07-22,9
-Scotland,2020-07-22,10
-Wales,2020-07-22,22
-England,2020-07-23,702
-Northern Ireland,2020-07-23,8
-Scotland,2020-07-23,16
-Wales,2020-07-23,43
-England,2020-07-24,688
-Northern Ireland,2020-07-24,15
-Scotland,2020-07-24,20
-Wales,2020-07-24,45
-England,2020-07-25,710
+Scotland,2020-07-18,0
+South East,2020-07-18,11
+South West,2020-07-18,2
+Wales,2020-07-18,54
+East of England,2020-07-19,6
+England,2020-07-19,72
+London,2020-07-19,7
+Midlands,2020-07-19,11
+North East and Yorkshire,2020-07-19,20
+North West,2020-07-19,13
+Northern Ireland,2020-07-19,1
+Scotland,2020-07-19,2
+South East,2020-07-19,13
+South West,2020-07-19,2
+Wales,2020-07-19,51
+East of England,2020-07-20,8
+England,2020-07-20,86
+London,2020-07-20,14
+Midlands,2020-07-20,22
+North East and Yorkshire,2020-07-20,6
+North West,2020-07-20,26
+Northern Ireland,2020-07-20,1
+Scotland,2020-07-20,0
+South East,2020-07-20,8
+South West,2020-07-20,2
+Wales,2020-07-20,43
+East of England,2020-07-21,7
+England,2020-07-21,79
+London,2020-07-21,11
+Midlands,2020-07-21,20
+North East and Yorkshire,2020-07-21,6
+North West,2020-07-21,27
+Northern Ireland,2020-07-21,0
+Scotland,2020-07-21,0
+South East,2020-07-21,7
+South West,2020-07-21,1
+Wales,2020-07-21,46
+East of England,2020-07-22,13
+England,2020-07-22,82
+London,2020-07-22,11
+Midlands,2020-07-22,13
+North East and Yorkshire,2020-07-22,9
+North West,2020-07-22,22
+Northern Ireland,2020-07-22,2
+Scotland,2020-07-22,1
+South East,2020-07-22,11
+South West,2020-07-22,3
+Wales,2020-07-22,72
+East of England,2020-07-23,24
+England,2020-07-23,109
+London,2020-07-23,14
+Midlands,2020-07-23,22
+North East and Yorkshire,2020-07-23,8
+North West,2020-07-23,27
+Northern Ireland,2020-07-23,0
+Scotland,2020-07-23,0
+South East,2020-07-23,12
+South West,2020-07-23,2
+Wales,2020-07-23,88
+East of England,2020-07-24,12
+England,2020-07-24,93
+London,2020-07-24,15
+Midlands,2020-07-24,15
+North East and Yorkshire,2020-07-24,15
+North West,2020-07-24,22
+Northern Ireland,2020-07-24,1
+Scotland,2020-07-24,0
+South East,2020-07-24,14
+South West,2020-07-24,0
+Wales,2020-07-24,61
+East of England,2020-07-25,16
+England,2020-07-25,65
+London,2020-07-25,5
+Midlands,2020-07-25,12
+North East and Yorkshire,2020-07-25,9
+North West,2020-07-25,11
 Northern Ireland,2020-07-25,0
-Scotland,2020-07-25,27
-Wales,2020-07-25,30
-England,2020-07-26,721
+Scotland,2020-07-25,3
+South East,2020-07-25,7
+South West,2020-07-25,5
+Wales,2020-07-25,48
+East of England,2020-07-26,7
+England,2020-07-26,64
+London,2020-07-26,9
+Midlands,2020-07-26,12
+North East and Yorkshire,2020-07-26,11
+North West,2020-07-26,13
 Northern Ireland,2020-07-26,0
-Scotland,2020-07-26,4
-Wales,2020-07-26,22
-England,2020-07-27,616
-Northern Ireland,2020-07-27,0
-Scotland,2020-07-27,3
-Wales,2020-07-27,45
-England,2020-07-28,547
-Northern Ireland,2020-07-28,9
-Scotland,2020-07-28,4
-Wales,2020-07-28,21
-England,2020-07-29,700
-Northern Ireland,2020-07-29,9
-Scotland,2020-07-29,22
-Wales,2020-07-29,32
-England,2020-07-30,812
-Northern Ireland,2020-07-30,8
-Scotland,2020-07-30,17
-Wales,2020-07-30,9
-England,2020-07-31,814
-Northern Ireland,2020-07-31,10
-Scotland,2020-07-31,30
-Wales,2020-07-31,26
-England,2020-08-01,722
-Northern Ireland,2020-08-01,0
-Scotland,2020-08-01,18
-Wales,2020-08-01,21
-England,2020-08-02,676
+Scotland,2020-07-26,0
+South East,2020-07-26,9
+South West,2020-07-26,3
+Wales,2020-07-26,45
+East of England,2020-07-27,18
+England,2020-07-27,82
+London,2020-07-27,10
+Midlands,2020-07-27,8
+North East and Yorkshire,2020-07-27,15
+North West,2020-07-27,12
+Northern Ireland,2020-07-27,2
+Scotland,2020-07-27,1
+South East,2020-07-27,13
+South West,2020-07-27,6
+Wales,2020-07-27,43
+East of England,2020-07-28,9
+England,2020-07-28,69
+London,2020-07-28,7
+Midlands,2020-07-28,15
+North East and Yorkshire,2020-07-28,8
+North West,2020-07-28,16
+Northern Ireland,2020-07-28,1
+Scotland,2020-07-28,0
+South East,2020-07-28,12
+South West,2020-07-28,2
+Wales,2020-07-28,49
+East of England,2020-07-29,8
+England,2020-07-29,63
+London,2020-07-29,11
+Midlands,2020-07-29,14
+North East and Yorkshire,2020-07-29,6
+North West,2020-07-29,12
+Northern Ireland,2020-07-29,1
+Scotland,2020-07-29,2
+South East,2020-07-29,9
+South West,2020-07-29,3
+Wales,2020-07-29,64
+East of England,2020-07-30,8
+England,2020-07-30,75
+London,2020-07-30,5
+Midlands,2020-07-30,15
+North East and Yorkshire,2020-07-30,16
+North West,2020-07-30,21
+Northern Ireland,2020-07-30,1
+Scotland,2020-07-30,0
+South East,2020-07-30,8
+South West,2020-07-30,2
+Wales,2020-07-30,53
+East of England,2020-07-31,5
+England,2020-07-31,55
+London,2020-07-31,2
+Midlands,2020-07-31,11
+North East and Yorkshire,2020-07-31,11
+North West,2020-07-31,12
+Northern Ireland,2020-07-31,0
+Scotland,2020-07-31,0
+South East,2020-07-31,10
+South West,2020-07-31,4
+Wales,2020-07-31,54
+East of England,2020-08-01,2
+England,2020-08-01,50
+London,2020-08-01,5
+Midlands,2020-08-01,8
+North East and Yorkshire,2020-08-01,9
+North West,2020-08-01,11
+Northern Ireland,2020-08-01,2
+Scotland,2020-08-01,1
+South East,2020-08-01,14
+South West,2020-08-01,1
+Wales,2020-08-01,73
+East of England,2020-08-02,7
+England,2020-08-02,57
+London,2020-08-02,10
+Midlands,2020-08-02,5
+North East and Yorkshire,2020-08-02,14
+North West,2020-08-02,12
 Northern Ireland,2020-08-02,0
-Scotland,2020-08-02,31
-Wales,2020-08-02,37
-England,2020-08-03,856
-Northern Ireland,2020-08-03,0
-Scotland,2020-08-03,18
-Wales,2020-08-03,24
-England,2020-08-04,617
-Northern Ireland,2020-08-04,8
-Scotland,2020-08-04,23
-Wales,2020-08-04,22
-England,2020-08-05,804
-Northern Ireland,2020-08-05,10
-Scotland,2020-08-05,64
-Wales,2020-08-05,14
-England,2020-08-06,826
-Northern Ireland,2020-08-06,43
-Scotland,2020-08-06,66
-Wales,2020-08-06,15
-England,2020-08-07,796
-Northern Ireland,2020-08-07,15
-Scotland,2020-08-07,43
-Wales,2020-08-07,17
-England,2020-08-08,679
-Northern Ireland,2020-08-08,0
-Scotland,2020-08-08,60
-Wales,2020-08-08,19
-England,2020-08-09,988
-Northern Ireland,2020-08-09,0
-Scotland,2020-08-09,48
-Wales,2020-08-09,26
-England,2020-08-10,699
+Scotland,2020-08-02,0
+South East,2020-08-02,5
+South West,2020-08-02,4
+Wales,2020-08-02,35
+East of England,2020-08-03,7
+England,2020-08-03,74
+London,2020-08-03,2
+Midlands,2020-08-03,13
+North East and Yorkshire,2020-08-03,25
+North West,2020-08-03,19
+Northern Ireland,2020-08-03,2
+Scotland,2020-08-03,0
+South East,2020-08-03,4
+South West,2020-08-03,4
+Wales,2020-08-03,29
+East of England,2020-08-04,5
+England,2020-08-04,58
+London,2020-08-04,5
+Midlands,2020-08-04,8
+North East and Yorkshire,2020-08-04,16
+North West,2020-08-04,11
+Northern Ireland,2020-08-04,0
+Scotland,2020-08-04,1
+South East,2020-08-04,9
+South West,2020-08-04,4
+Wales,2020-08-04,65
+East of England,2020-08-05,5
+England,2020-08-05,60
+London,2020-08-05,12
+Midlands,2020-08-05,12
+North East and Yorkshire,2020-08-05,6
+North West,2020-08-05,12
+Northern Ireland,2020-08-05,1
+Scotland,2020-08-05,1
+South East,2020-08-05,12
+South West,2020-08-05,1
+Wales,2020-08-05,74
+East of England,2020-08-06,4
+England,2020-08-06,52
+London,2020-08-06,7
+Midlands,2020-08-06,8
+North East and Yorkshire,2020-08-06,15
+North West,2020-08-06,13
+Northern Ireland,2020-08-06,1
+Scotland,2020-08-06,1
+South East,2020-08-06,2
+South West,2020-08-06,3
+Wales,2020-08-06,45
+East of England,2020-08-07,10
+England,2020-08-07,60
+London,2020-08-07,7
+Midlands,2020-08-07,5
+North East and Yorkshire,2020-08-07,11
+North West,2020-08-07,17
+Northern Ireland,2020-08-07,0
+Scotland,2020-08-07,1
+South East,2020-08-07,6
+South West,2020-08-07,4
+Wales,2020-08-07,53
+East of England,2020-08-08,6
+England,2020-08-08,78
+London,2020-08-08,2
+Midlands,2020-08-08,12
+North East and Yorkshire,2020-08-08,8
+North West,2020-08-08,41
+Northern Ireland,2020-08-08,4
+Scotland,2020-08-08,0
+South East,2020-08-08,7
+South West,2020-08-08,2
+Wales,2020-08-08,55
+East of England,2020-08-09,3
+England,2020-08-09,53
+London,2020-08-09,10
+Midlands,2020-08-09,12
+North East and Yorkshire,2020-08-09,14
+North West,2020-08-09,10
+Northern Ireland,2020-08-09,2
+Scotland,2020-08-09,0
+South East,2020-08-09,4
+South West,2020-08-09,0
+Wales,2020-08-09,51
+East of England,2020-08-10,8
+England,2020-08-10,50
+London,2020-08-10,9
+Midlands,2020-08-10,4
+North East and Yorkshire,2020-08-10,10
+North West,2020-08-10,11
 Northern Ireland,2020-08-10,0
-Scotland,2020-08-10,29
-Wales,2020-08-10,12
-England,2020-08-11,1035
-Northern Ireland,2020-08-11,48
-Scotland,2020-08-11,52
-Wales,2020-08-11,13
-England,2020-08-12,925
-Northern Ireland,2020-08-12,29
-Scotland,2020-08-12,47
-Wales,2020-08-12,8
-England,2020-08-13,1059
-Northern Ireland,2020-08-13,8
-Scotland,2020-08-13,47
-Wales,2020-08-13,15
-England,2020-08-14,1284
-Northern Ireland,2020-08-14,74
-Scotland,2020-08-14,65
-Wales,2020-08-14,18
-England,2020-08-15,934
-Northern Ireland,2020-08-15,65
-Scotland,2020-08-15,51
-Wales,2020-08-15,27
-England,2020-08-16,952
-Northern Ireland,2020-08-16,27
-Scotland,2020-08-16,43
-Wales,2020-08-16,18
-England,2020-08-17,634
-Northern Ireland,2020-08-17,39
-Scotland,2020-08-17,26
-Wales,2020-08-17,14
-England,2020-08-18,975
-Northern Ireland,2020-08-18,41
-Scotland,2020-08-18,49
-Wales,2020-08-18,24
-England,2020-08-19,707
-Northern Ireland,2020-08-19,34
-Scotland,2020-08-19,50
-Wales,2020-08-19,21
-England,2020-08-20,1035
-Northern Ireland,2020-08-20,51
-Scotland,2020-08-20,77
-Wales,2020-08-20,19
+Scotland,2020-08-10,3
+South East,2020-08-10,4
+South West,2020-08-10,4
+Wales,2020-08-10,31
+East of England,2020-08-11,7
+England,2020-08-11,63
+London,2020-08-11,18
+Midlands,2020-08-11,6
+North East and Yorkshire,2020-08-11,14
+North West,2020-08-11,13
+Northern Ireland,2020-08-11,1
+Scotland,2020-08-11,1
+South East,2020-08-11,3
+South West,2020-08-11,2
+Wales,2020-08-11,47
+East of England,2020-08-12,1
+England,2020-08-12,51
+London,2020-08-12,5
+Midlands,2020-08-12,6
+North East and Yorkshire,2020-08-12,13
+North West,2020-08-12,9
+Northern Ireland,2020-08-12,1
+Scotland,2020-08-12,0
+South East,2020-08-12,13
+South West,2020-08-12,4
+Wales,2020-08-12,45
+East of England,2020-08-13,6
+England,2020-08-13,60
+London,2020-08-13,9
+Midlands,2020-08-13,16
+North East and Yorkshire,2020-08-13,6
+North West,2020-08-13,12
+Northern Ireland,2020-08-13,1
+Scotland,2020-08-13,
+South East,2020-08-13,10
+South West,2020-08-13,1
+Wales,2020-08-13,63
+East of England,2020-08-14,8
+England,2020-08-14,55
+London,2020-08-14,8
+Midlands,2020-08-14,13
+North East and Yorkshire,2020-08-14,8
+North West,2020-08-14,7
+Northern Ireland,2020-08-14,1
+Scotland,2020-08-14,
+South East,2020-08-14,9
+South West,2020-08-14,2
+Wales,2020-08-14,39

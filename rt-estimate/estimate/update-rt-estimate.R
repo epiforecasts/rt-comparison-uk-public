@@ -4,7 +4,7 @@
 library(EpiNow2)
 
 # Update delays
-source(here::here("rt-estimate", "estimate", "delays", "update-delays.R"))
+# source(here::here("rt-estimate", "estimate", "delays", "update-delays.R"))
 
 # Get delays and fresh UK data; set up cores
 source(here::here("rt-estimate", "estimate", "utils", "rt-data-defaults.R"))
@@ -17,12 +17,12 @@ source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 
 start <- Sys.time()
 run_rt_estimate(data = data,
-                count_variable = c("cases_blend", "cases_hosp", "cases_publish", "cases_test"),
+                count_variable = c("cases_hosp", "cases_test", "cases_publish"),
                 reporting_delay = cases_delay)
 run_rt_estimate(data = data,
-                count_variable = c("deaths_blend", "deaths_publish", "deaths_death"),
+                count_variable = c("deaths_publish", "deaths_death"),
                 reporting_delay = deaths_delay)
 end <- Sys.time()
 runtime <- end - start
-saveRDS(runtime, "all_model_runtime.rds")
+saveRDS(runtime, "rt-estimate/all_model_runtime.rds")
 

@@ -25,7 +25,7 @@ setDT(raw$region)
 raw$midlands <- raw$region[areaName %in% c("East Midlands", "West Midlands") ][, by = date, .(newDeaths28DaysByDeathDate = sum(newDeaths28DaysByDeathDate),
                                                                                                 newDeaths28DaysByPublishDate = NA,
                                                                                                 newCasesBySpecimenDate = sum(newCasesBySpecimenDate),
-                                                                                                newCasesByPublishDate = NA,
+                                                                                                newCasesByPublishDate = sum(newCasesByPublishDate),
                                                                                                 newAdmissions = NA,
                                                                                                 areaName = "Midlands")]
 
