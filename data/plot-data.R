@@ -46,6 +46,7 @@ data_ma <- standardised_data %>%
                                                      "cases_hosp" = "Hospital admissions",
                                                      "deaths_blend" = "Deaths"))
   
+# comment on data by date difference
 
 # National -------------------------------------------------------------
 
@@ -65,12 +66,12 @@ plot_ma <- data_ma %>%
 plot_zscore <- data_zscore %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(zscore), colour = `Data source`)) +
-  #geom_hline(yintercept = 0, linetype = 2) +
+  geom_hline(yintercept = 0, linetype = 2) +
   facet_wrap(~ region, nrow = 1, scales = "free_y") +
   cowplot::theme_cowplot(font_size = 11) +
   #scale_color_manual(values = colours) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  #theme(legend.position = "none") +
-  #theme(axis.text.x = element_blank()) +
+  theme(legend.position = "none") +
+  theme(axis.text.x = element_blank()) +
   labs(title = "Standardised raw counts", y = "z-score", x = "")
 
