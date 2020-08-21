@@ -1,0 +1,90 @@
+# Get UK data from which to estimate Rt
+require(magrittr)
+require(covidregionaldata) # install from Github for latest version
+require(data.table)
+
+data <- covidregionaldata::get_regional_data(country = "UK", localise_regions = FALSE)
+data <- data.table::setDT(data)
+
+# Reshape
+keep_cols <- c("date", "region_level_1", "ons_region_code",
+               "newCasesBySpecimenDate", "newCasesByPublishDate", "hosp_new", "deaths_new")
+data <- data[, ..keep_cols]
+
+new <- c("date", "region", "region_code", 
+         "cases_test", "cases_publish", "cases_hosp", "deaths")
+
+data <- data.table::setnames(data, old = keep_cols, new = new)
+
+# Check date sequence is complete
+if(length(seq.Date(from = min(data$date), to = max(data$date), by = 1)) 
+   != (length(data$date) / length(unique(data$region)))){
+  warning("Missing days in date sequence")
+}
+
+rm(keep_cols, new)
+
+# # Funky regional problems
+# 
+# cases_publish
+# Regions show 0s where there should be NAs for cases by publish date
+nations <- c("England", "Scotland", "Wales", "Northern Ireland")
+regions <- setdiff(unique(data$region), nations)
+data$cases_publish <- ifelse(data$region %in% regions, NA, data$cases_publish)
+
+rm(nations, regions)
+
+# Deaths
+# get_uk_data <- function() {
+#   
+#   api_endpoint <- 'https://api.coronavirus.data.gov.uk/v1/data?filters=areaType=region&structure={"name":"areaName","date":"date","newDeaths28DaysByPublishDate":"newDeaths28DaysByPublishDate"}'
+#   response <- httr::GET(api_endpoint)
+#   json_text <- httr::content(response, "text")
+#   dt <- jsonlite::fromJSON(json_text)
+#   results <- rbind(dt$data)
+#   
+#   
+#   uk_variables = list(
+#     "date", "areaName", "newDeaths28DaysByPublishDate")
+#   names(uk_variables) <- uk_variables
+#   
+#   results <- list()
+#   current_page <- 1
+#   repeat {
+#     response <- httr::VERB("GET", 
+#                            url = api_endpoint, 
+#                            query = list(
+#                              filters = list("areaType=region"), 
+#                              structure = jsonlite::toJSON(uk_variables, auto_unbox = TRUE, pretty = FALSE),
+#                              page = current_page), 
+#                            httr::timeout(60))
+#     # Convert response from binary to JSON:
+#     json_text <- httr::content(response, "text")
+#     dt <- jsonlite::fromJSON(json_text)
+#     results <- rbind(results, dt$data)
+#     
+#     if (is.null( dt$pagination$`next`)) {
+#       break
+#     }
+#     current_page <- current_page + 1
+#   }
+#   
+#   return(results)
+# }
+# 
+# # deaths: Deaths only download when queried separately from above (- check in covidregionaldata)
+# data_deaths <- get_uk_data()
+# 
+# data.table::setDT(data_deaths)
+# data.table::setnames(data_deaths, old = c("areaName", "newDeaths28DaysByDeathDate"), new = c("region", "deaths_region"))
+# data_deaths$date <- as.Date(data_deaths$date)
+# merge_deaths <- data_deaths[data, on = c("region", "date")]
+# 
+# 
+# remotes::install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
+# data <- ukcovid19::get_data(
+#   filters = "areaType=region", 
+#   structure = list(date = "date", areaName = "areaName", newDeaths28DaysByDeathDate = "newDeaths28DaysByDeathDate"),
+#   latest_by = "newCasesByPublishDate"
+# )
+# 

@@ -2,12 +2,9 @@
 
 require(data.table, quietly = TRUE)
 require(EpiNow2, quietly = TRUE)
+require(dplyr)
+require(tidyr)
 require(purrr)
-require(ggplot2)
-
-# Target date -------------------------------------------------------------
-
-creation_date <- Sys.Date()
 
 # Get national -------------------------------------------------------------
 
@@ -26,8 +23,12 @@ names(estimates) <- estimates
 # Get Rt only
 summary <- estimates %>%
   purrr::map(~ readr::read_csv(paste0(here::here("rt-estimate", "estimate"), "/", ., "/summary/rt.csv"))) %>%
-  purrr::map_dfr(~ .x, .id = "source")
+  purrr::map_dfr(~ .x, .id = "source") %>%
+  # Filter out "estimate based on partial data"
+  dplyr::filter(type == "estimate")
 
+max_date <- max(summary$date)
+saveRDS(max_date, file = "rt-estimate/max_data_date.rds")
 
 # Take ratios -------------------------------------------------------------
 

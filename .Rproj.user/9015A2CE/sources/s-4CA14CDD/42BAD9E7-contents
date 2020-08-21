@@ -12,6 +12,17 @@ source(here::here("rt-estimate", "estimate", "utils", "rt-data-defaults.R"))
 source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 
 
+
+# Data fix ----------------------------------------------------------------
+# Deaths data not available by region as of 19/08/2020
+# # Separate by region type
+nations <- c("England", "Scotland", "Wales", "Northern Ireland")
+regions <- setdiff(unique(data$region), nations)
+
+national_data <- data[region %in% nations]
+regional_data <- data[region %in% regions]
+
+
 # Run estimates -----------------------------------------------------------
 
 # start <- Sys.time()
@@ -22,11 +33,14 @@ source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 # runtime <- end - start
 # saveRDS(runtime, "one_model_runtime.rds")
 
+
+
 # List by name and type of delay required
-data_sources <- list("cases_test" = "cases_delay",
+data_sources <- list(#"cases_test" = "cases_delay",
                      "cases_publish" = "cases_delay",
                      "cases_hosp" = "cases_delay",
-                     "deaths" = "deaths_delay")
+                     "deaths" = "deaths_delay"
+                     )
 
 # Run all rt estimates
 purrr::walk(data_sources, ~ run_rt_estimate, data = data,

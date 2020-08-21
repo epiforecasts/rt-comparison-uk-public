@@ -5,17 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1681527340",
+    "hash" : "203106074",
     "id" : "41906489",
-    "lastKnownWriteTime" : 1597934581,
+    "lastKnownWriteTime" : 1597958861,
     "last_content_update" : -2147483648,
     "path" : "C:/Users/kaths/GitHub/rt-comparison-uk-public/compare/plot-ratios.R",
     "project_path" : "compare/plot-ratios.R",
     "properties" : {
-        "cursorPosition" : "39,73",
-        "scrollLine" : "22"
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
     },
-    "relative_order" : 3,
+    "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"

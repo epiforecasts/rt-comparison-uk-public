@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597963089277.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DCBF47E4",
+    "lastKnownWriteTime" : 1597964613,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/kaths/GitHub/rt-comparison-uk-public/data/get-uk-data.R",
+    "project_path" : "data/get-uk-data.R",
+    "properties" : {
+        "cursorPosition" : "28,72",
+        "scrollLine" : "3",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
