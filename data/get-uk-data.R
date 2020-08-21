@@ -51,7 +51,11 @@ data <- rbind(raw$region_else, raw$midlands, raw$ney, raw$nation)
 data <- merge(data, raw$nhsregion, by = c("date", "areaName"), all.x = TRUE)
 
 # Keep existing admissions data at nation level
-region_names <- readRDS("data/region_names.rds")
+nations <- c("England", "Scotland", "Wales", "Northern Ireland")
+nhsregions <- setdiff(data$region, nations)
+region_names <- list("nation" = nations, "nhsregion" = nhsregions)
+# saveRDS(region_names, "data/region_names.rds")
+
 data$newAdmissions <- ifelse(data$areaName %in% region_names$nation, 
                              data$newAdmissions.x, data$newAdmissions.y)
 data$newAdmissions.x <- NULL
@@ -66,17 +70,17 @@ data <- data.table::setnames(data, old, new)
 data$date <- as.Date(data$date)
 
 # Add column to identify regions vs nations
-data$region_type <- ifelse(data$region %in% region_names$nations, "nation", "region")
+data$region_type <- ifelse(data$region %in% region_names$nation, "nation", "region")
 
 # Add blended cases - publish date for nations, specimen date for regions
-data$cases_blend = ifelse(data$region %in% region_names$nations, data$cases_publish, data$cases_test)
+data$cases_blend = ifelse(data$region %in% region_names$nation, data$cases_publish, data$cases_test)
 
 # Add blended deaths - publish date for nations, date of death for regions
-data$deaths_blend = ifelse(data$region %in% region_names$nations, data$deaths_publish, data$deaths_death)
+data$deaths_blend = ifelse(data$region %in% region_names$nation, data$deaths_publish, data$deaths_death)
 
 # Regions show 0s where there should be NAs for data by publish date
-data$cases_publish <- ifelse(data$region %in% region_names$regions, NA, data$cases_publish)
-data$deaths_publish <- ifelse(data$region %in% region_names$regions, NA, data$deaths_publish)
+data$cases_publish <- ifelse(data$region %in% region_names$nhsregion, NA, data$cases_publish)
+data$deaths_publish <- ifelse(data$region %in% region_names$nhsregion, NA, data$deaths_publish)
 
 
 # Check date sequence is complete
@@ -85,7 +89,7 @@ if(length(seq.Date(from = min(data$date), to = max(data$date), by = 1))
   warning("Missing days in date sequence")
 }
 
-rm(old, new, structure, areaType, raw)
+rm(old, new, structure, areaType, raw, nations, nhsregions)
 
 
 

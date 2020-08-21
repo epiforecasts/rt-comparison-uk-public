@@ -10,6 +10,8 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
   
     count_variable = i
     
+    print(paste0("Estimates for ", i))
+    
   # Set up directories for models -------------------------------------------
 
   if(!dir.exists(here::here("rt-estimate", "estimate", 
@@ -30,7 +32,7 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
   
   data_select <- data_select[, .(date, region, confirm)]
   
-  data_select <- data_select[, .SD[date > (max(date) - lubridate::weeks(16))], by = region]
+  data_select <- data_select[, .SD[date <= (max(date) - lubridate::weeks(1))], by = region]
   
   data.table::setorder(data_select, date)
   
