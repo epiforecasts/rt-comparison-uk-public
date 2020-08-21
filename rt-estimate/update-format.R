@@ -11,7 +11,8 @@ require(purrr)
 estimates <- list("cases_test",
                   "cases_publish",
                   "cases_hosp",
-                  "deaths")
+                  "deaths_publish",
+                  "deaths_death")
 names(estimates) <- estimates
 
 # Get Rt only
@@ -58,10 +59,10 @@ summary_wide <- summary %>%
     hosp_deaths_l90 = lower_90_cases_hosp / lower_90_deaths,
     hosp_deaths_u90 = upper_90_cases_hosp / upper_90_deaths,
     hosp_deaths_l50 = lower_50_cases_hosp / lower_50_deaths,
-    hosp_deaths_u50 = upper_50_cases_hosp / upper_50_deaths,
-    # Drop duplicate date/regions with missing values for all (?)
-    missing = ifelse(is.na(caseb_hosp_med), TRUE, FALSE)) %>%
-  dplyr::filter(missing == FALSE)
+    hosp_deaths_u50 = upper_50_cases_hosp / upper_50_deaths)#,
+  #   # Drop duplicate date/regions with missing values for all (?)
+  #   missing = ifelse(is.na(caseb_deaths_med), TRUE, FALSE)) %>%
+  # dplyr::filter(missing == FALSE)
 
 if(length(seq.Date(from = min(summary_wide$date), to = max(summary_wide$date), by = 1)) 
    != (length(summary_wide$date) / length(unique(summary_wide$region)))){
