@@ -1,7 +1,7 @@
 # Get UK data from which to estimate Rt
-require(magrittr)
-require(data.table)
-# remotes::install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
+library(magrittr)
+library(data.table)
+library(ukcovid19) # remotes::install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
 
 # Set up query
 structure <- list("date", "areaName", 

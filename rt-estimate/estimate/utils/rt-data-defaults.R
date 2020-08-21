@@ -1,7 +1,7 @@
 # Packages -----------------------------------------------------------------
-require(EpiNow2)
-require(data.table)
-require(future)
+library(EpiNow2)
+library(data.table)
+library(future)
 
 # Update delays -----------------------------------------------------------
 

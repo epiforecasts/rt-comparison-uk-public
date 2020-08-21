@@ -1,9 +1,15 @@
-require(EpiNow2, quietly = TRUE)
-require(lubridate, quietly = TRUE)
+library(EpiNow2, quietly = TRUE)
+library(lubridate, quietly = TRUE)
+library(here)
+library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
 run_rt_estimate <- function(data, count_variable, reporting_delay) {
   
+  for(i in count_variable){
+  
+    count_variable = i
+    
   # Set up directories for models -------------------------------------------
 
   if(!dir.exists(here::here("rt-estimate", "estimate", 
@@ -18,30 +24,29 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
   
   # Format for epinow2 ------------------------------------------------------
 
-  data <- setDT(data)
+  data_select <- setDT(data)
   
-  data <- data.table::setnames(data, old = count_variable, new = "confirm")
+  data_select <- data.table::setnames(data_select, old = count_variable, new = "confirm")
   
-  data <- data[, .(date, region, confirm)]
+  data_select <- data_select[, .(date, region, confirm)]
   
-  data <- data[, .SD[date >= (max(date) - lubridate::weeks(12))], by = region]
+  data_select <- data_select[, .SD[date > (max(date) - lubridate::weeks(16))], by = region]
   
-  data.table::setorder(data, date)
+  data.table::setorder(data_select, date)
   
   # Check full date sequence
-  if(length(data$date) != 
-     (length(seq.Date(from = min(data$date), to = max(data$date), by = 1)) 
-        * length(unique(data$region)))) {
+  if(length(data_select$date) != 
+     (length(seq.Date(from = min(data_select$date), to = max(data_select$date), by = 1)) 
+        * length(unique(data_select$region)))) {
     return(warning("Missing days in date sequence"))
   }
   
   
   # Set up common settings --------------------------------------------------
   
-  start <- Sys.time()
   EpiNow2::regional_epinow(target_folder = targets,
                            summary_dir = summary,
-                           reported_cases = data,
+                           reported_cases = data_select,
                            delays = list(incubation_period, reporting_delay),
                            generation_time = generation_time,
                            horizon = 0,
@@ -52,7 +57,8 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
                            cores = no_cores,
                            chains = ifelse(no_cores <= 2, 2, no_cores),
                            return_estimates = FALSE, verbose = TRUE)
-  end <- Sys.time()
 
   }
+}
+
 
