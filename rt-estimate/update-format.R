@@ -39,6 +39,8 @@ summary_wide <- summary %>%
   tidyr::pivot_wider(names_from = source, 
                      values_from = c("median","lower_90", "upper_90", 
                                      "lower_50", "upper_50"))  %>%
+  # Blend data depending on region (case by test date, death by death date)
+  #   or nation (case by report date, death by report date)
   dplyr::mutate(region_type = ifelse(region %in% nations, "nation", "region"),
                 # Cases blend
                 median_cases_blend = ifelse(region %in% nations, median_cases_publish, median_cases_test),
