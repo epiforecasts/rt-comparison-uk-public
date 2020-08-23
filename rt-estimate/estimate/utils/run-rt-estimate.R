@@ -32,7 +32,7 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
   
   data_select <- data_select[, .(date, region, confirm)]
   
-  data_select <- data_select[, .SD[date <= (max(date) - lubridate::weeks(1))], by = region]
+  data_select <- data_select[, .SD[date <= (max(date) - lubridate::days(5))], by = region] # 21/08/20: 1 week
   
   data.table::setorder(data_select, date)
   

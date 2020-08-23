@@ -11,10 +11,15 @@ summary_ratios <- summary_wide %>%
                 caseb_deathb_med, caseb_deathb_l90, caseb_deathb_u90, caseb_deathb_l50, caseb_deathb_u50,
                 hosp_deathb_med, hosp_deathb_l90, hosp_deathb_u90, hosp_deathb_l50, hosp_deathb_u50)
 
-region_names <- readRDS("data/region_names.rds")
+# Get plotting colours
+colours <- readRDS("colours.rds")
 
+
+# Scale limits
+scale_min <- 0.75
+scale_max <- 1.25
+ 
 # Plot ratios -------------------------------------------------------------
-facet_rows <- 1
 
 # Cases on deaths
 plot_ratio_caseb_deathb <- summary_ratios %>%
@@ -26,37 +31,15 @@ plot_ratio_caseb_deathb <- summary_ratios %>%
   geom_line(aes(y = caseb_deathb_l50), alpha = 0.1) +
   geom_line(aes(y = caseb_deathb_u50), alpha = 0.1) +
   geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(-0.5,3)) +
-  #scale_color_manual(values = colours) +
-  #scale_fill_manual(values = colours) +
-  facet_wrap(~ region, nrow = facet_rows) +
+  coord_cartesian(ylim = c(scale_min, scale_max)) +
+  scale_color_manual(values = colours) +
+  scale_fill_manual(values = colours) +
+  facet_wrap("region", nrow = 1) +
   cowplot::theme_cowplot(font_size = 11) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(strip.text.x = element_blank()) +
-  theme(axis.text.x = element_blank()) +
+  theme(strip.text.x = element_blank()) + # Remove dates
+  theme(axis.text.x = element_blank()) + # Remove facet region name
   labs(title = "Rt(all cases) / Rt(deaths)", 
-       y = "Ratio", x = "")
-
-
-# Cases by report date on hospital admissions
-plot_ratio_caseb_hosp <- summary_ratios %>%
-  ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = caseb_hosp_l50, ymax = caseb_hosp_u50),
-              alpha = 0.2) +
-  geom_ribbon(aes(ymin = caseb_hosp_l90, ymax = caseb_hosp_u90),
-              alpha = 0.1, size = 0.2) +
-  geom_line(aes(y = caseb_hosp_l50), alpha = 0.1) +
-  geom_line(aes(y = caseb_hosp_u50), alpha = 0.1) +
-  geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(-0.5,3)) +
-  #scale_color_manual(values = colours) +
-  #scale_fill_manual(values = colours) +
-  facet_wrap(~ region, nrow = facet_rows) +
-  cowplot::theme_cowplot(font_size = 11) +
-  theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(strip.text.x = element_blank()) +
-  theme(axis.text.x = element_blank()) +
-  labs(title = "Rt(all cases) / Rt(admissions)", 
        y = "Ratio", x = "")
 
 # Hospital admissions on deaths
@@ -69,16 +52,39 @@ plot_ratio_hosp_deathb <- summary_ratios %>%
   geom_line(aes(y = hosp_deathb_l50), alpha = 0.1) +
   geom_line(aes(y = hosp_deathb_u50), alpha = 0.1) +
   geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(-0.5,3)) +
-  #scale_color_manual(values = colours) +
-  #scale_fill_manual(values = colours) +
-  facet_wrap(~ region, nrow = facet_rows) +
+  coord_cartesian(ylim = c(scale_min, scale_max)) +
+  scale_color_manual(values = colours) +
+  scale_fill_manual(values = colours) +
+  facet_wrap("region", nrow = 1) +
+  cowplot::theme_cowplot(font_size = 11) +
+  theme(panel.spacing.x = unit(0.5, "cm")) +
+  theme(strip.text.x = element_blank()) + 
+  theme(axis.text.x = element_blank()) + 
+  labs(title = "Rt(hospital admissions) / Rt(deaths)", 
+       y = "Ratio", x = "")
+
+# Cases by report date on hospital admissions
+plot_ratio_caseb_hosp <- summary_ratios %>%
+  ggplot(aes(x = date)) +
+  geom_ribbon(aes(ymin = caseb_hosp_l50, ymax = caseb_hosp_u50),
+              alpha = 0.2) +
+  geom_ribbon(aes(ymin = caseb_hosp_l90, ymax = caseb_hosp_u90),
+              alpha = 0.1, size = 0.2) +
+  geom_line(aes(y = caseb_hosp_l50), alpha = 0.1) +
+  geom_line(aes(y = caseb_hosp_u50), alpha = 0.1) +
+  geom_hline(yintercept = 1, linetype = 2) +
+  coord_cartesian(ylim = c(scale_min, scale_max)) +
+  scale_color_manual(values = colours) +
+  scale_fill_manual(values = colours) +
+  facet_wrap("region", nrow = 1) +
   cowplot::theme_cowplot(font_size = 11) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) +
-  theme(axis.text.x = element_blank()) +
-  labs(title = "Rt(hospital admissions) / Rt(deaths)", 
+  # theme(axis.text.x = element_blank()) + # Keep dates - bottom-most plot in grid
+  labs(title = "Rt(all cases) / Rt(hospital admissions)", 
        y = "Ratio", x = "")
+
+
 
 
 

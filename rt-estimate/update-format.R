@@ -1,18 +1,16 @@
 # Packages ----------------------------------------------------------------
-
-require(data.table, quietly = TRUE)
-require(EpiNow2, quietly = TRUE)
-require(dplyr)
-require(tidyr)
-require(purrr)
+library(magrittr)
+library(data.table, quietly = TRUE)
+library(EpiNow2, quietly = TRUE)
+library(dplyr)
+library(tidyr)
+library(purrr)
 
 # Get national -------------------------------------------------------------
 
-estimates <- list("cases_test",
-                  "cases_publish",
+estimates <- list("cases_blend",
                   "cases_hosp",
-                  "deaths_publish",
-                  "deaths_death")
+                  "deaths_blend") # deaths_death deaths_publish cases_publish cases_test
 names(estimates) <- estimates
 
 # Get Rt only
@@ -22,38 +20,22 @@ summary <- estimates %>%
   # Filter out "estimate based on partial data"
   dplyr::filter(type == "estimate")
 
+# Factor regions for consistent plot alignment
+region_names <- readRDS("data/region_names.rds")
+summary$region = factor(summary$region, 
+                        levels = region_names$region_factor)
+
 saveRDS(summary, "rt-estimate/summary.rds")
 
 # Save max date for use in plotting
 max_date <- max(summary$date)
 saveRDS(max_date, file = "rt-estimate/max_data_date.rds")
 
-# Identify regions vs nations
-nations <- c("England", "Scotland", "Wales", "Northern Ireland")
-all_regions <- list("nation" = factor(nations, levels = c("England", "Scotland", "Wales", "Northern Ireland")), 
-                    "region" = setdiff(unique(summary$region), nations))
-saveRDS(all_regions, "data/region_names.rds")
 
 # Take ratios -------------------------------------------------------------
 summary_wide <- summary %>%
   tidyr::pivot_wider(names_from = source, 
-                     values_from = c("median","lower_90", "upper_90", 
-                                     "lower_50", "upper_50"))  %>%
-  # Blend data depending on region (case by test date, death by death date)
-  #   or nation (case by report date, death by report date)
-  dplyr::mutate(region_type = ifelse(region %in% nations, "nation", "region"),
-                # Cases blend
-                median_cases_blend = ifelse(region %in% nations, median_cases_publish, median_cases_test),
-                lower_90_cases_blend = ifelse(region %in% nations, lower_90_cases_publish, lower_90_cases_test),
-                upper_90_cases_blend = ifelse(region %in% nations, upper_90_cases_publish, upper_90_cases_test),
-                lower_50_cases_blend = ifelse(region %in% nations, lower_50_cases_publish, lower_50_cases_test),
-                upper_50_cases_blend = ifelse(region %in% nations, upper_50_cases_publish, upper_50_cases_test),
-                # Deaths blend
-                median_deaths_blend = ifelse(region %in% nations, median_deaths_publish, median_deaths_death),
-                lower_90_deaths_blend = ifelse(region %in% nations, lower_90_deaths_publish, lower_90_deaths_death),
-                upper_90_deaths_blend = ifelse(region %in% nations, upper_90_deaths_publish, upper_90_deaths_death),
-                lower_50_deaths_blend = ifelse(region %in% nations, lower_50_deaths_publish, lower_50_deaths_death),
-                upper_50_deaths_blend = ifelse(region %in% nations, upper_50_deaths_publish, upper_50_deaths_death)) %>%
+                     values_from = c("median","lower_90", "upper_90", "lower_50", "upper_50"))  %>%
   dplyr::mutate(
     # cases_blend / deaths
     caseb_deathb_med = median_cases_blend / median_deaths_blend,
@@ -74,9 +56,22 @@ summary_wide <- summary %>%
     hosp_deathb_l50 = lower_50_cases_hosp / lower_50_deaths_blend,
     hosp_deathb_u50 = upper_50_cases_hosp / upper_50_deaths_blend)
 
+# Filter to where all ratios are available (ie max date of deaths as that is longest delay)
+estimate_dates <- dplyr::group_by(summary, source, region) %>%
+  dplyr::summarise(max_date = max(date),
+                   min_date = min(date),
+                   .groups = "drop_last")
+
+# Save for use later in plot-data.R
+saveRDS(max(estimate_dates$min_date), "rt-estimate/earliest_estimate.rds")
+saveRDS(min(estimate_dates$max_date), "rt-estimate/latest_estimate.rds")
+
+summary_wide <- summary_wide %>%
+  dplyr::filter(date >= max(estimate_dates$min_date) & date <= min(estimate_dates$max_date))
+
 if(length(seq.Date(from = min(summary_wide$date), to = max(summary_wide$date), by = 1)) 
-   != (length(summary_wide$date) / length(unique(summary_wide$region)))){
-  warning("Missing or duplicate days in date sequence")
+   != (length(summary_wide$date) / length(unique(summary_wide$region)))) {
+  warning("Not all regions have the same sequence of dates; or missing/duplicate days in sequence")
 }
 
 saveRDS(summary_wide, "rt-estimate/summary_wide.rds")

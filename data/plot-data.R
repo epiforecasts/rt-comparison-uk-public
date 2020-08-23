@@ -1,17 +1,25 @@
 require(dplyr)
 require(ggplot2)
 
-# Get max date to filter estimates to
-max_date <- readRDS("rt-estimate/max_data_date.rds")
-
 # Get count data ----------------------------------------------------------
-source("data/get-uk-data.R")
+# source("data/get-uk-data.R")
+data <- readRDS("data/200823.rds")
+
+# Get region names
+region_names <- readRDS("data/region_names.rds")
+
+# Get Rt estimate dates
+min_date <- readRDS("rt-estimate/earliest_estimate.rds")
+max_date <- readRDS("rt-estimate/latest_estimate.rds")
+
+# Get plotting colours
+colours <- readRDS("colours.rds")
 
 # Standardise ----------------------------------------------------------------
 
 standardised_data <- data %>%
   # Filter before data truncation (where Rt is "estimate" not "based on partial data")
-  dplyr::filter(date >= (max(date) - lubridate::weeks(12)) & date <= max_date) %>%
+  dplyr::filter(date >= min_date & date <= max_date) %>%
   # Standardise by region
   dplyr::group_by(region) %>%
   #  - z-scores
@@ -22,12 +30,16 @@ standardised_data <- data %>%
                 ma_cases_blend = forecast::ma(cases_blend, order = 7), 
                 ma_cases_hosp = forecast::ma(cases_hosp, order = 7), 
                 ma_deaths_blend = forecast::ma(deaths_blend, order = 7)) %>% 
-  dplyr::ungroup() %>%
-  dplyr::mutate(region = factor(region, levels = c("England", "Scotland", "Wales", "Northern Ireland",
-                                                   regions)))
+  dplyr::ungroup() 
+
+# Factor regions for consistent plot alignment
+region_names <- readRDS("data/region_names.rds")
+standardised_data$region = factor(standardised_data$region, 
+                               levels = region_names$region_factor)
+
 
 # Plot-ready z-scores ----------------------------------------------------------------
-data_zcore <- standardised_data %>%
+data_zscore <- standardised_data %>%
   dplyr::select(date, region, region_type, dplyr::starts_with("z")) %>%
   tidyr::pivot_longer(cols = dplyr::starts_with("z"), names_to = "variable", values_to = "zscore") %>%
   dplyr::mutate(variable = stringr::str_remove_all(variable, "^z")) %>%
@@ -54,22 +66,22 @@ data_ma <- standardised_data %>%
 plot_ma <- data_ma %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
-  facet_wrap(~ region, nrow = 1, scales = "free_y") +
+  facet_wrap("region", nrow = 1, scales = "free_y") +
   cowplot::theme_cowplot(font_size = 11) +
-  #scale_color_manual(values = colours) +
+  scale_color_manual(values = colours) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  #theme(legend.position = "none") +
-  #theme(axis.text.x = element_blank()) +
-  labs(title = "Smoothed counts", y = "Count, 7-day moving average", x = "")
+  theme(legend.position = "none") +
+  theme(axis.text.x = element_blank()) +
+  labs(title = "Smoothed counts", y = "Centred 7-day MA", x = "")
 
 # Plot zscore
 plot_zscore <- data_zscore %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(zscore), colour = `Data source`)) +
   geom_hline(yintercept = 0, linetype = 2) +
-  facet_wrap(~ region, nrow = 1, scales = "free_y") +
+  facet_wrap("region", nrow = 1, scales = "free_y") +
   cowplot::theme_cowplot(font_size = 11) +
-  #scale_color_manual(values = colours) +
+  scale_color_manual(values = colours) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(legend.position = "none") +
   theme(axis.text.x = element_blank()) +
