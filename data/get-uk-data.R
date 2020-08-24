@@ -70,14 +70,14 @@ data$region_type <- ifelse(data$areaName %in% region_names$nation, "nation", "re
 # Cleaning ----------------------------------------------------------------
 
 # Rename
-data.table::setDT(data)
+data <- data.table::as.data.table(data)
 old <- unlist(structure)
 new <- c("date", "region", "deaths_death", "deaths_publish",  "cases_test", "cases_publish", "cases_hosp")
 data <- data.table::setnames(data, old, new)
 
 # Set date sequence to start from 8th March (arbitrary)
 data$date <- lubridate::ymd(data$date)
-data <- data[, .SD[date >= lubridate::ymd("2020-03-08")]]
+data <- data[, .SD[date >= lubridate::ymd("2020-02-01")]]
 
 # Add blended cases - publish date for nations, specimen date for regions
 data$cases_blend = ifelse(data$region %in% region_names$nation, data$cases_publish, data$cases_test)
