@@ -6,33 +6,30 @@ library(data.table)
 # Set up running a single Rt forecast -------------------------------------
 run_rt_estimate <- function(data, count_variable, reporting_delay) {
   
-  for(i in count_variable){
-  
-    count_variable = i
+  for(i in 1:length(count_variable)){
     
-    print(paste0("Estimates for ", i))
+    print(paste0("Estimates for ", count_variable[i]))
     
   # Set up directories for models -------------------------------------------
 
   if(!dir.exists(here::here("rt-estimate", "estimate", 
-                            count_variable))) {
+                            count_variable[i]))) {
     dir.create(here::here("rt-estimate", "estimate", 
-                          count_variable))
+                          count_variable[i]))
   }
   
-  
-  targets <- paste0("rt-estimate/estimate/", count_variable, "/region")
-  summary <- paste0("rt-estimate/estimate/", count_variable, "/summary")
+  targets <- paste0("rt-estimate/estimate/", count_variable[i], "/region")
+  summary <- paste0("rt-estimate/estimate/", count_variable[i], "/summary")
   
   # Format for epinow2 ------------------------------------------------------
 
-  data_select <- setDT(data)
+  data_select <- data.table::as.data.table(data)
   
-  data_select <- data.table::setnames(data_select, old = count_variable, new = "confirm")
+  data_select <- data.table::setnames(data_select, old = count_variable[i], new = "confirm")
   
   data_select <- data_select[, .(date, region, confirm)]
   
-  data_select <- data_select[, .SD[date <= (max(date) - lubridate::days(5))], by = region] # 21/08/20: 1 week
+  data_select <- data_select[, .SD[date <= (max(date) - lubridate::days(5))], by = region]
   
   data.table::setorder(data_select, date)
   

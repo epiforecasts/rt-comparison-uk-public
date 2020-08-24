@@ -2,18 +2,18 @@ require(dplyr)
 require(ggplot2)
 
 # Get count data ----------------------------------------------------------
-# source("data/get-uk-data.R")
-data <- readRDS("data/200823.rds")
+source("data/get-uk-data.R")
+# data <- readRDS("data/200823.rds")
 
 # Get region names
 region_names <- readRDS("data/region_names.rds")
 
 # Get Rt estimate dates
-min_date <- readRDS("rt-estimate/earliest_estimate.rds")
-max_date <- readRDS("rt-estimate/latest_estimate.rds")
+min_date <- readRDS("utils/earliest_estimate.rds")
+max_date <- readRDS("utils/latest_estimate.rds")
 
 # Get plotting colours
-colours <- readRDS("colours.rds")
+colours <- readRDS("utils/colours.rds")
 
 # Standardise ----------------------------------------------------------------
 
