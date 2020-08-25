@@ -11,13 +11,14 @@ summary_ratios <- summary_wide %>%
                 caseb_deathb_med, caseb_deathb_l90, caseb_deathb_u90, caseb_deathb_l50, caseb_deathb_u50,
                 hosp_deathb_med, hosp_deathb_l90, hosp_deathb_u90, hosp_deathb_l50, hosp_deathb_u50)
 
-# Get plotting colours
-colours <- readRDS("colours.rds")
+
+# Get region names and plotting colours
+source("utils/utils.R")
 
 
 # Scale limits
-scale_min <- 0.75
-scale_max <- 1.25
+scale_min <- 0.5
+scale_max <- 1.5
  
 # Plot ratios -------------------------------------------------------------
 

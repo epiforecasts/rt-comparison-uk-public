@@ -13,9 +13,13 @@ summary <- summary %>%
                                                    "deaths_blend" = "Deaths"))
               
 
-# get colours
-colours <- readRDS("colours.rds")
 
+# Get region names and plotting colours
+source("utils/utils.R")
+
+# Set y-axis
+scale_min <- 0
+scale_max <- 3
 
 # Plot
 plot_rt <- summary %>%
@@ -25,6 +29,7 @@ plot_rt <- summary %>%
   #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
   #            alpha = 0.1, size = 0.2) +
   geom_hline(yintercept = 1, linetype = 2) +
+  coord_cartesian(ylim = c(scale_min, scale_max)) +
   scale_color_manual(values = colours) +
   scale_fill_manual(values = colours) +
   facet_wrap("region", nrow = 1) +

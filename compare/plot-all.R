@@ -1,9 +1,11 @@
 # Merge plots
-source("data/plot-data.R")
-source("rt-estimate/plot-rt.R")
+source("compare/plot-data.R")
+source("compare/plot-rt.R")
 source("compare/plot-ratios.R")
 
-region_names <- readRDS("data/region_names.rds")
+
+# Get region names and plotting colours
+source("utils/utils.R")
 
 # National ----------------------------------------------------------------
 
@@ -11,26 +13,21 @@ region_names <- readRDS("data/region_names.rds")
 
 # Raw data: moving average
 plot_ma$data <- plot_ma$data %>%
-  dplyr::filter(region %in% region_names$nations) %>%
-  dplyr::mutate(region = factor(region, levels = c("England", "Scotland", "Wales", "Northern Ireland")))
+  dplyr::filter(region %in% region_names$nations) 
 
 # Rt estimates
 plot_rt$data <- plot_rt$data %>%
-  dplyr::filter(region %in% region_names$nations) %>%
-  dplyr::mutate(region = factor(region, levels = c("England", "Scotland", "Wales", "Northern Ireland")))
+  dplyr::filter(region %in% region_names$nations) 
 
 # Ratios
 plot_ratio_caseb_deathb$data <- plot_ratio_caseb_deathb$data %>%
-  dplyr::filter(region %in% region_names$nations) %>%
-  dplyr::mutate(region = factor(region, levels = c("England", "Scotland", "Wales", "Northern Ireland")))
+  dplyr::filter(region %in% region_names$nations) 
 
 plot_ratio_caseb_hosp$data <- plot_ratio_caseb_hosp$data %>%
-  dplyr::filter(region %in% region_names$nations) %>%
-  dplyr::mutate(region = factor(region, levels = c("England", "Scotland", "Wales", "Northern Ireland")))
+  dplyr::filter(region %in% region_names$nations) 
 
 plot_ratio_hosp_deathb$data <- plot_ratio_hosp_deathb$data %>%
-  dplyr::filter(region %in% region_names$nations) %>%
-  dplyr::mutate(region = factor(region, levels = c("England", "Scotland", "Wales", "Northern Ireland")))
+  dplyr::filter(region %in% region_names$nations) 
 
 # Plot all
 plot_national <- plot_ma + 

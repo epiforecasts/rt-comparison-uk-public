@@ -15,21 +15,17 @@ names(estimates) <- estimates
 
 # Get Rt only
 summary <- estimates %>%
-  purrr::map(~ readr::read_csv(paste0(here::here("rt-estimate", "estimate"), "/", ., "/summary/rt.csv"))) %>%
+  purrr::map(~ readr::read_csv(paste0("rt-estimate/estimate/", ., "/summary/rt.csv"))) %>%
   purrr::map_dfr(~ .x, .id = "source") %>%
   # Filter out "estimate based on partial data"
   dplyr::filter(type == "estimate")
 
 # Factor regions for consistent plot alignment
-region_names <- readRDS("data/region_names.rds")
+source("utils/utils.R")
 summary$region = factor(summary$region, 
                         levels = region_names$region_factor)
 
 saveRDS(summary, "rt-estimate/summary.rds")
-
-# Save max date for use in plotting
-max_date <- max(summary$date)
-saveRDS(max_date, file = "rt-estimate/max_data_date.rds")
 
 
 # Take ratios -------------------------------------------------------------
@@ -63,8 +59,8 @@ estimate_dates <- dplyr::group_by(summary, source, region) %>%
                    .groups = "drop_last")
 
 # Save for use later in plot-data.R
-saveRDS(max(estimate_dates$min_date), "rt-estimate/earliest_estimate.rds")
-saveRDS(min(estimate_dates$max_date), "rt-estimate/latest_estimate.rds")
+saveRDS(max(estimate_dates$min_date), "utils/earliest_estimate.rds")
+saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
 
 summary_wide <- summary_wide %>%
   dplyr::filter(date >= max(estimate_dates$min_date) & date <= min(estimate_dates$max_date))

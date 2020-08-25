@@ -12,7 +12,7 @@ colours <- c(
   "deaths_blend" = "#d95f02"
   )
 
-saveRDS(colours, "colours.rds")
+# saveRDS(colours, "colours.rds")
 
 
 # Order nations and regions
@@ -31,7 +31,7 @@ region_names <- list(
                            levels = c(nation_order, nhsregion_order))
   )
 
-saveRDS(region_names, "data/region_names.rds")
+# saveRDS(region_names, "data/region_names.rds")
  
 
 

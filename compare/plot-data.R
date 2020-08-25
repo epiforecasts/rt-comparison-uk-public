@@ -5,15 +5,12 @@ require(ggplot2)
 source("data/get-uk-data.R")
 # data <- readRDS("data/200823.rds")
 
-# Get region names
-region_names <- readRDS("data/region_names.rds")
-
 # Get Rt estimate dates
 min_date <- readRDS("utils/earliest_estimate.rds")
 max_date <- readRDS("utils/latest_estimate.rds")
 
-# Get plotting colours
-colours <- readRDS("utils/colours.rds")
+# Get region names and plotting colours
+source("utils/utils.R")
 
 # Standardise ----------------------------------------------------------------
 
@@ -33,7 +30,6 @@ standardised_data <- data %>%
   dplyr::ungroup() 
 
 # Factor regions for consistent plot alignment
-region_names <- readRDS("data/region_names.rds")
 standardised_data$region = factor(standardised_data$region, 
                                levels = region_names$region_factor)
 
