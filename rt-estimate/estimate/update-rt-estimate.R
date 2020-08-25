@@ -17,9 +17,9 @@ source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 
 start <- Sys.time()
 
-# run_rt_estimate(data = data,
-#                 count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
-#                 reporting_delay = deaths_delay)
+run_rt_estimate(data = data,
+                count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
+                reporting_delay = deaths_delay)
 run_rt_estimate(data = data,
                 count_variable = c("cases_blend", "cases_hosp"), #  "cases_test", "cases_publish"),
                 reporting_delay = cases_delay)
