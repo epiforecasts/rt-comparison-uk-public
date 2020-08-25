@@ -26,5 +26,5 @@ run_rt_estimate(data = data,
 
 end <- Sys.time()
 (runtime <- end - start)
-# saveRDS(runtime, "rt-estimate/three_var_runtime.rds")
+saveRDS(runtime, "rt-estimate/three_var_runtime.rds")
 
