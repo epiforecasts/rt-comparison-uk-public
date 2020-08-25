@@ -1,0 +1,1814 @@
+region,date,type,median,lower_90,upper_90,lower_50,upper_50
+England,2020-02-20,estimate,1,0,2,0,1
+England,2020-02-21,estimate,1,0,3,0,1
+England,2020-02-22,estimate,1,0,3,0,1
+England,2020-02-23,estimate,1,0,3,0,1
+England,2020-02-24,estimate,1,0,3,0,1
+England,2020-02-25,estimate,2,0,4,1,2
+England,2020-02-26,estimate,2,0,5,0,2
+England,2020-02-27,estimate,3,0,6,1,3
+England,2020-02-28,estimate,4,0,8,1,4
+England,2020-02-29,estimate,5,1,10,3,6
+England,2020-03-01,estimate,6,2,11,2,6
+England,2020-03-02,estimate,7,1,11,3,7
+England,2020-03-03,estimate,11,3,17,7,12
+England,2020-03-04,estimate,14,6,24,9,16
+England,2020-03-05,estimate,22,9,35,16,26
+England,2020-03-06,estimate,30,13,47,21,34
+England,2020-03-07,estimate,38,16,59,26,43
+England,2020-03-08,estimate,42,18,64,25,44
+England,2020-03-09,estimate,42,18,67,27,46
+England,2020-03-10,estimate,69,31,104,52,80
+England,2020-03-11,estimate,86,45,131,66,101
+England,2020-03-12,estimate,126,59,186,92,142
+England,2020-03-13,estimate,165,91,254,126,191
+England,2020-03-14,estimate,201,105,304,141,221
+England,2020-03-15,estimate,215,107,319,163,250
+England,2020-03-16,estimate,207,112,316,157,239
+England,2020-03-17,estimate,314,188,482,247,367
+England,2020-03-18,estimate,378,196,574,278,425
+England,2020-03-19,estimate,537,268,790,395,602
+England,2020-03-20,estimate,666,362,998,536,802
+England,2020-03-21,estimate,789,420,1170,560,886
+England,2020-03-22,estimate,809,431,1199,647,954
+England,2020-03-23,estimate,752,384,1119,556,864
+England,2020-03-24,estimate,1085,614,1656,835,1251
+England,2020-03-25,estimate,1255,748,1918,928,1407
+England,2020-03-26,estimate,1717,962,2531,1304,1945
+England,2020-03-27,estimate,2055,1142,3148,1613,2408
+England,2020-03-28,estimate,2252,1191,3374,1697,2541
+England,2020-03-29,estimate,2150,1132,3173,1642,2449
+England,2020-03-30,estimate,1886,1080,2900,1441,2136
+England,2020-03-31,estimate,2638,1329,3820,2076,3063
+England,2020-04-01,estimate,2787,1555,4138,2042,3085
+England,2020-04-02,estimate,3518,1866,5228,2722,4057
+England,2020-04-03,estimate,3896,1962,5650,2995,4430
+England,2020-04-04,estimate,3916,2055,5866,3024,4530
+England,2020-04-05,estimate,3573,1724,5249,2768,4122
+England,2020-04-06,estimate,2922,1611,4314,2308,3440
+England,2020-04-07,estimate,3708,2164,5530,2747,4123
+England,2020-04-08,estimate,3688,1886,5352,2839,4308
+England,2020-04-09,estimate,4300,2500,6631,3112,4783
+England,2020-04-10,estimate,4516,2333,6655,3397,5121
+England,2020-04-11,estimate,4368,2370,6439,3301,4978
+England,2020-04-12,estimate,3741,2235,5607,2770,4103
+England,2020-04-13,estimate,2900,1542,4285,2160,3299
+England,2020-04-14,estimate,3538,1945,5238,2610,3968
+England,2020-04-15,estimate,3384,1849,4900,2604,3860
+England,2020-04-16,estimate,3871,2086,5766,2980,4464
+England,2020-04-17,estimate,3871,2298,6003,2920,4398
+England,2020-04-18,estimate,3619,2084,5523,2790,4096
+England,2020-04-19,estimate,3066,1706,4629,2338,3531
+England,2020-04-20,estimate,2324,1293,3532,1836,2746
+England,2020-04-21,estimate,2768,1541,4227,2168,3234
+England,2020-04-22,estimate,2668,1304,3819,2032,3000
+England,2020-04-23,estimate,2986,1699,4412,2254,3358
+England,2020-04-24,estimate,3090,1688,4569,2504,3681
+England,2020-04-25,estimate,2846,1589,4346,2206,3274
+England,2020-04-26,estimate,2328,1374,3613,1768,2676
+England,2020-04-27,estimate,1806,954,2721,1408,2125
+England,2020-04-28,estimate,2143,1226,3224,1673,2468
+England,2020-04-29,estimate,2035,1138,3062,1543,2310
+England,2020-04-30,estimate,2328,1345,3530,1821,2675
+England,2020-05-01,estimate,2306,1233,3428,1641,2550
+England,2020-05-02,estimate,2160,1204,3225,1690,2525
+England,2020-05-03,estimate,1762,963,2627,1270,1967
+England,2020-05-04,estimate,1376,781,2054,1037,1557
+England,2020-05-05,estimate,1628,906,2444,1267,1867
+England,2020-05-06,estimate,1529,821,2273,1180,1763
+England,2020-05-07,estimate,1702,928,2558,1306,1968
+England,2020-05-08,estimate,1714,953,2575,1341,1990
+England,2020-05-09,estimate,1578,822,2383,1219,1836
+England,2020-05-10,estimate,1327,735,1994,1024,1538
+England,2020-05-11,estimate,976,553,1463,715,1087
+England,2020-05-12,estimate,1141,631,1713,880,1329
+England,2020-05-13,estimate,1095,606,1648,816,1218
+England,2020-05-14,estimate,1211,681,1788,956,1406
+England,2020-05-15,estimate,1209,594,1747,974,1416
+England,2020-05-16,estimate,1117,566,1624,883,1300
+England,2020-05-17,estimate,892,479,1340,661,1014
+England,2020-05-18,estimate,672,373,1007,531,787
+England,2020-05-19,estimate,793,440,1199,614,921
+England,2020-05-20,estimate,751,432,1121,583,869
+England,2020-05-21,estimate,828,436,1206,636,949
+England,2020-05-22,estimate,831,451,1263,629,949
+England,2020-05-23,estimate,756,403,1123,574,862
+England,2020-05-24,estimate,621,324,926,478,719
+England,2020-05-25,estimate,475,267,724,357,543
+England,2020-05-26,estimate,556,306,839,451,663
+England,2020-05-27,estimate,522,307,800,378,571
+England,2020-05-28,estimate,592,323,898,444,670
+England,2020-05-29,estimate,591,312,891,429,655
+England,2020-05-30,estimate,552,285,821,379,602
+England,2020-05-31,estimate,455,255,680,343,514
+England,2020-06-01,estimate,340,189,523,269,400
+England,2020-06-02,estimate,415,225,624,300,464
+England,2020-06-03,estimate,390,221,598,293,441
+England,2020-06-04,estimate,438,223,652,343,516
+England,2020-06-05,estimate,441,238,656,326,495
+England,2020-06-06,estimate,410,220,614,319,477
+England,2020-06-07,estimate,342,189,511,259,391
+England,2020-06-08,estimate,256,133,384,176,279
+England,2020-06-09,estimate,309,164,451,250,369
+England,2020-06-10,estimate,289,162,430,239,349
+England,2020-06-11,estimate,324,172,485,236,363
+England,2020-06-12,estimate,322,172,483,242,367
+England,2020-06-13,estimate,309,145,455,225,345
+England,2020-06-14,estimate,247,139,386,195,290
+England,2020-06-15,estimate,190,103,289,140,216
+England,2020-06-16,estimate,229,118,339,165,254
+England,2020-06-17,estimate,216,110,327,154,239
+England,2020-06-18,estimate,250,132,372,187,284
+England,2020-06-19,estimate,252,128,375,180,279
+England,2020-06-20,estimate,238,123,354,176,268
+England,2020-06-21,estimate,207,111,314,154,232
+England,2020-06-22,estimate,160,82,239,121,185
+England,2020-06-23,estimate,199,103,291,146,222
+England,2020-06-24,estimate,196,102,297,145,224
+England,2020-06-25,estimate,234,115,346,166,255
+England,2020-06-26,estimate,255,137,388,175,278
+England,2020-06-27,estimate,256,142,392,192,295
+England,2020-06-28,estimate,232,117,346,167,258
+England,2020-06-29,estimate,195,101,292,150,227
+England,2020-06-30,estimate,257,136,386,189,293
+England,2020-07-01,estimate,272,136,406,208,316
+England,2020-07-02,estimate,344,171,500,260,395
+England,2020-07-03,estimate,383,200,573,281,434
+England,2020-07-04,estimate,404,222,604,315,466
+England,2020-07-05,estimate,386,208,566,272,419
+England,2020-07-06,estimate,320,171,484,224,350
+England,2020-07-07,estimate,425,222,636,323,490
+England,2020-07-08,estimate,450,248,680,358,543
+England,2020-07-09,estimate,558,296,851,415,631
+England,2020-07-10,estimate,622,359,953,459,706
+England,2020-07-11,estimate,623,348,944,483,725
+England,2020-07-12,estimate,556,317,862,410,620
+England,2020-07-13,estimate,455,253,689,354,532
+England,2020-07-14,estimate,589,338,890,453,679
+England,2020-07-15,estimate,586,329,882,432,655
+England,2020-07-16,estimate,686,402,1061,533,797
+England,2020-07-17,estimate,727,410,1101,527,805
+England,2020-07-18,estimate,704,388,1056,499,772
+England,2020-07-19,estimate,628,341,925,486,728
+England,2020-07-20,estimate,488,266,721,386,564
+England,2020-07-21,estimate,604,311,887,479,719
+England,2020-07-22,estimate,591,321,899,417,655
+England,2020-07-23,estimate,690,371,1045,543,803
+England,2020-07-24,estimate,719,380,1085,534,810
+England,2020-07-25,estimate,700,363,1035,543,817
+England,2020-07-26,estimate,608,351,940,435,674
+England,2020-07-27,estimate,486,262,746,355,539
+England,2020-07-28,estimate,606,318,913,424,660
+England,2020-07-29,estimate,614,319,930,498,744
+England,2020-07-30,estimate,742,423,1147,514,808
+England,2020-07-31,estimate,783,425,1175,572,883
+England,2020-08-01,estimate,805,432,1206,592,907
+England,2020-08-02,estimate,712,381,1054,547,813
+England,2020-08-03,estimate,574,293,861,458,679
+England,2020-08-04,estimate,744,378,1085,596,891
+England,2020-08-05,estimate,742,385,1116,581,872
+England,2020-08-06,estimate,912,502,1373,656,1017
+England,2020-08-07,estimate,965,526,1422,742,1118
+England,2020-08-08,estimate,969,584,1505,716,1103
+England,2020-08-09,estimate based on partial data,856,466,1277,639,970
+England,2020-08-10,estimate based on partial data,689,380,1070,515,788
+England,2020-08-11,estimate based on partial data,878,443,1306,685,1033
+England,2020-08-12,estimate based on partial data,864,427,1262,625,975
+England,2020-08-13,estimate based on partial data,1017,564,1534,735,1137
+England,2020-08-14,estimate based on partial data,1053,566,1601,801,1214
+England,2020-08-15,estimate based on partial data,1038,571,1575,741,1154
+England,2020-08-16,estimate based on partial data,862,454,1338,654,996
+England,2020-08-17,estimate based on partial data,678,359,1028,530,804
+England,2020-08-18,estimate based on partial data,848,453,1297,590,950
+England,2020-08-19,estimate based on partial data,820,389,1254,573,918
+Northern Ireland,2020-03-20,estimate,20,1,46,9,25
+Northern Ireland,2020-03-21,estimate,15,1,34,3,15
+Northern Ireland,2020-03-22,estimate,16,1,36,3,17
+Northern Ireland,2020-03-23,estimate,18,1,39,4,19
+Northern Ireland,2020-03-24,estimate,22,1,49,6,24
+Northern Ireland,2020-03-25,estimate,35,1,73,8,37
+Northern Ireland,2020-03-26,estimate,45,3,99,17,53
+Northern Ireland,2020-03-27,estimate,57,5,124,19,65
+Northern Ireland,2020-03-28,estimate,40,2,92,11,44
+Northern Ireland,2020-03-29,estimate,42,4,93,15,48
+Northern Ireland,2020-03-30,estimate,44,5,97,15,51
+Northern Ireland,2020-03-31,estimate,51,7,115,16,59
+Northern Ireland,2020-04-01,estimate,73,8,170,19,81
+Northern Ireland,2020-04-02,estimate,94,8,209,27,102
+Northern Ireland,2020-04-03,estimate,112,8,240,44,133
+Northern Ireland,2020-04-04,estimate,73,8,162,17,78
+Northern Ireland,2020-04-05,estimate,72,7,158,22,80
+Northern Ireland,2020-04-06,estimate,71,3,151,26,82
+Northern Ireland,2020-04-07,estimate,78,6,176,30,95
+Northern Ireland,2020-04-08,estimate,109,12,238,31,118
+Northern Ireland,2020-04-09,estimate,135,18,291,49,153
+Northern Ireland,2020-04-10,estimate,144,19,332,50,164
+Northern Ireland,2020-04-11,estimate,92,6,202,36,108
+Northern Ireland,2020-04-12,estimate,85,9,196,31,99
+Northern Ireland,2020-04-13,estimate,77,6,176,22,85
+Northern Ireland,2020-04-14,estimate,82,12,188,22,89
+Northern Ireland,2020-04-15,estimate,114,13,263,47,140
+Northern Ireland,2020-04-16,estimate,132,10,290,49,151
+Northern Ireland,2020-04-17,estimate,136,13,299,54,160
+Northern Ireland,2020-04-18,estimate,85,5,181,31,99
+Northern Ireland,2020-04-19,estimate,76,6,167,22,84
+Northern Ireland,2020-04-20,estimate,73,8,155,29,88
+Northern Ireland,2020-04-21,estimate,74,5,158,26,86
+Northern Ireland,2020-04-22,estimate,97,8,207,29,107
+Northern Ireland,2020-04-23,estimate,114,19,251,34,123
+Northern Ireland,2020-04-24,estimate,118,11,259,31,126
+Northern Ireland,2020-04-25,estimate,69,6,152,24,79
+Northern Ireland,2020-04-26,estimate,62,8,141,19,69
+Northern Ireland,2020-04-27,estimate,57,3,126,18,64
+Northern Ireland,2020-04-28,estimate,58,4,131,16,64
+Northern Ireland,2020-04-29,estimate,74,3,171,21,82
+Northern Ireland,2020-04-30,estimate,86,12,193,27,96
+Northern Ireland,2020-05-01,estimate,85,10,197,27,95
+Northern Ireland,2020-05-02,estimate,52,4,119,14,57
+Northern Ireland,2020-05-03,estimate,47,2,108,12,51
+Northern Ireland,2020-05-04,estimate,42,2,94,11,45
+Northern Ireland,2020-05-05,estimate,43,3,95,10,46
+Northern Ireland,2020-05-06,estimate,56,4,123,15,60
+Northern Ireland,2020-05-07,estimate,64,7,143,19,70
+Northern Ireland,2020-05-08,estimate,62,2,145,22,72
+Northern Ireland,2020-05-09,estimate,38,4,83,11,42
+Northern Ireland,2020-05-10,estimate,34,1,77,13,41
+Northern Ireland,2020-05-11,estimate,30,0,67,8,32
+Northern Ireland,2020-05-12,estimate,32,3,69,9,34
+Northern Ireland,2020-05-13,estimate,40,2,91,12,45
+Northern Ireland,2020-05-14,estimate,46,4,103,17,54
+Northern Ireland,2020-05-15,estimate,46,6,104,16,52
+Northern Ireland,2020-05-16,estimate,28,0,60,11,33
+Northern Ireland,2020-05-17,estimate,25,1,56,8,28
+Northern Ireland,2020-05-18,estimate,22,1,50,5,23
+Northern Ireland,2020-05-19,estimate,24,1,51,6,25
+Northern Ireland,2020-05-20,estimate,28,2,65,9,32
+Northern Ireland,2020-05-21,estimate,34,4,74,13,40
+Northern Ireland,2020-05-22,estimate,34,2,74,9,37
+Northern Ireland,2020-05-23,estimate,20,0,43,4,21
+Northern Ireland,2020-05-24,estimate,17,1,38,5,19
+Northern Ireland,2020-05-25,estimate,15,0,34,4,17
+Northern Ireland,2020-05-26,estimate,15,1,34,6,18
+Northern Ireland,2020-05-27,estimate,20,1,43,3,20
+Northern Ireland,2020-05-28,estimate,21,1,48,6,23
+Northern Ireland,2020-05-29,estimate,21,1,48,4,22
+Northern Ireland,2020-05-30,estimate,12,0,27,2,12
+Northern Ireland,2020-05-31,estimate,11,1,25,2,11
+Northern Ireland,2020-06-01,estimate,9,0,21,2,10
+Northern Ireland,2020-06-02,estimate,9,1,21,1,9
+Northern Ireland,2020-06-03,estimate,12,1,27,2,12
+Northern Ireland,2020-06-04,estimate,13,1,29,3,14
+Northern Ireland,2020-06-05,estimate,12,0,27,4,14
+Northern Ireland,2020-06-06,estimate,7,0,17,1,7
+Northern Ireland,2020-06-07,estimate,6,0,14,1,6
+Northern Ireland,2020-06-08,estimate,5,0,12,2,6
+Northern Ireland,2020-06-09,estimate,5,0,13,0,5
+Northern Ireland,2020-06-10,estimate,6,0,16,0,6
+Northern Ireland,2020-06-11,estimate,7,0,17,1,7
+Northern Ireland,2020-06-12,estimate,7,0,16,1,7
+Northern Ireland,2020-06-13,estimate,4,0,10,0,4
+Northern Ireland,2020-06-14,estimate,3,0,9,0,3
+Northern Ireland,2020-06-15,estimate,3,0,8,0,3
+Northern Ireland,2020-06-16,estimate,3,0,8,0,3
+Northern Ireland,2020-06-17,estimate,4,0,9,1,4
+Northern Ireland,2020-06-18,estimate,4,0,11,0,4
+Northern Ireland,2020-06-19,estimate,4,0,11,0,4
+Northern Ireland,2020-06-20,estimate,2,0,7,0,2
+Northern Ireland,2020-06-21,estimate,2,0,6,0,2
+Northern Ireland,2020-06-22,estimate,2,0,5,0,2
+Northern Ireland,2020-06-23,estimate,2,0,6,0,2
+Northern Ireland,2020-06-24,estimate,2,0,7,0,2
+Northern Ireland,2020-06-25,estimate,3,0,8,0,3
+Northern Ireland,2020-06-26,estimate,3,0,8,0,3
+Northern Ireland,2020-06-27,estimate,2,0,5,0,2
+Northern Ireland,2020-06-28,estimate,2,0,5,0,2
+Northern Ireland,2020-06-29,estimate,2,0,5,0,2
+Northern Ireland,2020-06-30,estimate,2,0,5,0,2
+Northern Ireland,2020-07-01,estimate,2,0,6,0,2
+Northern Ireland,2020-07-02,estimate,3,0,7,0,3
+Northern Ireland,2020-07-03,estimate,3,0,8,0,3
+Northern Ireland,2020-07-04,estimate,2,0,5,0,2
+Northern Ireland,2020-07-05,estimate,2,0,5,0,2
+Northern Ireland,2020-07-06,estimate,2,0,5,0,2
+Northern Ireland,2020-07-07,estimate,2,0,5,0,2
+Northern Ireland,2020-07-08,estimate,3,0,7,0,3
+Northern Ireland,2020-07-09,estimate,3,0,8,0,3
+Northern Ireland,2020-07-10,estimate,4,0,9,1,4
+Northern Ireland,2020-07-11,estimate,2,0,6,0,2
+Northern Ireland,2020-07-12,estimate,2,0,6,0,2
+Northern Ireland,2020-07-13,estimate,2,0,5,0,2
+Northern Ireland,2020-07-14,estimate,2,0,7,0,2
+Northern Ireland,2020-07-15,estimate,3,0,8,0,3
+Northern Ireland,2020-07-16,estimate,4,0,11,0,4
+Northern Ireland,2020-07-17,estimate,5,0,11,1,5
+Northern Ireland,2020-07-18,estimate,3,0,8,0,3
+Northern Ireland,2020-07-19,estimate,3,0,8,0,3
+Northern Ireland,2020-07-20,estimate,3,0,7,0,3
+Northern Ireland,2020-07-21,estimate,3,0,8,0,3
+Northern Ireland,2020-07-22,estimate,4,0,10,0,4
+Northern Ireland,2020-07-23,estimate,5,0,13,2,6
+Northern Ireland,2020-07-24,estimate,6,0,13,1,6
+Northern Ireland,2020-07-25,estimate,4,0,9,1,4
+Northern Ireland,2020-07-26,estimate,3,0,9,0,3
+Northern Ireland,2020-07-27,estimate,3,0,9,0,3
+Northern Ireland,2020-07-28,estimate,4,0,10,1,4
+Northern Ireland,2020-07-29,estimate,6,0,13,1,6
+Northern Ireland,2020-07-30,estimate,7,0,16,1,7
+Northern Ireland,2020-07-31,estimate,8,0,19,1,8
+Northern Ireland,2020-08-01,estimate,5,0,13,0,5
+Northern Ireland,2020-08-02,estimate,5,0,13,0,5
+Northern Ireland,2020-08-03,estimate,5,0,14,0,5
+Northern Ireland,2020-08-04,estimate,6,0,15,2,7
+Northern Ireland,2020-08-05,estimate,9,0,22,3,11
+Northern Ireland,2020-08-06,estimate,12,0,29,2,13
+Northern Ireland,2020-08-07,estimate,15,1,34,4,16
+Northern Ireland,2020-08-08,estimate,11,0,25,2,11
+Northern Ireland,2020-08-09,estimate based on partial data,12,0,26,2,12
+Northern Ireland,2020-08-10,estimate based on partial data,12,0,28,2,12
+Northern Ireland,2020-08-11,estimate based on partial data,15,1,35,4,17
+Northern Ireland,2020-08-12,estimate based on partial data,23,1,51,6,25
+Northern Ireland,2020-08-13,estimate based on partial data,31,3,71,10,36
+Northern Ireland,2020-08-14,estimate based on partial data,37,1,85,12,43
+Northern Ireland,2020-08-15,estimate based on partial data,26,2,63,7,29
+Northern Ireland,2020-08-16,estimate based on partial data,29,2,68,8,32
+Northern Ireland,2020-08-17,estimate based on partial data,31,4,74,5,32
+Northern Ireland,2020-08-18,estimate based on partial data,39,1,94,14,46
+Northern Ireland,2020-08-19,estimate based on partial data,57,4,140,13,62
+Scotland,2020-03-16,estimate,18,8,32,12,21
+Scotland,2020-03-17,estimate,27,10,43,18,31
+Scotland,2020-03-18,estimate,39,16,62,25,43
+Scotland,2020-03-19,estimate,50,23,81,33,55
+Scotland,2020-03-20,estimate,66,29,102,50,79
+Scotland,2020-03-21,estimate,75,38,120,50,84
+Scotland,2020-03-22,estimate,73,35,116,49,82
+Scotland,2020-03-23,estimate,63,28,99,44,72
+Scotland,2020-03-24,estimate,86,46,143,63,101
+Scotland,2020-03-25,estimate,126,59,199,83,139
+Scotland,2020-03-26,estimate,153,74,239,119,185
+Scotland,2020-03-27,estimate,187,84,291,124,207
+Scotland,2020-03-28,estimate,206,92,320,141,229
+Scotland,2020-03-29,estimate,188,102,301,129,208
+Scotland,2020-03-30,estimate,151,78,244,101,167
+Scotland,2020-03-31,estimate,202,103,314,141,225
+Scotland,2020-04-01,estimate,266,136,415,189,299
+Scotland,2020-04-02,estimate,294,149,460,218,339
+Scotland,2020-04-03,estimate,350,159,538,270,414
+Scotland,2020-04-04,estimate,353,170,539,262,413
+Scotland,2020-04-05,estimate,301,146,462,219,343
+Scotland,2020-04-06,estimate,225,116,359,154,251
+Scotland,2020-04-07,estimate,271,136,433,188,302
+Scotland,2020-04-08,estimate,350,160,534,270,417
+Scotland,2020-04-09,estimate,372,189,574,257,412
+Scotland,2020-04-10,estimate,413,223,675,322,494
+Scotland,2020-04-11,estimate,398,200,606,278,442
+Scotland,2020-04-12,estimate,323,143,499,214,351
+Scotland,2020-04-13,estimate,239,117,372,165,265
+Scotland,2020-04-14,estimate,282,146,442,197,320
+Scotland,2020-04-15,estimate,343,171,534,235,380
+Scotland,2020-04-16,estimate,362,176,556,277,429
+Scotland,2020-04-17,estimate,394,194,604,299,467
+Scotland,2020-04-18,estimate,374,199,598,274,433
+Scotland,2020-04-19,estimate,300,147,461,228,350
+Scotland,2020-04-20,estimate,214,112,340,144,236
+Scotland,2020-04-21,estimate,261,135,408,191,302
+Scotland,2020-04-22,estimate,311,157,486,229,365
+Scotland,2020-04-23,estimate,322,154,507,222,358
+Scotland,2020-04-24,estimate,350,172,551,249,398
+Scotland,2020-04-25,estimate,334,174,508,237,376
+Scotland,2020-04-26,estimate,270,129,413,199,311
+Scotland,2020-04-27,estimate,190,83,288,134,214
+Scotland,2020-04-28,estimate,222,112,345,158,251
+Scotland,2020-04-29,estimate,272,142,421,191,300
+Scotland,2020-04-30,estimate,277,141,437,195,312
+Scotland,2020-05-01,estimate,302,139,459,221,343
+Scotland,2020-05-02,estimate,278,148,442,201,317
+Scotland,2020-05-03,estimate,227,113,359,161,255
+Scotland,2020-05-04,estimate,160,81,249,117,184
+Scotland,2020-05-05,estimate,180,86,280,132,210
+Scotland,2020-05-06,estimate,213,105,334,154,243
+Scotland,2020-05-07,estimate,217,105,330,166,260
+Scotland,2020-05-08,estimate,229,106,350,175,271
+Scotland,2020-05-09,estimate,209,103,322,154,242
+Scotland,2020-05-10,estimate,164,89,265,112,181
+Scotland,2020-05-11,estimate,111,56,176,80,128
+Scotland,2020-05-12,estimate,128,64,199,87,141
+Scotland,2020-05-13,estimate,146,68,231,111,174
+Scotland,2020-05-14,estimate,147,73,227,102,165
+Scotland,2020-05-15,estimate,150,72,233,99,164
+Scotland,2020-05-16,estimate,133,68,215,92,152
+Scotland,2020-05-17,estimate,103,52,167,71,117
+Scotland,2020-05-18,estimate,69,35,110,49,78
+Scotland,2020-05-19,estimate,77,34,119,50,86
+Scotland,2020-05-20,estimate,90,43,138,58,99
+Scotland,2020-05-21,estimate,86,41,135,58,96
+Scotland,2020-05-22,estimate,90,40,140,57,97
+Scotland,2020-05-23,estimate,80,32,122,56,90
+Scotland,2020-05-24,estimate,59,26,93,37,64
+Scotland,2020-05-25,estimate,40,19,63,27,45
+Scotland,2020-05-26,estimate,44,20,71,28,48
+Scotland,2020-05-27,estimate,51,24,82,35,57
+Scotland,2020-05-28,estimate,50,21,79,32,55
+Scotland,2020-05-29,estimate,52,25,83,34,57
+Scotland,2020-05-30,estimate,47,21,72,28,50
+Scotland,2020-05-31,estimate,35,14,57,24,40
+Scotland,2020-06-01,estimate,24,9,38,15,27
+Scotland,2020-06-02,estimate,27,12,45,15,28
+Scotland,2020-06-03,estimate,32,14,53,23,38
+Scotland,2020-06-04,estimate,31,12,50,19,34
+Scotland,2020-06-05,estimate,34,12,53,21,37
+Scotland,2020-06-06,estimate,31,13,50,20,35
+Scotland,2020-06-07,estimate,24,9,38,15,27
+Scotland,2020-06-08,estimate,17,6,28,10,19
+Scotland,2020-06-09,estimate,19,7,31,10,20
+Scotland,2020-06-10,estimate,23,8,37,14,25
+Scotland,2020-06-11,estimate,24,8,38,14,26
+Scotland,2020-06-12,estimate,25,9,41,15,28
+Scotland,2020-06-13,estimate,23,9,38,13,25
+Scotland,2020-06-14,estimate,19,7,31,11,20
+Scotland,2020-06-15,estimate,13,5,22,7,14
+Scotland,2020-06-16,estimate,15,5,25,8,16
+Scotland,2020-06-17,estimate,18,7,30,10,19
+Scotland,2020-06-18,estimate,18,6,30,9,19
+Scotland,2020-06-19,estimate,19,8,32,12,21
+Scotland,2020-06-20,estimate,18,6,29,11,20
+Scotland,2020-06-21,estimate,14,5,23,8,15
+Scotland,2020-06-22,estimate,10,3,17,6,11
+Scotland,2020-06-23,estimate,11,4,19,5,11
+Scotland,2020-06-24,estimate,13,4,21,7,14
+Scotland,2020-06-25,estimate,13,4,22,7,14
+Scotland,2020-06-26,estimate,14,4,23,8,15
+Scotland,2020-06-27,estimate,12,3,21,6,13
+Scotland,2020-06-28,estimate,10,3,17,4,10
+Scotland,2020-06-29,estimate,7,1,12,4,8
+Scotland,2020-06-30,estimate,8,1,13,5,9
+Scotland,2020-07-01,estimate,10,2,16,6,11
+Scotland,2020-07-02,estimate,10,3,17,4,10
+Scotland,2020-07-03,estimate,10,3,18,5,11
+Scotland,2020-07-04,estimate,10,3,17,4,10
+Scotland,2020-07-05,estimate,8,2,14,5,9
+Scotland,2020-07-06,estimate,6,2,11,4,7
+Scotland,2020-07-07,estimate,7,1,12,4,8
+Scotland,2020-07-08,estimate,9,2,15,4,9
+Scotland,2020-07-09,estimate,9,3,16,5,10
+Scotland,2020-07-10,estimate,10,3,18,5,11
+Scotland,2020-07-11,estimate,10,3,17,5,11
+Scotland,2020-07-12,estimate,9,2,15,4,9
+Scotland,2020-07-13,estimate,7,2,12,3,7
+Scotland,2020-07-14,estimate,8,2,14,3,8
+Scotland,2020-07-15,estimate,10,3,18,5,11
+Scotland,2020-07-16,estimate,11,3,19,6,12
+Scotland,2020-07-17,estimate,13,4,22,7,14
+Scotland,2020-07-18,estimate,13,4,22,7,14
+Scotland,2020-07-19,estimate,11,4,19,6,12
+Scotland,2020-07-20,estimate,9,2,15,5,10
+Scotland,2020-07-21,estimate,11,3,19,6,12
+Scotland,2020-07-22,estimate,14,5,24,7,15
+Scotland,2020-07-23,estimate,15,5,25,8,16
+Scotland,2020-07-24,estimate,18,7,30,10,19
+Scotland,2020-07-25,estimate,18,7,30,11,20
+Scotland,2020-07-26,estimate,16,5,26,11,19
+Scotland,2020-07-27,estimate,12,4,21,7,14
+Scotland,2020-07-28,estimate,16,5,26,10,18
+Scotland,2020-07-29,estimate,21,8,35,14,24
+Scotland,2020-07-30,estimate,24,8,38,15,26
+Scotland,2020-07-31,estimate,28,10,44,18,31
+Scotland,2020-08-01,estimate,30,13,48,18,32
+Scotland,2020-08-02,estimate,26,9,41,15,28
+Scotland,2020-08-03,estimate,20,6,32,12,22
+Scotland,2020-08-04,estimate,26,11,42,17,29
+Scotland,2020-08-05,estimate,34,13,53,26,42
+Scotland,2020-08-06,estimate,39,16,62,28,45
+Scotland,2020-08-07,estimate,46,19,71,27,49
+Scotland,2020-08-08,estimate,47,20,73,29,51
+Scotland,2020-08-09,estimate based on partial data,40,18,67,28,46
+Scotland,2020-08-10,estimate based on partial data,31,11,49,19,34
+Scotland,2020-08-11,estimate based on partial data,38,17,62,25,43
+Scotland,2020-08-12,estimate based on partial data,49,25,77,31,53
+Scotland,2020-08-13,estimate based on partial data,54,23,84,35,59
+Scotland,2020-08-14,estimate based on partial data,60,24,96,41,68
+Scotland,2020-08-15,estimate based on partial data,60,25,95,40,67
+Scotland,2020-08-16,estimate based on partial data,48,19,77,31,53
+Scotland,2020-08-17,estimate based on partial data,36,13,57,25,42
+Scotland,2020-08-18,estimate based on partial data,42,15,67,32,52
+Scotland,2020-08-19,estimate based on partial data,53,21,87,34,61
+Wales,2020-03-13,estimate,10,2,19,4,10
+Wales,2020-03-14,estimate,13,3,23,6,14
+Wales,2020-03-15,estimate,16,3,29,6,17
+Wales,2020-03-16,estimate,20,4,38,10,22
+Wales,2020-03-17,estimate,22,6,39,12,25
+Wales,2020-03-18,estimate,29,8,52,16,33
+Wales,2020-03-19,estimate,38,11,68,21,44
+Wales,2020-03-20,estimate,50,16,91,29,58
+Wales,2020-03-21,estimate,60,20,107,28,63
+Wales,2020-03-22,estimate,70,22,126,41,79
+Wales,2020-03-23,estimate,82,25,143,51,96
+Wales,2020-03-24,estimate,83,25,141,55,101
+Wales,2020-03-25,estimate,98,32,166,62,115
+Wales,2020-03-26,estimate,118,40,207,67,132
+Wales,2020-03-27,estimate,145,56,254,94,169
+Wales,2020-03-28,estimate,158,56,281,90,178
+Wales,2020-03-29,estimate,174,57,305,102,201
+Wales,2020-03-30,estimate,198,75,345,118,230
+Wales,2020-03-31,estimate,179,65,310,87,191
+Wales,2020-04-01,estimate,201,67,345,124,230
+Wales,2020-04-02,estimate,228,90,408,129,254
+Wales,2020-04-03,estimate,266,101,480,160,310
+Wales,2020-04-04,estimate,276,99,477,170,322
+Wales,2020-04-05,estimate,280,100,503,147,306
+Wales,2020-04-06,estimate,292,115,536,185,344
+Wales,2020-04-07,estimate,261,89,438,164,301
+Wales,2020-04-08,estimate,274,98,486,174,324
+Wales,2020-04-09,estimate,296,104,516,178,342
+Wales,2020-04-10,estimate,329,122,572,222,400
+Wales,2020-04-11,estimate,328,110,580,190,376
+Wales,2020-04-12,estimate,331,113,562,228,408
+Wales,2020-04-13,estimate,320,116,552,209,377
+Wales,2020-04-14,estimate,269,84,464,171,317
+Wales,2020-04-15,estimate,273,86,469,167,318
+Wales,2020-04-16,estimate,278,98,490,161,321
+Wales,2020-04-17,estimate,309,112,535,191,356
+Wales,2020-04-18,estimate,295,94,515,191,353
+Wales,2020-04-19,estimate,278,93,481,181,333
+Wales,2020-04-20,estimate,268,102,477,174,322
+Wales,2020-04-21,estimate,222,85,386,140,263
+Wales,2020-04-22,estimate,219,74,387,136,256
+Wales,2020-04-23,estimate,221,90,400,139,261
+Wales,2020-04-24,estimate,238,87,421,140,273
+Wales,2020-04-25,estimate,226,75,398,144,271
+Wales,2020-04-26,estimate,209,82,369,132,247
+Wales,2020-04-27,estimate,202,81,355,115,226
+Wales,2020-04-28,estimate,169,55,286,106,196
+Wales,2020-04-29,estimate,160,63,283,104,193
+Wales,2020-04-30,estimate,163,61,290,94,185
+Wales,2020-05-01,estimate,179,54,306,109,210
+Wales,2020-05-02,estimate,167,59,296,116,207
+Wales,2020-05-03,estimate,162,64,280,96,183
+Wales,2020-05-04,estimate,155,47,263,92,177
+Wales,2020-05-05,estimate,127,45,224,76,146
+Wales,2020-05-06,estimate,124,46,230,68,138
+Wales,2020-05-07,estimate,132,46,232,80,154
+Wales,2020-05-08,estimate,148,48,249,97,179
+Wales,2020-05-09,estimate,141,55,253,87,163
+Wales,2020-05-10,estimate,142,41,245,92,169
+Wales,2020-05-11,estimate,138,53,249,83,158
+Wales,2020-05-12,estimate,121,44,212,70,139
+Wales,2020-05-13,estimate,120,44,220,67,138
+Wales,2020-05-14,estimate,132,46,232,76,151
+Wales,2020-05-15,estimate,144,46,256,86,167
+Wales,2020-05-16,estimate,144,42,247,79,161
+Wales,2020-05-17,estimate,139,52,246,88,162
+Wales,2020-05-18,estimate,138,50,239,80,155
+Wales,2020-05-19,estimate,119,34,201,66,133
+Wales,2020-05-20,estimate,120,39,208,77,142
+Wales,2020-05-21,estimate,123,42,214,84,153
+Wales,2020-05-22,estimate,136,52,236,85,159
+Wales,2020-05-23,estimate,131,48,223,86,158
+Wales,2020-05-24,estimate,122,43,214,66,135
+Wales,2020-05-25,estimate,114,41,196,71,132
+Wales,2020-05-26,estimate,95,35,165,59,111
+Wales,2020-05-27,estimate,91,29,154,53,102
+Wales,2020-05-28,estimate,92,31,155,55,106
+Wales,2020-05-29,estimate,94,32,163,49,102
+Wales,2020-05-30,estimate,87,26,148,52,100
+Wales,2020-05-31,estimate,80,27,142,45,90
+Wales,2020-06-01,estimate,74,23,128,48,90
+Wales,2020-06-02,estimate,58,18,103,33,67
+Wales,2020-06-03,estimate,57,21,101,34,66
+Wales,2020-06-04,estimate,56,16,98,34,67
+Wales,2020-06-05,estimate,59,24,111,36,69
+Wales,2020-06-06,estimate,55,17,97,33,65
+Wales,2020-06-07,estimate,51,15,90,28,58
+Wales,2020-06-08,estimate,50,17,88,29,56
+Wales,2020-06-09,estimate,41,12,74,26,49
+Wales,2020-06-10,estimate,43,10,74,23,48
+Wales,2020-06-11,estimate,46,14,85,22,50
+Wales,2020-06-12,estimate,51,19,92,29,58
+Wales,2020-06-13,estimate,53,14,92,32,62
+Wales,2020-06-14,estimate,53,21,96,30,60
+Wales,2020-06-15,estimate,55,19,93,31,61
+Wales,2020-06-16,estimate,48,14,82,30,56
+Wales,2020-06-17,estimate,52,18,91,32,61
+Wales,2020-06-18,estimate,56,20,99,35,66
+Wales,2020-06-19,estimate,64,19,113,39,76
+Wales,2020-06-20,estimate,63,16,107,37,73
+Wales,2020-06-21,estimate,63,20,109,36,71
+Wales,2020-06-22,estimate,61,21,110,35,70
+Wales,2020-06-23,estimate,52,18,92,30,59
+Wales,2020-06-24,estimate,50,16,88,27,55
+Wales,2020-06-25,estimate,52,17,92,31,60
+Wales,2020-06-26,estimate,53,15,93,29,61
+Wales,2020-06-27,estimate,49,17,88,26,54
+Wales,2020-06-28,estimate,44,12,78,21,48
+Wales,2020-06-29,estimate,41,12,72,22,46
+Wales,2020-06-30,estimate,32,7,56,21,40
+Wales,2020-07-01,estimate,29,7,52,14,32
+Wales,2020-07-02,estimate,28,8,50,16,32
+Wales,2020-07-03,estimate,28,8,50,19,35
+Wales,2020-07-04,estimate,25,6,45,13,28
+Wales,2020-07-05,estimate,22,7,42,10,24
+Wales,2020-07-06,estimate,20,6,37,10,22
+Wales,2020-07-07,estimate,16,4,29,6,16
+Wales,2020-07-08,estimate,15,3,27,8,17
+Wales,2020-07-09,estimate,15,4,28,8,17
+Wales,2020-07-10,estimate,15,3,28,6,16
+Wales,2020-07-11,estimate,15,3,27,7,16
+Wales,2020-07-12,estimate,14,3,26,6,15
+Wales,2020-07-13,estimate,14,3,25,5,14
+Wales,2020-07-14,estimate,12,2,22,5,13
+Wales,2020-07-15,estimate,12,3,23,5,13
+Wales,2020-07-16,estimate,14,4,26,6,15
+Wales,2020-07-17,estimate,16,3,29,6,17
+Wales,2020-07-18,estimate,17,4,31,7,18
+Wales,2020-07-19,estimate,18,3,32,9,20
+Wales,2020-07-20,estimate,20,5,35,9,21
+Wales,2020-07-21,estimate,18,4,32,9,20
+Wales,2020-07-22,estimate,20,4,35,9,21
+Wales,2020-07-23,estimate,21,7,40,11,24
+Wales,2020-07-24,estimate,25,6,45,13,28
+Wales,2020-07-25,estimate,26,7,47,16,31
+Wales,2020-07-26,estimate,27,7,49,14,30
+Wales,2020-07-27,estimate,27,9,48,14,30
+Wales,2020-07-28,estimate,22,6,41,11,24
+Wales,2020-07-29,estimate,23,5,41,11,25
+Wales,2020-07-30,estimate,25,8,44,15,29
+Wales,2020-07-31,estimate,26,7,46,12,28
+Wales,2020-08-01,estimate,25,7,46,12,27
+Wales,2020-08-02,estimate,24,6,42,13,27
+Wales,2020-08-03,estimate,23,5,39,14,27
+Wales,2020-08-04,estimate,18,4,33,11,22
+Wales,2020-08-05,estimate,17,5,33,9,19
+Wales,2020-08-06,estimate,18,4,33,8,19
+Wales,2020-08-07,estimate,19,5,35,8,20
+Wales,2020-08-08,estimate,19,6,34,10,21
+Wales,2020-08-09,estimate based on partial data,17,4,31,7,18
+Wales,2020-08-10,estimate based on partial data,17,4,30,8,18
+Wales,2020-08-11,estimate based on partial data,14,2,25,6,15
+Wales,2020-08-12,estimate based on partial data,14,3,26,6,15
+Wales,2020-08-13,estimate based on partial data,15,4,28,8,17
+Wales,2020-08-14,estimate based on partial data,17,4,31,8,19
+Wales,2020-08-15,estimate based on partial data,17,4,32,9,19
+Wales,2020-08-16,estimate based on partial data,18,5,33,9,20
+Wales,2020-08-17,estimate based on partial data,18,5,34,9,20
+Wales,2020-08-18,estimate based on partial data,16,4,32,6,17
+Wales,2020-08-19,estimate based on partial data,18,4,35,7,19
+East of England,2020-03-11,estimate,15,6,23,9,16
+East of England,2020-03-12,estimate,16,8,26,11,18
+East of England,2020-03-13,estimate,22,10,33,12,22
+East of England,2020-03-14,estimate,18,8,28,11,19
+East of England,2020-03-15,estimate,21,8,31,15,23
+East of England,2020-03-16,estimate,43,23,63,29,46
+East of England,2020-03-17,estimate,50,28,73,36,54
+East of England,2020-03-18,estimate,65,37,93,49,72
+East of England,2020-03-19,estimate,71,43,103,56,80
+East of England,2020-03-20,estimate,88,51,127,64,95
+East of England,2020-03-21,estimate,72,40,103,51,76
+East of England,2020-03-22,estimate,82,44,115,65,93
+East of England,2020-03-23,estimate,152,92,218,124,173
+East of England,2020-03-24,estimate,169,100,237,130,187
+East of England,2020-03-25,estimate,202,117,285,169,236
+East of England,2020-03-26,estimate,203,120,287,157,227
+East of England,2020-03-27,estimate,234,145,329,179,257
+East of England,2020-03-28,estimate,173,98,245,140,197
+East of England,2020-03-29,estimate,181,112,257,142,199
+East of England,2020-03-30,estimate,312,202,451,250,352
+East of England,2020-03-31,estimate,308,191,439,242,339
+East of England,2020-04-01,estimate,342,218,492,275,388
+East of England,2020-04-02,estimate,319,195,443,253,354
+East of England,2020-04-03,estimate,344,199,479,275,391
+East of England,2020-04-04,estimate,234,141,326,193,269
+East of England,2020-04-05,estimate,228,138,320,180,255
+East of England,2020-04-06,estimate,376,235,527,292,408
+East of England,2020-04-07,estimate,361,224,512,295,414
+East of England,2020-04-08,estimate,381,224,537,303,421
+East of England,2020-04-09,estimate,347,206,490,287,400
+East of England,2020-04-10,estimate,366,229,524,280,400
+East of England,2020-04-11,estimate,253,155,358,191,272
+East of England,2020-04-12,estimate,241,153,347,195,273
+East of England,2020-04-13,estimate,400,252,569,324,454
+East of England,2020-04-14,estimate,384,229,543,294,419
+East of England,2020-04-15,estimate,409,255,590,311,445
+East of England,2020-04-16,estimate,370,218,513,304,424
+East of England,2020-04-17,estimate,390,231,549,314,443
+East of England,2020-04-18,estimate,273,166,393,208,301
+East of England,2020-04-19,estimate,267,161,378,202,292
+East of England,2020-04-20,estimate,446,274,634,355,498
+East of England,2020-04-21,estimate,422,265,600,335,471
+East of England,2020-04-22,estimate,458,284,648,369,516
+East of England,2020-04-23,estimate,415,257,587,320,450
+East of England,2020-04-24,estimate,436,274,618,337,474
+East of England,2020-04-25,estimate,301,186,423,243,339
+East of England,2020-04-26,estimate,289,182,406,224,315
+East of England,2020-04-27,estimate,475,289,660,383,532
+East of England,2020-04-28,estimate,452,281,639,340,488
+East of England,2020-04-29,estimate,471,295,671,374,528
+East of England,2020-04-30,estimate,419,249,574,335,473
+East of England,2020-05-01,estimate,426,263,593,343,483
+East of England,2020-05-02,estimate,284,180,398,222,312
+East of England,2020-05-03,estimate,268,169,388,212,302
+East of England,2020-05-04,estimate,424,266,595,340,470
+East of England,2020-05-05,estimate,396,245,552,323,447
+East of England,2020-05-06,estimate,405,250,578,321,452
+East of England,2020-05-07,estimate,349,213,494,275,390
+East of England,2020-05-08,estimate,350,212,497,275,391
+East of England,2020-05-09,estimate,229,145,335,184,256
+East of England,2020-05-10,estimate,211,124,292,172,242
+East of England,2020-05-11,estimate,331,198,458,266,368
+East of England,2020-05-12,estimate,302,190,439,228,328
+East of England,2020-05-13,estimate,309,183,418,252,348
+East of England,2020-05-14,estimate,261,154,361,211,297
+East of England,2020-05-15,estimate,259,149,359,207,290
+East of England,2020-05-16,estimate,170,106,242,132,187
+East of England,2020-05-17,estimate,154,90,217,125,176
+East of England,2020-05-18,estimate,246,151,346,201,279
+East of England,2020-05-19,estimate,222,132,306,179,249
+East of England,2020-05-20,estimate,221,133,312,182,251
+East of England,2020-05-21,estimate,190,114,272,145,209
+East of England,2020-05-22,estimate,187,105,262,154,216
+East of England,2020-05-23,estimate,124,71,173,92,135
+East of England,2020-05-24,estimate,112,68,159,88,126
+East of England,2020-05-25,estimate,175,104,248,131,188
+East of England,2020-05-26,estimate,159,93,228,131,181
+East of England,2020-05-27,estimate,162,98,231,121,174
+East of England,2020-05-28,estimate,139,82,202,112,158
+East of England,2020-05-29,estimate,140,80,197,107,153
+East of England,2020-05-30,estimate,93,54,136,75,107
+East of England,2020-05-31,estimate,85,48,122,64,94
+East of England,2020-06-01,estimate,134,74,189,103,147
+East of England,2020-06-02,estimate,124,73,172,89,132
+East of England,2020-06-03,estimate,127,80,184,91,135
+East of England,2020-06-04,estimate,113,68,162,88,125
+East of England,2020-06-05,estimate,111,61,157,88,126
+East of England,2020-06-06,estimate,75,41,105,64,89
+East of England,2020-06-07,estimate,69,41,104,51,77
+East of England,2020-06-08,estimate,110,63,156,86,122
+East of England,2020-06-09,estimate,101,56,140,76,110
+East of England,2020-06-10,estimate,103,61,149,77,112
+East of England,2020-06-11,estimate,91,55,131,72,103
+East of England,2020-06-12,estimate,91,55,132,67,98
+East of England,2020-06-13,estimate,60,35,86,48,69
+East of England,2020-06-14,estimate,55,31,80,42,61
+East of England,2020-06-15,estimate,87,49,125,65,96
+East of England,2020-06-16,estimate,80,46,116,61,88
+East of England,2020-06-17,estimate,81,44,113,65,92
+East of England,2020-06-18,estimate,71,37,98,53,77
+East of England,2020-06-19,estimate,70,39,99,54,78
+East of England,2020-06-20,estimate,45,25,67,31,48
+East of England,2020-06-21,estimate,42,22,61,33,48
+East of England,2020-06-22,estimate,65,36,91,50,72
+East of England,2020-06-23,estimate,60,31,84,43,64
+East of England,2020-06-24,estimate,61,37,91,44,66
+East of England,2020-06-25,estimate,53,27,76,37,57
+East of England,2020-06-26,estimate,54,29,77,39,59
+East of England,2020-06-27,estimate,35,19,51,26,39
+East of England,2020-06-28,estimate,33,18,49,24,36
+East of England,2020-06-29,estimate,53,28,77,40,59
+East of England,2020-06-30,estimate,50,26,72,38,56
+East of England,2020-07-01,estimate,53,29,76,38,57
+East of England,2020-07-02,estimate,47,25,67,36,53
+East of England,2020-07-03,estimate,49,25,69,34,52
+East of England,2020-07-04,estimate,34,16,49,24,37
+East of England,2020-07-05,estimate,33,16,48,22,35
+East of England,2020-07-06,estimate,54,30,79,39,59
+East of England,2020-07-07,estimate,52,30,76,37,56
+East of England,2020-07-08,estimate,56,29,80,43,63
+East of England,2020-07-09,estimate,52,27,75,37,56
+East of England,2020-07-10,estimate,53,30,80,37,57
+East of England,2020-07-11,estimate,37,20,54,27,41
+East of England,2020-07-12,estimate,36,18,53,25,39
+East of England,2020-07-13,estimate,60,34,87,44,65
+East of England,2020-07-14,estimate,57,30,83,42,63
+East of England,2020-07-15,estimate,61,35,88,47,68
+East of England,2020-07-16,estimate,55,30,80,40,61
+East of England,2020-07-17,estimate,57,34,84,45,65
+East of England,2020-07-18,estimate,39,20,57,28,42
+East of England,2020-07-19,estimate,37,20,55,28,42
+East of England,2020-07-20,estimate,61,34,87,47,68
+East of England,2020-07-21,estimate,55,30,81,42,62
+East of England,2020-07-22,estimate,59,33,85,46,67
+East of England,2020-07-23,estimate,53,31,79,40,59
+East of England,2020-07-24,estimate,54,31,79,37,57
+East of England,2020-07-25,estimate,36,18,54,26,40
+East of England,2020-07-26,estimate,34,17,50,24,37
+East of England,2020-07-27,estimate,55,30,80,39,60
+East of England,2020-07-28,estimate,52,28,76,40,58
+East of England,2020-07-29,estimate,56,32,81,43,63
+East of England,2020-07-30,estimate,49,27,71,39,57
+East of England,2020-07-31,estimate,51,26,73,37,56
+East of England,2020-08-01,estimate,35,18,52,26,39
+East of England,2020-08-02,estimate,33,17,50,22,35
+East of England,2020-08-03,estimate,55,28,77,39,59
+East of England,2020-08-04,estimate,52,29,75,41,60
+East of England,2020-08-05,estimate,54,30,79,38,57
+East of England,2020-08-06,estimate,50,28,73,37,55
+East of England,2020-08-07,estimate,53,28,76,40,59
+East of England,2020-08-08,estimate,36,17,52,27,41
+East of England,2020-08-09,estimate based on partial data,34,18,52,24,37
+East of England,2020-08-10,estimate based on partial data,57,31,81,42,62
+East of England,2020-08-11,estimate based on partial data,54,33,79,43,61
+East of England,2020-08-12,estimate based on partial data,56,34,85,41,61
+East of England,2020-08-13,estimate based on partial data,51,28,74,40,58
+East of England,2020-08-14,estimate based on partial data,53,29,76,41,60
+East of England,2020-08-15,estimate based on partial data,35,18,52,26,39
+East of England,2020-08-16,estimate based on partial data,34,18,51,25,38
+East of England,2020-08-17,estimate based on partial data,55,28,81,40,61
+East of England,2020-08-18,estimate based on partial data,51,28,76,38,57
+East of England,2020-08-19,estimate based on partial data,53,26,79,40,60
+London,2020-02-25,estimate,1,0,3,0,1
+London,2020-02-26,estimate,2,0,3,1,2
+London,2020-02-27,estimate,2,0,4,0,2
+London,2020-02-28,estimate,2,0,5,0,2
+London,2020-02-29,estimate,3,0,5,1,3
+London,2020-03-01,estimate,4,1,7,2,4
+London,2020-03-02,estimate,8,1,12,4,8
+London,2020-03-03,estimate,11,4,17,6,11
+London,2020-03-04,estimate,16,6,24,10,17
+London,2020-03-05,estimate,20,10,30,14,22
+London,2020-03-06,estimate,24,12,34,20,29
+London,2020-03-07,estimate,23,12,34,16,25
+London,2020-03-08,estimate,31,17,44,23,34
+London,2020-03-09,estimate,60,36,84,46,66
+London,2020-03-10,estimate,79,49,111,60,85
+London,2020-03-11,estimate,108,69,149,83,116
+London,2020-03-12,estimate,128,76,175,100,139
+London,2020-03-13,estimate,140,90,190,115,155
+London,2020-03-14,estimate,124,81,169,99,135
+London,2020-03-15,estimate,151,94,204,125,170
+London,2020-03-16,estimate,270,167,354,220,297
+London,2020-03-17,estimate,320,207,432,263,355
+London,2020-03-18,estimate,400,269,548,333,440
+London,2020-03-19,estimate,434,289,590,362,482
+London,2020-03-20,estimate,432,282,583,352,472
+London,2020-03-21,estimate,353,243,487,301,394
+London,2020-03-22,estimate,388,253,524,327,437
+London,2020-03-23,estimate,639,436,860,536,711
+London,2020-03-24,estimate,700,464,965,592,790
+London,2020-03-25,estimate,814,553,1104,688,922
+London,2020-03-26,estimate,809,541,1100,644,873
+London,2020-03-27,estimate,738,517,1013,597,803
+London,2020-03-28,estimate,572,361,764,476,631
+London,2020-03-29,estimate,589,377,779,483,647
+London,2020-03-30,estimate,891,620,1244,754,997
+London,2020-03-31,estimate,936,622,1260,774,1033
+London,2020-04-01,estimate,1011,696,1358,853,1122
+London,2020-04-02,estimate,972,629,1288,804,1062
+London,2020-04-03,estimate,826,564,1110,707,926
+London,2020-04-04,estimate,608,403,813,530,694
+London,2020-04-05,estimate,592,391,802,493,657
+London,2020-04-06,estimate,872,566,1155,726,958
+London,2020-04-07,estimate,872,595,1189,732,963
+London,2020-04-08,estimate,905,624,1215,755,999
+London,2020-04-09,estimate,836,558,1133,704,934
+London,2020-04-10,estimate,701,472,950,591,783
+London,2020-04-11,estimate,501,335,663,401,538
+London,2020-04-12,estimate,481,328,657,391,522
+London,2020-04-13,estimate,692,439,909,577,769
+London,2020-04-14,estimate,680,437,911,539,727
+London,2020-04-15,estimate,702,459,921,607,799
+London,2020-04-16,estimate,634,428,859,535,700
+London,2020-04-17,estimate,528,350,712,464,611
+London,2020-04-18,estimate,375,244,507,303,409
+London,2020-04-19,estimate,359,244,488,280,385
+London,2020-04-20,estimate,518,353,693,441,585
+London,2020-04-21,estimate,505,329,683,413,555
+London,2020-04-22,estimate,518,340,703,427,571
+London,2020-04-23,estimate,476,313,640,392,524
+London,2020-04-24,estimate,395,269,537,312,422
+London,2020-04-25,estimate,280,185,378,231,309
+London,2020-04-26,estimate,268,177,364,222,294
+London,2020-04-27,estimate,384,253,525,307,418
+London,2020-04-28,estimate,376,249,501,300,402
+London,2020-04-29,estimate,390,258,534,323,433
+London,2020-04-30,estimate,353,228,475,289,385
+London,2020-05-01,estimate,292,190,395,247,329
+London,2020-05-02,estimate,206,133,279,169,229
+London,2020-05-03,estimate,197,123,264,154,212
+London,2020-05-04,estimate,277,175,371,225,302
+London,2020-05-05,estimate,269,166,356,224,302
+London,2020-05-06,estimate,273,176,368,224,302
+London,2020-05-07,estimate,244,156,333,210,278
+London,2020-05-08,estimate,202,130,270,157,216
+London,2020-05-09,estimate,140,92,192,114,155
+London,2020-05-10,estimate,133,81,178,104,143
+London,2020-05-11,estimate,187,116,250,160,213
+London,2020-05-12,estimate,178,111,241,140,192
+London,2020-05-13,estimate,178,114,242,145,196
+London,2020-05-14,estimate,160,104,219,136,182
+London,2020-05-15,estimate,132,82,178,109,147
+London,2020-05-16,estimate,90,54,123,71,98
+London,2020-05-17,estimate,84,51,116,65,91
+London,2020-05-18,estimate,119,76,163,95,130
+London,2020-05-19,estimate,114,74,155,96,128
+London,2020-05-20,estimate,114,70,155,91,124
+London,2020-05-21,estimate,104,66,141,82,113
+London,2020-05-22,estimate,85,51,116,67,93
+London,2020-05-23,estimate,60,33,80,50,69
+London,2020-05-24,estimate,55,33,78,42,60
+London,2020-05-25,estimate,81,51,112,68,92
+London,2020-05-26,estimate,79,51,110,59,84
+London,2020-05-27,estimate,81,50,112,65,90
+London,2020-05-28,estimate,74,42,99,58,82
+London,2020-05-29,estimate,61,37,86,46,65
+London,2020-05-30,estimate,44,24,60,34,48
+London,2020-05-31,estimate,42,24,59,32,46
+London,2020-06-01,estimate,61,36,84,47,66
+London,2020-06-02,estimate,61,35,84,48,67
+London,2020-06-03,estimate,63,39,88,48,68
+London,2020-06-04,estimate,59,37,84,45,64
+London,2020-06-05,estimate,50,29,70,36,53
+London,2020-06-06,estimate,36,19,50,28,40
+London,2020-06-07,estimate,36,21,53,27,39
+London,2020-06-08,estimate,53,31,74,40,58
+London,2020-06-09,estimate,52,29,73,37,55
+London,2020-06-10,estimate,56,32,76,45,62
+London,2020-06-11,estimate,51,32,71,38,55
+London,2020-06-12,estimate,44,25,62,32,47
+London,2020-06-13,estimate,32,18,47,25,36
+London,2020-06-14,estimate,32,17,45,25,36
+London,2020-06-15,estimate,47,28,67,35,51
+London,2020-06-16,estimate,48,28,68,36,52
+London,2020-06-17,estimate,51,30,71,38,55
+London,2020-06-18,estimate,48,27,65,39,54
+London,2020-06-19,estimate,41,23,58,30,44
+London,2020-06-20,estimate,30,16,43,24,34
+London,2020-06-21,estimate,30,16,43,22,33
+London,2020-06-22,estimate,45,27,64,38,52
+London,2020-06-23,estimate,45,29,67,36,50
+London,2020-06-24,estimate,50,28,70,38,55
+London,2020-06-25,estimate,47,29,67,34,50
+London,2020-06-26,estimate,41,22,57,32,45
+London,2020-06-27,estimate,30,15,42,21,32
+London,2020-06-28,estimate,30,17,44,23,34
+London,2020-06-29,estimate,45,26,63,36,50
+London,2020-06-30,estimate,47,26,65,34,50
+London,2020-07-01,estimate,51,31,72,42,58
+London,2020-07-02,estimate,49,27,67,39,55
+London,2020-07-03,estimate,44,23,61,31,46
+London,2020-07-04,estimate,32,17,46,24,35
+London,2020-07-05,estimate,33,18,46,27,38
+London,2020-07-06,estimate,50,29,72,38,55
+London,2020-07-07,estimate,52,33,74,39,56
+London,2020-07-08,estimate,58,36,82,44,63
+London,2020-07-09,estimate,56,34,78,44,62
+London,2020-07-10,estimate,50,30,71,39,55
+London,2020-07-11,estimate,38,21,53,30,42
+London,2020-07-12,estimate,39,23,56,27,41
+London,2020-07-13,estimate,59,36,82,48,67
+London,2020-07-14,estimate,62,37,88,47,67
+London,2020-07-15,estimate,70,41,96,56,78
+London,2020-07-16,estimate,68,40,93,54,75
+London,2020-07-17,estimate,61,34,83,45,64
+London,2020-07-18,estimate,46,26,65,33,49
+London,2020-07-19,estimate,48,26,67,37,53
+London,2020-07-20,estimate,73,44,101,59,82
+London,2020-07-21,estimate,77,47,106,61,85
+London,2020-07-22,estimate,85,51,113,67,93
+London,2020-07-23,estimate,82,51,114,62,88
+London,2020-07-24,estimate,74,44,100,58,80
+London,2020-07-25,estimate,55,30,75,40,58
+London,2020-07-26,estimate,56,34,77,43,60
+London,2020-07-27,estimate,86,51,119,69,95
+London,2020-07-28,estimate,90,55,122,72,98
+London,2020-07-29,estimate,97,62,136,79,107
+London,2020-07-30,estimate,95,58,132,73,103
+London,2020-07-31,estimate,85,54,119,68,94
+London,2020-08-01,estimate,65,39,90,50,70
+London,2020-08-02,estimate,66,38,89,54,74
+London,2020-08-03,estimate,101,61,137,83,113
+London,2020-08-04,estimate,105,66,144,79,112
+London,2020-08-05,estimate,115,72,159,95,129
+London,2020-08-06,estimate,112,67,152,88,122
+London,2020-08-07,estimate,100,67,142,79,110
+London,2020-08-08,estimate,76,45,102,57,81
+London,2020-08-09,estimate based on partial data,78,47,108,61,85
+London,2020-08-10,estimate based on partial data,119,77,164,91,128
+London,2020-08-11,estimate based on partial data,125,81,171,102,140
+London,2020-08-12,estimate based on partial data,138,90,190,109,150
+London,2020-08-13,estimate based on partial data,135,86,184,109,148
+London,2020-08-14,estimate based on partial data,120,74,163,89,127
+London,2020-08-15,estimate based on partial data,91,55,125,73,100
+London,2020-08-16,estimate based on partial data,93,57,129,73,102
+London,2020-08-17,estimate based on partial data,142,89,199,114,159
+London,2020-08-18,estimate based on partial data,149,94,211,121,168
+London,2020-08-19,estimate based on partial data,166,98,231,125,179
+Midlands,2020-03-15,estimate,59,34,80,44,63
+Midlands,2020-03-16,estimate,105,66,141,83,113
+Midlands,2020-03-17,estimate,126,81,171,104,139
+Midlands,2020-03-18,estimate,160,105,217,130,176
+Midlands,2020-03-19,estimate,191,122,251,163,214
+Midlands,2020-03-20,estimate,206,134,276,168,226
+Midlands,2020-03-21,estimate,192,129,256,166,217
+Midlands,2020-03-22,estimate,206,137,274,170,225
+Midlands,2020-03-23,estimate,342,235,462,304,397
+Midlands,2020-03-24,estimate,379,260,508,327,428
+Midlands,2020-03-25,estimate,438,308,585,380,497
+Midlands,2020-03-26,estimate,477,321,633,392,514
+Midlands,2020-03-27,estimate,468,323,628,397,521
+Midlands,2020-03-28,estimate,397,271,529,339,442
+Midlands,2020-03-29,estimate,382,266,516,319,417
+Midlands,2020-03-30,estimate,571,395,759,486,633
+Midlands,2020-03-31,estimate,587,407,794,495,645
+Midlands,2020-04-01,estimate,630,439,837,536,695
+Midlands,2020-04-02,estimate,638,442,847,529,693
+Midlands,2020-04-03,estimate,587,405,781,513,668
+Midlands,2020-04-04,estimate,465,307,627,385,514
+Midlands,2020-04-05,estimate,434,299,580,357,473
+Midlands,2020-04-06,estimate,626,444,843,542,705
+Midlands,2020-04-07,estimate,619,415,830,517,680
+Midlands,2020-04-08,estimate,648,442,853,574,737
+Midlands,2020-04-09,estimate,648,453,870,547,717
+Midlands,2020-04-10,estimate,590,392,776,506,661
+Midlands,2020-04-11,estimate,475,330,637,400,528
+Midlands,2020-04-12,estimate,443,312,602,359,479
+Midlands,2020-04-13,estimate,645,449,862,535,703
+Midlands,2020-04-14,estimate,658,463,894,565,724
+Midlands,2020-04-15,estimate,692,480,928,565,752
+Midlands,2020-04-16,estimate,711,490,959,577,767
+Midlands,2020-04-17,estimate,650,454,875,540,713
+Midlands,2020-04-18,estimate,525,361,704,453,586
+Midlands,2020-04-19,estimate,494,330,646,423,545
+Midlands,2020-04-20,estimate,729,527,998,630,819
+Midlands,2020-04-21,estimate,739,503,965,617,805
+Midlands,2020-04-22,estimate,777,548,1043,671,876
+Midlands,2020-04-23,estimate,785,521,1034,661,858
+Midlands,2020-04-24,estimate,711,471,932,575,766
+Midlands,2020-04-25,estimate,566,379,738,484,628
+Midlands,2020-04-26,estimate,524,354,700,447,588
+Midlands,2020-04-27,estimate,746,496,983,622,823
+Midlands,2020-04-28,estimate,741,504,968,631,824
+Midlands,2020-04-29,estimate,758,527,1007,629,826
+Midlands,2020-04-30,estimate,741,499,994,646,841
+Midlands,2020-05-01,estimate,663,457,889,562,739
+Midlands,2020-05-02,estimate,518,351,695,436,573
+Midlands,2020-05-03,estimate,468,319,631,386,512
+Midlands,2020-05-04,estimate,660,451,877,556,729
+Midlands,2020-05-05,estimate,636,439,849,539,708
+Midlands,2020-05-06,estimate,652,449,868,545,716
+Midlands,2020-05-07,estimate,641,444,863,548,717
+Midlands,2020-05-08,estimate,571,392,764,472,628
+Midlands,2020-05-09,estimate,439,296,576,354,471
+Midlands,2020-05-10,estimate,400,279,540,338,440
+Midlands,2020-05-11,estimate,564,400,760,460,604
+Midlands,2020-05-12,estimate,555,376,742,470,619
+Midlands,2020-05-13,estimate,558,373,747,482,629
+Midlands,2020-05-14,estimate,552,372,736,465,609
+Midlands,2020-05-15,estimate,487,324,651,400,528
+Midlands,2020-05-16,estimate,382,248,496,306,411
+Midlands,2020-05-17,estimate,344,230,453,295,385
+Midlands,2020-05-18,estimate,483,334,653,398,530
+Midlands,2020-05-19,estimate,471,315,624,389,510
+Midlands,2020-05-20,estimate,476,320,624,394,519
+Midlands,2020-05-21,estimate,461,304,612,393,520
+Midlands,2020-05-22,estimate,404,286,544,341,447
+Midlands,2020-05-23,estimate,314,212,415,256,340
+Midlands,2020-05-24,estimate,278,193,374,229,303
+Midlands,2020-05-25,estimate,393,271,521,327,429
+Midlands,2020-05-26,estimate,374,251,506,302,400
+Midlands,2020-05-27,estimate,379,261,507,317,414
+Midlands,2020-05-28,estimate,368,245,491,312,411
+Midlands,2020-05-29,estimate,323,219,435,278,360
+Midlands,2020-05-30,estimate,247,170,337,202,271
+Midlands,2020-05-31,estimate,221,154,304,182,242
+Midlands,2020-06-01,estimate,310,217,424,258,341
+Midlands,2020-06-02,estimate,302,207,399,246,326
+Midlands,2020-06-03,estimate,312,212,417,252,336
+Midlands,2020-06-04,estimate,302,204,399,245,326
+Midlands,2020-06-05,estimate,271,179,362,220,293
+Midlands,2020-06-06,estimate,210,143,284,172,229
+Midlands,2020-06-07,estimate,196,128,258,159,211
+Midlands,2020-06-08,estimate,274,186,366,241,314
+Midlands,2020-06-09,estimate,273,182,361,230,301
+Midlands,2020-06-10,estimate,280,180,366,236,310
+Midlands,2020-06-11,estimate,278,189,372,234,310
+Midlands,2020-06-12,estimate,252,164,330,209,277
+Midlands,2020-06-13,estimate,195,131,263,160,215
+Midlands,2020-06-14,estimate,181,124,247,156,205
+Midlands,2020-06-15,estimate,258,165,334,215,285
+Midlands,2020-06-16,estimate,253,170,337,205,272
+Midlands,2020-06-17,estimate,254,169,338,218,288
+Midlands,2020-06-18,estimate,252,161,331,217,284
+Midlands,2020-06-19,estimate,222,152,298,187,246
+Midlands,2020-06-20,estimate,173,113,228,144,190
+Midlands,2020-06-21,estimate,156,104,210,131,171
+Midlands,2020-06-22,estimate,221,141,288,189,248
+Midlands,2020-06-23,estimate,211,142,281,174,231
+Midlands,2020-06-24,estimate,216,145,291,183,241
+Midlands,2020-06-25,estimate,210,140,281,169,228
+Midlands,2020-06-26,estimate,184,118,243,149,199
+Midlands,2020-06-27,estimate,142,90,191,113,154
+Midlands,2020-06-28,estimate,129,85,173,108,143
+Midlands,2020-06-29,estimate,183,125,248,151,201
+Midlands,2020-06-30,estimate,177,117,235,153,202
+Midlands,2020-07-01,estimate,183,122,247,147,198
+Midlands,2020-07-02,estimate,178,120,240,148,197
+Midlands,2020-07-03,estimate,160,109,218,124,170
+Midlands,2020-07-04,estimate,126,81,170,109,144
+Midlands,2020-07-05,estimate,117,75,156,91,124
+Midlands,2020-07-06,estimate,168,115,229,138,186
+Midlands,2020-07-07,estimate,167,111,222,136,182
+Midlands,2020-07-08,estimate,174,114,231,142,190
+Midlands,2020-07-09,estimate,175,118,238,147,193
+Midlands,2020-07-10,estimate,156,102,209,124,169
+Midlands,2020-07-11,estimate,124,81,167,104,138
+Midlands,2020-07-12,estimate,116,75,155,94,126
+Midlands,2020-07-13,estimate,165,106,222,136,184
+Midlands,2020-07-14,estimate,164,110,221,138,183
+Midlands,2020-07-15,estimate,171,113,227,139,185
+Midlands,2020-07-16,estimate,167,109,223,138,183
+Midlands,2020-07-17,estimate,152,100,207,127,169
+Midlands,2020-07-18,estimate,121,76,161,98,131
+Midlands,2020-07-19,estimate,110,69,146,92,123
+Midlands,2020-07-20,estimate,159,105,220,136,181
+Midlands,2020-07-21,estimate,155,99,205,127,170
+Midlands,2020-07-22,estimate,161,110,216,137,181
+Midlands,2020-07-23,estimate,161,106,212,136,179
+Midlands,2020-07-24,estimate,146,98,197,120,161
+Midlands,2020-07-25,estimate,115,76,157,94,126
+Midlands,2020-07-26,estimate,109,69,145,86,116
+Midlands,2020-07-27,estimate,158,102,212,126,171
+Midlands,2020-07-28,estimate,160,104,215,131,177
+Midlands,2020-07-29,estimate,171,114,227,145,191
+Midlands,2020-07-30,estimate,176,116,235,143,192
+Midlands,2020-07-31,estimate,165,109,225,135,182
+Midlands,2020-08-01,estimate,132,88,180,106,143
+Midlands,2020-08-02,estimate,127,85,175,104,140
+Midlands,2020-08-03,estimate,190,127,259,164,215
+Midlands,2020-08-04,estimate,200,139,272,170,223
+Midlands,2020-08-05,estimate,214,147,292,178,236
+Midlands,2020-08-06,estimate,224,149,303,182,244
+Midlands,2020-08-07,estimate,209,138,283,174,232
+Midlands,2020-08-08,estimate,170,105,227,135,183
+Midlands,2020-08-09,estimate based on partial data,159,104,215,130,174
+Midlands,2020-08-10,estimate based on partial data,237,151,309,194,260
+Midlands,2020-08-11,estimate based on partial data,238,161,318,200,264
+Midlands,2020-08-12,estimate based on partial data,247,162,325,214,280
+Midlands,2020-08-13,estimate based on partial data,247,174,335,200,268
+Midlands,2020-08-14,estimate based on partial data,220,144,293,184,246
+Midlands,2020-08-15,estimate based on partial data,173,112,235,138,187
+Midlands,2020-08-16,estimate based on partial data,158,101,211,130,174
+Midlands,2020-08-17,estimate based on partial data,222,143,300,174,238
+Midlands,2020-08-18,estimate based on partial data,214,134,293,179,241
+Midlands,2020-08-19,estimate based on partial data,216,139,298,175,239
+North East and Yorkshire,2020-03-16,estimate,36,0,52,29,44
+North East and Yorkshire,2020-03-17,estimate,46,0,65,37,56
+North East and Yorkshire,2020-03-18,estimate,61,0,86,50,74
+North East and Yorkshire,2020-03-19,estimate,71,0,98,58,86
+North East and Yorkshire,2020-03-20,estimate,81,0,109,66,96
+North East and Yorkshire,2020-03-21,estimate,87,0,120,73,104
+North East and Yorkshire,2020-03-22,estimate,101,0,137,82,119
+North East and Yorkshire,2020-03-23,estimate,168,0,221,139,196
+North East and Yorkshire,2020-03-24,estimate,202,0,268,177,244
+North East and Yorkshire,2020-03-25,estimate,255,0,333,216,304
+North East and Yorkshire,2020-03-26,estimate,272,0,352,237,329
+North East and Yorkshire,2020-03-27,estimate,287,0,377,250,347
+North East and Yorkshire,2020-03-28,estimate,276,0,363,237,330
+North East and Yorkshire,2020-03-29,estimate,288,0,375,242,339
+North East and Yorkshire,2020-03-30,estimate,425,0,560,373,515
+North East and Yorkshire,2020-03-31,estimate,472,0,613,417,570
+North East and Yorkshire,2020-04-01,estimate,520,0,691,453,626
+North East and Yorkshire,2020-04-02,estimate,506,0,672,434,605
+North East and Yorkshire,2020-04-03,estimate,486,0,639,421,574
+North East and Yorkshire,2020-04-04,estimate,433,0,574,362,504
+North East and Yorkshire,2020-04-05,estimate,410,0,543,358,495
+North East and Yorkshire,2020-04-06,estimate,576,0,760,500,688
+North East and Yorkshire,2020-04-07,estimate,594,0,778,500,693
+North East and Yorkshire,2020-04-08,estimate,634,0,829,554,757
+North East and Yorkshire,2020-04-09,estimate,596,0,783,508,701
+North East and Yorkshire,2020-04-10,estimate,560,0,738,490,674
+North East and Yorkshire,2020-04-11,estimate,489,0,635,415,571
+North East and Yorkshire,2020-04-12,estimate,467,0,617,399,548
+North East and Yorkshire,2020-04-13,estimate,646,0,836,560,766
+North East and Yorkshire,2020-04-14,estimate,671,0,869,583,795
+North East and Yorkshire,2020-04-15,estimate,720,0,938,623,862
+North East and Yorkshire,2020-04-16,estimate,692,0,893,584,806
+North East and Yorkshire,2020-04-17,estimate,644,0,843,568,786
+North East and Yorkshire,2020-04-18,estimate,558,0,733,475,661
+North East and Yorkshire,2020-04-19,estimate,543,0,699,469,637
+North East and Yorkshire,2020-04-20,estimate,754,0,989,665,904
+North East and Yorkshire,2020-04-21,estimate,785,0,1025,668,927
+North East and Yorkshire,2020-04-22,estimate,835,0,1078,722,992
+North East and Yorkshire,2020-04-23,estimate,788,0,1023,696,942
+North East and Yorkshire,2020-04-24,estimate,732,0,957,606,855
+North East and Yorkshire,2020-04-25,estimate,630,0,810,546,745
+North East and Yorkshire,2020-04-26,estimate,589,0,771,504,700
+North East and Yorkshire,2020-04-27,estimate,796,0,1039,696,947
+North East and Yorkshire,2020-04-28,estimate,810,0,1044,689,952
+North East and Yorkshire,2020-04-29,estimate,834,0,1070,732,994
+North East and Yorkshire,2020-04-30,estimate,759,0,1005,657,904
+North East and Yorkshire,2020-05-01,estimate,683,0,888,584,806
+North East and Yorkshire,2020-05-02,estimate,558,0,744,462,649
+North East and Yorkshire,2020-05-03,estimate,516,0,670,437,608
+North East and Yorkshire,2020-05-04,estimate,687,0,903,592,820
+North East and Yorkshire,2020-05-05,estimate,673,0,891,556,796
+North East and Yorkshire,2020-05-06,estimate,690,0,898,578,802
+North East and Yorkshire,2020-05-07,estimate,616,0,803,543,738
+North East and Yorkshire,2020-05-08,estimate,553,0,718,480,660
+North East and Yorkshire,2020-05-09,estimate,451,0,597,399,545
+North East and Yorkshire,2020-05-10,estimate,410,0,535,351,482
+North East and Yorkshire,2020-05-11,estimate,543,0,711,459,645
+North East and Yorkshire,2020-05-12,estimate,540,0,707,476,653
+North East and Yorkshire,2020-05-13,estimate,543,0,707,466,647
+North East and Yorkshire,2020-05-14,estimate,499,0,649,427,590
+North East and Yorkshire,2020-05-15,estimate,436,0,569,377,522
+North East and Yorkshire,2020-05-16,estimate,360,0,470,305,420
+North East and Yorkshire,2020-05-17,estimate,327,0,432,284,396
+North East and Yorkshire,2020-05-18,estimate,433,0,566,370,515
+North East and Yorkshire,2020-05-19,estimate,426,0,555,365,504
+North East and Yorkshire,2020-05-20,estimate,428,0,563,380,521
+North East and Yorkshire,2020-05-21,estimate,388,0,510,339,470
+North East and Yorkshire,2020-05-22,estimate,343,0,447,292,407
+North East and Yorkshire,2020-05-23,estimate,279,0,365,233,326
+North East and Yorkshire,2020-05-24,estimate,251,0,328,218,303
+North East and Yorkshire,2020-05-25,estimate,328,0,428,281,388
+North East and Yorkshire,2020-05-26,estimate,321,0,420,275,380
+North East and Yorkshire,2020-05-27,estimate,322,0,422,267,379
+North East and Yorkshire,2020-05-28,estimate,290,0,379,251,346
+North East and Yorkshire,2020-05-29,estimate,253,0,334,211,298
+North East and Yorkshire,2020-05-30,estimate,210,0,277,174,247
+North East and Yorkshire,2020-05-31,estimate,189,0,249,163,227
+North East and Yorkshire,2020-06-01,estimate,250,0,329,210,298
+North East and Yorkshire,2020-06-02,estimate,252,0,332,218,304
+North East and Yorkshire,2020-06-03,estimate,252,0,336,214,299
+North East and Yorkshire,2020-06-04,estimate,236,0,308,209,286
+North East and Yorkshire,2020-06-05,estimate,214,0,279,185,257
+North East and Yorkshire,2020-06-06,estimate,176,0,232,153,214
+North East and Yorkshire,2020-06-07,estimate,167,0,217,144,198
+North East and Yorkshire,2020-06-08,estimate,225,0,293,192,269
+North East and Yorkshire,2020-06-09,estimate,230,0,312,191,277
+North East and Yorkshire,2020-06-10,estimate,243,0,317,204,284
+North East and Yorkshire,2020-06-11,estimate,227,0,298,201,278
+North East and Yorkshire,2020-06-12,estimate,206,0,271,172,243
+North East and Yorkshire,2020-06-13,estimate,174,0,229,144,205
+North East and Yorkshire,2020-06-14,estimate,163,0,216,143,200
+North East and Yorkshire,2020-06-15,estimate,220,0,287,186,259
+North East and Yorkshire,2020-06-16,estimate,225,0,294,190,266
+North East and Yorkshire,2020-06-17,estimate,230,0,303,195,273
+North East and Yorkshire,2020-06-18,estimate,210,0,277,178,252
+North East and Yorkshire,2020-06-19,estimate,187,0,246,164,227
+North East and Yorkshire,2020-06-20,estimate,156,0,206,133,187
+North East and Yorkshire,2020-06-21,estimate,141,0,186,122,170
+North East and Yorkshire,2020-06-22,estimate,185,0,247,148,213
+North East and Yorkshire,2020-06-23,estimate,182,0,238,157,218
+North East and Yorkshire,2020-06-24,estimate,183,0,242,155,218
+North East and Yorkshire,2020-06-25,estimate,163,0,217,137,196
+North East and Yorkshire,2020-06-26,estimate,144,0,191,121,170
+North East and Yorkshire,2020-06-27,estimate,117,0,154,100,143
+North East and Yorkshire,2020-06-28,estimate,104,0,139,91,128
+North East and Yorkshire,2020-06-29,estimate,137,0,184,114,163
+North East and Yorkshire,2020-06-30,estimate,135,0,180,115,161
+North East and Yorkshire,2020-07-01,estimate,138,0,181,118,166
+North East and Yorkshire,2020-07-02,estimate,124,0,167,106,151
+North East and Yorkshire,2020-07-03,estimate,111,0,149,90,131
+North East and Yorkshire,2020-07-04,estimate,91,0,122,76,109
+North East and Yorkshire,2020-07-05,estimate,83,0,113,68,100
+North East and Yorkshire,2020-07-06,estimate,113,0,151,94,135
+North East and Yorkshire,2020-07-07,estimate,115,0,154,98,140
+North East and Yorkshire,2020-07-08,estimate,119,0,160,102,145
+North East and Yorkshire,2020-07-09,estimate,113,0,150,97,136
+North East and Yorkshire,2020-07-10,estimate,103,0,138,84,122
+North East and Yorkshire,2020-07-11,estimate,88,0,118,77,109
+North East and Yorkshire,2020-07-12,estimate,83,0,111,71,102
+North East and Yorkshire,2020-07-13,estimate,115,0,154,96,138
+North East and Yorkshire,2020-07-14,estimate,119,0,160,106,148
+North East and Yorkshire,2020-07-15,estimate,126,0,169,102,148
+North East and Yorkshire,2020-07-16,estimate,118,0,156,98,140
+North East and Yorkshire,2020-07-17,estimate,108,0,145,90,128
+North East and Yorkshire,2020-07-18,estimate,92,0,123,77,110
+North East and Yorkshire,2020-07-19,estimate,86,0,117,72,104
+North East and Yorkshire,2020-07-20,estimate,119,0,158,101,143
+North East and Yorkshire,2020-07-21,estimate,121,0,161,100,143
+North East and Yorkshire,2020-07-22,estimate,130,0,171,114,159
+North East and Yorkshire,2020-07-23,estimate,122,0,161,103,147
+North East and Yorkshire,2020-07-24,estimate,111,0,150,89,130
+North East and Yorkshire,2020-07-25,estimate,96,0,128,78,113
+North East and Yorkshire,2020-07-26,estimate,90,0,121,75,109
+North East and Yorkshire,2020-07-27,estimate,125,0,166,111,155
+North East and Yorkshire,2020-07-28,estimate,131,0,173,110,156
+North East and Yorkshire,2020-07-29,estimate,139,0,184,116,164
+North East and Yorkshire,2020-07-30,estimate,135,0,177,112,160
+North East and Yorkshire,2020-07-31,estimate,124,0,167,100,147
+North East and Yorkshire,2020-08-01,estimate,108,0,144,94,133
+North East and Yorkshire,2020-08-02,estimate,105,0,141,86,125
+North East and Yorkshire,2020-08-03,estimate,148,0,196,132,184
+North East and Yorkshire,2020-08-04,estimate,158,0,210,132,188
+North East and Yorkshire,2020-08-05,estimate,169,0,226,141,200
+North East and Yorkshire,2020-08-06,estimate,164,0,216,137,194
+North East and Yorkshire,2020-08-07,estimate,154,0,204,133,189
+North East and Yorkshire,2020-08-08,estimate,133,0,176,112,158
+North East and Yorkshire,2020-08-09,estimate based on partial data,126,0,168,105,151
+North East and Yorkshire,2020-08-10,estimate based on partial data,173,0,229,148,207
+North East and Yorkshire,2020-08-11,estimate based on partial data,177,0,238,152,216
+North East and Yorkshire,2020-08-12,estimate based on partial data,186,0,250,156,223
+North East and Yorkshire,2020-08-13,estimate based on partial data,174,0,229,145,208
+North East and Yorkshire,2020-08-14,estimate based on partial data,155,0,206,130,185
+North East and Yorkshire,2020-08-15,estimate based on partial data,129,0,174,107,153
+North East and Yorkshire,2020-08-16,estimate based on partial data,117,0,158,100,142
+North East and Yorkshire,2020-08-17,estimate based on partial data,155,0,206,126,182
+North East and Yorkshire,2020-08-18,estimate based on partial data,152,0,208,125,184
+North East and Yorkshire,2020-08-19,estimate based on partial data,152,0,207,127,186
+North West,2020-03-13,estimate,25,14,37,18,27
+North West,2020-03-14,estimate,25,15,37,19,28
+North West,2020-03-15,estimate,30,16,42,25,35
+North West,2020-03-16,estimate,51,31,72,41,57
+North West,2020-03-17,estimate,63,38,88,49,69
+North West,2020-03-18,estimate,83,55,119,64,90
+North West,2020-03-19,estimate,98,64,137,79,109
+North West,2020-03-20,estimate,103,65,140,85,115
+North West,2020-03-21,estimate,104,65,143,84,114
+North West,2020-03-22,estimate,118,69,159,93,128
+North West,2020-03-23,estimate,198,128,263,159,214
+North West,2020-03-24,estimate,236,157,316,189,256
+North West,2020-03-25,estimate,297,199,402,243,327
+North West,2020-03-26,estimate,332,211,436,262,353
+North West,2020-03-27,estimate,323,216,435,271,360
+North West,2020-03-28,estimate,309,194,404,259,345
+North West,2020-03-29,estimate,324,217,433,269,361
+North West,2020-03-30,estimate,498,322,658,416,555
+North West,2020-03-31,estimate,550,362,725,463,611
+North West,2020-04-01,estimate,632,423,843,556,726
+North West,2020-04-02,estimate,653,465,898,564,734
+North West,2020-04-03,estimate,598,395,792,495,657
+North West,2020-04-04,estimate,519,362,704,436,573
+North West,2020-04-05,estimate,515,363,704,426,566
+North West,2020-04-06,estimate,729,503,1001,619,814
+North West,2020-04-07,estimate,766,515,1004,628,830
+North West,2020-04-08,estimate,838,574,1121,720,944
+North West,2020-04-09,estimate,820,556,1086,677,898
+North West,2020-04-10,estimate,708,476,938,573,766
+North West,2020-04-11,estimate,592,400,787,484,644
+North West,2020-04-12,estimate,560,381,761,465,619
+North West,2020-04-13,estimate,780,517,1023,662,865
+North West,2020-04-14,estimate,800,525,1042,681,892
+North West,2020-04-15,estimate,856,582,1139,710,932
+North West,2020-04-16,estimate,821,567,1100,710,929
+North West,2020-04-17,estimate,694,466,935,593,775
+North West,2020-04-18,estimate,581,387,761,506,654
+North West,2020-04-19,estimate,544,390,738,462,604
+North West,2020-04-20,estimate,745,510,1009,601,808
+North West,2020-04-21,estimate,753,543,1027,621,815
+North West,2020-04-22,estimate,804,561,1068,679,897
+North West,2020-04-23,estimate,782,553,1063,663,864
+North West,2020-04-24,estimate,648,433,862,524,699
+North West,2020-04-25,estimate,533,374,719,440,583
+North West,2020-04-26,estimate,496,331,661,418,555
+North West,2020-04-27,estimate,672,452,899,554,737
+North West,2020-04-28,estimate,685,459,911,573,757
+North West,2020-04-29,estimate,717,510,995,597,789
+North West,2020-04-30,estimate,675,470,905,563,744
+North West,2020-05-01,estimate,574,375,749,479,637
+North West,2020-05-02,estimate,468,318,629,402,525
+North West,2020-05-03,estimate,431,287,572,361,475
+North West,2020-05-04,estimate,589,391,779,503,656
+North West,2020-05-05,estimate,583,396,778,506,660
+North West,2020-05-06,estimate,614,418,809,555,717
+North West,2020-05-07,estimate,585,396,784,492,653
+North West,2020-05-08,estimate,484,336,657,402,530
+North West,2020-05-09,estimate,397,259,534,335,448
+North West,2020-05-10,estimate,367,257,500,303,401
+North West,2020-05-11,estimate,499,334,675,423,553
+North West,2020-05-12,estimate,499,330,654,406,537
+North West,2020-05-13,estimate,515,359,697,419,562
+North West,2020-05-14,estimate,499,335,665,430,564
+North West,2020-05-15,estimate,417,276,551,347,460
+North West,2020-05-16,estimate,338,232,459,271,365
+North West,2020-05-17,estimate,313,215,420,267,351
+North West,2020-05-18,estimate,425,292,572,359,469
+North West,2020-05-19,estimate,427,278,565,355,468
+North West,2020-05-20,estimate,445,301,587,376,490
+North West,2020-05-21,estimate,420,286,573,359,473
+North West,2020-05-22,estimate,345,229,458,290,380
+North West,2020-05-23,estimate,280,187,371,234,308
+North West,2020-05-24,estimate,254,161,340,210,280
+North West,2020-05-25,estimate,341,232,457,280,373
+North West,2020-05-26,estimate,337,229,460,286,376
+North West,2020-05-27,estimate,344,233,466,289,380
+North West,2020-05-28,estimate,324,212,427,269,357
+North West,2020-05-29,estimate,267,171,355,219,295
+North West,2020-05-30,estimate,213,143,287,181,238
+North West,2020-05-31,estimate,192,122,256,154,209
+North West,2020-06-01,estimate,260,172,349,213,284
+North West,2020-06-02,estimate,252,165,337,198,269
+North West,2020-06-03,estimate,261,169,352,210,282
+North West,2020-06-04,estimate,244,162,331,203,270
+North West,2020-06-05,estimate,202,132,269,175,231
+North West,2020-06-06,estimate,162,101,219,136,181
+North West,2020-06-07,estimate,150,96,201,118,161
+North West,2020-06-08,estimate,203,130,271,162,220
+North West,2020-06-09,estimate,200,135,275,166,220
+North West,2020-06-10,estimate,211,143,288,184,243
+North West,2020-06-11,estimate,199,135,273,162,218
+North West,2020-06-12,estimate,166,112,227,140,187
+North West,2020-06-13,estimate,135,83,180,110,147
+North West,2020-06-14,estimate,125,81,169,101,136
+North West,2020-06-15,estimate,172,117,234,146,195
+North West,2020-06-16,estimate,170,114,234,143,191
+North West,2020-06-17,estimate,179,121,242,151,202
+North West,2020-06-18,estimate,168,105,226,140,186
+North West,2020-06-19,estimate,142,92,190,117,156
+North West,2020-06-20,estimate,115,73,152,94,125
+North West,2020-06-21,estimate,106,66,143,85,115
+North West,2020-06-22,estimate,142,89,189,112,153
+North West,2020-06-23,estimate,142,94,194,119,158
+North West,2020-06-24,estimate,148,93,201,118,161
+North West,2020-06-25,estimate,139,92,189,114,153
+North West,2020-06-26,estimate,117,71,153,97,130
+North West,2020-06-27,estimate,94,59,127,75,102
+North West,2020-06-28,estimate,87,56,123,68,94
+North West,2020-06-29,estimate,118,80,163,98,132
+North West,2020-06-30,estimate,117,77,160,97,130
+North West,2020-07-01,estimate,123,79,168,97,132
+North West,2020-07-02,estimate,117,77,158,92,126
+North West,2020-07-03,estimate,100,62,132,80,109
+North West,2020-07-04,estimate,81,49,109,64,88
+North West,2020-07-05,estimate,76,48,104,63,85
+North West,2020-07-06,estimate,104,68,145,84,114
+North West,2020-07-07,estimate,107,70,146,91,121
+North West,2020-07-08,estimate,114,70,154,95,128
+North West,2020-07-09,estimate,113,72,153,87,121
+North West,2020-07-10,estimate,98,62,134,81,110
+North West,2020-07-11,estimate,83,52,113,69,94
+North West,2020-07-12,estimate,79,50,110,63,86
+North West,2020-07-13,estimate,114,72,153,92,124
+North West,2020-07-14,estimate,119,73,161,92,128
+North West,2020-07-15,estimate,131,84,174,108,145
+North West,2020-07-16,estimate,134,89,182,109,147
+North West,2020-07-17,estimate,118,81,166,93,128
+North West,2020-07-18,estimate,103,65,138,82,112
+North West,2020-07-19,estimate,100,68,137,83,111
+North West,2020-07-20,estimate,147,95,197,120,161
+North West,2020-07-21,estimate,156,96,206,125,170
+North West,2020-07-22,estimate,176,115,239,142,193
+North West,2020-07-23,estimate,179,112,239,145,196
+North West,2020-07-24,estimate,159,102,214,135,181
+North West,2020-07-25,estimate,139,89,186,113,152
+North West,2020-07-26,estimate,140,88,187,120,159
+North West,2020-07-27,estimate,200,130,270,169,226
+North West,2020-07-28,estimate,214,145,297,178,237
+North West,2020-07-29,estimate,236,157,321,190,254
+North West,2020-07-30,estimate,240,151,315,201,266
+North West,2020-07-31,estimate,211,137,282,169,226
+North West,2020-08-01,estimate,179,117,245,153,205
+North West,2020-08-02,estimate,176,109,230,152,200
+North West,2020-08-03,estimate,250,172,343,215,284
+North West,2020-08-04,estimate,259,167,348,210,282
+North West,2020-08-05,estimate,281,188,378,227,302
+North West,2020-08-06,estimate,275,181,365,235,314
+North West,2020-08-07,estimate,236,156,318,195,257
+North West,2020-08-08,estimate,198,129,267,160,216
+North West,2020-08-09,estimate based on partial data,187,119,251,162,215
+North West,2020-08-10,estimate based on partial data,257,181,354,211,282
+North West,2020-08-11,estimate based on partial data,260,175,345,214,285
+North West,2020-08-12,estimate based on partial data,274,181,367,231,304
+North West,2020-08-13,estimate based on partial data,261,170,346,215,286
+North West,2020-08-14,estimate based on partial data,217,148,301,177,237
+North West,2020-08-15,estimate based on partial data,177,114,238,145,194
+North West,2020-08-16,estimate based on partial data,161,102,215,131,177
+North West,2020-08-17,estimate based on partial data,220,148,304,182,244
+North West,2020-08-18,estimate based on partial data,217,137,290,175,239
+North West,2020-08-19,estimate based on partial data,223,140,305,170,237
+South East,2020-02-17,estimate,0,0,1,0,0
+South East,2020-02-18,estimate,0,0,1,0,0
+South East,2020-02-19,estimate,0,0,2,0,0
+South East,2020-02-20,estimate,0,0,2,0,0
+South East,2020-02-21,estimate,0,0,2,0,0
+South East,2020-02-22,estimate,0,0,1,0,0
+South East,2020-02-23,estimate,0,0,1,0,0
+South East,2020-02-24,estimate,1,0,2,0,1
+South East,2020-02-25,estimate,1,0,2,0,1
+South East,2020-02-26,estimate,1,0,3,0,1
+South East,2020-02-27,estimate,1,0,3,0,1
+South East,2020-02-28,estimate,1,0,4,0,1
+South East,2020-02-29,estimate,1,0,3,0,1
+South East,2020-03-01,estimate,2,0,4,1,2
+South East,2020-03-02,estimate,4,0,7,1,4
+South East,2020-03-03,estimate,5,1,9,2,5
+South East,2020-03-04,estimate,7,2,12,3,7
+South East,2020-03-05,estimate,9,3,14,4,9
+South East,2020-03-06,estimate,10,3,16,6,11
+South East,2020-03-07,estimate,9,3,15,5,10
+South East,2020-03-08,estimate,12,5,19,7,13
+South East,2020-03-09,estimate,24,12,35,17,26
+South East,2020-03-10,estimate,29,16,44,23,33
+South East,2020-03-11,estimate,38,20,56,28,42
+South East,2020-03-12,estimate,45,26,65,33,49
+South East,2020-03-13,estimate,51,29,73,38,55
+South East,2020-03-14,estimate,44,25,63,34,49
+South East,2020-03-15,estimate,51,28,74,39,57
+South East,2020-03-16,estimate,98,57,137,79,110
+South East,2020-03-17,estimate,110,71,160,86,121
+South East,2020-03-18,estimate,135,86,188,108,151
+South East,2020-03-19,estimate,148,93,205,114,159
+South East,2020-03-20,estimate,155,94,214,125,173
+South East,2020-03-21,estimate,127,77,179,102,142
+South East,2020-03-22,estimate,141,89,197,112,156
+South East,2020-03-23,estimate,255,159,351,217,294
+South East,2020-03-24,estimate,272,174,375,221,302
+South East,2020-03-25,estimate,314,200,435,261,351
+South East,2020-03-26,estimate,326,211,457,270,371
+South East,2020-03-27,estimate,326,196,442,257,357
+South East,2020-03-28,estimate,257,162,348,205,283
+South East,2020-03-29,estimate,273,175,375,227,309
+South East,2020-03-30,estimate,466,308,642,380,519
+South East,2020-03-31,estimate,474,306,651,397,533
+South East,2020-04-01,estimate,528,325,711,449,599
+South East,2020-04-02,estimate,522,327,710,421,577
+South East,2020-04-03,estimate,496,312,677,410,553
+South East,2020-04-04,estimate,373,236,512,308,420
+South East,2020-04-05,estimate,383,249,529,303,414
+South East,2020-04-06,estimate,628,423,872,508,690
+South East,2020-04-07,estimate,606,365,819,505,689
+South East,2020-04-08,estimate,654,420,891,549,746
+South East,2020-04-09,estimate,631,402,871,503,688
+South East,2020-04-10,estimate,584,387,800,462,633
+South East,2020-04-11,estimate,424,272,576,335,460
+South East,2020-04-12,estimate,426,281,600,346,477
+South East,2020-04-13,estimate,683,428,928,572,781
+South East,2020-04-14,estimate,653,423,907,514,718
+South East,2020-04-15,estimate,690,465,969,572,779
+South East,2020-04-16,estimate,651,426,889,550,734
+South East,2020-04-17,estimate,600,387,835,473,653
+South East,2020-04-18,estimate,432,284,599,356,481
+South East,2020-04-19,estimate,432,283,591,371,496
+South East,2020-04-20,estimate,689,447,951,547,752
+South East,2020-04-21,estimate,656,449,927,546,739
+South East,2020-04-22,estimate,689,447,936,545,746
+South East,2020-04-23,estimate,655,429,896,544,730
+South East,2020-04-24,estimate,596,379,805,503,683
+South East,2020-04-25,estimate,428,291,603,359,485
+South East,2020-04-26,estimate,417,257,567,344,465
+South East,2020-04-27,estimate,659,412,900,529,730
+South East,2020-04-28,estimate,614,402,854,515,691
+South East,2020-04-29,estimate,640,425,886,522,705
+South East,2020-04-30,estimate,592,383,821,479,657
+South East,2020-05-01,estimate,530,357,741,411,568
+South East,2020-05-02,estimate,371,250,526,309,421
+South East,2020-05-03,estimate,358,225,494,289,398
+South East,2020-05-04,estimate,548,349,751,437,596
+South East,2020-05-05,estimate,507,328,705,410,562
+South East,2020-05-06,estimate,512,331,712,401,558
+South East,2020-05-07,estimate,470,294,649,390,539
+South East,2020-05-08,estimate,418,262,576,350,472
+South East,2020-05-09,estimate,287,184,393,235,320
+South East,2020-05-10,estimate,277,176,380,228,309
+South East,2020-05-11,estimate,415,268,579,335,457
+South East,2020-05-12,estimate,386,259,530,319,431
+South East,2020-05-13,estimate,388,237,526,319,436
+South East,2020-05-14,estimate,350,217,486,291,396
+South East,2020-05-15,estimate,310,202,427,248,341
+South East,2020-05-16,estimate,214,130,292,180,245
+South East,2020-05-17,estimate,204,131,284,170,232
+South East,2020-05-18,estimate,314,197,429,258,351
+South East,2020-05-19,estimate,289,183,399,235,323
+South East,2020-05-20,estimate,289,192,405,230,318
+South East,2020-05-21,estimate,268,174,366,223,301
+South East,2020-05-22,estimate,233,150,323,195,264
+South East,2020-05-23,estimate,164,103,226,133,184
+South East,2020-05-24,estimate,158,103,222,118,168
+South East,2020-05-25,estimate,239,144,323,198,269
+South East,2020-05-26,estimate,218,135,297,183,248
+South East,2020-05-27,estimate,221,134,298,180,244
+South East,2020-05-28,estimate,199,128,281,152,216
+South East,2020-05-29,estimate,175,111,248,134,188
+South East,2020-05-30,estimate,119,70,163,97,134
+South East,2020-05-31,estimate,115,69,159,91,126
+South East,2020-06-01,estimate,174,97,234,143,197
+South East,2020-06-02,estimate,158,101,223,125,173
+South East,2020-06-03,estimate,157,99,219,132,178
+South East,2020-06-04,estimate,144,87,196,111,157
+South East,2020-06-05,estimate,125,75,177,95,134
+South East,2020-06-06,estimate,86,52,119,69,96
+South East,2020-06-07,estimate,82,49,117,61,89
+South East,2020-06-08,estimate,124,80,174,95,134
+South East,2020-06-09,estimate,115,71,159,88,124
+South East,2020-06-10,estimate,114,70,160,95,130
+South East,2020-06-11,estimate,105,65,146,79,113
+South East,2020-06-12,estimate,92,56,129,78,107
+South East,2020-06-13,estimate,65,37,91,49,71
+South East,2020-06-14,estimate,62,35,87,47,67
+South East,2020-06-15,estimate,95,58,133,74,105
+South East,2020-06-16,estimate,88,51,122,68,96
+South East,2020-06-17,estimate,90,54,124,67,95
+South East,2020-06-18,estimate,82,49,116,61,89
+South East,2020-06-19,estimate,74,44,105,58,82
+South East,2020-06-20,estimate,53,30,76,43,61
+South East,2020-06-21,estimate,50,27,70,37,54
+South East,2020-06-22,estimate,78,46,108,62,88
+South East,2020-06-23,estimate,73,43,103,55,79
+South East,2020-06-24,estimate,75,44,105,56,81
+South East,2020-06-25,estimate,69,39,97,53,76
+South East,2020-06-26,estimate,62,37,88,47,68
+South East,2020-06-27,estimate,44,22,62,35,50
+South East,2020-06-28,estimate,44,24,61,32,47
+South East,2020-06-29,estimate,67,41,96,55,76
+South East,2020-06-30,estimate,63,37,88,48,69
+South East,2020-07-01,estimate,65,37,90,50,71
+South East,2020-07-02,estimate,62,37,88,47,68
+South East,2020-07-03,estimate,57,30,79,43,62
+South East,2020-07-04,estimate,41,21,57,32,46
+South East,2020-07-05,estimate,40,23,59,30,44
+South East,2020-07-06,estimate,65,36,88,51,73
+South East,2020-07-07,estimate,62,35,88,48,69
+South East,2020-07-08,estimate,65,36,91,48,70
+South East,2020-07-09,estimate,63,35,87,49,70
+South East,2020-07-10,estimate,58,34,83,43,63
+South East,2020-07-11,estimate,43,24,61,31,46
+South East,2020-07-12,estimate,43,24,62,30,45
+South East,2020-07-13,estimate,68,39,96,51,74
+South East,2020-07-14,estimate,66,40,96,56,78
+South East,2020-07-15,estimate,71,41,101,53,77
+South East,2020-07-16,estimate,68,43,97,53,75
+South East,2020-07-17,estimate,62,37,89,49,69
+South East,2020-07-18,estimate,45,24,63,35,50
+South East,2020-07-19,estimate,46,26,65,33,49
+South East,2020-07-20,estimate,71,43,101,55,78
+South East,2020-07-21,estimate,68,40,96,53,75
+South East,2020-07-22,estimate,71,43,100,53,76
+South East,2020-07-23,estimate,67,38,93,51,73
+South East,2020-07-24,estimate,61,35,88,47,68
+South East,2020-07-25,estimate,43,23,61,33,48
+South East,2020-07-26,estimate,42,23,60,34,48
+South East,2020-07-27,estimate,66,37,93,52,74
+South East,2020-07-28,estimate,63,35,88,47,68
+South East,2020-07-29,estimate,66,41,93,50,72
+South East,2020-07-30,estimate,61,36,86,50,69
+South East,2020-07-31,estimate,55,29,77,40,59
+South East,2020-08-01,estimate,40,21,56,31,45
+South East,2020-08-02,estimate,39,21,56,29,43
+South East,2020-08-03,estimate,63,35,87,48,69
+South East,2020-08-04,estimate,60,37,85,47,66
+South East,2020-08-05,estimate,64,37,91,46,68
+South East,2020-08-06,estimate,60,34,85,43,64
+South East,2020-08-07,estimate,57,32,82,42,62
+South East,2020-08-08,estimate,42,23,59,32,46
+South East,2020-08-09,estimate based on partial data,43,23,61,32,47
+South East,2020-08-10,estimate based on partial data,70,41,99,52,76
+South East,2020-08-11,estimate based on partial data,70,41,98,51,75
+South East,2020-08-12,estimate based on partial data,75,46,108,59,84
+South East,2020-08-13,estimate based on partial data,74,43,104,55,80
+South East,2020-08-14,estimate based on partial data,71,42,100,56,79
+South East,2020-08-15,estimate based on partial data,52,29,74,38,56
+South East,2020-08-16,estimate based on partial data,54,31,77,41,59
+South East,2020-08-17,estimate based on partial data,88,51,124,67,96
+South East,2020-08-18,estimate based on partial data,87,51,126,65,96
+South East,2020-08-19,estimate based on partial data,94,54,136,72,106
+South West,2020-03-11,estimate,14,6,23,8,15
+South West,2020-03-12,estimate,15,5,23,9,16
+South West,2020-03-13,estimate,16,7,25,12,19
+South West,2020-03-14,estimate,11,5,19,8,13
+South West,2020-03-15,estimate,14,6,23,8,15
+South West,2020-03-16,estimate,24,11,37,17,27
+South West,2020-03-17,estimate,28,12,42,18,30
+South West,2020-03-18,estimate,37,20,55,24,39
+South West,2020-03-19,estimate,40,20,60,29,44
+South West,2020-03-20,estimate,44,23,65,31,48
+South West,2020-03-21,estimate,32,15,49,24,37
+South West,2020-03-22,estimate,40,19,60,32,48
+South West,2020-03-23,estimate,67,36,99,48,73
+South West,2020-03-24,estimate,77,43,112,60,89
+South West,2020-03-25,estimate,98,52,144,74,110
+South West,2020-03-26,estimate,103,55,152,78,117
+South West,2020-03-27,estimate,111,63,162,82,123
+South West,2020-03-28,estimate,80,43,115,61,89
+South West,2020-03-29,estimate,93,53,137,71,104
+South West,2020-03-30,estimate,143,79,210,104,157
+South West,2020-03-31,estimate,156,88,230,111,171
+South West,2020-04-01,estimate,193,113,284,158,227
+South West,2020-04-02,estimate,191,103,274,143,215
+South West,2020-04-03,estimate,191,113,277,147,216
+South West,2020-04-04,estimate,125,72,177,97,141
+South West,2020-04-05,estimate,142,80,205,106,157
+South West,2020-04-06,estimate,208,115,297,166,236
+South West,2020-04-07,estimate,216,123,311,181,258
+South West,2020-04-08,estimate,248,141,352,200,286
+South West,2020-04-09,estimate,234,137,336,187,268
+South West,2020-04-10,estimate,226,126,320,176,252
+South West,2020-04-11,estimate,146,83,212,104,157
+South West,2020-04-12,estimate,160,94,230,114,172
+South West,2020-04-13,estimate,231,126,333,189,271
+South West,2020-04-14,estimate,235,131,336,180,261
+South West,2020-04-15,estimate,271,149,388,213,309
+South West,2020-04-16,estimate,254,146,368,193,285
+South West,2020-04-17,estimate,247,148,360,187,271
+South West,2020-04-18,estimate,159,88,229,119,174
+South West,2020-04-19,estimate,173,97,251,134,196
+South West,2020-04-20,estimate,249,147,360,188,276
+South West,2020-04-21,estimate,254,147,370,195,283
+South West,2020-04-22,estimate,296,167,427,225,324
+South West,2020-04-23,estimate,276,164,406,211,311
+South West,2020-04-24,estimate,267,156,395,216,308
+South West,2020-04-25,estimate,170,93,241,132,191
+South West,2020-04-26,estimate,186,111,276,145,211
+South West,2020-04-27,estimate,263,153,385,212,304
+South West,2020-04-28,estimate,260,149,375,201,290
+South West,2020-04-29,estimate,294,174,427,230,332
+South West,2020-04-30,estimate,270,155,387,200,299
+South West,2020-05-01,estimate,250,141,362,197,285
+South West,2020-05-02,estimate,157,86,224,122,178
+South West,2020-05-03,estimate,160,89,232,129,187
+South West,2020-05-04,estimate,225,124,318,169,245
+South West,2020-05-05,estimate,217,118,311,163,242
+South West,2020-05-06,estimate,236,137,344,179,262
+South West,2020-05-07,estimate,210,120,305,168,242
+South West,2020-05-08,estimate,188,116,282,140,208
+South West,2020-05-09,estimate,114,61,166,85,125
+South West,2020-05-10,estimate,118,65,172,91,134
+South West,2020-05-11,estimate,159,82,227,122,179
+South West,2020-05-12,estimate,154,86,223,115,171
+South West,2020-05-13,estimate,169,101,254,128,189
+South West,2020-05-14,estimate,147,81,209,109,162
+South West,2020-05-15,estimate,134,78,202,105,152
+South West,2020-05-16,estimate,81,43,119,59,90
+South West,2020-05-17,estimate,85,46,126,60,92
+South West,2020-05-18,estimate,115,61,168,90,129
+South West,2020-05-19,estimate,112,61,165,87,127
+South West,2020-05-20,estimate,122,73,179,96,138
+South West,2020-05-21,estimate,109,56,155,86,123
+South West,2020-05-22,estimate,98,54,139,81,115
+South West,2020-05-23,estimate,59,33,87,40,63
+South West,2020-05-24,estimate,63,36,95,48,71
+South West,2020-05-25,estimate,85,46,127,65,97
+South West,2020-05-26,estimate,81,44,117,63,92
+South West,2020-05-27,estimate,87,48,129,64,97
+South West,2020-05-28,estimate,77,40,111,54,83
+South West,2020-05-29,estimate,70,35,99,52,79
+South West,2020-05-30,estimate,41,22,62,31,47
+South West,2020-05-31,estimate,42,21,60,31,46
+South West,2020-06-01,estimate,54,28,81,39,60
+South West,2020-06-02,estimate,51,26,73,37,56
+South West,2020-06-03,estimate,55,25,80,39,60
+South West,2020-06-04,estimate,47,24,69,34,52
+South West,2020-06-05,estimate,41,20,61,28,44
+South West,2020-06-06,estimate,23,11,36,15,25
+South West,2020-06-07,estimate,23,10,36,15,25
+South West,2020-06-08,estimate,31,16,48,24,36
+South West,2020-06-09,estimate,29,14,44,19,31
+South West,2020-06-10,estimate,31,16,47,22,34
+South West,2020-06-11,estimate,26,13,41,17,28
+South West,2020-06-12,estimate,23,11,36,15,25
+South West,2020-06-13,estimate,14,5,22,8,15
+South West,2020-06-14,estimate,14,6,22,9,15
+South West,2020-06-15,estimate,18,7,29,13,21
+South West,2020-06-16,estimate,18,8,28,12,20
+South West,2020-06-17,estimate,19,9,30,14,22
+South West,2020-06-18,estimate,17,6,26,10,18
+South West,2020-06-19,estimate,15,7,25,10,17
+South West,2020-06-20,estimate,9,3,15,5,10
+South West,2020-06-21,estimate,10,4,17,6,11
+South West,2020-06-22,estimate,14,5,22,10,16
+South West,2020-06-23,estimate,14,6,22,7,14
+South West,2020-06-24,estimate,16,7,25,10,17
+South West,2020-06-25,estimate,14,6,23,8,15
+South West,2020-06-26,estimate,13,4,21,9,15
+South West,2020-06-27,estimate,9,2,14,4,9
+South West,2020-06-28,estimate,9,3,15,5,10
+South West,2020-06-29,estimate,13,5,21,8,14
+South West,2020-06-30,estimate,13,6,22,7,14
+South West,2020-07-01,estimate,15,5,24,11,18
+South West,2020-07-02,estimate,14,6,23,8,15
+South West,2020-07-03,estimate,14,5,22,10,16
+South West,2020-07-04,estimate,9,2,14,4,9
+South West,2020-07-05,estimate,10,3,16,5,10
+South West,2020-07-06,estimate,14,6,22,8,15
+South West,2020-07-07,estimate,14,6,23,8,15
+South West,2020-07-08,estimate,17,6,26,12,19
+South West,2020-07-09,estimate,16,7,25,11,18
+South West,2020-07-10,estimate,16,7,25,11,18
+South West,2020-07-11,estimate,10,3,16,6,11
+South West,2020-07-12,estimate,12,3,18,6,12
+South West,2020-07-13,estimate,17,7,27,12,19
+South West,2020-07-14,estimate,17,9,29,10,18
+South West,2020-07-15,estimate,22,11,33,15,24
+South West,2020-07-16,estimate,21,10,33,14,23
+South West,2020-07-17,estimate,21,10,33,13,22
+South West,2020-07-18,estimate,14,6,22,10,16
+South West,2020-07-19,estimate,16,7,25,10,17
+South West,2020-07-20,estimate,24,10,36,17,27
+South West,2020-07-21,estimate,25,11,38,16,27
+South West,2020-07-22,estimate,30,14,45,22,34
+South West,2020-07-23,estimate,30,13,44,21,33
+South West,2020-07-24,estimate,29,13,43,22,33
+South West,2020-07-25,estimate,19,8,30,11,20
+South West,2020-07-26,estimate,21,8,32,14,23
+South West,2020-07-27,estimate,32,17,50,20,34
+South West,2020-07-28,estimate,33,16,49,25,38
+South West,2020-07-29,estimate,39,20,58,28,43
+South West,2020-07-30,estimate,37,17,54,27,41
+South West,2020-07-31,estimate,36,18,54,27,41
+South West,2020-08-01,estimate,23,11,35,15,25
+South West,2020-08-02,estimate,25,12,39,17,28
+South West,2020-08-03,estimate,37,17,54,24,39
+South West,2020-08-04,estimate,37,18,54,27,41
+South West,2020-08-05,estimate,44,22,65,34,51
+South West,2020-08-06,estimate,41,22,62,27,44
+South West,2020-08-07,estimate,40,18,59,30,45
+South West,2020-08-08,estimate,25,12,39,17,28
+South West,2020-08-09,estimate based on partial data,28,13,42,19,30
+South West,2020-08-10,estimate based on partial data,40,19,59,28,44
+South West,2020-08-11,estimate based on partial data,41,20,61,29,45
+South West,2020-08-12,estimate based on partial data,48,27,72,36,54
+South West,2020-08-13,estimate based on partial data,45,26,69,32,50
+South West,2020-08-14,estimate based on partial data,44,23,67,31,48
+South West,2020-08-15,estimate based on partial data,28,13,43,18,30
+South West,2020-08-16,estimate based on partial data,32,15,48,21,35
+South West,2020-08-17,estimate based on partial data,47,23,70,37,55
+South West,2020-08-18,estimate based on partial data,49,24,72,33,53
+South West,2020-08-19,estimate based on partial data,57,27,87,38,63
