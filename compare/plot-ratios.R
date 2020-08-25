@@ -17,8 +17,8 @@ source("utils/utils.R")
 
 
 # Scale limits
-scale_min <- 0.5
-scale_max <- 1.5
+scale_min <- 0.25
+scale_max <- 1.75
  
 # Plot ratios -------------------------------------------------------------
 

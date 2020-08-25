@@ -49,10 +49,10 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
                            delays = list(incubation_period, reporting_delay),
                            generation_time = generation_time,
                            horizon = 0,
-                           samples = 2000,
+                           samples = 4000,
                            warmup = 500,
                            burn_in = 14,
-                           adapt_delta = 0.98,
+                           adapt_delta = 0.99,
                            cores = no_cores,
                            chains = ifelse(no_cores <= 2, 2, no_cores),
                            return_estimates = FALSE, verbose = TRUE)

@@ -41,8 +41,8 @@ ggsave(here::here("figures", paste0(Sys.Date(), "-national_rt_and_ratios.pdf")),
        plot_national, dpi = 330, height = 10, width = 15)
 
 # Regional ----------------------------------------------------------------
-source("data/plot-data.R")
-source("rt-estimate/plot-rt.R")
+source("compare/plot-data.R")
+source("compare/plot-rt.R")
 source("compare/plot-ratios.R")
 
 # Raw data: moving average
