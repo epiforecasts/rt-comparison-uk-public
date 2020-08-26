@@ -15,7 +15,14 @@ deaths_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "
 cases_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "onset_to_admission_delay.rds"))
 
 # Get UK data ----------------------------------------------------------------
-source(here::here("data", "get-uk-data.R"))
+# If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
+if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
+  message("--- API failure - loading saved data ---")
+  data <- readRDS("data/200823.rds")
+} else {
+  source(here::here("data", "get-uk-data.R"))
+}
+
 
 # # # Set up cores -----------------------------------------------------
 setup_future <- function(jobs) {
