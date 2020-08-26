@@ -1,459 +1,515 @@
 region,date,type,median,lower_90,upper_90,lower_50,upper_50
-England,2020-04-02,estimate,0.88,0.83,0.93,0.86,0.9
-England,2020-04-03,estimate,0.85,0.8,0.9,0.83,0.87
+England,2020-03-19,estimate,1.58,1.42,1.75,1.51,1.64
+England,2020-03-20,estimate,1.54,1.41,1.67,1.48,1.59
+England,2020-03-21,estimate,1.5,1.4,1.61,1.46,1.54
+England,2020-03-22,estimate,1.44,1.36,1.52,1.41,1.47
+England,2020-03-23,estimate,1.39,1.32,1.45,1.35,1.41
+England,2020-03-24,estimate,1.33,1.27,1.38,1.3,1.35
+England,2020-03-25,estimate,1.27,1.21,1.32,1.24,1.29
+England,2020-03-26,estimate,1.2,1.15,1.26,1.18,1.22
+England,2020-03-27,estimate,1.15,1.09,1.2,1.12,1.17
+England,2020-03-28,estimate,1.09,1.04,1.14,1.07,1.11
+England,2020-03-29,estimate,1.04,0.98,1.09,1.01,1.06
+England,2020-03-30,estimate,0.99,0.94,1.05,0.97,1.01
+England,2020-03-31,estimate,0.94,0.89,1,0.93,0.97
+England,2020-04-01,estimate,0.91,0.85,0.96,0.88,0.93
+England,2020-04-02,estimate,0.87,0.82,0.92,0.85,0.9
+England,2020-04-03,estimate,0.85,0.79,0.89,0.83,0.87
 England,2020-04-04,estimate,0.83,0.78,0.87,0.81,0.85
-England,2020-04-05,estimate,0.81,0.76,0.86,0.79,0.83
-England,2020-04-06,estimate,0.8,0.76,0.84,0.78,0.82
-England,2020-04-07,estimate,0.79,0.75,0.83,0.77,0.81
-England,2020-04-08,estimate,0.79,0.75,0.83,0.77,0.8
-England,2020-04-09,estimate,0.79,0.75,0.83,0.78,0.81
-England,2020-04-10,estimate,0.8,0.75,0.83,0.78,0.81
-England,2020-04-11,estimate,0.81,0.76,0.84,0.79,0.82
-England,2020-04-12,estimate,0.81,0.78,0.86,0.8,0.83
-England,2020-04-13,estimate,0.83,0.79,0.87,0.81,0.84
-England,2020-04-14,estimate,0.84,0.8,0.88,0.82,0.85
+England,2020-04-05,estimate,0.81,0.76,0.85,0.79,0.83
+England,2020-04-06,estimate,0.8,0.75,0.84,0.78,0.82
+England,2020-04-07,estimate,0.79,0.75,0.84,0.78,0.81
+England,2020-04-08,estimate,0.79,0.75,0.83,0.77,0.81
+England,2020-04-09,estimate,0.79,0.75,0.83,0.77,0.81
+England,2020-04-10,estimate,0.8,0.75,0.84,0.78,0.81
+England,2020-04-11,estimate,0.8,0.76,0.85,0.79,0.82
+England,2020-04-12,estimate,0.81,0.77,0.86,0.79,0.83
+England,2020-04-13,estimate,0.83,0.78,0.87,0.81,0.84
+England,2020-04-14,estimate,0.84,0.8,0.89,0.82,0.85
 England,2020-04-15,estimate,0.85,0.81,0.9,0.83,0.87
-England,2020-04-16,estimate,0.87,0.82,0.91,0.85,0.89
-England,2020-04-17,estimate,0.88,0.83,0.93,0.87,0.91
-England,2020-04-18,estimate,0.89,0.85,0.94,0.87,0.91
-England,2020-04-19,estimate,0.9,0.86,0.95,0.89,0.93
-England,2020-04-20,estimate,0.91,0.86,0.96,0.9,0.93
-England,2020-04-21,estimate,0.92,0.87,0.97,0.9,0.94
-England,2020-04-22,estimate,0.92,0.88,0.97,0.9,0.94
-England,2020-04-23,estimate,0.93,0.88,0.97,0.91,0.95
-England,2020-04-24,estimate,0.93,0.88,0.97,0.91,0.94
-England,2020-04-25,estimate,0.93,0.88,0.97,0.9,0.94
-England,2020-04-26,estimate,0.92,0.87,0.97,0.9,0.94
-England,2020-04-27,estimate,0.92,0.87,0.96,0.9,0.94
-England,2020-04-28,estimate,0.91,0.87,0.96,0.89,0.93
-England,2020-04-29,estimate,0.91,0.86,0.95,0.89,0.93
+England,2020-04-16,estimate,0.87,0.82,0.92,0.85,0.88
+England,2020-04-17,estimate,0.88,0.84,0.93,0.86,0.9
+England,2020-04-18,estimate,0.9,0.85,0.94,0.87,0.91
+England,2020-04-19,estimate,0.91,0.86,0.95,0.88,0.92
+England,2020-04-20,estimate,0.91,0.87,0.96,0.9,0.94
+England,2020-04-21,estimate,0.92,0.88,0.97,0.9,0.94
+England,2020-04-22,estimate,0.93,0.88,0.98,0.9,0.94
+England,2020-04-23,estimate,0.93,0.88,0.97,0.91,0.94
+England,2020-04-24,estimate,0.93,0.88,0.98,0.91,0.95
+England,2020-04-25,estimate,0.93,0.88,0.98,0.91,0.95
+England,2020-04-26,estimate,0.92,0.87,0.97,0.91,0.94
+England,2020-04-27,estimate,0.92,0.87,0.97,0.9,0.94
+England,2020-04-28,estimate,0.91,0.87,0.96,0.9,0.93
+England,2020-04-29,estimate,0.91,0.86,0.96,0.89,0.93
 England,2020-04-30,estimate,0.9,0.85,0.95,0.88,0.92
-England,2020-05-01,estimate,0.9,0.85,0.95,0.88,0.92
-England,2020-05-02,estimate,0.9,0.85,0.94,0.88,0.91
+England,2020-05-01,estimate,0.9,0.85,0.95,0.88,0.91
+England,2020-05-02,estimate,0.89,0.85,0.94,0.88,0.91
 England,2020-05-03,estimate,0.89,0.85,0.94,0.87,0.91
 England,2020-05-04,estimate,0.89,0.85,0.94,0.87,0.91
 England,2020-05-05,estimate,0.89,0.85,0.94,0.87,0.91
-England,2020-05-06,estimate,0.89,0.84,0.93,0.87,0.91
-England,2020-05-07,estimate,0.89,0.85,0.94,0.88,0.91
-England,2020-05-08,estimate,0.89,0.84,0.93,0.87,0.91
-England,2020-05-09,estimate,0.89,0.85,0.94,0.88,0.91
-England,2020-05-10,estimate,0.9,0.85,0.94,0.88,0.91
-England,2020-05-11,estimate,0.9,0.85,0.94,0.88,0.92
+England,2020-05-06,estimate,0.89,0.85,0.94,0.87,0.91
+England,2020-05-07,estimate,0.89,0.85,0.94,0.87,0.91
+England,2020-05-08,estimate,0.89,0.85,0.94,0.87,0.91
+England,2020-05-09,estimate,0.89,0.85,0.94,0.87,0.91
+England,2020-05-10,estimate,0.9,0.85,0.95,0.88,0.92
+England,2020-05-11,estimate,0.9,0.85,0.95,0.88,0.92
 England,2020-05-12,estimate,0.9,0.86,0.95,0.89,0.92
 England,2020-05-13,estimate,0.91,0.86,0.95,0.89,0.92
-England,2020-05-14,estimate,0.91,0.86,0.95,0.89,0.93
-England,2020-05-15,estimate,0.91,0.86,0.96,0.89,0.92
+England,2020-05-14,estimate,0.91,0.86,0.96,0.88,0.92
+England,2020-05-15,estimate,0.91,0.87,0.96,0.89,0.92
 England,2020-05-16,estimate,0.91,0.86,0.95,0.89,0.92
 England,2020-05-17,estimate,0.91,0.86,0.95,0.89,0.92
-England,2020-05-18,estimate,0.91,0.86,0.95,0.88,0.92
-England,2020-05-19,estimate,0.9,0.86,0.95,0.88,0.92
-England,2020-05-20,estimate,0.9,0.85,0.95,0.88,0.92
+England,2020-05-18,estimate,0.91,0.86,0.95,0.89,0.93
+England,2020-05-19,estimate,0.9,0.86,0.95,0.89,0.92
+England,2020-05-20,estimate,0.9,0.86,0.95,0.88,0.92
 England,2020-05-21,estimate,0.9,0.85,0.94,0.88,0.92
-England,2020-05-22,estimate,0.89,0.84,0.94,0.88,0.91
-England,2020-05-23,estimate,0.89,0.84,0.94,0.87,0.91
-England,2020-05-24,estimate,0.89,0.84,0.93,0.86,0.9
-England,2020-05-25,estimate,0.88,0.83,0.93,0.86,0.9
-England,2020-05-26,estimate,0.88,0.83,0.93,0.86,0.9
-England,2020-05-27,estimate,0.88,0.83,0.92,0.86,0.9
+England,2020-05-22,estimate,0.89,0.85,0.94,0.88,0.91
+England,2020-05-23,estimate,0.89,0.85,0.94,0.87,0.91
+England,2020-05-24,estimate,0.89,0.84,0.93,0.87,0.91
+England,2020-05-25,estimate,0.88,0.84,0.93,0.86,0.9
+England,2020-05-26,estimate,0.88,0.83,0.92,0.86,0.9
+England,2020-05-27,estimate,0.88,0.83,0.92,0.86,0.89
 England,2020-05-28,estimate,0.88,0.83,0.92,0.86,0.9
-England,2020-05-29,estimate,0.88,0.83,0.92,0.86,0.9
-England,2020-05-30,estimate,0.88,0.83,0.92,0.86,0.9
-England,2020-05-31,estimate,0.88,0.83,0.93,0.86,0.9
-England,2020-06-01,estimate,0.88,0.83,0.93,0.87,0.9
-England,2020-06-02,estimate,0.89,0.84,0.93,0.87,0.91
-England,2020-06-03,estimate,0.89,0.84,0.94,0.87,0.91
+England,2020-05-29,estimate,0.87,0.83,0.92,0.85,0.89
+England,2020-05-30,estimate,0.88,0.83,0.92,0.86,0.89
+England,2020-05-31,estimate,0.88,0.83,0.92,0.86,0.9
+England,2020-06-01,estimate,0.88,0.83,0.92,0.86,0.9
+England,2020-06-02,estimate,0.88,0.84,0.93,0.87,0.9
+England,2020-06-03,estimate,0.89,0.84,0.93,0.87,0.91
 England,2020-06-04,estimate,0.89,0.84,0.94,0.87,0.91
-England,2020-06-05,estimate,0.9,0.85,0.95,0.88,0.92
-England,2020-06-06,estimate,0.9,0.86,0.95,0.88,0.92
-England,2020-06-07,estimate,0.9,0.86,0.96,0.88,0.92
-England,2020-06-08,estimate,0.91,0.86,0.96,0.88,0.92
-England,2020-06-09,estimate,0.91,0.86,0.96,0.88,0.92
-England,2020-06-10,estimate,0.91,0.86,0.96,0.89,0.93
-England,2020-06-11,estimate,0.91,0.86,0.95,0.89,0.93
-England,2020-06-12,estimate,0.91,0.86,0.96,0.88,0.92
-England,2020-06-13,estimate,0.9,0.85,0.95,0.88,0.92
+England,2020-06-05,estimate,0.9,0.85,0.94,0.88,0.92
+England,2020-06-06,estimate,0.9,0.85,0.95,0.88,0.92
+England,2020-06-07,estimate,0.9,0.86,0.96,0.89,0.92
+England,2020-06-08,estimate,0.91,0.86,0.95,0.88,0.92
+England,2020-06-09,estimate,0.91,0.86,0.96,0.89,0.92
+England,2020-06-10,estimate,0.91,0.86,0.96,0.89,0.92
+England,2020-06-11,estimate,0.91,0.86,0.96,0.89,0.93
+England,2020-06-12,estimate,0.91,0.86,0.95,0.89,0.93
+England,2020-06-13,estimate,0.9,0.86,0.95,0.88,0.92
 England,2020-06-14,estimate,0.9,0.85,0.95,0.88,0.92
-England,2020-06-15,estimate,0.89,0.85,0.95,0.87,0.91
-England,2020-06-16,estimate,0.88,0.84,0.94,0.86,0.9
-England,2020-06-17,estimate,0.88,0.83,0.93,0.85,0.89
-England,2020-06-18,estimate,0.87,0.82,0.92,0.85,0.88
+England,2020-06-15,estimate,0.89,0.84,0.94,0.87,0.91
+England,2020-06-16,estimate,0.88,0.84,0.93,0.86,0.9
+England,2020-06-17,estimate,0.88,0.83,0.92,0.86,0.9
+England,2020-06-18,estimate,0.87,0.82,0.92,0.85,0.89
 England,2020-06-19,estimate,0.86,0.81,0.91,0.84,0.88
 England,2020-06-20,estimate,0.85,0.8,0.9,0.83,0.87
 England,2020-06-21,estimate,0.84,0.8,0.89,0.82,0.86
-England,2020-06-22,estimate,0.84,0.79,0.88,0.82,0.86
+England,2020-06-22,estimate,0.84,0.79,0.88,0.82,0.85
 England,2020-06-23,estimate,0.83,0.78,0.88,0.81,0.85
-England,2020-06-24,estimate,0.82,0.78,0.87,0.81,0.85
-England,2020-06-25,estimate,0.82,0.77,0.87,0.8,0.84
+England,2020-06-24,estimate,0.82,0.77,0.87,0.81,0.85
+England,2020-06-25,estimate,0.82,0.77,0.86,0.8,0.84
 England,2020-06-26,estimate,0.82,0.77,0.86,0.8,0.84
-England,2020-06-27,estimate,0.82,0.77,0.86,0.8,0.84
-England,2020-06-28,estimate,0.82,0.77,0.86,0.8,0.83
-England,2020-06-29,estimate,0.82,0.77,0.87,0.8,0.84
+England,2020-06-27,estimate,0.82,0.77,0.86,0.8,0.83
+England,2020-06-28,estimate,0.82,0.77,0.86,0.79,0.83
+England,2020-06-29,estimate,0.82,0.77,0.86,0.8,0.84
 England,2020-06-30,estimate,0.82,0.77,0.87,0.8,0.84
-England,2020-07-01,estimate,0.83,0.77,0.87,0.81,0.85
-England,2020-07-02,estimate,0.83,0.78,0.88,0.81,0.85
-England,2020-07-03,estimate,0.84,0.79,0.89,0.81,0.85
-England,2020-07-04,estimate,0.84,0.8,0.89,0.82,0.86
+England,2020-07-01,estimate,0.82,0.78,0.87,0.81,0.84
+England,2020-07-02,estimate,0.83,0.78,0.87,0.81,0.85
+England,2020-07-03,estimate,0.84,0.79,0.88,0.82,0.85
+England,2020-07-04,estimate,0.84,0.79,0.89,0.82,0.86
 England,2020-07-05,estimate,0.85,0.8,0.9,0.83,0.87
 England,2020-07-06,estimate,0.86,0.81,0.91,0.84,0.88
-England,2020-07-07,estimate,0.87,0.82,0.92,0.85,0.89
+England,2020-07-07,estimate,0.87,0.82,0.92,0.84,0.89
 England,2020-07-08,estimate,0.87,0.82,0.92,0.85,0.89
-England,2020-07-09,estimate,0.88,0.83,0.93,0.86,0.9
+England,2020-07-09,estimate,0.88,0.83,0.93,0.86,0.91
 England,2020-07-10,estimate,0.89,0.84,0.94,0.87,0.91
-England,2020-07-11,estimate,0.89,0.84,0.94,0.87,0.91
-England,2020-07-12,estimate,0.9,0.85,0.95,0.87,0.92
-England,2020-07-13,estimate,0.9,0.85,0.96,0.87,0.92
-England,2020-07-14,estimate,0.91,0.86,0.97,0.88,0.93
-England,2020-07-15,estimate,0.91,0.86,0.96,0.88,0.93
-England,2020-07-16,estimate,0.91,0.85,0.96,0.89,0.94
-England,2020-07-17,estimate,0.92,0.86,0.97,0.89,0.94
-England,2020-07-18,estimate,0.92,0.86,0.97,0.9,0.94
-England,2020-07-19,estimate,0.92,0.86,0.97,0.89,0.94
-England,2020-07-20,estimate,0.92,0.87,0.97,0.89,0.94
-England,2020-07-21,estimate,0.92,0.87,0.98,0.9,0.94
-England,2020-07-22,estimate,0.92,0.87,0.98,0.9,0.94
+England,2020-07-11,estimate,0.89,0.85,0.95,0.87,0.91
+England,2020-07-12,estimate,0.9,0.85,0.95,0.87,0.91
+England,2020-07-13,estimate,0.9,0.85,0.96,0.88,0.93
+England,2020-07-14,estimate,0.91,0.86,0.96,0.88,0.93
+England,2020-07-15,estimate,0.91,0.86,0.96,0.89,0.93
+England,2020-07-16,estimate,0.91,0.86,0.96,0.89,0.93
+England,2020-07-17,estimate,0.92,0.87,0.97,0.89,0.94
+England,2020-07-18,estimate,0.92,0.87,0.97,0.9,0.94
+England,2020-07-19,estimate,0.92,0.87,0.98,0.9,0.94
+England,2020-07-20,estimate,0.92,0.87,0.97,0.9,0.94
+England,2020-07-21,estimate,0.92,0.87,0.98,0.9,0.95
+England,2020-07-22,estimate,0.93,0.87,0.98,0.9,0.95
 England,2020-07-23,estimate,0.93,0.87,0.98,0.9,0.95
-England,2020-07-24,estimate,0.93,0.88,0.99,0.9,0.95
-England,2020-07-25,estimate,0.93,0.87,0.99,0.91,0.95
-England,2020-07-26,estimate,0.93,0.87,0.99,0.91,0.95
-England,2020-07-27,estimate,0.93,0.87,0.99,0.91,0.96
-England,2020-07-28,estimate,0.94,0.87,1,0.91,0.96
-England,2020-07-29,estimate,0.94,0.88,1,0.91,0.96
-England,2020-07-30,estimate,0.94,0.88,1,0.91,0.96
+England,2020-07-24,estimate,0.93,0.88,0.99,0.91,0.95
+England,2020-07-25,estimate,0.93,0.88,0.99,0.91,0.95
+England,2020-07-26,estimate,0.93,0.88,0.99,0.91,0.95
+England,2020-07-27,estimate,0.93,0.88,0.99,0.91,0.96
+England,2020-07-28,estimate,0.94,0.88,1,0.92,0.96
+England,2020-07-29,estimate,0.94,0.88,0.99,0.92,0.96
+England,2020-07-30,estimate,0.94,0.88,1,0.92,0.96
 England,2020-07-31,estimate,0.94,0.88,1,0.91,0.96
-England,2020-08-01,estimate,0.94,0.88,1,0.92,0.97
-England,2020-08-02,estimate,0.94,0.88,1,0.92,0.97
-England,2020-08-03,estimate,0.94,0.87,1,0.91,0.96
-England,2020-08-04,estimate,0.93,0.87,1,0.91,0.96
-England,2020-08-05,estimate,0.93,0.85,1,0.9,0.96
-England,2020-08-06,estimate,0.92,0.84,1.01,0.89,0.95
-England,2020-08-07,estimate based on partial data,0.92,0.83,1.01,0.89,0.96
-England,2020-08-08,estimate based on partial data,0.91,0.82,1.02,0.87,0.95
-England,2020-08-09,estimate based on partial data,0.91,0.8,1.03,0.85,0.94
-England,2020-08-10,estimate based on partial data,0.9,0.77,1.03,0.84,0.94
-England,2020-08-11,estimate based on partial data,0.89,0.76,1.05,0.82,0.93
-England,2020-08-12,estimate based on partial data,0.88,0.72,1.04,0.82,0.95
-England,2020-08-13,estimate based on partial data,0.88,0.7,1.06,0.82,0.96
-England,2020-08-14,estimate based on partial data,0.87,0.67,1.06,0.81,0.97
-England,2020-08-15,estimate based on partial data,0.86,0.65,1.08,0.77,0.94
-England,2020-08-16,estimate based on partial data,0.86,0.63,1.09,0.77,0.95
-England,2020-08-17,estimate based on partial data,0.85,0.61,1.1,0.76,0.95
-Northern Ireland,2020-03-23,estimate,1.42,1.3,1.56,1.36,1.46
-Northern Ireland,2020-03-24,estimate,1.35,1.24,1.48,1.31,1.4
+England,2020-08-01,estimate,0.94,0.88,1,0.91,0.96
+England,2020-08-02,estimate,0.94,0.88,1,0.91,0.96
+England,2020-08-03,estimate,0.93,0.87,1,0.9,0.96
+England,2020-08-04,estimate,0.93,0.87,1,0.9,0.96
+England,2020-08-05,estimate,0.93,0.85,1,0.9,0.95
+England,2020-08-06,estimate,0.92,0.85,1,0.89,0.95
+England,2020-08-07,estimate based on partial data,0.92,0.84,1.01,0.87,0.94
+England,2020-08-08,estimate based on partial data,0.91,0.81,1,0.87,0.94
+England,2020-08-09,estimate based on partial data,0.9,0.8,1.02,0.85,0.94
+England,2020-08-10,estimate based on partial data,0.9,0.77,1.02,0.85,0.95
+England,2020-08-11,estimate based on partial data,0.89,0.76,1.03,0.84,0.95
+England,2020-08-12,estimate based on partial data,0.88,0.73,1.03,0.83,0.95
+England,2020-08-13,estimate based on partial data,0.87,0.71,1.05,0.8,0.94
+England,2020-08-14,estimate based on partial data,0.87,0.67,1.05,0.79,0.94
+England,2020-08-15,estimate based on partial data,0.86,0.65,1.07,0.78,0.94
+England,2020-08-16,estimate based on partial data,0.86,0.63,1.07,0.76,0.94
+England,2020-08-17,estimate based on partial data,0.86,0.6,1.08,0.76,0.94
+Northern Ireland,2020-03-09,estimate,1.73,1.43,2.01,1.62,1.85
+Northern Ireland,2020-03-10,estimate,1.75,1.51,2,1.66,1.85
+Northern Ireland,2020-03-11,estimate,1.77,1.58,1.97,1.7,1.86
+Northern Ireland,2020-03-12,estimate,1.78,1.63,1.93,1.72,1.85
+Northern Ireland,2020-03-13,estimate,1.79,1.66,1.91,1.74,1.84
+Northern Ireland,2020-03-14,estimate,1.79,1.68,1.9,1.75,1.84
+Northern Ireland,2020-03-15,estimate,1.79,1.68,1.89,1.74,1.83
+Northern Ireland,2020-03-16,estimate,1.77,1.66,1.89,1.71,1.8
+Northern Ireland,2020-03-17,estimate,1.74,1.63,1.88,1.68,1.78
+Northern Ireland,2020-03-18,estimate,1.7,1.58,1.85,1.64,1.75
+Northern Ireland,2020-03-19,estimate,1.66,1.53,1.81,1.6,1.71
+Northern Ireland,2020-03-20,estimate,1.61,1.47,1.75,1.54,1.66
+Northern Ireland,2020-03-21,estimate,1.55,1.41,1.69,1.48,1.6
+Northern Ireland,2020-03-22,estimate,1.49,1.35,1.61,1.43,1.54
+Northern Ireland,2020-03-23,estimate,1.42,1.29,1.54,1.36,1.46
+Northern Ireland,2020-03-24,estimate,1.35,1.24,1.47,1.3,1.4
 Northern Ireland,2020-03-25,estimate,1.29,1.18,1.4,1.24,1.33
-Northern Ireland,2020-03-26,estimate,1.22,1.11,1.32,1.19,1.27
-Northern Ireland,2020-03-27,estimate,1.16,1.06,1.27,1.12,1.2
-Northern Ireland,2020-03-28,estimate,1.1,1,1.2,1.07,1.14
-Northern Ireland,2020-03-29,estimate,1.05,0.95,1.15,1.01,1.08
+Northern Ireland,2020-03-26,estimate,1.22,1.13,1.33,1.19,1.27
+Northern Ireland,2020-03-27,estimate,1.16,1.07,1.26,1.12,1.2
+Northern Ireland,2020-03-28,estimate,1.1,1.01,1.2,1.07,1.15
+Northern Ireland,2020-03-29,estimate,1.05,0.97,1.15,1.01,1.08
 Northern Ireland,2020-03-30,estimate,1,0.91,1.1,0.97,1.04
-Northern Ireland,2020-03-31,estimate,0.96,0.87,1.05,0.93,1
-Northern Ireland,2020-04-01,estimate,0.92,0.84,1.02,0.89,0.96
-Northern Ireland,2020-04-02,estimate,0.89,0.81,0.98,0.85,0.92
-Northern Ireland,2020-04-03,estimate,0.87,0.79,0.96,0.83,0.9
+Northern Ireland,2020-03-31,estimate,0.96,0.87,1.05,0.92,1
+Northern Ireland,2020-04-01,estimate,0.92,0.83,1.01,0.89,0.96
+Northern Ireland,2020-04-02,estimate,0.89,0.8,0.97,0.86,0.93
+Northern Ireland,2020-04-03,estimate,0.87,0.78,0.95,0.83,0.9
 Northern Ireland,2020-04-04,estimate,0.85,0.76,0.93,0.81,0.88
 Northern Ireland,2020-04-05,estimate,0.83,0.75,0.91,0.8,0.87
-Northern Ireland,2020-04-06,estimate,0.82,0.74,0.9,0.78,0.85
+Northern Ireland,2020-04-06,estimate,0.82,0.74,0.9,0.79,0.85
 Northern Ireland,2020-04-07,estimate,0.81,0.74,0.9,0.78,0.85
-Northern Ireland,2020-04-08,estimate,0.81,0.73,0.89,0.78,0.84
-Northern Ireland,2020-04-09,estimate,0.81,0.74,0.9,0.78,0.84
-Northern Ireland,2020-04-10,estimate,0.82,0.74,0.9,0.78,0.85
-Northern Ireland,2020-04-11,estimate,0.82,0.74,0.9,0.79,0.85
-Northern Ireland,2020-04-12,estimate,0.83,0.75,0.91,0.8,0.86
-Northern Ireland,2020-04-13,estimate,0.84,0.75,0.92,0.8,0.87
-Northern Ireland,2020-04-14,estimate,0.85,0.77,0.94,0.81,0.88
-Northern Ireland,2020-04-15,estimate,0.86,0.78,0.95,0.83,0.9
-Northern Ireland,2020-04-16,estimate,0.87,0.79,0.97,0.83,0.9
-Northern Ireland,2020-04-17,estimate,0.88,0.8,0.97,0.85,0.92
-Northern Ireland,2020-04-18,estimate,0.9,0.81,0.99,0.85,0.93
-Northern Ireland,2020-04-19,estimate,0.91,0.81,0.99,0.86,0.94
-Northern Ireland,2020-04-20,estimate,0.91,0.83,1.01,0.87,0.95
-Northern Ireland,2020-04-21,estimate,0.92,0.82,1.01,0.88,0.96
-Northern Ireland,2020-04-22,estimate,0.92,0.83,1.02,0.88,0.96
+Northern Ireland,2020-04-08,estimate,0.81,0.73,0.88,0.78,0.85
+Northern Ireland,2020-04-09,estimate,0.81,0.73,0.89,0.78,0.84
+Northern Ireland,2020-04-10,estimate,0.82,0.74,0.9,0.79,0.85
+Northern Ireland,2020-04-11,estimate,0.82,0.74,0.9,0.78,0.85
+Northern Ireland,2020-04-12,estimate,0.83,0.75,0.91,0.79,0.86
+Northern Ireland,2020-04-13,estimate,0.84,0.76,0.93,0.81,0.87
+Northern Ireland,2020-04-14,estimate,0.85,0.77,0.94,0.82,0.88
+Northern Ireland,2020-04-15,estimate,0.86,0.79,0.95,0.82,0.89
+Northern Ireland,2020-04-16,estimate,0.87,0.79,0.96,0.83,0.9
+Northern Ireland,2020-04-17,estimate,0.89,0.8,0.97,0.85,0.92
+Northern Ireland,2020-04-18,estimate,0.9,0.81,0.98,0.85,0.93
+Northern Ireland,2020-04-19,estimate,0.91,0.82,1,0.86,0.93
+Northern Ireland,2020-04-20,estimate,0.91,0.82,1.01,0.88,0.95
+Northern Ireland,2020-04-21,estimate,0.92,0.82,1.01,0.88,0.95
+Northern Ireland,2020-04-22,estimate,0.92,0.84,1.02,0.88,0.96
 Northern Ireland,2020-04-23,estimate,0.93,0.83,1.02,0.88,0.96
-Northern Ireland,2020-04-24,estimate,0.93,0.84,1.02,0.89,0.97
-Northern Ireland,2020-04-25,estimate,0.93,0.84,1.02,0.88,0.95
-Northern Ireland,2020-04-26,estimate,0.92,0.84,1.02,0.88,0.95
-Northern Ireland,2020-04-27,estimate,0.92,0.83,1.01,0.88,0.96
-Northern Ireland,2020-04-28,estimate,0.92,0.83,1.01,0.88,0.95
-Northern Ireland,2020-04-29,estimate,0.91,0.82,1,0.87,0.94
-Northern Ireland,2020-04-30,estimate,0.91,0.82,1,0.87,0.94
-Northern Ireland,2020-05-01,estimate,0.9,0.82,1,0.86,0.93
-Northern Ireland,2020-05-02,estimate,0.9,0.8,0.99,0.86,0.93
-Northern Ireland,2020-05-03,estimate,0.89,0.8,0.98,0.85,0.92
-Northern Ireland,2020-05-04,estimate,0.88,0.79,0.98,0.85,0.92
-Northern Ireland,2020-05-05,estimate,0.87,0.79,0.97,0.84,0.91
-Northern Ireland,2020-05-06,estimate,0.87,0.78,0.96,0.82,0.9
-Northern Ireland,2020-05-07,estimate,0.86,0.77,0.95,0.81,0.89
-Northern Ireland,2020-05-08,estimate,0.85,0.76,0.95,0.81,0.89
-Northern Ireland,2020-05-09,estimate,0.85,0.75,0.94,0.81,0.88
-Northern Ireland,2020-05-10,estimate,0.84,0.75,0.94,0.8,0.87
-Northern Ireland,2020-05-11,estimate,0.83,0.74,0.93,0.79,0.87
-Northern Ireland,2020-05-12,estimate,0.83,0.73,0.92,0.79,0.86
-Northern Ireland,2020-05-13,estimate,0.82,0.72,0.91,0.79,0.86
-Northern Ireland,2020-05-14,estimate,0.81,0.72,0.91,0.78,0.85
-Northern Ireland,2020-05-15,estimate,0.81,0.72,0.91,0.77,0.84
-Northern Ireland,2020-05-16,estimate,0.8,0.71,0.9,0.76,0.84
-Northern Ireland,2020-05-17,estimate,0.8,0.71,0.9,0.76,0.83
-Northern Ireland,2020-05-18,estimate,0.79,0.7,0.89,0.76,0.83
-Northern Ireland,2020-05-19,estimate,0.79,0.69,0.88,0.75,0.83
-Northern Ireland,2020-05-20,estimate,0.78,0.69,0.88,0.74,0.81
-Northern Ireland,2020-05-21,estimate,0.78,0.68,0.87,0.74,0.81
-Northern Ireland,2020-05-22,estimate,0.77,0.68,0.87,0.73,0.8
-Northern Ireland,2020-05-23,estimate,0.77,0.68,0.87,0.73,0.8
-Northern Ireland,2020-05-24,estimate,0.77,0.67,0.87,0.72,0.8
-Northern Ireland,2020-05-25,estimate,0.76,0.67,0.87,0.72,0.8
-Northern Ireland,2020-05-26,estimate,0.76,0.66,0.86,0.72,0.8
-Northern Ireland,2020-05-27,estimate,0.76,0.66,0.86,0.73,0.81
-Northern Ireland,2020-05-28,estimate,0.76,0.65,0.86,0.73,0.81
-Northern Ireland,2020-05-29,estimate,0.77,0.66,0.86,0.72,0.8
-Northern Ireland,2020-05-30,estimate,0.77,0.66,0.87,0.72,0.8
-Northern Ireland,2020-05-31,estimate,0.77,0.66,0.88,0.72,0.8
-Northern Ireland,2020-06-01,estimate,0.77,0.66,0.88,0.71,0.8
-Northern Ireland,2020-06-02,estimate,0.77,0.67,0.89,0.72,0.81
-Northern Ireland,2020-06-03,estimate,0.78,0.67,0.9,0.73,0.82
-Northern Ireland,2020-06-04,estimate,0.78,0.67,0.89,0.74,0.83
-Northern Ireland,2020-06-05,estimate,0.79,0.67,0.89,0.74,0.83
-Northern Ireland,2020-06-06,estimate,0.79,0.68,0.91,0.74,0.83
-Northern Ireland,2020-06-07,estimate,0.79,0.69,0.92,0.75,0.84
-Northern Ireland,2020-06-08,estimate,0.8,0.68,0.91,0.75,0.84
-Northern Ireland,2020-06-09,estimate,0.8,0.68,0.92,0.76,0.85
-Northern Ireland,2020-06-10,estimate,0.8,0.69,0.92,0.74,0.84
-Northern Ireland,2020-06-11,estimate,0.81,0.69,0.92,0.75,0.85
+Northern Ireland,2020-04-24,estimate,0.93,0.84,1.02,0.89,0.96
+Northern Ireland,2020-04-25,estimate,0.93,0.83,1.02,0.88,0.96
+Northern Ireland,2020-04-26,estimate,0.92,0.84,1.02,0.89,0.96
+Northern Ireland,2020-04-27,estimate,0.92,0.84,1.02,0.88,0.95
+Northern Ireland,2020-04-28,estimate,0.92,0.83,1.01,0.87,0.94
+Northern Ireland,2020-04-29,estimate,0.91,0.83,1,0.87,0.94
+Northern Ireland,2020-04-30,estimate,0.91,0.82,0.99,0.87,0.94
+Northern Ireland,2020-05-01,estimate,0.9,0.81,0.99,0.85,0.93
+Northern Ireland,2020-05-02,estimate,0.89,0.81,0.99,0.85,0.93
+Northern Ireland,2020-05-03,estimate,0.89,0.8,0.98,0.85,0.93
+Northern Ireland,2020-05-04,estimate,0.88,0.78,0.96,0.84,0.92
+Northern Ireland,2020-05-05,estimate,0.87,0.78,0.96,0.84,0.92
+Northern Ireland,2020-05-06,estimate,0.87,0.77,0.96,0.83,0.91
+Northern Ireland,2020-05-07,estimate,0.86,0.76,0.95,0.82,0.9
+Northern Ireland,2020-05-08,estimate,0.85,0.76,0.95,0.82,0.89
+Northern Ireland,2020-05-09,estimate,0.85,0.76,0.95,0.82,0.9
+Northern Ireland,2020-05-10,estimate,0.84,0.74,0.93,0.8,0.88
+Northern Ireland,2020-05-11,estimate,0.83,0.75,0.93,0.79,0.87
+Northern Ireland,2020-05-12,estimate,0.83,0.73,0.92,0.79,0.87
+Northern Ireland,2020-05-13,estimate,0.82,0.72,0.91,0.78,0.86
+Northern Ireland,2020-05-14,estimate,0.81,0.72,0.9,0.78,0.86
+Northern Ireland,2020-05-15,estimate,0.81,0.71,0.9,0.77,0.84
+Northern Ireland,2020-05-16,estimate,0.8,0.71,0.89,0.77,0.84
+Northern Ireland,2020-05-17,estimate,0.8,0.7,0.89,0.77,0.84
+Northern Ireland,2020-05-18,estimate,0.79,0.7,0.89,0.75,0.83
+Northern Ireland,2020-05-19,estimate,0.79,0.69,0.88,0.74,0.82
+Northern Ireland,2020-05-20,estimate,0.78,0.69,0.88,0.74,0.82
+Northern Ireland,2020-05-21,estimate,0.78,0.68,0.88,0.73,0.81
+Northern Ireland,2020-05-22,estimate,0.77,0.67,0.87,0.73,0.81
+Northern Ireland,2020-05-23,estimate,0.77,0.67,0.86,0.72,0.8
+Northern Ireland,2020-05-24,estimate,0.77,0.67,0.87,0.72,0.81
+Northern Ireland,2020-05-25,estimate,0.77,0.67,0.86,0.72,0.81
+Northern Ireland,2020-05-26,estimate,0.77,0.66,0.86,0.72,0.8
+Northern Ireland,2020-05-27,estimate,0.77,0.66,0.87,0.73,0.81
+Northern Ireland,2020-05-28,estimate,0.77,0.66,0.87,0.72,0.81
+Northern Ireland,2020-05-29,estimate,0.77,0.66,0.87,0.72,0.81
+Northern Ireland,2020-05-30,estimate,0.77,0.66,0.87,0.73,0.81
+Northern Ireland,2020-05-31,estimate,0.77,0.65,0.88,0.73,0.81
+Northern Ireland,2020-06-01,estimate,0.77,0.66,0.88,0.72,0.81
+Northern Ireland,2020-06-02,estimate,0.78,0.67,0.89,0.72,0.81
+Northern Ireland,2020-06-03,estimate,0.78,0.66,0.89,0.73,0.82
+Northern Ireland,2020-06-04,estimate,0.78,0.67,0.89,0.73,0.82
+Northern Ireland,2020-06-05,estimate,0.79,0.67,0.9,0.73,0.82
+Northern Ireland,2020-06-06,estimate,0.79,0.68,0.91,0.74,0.84
+Northern Ireland,2020-06-07,estimate,0.8,0.68,0.92,0.74,0.84
+Northern Ireland,2020-06-08,estimate,0.8,0.69,0.93,0.74,0.84
+Northern Ireland,2020-06-09,estimate,0.8,0.68,0.92,0.75,0.85
+Northern Ireland,2020-06-10,estimate,0.8,0.69,0.93,0.75,0.85
+Northern Ireland,2020-06-11,estimate,0.81,0.69,0.93,0.76,0.86
 Northern Ireland,2020-06-12,estimate,0.81,0.69,0.94,0.75,0.85
-Northern Ireland,2020-06-13,estimate,0.81,0.68,0.93,0.74,0.84
-Northern Ireland,2020-06-14,estimate,0.81,0.69,0.94,0.74,0.85
-Northern Ireland,2020-06-15,estimate,0.81,0.69,0.94,0.75,0.86
-Northern Ireland,2020-06-16,estimate,0.81,0.69,0.95,0.76,0.87
-Northern Ireland,2020-06-17,estimate,0.82,0.69,0.95,0.76,0.86
-Northern Ireland,2020-06-18,estimate,0.82,0.67,0.94,0.76,0.86
-Northern Ireland,2020-06-19,estimate,0.82,0.68,0.95,0.76,0.86
-Northern Ireland,2020-06-20,estimate,0.82,0.69,0.96,0.75,0.86
-Northern Ireland,2020-06-21,estimate,0.82,0.69,0.96,0.76,0.87
-Northern Ireland,2020-06-22,estimate,0.83,0.69,0.97,0.77,0.88
-Northern Ireland,2020-06-23,estimate,0.83,0.69,0.97,0.77,0.88
-Northern Ireland,2020-06-24,estimate,0.84,0.69,0.97,0.78,0.89
-Northern Ireland,2020-06-25,estimate,0.84,0.7,0.98,0.78,0.89
-Northern Ireland,2020-06-26,estimate,0.85,0.71,0.99,0.79,0.9
-Northern Ireland,2020-06-27,estimate,0.85,0.72,1.01,0.8,0.91
-Northern Ireland,2020-06-28,estimate,0.86,0.72,1.01,0.8,0.91
+Northern Ireland,2020-06-13,estimate,0.81,0.68,0.94,0.76,0.87
+Northern Ireland,2020-06-14,estimate,0.81,0.68,0.94,0.76,0.86
+Northern Ireland,2020-06-15,estimate,0.81,0.69,0.95,0.76,0.87
+Northern Ireland,2020-06-16,estimate,0.82,0.68,0.95,0.76,0.87
+Northern Ireland,2020-06-17,estimate,0.82,0.69,0.97,0.76,0.87
+Northern Ireland,2020-06-18,estimate,0.82,0.69,0.97,0.78,0.89
+Northern Ireland,2020-06-19,estimate,0.82,0.68,0.96,0.76,0.87
+Northern Ireland,2020-06-20,estimate,0.82,0.69,0.97,0.77,0.88
+Northern Ireland,2020-06-21,estimate,0.83,0.69,0.98,0.76,0.88
+Northern Ireland,2020-06-22,estimate,0.83,0.68,0.97,0.77,0.88
+Northern Ireland,2020-06-23,estimate,0.83,0.68,0.97,0.77,0.89
+Northern Ireland,2020-06-24,estimate,0.84,0.69,0.98,0.79,0.9
+Northern Ireland,2020-06-25,estimate,0.84,0.69,0.98,0.79,0.9
+Northern Ireland,2020-06-26,estimate,0.85,0.7,0.99,0.79,0.9
+Northern Ireland,2020-06-27,estimate,0.86,0.7,0.99,0.8,0.91
+Northern Ireland,2020-06-28,estimate,0.86,0.72,1.01,0.81,0.92
 Northern Ireland,2020-06-29,estimate,0.87,0.73,1.02,0.81,0.93
-Northern Ireland,2020-06-30,estimate,0.88,0.74,1.04,0.82,0.94
-Northern Ireland,2020-07-01,estimate,0.89,0.75,1.05,0.83,0.95
-Northern Ireland,2020-07-02,estimate,0.9,0.76,1.06,0.84,0.96
-Northern Ireland,2020-07-03,estimate,0.92,0.77,1.07,0.85,0.97
-Northern Ireland,2020-07-04,estimate,0.93,0.78,1.08,0.86,0.99
-Northern Ireland,2020-07-05,estimate,0.94,0.8,1.1,0.88,1
-Northern Ireland,2020-07-06,estimate,0.95,0.8,1.11,0.88,1.01
-Northern Ireland,2020-07-07,estimate,0.96,0.8,1.12,0.9,1.03
-Northern Ireland,2020-07-08,estimate,0.97,0.82,1.14,0.92,1.05
-Northern Ireland,2020-07-09,estimate,0.99,0.83,1.16,0.92,1.05
-Northern Ireland,2020-07-10,estimate,1,0.83,1.16,0.93,1.06
-Northern Ireland,2020-07-11,estimate,1.01,0.85,1.18,0.93,1.06
-Northern Ireland,2020-07-12,estimate,1.02,0.85,1.18,0.95,1.08
-Northern Ireland,2020-07-13,estimate,1.04,0.87,1.19,0.96,1.1
-Northern Ireland,2020-07-14,estimate,1.05,0.88,1.21,0.98,1.11
-Northern Ireland,2020-07-15,estimate,1.06,0.89,1.22,0.99,1.12
-Northern Ireland,2020-07-16,estimate,1.07,0.91,1.24,0.99,1.13
-Northern Ireland,2020-07-17,estimate,1.08,0.91,1.25,0.99,1.13
-Northern Ireland,2020-07-18,estimate,1.09,0.93,1.27,1,1.14
-Northern Ireland,2020-07-19,estimate,1.09,0.92,1.26,1.03,1.16
-Northern Ireland,2020-07-20,estimate,1.1,0.94,1.28,1.03,1.16
-Northern Ireland,2020-07-21,estimate,1.11,0.94,1.28,1.03,1.16
-Northern Ireland,2020-07-22,estimate,1.12,0.95,1.3,1.05,1.18
-Northern Ireland,2020-07-23,estimate,1.12,0.96,1.31,1.05,1.18
-Northern Ireland,2020-07-24,estimate,1.13,0.98,1.32,1.05,1.18
-Northern Ireland,2020-07-25,estimate,1.14,0.97,1.31,1.07,1.2
-Northern Ireland,2020-07-26,estimate,1.14,0.98,1.32,1.06,1.2
-Northern Ireland,2020-07-27,estimate,1.15,1,1.34,1.07,1.2
-Northern Ireland,2020-07-28,estimate,1.15,1,1.35,1.08,1.22
-Northern Ireland,2020-07-29,estimate,1.16,0.99,1.34,1.08,1.22
-Northern Ireland,2020-07-30,estimate,1.16,1,1.35,1.09,1.23
-Northern Ireland,2020-07-31,estimate,1.17,1,1.35,1.09,1.23
-Northern Ireland,2020-08-01,estimate,1.17,0.99,1.36,1.1,1.25
-Northern Ireland,2020-08-02,estimate,1.18,1,1.39,1.1,1.26
-Northern Ireland,2020-08-03,estimate,1.18,0.98,1.38,1.09,1.25
-Northern Ireland,2020-08-04,estimate,1.19,0.98,1.4,1.1,1.27
-Northern Ireland,2020-08-05,estimate,1.19,0.98,1.42,1.11,1.29
-Northern Ireland,2020-08-06,estimate,1.2,0.97,1.44,1.1,1.29
-Northern Ireland,2020-08-07,estimate based on partial data,1.2,0.96,1.47,1.09,1.3
-Northern Ireland,2020-08-08,estimate based on partial data,1.21,0.95,1.51,1.09,1.31
-Northern Ireland,2020-08-09,estimate based on partial data,1.21,0.92,1.53,1.08,1.31
-Northern Ireland,2020-08-10,estimate based on partial data,1.22,0.9,1.57,1.06,1.32
-Northern Ireland,2020-08-11,estimate based on partial data,1.22,0.88,1.6,1.05,1.33
-Northern Ireland,2020-08-12,estimate based on partial data,1.22,0.86,1.65,1.07,1.37
-Northern Ireland,2020-08-13,estimate based on partial data,1.23,0.83,1.69,1.06,1.38
-Northern Ireland,2020-08-14,estimate based on partial data,1.23,0.81,1.73,1.04,1.39
-Northern Ireland,2020-08-15,estimate based on partial data,1.24,0.78,1.76,1.01,1.39
-Northern Ireland,2020-08-16,estimate based on partial data,1.24,0.75,1.81,1,1.41
-Northern Ireland,2020-08-17,estimate based on partial data,1.25,0.73,1.85,0.99,1.42
-Scotland,2020-03-22,estimate,1.43,1.31,1.54,1.38,1.47
-Scotland,2020-03-23,estimate,1.37,1.26,1.47,1.33,1.41
-Scotland,2020-03-24,estimate,1.3,1.2,1.39,1.26,1.34
-Scotland,2020-03-25,estimate,1.23,1.15,1.32,1.19,1.26
-Scotland,2020-03-26,estimate,1.16,1.08,1.24,1.12,1.19
+Northern Ireland,2020-06-30,estimate,0.88,0.75,1.05,0.82,0.94
+Northern Ireland,2020-07-01,estimate,0.89,0.74,1.04,0.82,0.94
+Northern Ireland,2020-07-02,estimate,0.9,0.75,1.06,0.83,0.95
+Northern Ireland,2020-07-03,estimate,0.91,0.75,1.06,0.85,0.97
+Northern Ireland,2020-07-04,estimate,0.93,0.76,1.08,0.87,0.99
+Northern Ireland,2020-07-05,estimate,0.94,0.77,1.08,0.87,1
+Northern Ireland,2020-07-06,estimate,0.95,0.79,1.11,0.89,1.01
+Northern Ireland,2020-07-07,estimate,0.96,0.81,1.14,0.9,1.03
+Northern Ireland,2020-07-08,estimate,0.98,0.8,1.14,0.91,1.04
+Northern Ireland,2020-07-09,estimate,0.99,0.81,1.15,0.92,1.05
+Northern Ireland,2020-07-10,estimate,1,0.83,1.18,0.93,1.07
+Northern Ireland,2020-07-11,estimate,1.01,0.85,1.19,0.94,1.07
+Northern Ireland,2020-07-12,estimate,1.02,0.85,1.2,0.94,1.08
+Northern Ireland,2020-07-13,estimate,1.03,0.88,1.23,0.96,1.1
+Northern Ireland,2020-07-14,estimate,1.04,0.87,1.22,0.96,1.1
+Northern Ireland,2020-07-15,estimate,1.05,0.88,1.23,0.98,1.11
+Northern Ireland,2020-07-16,estimate,1.06,0.88,1.23,0.99,1.13
+Northern Ireland,2020-07-17,estimate,1.07,0.91,1.26,1,1.14
+Northern Ireland,2020-07-18,estimate,1.08,0.91,1.26,1.01,1.15
+Northern Ireland,2020-07-19,estimate,1.09,0.92,1.27,1.01,1.15
+Northern Ireland,2020-07-20,estimate,1.1,0.92,1.27,1.02,1.16
+Northern Ireland,2020-07-21,estimate,1.11,0.92,1.29,1.03,1.17
+Northern Ireland,2020-07-22,estimate,1.12,0.95,1.31,1.04,1.18
+Northern Ireland,2020-07-23,estimate,1.12,0.95,1.31,1.05,1.19
+Northern Ireland,2020-07-24,estimate,1.13,0.95,1.31,1.05,1.19
+Northern Ireland,2020-07-25,estimate,1.14,0.96,1.33,1.05,1.19
+Northern Ireland,2020-07-26,estimate,1.14,0.97,1.33,1.05,1.19
+Northern Ireland,2020-07-27,estimate,1.15,0.96,1.33,1.07,1.21
+Northern Ireland,2020-07-28,estimate,1.15,0.97,1.34,1.06,1.21
+Northern Ireland,2020-07-29,estimate,1.16,0.97,1.33,1.09,1.23
+Northern Ireland,2020-07-30,estimate,1.16,0.99,1.36,1.09,1.23
+Northern Ireland,2020-07-31,estimate,1.17,0.98,1.35,1.09,1.24
+Northern Ireland,2020-08-01,estimate,1.17,0.98,1.36,1.09,1.24
+Northern Ireland,2020-08-02,estimate,1.18,0.98,1.38,1.11,1.27
+Northern Ireland,2020-08-03,estimate,1.18,0.97,1.38,1.1,1.27
+Northern Ireland,2020-08-04,estimate,1.19,0.97,1.4,1.09,1.27
+Northern Ireland,2020-08-05,estimate,1.19,0.97,1.43,1.08,1.26
+Northern Ireland,2020-08-06,estimate,1.2,0.94,1.44,1.1,1.29
+Northern Ireland,2020-08-07,estimate based on partial data,1.2,0.92,1.46,1.09,1.3
+Northern Ireland,2020-08-08,estimate based on partial data,1.21,0.91,1.49,1.11,1.34
+Northern Ireland,2020-08-09,estimate based on partial data,1.21,0.91,1.55,1.08,1.32
+Northern Ireland,2020-08-10,estimate based on partial data,1.21,0.87,1.56,1.06,1.33
+Northern Ireland,2020-08-11,estimate based on partial data,1.22,0.86,1.6,1.06,1.36
+Northern Ireland,2020-08-12,estimate based on partial data,1.22,0.83,1.64,1.03,1.35
+Northern Ireland,2020-08-13,estimate based on partial data,1.22,0.82,1.69,1.03,1.36
+Northern Ireland,2020-08-14,estimate based on partial data,1.23,0.81,1.74,1.01,1.37
+Northern Ireland,2020-08-15,estimate based on partial data,1.23,0.76,1.76,1,1.38
+Northern Ireland,2020-08-16,estimate based on partial data,1.23,0.74,1.81,0.97,1.37
+Northern Ireland,2020-08-17,estimate based on partial data,1.24,0.72,1.84,0.96,1.39
+Scotland,2020-03-08,estimate,1.36,1.14,1.58,1.26,1.44
+Scotland,2020-03-09,estimate,1.4,1.22,1.59,1.32,1.48
+Scotland,2020-03-10,estimate,1.44,1.29,1.59,1.39,1.51
+Scotland,2020-03-11,estimate,1.48,1.37,1.6,1.43,1.52
+Scotland,2020-03-12,estimate,1.51,1.42,1.61,1.48,1.55
+Scotland,2020-03-13,estimate,1.55,1.46,1.62,1.52,1.58
+Scotland,2020-03-14,estimate,1.57,1.49,1.65,1.54,1.6
+Scotland,2020-03-15,estimate,1.59,1.5,1.69,1.55,1.62
+Scotland,2020-03-16,estimate,1.6,1.5,1.71,1.55,1.64
+Scotland,2020-03-17,estimate,1.6,1.49,1.72,1.55,1.64
+Scotland,2020-03-18,estimate,1.59,1.47,1.72,1.54,1.64
+Scotland,2020-03-19,estimate,1.57,1.44,1.7,1.51,1.62
+Scotland,2020-03-20,estimate,1.53,1.41,1.66,1.47,1.57
+Scotland,2020-03-21,estimate,1.48,1.37,1.61,1.42,1.52
+Scotland,2020-03-22,estimate,1.43,1.32,1.54,1.37,1.46
+Scotland,2020-03-23,estimate,1.36,1.26,1.46,1.32,1.4
+Scotland,2020-03-24,estimate,1.3,1.2,1.38,1.25,1.33
+Scotland,2020-03-25,estimate,1.23,1.14,1.31,1.19,1.26
+Scotland,2020-03-26,estimate,1.16,1.07,1.23,1.13,1.19
 Scotland,2020-03-27,estimate,1.09,1.02,1.17,1.06,1.12
 Scotland,2020-03-28,estimate,1.03,0.95,1.1,1,1.06
-Scotland,2020-03-29,estimate,0.97,0.89,1.04,0.94,1
+Scotland,2020-03-29,estimate,0.97,0.9,1.04,0.94,0.99
 Scotland,2020-03-30,estimate,0.92,0.84,0.99,0.89,0.95
-Scotland,2020-03-31,estimate,0.87,0.8,0.95,0.84,0.9
-Scotland,2020-04-01,estimate,0.83,0.76,0.91,0.81,0.87
-Scotland,2020-04-02,estimate,0.8,0.72,0.87,0.77,0.83
-Scotland,2020-04-03,estimate,0.77,0.7,0.84,0.74,0.8
+Scotland,2020-03-31,estimate,0.87,0.8,0.94,0.84,0.9
+Scotland,2020-04-01,estimate,0.83,0.76,0.91,0.8,0.86
+Scotland,2020-04-02,estimate,0.8,0.72,0.87,0.76,0.82
+Scotland,2020-04-03,estimate,0.77,0.7,0.84,0.74,0.79
 Scotland,2020-04-04,estimate,0.75,0.68,0.82,0.72,0.78
-Scotland,2020-04-05,estimate,0.73,0.67,0.8,0.7,0.75
+Scotland,2020-04-05,estimate,0.73,0.67,0.8,0.7,0.76
 Scotland,2020-04-06,estimate,0.72,0.65,0.79,0.69,0.75
 Scotland,2020-04-07,estimate,0.72,0.65,0.78,0.69,0.74
-Scotland,2020-04-08,estimate,0.72,0.66,0.79,0.69,0.74
+Scotland,2020-04-08,estimate,0.72,0.65,0.78,0.7,0.75
 Scotland,2020-04-09,estimate,0.72,0.66,0.79,0.7,0.75
-Scotland,2020-04-10,estimate,0.73,0.67,0.8,0.71,0.76
+Scotland,2020-04-10,estimate,0.73,0.67,0.8,0.7,0.76
 Scotland,2020-04-11,estimate,0.75,0.68,0.81,0.72,0.77
-Scotland,2020-04-12,estimate,0.76,0.7,0.82,0.73,0.79
-Scotland,2020-04-13,estimate,0.78,0.72,0.84,0.75,0.8
-Scotland,2020-04-14,estimate,0.8,0.73,0.87,0.77,0.82
-Scotland,2020-04-15,estimate,0.82,0.75,0.89,0.79,0.85
-Scotland,2020-04-16,estimate,0.84,0.77,0.91,0.81,0.87
+Scotland,2020-04-12,estimate,0.76,0.7,0.83,0.73,0.78
+Scotland,2020-04-13,estimate,0.78,0.71,0.84,0.75,0.8
+Scotland,2020-04-14,estimate,0.8,0.73,0.86,0.77,0.83
+Scotland,2020-04-15,estimate,0.82,0.75,0.89,0.79,0.84
+Scotland,2020-04-16,estimate,0.84,0.77,0.91,0.81,0.86
 Scotland,2020-04-17,estimate,0.86,0.78,0.93,0.83,0.89
 Scotland,2020-04-18,estimate,0.87,0.79,0.95,0.84,0.9
-Scotland,2020-04-19,estimate,0.89,0.81,0.97,0.86,0.92
-Scotland,2020-04-20,estimate,0.9,0.82,0.98,0.87,0.93
-Scotland,2020-04-21,estimate,0.91,0.83,1,0.87,0.94
-Scotland,2020-04-22,estimate,0.91,0.82,0.99,0.87,0.94
-Scotland,2020-04-23,estimate,0.91,0.82,0.99,0.88,0.94
-Scotland,2020-04-24,estimate,0.91,0.83,0.99,0.87,0.93
-Scotland,2020-04-25,estimate,0.9,0.82,0.98,0.86,0.92
-Scotland,2020-04-26,estimate,0.89,0.81,0.97,0.85,0.92
-Scotland,2020-04-27,estimate,0.87,0.8,0.96,0.84,0.91
-Scotland,2020-04-28,estimate,0.86,0.78,0.94,0.83,0.89
-Scotland,2020-04-29,estimate,0.84,0.76,0.92,0.81,0.87
-Scotland,2020-04-30,estimate,0.82,0.75,0.9,0.79,0.86
-Scotland,2020-05-01,estimate,0.81,0.73,0.88,0.77,0.83
-Scotland,2020-05-02,estimate,0.79,0.72,0.87,0.76,0.82
-Scotland,2020-05-03,estimate,0.77,0.7,0.85,0.75,0.81
-Scotland,2020-05-04,estimate,0.76,0.68,0.83,0.73,0.8
-Scotland,2020-05-05,estimate,0.75,0.67,0.82,0.72,0.78
-Scotland,2020-05-06,estimate,0.74,0.66,0.82,0.71,0.77
+Scotland,2020-04-19,estimate,0.89,0.8,0.97,0.86,0.92
+Scotland,2020-04-20,estimate,0.9,0.82,0.98,0.86,0.93
+Scotland,2020-04-21,estimate,0.91,0.82,0.99,0.88,0.95
+Scotland,2020-04-22,estimate,0.91,0.82,0.99,0.88,0.95
+Scotland,2020-04-23,estimate,0.91,0.83,1,0.87,0.94
+Scotland,2020-04-24,estimate,0.9,0.82,0.99,0.87,0.94
+Scotland,2020-04-25,estimate,0.9,0.81,0.97,0.86,0.93
+Scotland,2020-04-26,estimate,0.89,0.81,0.97,0.86,0.92
+Scotland,2020-04-27,estimate,0.87,0.79,0.95,0.83,0.89
+Scotland,2020-04-28,estimate,0.86,0.77,0.93,0.82,0.89
+Scotland,2020-04-29,estimate,0.84,0.76,0.91,0.81,0.87
+Scotland,2020-04-30,estimate,0.82,0.74,0.89,0.79,0.85
+Scotland,2020-05-01,estimate,0.8,0.73,0.88,0.77,0.84
+Scotland,2020-05-02,estimate,0.79,0.71,0.87,0.76,0.82
+Scotland,2020-05-03,estimate,0.77,0.69,0.85,0.74,0.81
+Scotland,2020-05-04,estimate,0.76,0.68,0.83,0.73,0.79
+Scotland,2020-05-05,estimate,0.75,0.68,0.83,0.72,0.78
+Scotland,2020-05-06,estimate,0.74,0.66,0.82,0.7,0.77
 Scotland,2020-05-07,estimate,0.73,0.65,0.81,0.7,0.76
-Scotland,2020-05-08,estimate,0.72,0.64,0.8,0.69,0.76
-Scotland,2020-05-09,estimate,0.72,0.65,0.8,0.69,0.75
-Scotland,2020-05-10,estimate,0.72,0.65,0.8,0.68,0.75
-Scotland,2020-05-11,estimate,0.72,0.64,0.79,0.68,0.75
-Scotland,2020-05-12,estimate,0.72,0.64,0.79,0.69,0.75
-Scotland,2020-05-13,estimate,0.72,0.64,0.8,0.69,0.75
+Scotland,2020-05-08,estimate,0.72,0.65,0.8,0.69,0.76
+Scotland,2020-05-09,estimate,0.72,0.64,0.8,0.69,0.75
+Scotland,2020-05-10,estimate,0.72,0.64,0.8,0.68,0.75
+Scotland,2020-05-11,estimate,0.72,0.64,0.8,0.68,0.75
+Scotland,2020-05-12,estimate,0.72,0.65,0.81,0.69,0.75
+Scotland,2020-05-13,estimate,0.72,0.65,0.8,0.69,0.76
 Scotland,2020-05-14,estimate,0.73,0.65,0.81,0.69,0.76
-Scotland,2020-05-15,estimate,0.73,0.65,0.82,0.7,0.77
-Scotland,2020-05-16,estimate,0.74,0.66,0.83,0.7,0.77
-Scotland,2020-05-17,estimate,0.75,0.66,0.83,0.71,0.78
-Scotland,2020-05-18,estimate,0.75,0.67,0.84,0.72,0.79
-Scotland,2020-05-19,estimate,0.76,0.67,0.84,0.72,0.79
-Scotland,2020-05-20,estimate,0.77,0.69,0.86,0.74,0.81
+Scotland,2020-05-15,estimate,0.73,0.66,0.82,0.7,0.77
+Scotland,2020-05-16,estimate,0.74,0.66,0.83,0.71,0.78
+Scotland,2020-05-17,estimate,0.75,0.67,0.84,0.71,0.78
+Scotland,2020-05-18,estimate,0.76,0.67,0.84,0.72,0.79
+Scotland,2020-05-19,estimate,0.76,0.68,0.86,0.73,0.8
+Scotland,2020-05-20,estimate,0.77,0.69,0.87,0.73,0.8
 Scotland,2020-05-21,estimate,0.78,0.69,0.87,0.75,0.82
-Scotland,2020-05-22,estimate,0.79,0.7,0.88,0.75,0.83
+Scotland,2020-05-22,estimate,0.79,0.7,0.88,0.75,0.82
 Scotland,2020-05-23,estimate,0.8,0.7,0.89,0.76,0.83
-Scotland,2020-05-24,estimate,0.8,0.71,0.9,0.76,0.83
-Scotland,2020-05-25,estimate,0.81,0.72,0.91,0.77,0.84
-Scotland,2020-05-26,estimate,0.82,0.72,0.92,0.78,0.85
-Scotland,2020-05-27,estimate,0.82,0.73,0.92,0.77,0.85
-Scotland,2020-05-28,estimate,0.83,0.72,0.92,0.79,0.87
-Scotland,2020-05-29,estimate,0.83,0.72,0.93,0.79,0.87
-Scotland,2020-05-30,estimate,0.83,0.73,0.94,0.79,0.87
-Scotland,2020-05-31,estimate,0.84,0.73,0.95,0.8,0.88
-Scotland,2020-06-01,estimate,0.84,0.73,0.94,0.79,0.88
-Scotland,2020-06-02,estimate,0.84,0.73,0.95,0.79,0.88
-Scotland,2020-06-03,estimate,0.84,0.73,0.95,0.78,0.87
-Scotland,2020-06-04,estimate,0.83,0.73,0.96,0.78,0.87
+Scotland,2020-05-24,estimate,0.81,0.72,0.91,0.76,0.84
+Scotland,2020-05-25,estimate,0.81,0.71,0.91,0.77,0.85
+Scotland,2020-05-26,estimate,0.82,0.72,0.92,0.77,0.85
+Scotland,2020-05-27,estimate,0.82,0.73,0.93,0.78,0.86
+Scotland,2020-05-28,estimate,0.83,0.73,0.93,0.79,0.87
+Scotland,2020-05-29,estimate,0.83,0.73,0.94,0.78,0.86
+Scotland,2020-05-30,estimate,0.83,0.73,0.94,0.8,0.88
+Scotland,2020-05-31,estimate,0.84,0.73,0.94,0.79,0.88
+Scotland,2020-06-01,estimate,0.84,0.73,0.94,0.79,0.87
+Scotland,2020-06-02,estimate,0.84,0.73,0.94,0.78,0.87
+Scotland,2020-06-03,estimate,0.84,0.72,0.94,0.78,0.87
+Scotland,2020-06-04,estimate,0.83,0.72,0.95,0.78,0.87
 Scotland,2020-06-05,estimate,0.83,0.72,0.95,0.78,0.87
-Scotland,2020-06-06,estimate,0.83,0.71,0.94,0.78,0.87
-Scotland,2020-06-07,estimate,0.82,0.71,0.94,0.77,0.87
-Scotland,2020-06-08,estimate,0.82,0.71,0.94,0.77,0.86
-Scotland,2020-06-09,estimate,0.81,0.69,0.92,0.76,0.85
-Scotland,2020-06-10,estimate,0.8,0.69,0.92,0.75,0.84
+Scotland,2020-06-06,estimate,0.83,0.71,0.94,0.77,0.87
+Scotland,2020-06-07,estimate,0.82,0.7,0.93,0.77,0.86
+Scotland,2020-06-08,estimate,0.81,0.7,0.93,0.77,0.86
+Scotland,2020-06-09,estimate,0.81,0.7,0.93,0.76,0.85
+Scotland,2020-06-10,estimate,0.8,0.69,0.91,0.75,0.84
 Scotland,2020-06-11,estimate,0.79,0.68,0.91,0.74,0.83
-Scotland,2020-06-12,estimate,0.78,0.68,0.9,0.75,0.84
-Scotland,2020-06-13,estimate,0.78,0.66,0.89,0.74,0.83
-Scotland,2020-06-14,estimate,0.77,0.64,0.87,0.72,0.82
+Scotland,2020-06-12,estimate,0.78,0.67,0.9,0.74,0.83
+Scotland,2020-06-13,estimate,0.78,0.66,0.89,0.73,0.82
+Scotland,2020-06-14,estimate,0.77,0.65,0.88,0.72,0.82
 Scotland,2020-06-15,estimate,0.76,0.64,0.87,0.71,0.8
-Scotland,2020-06-16,estimate,0.75,0.63,0.86,0.7,0.79
-Scotland,2020-06-17,estimate,0.74,0.62,0.86,0.7,0.8
-Scotland,2020-06-18,estimate,0.73,0.62,0.86,0.7,0.79
+Scotland,2020-06-16,estimate,0.75,0.63,0.87,0.71,0.8
+Scotland,2020-06-17,estimate,0.74,0.63,0.87,0.7,0.8
+Scotland,2020-06-18,estimate,0.74,0.62,0.86,0.69,0.79
 Scotland,2020-06-19,estimate,0.73,0.61,0.86,0.69,0.79
-Scotland,2020-06-20,estimate,0.73,0.6,0.85,0.68,0.78
-Scotland,2020-06-21,estimate,0.72,0.59,0.84,0.67,0.77
-Scotland,2020-06-22,estimate,0.72,0.59,0.85,0.67,0.77
-Scotland,2020-06-23,estimate,0.72,0.59,0.86,0.67,0.78
-Scotland,2020-06-24,estimate,0.73,0.59,0.86,0.67,0.78
-Scotland,2020-06-25,estimate,0.73,0.6,0.87,0.67,0.78
-Scotland,2020-06-26,estimate,0.74,0.59,0.87,0.69,0.8
-Scotland,2020-06-27,estimate,0.75,0.6,0.88,0.69,0.8
-Scotland,2020-06-28,estimate,0.76,0.61,0.9,0.7,0.82
-Scotland,2020-06-29,estimate,0.77,0.62,0.91,0.71,0.83
-Scotland,2020-06-30,estimate,0.78,0.63,0.92,0.73,0.84
-Scotland,2020-07-01,estimate,0.8,0.66,0.95,0.73,0.85
+Scotland,2020-06-20,estimate,0.73,0.6,0.86,0.68,0.78
+Scotland,2020-06-21,estimate,0.73,0.59,0.85,0.67,0.78
+Scotland,2020-06-22,estimate,0.72,0.58,0.85,0.68,0.79
+Scotland,2020-06-23,estimate,0.73,0.59,0.87,0.68,0.79
+Scotland,2020-06-24,estimate,0.73,0.59,0.87,0.67,0.78
+Scotland,2020-06-25,estimate,0.73,0.6,0.88,0.68,0.79
+Scotland,2020-06-26,estimate,0.74,0.6,0.88,0.68,0.79
+Scotland,2020-06-27,estimate,0.75,0.6,0.89,0.69,0.8
+Scotland,2020-06-28,estimate,0.76,0.62,0.9,0.69,0.81
+Scotland,2020-06-29,estimate,0.77,0.63,0.91,0.71,0.82
+Scotland,2020-06-30,estimate,0.78,0.64,0.92,0.72,0.83
+Scotland,2020-07-01,estimate,0.8,0.66,0.95,0.74,0.85
 Scotland,2020-07-02,estimate,0.81,0.67,0.97,0.75,0.87
-Scotland,2020-07-03,estimate,0.83,0.68,0.98,0.76,0.88
-Scotland,2020-07-04,estimate,0.84,0.69,0.99,0.78,0.9
-Scotland,2020-07-05,estimate,0.86,0.7,1.01,0.8,0.92
-Scotland,2020-07-06,estimate,0.88,0.73,1.05,0.81,0.94
-Scotland,2020-07-07,estimate,0.9,0.74,1.07,0.82,0.94
-Scotland,2020-07-08,estimate,0.91,0.76,1.09,0.84,0.97
-Scotland,2020-07-09,estimate,0.93,0.77,1.11,0.85,0.98
-Scotland,2020-07-10,estimate,0.94,0.78,1.13,0.86,0.99
-Scotland,2020-07-11,estimate,0.95,0.79,1.15,0.87,1.01
-Scotland,2020-07-12,estimate,0.97,0.8,1.17,0.89,1.03
-Scotland,2020-07-13,estimate,0.98,0.8,1.17,0.89,1.03
-Scotland,2020-07-14,estimate,0.98,0.81,1.2,0.89,1.04
-Scotland,2020-07-15,estimate,0.99,0.8,1.19,0.89,1.03
-Scotland,2020-07-16,estimate,0.99,0.8,1.19,0.9,1.04
-Scotland,2020-07-17,estimate,0.99,0.82,1.21,0.91,1.06
-Scotland,2020-07-18,estimate,0.99,0.82,1.2,0.92,1.07
-Scotland,2020-07-19,estimate,0.99,0.81,1.2,0.91,1.06
-Scotland,2020-07-20,estimate,0.99,0.79,1.19,0.91,1.06
-Scotland,2020-07-21,estimate,0.99,0.8,1.2,0.89,1.04
-Scotland,2020-07-22,estimate,0.98,0.78,1.17,0.88,1.04
-Scotland,2020-07-23,estimate,0.97,0.77,1.17,0.88,1.03
-Scotland,2020-07-24,estimate,0.96,0.77,1.17,0.86,1.02
-Scotland,2020-07-25,estimate,0.95,0.75,1.16,0.87,1.03
-Scotland,2020-07-26,estimate,0.95,0.73,1.14,0.87,1.03
-Scotland,2020-07-27,estimate,0.94,0.71,1.13,0.87,1.03
-Scotland,2020-07-28,estimate,0.93,0.71,1.14,0.84,1.02
-Scotland,2020-07-29,estimate,0.92,0.69,1.13,0.83,1
-Scotland,2020-07-30,estimate,0.91,0.67,1.12,0.8,0.99
-Scotland,2020-07-31,estimate,0.9,0.66,1.13,0.8,0.99
-Scotland,2020-08-01,estimate,0.88,0.64,1.12,0.78,0.97
-Scotland,2020-08-02,estimate,0.87,0.6,1.1,0.77,0.97
-Scotland,2020-08-03,estimate,0.86,0.58,1.1,0.75,0.96
-Scotland,2020-08-04,estimate,0.85,0.57,1.11,0.75,0.97
-Scotland,2020-08-05,estimate,0.84,0.55,1.12,0.73,0.96
-Scotland,2020-08-06,estimate,0.83,0.53,1.11,0.69,0.93
-Scotland,2020-08-07,estimate based on partial data,0.82,0.52,1.13,0.68,0.93
-Scotland,2020-08-08,estimate based on partial data,0.81,0.5,1.14,0.69,0.95
-Scotland,2020-08-09,estimate based on partial data,0.8,0.48,1.15,0.66,0.94
-Scotland,2020-08-10,estimate based on partial data,0.79,0.45,1.15,0.61,0.9
-Scotland,2020-08-11,estimate based on partial data,0.79,0.42,1.16,0.6,0.9
-Scotland,2020-08-12,estimate based on partial data,0.78,0.39,1.16,0.6,0.91
-Scotland,2020-08-13,estimate based on partial data,0.77,0.38,1.18,0.6,0.92
-Scotland,2020-08-14,estimate based on partial data,0.77,0.38,1.21,0.58,0.91
-Scotland,2020-08-15,estimate based on partial data,0.77,0.35,1.21,0.56,0.9
-Scotland,2020-08-16,estimate based on partial data,0.77,0.33,1.22,0.56,0.91
-Scotland,2020-08-17,estimate based on partial data,0.77,0.31,1.23,0.54,0.91
-Wales,2020-04-06,estimate,0.99,0.97,1.01,0.99,1
+Scotland,2020-07-03,estimate,0.83,0.69,0.98,0.77,0.88
+Scotland,2020-07-04,estimate,0.84,0.7,1,0.77,0.88
+Scotland,2020-07-05,estimate,0.86,0.71,1.02,0.8,0.92
+Scotland,2020-07-06,estimate,0.88,0.73,1.05,0.82,0.94
+Scotland,2020-07-07,estimate,0.9,0.73,1.06,0.83,0.95
+Scotland,2020-07-08,estimate,0.91,0.75,1.09,0.84,0.97
+Scotland,2020-07-09,estimate,0.93,0.75,1.11,0.84,0.97
+Scotland,2020-07-10,estimate,0.94,0.76,1.12,0.86,1
+Scotland,2020-07-11,estimate,0.95,0.77,1.14,0.87,1.01
+Scotland,2020-07-12,estimate,0.97,0.79,1.17,0.89,1.04
+Scotland,2020-07-13,estimate,0.98,0.79,1.17,0.88,1.03
+Scotland,2020-07-14,estimate,0.98,0.8,1.19,0.88,1.03
+Scotland,2020-07-15,estimate,0.99,0.81,1.2,0.89,1.04
+Scotland,2020-07-16,estimate,0.99,0.8,1.19,0.9,1.05
+Scotland,2020-07-17,estimate,1,0.81,1.2,0.91,1.06
+Scotland,2020-07-18,estimate,1,0.82,1.2,0.91,1.06
+Scotland,2020-07-19,estimate,0.99,0.81,1.19,0.9,1.06
+Scotland,2020-07-20,estimate,0.99,0.8,1.19,0.9,1.06
+Scotland,2020-07-21,estimate,0.99,0.78,1.18,0.9,1.06
+Scotland,2020-07-22,estimate,0.98,0.79,1.18,0.9,1.06
+Scotland,2020-07-23,estimate,0.97,0.77,1.16,0.89,1.04
+Scotland,2020-07-24,estimate,0.96,0.76,1.17,0.87,1.03
+Scotland,2020-07-25,estimate,0.96,0.77,1.18,0.87,1.03
+Scotland,2020-07-26,estimate,0.95,0.74,1.15,0.86,1.03
+Scotland,2020-07-27,estimate,0.94,0.73,1.14,0.84,1
+Scotland,2020-07-28,estimate,0.93,0.73,1.15,0.84,1.01
+Scotland,2020-07-29,estimate,0.91,0.7,1.13,0.83,1
+Scotland,2020-07-30,estimate,0.91,0.69,1.13,0.82,0.99
+Scotland,2020-07-31,estimate,0.9,0.68,1.14,0.8,0.98
+Scotland,2020-08-01,estimate,0.88,0.63,1.11,0.79,0.98
+Scotland,2020-08-02,estimate,0.87,0.61,1.11,0.79,0.98
+Scotland,2020-08-03,estimate,0.86,0.6,1.12,0.78,0.99
+Scotland,2020-08-04,estimate,0.85,0.55,1.09,0.74,0.96
+Scotland,2020-08-05,estimate,0.84,0.55,1.11,0.75,0.98
+Scotland,2020-08-06,estimate,0.83,0.53,1.12,0.7,0.94
+Scotland,2020-08-07,estimate based on partial data,0.82,0.5,1.12,0.69,0.94
+Scotland,2020-08-08,estimate based on partial data,0.81,0.49,1.14,0.66,0.92
+Scotland,2020-08-09,estimate based on partial data,0.8,0.47,1.14,0.68,0.95
+Scotland,2020-08-10,estimate based on partial data,0.79,0.44,1.14,0.65,0.93
+Scotland,2020-08-11,estimate based on partial data,0.79,0.42,1.16,0.64,0.93
+Scotland,2020-08-12,estimate based on partial data,0.78,0.4,1.17,0.62,0.92
+Scotland,2020-08-13,estimate based on partial data,0.78,0.39,1.19,0.61,0.93
+Scotland,2020-08-14,estimate based on partial data,0.77,0.38,1.21,0.59,0.92
+Scotland,2020-08-15,estimate based on partial data,0.77,0.36,1.23,0.57,0.91
+Scotland,2020-08-16,estimate based on partial data,0.76,0.34,1.24,0.57,0.93
+Scotland,2020-08-17,estimate based on partial data,0.76,0.32,1.25,0.57,0.93
+Wales,2020-03-23,estimate,1.02,0.97,1.08,0.99,1.02
+Wales,2020-03-24,estimate,1.02,0.98,1.08,0.99,1.02
+Wales,2020-03-25,estimate,1.01,0.98,1.07,0.99,1.02
+Wales,2020-03-26,estimate,1.01,0.98,1.07,0.99,1.02
+Wales,2020-03-27,estimate,1.01,0.98,1.06,0.99,1.02
+Wales,2020-03-28,estimate,1.01,0.98,1.05,0.99,1.02
+Wales,2020-03-29,estimate,1.01,0.98,1.05,0.99,1.02
+Wales,2020-03-30,estimate,1.01,0.98,1.04,0.99,1.02
+Wales,2020-03-31,estimate,1.01,0.98,1.04,0.99,1.01
+Wales,2020-04-01,estimate,1,0.98,1.03,0.99,1.01
+Wales,2020-04-02,estimate,1,0.98,1.03,0.99,1.01
+Wales,2020-04-03,estimate,1,0.98,1.02,0.99,1.01
+Wales,2020-04-04,estimate,1,0.98,1.02,0.99,1
+Wales,2020-04-05,estimate,0.99,0.97,1.02,0.98,1
+Wales,2020-04-06,estimate,0.99,0.97,1.02,0.98,1
 Wales,2020-04-07,estimate,0.99,0.97,1.01,0.98,1
 Wales,2020-04-08,estimate,0.99,0.97,1.01,0.98,1
-Wales,2020-04-09,estimate,0.99,0.96,1.01,0.98,1
-Wales,2020-04-10,estimate,0.99,0.96,1.01,0.98,1
+Wales,2020-04-09,estimate,0.99,0.96,1.01,0.98,0.99
+Wales,2020-04-10,estimate,0.99,0.96,1,0.98,0.99
 Wales,2020-04-11,estimate,0.98,0.96,1.01,0.98,0.99
 Wales,2020-04-12,estimate,0.98,0.96,1,0.98,0.99
-Wales,2020-04-13,estimate,0.98,0.95,1,0.98,0.99
-Wales,2020-04-14,estimate,0.98,0.96,1,0.98,0.99
-Wales,2020-04-15,estimate,0.98,0.95,1,0.97,0.99
+Wales,2020-04-13,estimate,0.98,0.96,1,0.98,0.99
+Wales,2020-04-14,estimate,0.98,0.95,1,0.98,0.99
+Wales,2020-04-15,estimate,0.98,0.95,1,0.98,0.99
 Wales,2020-04-16,estimate,0.98,0.95,1,0.97,0.99
-Wales,2020-04-17,estimate,0.98,0.95,1,0.97,0.99
+Wales,2020-04-17,estimate,0.98,0.96,1,0.97,0.99
 Wales,2020-04-18,estimate,0.98,0.95,1,0.97,0.99
 Wales,2020-04-19,estimate,0.98,0.95,1,0.97,0.99
-Wales,2020-04-20,estimate,0.98,0.95,1,0.97,0.99
-Wales,2020-04-21,estimate,0.98,0.95,0.99,0.97,0.99
-Wales,2020-04-22,estimate,0.98,0.95,1,0.97,0.99
+Wales,2020-04-20,estimate,0.98,0.95,1,0.97,0.98
+Wales,2020-04-21,estimate,0.98,0.95,1,0.97,0.98
+Wales,2020-04-22,estimate,0.98,0.95,0.99,0.97,0.98
 Wales,2020-04-23,estimate,0.98,0.95,0.99,0.97,0.98
 Wales,2020-04-24,estimate,0.98,0.95,1,0.97,0.98
-Wales,2020-04-25,estimate,0.97,0.95,0.99,0.97,0.98
+Wales,2020-04-25,estimate,0.97,0.95,1,0.97,0.98
 Wales,2020-04-26,estimate,0.97,0.95,0.99,0.97,0.98
 Wales,2020-04-27,estimate,0.97,0.95,0.99,0.97,0.98
 Wales,2020-04-28,estimate,0.97,0.95,0.99,0.97,0.98
@@ -477,77 +533,77 @@ Wales,2020-05-15,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-05-16,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-05-17,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-05-18,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-05-19,estimate,0.97,0.95,0.99,0.96,0.98
+Wales,2020-05-19,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-05-20,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-05-21,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-05-22,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-05-23,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-05-24,estimate,0.97,0.95,0.99,0.96,0.97
-Wales,2020-05-25,estimate,0.97,0.95,0.99,0.96,0.97
-Wales,2020-05-26,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-05-23,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-05-24,estimate,0.97,0.95,0.99,0.96,0.98
+Wales,2020-05-25,estimate,0.97,0.95,0.99,0.96,0.98
+Wales,2020-05-26,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-05-27,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-05-28,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-05-29,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-05-30,estimate,0.97,0.95,0.99,0.96,0.97
-Wales,2020-05-31,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-05-31,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-06-01,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-06-02,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-06-03,estimate,0.97,0.95,0.99,0.96,0.97
-Wales,2020-06-04,estimate,0.97,0.94,0.99,0.96,0.97
-Wales,2020-06-05,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-06-06,estimate,0.96,0.94,0.99,0.96,0.97
+Wales,2020-06-04,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-06-05,estimate,0.96,0.94,0.99,0.96,0.97
+Wales,2020-06-06,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-06-07,estimate,0.96,0.94,0.99,0.96,0.97
 Wales,2020-06-08,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-06-09,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-06-10,estimate,0.96,0.94,0.99,0.95,0.97
-Wales,2020-06-11,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-12,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-13,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-06-10,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-11,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-12,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-13,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-06-14,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-15,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-15,estimate,0.96,0.94,0.98,0.95,0.97
 Wales,2020-06-16,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-06-17,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-06-17,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-06-18,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-19,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-20,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-06-19,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-20,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-06-21,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-22,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-23,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-06-24,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-06-22,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-23,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-06-24,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-06-25,estimate,0.96,0.94,0.98,0.95,0.97
 Wales,2020-06-26,estimate,0.96,0.94,0.98,0.95,0.97
 Wales,2020-06-27,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-06-28,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-06-29,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-06-28,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-06-29,estimate,0.96,0.94,0.98,0.95,0.97
 Wales,2020-06-30,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-07-01,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-07-02,estimate,0.96,0.94,0.98,0.95,0.97
-Wales,2020-07-03,estimate,0.96,0.94,0.98,0.95,0.97
+Wales,2020-07-02,estimate,0.96,0.94,0.98,0.96,0.97
+Wales,2020-07-03,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-07-04,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-07-05,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-07-06,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-07-07,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-07-08,estimate,0.96,0.94,0.99,0.96,0.97
+Wales,2020-07-08,estimate,0.96,0.94,0.98,0.96,0.97
 Wales,2020-07-09,estimate,0.96,0.94,0.98,0.96,0.97
-Wales,2020-07-10,estimate,0.97,0.94,0.99,0.96,0.97
-Wales,2020-07-11,estimate,0.97,0.94,0.99,0.96,0.97
-Wales,2020-07-12,estimate,0.97,0.94,0.99,0.96,0.97
+Wales,2020-07-10,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-07-11,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-07-12,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-07-13,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-07-14,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-07-15,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-07-16,estimate,0.97,0.95,0.99,0.96,0.97
 Wales,2020-07-17,estimate,0.97,0.95,0.99,0.96,0.97
-Wales,2020-07-18,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-07-19,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-07-20,estimate,0.97,0.95,1,0.96,0.98
+Wales,2020-07-18,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-07-19,estimate,0.97,0.95,0.99,0.96,0.97
+Wales,2020-07-20,estimate,0.97,0.95,0.99,0.96,0.98
 Wales,2020-07-21,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-07-22,estimate,0.97,0.95,1,0.96,0.98
-Wales,2020-07-23,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-07-24,estimate,0.97,0.95,0.99,0.96,0.98
+Wales,2020-07-22,estimate,0.97,0.95,0.99,0.96,0.98
+Wales,2020-07-23,estimate,0.97,0.95,1,0.96,0.98
+Wales,2020-07-24,estimate,0.97,0.95,1,0.96,0.98
 Wales,2020-07-25,estimate,0.97,0.95,1,0.96,0.98
-Wales,2020-07-26,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-07-27,estimate,0.97,0.95,0.99,0.96,0.98
-Wales,2020-07-28,estimate,0.97,0.95,1,0.96,0.98
+Wales,2020-07-26,estimate,0.97,0.95,1,0.96,0.98
+Wales,2020-07-27,estimate,0.97,0.94,1,0.96,0.98
+Wales,2020-07-28,estimate,0.97,0.94,1,0.96,0.98
 Wales,2020-07-29,estimate,0.97,0.94,1,0.96,0.98
 Wales,2020-07-30,estimate,0.97,0.94,1,0.96,0.98
 Wales,2020-07-31,estimate,0.97,0.94,1,0.96,0.98
@@ -555,982 +611,1080 @@ Wales,2020-08-01,estimate,0.97,0.94,1,0.96,0.98
 Wales,2020-08-02,estimate,0.97,0.94,1,0.96,0.98
 Wales,2020-08-03,estimate,0.97,0.94,1,0.96,0.98
 Wales,2020-08-04,estimate,0.97,0.94,1,0.96,0.98
-Wales,2020-08-05,estimate,0.97,0.93,1,0.96,0.98
-Wales,2020-08-06,estimate,0.97,0.93,1.01,0.96,0.98
-Wales,2020-08-07,estimate based on partial data,0.97,0.93,1.01,0.95,0.98
-Wales,2020-08-08,estimate based on partial data,0.97,0.93,1.01,0.96,0.98
-Wales,2020-08-09,estimate based on partial data,0.97,0.93,1.01,0.95,0.98
-Wales,2020-08-10,estimate based on partial data,0.97,0.93,1.02,0.95,0.98
+Wales,2020-08-05,estimate,0.97,0.94,1.01,0.96,0.98
+Wales,2020-08-06,estimate,0.97,0.94,1.01,0.96,0.98
+Wales,2020-08-07,estimate based on partial data,0.97,0.94,1.01,0.96,0.98
+Wales,2020-08-08,estimate based on partial data,0.97,0.93,1.01,0.95,0.98
+Wales,2020-08-09,estimate based on partial data,0.97,0.92,1.01,0.95,0.98
+Wales,2020-08-10,estimate based on partial data,0.97,0.92,1.01,0.95,0.98
 Wales,2020-08-11,estimate based on partial data,0.97,0.92,1.02,0.95,0.98
 Wales,2020-08-12,estimate based on partial data,0.97,0.92,1.02,0.95,0.98
 Wales,2020-08-13,estimate based on partial data,0.97,0.92,1.02,0.95,0.98
-Wales,2020-08-14,estimate based on partial data,0.97,0.92,1.03,0.95,0.98
-Wales,2020-08-15,estimate based on partial data,0.97,0.92,1.03,0.95,0.99
-Wales,2020-08-16,estimate based on partial data,0.97,0.91,1.03,0.95,0.98
+Wales,2020-08-14,estimate based on partial data,0.97,0.92,1.02,0.95,0.98
+Wales,2020-08-15,estimate based on partial data,0.97,0.92,1.02,0.95,0.98
+Wales,2020-08-16,estimate based on partial data,0.97,0.91,1.02,0.95,0.98
 Wales,2020-08-17,estimate based on partial data,0.97,0.91,1.03,0.95,0.98
-East of England,2020-04-02,estimate,1.02,0.94,1.09,1,1.06
-East of England,2020-04-03,estimate,1,0.92,1.07,0.97,1.04
-East of England,2020-04-04,estimate,0.97,0.9,1.05,0.95,1.01
-East of England,2020-04-05,estimate,0.95,0.88,1.03,0.93,0.99
-East of England,2020-04-06,estimate,0.94,0.87,1.01,0.91,0.97
-East of England,2020-04-07,estimate,0.93,0.86,0.99,0.9,0.96
-East of England,2020-04-08,estimate,0.92,0.85,0.98,0.9,0.95
-East of England,2020-04-09,estimate,0.91,0.85,0.97,0.89,0.94
+East of England,2020-03-19,estimate,1.51,1.34,1.7,1.44,1.58
+East of England,2020-03-20,estimate,1.49,1.34,1.65,1.42,1.54
+East of England,2020-03-21,estimate,1.46,1.34,1.59,1.41,1.51
+East of England,2020-03-22,estimate,1.43,1.32,1.53,1.39,1.47
+East of England,2020-03-23,estimate,1.39,1.31,1.48,1.36,1.43
+East of England,2020-03-24,estimate,1.36,1.28,1.42,1.33,1.39
+East of England,2020-03-25,estimate,1.31,1.25,1.38,1.29,1.34
+East of England,2020-03-26,estimate,1.27,1.21,1.33,1.24,1.29
+East of England,2020-03-27,estimate,1.23,1.17,1.29,1.21,1.25
+East of England,2020-03-28,estimate,1.19,1.13,1.26,1.17,1.22
+East of England,2020-03-29,estimate,1.15,1.08,1.22,1.13,1.18
+East of England,2020-03-30,estimate,1.11,1.04,1.19,1.09,1.14
+East of England,2020-03-31,estimate,1.08,1.01,1.16,1.05,1.11
+East of England,2020-04-01,estimate,1.05,0.97,1.12,1.02,1.08
+East of England,2020-04-02,estimate,1.02,0.94,1.09,0.98,1.04
+East of England,2020-04-03,estimate,0.99,0.91,1.07,0.95,1.01
+East of England,2020-04-04,estimate,0.97,0.9,1.05,0.94,1
+East of England,2020-04-05,estimate,0.95,0.88,1.02,0.92,0.98
+East of England,2020-04-06,estimate,0.94,0.87,1,0.91,0.96
+East of England,2020-04-07,estimate,0.92,0.86,0.99,0.9,0.95
+East of England,2020-04-08,estimate,0.92,0.85,0.98,0.89,0.94
+East of England,2020-04-09,estimate,0.91,0.85,0.97,0.89,0.93
 East of England,2020-04-10,estimate,0.91,0.85,0.97,0.88,0.93
-East of England,2020-04-11,estimate,0.91,0.85,0.97,0.88,0.93
-East of England,2020-04-12,estimate,0.91,0.85,0.96,0.88,0.93
-East of England,2020-04-13,estimate,0.91,0.85,0.97,0.89,0.93
-East of England,2020-04-14,estimate,0.91,0.85,0.97,0.89,0.93
-East of England,2020-04-15,estimate,0.91,0.86,0.97,0.89,0.94
+East of England,2020-04-11,estimate,0.91,0.85,0.96,0.88,0.92
+East of England,2020-04-12,estimate,0.91,0.85,0.97,0.88,0.93
+East of England,2020-04-13,estimate,0.91,0.85,0.97,0.88,0.93
+East of England,2020-04-14,estimate,0.91,0.86,0.97,0.89,0.93
+East of England,2020-04-15,estimate,0.92,0.86,0.98,0.89,0.94
 East of England,2020-04-16,estimate,0.92,0.86,0.98,0.9,0.94
-East of England,2020-04-17,estimate,0.92,0.86,0.98,0.9,0.95
+East of England,2020-04-17,estimate,0.92,0.87,0.99,0.9,0.95
 East of England,2020-04-18,estimate,0.93,0.86,0.99,0.9,0.95
 East of England,2020-04-19,estimate,0.93,0.87,0.99,0.91,0.96
-East of England,2020-04-20,estimate,0.93,0.87,1,0.91,0.96
-East of England,2020-04-21,estimate,0.93,0.87,0.99,0.9,0.95
-East of England,2020-04-22,estimate,0.93,0.87,1,0.91,0.96
-East of England,2020-04-23,estimate,0.93,0.87,0.99,0.9,0.96
-East of England,2020-04-24,estimate,0.93,0.87,0.99,0.9,0.95
-East of England,2020-04-25,estimate,0.92,0.86,0.99,0.9,0.95
-East of England,2020-04-26,estimate,0.92,0.86,0.99,0.89,0.94
-East of England,2020-04-27,estimate,0.92,0.85,0.98,0.89,0.94
-East of England,2020-04-28,estimate,0.91,0.85,0.98,0.88,0.93
-East of England,2020-04-29,estimate,0.91,0.85,0.97,0.88,0.93
+East of England,2020-04-20,estimate,0.93,0.87,1,0.9,0.96
+East of England,2020-04-21,estimate,0.93,0.87,1,0.91,0.96
+East of England,2020-04-22,estimate,0.93,0.87,1,0.9,0.95
+East of England,2020-04-23,estimate,0.93,0.87,1,0.91,0.96
+East of England,2020-04-24,estimate,0.93,0.87,1,0.9,0.95
+East of England,2020-04-25,estimate,0.93,0.86,0.99,0.9,0.95
+East of England,2020-04-26,estimate,0.92,0.87,0.99,0.89,0.94
+East of England,2020-04-27,estimate,0.92,0.86,0.98,0.89,0.94
+East of England,2020-04-28,estimate,0.91,0.85,0.98,0.89,0.94
+East of England,2020-04-29,estimate,0.91,0.85,0.96,0.88,0.93
 East of England,2020-04-30,estimate,0.9,0.84,0.96,0.88,0.93
-East of England,2020-05-01,estimate,0.89,0.84,0.95,0.87,0.92
-East of England,2020-05-02,estimate,0.89,0.83,0.95,0.87,0.91
-East of England,2020-05-03,estimate,0.88,0.83,0.94,0.86,0.91
-East of England,2020-05-04,estimate,0.88,0.82,0.94,0.85,0.9
-East of England,2020-05-05,estimate,0.88,0.81,0.93,0.85,0.9
-East of England,2020-05-06,estimate,0.87,0.81,0.93,0.85,0.9
-East of England,2020-05-07,estimate,0.87,0.81,0.93,0.85,0.89
-East of England,2020-05-08,estimate,0.87,0.81,0.93,0.85,0.89
-East of England,2020-05-09,estimate,0.87,0.8,0.92,0.84,0.89
-East of England,2020-05-10,estimate,0.87,0.8,0.92,0.84,0.89
-East of England,2020-05-11,estimate,0.87,0.81,0.93,0.84,0.89
-East of England,2020-05-12,estimate,0.87,0.81,0.93,0.84,0.89
-East of England,2020-05-13,estimate,0.87,0.81,0.93,0.84,0.89
+East of England,2020-05-01,estimate,0.89,0.83,0.95,0.87,0.92
+East of England,2020-05-02,estimate,0.89,0.83,0.95,0.86,0.91
+East of England,2020-05-03,estimate,0.88,0.82,0.94,0.86,0.9
+East of England,2020-05-04,estimate,0.88,0.82,0.94,0.86,0.9
+East of England,2020-05-05,estimate,0.88,0.82,0.94,0.85,0.9
+East of England,2020-05-06,estimate,0.87,0.81,0.93,0.84,0.89
+East of England,2020-05-07,estimate,0.87,0.81,0.93,0.84,0.89
+East of England,2020-05-08,estimate,0.87,0.8,0.93,0.84,0.89
+East of England,2020-05-09,estimate,0.87,0.81,0.93,0.84,0.89
+East of England,2020-05-10,estimate,0.87,0.81,0.93,0.85,0.89
+East of England,2020-05-11,estimate,0.87,0.8,0.93,0.85,0.89
+East of England,2020-05-12,estimate,0.87,0.81,0.93,0.85,0.9
+East of England,2020-05-13,estimate,0.87,0.81,0.93,0.85,0.9
 East of England,2020-05-14,estimate,0.87,0.81,0.93,0.85,0.9
-East of England,2020-05-15,estimate,0.87,0.81,0.93,0.84,0.89
+East of England,2020-05-15,estimate,0.87,0.81,0.93,0.85,0.9
 East of England,2020-05-16,estimate,0.87,0.81,0.93,0.85,0.9
 East of England,2020-05-17,estimate,0.87,0.81,0.93,0.85,0.9
-East of England,2020-05-18,estimate,0.88,0.81,0.93,0.85,0.9
-East of England,2020-05-19,estimate,0.88,0.81,0.93,0.86,0.9
-East of England,2020-05-20,estimate,0.88,0.81,0.94,0.86,0.91
+East of England,2020-05-18,estimate,0.88,0.82,0.94,0.85,0.89
+East of England,2020-05-19,estimate,0.88,0.82,0.94,0.85,0.9
+East of England,2020-05-20,estimate,0.88,0.81,0.94,0.85,0.91
 East of England,2020-05-21,estimate,0.88,0.82,0.94,0.86,0.91
-East of England,2020-05-22,estimate,0.88,0.82,0.95,0.86,0.91
-East of England,2020-05-23,estimate,0.89,0.83,0.95,0.86,0.91
+East of England,2020-05-22,estimate,0.88,0.82,0.95,0.85,0.9
+East of England,2020-05-23,estimate,0.89,0.82,0.95,0.87,0.92
 East of England,2020-05-24,estimate,0.89,0.82,0.95,0.87,0.92
-East of England,2020-05-25,estimate,0.89,0.83,0.95,0.87,0.92
-East of England,2020-05-26,estimate,0.89,0.83,0.96,0.87,0.92
-East of England,2020-05-27,estimate,0.9,0.83,0.96,0.87,0.92
+East of England,2020-05-25,estimate,0.89,0.83,0.96,0.87,0.92
+East of England,2020-05-26,estimate,0.89,0.83,0.96,0.86,0.91
+East of England,2020-05-27,estimate,0.9,0.83,0.95,0.87,0.92
 East of England,2020-05-28,estimate,0.9,0.84,0.96,0.87,0.92
-East of England,2020-05-29,estimate,0.9,0.84,0.97,0.87,0.92
+East of England,2020-05-29,estimate,0.9,0.84,0.96,0.88,0.93
 East of England,2020-05-30,estimate,0.9,0.84,0.97,0.88,0.93
-East of England,2020-05-31,estimate,0.91,0.84,0.97,0.88,0.93
-East of England,2020-06-01,estimate,0.91,0.84,0.97,0.88,0.93
-East of England,2020-06-02,estimate,0.91,0.85,0.98,0.89,0.94
-East of England,2020-06-03,estimate,0.91,0.84,0.98,0.89,0.94
-East of England,2020-06-04,estimate,0.91,0.85,0.98,0.88,0.94
-East of England,2020-06-05,estimate,0.91,0.85,0.98,0.89,0.94
+East of England,2020-05-31,estimate,0.91,0.84,0.97,0.87,0.92
+East of England,2020-06-01,estimate,0.91,0.85,0.97,0.88,0.93
+East of England,2020-06-02,estimate,0.91,0.84,0.97,0.88,0.94
+East of England,2020-06-03,estimate,0.91,0.84,0.97,0.88,0.93
+East of England,2020-06-04,estimate,0.91,0.85,0.98,0.88,0.93
+East of England,2020-06-05,estimate,0.91,0.85,0.98,0.88,0.93
 East of England,2020-06-06,estimate,0.91,0.85,0.98,0.88,0.94
-East of England,2020-06-07,estimate,0.91,0.85,0.98,0.88,0.93
-East of England,2020-06-08,estimate,0.91,0.85,0.98,0.88,0.93
-East of England,2020-06-09,estimate,0.91,0.84,0.97,0.88,0.94
+East of England,2020-06-07,estimate,0.91,0.85,0.98,0.88,0.94
+East of England,2020-06-08,estimate,0.91,0.84,0.97,0.88,0.94
+East of England,2020-06-09,estimate,0.91,0.84,0.98,0.88,0.93
 East of England,2020-06-10,estimate,0.91,0.84,0.97,0.88,0.93
-East of England,2020-06-11,estimate,0.9,0.83,0.97,0.87,0.92
-East of England,2020-06-12,estimate,0.9,0.83,0.96,0.86,0.92
-East of England,2020-06-13,estimate,0.89,0.83,0.96,0.86,0.91
+East of England,2020-06-11,estimate,0.9,0.84,0.97,0.88,0.93
+East of England,2020-06-12,estimate,0.9,0.83,0.96,0.87,0.92
+East of England,2020-06-13,estimate,0.89,0.82,0.95,0.86,0.92
 East of England,2020-06-14,estimate,0.89,0.82,0.95,0.86,0.91
-East of England,2020-06-15,estimate,0.88,0.81,0.95,0.85,0.91
-East of England,2020-06-16,estimate,0.87,0.81,0.94,0.85,0.9
-East of England,2020-06-17,estimate,0.87,0.8,0.94,0.84,0.9
-East of England,2020-06-18,estimate,0.86,0.8,0.94,0.84,0.89
-East of England,2020-06-19,estimate,0.86,0.79,0.93,0.84,0.89
-East of England,2020-06-20,estimate,0.86,0.79,0.92,0.82,0.88
+East of England,2020-06-15,estimate,0.88,0.81,0.94,0.86,0.91
+East of England,2020-06-16,estimate,0.87,0.8,0.94,0.85,0.9
+East of England,2020-06-17,estimate,0.87,0.8,0.93,0.84,0.89
+East of England,2020-06-18,estimate,0.86,0.79,0.93,0.84,0.89
+East of England,2020-06-19,estimate,0.86,0.79,0.93,0.83,0.89
+East of England,2020-06-20,estimate,0.86,0.78,0.92,0.83,0.89
 East of England,2020-06-21,estimate,0.85,0.78,0.92,0.83,0.88
-East of England,2020-06-22,estimate,0.85,0.78,0.92,0.82,0.88
-East of England,2020-06-23,estimate,0.85,0.78,0.92,0.83,0.88
-East of England,2020-06-24,estimate,0.85,0.78,0.91,0.83,0.88
-East of England,2020-06-25,estimate,0.85,0.78,0.92,0.83,0.88
-East of England,2020-06-26,estimate,0.86,0.79,0.92,0.82,0.88
-East of England,2020-06-27,estimate,0.86,0.79,0.93,0.84,0.89
+East of England,2020-06-22,estimate,0.85,0.78,0.92,0.83,0.88
+East of England,2020-06-23,estimate,0.85,0.78,0.91,0.83,0.88
+East of England,2020-06-24,estimate,0.85,0.78,0.92,0.83,0.88
+East of England,2020-06-25,estimate,0.85,0.78,0.91,0.83,0.88
+East of England,2020-06-26,estimate,0.86,0.79,0.93,0.83,0.88
+East of England,2020-06-27,estimate,0.86,0.8,0.93,0.83,0.89
 East of England,2020-06-28,estimate,0.86,0.79,0.93,0.84,0.89
-East of England,2020-06-29,estimate,0.87,0.8,0.94,0.84,0.9
-East of England,2020-06-30,estimate,0.88,0.81,0.95,0.85,0.91
-East of England,2020-07-01,estimate,0.88,0.82,0.95,0.86,0.92
-East of England,2020-07-02,estimate,0.89,0.82,0.96,0.87,0.92
-East of England,2020-07-03,estimate,0.9,0.83,0.97,0.87,0.92
-East of England,2020-07-04,estimate,0.91,0.83,0.97,0.88,0.93
-East of England,2020-07-05,estimate,0.91,0.84,0.98,0.88,0.94
-East of England,2020-07-06,estimate,0.92,0.84,0.99,0.88,0.94
-East of England,2020-07-07,estimate,0.92,0.85,1,0.89,0.95
-East of England,2020-07-08,estimate,0.93,0.85,1,0.89,0.96
-East of England,2020-07-09,estimate,0.93,0.85,1.01,0.89,0.96
+East of England,2020-06-29,estimate,0.87,0.8,0.94,0.85,0.9
+East of England,2020-06-30,estimate,0.88,0.81,0.95,0.84,0.9
+East of England,2020-07-01,estimate,0.88,0.81,0.95,0.85,0.91
+East of England,2020-07-02,estimate,0.89,0.82,0.96,0.86,0.92
+East of England,2020-07-03,estimate,0.9,0.83,0.97,0.87,0.93
+East of England,2020-07-04,estimate,0.91,0.83,0.98,0.87,0.93
+East of England,2020-07-05,estimate,0.91,0.84,0.99,0.87,0.93
+East of England,2020-07-06,estimate,0.92,0.85,1,0.89,0.94
+East of England,2020-07-07,estimate,0.92,0.85,1,0.88,0.94
+East of England,2020-07-08,estimate,0.92,0.85,1,0.89,0.95
+East of England,2020-07-09,estimate,0.93,0.85,1,0.89,0.95
 East of England,2020-07-10,estimate,0.93,0.85,1.01,0.89,0.95
 East of England,2020-07-11,estimate,0.93,0.85,1.01,0.89,0.95
-East of England,2020-07-12,estimate,0.92,0.84,1,0.89,0.95
-East of England,2020-07-13,estimate,0.92,0.84,1,0.88,0.95
-East of England,2020-07-14,estimate,0.91,0.84,0.99,0.88,0.94
-East of England,2020-07-15,estimate,0.91,0.83,0.99,0.87,0.94
+East of England,2020-07-12,estimate,0.92,0.85,1,0.89,0.95
+East of England,2020-07-13,estimate,0.92,0.85,1,0.89,0.95
+East of England,2020-07-14,estimate,0.91,0.84,0.99,0.89,0.95
+East of England,2020-07-15,estimate,0.91,0.83,0.98,0.87,0.93
 East of England,2020-07-16,estimate,0.9,0.83,0.98,0.87,0.93
 East of England,2020-07-17,estimate,0.89,0.82,0.97,0.86,0.92
-East of England,2020-07-18,estimate,0.88,0.81,0.96,0.86,0.92
+East of England,2020-07-18,estimate,0.89,0.81,0.96,0.86,0.92
 East of England,2020-07-19,estimate,0.88,0.8,0.95,0.85,0.91
 East of England,2020-07-20,estimate,0.87,0.79,0.94,0.84,0.9
-East of England,2020-07-21,estimate,0.86,0.78,0.93,0.84,0.9
-East of England,2020-07-22,estimate,0.86,0.77,0.93,0.83,0.89
+East of England,2020-07-21,estimate,0.86,0.78,0.94,0.83,0.89
+East of England,2020-07-22,estimate,0.86,0.78,0.93,0.83,0.89
 East of England,2020-07-23,estimate,0.85,0.77,0.93,0.82,0.88
-East of England,2020-07-24,estimate,0.85,0.76,0.92,0.82,0.88
-East of England,2020-07-25,estimate,0.84,0.76,0.92,0.82,0.88
-East of England,2020-07-26,estimate,0.84,0.76,0.92,0.81,0.88
+East of England,2020-07-24,estimate,0.84,0.76,0.92,0.82,0.88
+East of England,2020-07-25,estimate,0.84,0.76,0.92,0.81,0.87
+East of England,2020-07-26,estimate,0.84,0.76,0.92,0.81,0.87
 East of England,2020-07-27,estimate,0.84,0.76,0.92,0.81,0.87
-East of England,2020-07-28,estimate,0.84,0.76,0.92,0.8,0.87
-East of England,2020-07-29,estimate,0.84,0.75,0.92,0.8,0.87
-East of England,2020-07-30,estimate,0.84,0.76,0.93,0.8,0.87
-East of England,2020-07-31,estimate,0.84,0.75,0.93,0.8,0.87
-East of England,2020-08-01,estimate,0.84,0.75,0.93,0.8,0.88
-East of England,2020-08-02,estimate,0.84,0.75,0.94,0.81,0.89
-East of England,2020-08-03,estimate,0.85,0.74,0.95,0.81,0.89
-East of England,2020-08-04,estimate,0.85,0.74,0.97,0.8,0.89
-East of England,2020-08-05,estimate,0.85,0.74,0.99,0.8,0.9
-East of England,2020-08-06,estimate,0.86,0.73,1,0.8,0.91
-East of England,2020-08-07,estimate based on partial data,0.86,0.72,1.01,0.79,0.91
-East of England,2020-08-08,estimate based on partial data,0.86,0.71,1.03,0.79,0.92
-East of England,2020-08-09,estimate based on partial data,0.86,0.7,1.04,0.77,0.91
-East of England,2020-08-10,estimate based on partial data,0.86,0.69,1.06,0.78,0.92
-East of England,2020-08-11,estimate based on partial data,0.86,0.66,1.06,0.78,0.93
-East of England,2020-08-12,estimate based on partial data,0.86,0.65,1.06,0.77,0.93
-East of England,2020-08-13,estimate based on partial data,0.86,0.67,1.11,0.75,0.92
-East of England,2020-08-14,estimate based on partial data,0.86,0.65,1.12,0.76,0.94
-East of England,2020-08-15,estimate based on partial data,0.86,0.64,1.13,0.74,0.93
-East of England,2020-08-16,estimate based on partial data,0.86,0.61,1.12,0.74,0.94
-East of England,2020-08-17,estimate based on partial data,0.86,0.6,1.13,0.73,0.94
-London,2020-04-02,estimate,0.8,0.73,0.88,0.77,0.83
-London,2020-04-03,estimate,0.78,0.7,0.84,0.75,0.8
-London,2020-04-04,estimate,0.76,0.68,0.82,0.72,0.78
-London,2020-04-05,estimate,0.74,0.67,0.8,0.71,0.77
+East of England,2020-07-28,estimate,0.83,0.75,0.91,0.81,0.87
+East of England,2020-07-29,estimate,0.83,0.75,0.92,0.81,0.87
+East of England,2020-07-30,estimate,0.84,0.75,0.92,0.8,0.87
+East of England,2020-07-31,estimate,0.84,0.76,0.93,0.8,0.87
+East of England,2020-08-01,estimate,0.84,0.75,0.93,0.8,0.87
+East of England,2020-08-02,estimate,0.84,0.75,0.94,0.8,0.88
+East of England,2020-08-03,estimate,0.85,0.74,0.95,0.8,0.88
+East of England,2020-08-04,estimate,0.85,0.74,0.96,0.81,0.91
+East of England,2020-08-05,estimate,0.85,0.73,0.97,0.8,0.9
+East of England,2020-08-06,estimate,0.86,0.73,0.99,0.8,0.9
+East of England,2020-08-07,estimate based on partial data,0.86,0.71,1,0.79,0.9
+East of England,2020-08-08,estimate based on partial data,0.86,0.71,1.02,0.8,0.92
+East of England,2020-08-09,estimate based on partial data,0.86,0.71,1.03,0.79,0.92
+East of England,2020-08-10,estimate based on partial data,0.87,0.69,1.05,0.79,0.93
+East of England,2020-08-11,estimate based on partial data,0.87,0.69,1.06,0.78,0.92
+East of England,2020-08-12,estimate based on partial data,0.87,0.68,1.09,0.77,0.93
+East of England,2020-08-13,estimate based on partial data,0.87,0.66,1.09,0.77,0.93
+East of England,2020-08-14,estimate based on partial data,0.86,0.65,1.1,0.77,0.94
+East of England,2020-08-15,estimate based on partial data,0.86,0.64,1.12,0.75,0.93
+East of England,2020-08-16,estimate based on partial data,0.86,0.63,1.14,0.75,0.93
+East of England,2020-08-17,estimate based on partial data,0.86,0.6,1.14,0.75,0.94
+London,2020-03-19,estimate,1.42,1.23,1.62,1.33,1.49
+London,2020-03-20,estimate,1.39,1.23,1.55,1.32,1.45
+London,2020-03-21,estimate,1.36,1.24,1.49,1.29,1.4
+London,2020-03-22,estimate,1.31,1.21,1.41,1.27,1.35
+London,2020-03-23,estimate,1.26,1.19,1.34,1.24,1.3
+London,2020-03-24,estimate,1.21,1.14,1.28,1.18,1.24
+London,2020-03-25,estimate,1.16,1.1,1.23,1.14,1.19
+London,2020-03-26,estimate,1.11,1.05,1.17,1.08,1.13
+London,2020-03-27,estimate,1.05,0.99,1.12,1.03,1.08
+London,2020-03-28,estimate,1,0.94,1.07,0.98,1.03
+London,2020-03-29,estimate,0.96,0.89,1.02,0.93,0.99
+London,2020-03-30,estimate,0.91,0.84,0.98,0.88,0.94
+London,2020-03-31,estimate,0.87,0.8,0.94,0.84,0.9
+London,2020-04-01,estimate,0.83,0.76,0.9,0.8,0.86
+London,2020-04-02,estimate,0.8,0.73,0.87,0.77,0.83
+London,2020-04-03,estimate,0.77,0.7,0.84,0.75,0.81
+London,2020-04-04,estimate,0.75,0.68,0.82,0.72,0.78
+London,2020-04-05,estimate,0.74,0.67,0.8,0.71,0.76
 London,2020-04-06,estimate,0.73,0.66,0.79,0.7,0.75
-London,2020-04-07,estimate,0.72,0.66,0.78,0.7,0.75
-London,2020-04-08,estimate,0.72,0.66,0.78,0.7,0.74
-London,2020-04-09,estimate,0.72,0.66,0.78,0.69,0.74
-London,2020-04-10,estimate,0.72,0.67,0.78,0.7,0.75
-London,2020-04-11,estimate,0.73,0.68,0.79,0.71,0.75
-London,2020-04-12,estimate,0.74,0.68,0.8,0.72,0.77
-London,2020-04-13,estimate,0.75,0.7,0.82,0.73,0.78
-London,2020-04-14,estimate,0.77,0.7,0.83,0.74,0.79
-London,2020-04-15,estimate,0.78,0.72,0.85,0.76,0.81
-London,2020-04-16,estimate,0.8,0.73,0.86,0.77,0.82
-London,2020-04-17,estimate,0.81,0.75,0.88,0.78,0.83
-London,2020-04-18,estimate,0.83,0.75,0.89,0.79,0.85
-London,2020-04-19,estimate,0.84,0.77,0.91,0.8,0.86
-London,2020-04-20,estimate,0.85,0.78,0.92,0.81,0.87
-London,2020-04-21,estimate,0.85,0.79,0.93,0.82,0.88
+London,2020-04-07,estimate,0.72,0.65,0.78,0.69,0.74
+London,2020-04-08,estimate,0.72,0.66,0.78,0.69,0.74
+London,2020-04-09,estimate,0.72,0.66,0.78,0.7,0.74
+London,2020-04-10,estimate,0.72,0.66,0.78,0.7,0.75
+London,2020-04-11,estimate,0.73,0.67,0.79,0.7,0.75
+London,2020-04-12,estimate,0.74,0.69,0.8,0.72,0.76
+London,2020-04-13,estimate,0.75,0.69,0.81,0.73,0.77
+London,2020-04-14,estimate,0.77,0.71,0.82,0.74,0.79
+London,2020-04-15,estimate,0.78,0.73,0.85,0.76,0.8
+London,2020-04-16,estimate,0.8,0.74,0.86,0.77,0.82
+London,2020-04-17,estimate,0.81,0.75,0.88,0.78,0.84
+London,2020-04-18,estimate,0.83,0.76,0.9,0.8,0.85
+London,2020-04-19,estimate,0.84,0.77,0.91,0.81,0.87
+London,2020-04-20,estimate,0.85,0.78,0.92,0.82,0.88
+London,2020-04-21,estimate,0.86,0.79,0.93,0.81,0.87
 London,2020-04-22,estimate,0.86,0.79,0.93,0.83,0.89
-London,2020-04-23,estimate,0.86,0.79,0.93,0.82,0.88
-London,2020-04-24,estimate,0.86,0.79,0.93,0.83,0.88
-London,2020-04-25,estimate,0.85,0.79,0.93,0.82,0.88
-London,2020-04-26,estimate,0.85,0.78,0.92,0.81,0.87
+London,2020-04-23,estimate,0.86,0.79,0.93,0.83,0.89
+London,2020-04-24,estimate,0.86,0.79,0.93,0.83,0.89
+London,2020-04-25,estimate,0.85,0.79,0.93,0.83,0.88
+London,2020-04-26,estimate,0.85,0.78,0.92,0.82,0.88
 London,2020-04-27,estimate,0.84,0.77,0.91,0.81,0.87
-London,2020-04-28,estimate,0.83,0.77,0.9,0.8,0.86
-London,2020-04-29,estimate,0.82,0.75,0.88,0.8,0.85
-London,2020-04-30,estimate,0.81,0.75,0.87,0.78,0.83
-London,2020-05-01,estimate,0.8,0.74,0.86,0.77,0.83
+London,2020-04-28,estimate,0.83,0.76,0.9,0.8,0.85
+London,2020-04-29,estimate,0.82,0.75,0.89,0.79,0.84
+London,2020-04-30,estimate,0.81,0.74,0.87,0.79,0.84
+London,2020-05-01,estimate,0.8,0.73,0.86,0.77,0.82
 London,2020-05-02,estimate,0.79,0.73,0.85,0.76,0.81
-London,2020-05-03,estimate,0.78,0.72,0.85,0.76,0.81
-London,2020-05-04,estimate,0.78,0.71,0.84,0.76,0.81
-London,2020-05-05,estimate,0.78,0.71,0.84,0.75,0.81
+London,2020-05-03,estimate,0.79,0.72,0.85,0.76,0.81
+London,2020-05-04,estimate,0.78,0.72,0.84,0.75,0.81
+London,2020-05-05,estimate,0.78,0.71,0.84,0.75,0.8
 London,2020-05-06,estimate,0.78,0.71,0.84,0.75,0.81
 London,2020-05-07,estimate,0.78,0.71,0.84,0.75,0.8
-London,2020-05-08,estimate,0.78,0.72,0.85,0.75,0.8
+London,2020-05-08,estimate,0.78,0.72,0.84,0.75,0.81
 London,2020-05-09,estimate,0.79,0.72,0.85,0.76,0.81
-London,2020-05-10,estimate,0.79,0.73,0.85,0.76,0.82
+London,2020-05-10,estimate,0.79,0.73,0.86,0.76,0.82
 London,2020-05-11,estimate,0.8,0.74,0.87,0.78,0.83
 London,2020-05-12,estimate,0.82,0.75,0.88,0.79,0.84
-London,2020-05-13,estimate,0.83,0.76,0.89,0.81,0.86
+London,2020-05-13,estimate,0.83,0.76,0.89,0.8,0.85
 London,2020-05-14,estimate,0.84,0.78,0.91,0.82,0.87
-London,2020-05-15,estimate,0.86,0.79,0.93,0.82,0.88
-London,2020-05-16,estimate,0.87,0.81,0.94,0.84,0.89
-London,2020-05-17,estimate,0.89,0.82,0.96,0.85,0.91
-London,2020-05-18,estimate,0.9,0.83,0.97,0.87,0.93
-London,2020-05-19,estimate,0.91,0.85,0.99,0.88,0.94
-London,2020-05-20,estimate,0.92,0.85,0.99,0.89,0.95
-London,2020-05-21,estimate,0.94,0.87,1.01,0.91,0.96
-London,2020-05-22,estimate,0.94,0.88,1.02,0.92,0.97
-London,2020-05-23,estimate,0.95,0.88,1.03,0.93,0.98
-London,2020-05-24,estimate,0.96,0.89,1.04,0.93,0.99
+London,2020-05-15,estimate,0.86,0.79,0.92,0.83,0.88
+London,2020-05-16,estimate,0.87,0.81,0.94,0.85,0.9
+London,2020-05-17,estimate,0.89,0.82,0.96,0.86,0.92
+London,2020-05-18,estimate,0.9,0.83,0.97,0.87,0.92
+London,2020-05-19,estimate,0.91,0.84,0.98,0.88,0.94
+London,2020-05-20,estimate,0.93,0.85,0.99,0.89,0.95
+London,2020-05-21,estimate,0.94,0.87,1.01,0.9,0.96
+London,2020-05-22,estimate,0.95,0.87,1.02,0.91,0.97
+London,2020-05-23,estimate,0.95,0.88,1.02,0.92,0.98
+London,2020-05-24,estimate,0.96,0.89,1.03,0.93,0.98
 London,2020-05-25,estimate,0.96,0.89,1.04,0.93,0.99
 London,2020-05-26,estimate,0.96,0.89,1.04,0.93,0.99
 London,2020-05-27,estimate,0.97,0.89,1.04,0.94,1
 London,2020-05-28,estimate,0.97,0.89,1.04,0.94,1
-London,2020-05-29,estimate,0.97,0.89,1.03,0.93,0.99
-London,2020-05-30,estimate,0.96,0.89,1.04,0.93,0.99
-London,2020-05-31,estimate,0.96,0.89,1.04,0.93,0.99
+London,2020-05-29,estimate,0.97,0.89,1.04,0.94,1
+London,2020-05-30,estimate,0.96,0.89,1.04,0.94,1
+London,2020-05-31,estimate,0.96,0.89,1.03,0.94,1
 London,2020-06-01,estimate,0.96,0.89,1.04,0.93,0.99
-London,2020-06-02,estimate,0.96,0.89,1.03,0.93,0.99
-London,2020-06-03,estimate,0.96,0.89,1.03,0.94,0.99
-London,2020-06-04,estimate,0.96,0.89,1.04,0.93,0.99
-London,2020-06-05,estimate,0.96,0.89,1.03,0.93,0.98
-London,2020-06-06,estimate,0.96,0.9,1.04,0.93,0.98
+London,2020-06-02,estimate,0.96,0.89,1.04,0.93,0.99
+London,2020-06-03,estimate,0.96,0.89,1.03,0.93,0.99
+London,2020-06-04,estimate,0.96,0.88,1.03,0.93,0.99
+London,2020-06-05,estimate,0.96,0.89,1.04,0.92,0.98
+London,2020-06-06,estimate,0.96,0.89,1.03,0.93,0.98
 London,2020-06-07,estimate,0.96,0.89,1.03,0.93,0.99
-London,2020-06-08,estimate,0.96,0.9,1.03,0.93,0.98
-London,2020-06-09,estimate,0.96,0.9,1.04,0.93,0.99
-London,2020-06-10,estimate,0.96,0.89,1.03,0.93,0.99
-London,2020-06-11,estimate,0.96,0.89,1.03,0.93,0.99
-London,2020-06-12,estimate,0.96,0.89,1.04,0.94,1
-London,2020-06-13,estimate,0.96,0.89,1.03,0.93,0.99
-London,2020-06-14,estimate,0.96,0.88,1.03,0.93,0.99
-London,2020-06-15,estimate,0.96,0.88,1.03,0.93,0.99
-London,2020-06-16,estimate,0.95,0.88,1.03,0.93,0.99
-London,2020-06-17,estimate,0.95,0.87,1.03,0.92,0.98
-London,2020-06-18,estimate,0.94,0.86,1.02,0.91,0.98
-London,2020-06-19,estimate,0.93,0.86,1.01,0.9,0.96
-London,2020-06-20,estimate,0.93,0.85,1,0.89,0.95
-London,2020-06-21,estimate,0.92,0.84,0.99,0.88,0.94
-London,2020-06-22,estimate,0.91,0.84,0.98,0.88,0.94
-London,2020-06-23,estimate,0.9,0.83,0.97,0.87,0.92
-London,2020-06-24,estimate,0.89,0.82,0.96,0.86,0.91
-London,2020-06-25,estimate,0.88,0.81,0.95,0.85,0.9
-London,2020-06-26,estimate,0.87,0.8,0.94,0.84,0.9
-London,2020-06-27,estimate,0.86,0.79,0.93,0.83,0.89
-London,2020-06-28,estimate,0.85,0.78,0.92,0.81,0.87
-London,2020-06-29,estimate,0.84,0.76,0.91,0.81,0.87
-London,2020-06-30,estimate,0.83,0.76,0.91,0.8,0.86
-London,2020-07-01,estimate,0.82,0.75,0.9,0.79,0.85
-London,2020-07-02,estimate,0.82,0.74,0.89,0.78,0.84
-London,2020-07-03,estimate,0.81,0.74,0.89,0.78,0.84
-London,2020-07-04,estimate,0.8,0.73,0.88,0.77,0.83
-London,2020-07-05,estimate,0.8,0.72,0.87,0.76,0.82
-London,2020-07-06,estimate,0.79,0.73,0.87,0.76,0.82
-London,2020-07-07,estimate,0.79,0.72,0.86,0.76,0.82
-London,2020-07-08,estimate,0.79,0.72,0.87,0.76,0.82
-London,2020-07-09,estimate,0.79,0.71,0.86,0.75,0.82
-London,2020-07-10,estimate,0.78,0.71,0.86,0.75,0.82
-London,2020-07-11,estimate,0.78,0.71,0.86,0.76,0.82
-London,2020-07-12,estimate,0.79,0.7,0.86,0.75,0.81
-London,2020-07-13,estimate,0.79,0.71,0.86,0.76,0.82
-London,2020-07-14,estimate,0.79,0.71,0.87,0.76,0.83
-London,2020-07-15,estimate,0.79,0.71,0.87,0.76,0.83
-London,2020-07-16,estimate,0.8,0.72,0.88,0.77,0.83
-London,2020-07-17,estimate,0.8,0.72,0.89,0.77,0.84
-London,2020-07-18,estimate,0.81,0.73,0.9,0.77,0.84
-London,2020-07-19,estimate,0.82,0.73,0.9,0.78,0.85
-London,2020-07-20,estimate,0.83,0.75,0.91,0.79,0.86
-London,2020-07-21,estimate,0.84,0.76,0.92,0.8,0.87
-London,2020-07-22,estimate,0.85,0.77,0.94,0.81,0.88
+London,2020-06-08,estimate,0.96,0.89,1.03,0.93,0.99
+London,2020-06-09,estimate,0.96,0.89,1.03,0.93,0.99
+London,2020-06-10,estimate,0.96,0.9,1.04,0.94,0.99
+London,2020-06-11,estimate,0.96,0.89,1.04,0.93,0.99
+London,2020-06-12,estimate,0.96,0.89,1.03,0.93,0.99
+London,2020-06-13,estimate,0.96,0.89,1.04,0.93,0.99
+London,2020-06-14,estimate,0.96,0.89,1.03,0.93,0.99
+London,2020-06-15,estimate,0.96,0.88,1.03,0.93,0.98
+London,2020-06-16,estimate,0.95,0.88,1.03,0.92,0.98
+London,2020-06-17,estimate,0.95,0.87,1.02,0.91,0.97
+London,2020-06-18,estimate,0.94,0.87,1.02,0.91,0.97
+London,2020-06-19,estimate,0.93,0.87,1.01,0.9,0.96
+London,2020-06-20,estimate,0.93,0.86,1,0.9,0.96
+London,2020-06-21,estimate,0.92,0.85,0.99,0.89,0.95
+London,2020-06-22,estimate,0.91,0.84,0.98,0.88,0.93
+London,2020-06-23,estimate,0.9,0.83,0.97,0.87,0.93
+London,2020-06-24,estimate,0.89,0.82,0.96,0.86,0.92
+London,2020-06-25,estimate,0.88,0.82,0.95,0.85,0.91
+London,2020-06-26,estimate,0.87,0.8,0.94,0.84,0.89
+London,2020-06-27,estimate,0.86,0.79,0.93,0.83,0.88
+London,2020-06-28,estimate,0.85,0.78,0.92,0.82,0.87
+London,2020-06-29,estimate,0.84,0.77,0.91,0.82,0.87
+London,2020-06-30,estimate,0.83,0.76,0.9,0.81,0.87
+London,2020-07-01,estimate,0.82,0.75,0.89,0.79,0.85
+London,2020-07-02,estimate,0.82,0.75,0.89,0.78,0.84
+London,2020-07-03,estimate,0.81,0.73,0.88,0.78,0.84
+London,2020-07-04,estimate,0.8,0.73,0.88,0.78,0.84
+London,2020-07-05,estimate,0.8,0.72,0.87,0.77,0.83
+London,2020-07-06,estimate,0.79,0.72,0.86,0.76,0.82
+London,2020-07-07,estimate,0.79,0.71,0.86,0.76,0.81
+London,2020-07-08,estimate,0.79,0.71,0.86,0.76,0.81
+London,2020-07-09,estimate,0.78,0.71,0.86,0.76,0.82
+London,2020-07-10,estimate,0.78,0.71,0.86,0.75,0.81
+London,2020-07-11,estimate,0.78,0.71,0.86,0.75,0.81
+London,2020-07-12,estimate,0.78,0.71,0.86,0.75,0.81
+London,2020-07-13,estimate,0.79,0.71,0.87,0.76,0.82
+London,2020-07-14,estimate,0.79,0.71,0.87,0.76,0.82
+London,2020-07-15,estimate,0.79,0.72,0.87,0.75,0.82
+London,2020-07-16,estimate,0.8,0.71,0.87,0.77,0.84
+London,2020-07-17,estimate,0.8,0.73,0.89,0.77,0.83
+London,2020-07-18,estimate,0.81,0.73,0.89,0.78,0.85
+London,2020-07-19,estimate,0.82,0.74,0.9,0.78,0.85
+London,2020-07-20,estimate,0.83,0.74,0.91,0.8,0.87
+London,2020-07-21,estimate,0.84,0.76,0.93,0.8,0.87
+London,2020-07-22,estimate,0.85,0.77,0.94,0.82,0.89
 London,2020-07-23,estimate,0.87,0.78,0.96,0.83,0.9
-London,2020-07-24,estimate,0.88,0.79,0.97,0.85,0.92
-London,2020-07-25,estimate,0.9,0.8,0.99,0.86,0.94
-London,2020-07-26,estimate,0.91,0.82,1.01,0.87,0.95
-London,2020-07-27,estimate,0.93,0.83,1.02,0.89,0.96
-London,2020-07-28,estimate,0.94,0.84,1.04,0.9,0.97
-London,2020-07-29,estimate,0.95,0.85,1.06,0.91,0.99
-London,2020-07-30,estimate,0.97,0.87,1.08,0.93,1.01
-London,2020-07-31,estimate,0.98,0.88,1.09,0.93,1.02
-London,2020-08-01,estimate,0.99,0.87,1.1,0.94,1.03
-London,2020-08-02,estimate,1,0.9,1.13,0.95,1.04
+London,2020-07-24,estimate,0.88,0.79,0.97,0.84,0.92
+London,2020-07-25,estimate,0.9,0.8,0.99,0.86,0.93
+London,2020-07-26,estimate,0.91,0.82,1,0.88,0.95
+London,2020-07-27,estimate,0.93,0.84,1.03,0.89,0.97
+London,2020-07-28,estimate,0.94,0.84,1.04,0.9,0.98
+London,2020-07-29,estimate,0.96,0.86,1.06,0.92,1
+London,2020-07-30,estimate,0.97,0.87,1.08,0.92,1
+London,2020-07-31,estimate,0.98,0.88,1.09,0.94,1.03
+London,2020-08-01,estimate,0.99,0.89,1.11,0.95,1.03
+London,2020-08-02,estimate,1,0.89,1.11,0.95,1.04
 London,2020-08-03,estimate,1.01,0.89,1.13,0.95,1.05
-London,2020-08-04,estimate,1.01,0.89,1.14,0.96,1.07
-London,2020-08-05,estimate,1.02,0.88,1.16,0.96,1.08
-London,2020-08-06,estimate,1.02,0.86,1.16,0.97,1.09
-London,2020-08-07,estimate based on partial data,1.01,0.85,1.17,0.94,1.08
-London,2020-08-08,estimate based on partial data,1.01,0.82,1.18,0.93,1.07
-London,2020-08-09,estimate based on partial data,1,0.79,1.19,0.9,1.06
-London,2020-08-10,estimate based on partial data,0.99,0.77,1.2,0.89,1.07
-London,2020-08-11,estimate based on partial data,0.98,0.74,1.21,0.88,1.06
-London,2020-08-12,estimate based on partial data,0.97,0.71,1.22,0.87,1.07
-London,2020-08-13,estimate based on partial data,0.96,0.69,1.24,0.86,1.07
-London,2020-08-14,estimate based on partial data,0.94,0.66,1.25,0.82,1.05
-London,2020-08-15,estimate based on partial data,0.93,0.61,1.25,0.8,1.04
-London,2020-08-16,estimate based on partial data,0.92,0.6,1.27,0.76,1.03
-London,2020-08-17,estimate based on partial data,0.92,0.57,1.28,0.76,1.05
-Midlands,2020-04-02,estimate,0.82,0.76,0.88,0.8,0.84
+London,2020-08-04,estimate,1.01,0.89,1.15,0.95,1.06
+London,2020-08-05,estimate,1.01,0.89,1.16,0.94,1.06
+London,2020-08-06,estimate,1.01,0.87,1.16,0.96,1.08
+London,2020-08-07,estimate based on partial data,1.01,0.84,1.17,0.93,1.07
+London,2020-08-08,estimate based on partial data,1,0.83,1.19,0.93,1.07
+London,2020-08-09,estimate based on partial data,1,0.79,1.19,0.91,1.07
+London,2020-08-10,estimate based on partial data,0.99,0.77,1.2,0.89,1.06
+London,2020-08-11,estimate based on partial data,0.98,0.74,1.21,0.88,1.07
+London,2020-08-12,estimate based on partial data,0.97,0.7,1.21,0.86,1.06
+London,2020-08-13,estimate based on partial data,0.95,0.68,1.22,0.83,1.05
+London,2020-08-14,estimate based on partial data,0.94,0.63,1.21,0.84,1.07
+London,2020-08-15,estimate based on partial data,0.93,0.61,1.23,0.81,1.06
+London,2020-08-16,estimate based on partial data,0.92,0.6,1.26,0.79,1.05
+London,2020-08-17,estimate based on partial data,0.91,0.57,1.27,0.77,1.04
+Midlands,2020-03-19,estimate,1.62,1.42,1.81,1.53,1.68
+Midlands,2020-03-20,estimate,1.57,1.42,1.72,1.51,1.64
+Midlands,2020-03-21,estimate,1.51,1.39,1.62,1.46,1.55
+Midlands,2020-03-22,estimate,1.44,1.36,1.53,1.41,1.48
+Midlands,2020-03-23,estimate,1.37,1.31,1.44,1.34,1.4
+Midlands,2020-03-24,estimate,1.3,1.24,1.36,1.28,1.33
+Midlands,2020-03-25,estimate,1.23,1.18,1.29,1.21,1.26
+Midlands,2020-03-26,estimate,1.17,1.11,1.23,1.14,1.19
+Midlands,2020-03-27,estimate,1.1,1.04,1.16,1.07,1.12
+Midlands,2020-03-28,estimate,1.04,0.97,1.1,1.01,1.07
+Midlands,2020-03-29,estimate,0.98,0.92,1.05,0.96,1.01
+Midlands,2020-03-30,estimate,0.93,0.86,0.99,0.9,0.95
+Midlands,2020-03-31,estimate,0.89,0.82,0.95,0.86,0.91
+Midlands,2020-04-01,estimate,0.85,0.78,0.91,0.82,0.87
+Midlands,2020-04-02,estimate,0.82,0.76,0.88,0.79,0.84
 Midlands,2020-04-03,estimate,0.79,0.73,0.85,0.77,0.81
-Midlands,2020-04-04,estimate,0.77,0.71,0.82,0.75,0.79
-Midlands,2020-04-05,estimate,0.76,0.7,0.81,0.73,0.77
-Midlands,2020-04-06,estimate,0.75,0.69,0.8,0.73,0.77
-Midlands,2020-04-07,estimate,0.74,0.7,0.8,0.72,0.76
+Midlands,2020-04-04,estimate,0.77,0.72,0.82,0.74,0.79
+Midlands,2020-04-05,estimate,0.75,0.7,0.81,0.73,0.77
+Midlands,2020-04-06,estimate,0.75,0.69,0.79,0.72,0.77
+Midlands,2020-04-07,estimate,0.74,0.69,0.79,0.72,0.76
 Midlands,2020-04-08,estimate,0.74,0.69,0.79,0.72,0.76
-Midlands,2020-04-09,estimate,0.75,0.7,0.8,0.73,0.77
-Midlands,2020-04-10,estimate,0.76,0.71,0.81,0.74,0.78
-Midlands,2020-04-11,estimate,0.77,0.72,0.82,0.75,0.79
-Midlands,2020-04-12,estimate,0.78,0.73,0.84,0.76,0.81
-Midlands,2020-04-13,estimate,0.8,0.75,0.86,0.78,0.83
-Midlands,2020-04-14,estimate,0.82,0.77,0.88,0.8,0.84
-Midlands,2020-04-15,estimate,0.84,0.78,0.9,0.81,0.86
-Midlands,2020-04-16,estimate,0.86,0.81,0.92,0.83,0.88
-Midlands,2020-04-17,estimate,0.88,0.83,0.94,0.86,0.9
-Midlands,2020-04-18,estimate,0.9,0.84,0.96,0.88,0.92
+Midlands,2020-04-09,estimate,0.75,0.69,0.79,0.73,0.77
+Midlands,2020-04-10,estimate,0.76,0.7,0.81,0.73,0.78
+Midlands,2020-04-11,estimate,0.77,0.71,0.82,0.75,0.79
+Midlands,2020-04-12,estimate,0.78,0.73,0.84,0.76,0.8
+Midlands,2020-04-13,estimate,0.8,0.74,0.85,0.78,0.82
+Midlands,2020-04-14,estimate,0.82,0.76,0.88,0.8,0.85
+Midlands,2020-04-15,estimate,0.84,0.78,0.9,0.82,0.86
+Midlands,2020-04-16,estimate,0.86,0.8,0.92,0.84,0.89
+Midlands,2020-04-17,estimate,0.88,0.83,0.94,0.86,0.91
+Midlands,2020-04-18,estimate,0.9,0.84,0.96,0.87,0.92
 Midlands,2020-04-19,estimate,0.92,0.86,0.98,0.89,0.94
-Midlands,2020-04-20,estimate,0.93,0.88,1,0.9,0.95
+Midlands,2020-04-20,estimate,0.94,0.88,1,0.91,0.96
 Midlands,2020-04-21,estimate,0.95,0.89,1.01,0.92,0.97
 Midlands,2020-04-22,estimate,0.96,0.9,1.02,0.93,0.98
-Midlands,2020-04-23,estimate,0.96,0.91,1.03,0.94,0.99
-Midlands,2020-04-24,estimate,0.97,0.91,1.03,0.94,0.99
-Midlands,2020-04-25,estimate,0.97,0.91,1.04,0.94,1
-Midlands,2020-04-26,estimate,0.97,0.9,1.03,0.95,1
-Midlands,2020-04-27,estimate,0.97,0.9,1.03,0.95,1
-Midlands,2020-04-28,estimate,0.96,0.9,1.02,0.93,0.98
+Midlands,2020-04-23,estimate,0.97,0.91,1.03,0.94,0.99
+Midlands,2020-04-24,estimate,0.97,0.91,1.03,0.95,1
+Midlands,2020-04-25,estimate,0.97,0.91,1.04,0.94,0.99
+Midlands,2020-04-26,estimate,0.97,0.91,1.03,0.95,1
+Midlands,2020-04-27,estimate,0.97,0.91,1.03,0.94,0.99
+Midlands,2020-04-28,estimate,0.96,0.9,1.03,0.93,0.98
 Midlands,2020-04-29,estimate,0.96,0.89,1.02,0.93,0.98
-Midlands,2020-04-30,estimate,0.95,0.89,1.01,0.92,0.97
-Midlands,2020-05-01,estimate,0.94,0.88,1,0.91,0.96
+Midlands,2020-04-30,estimate,0.95,0.89,1.01,0.93,0.98
+Midlands,2020-05-01,estimate,0.94,0.88,1,0.92,0.97
 Midlands,2020-05-02,estimate,0.94,0.88,1,0.91,0.96
 Midlands,2020-05-03,estimate,0.93,0.87,0.99,0.91,0.96
-Midlands,2020-05-04,estimate,0.93,0.87,0.98,0.91,0.95
-Midlands,2020-05-05,estimate,0.92,0.87,0.99,0.9,0.94
-Midlands,2020-05-06,estimate,0.92,0.86,0.98,0.89,0.94
-Midlands,2020-05-07,estimate,0.92,0.86,0.97,0.9,0.94
-Midlands,2020-05-08,estimate,0.92,0.86,0.97,0.89,0.94
-Midlands,2020-05-09,estimate,0.92,0.86,0.97,0.89,0.94
-Midlands,2020-05-10,estimate,0.92,0.86,0.98,0.89,0.94
-Midlands,2020-05-11,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-04,estimate,0.93,0.87,0.99,0.91,0.95
+Midlands,2020-05-05,estimate,0.92,0.86,0.98,0.9,0.95
+Midlands,2020-05-06,estimate,0.92,0.87,0.98,0.9,0.94
+Midlands,2020-05-07,estimate,0.92,0.86,0.98,0.9,0.94
+Midlands,2020-05-08,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-09,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-10,estimate,0.92,0.86,0.98,0.9,0.94
+Midlands,2020-05-11,estimate,0.92,0.86,0.97,0.89,0.94
 Midlands,2020-05-12,estimate,0.92,0.86,0.98,0.9,0.95
-Midlands,2020-05-13,estimate,0.92,0.86,0.98,0.9,0.95
-Midlands,2020-05-14,estimate,0.92,0.86,0.99,0.9,0.94
-Midlands,2020-05-15,estimate,0.92,0.87,0.99,0.9,0.95
-Midlands,2020-05-16,estimate,0.92,0.87,0.99,0.89,0.94
-Midlands,2020-05-17,estimate,0.92,0.86,0.98,0.9,0.94
-Midlands,2020-05-18,estimate,0.92,0.87,0.98,0.89,0.94
-Midlands,2020-05-19,estimate,0.92,0.86,0.98,0.9,0.94
-Midlands,2020-05-20,estimate,0.92,0.86,0.97,0.89,0.94
-Midlands,2020-05-21,estimate,0.92,0.85,0.97,0.89,0.94
-Midlands,2020-05-22,estimate,0.91,0.85,0.97,0.89,0.94
+Midlands,2020-05-13,estimate,0.92,0.86,0.98,0.9,0.94
+Midlands,2020-05-14,estimate,0.92,0.86,0.98,0.9,0.95
+Midlands,2020-05-15,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-16,estimate,0.92,0.87,0.98,0.9,0.95
+Midlands,2020-05-17,estimate,0.92,0.87,0.98,0.9,0.94
+Midlands,2020-05-18,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-19,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-20,estimate,0.92,0.86,0.98,0.89,0.94
+Midlands,2020-05-21,estimate,0.91,0.86,0.98,0.88,0.94
+Midlands,2020-05-22,estimate,0.91,0.85,0.97,0.88,0.93
 Midlands,2020-05-23,estimate,0.91,0.85,0.97,0.88,0.93
-Midlands,2020-05-24,estimate,0.9,0.85,0.96,0.88,0.93
-Midlands,2020-05-25,estimate,0.9,0.84,0.96,0.88,0.92
-Midlands,2020-05-26,estimate,0.9,0.84,0.96,0.88,0.93
-Midlands,2020-05-27,estimate,0.9,0.84,0.96,0.87,0.92
-Midlands,2020-05-28,estimate,0.89,0.83,0.95,0.87,0.92
-Midlands,2020-05-29,estimate,0.89,0.83,0.95,0.87,0.92
-Midlands,2020-05-30,estimate,0.89,0.83,0.95,0.87,0.91
-Midlands,2020-05-31,estimate,0.89,0.83,0.95,0.87,0.92
-Midlands,2020-06-01,estimate,0.9,0.84,0.96,0.88,0.92
+Midlands,2020-05-24,estimate,0.9,0.85,0.97,0.88,0.93
+Midlands,2020-05-25,estimate,0.9,0.85,0.96,0.88,0.93
+Midlands,2020-05-26,estimate,0.9,0.84,0.96,0.87,0.92
+Midlands,2020-05-27,estimate,0.9,0.83,0.95,0.87,0.92
+Midlands,2020-05-28,estimate,0.89,0.84,0.95,0.87,0.92
+Midlands,2020-05-29,estimate,0.89,0.84,0.95,0.87,0.92
+Midlands,2020-05-30,estimate,0.89,0.83,0.95,0.87,0.92
+Midlands,2020-05-31,estimate,0.89,0.84,0.96,0.87,0.92
+Midlands,2020-06-01,estimate,0.9,0.84,0.96,0.87,0.92
 Midlands,2020-06-02,estimate,0.9,0.84,0.96,0.87,0.92
-Midlands,2020-06-03,estimate,0.9,0.84,0.96,0.87,0.92
+Midlands,2020-06-03,estimate,0.9,0.84,0.96,0.88,0.93
 Midlands,2020-06-04,estimate,0.9,0.84,0.96,0.88,0.93
-Midlands,2020-06-05,estimate,0.91,0.84,0.97,0.88,0.93
-Midlands,2020-06-06,estimate,0.91,0.85,0.97,0.88,0.93
-Midlands,2020-06-07,estimate,0.91,0.85,0.97,0.89,0.94
-Midlands,2020-06-08,estimate,0.91,0.85,0.97,0.89,0.94
-Midlands,2020-06-09,estimate,0.91,0.85,0.98,0.88,0.93
-Midlands,2020-06-10,estimate,0.91,0.85,0.97,0.88,0.93
-Midlands,2020-06-11,estimate,0.9,0.84,0.97,0.88,0.93
-Midlands,2020-06-12,estimate,0.9,0.83,0.96,0.86,0.92
-Midlands,2020-06-13,estimate,0.89,0.83,0.95,0.86,0.92
-Midlands,2020-06-14,estimate,0.88,0.82,0.95,0.86,0.91
-Midlands,2020-06-15,estimate,0.87,0.81,0.94,0.85,0.9
-Midlands,2020-06-16,estimate,0.86,0.8,0.92,0.83,0.88
-Midlands,2020-06-17,estimate,0.85,0.79,0.91,0.83,0.88
-Midlands,2020-06-18,estimate,0.84,0.78,0.9,0.81,0.86
-Midlands,2020-06-19,estimate,0.82,0.77,0.89,0.8,0.85
+Midlands,2020-06-05,estimate,0.91,0.84,0.97,0.88,0.94
+Midlands,2020-06-06,estimate,0.91,0.84,0.97,0.89,0.94
+Midlands,2020-06-07,estimate,0.91,0.85,0.97,0.88,0.93
+Midlands,2020-06-08,estimate,0.91,0.84,0.97,0.89,0.94
+Midlands,2020-06-09,estimate,0.91,0.84,0.97,0.88,0.93
+Midlands,2020-06-10,estimate,0.91,0.84,0.97,0.89,0.94
+Midlands,2020-06-11,estimate,0.91,0.84,0.97,0.88,0.93
+Midlands,2020-06-12,estimate,0.9,0.84,0.96,0.87,0.93
+Midlands,2020-06-13,estimate,0.89,0.83,0.96,0.86,0.92
+Midlands,2020-06-14,estimate,0.88,0.82,0.95,0.85,0.91
+Midlands,2020-06-15,estimate,0.87,0.81,0.93,0.84,0.89
+Midlands,2020-06-16,estimate,0.86,0.8,0.92,0.84,0.89
+Midlands,2020-06-17,estimate,0.85,0.79,0.91,0.82,0.87
+Midlands,2020-06-18,estimate,0.84,0.77,0.9,0.81,0.86
+Midlands,2020-06-19,estimate,0.82,0.76,0.89,0.8,0.85
 Midlands,2020-06-20,estimate,0.81,0.75,0.87,0.79,0.84
-Midlands,2020-06-21,estimate,0.8,0.74,0.86,0.78,0.83
+Midlands,2020-06-21,estimate,0.8,0.74,0.86,0.77,0.83
 Midlands,2020-06-22,estimate,0.79,0.73,0.85,0.76,0.81
-Midlands,2020-06-23,estimate,0.78,0.72,0.84,0.75,0.8
-Midlands,2020-06-24,estimate,0.78,0.71,0.84,0.75,0.8
-Midlands,2020-06-25,estimate,0.77,0.7,0.83,0.74,0.79
+Midlands,2020-06-23,estimate,0.78,0.72,0.85,0.75,0.81
+Midlands,2020-06-24,estimate,0.77,0.71,0.84,0.75,0.8
+Midlands,2020-06-25,estimate,0.77,0.71,0.83,0.75,0.8
 Midlands,2020-06-26,estimate,0.77,0.7,0.83,0.74,0.79
-Midlands,2020-06-27,estimate,0.77,0.7,0.83,0.74,0.8
+Midlands,2020-06-27,estimate,0.77,0.7,0.83,0.74,0.79
 Midlands,2020-06-28,estimate,0.77,0.7,0.83,0.74,0.79
-Midlands,2020-06-29,estimate,0.77,0.7,0.84,0.74,0.79
+Midlands,2020-06-29,estimate,0.77,0.7,0.83,0.74,0.8
 Midlands,2020-06-30,estimate,0.78,0.71,0.84,0.75,0.8
-Midlands,2020-07-01,estimate,0.78,0.71,0.85,0.76,0.81
-Midlands,2020-07-02,estimate,0.79,0.73,0.86,0.77,0.82
-Midlands,2020-07-03,estimate,0.8,0.73,0.87,0.77,0.83
-Midlands,2020-07-04,estimate,0.81,0.74,0.88,0.79,0.84
-Midlands,2020-07-05,estimate,0.83,0.76,0.9,0.8,0.85
-Midlands,2020-07-06,estimate,0.84,0.77,0.91,0.81,0.86
-Midlands,2020-07-07,estimate,0.85,0.77,0.92,0.82,0.88
-Midlands,2020-07-08,estimate,0.86,0.8,0.94,0.83,0.89
-Midlands,2020-07-09,estimate,0.88,0.8,0.95,0.85,0.91
-Midlands,2020-07-10,estimate,0.89,0.81,0.96,0.85,0.91
-Midlands,2020-07-11,estimate,0.89,0.81,0.97,0.86,0.93
-Midlands,2020-07-12,estimate,0.9,0.82,0.98,0.87,0.93
-Midlands,2020-07-13,estimate,0.9,0.82,0.99,0.87,0.94
+Midlands,2020-07-01,estimate,0.78,0.71,0.85,0.75,0.81
+Midlands,2020-07-02,estimate,0.79,0.73,0.86,0.76,0.82
+Midlands,2020-07-03,estimate,0.8,0.74,0.87,0.78,0.83
+Midlands,2020-07-04,estimate,0.81,0.75,0.88,0.78,0.84
+Midlands,2020-07-05,estimate,0.83,0.76,0.9,0.79,0.85
+Midlands,2020-07-06,estimate,0.84,0.77,0.91,0.81,0.87
+Midlands,2020-07-07,estimate,0.85,0.78,0.92,0.82,0.87
+Midlands,2020-07-08,estimate,0.86,0.79,0.94,0.84,0.9
+Midlands,2020-07-09,estimate,0.88,0.8,0.95,0.84,0.9
+Midlands,2020-07-10,estimate,0.89,0.81,0.97,0.85,0.92
+Midlands,2020-07-11,estimate,0.89,0.81,0.97,0.85,0.92
+Midlands,2020-07-12,estimate,0.9,0.82,0.99,0.86,0.93
+Midlands,2020-07-13,estimate,0.9,0.83,0.99,0.86,0.93
 Midlands,2020-07-14,estimate,0.91,0.83,0.99,0.87,0.93
-Midlands,2020-07-15,estimate,0.91,0.83,0.99,0.87,0.94
-Midlands,2020-07-16,estimate,0.91,0.83,0.99,0.87,0.93
-Midlands,2020-07-17,estimate,0.9,0.83,0.99,0.87,0.93
-Midlands,2020-07-18,estimate,0.9,0.83,0.98,0.87,0.93
-Midlands,2020-07-19,estimate,0.89,0.82,0.97,0.86,0.93
-Midlands,2020-07-20,estimate,0.89,0.81,0.97,0.86,0.93
+Midlands,2020-07-15,estimate,0.91,0.83,0.99,0.87,0.93
+Midlands,2020-07-16,estimate,0.91,0.83,0.99,0.87,0.94
+Midlands,2020-07-17,estimate,0.9,0.82,0.99,0.87,0.93
+Midlands,2020-07-18,estimate,0.9,0.82,0.98,0.87,0.93
+Midlands,2020-07-19,estimate,0.9,0.82,0.98,0.86,0.92
+Midlands,2020-07-20,estimate,0.89,0.81,0.98,0.85,0.92
 Midlands,2020-07-21,estimate,0.89,0.81,0.97,0.85,0.92
-Midlands,2020-07-22,estimate,0.89,0.81,0.97,0.85,0.92
+Midlands,2020-07-22,estimate,0.89,0.8,0.97,0.85,0.92
 Midlands,2020-07-23,estimate,0.88,0.8,0.97,0.85,0.92
-Midlands,2020-07-24,estimate,0.88,0.8,0.97,0.84,0.91
-Midlands,2020-07-25,estimate,0.89,0.8,0.98,0.85,0.92
-Midlands,2020-07-26,estimate,0.89,0.81,0.99,0.85,0.93
-Midlands,2020-07-27,estimate,0.9,0.8,0.99,0.86,0.94
+Midlands,2020-07-24,estimate,0.88,0.8,0.98,0.86,0.93
+Midlands,2020-07-25,estimate,0.88,0.8,0.97,0.85,0.92
+Midlands,2020-07-26,estimate,0.89,0.8,0.98,0.85,0.92
+Midlands,2020-07-27,estimate,0.9,0.8,0.99,0.85,0.93
 Midlands,2020-07-28,estimate,0.9,0.81,1,0.87,0.95
-Midlands,2020-07-29,estimate,0.92,0.83,1.01,0.88,0.95
-Midlands,2020-07-30,estimate,0.93,0.83,1.02,0.9,0.97
-Midlands,2020-07-31,estimate,0.95,0.86,1.04,0.91,0.99
-Midlands,2020-08-01,estimate,0.97,0.87,1.05,0.93,1
+Midlands,2020-07-29,estimate,0.92,0.82,1.01,0.88,0.95
+Midlands,2020-07-30,estimate,0.93,0.84,1.03,0.88,0.96
+Midlands,2020-07-31,estimate,0.95,0.86,1.05,0.91,0.99
+Midlands,2020-08-01,estimate,0.97,0.87,1.06,0.93,1
 Midlands,2020-08-02,estimate,0.99,0.89,1.08,0.95,1.03
-Midlands,2020-08-03,estimate,1.01,0.91,1.1,0.98,1.06
-Midlands,2020-08-04,estimate,1.04,0.94,1.14,0.99,1.08
-Midlands,2020-08-05,estimate,1.06,0.95,1.17,1.01,1.11
-Midlands,2020-08-06,estimate,1.09,0.96,1.21,1.04,1.14
-Midlands,2020-08-07,estimate based on partial data,1.12,0.98,1.26,1.07,1.18
-Midlands,2020-08-08,estimate based on partial data,1.14,0.98,1.3,1.07,1.2
-Midlands,2020-08-09,estimate based on partial data,1.17,0.97,1.35,1.09,1.24
-Midlands,2020-08-10,estimate based on partial data,1.19,0.97,1.41,1.1,1.28
-Midlands,2020-08-11,estimate based on partial data,1.21,0.97,1.47,1.11,1.31
-Midlands,2020-08-12,estimate based on partial data,1.23,0.96,1.52,1.12,1.34
-Midlands,2020-08-13,estimate based on partial data,1.24,0.95,1.59,1.09,1.35
-Midlands,2020-08-14,estimate based on partial data,1.25,0.92,1.62,1.09,1.37
-Midlands,2020-08-15,estimate based on partial data,1.26,0.89,1.67,1.05,1.36
-Midlands,2020-08-16,estimate based on partial data,1.27,0.86,1.72,1.03,1.36
-Midlands,2020-08-17,estimate based on partial data,1.27,0.87,1.8,1.02,1.38
+Midlands,2020-08-03,estimate,1.01,0.91,1.11,0.97,1.05
+Midlands,2020-08-04,estimate,1.04,0.93,1.14,1,1.08
+Midlands,2020-08-05,estimate,1.06,0.95,1.17,1.03,1.12
+Midlands,2020-08-06,estimate,1.09,0.98,1.22,1.04,1.14
+Midlands,2020-08-07,estimate based on partial data,1.12,0.97,1.26,1.05,1.17
+Midlands,2020-08-08,estimate based on partial data,1.14,0.98,1.31,1.09,1.22
+Midlands,2020-08-09,estimate based on partial data,1.17,0.99,1.36,1.09,1.25
+Midlands,2020-08-10,estimate based on partial data,1.19,0.98,1.41,1.08,1.26
+Midlands,2020-08-11,estimate based on partial data,1.21,0.96,1.46,1.08,1.29
+Midlands,2020-08-12,estimate based on partial data,1.23,0.96,1.53,1.08,1.31
+Midlands,2020-08-13,estimate based on partial data,1.25,0.93,1.58,1.08,1.34
+Midlands,2020-08-14,estimate based on partial data,1.26,0.91,1.64,1.07,1.36
+Midlands,2020-08-15,estimate based on partial data,1.26,0.88,1.69,1.06,1.37
+Midlands,2020-08-16,estimate based on partial data,1.26,0.86,1.74,1.06,1.4
+Midlands,2020-08-17,estimate based on partial data,1.26,0.84,1.81,1.05,1.41
+North East and Yorkshire,2020-03-19,estimate,1.69,1.47,1.87,1.6,1.76
+North East and Yorkshire,2020-03-20,estimate,1.65,1.49,1.8,1.57,1.7
+North East and Yorkshire,2020-03-21,estimate,1.6,1.48,1.73,1.54,1.64
+North East and Yorkshire,2020-03-22,estimate,1.55,1.45,1.65,1.5,1.58
+North East and Yorkshire,2020-03-23,estimate,1.49,1.4,1.56,1.45,1.52
+North East and Yorkshire,2020-03-24,estimate,1.42,1.35,1.49,1.4,1.45
+North East and Yorkshire,2020-03-25,estimate,1.36,1.29,1.42,1.33,1.38
+North East and Yorkshire,2020-03-26,estimate,1.3,1.23,1.36,1.27,1.32
+North East and Yorkshire,2020-03-27,estimate,1.24,1.17,1.3,1.21,1.26
+North East and Yorkshire,2020-03-28,estimate,1.18,1.11,1.25,1.15,1.21
+North East and Yorkshire,2020-03-29,estimate,1.12,1.05,1.19,1.09,1.15
+North East and Yorkshire,2020-03-30,estimate,1.07,1,1.15,1.04,1.1
+North East and Yorkshire,2020-03-31,estimate,1.03,0.96,1.1,1,1.06
+North East and Yorkshire,2020-04-01,estimate,0.99,0.91,1.06,0.96,1.02
 North East and Yorkshire,2020-04-02,estimate,0.95,0.88,1.02,0.93,0.98
-North East and Yorkshire,2020-04-03,estimate,0.92,0.86,0.99,0.9,0.95
-North East and Yorkshire,2020-04-04,estimate,0.9,0.84,0.96,0.87,0.92
-North East and Yorkshire,2020-04-05,estimate,0.88,0.82,0.94,0.86,0.9
-North East and Yorkshire,2020-04-06,estimate,0.87,0.81,0.92,0.85,0.89
-North East and Yorkshire,2020-04-07,estimate,0.86,0.8,0.91,0.84,0.88
-North East and Yorkshire,2020-04-08,estimate,0.85,0.8,0.9,0.83,0.87
-North East and Yorkshire,2020-04-09,estimate,0.85,0.79,0.9,0.83,0.87
+North East and Yorkshire,2020-04-03,estimate,0.92,0.86,0.99,0.9,0.96
+North East and Yorkshire,2020-04-04,estimate,0.9,0.84,0.96,0.87,0.93
+North East and Yorkshire,2020-04-05,estimate,0.88,0.82,0.94,0.85,0.9
+North East and Yorkshire,2020-04-06,estimate,0.87,0.81,0.92,0.84,0.89
+North East and Yorkshire,2020-04-07,estimate,0.86,0.8,0.91,0.83,0.88
+North East and Yorkshire,2020-04-08,estimate,0.85,0.8,0.91,0.83,0.87
+North East and Yorkshire,2020-04-09,estimate,0.85,0.79,0.9,0.82,0.87
 North East and Yorkshire,2020-04-10,estimate,0.85,0.8,0.9,0.83,0.87
-North East and Yorkshire,2020-04-11,estimate,0.85,0.8,0.9,0.83,0.87
-North East and Yorkshire,2020-04-12,estimate,0.86,0.8,0.91,0.84,0.88
-North East and Yorkshire,2020-04-13,estimate,0.86,0.81,0.92,0.84,0.89
-North East and Yorkshire,2020-04-14,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-04-15,estimate,0.88,0.82,0.93,0.85,0.9
-North East and Yorkshire,2020-04-16,estimate,0.88,0.82,0.94,0.86,0.91
+North East and Yorkshire,2020-04-11,estimate,0.85,0.8,0.9,0.83,0.88
+North East and Yorkshire,2020-04-12,estimate,0.86,0.8,0.91,0.83,0.88
+North East and Yorkshire,2020-04-13,estimate,0.86,0.8,0.92,0.84,0.88
+North East and Yorkshire,2020-04-14,estimate,0.87,0.81,0.93,0.85,0.89
+North East and Yorkshire,2020-04-15,estimate,0.88,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-04-16,estimate,0.88,0.82,0.95,0.85,0.9
 North East and Yorkshire,2020-04-17,estimate,0.89,0.83,0.95,0.86,0.91
-North East and Yorkshire,2020-04-18,estimate,0.9,0.83,0.95,0.87,0.92
-North East and Yorkshire,2020-04-19,estimate,0.9,0.85,0.96,0.87,0.92
-North East and Yorkshire,2020-04-20,estimate,0.9,0.85,0.96,0.88,0.92
-North East and Yorkshire,2020-04-21,estimate,0.91,0.85,0.96,0.88,0.93
+North East and Yorkshire,2020-04-18,estimate,0.9,0.83,0.96,0.87,0.92
+North East and Yorkshire,2020-04-19,estimate,0.9,0.84,0.96,0.88,0.92
+North East and Yorkshire,2020-04-20,estimate,0.91,0.84,0.96,0.88,0.93
+North East and Yorkshire,2020-04-21,estimate,0.91,0.85,0.97,0.89,0.94
 North East and Yorkshire,2020-04-22,estimate,0.91,0.85,0.97,0.88,0.93
-North East and Yorkshire,2020-04-23,estimate,0.91,0.85,0.96,0.88,0.92
+North East and Yorkshire,2020-04-23,estimate,0.91,0.85,0.97,0.89,0.94
 North East and Yorkshire,2020-04-24,estimate,0.91,0.85,0.97,0.88,0.93
-North East and Yorkshire,2020-04-25,estimate,0.9,0.85,0.97,0.87,0.92
-North East and Yorkshire,2020-04-26,estimate,0.9,0.84,0.96,0.88,0.92
-North East and Yorkshire,2020-04-27,estimate,0.89,0.84,0.96,0.87,0.92
-North East and Yorkshire,2020-04-28,estimate,0.89,0.83,0.95,0.86,0.91
-North East and Yorkshire,2020-04-29,estimate,0.89,0.83,0.94,0.86,0.91
-North East and Yorkshire,2020-04-30,estimate,0.88,0.83,0.94,0.86,0.91
-North East and Yorkshire,2020-05-01,estimate,0.88,0.82,0.93,0.86,0.91
-North East and Yorkshire,2020-05-02,estimate,0.87,0.82,0.93,0.85,0.9
-North East and Yorkshire,2020-05-03,estimate,0.87,0.82,0.93,0.85,0.9
+North East and Yorkshire,2020-04-25,estimate,0.9,0.84,0.97,0.88,0.93
+North East and Yorkshire,2020-04-26,estimate,0.9,0.84,0.96,0.88,0.93
+North East and Yorkshire,2020-04-27,estimate,0.9,0.83,0.95,0.87,0.92
+North East and Yorkshire,2020-04-28,estimate,0.89,0.83,0.95,0.87,0.92
+North East and Yorkshire,2020-04-29,estimate,0.89,0.82,0.94,0.87,0.92
+North East and Yorkshire,2020-04-30,estimate,0.88,0.82,0.94,0.86,0.9
+North East and Yorkshire,2020-05-01,estimate,0.88,0.82,0.94,0.85,0.9
+North East and Yorkshire,2020-05-02,estimate,0.87,0.82,0.94,0.85,0.9
+North East and Yorkshire,2020-05-03,estimate,0.87,0.81,0.93,0.85,0.9
 North East and Yorkshire,2020-05-04,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-05-05,estimate,0.87,0.81,0.92,0.84,0.89
-North East and Yorkshire,2020-05-06,estimate,0.87,0.81,0.92,0.84,0.89
-North East and Yorkshire,2020-05-07,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-05-08,estimate,0.87,0.81,0.92,0.84,0.89
-North East and Yorkshire,2020-05-09,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-05-10,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-05-11,estimate,0.87,0.81,0.92,0.84,0.89
+North East and Yorkshire,2020-05-05,estimate,0.87,0.81,0.93,0.84,0.89
+North East and Yorkshire,2020-05-06,estimate,0.86,0.8,0.93,0.84,0.89
+North East and Yorkshire,2020-05-07,estimate,0.86,0.81,0.93,0.84,0.89
+North East and Yorkshire,2020-05-08,estimate,0.86,0.8,0.93,0.83,0.88
+North East and Yorkshire,2020-05-09,estimate,0.86,0.8,0.93,0.83,0.88
+North East and Yorkshire,2020-05-10,estimate,0.86,0.81,0.94,0.84,0.89
+North East and Yorkshire,2020-05-11,estimate,0.87,0.81,0.93,0.84,0.89
 North East and Yorkshire,2020-05-12,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-05-13,estimate,0.87,0.81,0.93,0.85,0.9
-North East and Yorkshire,2020-05-14,estimate,0.87,0.81,0.93,0.84,0.89
-North East and Yorkshire,2020-05-15,estimate,0.87,0.81,0.93,0.85,0.9
-North East and Yorkshire,2020-05-16,estimate,0.87,0.82,0.94,0.84,0.89
-North East and Yorkshire,2020-05-17,estimate,0.87,0.82,0.93,0.84,0.89
-North East and Yorkshire,2020-05-18,estimate,0.87,0.81,0.93,0.85,0.89
-North East and Yorkshire,2020-05-19,estimate,0.87,0.81,0.93,0.85,0.9
-North East and Yorkshire,2020-05-20,estimate,0.87,0.81,0.93,0.85,0.9
-North East and Yorkshire,2020-05-21,estimate,0.88,0.81,0.94,0.84,0.89
-North East and Yorkshire,2020-05-22,estimate,0.88,0.81,0.93,0.85,0.9
-North East and Yorkshire,2020-05-23,estimate,0.88,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-05-13,estimate,0.87,0.81,0.93,0.84,0.89
+North East and Yorkshire,2020-05-14,estimate,0.87,0.81,0.93,0.85,0.9
+North East and Yorkshire,2020-05-15,estimate,0.87,0.81,0.93,0.84,0.89
+North East and Yorkshire,2020-05-16,estimate,0.87,0.81,0.93,0.85,0.9
+North East and Yorkshire,2020-05-17,estimate,0.87,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-05-18,estimate,0.87,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-05-19,estimate,0.87,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-05-20,estimate,0.87,0.82,0.94,0.85,0.9
+North East and Yorkshire,2020-05-21,estimate,0.88,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-05-22,estimate,0.88,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-05-23,estimate,0.88,0.82,0.95,0.85,0.91
 North East and Yorkshire,2020-05-24,estimate,0.88,0.81,0.94,0.85,0.9
-North East and Yorkshire,2020-05-25,estimate,0.88,0.82,0.94,0.85,0.9
-North East and Yorkshire,2020-05-26,estimate,0.88,0.81,0.94,0.85,0.9
-North East and Yorkshire,2020-05-27,estimate,0.88,0.82,0.94,0.86,0.91
-North East and Yorkshire,2020-05-28,estimate,0.88,0.82,0.94,0.86,0.91
-North East and Yorkshire,2020-05-29,estimate,0.89,0.83,0.95,0.86,0.91
-North East and Yorkshire,2020-05-30,estimate,0.89,0.82,0.94,0.86,0.91
-North East and Yorkshire,2020-05-31,estimate,0.89,0.83,0.95,0.86,0.91
-North East and Yorkshire,2020-06-01,estimate,0.89,0.83,0.95,0.87,0.92
-North East and Yorkshire,2020-06-02,estimate,0.9,0.83,0.96,0.87,0.92
-North East and Yorkshire,2020-06-03,estimate,0.9,0.83,0.96,0.88,0.93
-North East and Yorkshire,2020-06-04,estimate,0.9,0.84,0.97,0.87,0.93
-North East and Yorkshire,2020-06-05,estimate,0.9,0.84,0.97,0.87,0.93
-North East and Yorkshire,2020-06-06,estimate,0.91,0.84,0.97,0.87,0.93
+North East and Yorkshire,2020-05-25,estimate,0.88,0.82,0.94,0.85,0.91
+North East and Yorkshire,2020-05-26,estimate,0.88,0.82,0.94,0.86,0.91
+North East and Yorkshire,2020-05-27,estimate,0.88,0.82,0.94,0.85,0.9
+North East and Yorkshire,2020-05-28,estimate,0.88,0.82,0.95,0.86,0.9
+North East and Yorkshire,2020-05-29,estimate,0.88,0.83,0.95,0.86,0.91
+North East and Yorkshire,2020-05-30,estimate,0.89,0.82,0.95,0.86,0.91
+North East and Yorkshire,2020-05-31,estimate,0.89,0.83,0.96,0.86,0.91
+North East and Yorkshire,2020-06-01,estimate,0.89,0.83,0.95,0.86,0.91
+North East and Yorkshire,2020-06-02,estimate,0.89,0.83,0.96,0.87,0.92
+North East and Yorkshire,2020-06-03,estimate,0.9,0.83,0.96,0.87,0.92
+North East and Yorkshire,2020-06-04,estimate,0.9,0.83,0.97,0.88,0.93
+North East and Yorkshire,2020-06-05,estimate,0.9,0.83,0.97,0.88,0.93
+North East and Yorkshire,2020-06-06,estimate,0.9,0.84,0.97,0.88,0.94
 North East and Yorkshire,2020-06-07,estimate,0.91,0.84,0.97,0.88,0.93
-North East and Yorkshire,2020-06-08,estimate,0.91,0.84,0.98,0.88,0.93
-North East and Yorkshire,2020-06-09,estimate,0.91,0.85,0.98,0.88,0.93
-North East and Yorkshire,2020-06-10,estimate,0.91,0.85,0.98,0.89,0.94
+North East and Yorkshire,2020-06-08,estimate,0.91,0.84,0.97,0.88,0.93
+North East and Yorkshire,2020-06-09,estimate,0.91,0.85,0.98,0.87,0.93
+North East and Yorkshire,2020-06-10,estimate,0.91,0.85,0.98,0.88,0.94
 North East and Yorkshire,2020-06-11,estimate,0.91,0.85,0.98,0.88,0.93
 North East and Yorkshire,2020-06-12,estimate,0.91,0.85,0.98,0.89,0.94
-North East and Yorkshire,2020-06-13,estimate,0.91,0.85,0.98,0.88,0.94
-North East and Yorkshire,2020-06-14,estimate,0.91,0.84,0.98,0.88,0.94
-North East and Yorkshire,2020-06-15,estimate,0.91,0.84,0.98,0.88,0.93
-North East and Yorkshire,2020-06-16,estimate,0.91,0.85,0.98,0.88,0.93
+North East and Yorkshire,2020-06-13,estimate,0.91,0.84,0.97,0.88,0.94
+North East and Yorkshire,2020-06-14,estimate,0.91,0.84,0.97,0.88,0.93
+North East and Yorkshire,2020-06-15,estimate,0.91,0.84,0.98,0.88,0.94
+North East and Yorkshire,2020-06-16,estimate,0.91,0.84,0.98,0.88,0.94
 North East and Yorkshire,2020-06-17,estimate,0.91,0.84,0.98,0.88,0.94
-North East and Yorkshire,2020-06-18,estimate,0.91,0.84,0.97,0.88,0.94
-North East and Yorkshire,2020-06-19,estimate,0.9,0.84,0.97,0.88,0.93
-North East and Yorkshire,2020-06-20,estimate,0.9,0.84,0.97,0.87,0.93
-North East and Yorkshire,2020-06-21,estimate,0.9,0.84,0.97,0.87,0.92
-North East and Yorkshire,2020-06-22,estimate,0.9,0.83,0.97,0.86,0.92
-North East and Yorkshire,2020-06-23,estimate,0.89,0.83,0.96,0.86,0.91
-North East and Yorkshire,2020-06-24,estimate,0.89,0.82,0.95,0.86,0.91
-North East and Yorkshire,2020-06-25,estimate,0.88,0.82,0.95,0.85,0.91
-North East and Yorkshire,2020-06-26,estimate,0.88,0.81,0.95,0.85,0.9
-North East and Yorkshire,2020-06-27,estimate,0.87,0.8,0.94,0.85,0.9
-North East and Yorkshire,2020-06-28,estimate,0.86,0.8,0.93,0.83,0.89
-North East and Yorkshire,2020-06-29,estimate,0.86,0.79,0.92,0.83,0.88
-North East and Yorkshire,2020-06-30,estimate,0.85,0.79,0.93,0.82,0.88
-North East and Yorkshire,2020-07-01,estimate,0.84,0.78,0.92,0.82,0.88
-North East and Yorkshire,2020-07-02,estimate,0.84,0.77,0.91,0.81,0.87
-North East and Yorkshire,2020-07-03,estimate,0.83,0.76,0.9,0.81,0.87
-North East and Yorkshire,2020-07-04,estimate,0.83,0.76,0.9,0.8,0.85
-North East and Yorkshire,2020-07-05,estimate,0.82,0.75,0.89,0.79,0.85
-North East and Yorkshire,2020-07-06,estimate,0.82,0.75,0.89,0.79,0.84
-North East and Yorkshire,2020-07-07,estimate,0.82,0.74,0.89,0.79,0.85
-North East and Yorkshire,2020-07-08,estimate,0.82,0.75,0.89,0.79,0.85
-North East and Yorkshire,2020-07-09,estimate,0.82,0.75,0.89,0.78,0.84
+North East and Yorkshire,2020-06-18,estimate,0.91,0.84,0.98,0.88,0.94
+North East and Yorkshire,2020-06-19,estimate,0.91,0.84,0.98,0.88,0.93
+North East and Yorkshire,2020-06-20,estimate,0.9,0.84,0.98,0.87,0.93
+North East and Yorkshire,2020-06-21,estimate,0.9,0.84,0.97,0.88,0.93
+North East and Yorkshire,2020-06-22,estimate,0.9,0.83,0.97,0.87,0.93
+North East and Yorkshire,2020-06-23,estimate,0.89,0.83,0.96,0.87,0.92
+North East and Yorkshire,2020-06-24,estimate,0.89,0.82,0.96,0.86,0.92
+North East and Yorkshire,2020-06-25,estimate,0.88,0.82,0.95,0.86,0.91
+North East and Yorkshire,2020-06-26,estimate,0.88,0.81,0.94,0.85,0.9
+North East and Yorkshire,2020-06-27,estimate,0.87,0.8,0.94,0.84,0.9
+North East and Yorkshire,2020-06-28,estimate,0.87,0.8,0.93,0.84,0.89
+North East and Yorkshire,2020-06-29,estimate,0.86,0.79,0.93,0.83,0.89
+North East and Yorkshire,2020-06-30,estimate,0.85,0.78,0.92,0.83,0.89
+North East and Yorkshire,2020-07-01,estimate,0.85,0.78,0.92,0.82,0.88
+North East and Yorkshire,2020-07-02,estimate,0.84,0.78,0.92,0.81,0.87
+North East and Yorkshire,2020-07-03,estimate,0.83,0.77,0.91,0.8,0.86
+North East and Yorkshire,2020-07-04,estimate,0.83,0.76,0.91,0.8,0.86
+North East and Yorkshire,2020-07-05,estimate,0.82,0.75,0.9,0.8,0.86
+North East and Yorkshire,2020-07-06,estimate,0.82,0.74,0.89,0.79,0.85
+North East and Yorkshire,2020-07-07,estimate,0.82,0.75,0.9,0.78,0.84
+North East and Yorkshire,2020-07-08,estimate,0.82,0.74,0.9,0.79,0.85
+North East and Yorkshire,2020-07-09,estimate,0.82,0.74,0.89,0.79,0.85
 North East and Yorkshire,2020-07-10,estimate,0.82,0.75,0.9,0.79,0.85
-North East and Yorkshire,2020-07-11,estimate,0.83,0.75,0.9,0.8,0.86
-North East and Yorkshire,2020-07-12,estimate,0.84,0.76,0.92,0.8,0.86
+North East and Yorkshire,2020-07-11,estimate,0.83,0.75,0.91,0.8,0.86
+North East and Yorkshire,2020-07-12,estimate,0.84,0.76,0.92,0.81,0.87
 North East and Yorkshire,2020-07-13,estimate,0.85,0.77,0.93,0.82,0.88
-North East and Yorkshire,2020-07-14,estimate,0.86,0.77,0.93,0.83,0.9
-North East and Yorkshire,2020-07-15,estimate,0.87,0.79,0.95,0.84,0.9
-North East and Yorkshire,2020-07-16,estimate,0.89,0.81,0.97,0.86,0.93
-North East and Yorkshire,2020-07-17,estimate,0.9,0.83,0.99,0.87,0.94
-North East and Yorkshire,2020-07-18,estimate,0.92,0.85,1,0.89,0.95
-North East and Yorkshire,2020-07-19,estimate,0.94,0.86,1.02,0.9,0.96
-North East and Yorkshire,2020-07-20,estimate,0.96,0.88,1.04,0.92,0.99
+North East and Yorkshire,2020-07-14,estimate,0.86,0.78,0.94,0.82,0.89
+North East and Yorkshire,2020-07-15,estimate,0.87,0.79,0.95,0.83,0.9
+North East and Yorkshire,2020-07-16,estimate,0.89,0.81,0.97,0.86,0.92
+North East and Yorkshire,2020-07-17,estimate,0.9,0.82,0.98,0.87,0.93
+North East and Yorkshire,2020-07-18,estimate,0.92,0.84,0.99,0.89,0.95
+North East and Yorkshire,2020-07-19,estimate,0.94,0.86,1.02,0.91,0.97
+North East and Yorkshire,2020-07-20,estimate,0.96,0.87,1.04,0.92,0.98
 North East and Yorkshire,2020-07-21,estimate,0.97,0.89,1.06,0.94,1.01
 North East and Yorkshire,2020-07-22,estimate,0.99,0.9,1.08,0.95,1.02
-North East and Yorkshire,2020-07-23,estimate,1,0.92,1.1,0.96,1.03
-North East and Yorkshire,2020-07-24,estimate,1.02,0.92,1.12,0.97,1.05
-North East and Yorkshire,2020-07-25,estimate,1.03,0.93,1.13,0.97,1.06
-North East and Yorkshire,2020-07-26,estimate,1.03,0.93,1.14,0.98,1.07
-North East and Yorkshire,2020-07-27,estimate,1.03,0.92,1.13,0.98,1.07
-North East and Yorkshire,2020-07-28,estimate,1.03,0.93,1.14,0.97,1.06
-North East and Yorkshire,2020-07-29,estimate,1.02,0.92,1.13,0.98,1.06
-North East and Yorkshire,2020-07-30,estimate,1.01,0.92,1.12,0.96,1.04
-North East and Yorkshire,2020-07-31,estimate,1,0.9,1.1,0.96,1.04
-North East and Yorkshire,2020-08-01,estimate,0.99,0.89,1.09,0.94,1.02
-North East and Yorkshire,2020-08-02,estimate,0.97,0.88,1.07,0.92,1
-North East and Yorkshire,2020-08-03,estimate,0.95,0.84,1.05,0.91,0.99
-North East and Yorkshire,2020-08-04,estimate,0.93,0.82,1.04,0.88,0.97
-North East and Yorkshire,2020-08-05,estimate,0.91,0.79,1.03,0.86,0.96
-North East and Yorkshire,2020-08-06,estimate,0.89,0.75,1.01,0.83,0.94
-North East and Yorkshire,2020-08-07,estimate based on partial data,0.87,0.72,1.01,0.81,0.93
-North East and Yorkshire,2020-08-08,estimate based on partial data,0.85,0.69,1.01,0.8,0.94
-North East and Yorkshire,2020-08-09,estimate based on partial data,0.84,0.66,1.01,0.77,0.92
-North East and Yorkshire,2020-08-10,estimate based on partial data,0.82,0.63,1.01,0.75,0.91
-North East and Yorkshire,2020-08-11,estimate based on partial data,0.81,0.6,1,0.73,0.9
-North East and Yorkshire,2020-08-12,estimate based on partial data,0.8,0.58,1.01,0.72,0.9
-North East and Yorkshire,2020-08-13,estimate based on partial data,0.79,0.56,1.03,0.71,0.9
-North East and Yorkshire,2020-08-14,estimate based on partial data,0.78,0.53,1.03,0.69,0.9
-North East and Yorkshire,2020-08-15,estimate based on partial data,0.78,0.5,1.03,0.66,0.88
-North East and Yorkshire,2020-08-16,estimate based on partial data,0.78,0.49,1.05,0.66,0.88
-North East and Yorkshire,2020-08-17,estimate based on partial data,0.78,0.47,1.07,0.64,0.88
-North West,2020-04-02,estimate,0.93,0.86,1.01,0.9,0.96
-North West,2020-04-03,estimate,0.89,0.82,0.96,0.86,0.92
-North West,2020-04-04,estimate,0.86,0.79,0.92,0.83,0.88
-North West,2020-04-05,estimate,0.83,0.76,0.88,0.8,0.85
-North West,2020-04-06,estimate,0.8,0.73,0.86,0.78,0.83
-North West,2020-04-07,estimate,0.79,0.73,0.85,0.76,0.81
-North West,2020-04-08,estimate,0.78,0.72,0.84,0.75,0.8
-North West,2020-04-09,estimate,0.77,0.72,0.83,0.75,0.8
-North West,2020-04-10,estimate,0.78,0.72,0.83,0.75,0.8
-North West,2020-04-11,estimate,0.78,0.72,0.84,0.76,0.8
-North West,2020-04-12,estimate,0.79,0.73,0.85,0.77,0.82
-North West,2020-04-13,estimate,0.8,0.74,0.86,0.78,0.83
+North East and Yorkshire,2020-07-23,estimate,1,0.92,1.11,0.96,1.04
+North East and Yorkshire,2020-07-24,estimate,1.01,0.92,1.12,0.97,1.05
+North East and Yorkshire,2020-07-25,estimate,1.02,0.93,1.14,0.97,1.06
+North East and Yorkshire,2020-07-26,estimate,1.03,0.92,1.13,0.98,1.07
+North East and Yorkshire,2020-07-27,estimate,1.03,0.92,1.14,0.98,1.06
+North East and Yorkshire,2020-07-28,estimate,1.03,0.93,1.14,0.98,1.06
+North East and Yorkshire,2020-07-29,estimate,1.02,0.93,1.13,0.98,1.06
+North East and Yorkshire,2020-07-30,estimate,1.01,0.92,1.12,0.97,1.05
+North East and Yorkshire,2020-07-31,estimate,1,0.9,1.1,0.95,1.03
+North East and Yorkshire,2020-08-01,estimate,0.99,0.9,1.09,0.94,1.02
+North East and Yorkshire,2020-08-02,estimate,0.97,0.87,1.07,0.93,1
+North East and Yorkshire,2020-08-03,estimate,0.95,0.85,1.05,0.92,1
+North East and Yorkshire,2020-08-04,estimate,0.93,0.82,1.04,0.89,0.98
+North East and Yorkshire,2020-08-05,estimate,0.91,0.79,1.03,0.88,0.97
+North East and Yorkshire,2020-08-06,estimate,0.89,0.75,1.01,0.85,0.95
+North East and Yorkshire,2020-08-07,estimate based on partial data,0.87,0.72,1.01,0.82,0.94
+North East and Yorkshire,2020-08-08,estimate based on partial data,0.85,0.69,1.02,0.8,0.92
+North East and Yorkshire,2020-08-09,estimate based on partial data,0.84,0.66,1.02,0.77,0.91
+North East and Yorkshire,2020-08-10,estimate based on partial data,0.82,0.62,1.01,0.76,0.91
+North East and Yorkshire,2020-08-11,estimate based on partial data,0.81,0.61,1.03,0.74,0.9
+North East and Yorkshire,2020-08-12,estimate based on partial data,0.8,0.59,1.04,0.72,0.9
+North East and Yorkshire,2020-08-13,estimate based on partial data,0.79,0.55,1.03,0.71,0.9
+North East and Yorkshire,2020-08-14,estimate based on partial data,0.79,0.53,1.04,0.69,0.89
+North East and Yorkshire,2020-08-15,estimate based on partial data,0.79,0.51,1.06,0.67,0.89
+North East and Yorkshire,2020-08-16,estimate based on partial data,0.78,0.48,1.07,0.66,0.89
+North East and Yorkshire,2020-08-17,estimate based on partial data,0.78,0.46,1.08,0.63,0.88
+North West,2020-03-19,estimate,1.73,1.53,1.97,1.65,1.83
+North West,2020-03-20,estimate,1.71,1.55,1.88,1.64,1.78
+North West,2020-03-21,estimate,1.68,1.54,1.8,1.62,1.73
+North West,2020-03-22,estimate,1.63,1.54,1.74,1.59,1.67
+North West,2020-03-23,estimate,1.58,1.49,1.66,1.54,1.61
+North West,2020-03-24,estimate,1.52,1.44,1.6,1.48,1.55
+North West,2020-03-25,estimate,1.45,1.37,1.53,1.42,1.48
+North West,2020-03-26,estimate,1.38,1.3,1.46,1.34,1.41
+North West,2020-03-27,estimate,1.3,1.22,1.39,1.27,1.34
+North West,2020-03-28,estimate,1.23,1.14,1.32,1.2,1.27
+North West,2020-03-29,estimate,1.16,1.08,1.24,1.13,1.19
+North West,2020-03-30,estimate,1.1,1.02,1.18,1.06,1.13
+North West,2020-03-31,estimate,1.03,0.96,1.11,1,1.07
+North West,2020-04-01,estimate,0.98,0.9,1.05,0.95,1.01
+North West,2020-04-02,estimate,0.93,0.86,1,0.9,0.95
+North West,2020-04-03,estimate,0.89,0.82,0.95,0.86,0.91
+North West,2020-04-04,estimate,0.85,0.78,0.91,0.82,0.88
+North West,2020-04-05,estimate,0.82,0.76,0.89,0.8,0.86
+North West,2020-04-06,estimate,0.8,0.74,0.86,0.78,0.83
+North West,2020-04-07,estimate,0.79,0.73,0.85,0.77,0.82
+North West,2020-04-08,estimate,0.78,0.72,0.84,0.76,0.8
+North West,2020-04-09,estimate,0.77,0.72,0.84,0.75,0.79
+North West,2020-04-10,estimate,0.77,0.72,0.84,0.75,0.8
+North West,2020-04-11,estimate,0.78,0.72,0.84,0.75,0.8
+North West,2020-04-12,estimate,0.79,0.73,0.85,0.76,0.81
+North West,2020-04-13,estimate,0.8,0.74,0.87,0.78,0.83
 North West,2020-04-14,estimate,0.82,0.76,0.88,0.79,0.84
-North West,2020-04-15,estimate,0.84,0.78,0.9,0.81,0.86
-North West,2020-04-16,estimate,0.86,0.8,0.92,0.83,0.88
-North West,2020-04-17,estimate,0.88,0.82,0.95,0.85,0.9
+North West,2020-04-15,estimate,0.84,0.77,0.9,0.81,0.86
+North West,2020-04-16,estimate,0.86,0.79,0.92,0.84,0.89
+North West,2020-04-17,estimate,0.88,0.82,0.95,0.86,0.91
 North West,2020-04-18,estimate,0.9,0.84,0.97,0.87,0.93
-North West,2020-04-19,estimate,0.92,0.86,0.99,0.89,0.94
-North West,2020-04-20,estimate,0.94,0.87,1.01,0.91,0.97
-North West,2020-04-21,estimate,0.96,0.89,1.03,0.92,0.98
-North West,2020-04-22,estimate,0.97,0.9,1.04,0.94,1
-North West,2020-04-23,estimate,0.98,0.92,1.06,0.96,1.01
-North West,2020-04-24,estimate,0.99,0.93,1.07,0.96,1.02
+North West,2020-04-19,estimate,0.92,0.86,0.99,0.89,0.95
+North West,2020-04-20,estimate,0.94,0.88,1.01,0.92,0.97
+North West,2020-04-21,estimate,0.96,0.89,1.03,0.93,0.98
+North West,2020-04-22,estimate,0.97,0.91,1.05,0.94,1
+North West,2020-04-23,estimate,0.99,0.92,1.06,0.95,1.01
+North West,2020-04-24,estimate,1,0.93,1.07,0.97,1.03
 North West,2020-04-25,estimate,1,0.93,1.07,0.97,1.03
-North West,2020-04-26,estimate,1,0.93,1.07,0.98,1.04
-North West,2020-04-27,estimate,1,0.93,1.07,0.98,1.03
-North West,2020-04-28,estimate,1,0.93,1.08,0.98,1.03
-North West,2020-04-29,estimate,1,0.93,1.07,0.98,1.03
-North West,2020-04-30,estimate,1,0.93,1.07,0.97,1.02
-North West,2020-05-01,estimate,0.99,0.92,1.06,0.97,1.02
-North West,2020-05-02,estimate,0.98,0.92,1.05,0.96,1.02
-North West,2020-05-03,estimate,0.98,0.92,1.05,0.95,1.01
-North West,2020-05-04,estimate,0.97,0.91,1.04,0.95,1
-North West,2020-05-05,estimate,0.97,0.9,1.04,0.94,1
-North West,2020-05-06,estimate,0.96,0.9,1.03,0.94,0.99
-North West,2020-05-07,estimate,0.96,0.89,1.03,0.93,0.98
-North West,2020-05-08,estimate,0.95,0.88,1.02,0.93,0.98
-North West,2020-05-09,estimate,0.95,0.88,1.02,0.92,0.97
+North West,2020-04-26,estimate,1.01,0.94,1.08,0.98,1.04
+North West,2020-04-27,estimate,1.01,0.94,1.08,0.98,1.04
+North West,2020-04-28,estimate,1,0.94,1.07,0.98,1.03
+North West,2020-04-29,estimate,1,0.94,1.07,0.98,1.03
+North West,2020-04-30,estimate,1,0.93,1.06,0.97,1.02
+North West,2020-05-01,estimate,0.99,0.93,1.06,0.96,1.02
+North West,2020-05-02,estimate,0.99,0.92,1.05,0.95,1.01
+North West,2020-05-03,estimate,0.98,0.91,1.04,0.95,1
+North West,2020-05-04,estimate,0.97,0.91,1.04,0.94,1
+North West,2020-05-05,estimate,0.97,0.9,1.03,0.94,1
+North West,2020-05-06,estimate,0.96,0.89,1.03,0.93,0.99
+North West,2020-05-07,estimate,0.96,0.89,1.02,0.93,0.98
+North West,2020-05-08,estimate,0.95,0.89,1.02,0.92,0.98
+North West,2020-05-09,estimate,0.95,0.89,1.02,0.93,0.98
 North West,2020-05-10,estimate,0.94,0.88,1.01,0.92,0.97
-North West,2020-05-11,estimate,0.94,0.87,1.01,0.91,0.97
-North West,2020-05-12,estimate,0.94,0.87,1.01,0.9,0.96
-North West,2020-05-13,estimate,0.93,0.87,1,0.9,0.96
-North West,2020-05-14,estimate,0.93,0.86,0.99,0.9,0.95
+North West,2020-05-11,estimate,0.94,0.87,1,0.91,0.96
+North West,2020-05-12,estimate,0.94,0.87,1,0.91,0.97
+North West,2020-05-13,estimate,0.93,0.87,1,0.91,0.96
+North West,2020-05-14,estimate,0.93,0.86,0.99,0.9,0.96
 North West,2020-05-15,estimate,0.92,0.86,0.99,0.9,0.95
-North West,2020-05-16,estimate,0.92,0.85,0.98,0.89,0.95
-North West,2020-05-17,estimate,0.91,0.84,0.97,0.89,0.94
-North West,2020-05-18,estimate,0.91,0.84,0.97,0.88,0.93
-North West,2020-05-19,estimate,0.9,0.84,0.97,0.87,0.92
+North West,2020-05-16,estimate,0.92,0.85,0.98,0.89,0.94
+North West,2020-05-17,estimate,0.91,0.85,0.98,0.89,0.94
+North West,2020-05-18,estimate,0.9,0.84,0.97,0.88,0.94
+North West,2020-05-19,estimate,0.9,0.83,0.96,0.88,0.93
 North West,2020-05-20,estimate,0.89,0.83,0.96,0.86,0.92
-North West,2020-05-21,estimate,0.89,0.82,0.96,0.86,0.92
+North West,2020-05-21,estimate,0.89,0.83,0.96,0.87,0.92
 North West,2020-05-22,estimate,0.88,0.82,0.95,0.86,0.91
-North West,2020-05-23,estimate,0.88,0.82,0.95,0.85,0.9
-North West,2020-05-24,estimate,0.88,0.81,0.94,0.85,0.91
-North West,2020-05-25,estimate,0.88,0.81,0.94,0.85,0.91
-North West,2020-05-26,estimate,0.88,0.81,0.94,0.85,0.91
-North West,2020-05-27,estimate,0.88,0.81,0.94,0.85,0.9
-North West,2020-05-28,estimate,0.88,0.81,0.94,0.85,0.91
-North West,2020-05-29,estimate,0.88,0.81,0.94,0.86,0.91
-North West,2020-05-30,estimate,0.89,0.82,0.95,0.86,0.91
-North West,2020-05-31,estimate,0.89,0.82,0.96,0.87,0.92
+North West,2020-05-23,estimate,0.88,0.81,0.95,0.85,0.91
+North West,2020-05-24,estimate,0.88,0.81,0.94,0.85,0.9
+North West,2020-05-25,estimate,0.87,0.81,0.94,0.85,0.91
+North West,2020-05-26,estimate,0.87,0.81,0.94,0.85,0.9
+North West,2020-05-27,estimate,0.87,0.81,0.94,0.85,0.9
+North West,2020-05-28,estimate,0.88,0.81,0.95,0.85,0.9
+North West,2020-05-29,estimate,0.88,0.81,0.95,0.86,0.91
+North West,2020-05-30,estimate,0.88,0.82,0.95,0.86,0.91
+North West,2020-05-31,estimate,0.89,0.82,0.96,0.86,0.91
 North West,2020-06-01,estimate,0.9,0.83,0.96,0.87,0.92
-North West,2020-06-02,estimate,0.9,0.83,0.97,0.87,0.93
-North West,2020-06-03,estimate,0.91,0.84,0.97,0.88,0.94
+North West,2020-06-02,estimate,0.9,0.84,0.97,0.87,0.93
+North West,2020-06-03,estimate,0.91,0.84,0.98,0.88,0.93
 North West,2020-06-04,estimate,0.91,0.84,0.98,0.88,0.94
-North West,2020-06-05,estimate,0.91,0.85,0.99,0.89,0.94
+North West,2020-06-05,estimate,0.91,0.84,0.99,0.87,0.93
 North West,2020-06-06,estimate,0.92,0.84,0.99,0.88,0.94
-North West,2020-06-07,estimate,0.91,0.84,0.98,0.88,0.94
-North West,2020-06-08,estimate,0.91,0.84,0.98,0.88,0.94
-North West,2020-06-09,estimate,0.9,0.83,0.98,0.87,0.93
-North West,2020-06-10,estimate,0.89,0.83,0.97,0.87,0.92
-North West,2020-06-11,estimate,0.88,0.82,0.96,0.85,0.91
-North West,2020-06-12,estimate,0.87,0.8,0.94,0.84,0.9
-North West,2020-06-13,estimate,0.85,0.79,0.92,0.83,0.88
-North West,2020-06-14,estimate,0.83,0.76,0.9,0.8,0.86
-North West,2020-06-15,estimate,0.82,0.74,0.88,0.78,0.84
-North West,2020-06-16,estimate,0.8,0.73,0.87,0.77,0.82
-North West,2020-06-17,estimate,0.78,0.71,0.85,0.75,0.81
+North West,2020-06-07,estimate,0.91,0.84,0.99,0.88,0.94
+North West,2020-06-08,estimate,0.91,0.83,0.99,0.88,0.94
+North West,2020-06-09,estimate,0.9,0.83,0.98,0.88,0.93
+North West,2020-06-10,estimate,0.9,0.83,0.98,0.86,0.92
+North West,2020-06-11,estimate,0.88,0.81,0.96,0.85,0.91
+North West,2020-06-12,estimate,0.87,0.8,0.95,0.84,0.9
+North West,2020-06-13,estimate,0.85,0.78,0.93,0.82,0.88
+North West,2020-06-14,estimate,0.83,0.76,0.91,0.8,0.86
+North West,2020-06-15,estimate,0.81,0.75,0.89,0.78,0.83
+North West,2020-06-16,estimate,0.79,0.73,0.87,0.76,0.82
+North West,2020-06-17,estimate,0.77,0.71,0.84,0.75,0.8
 North West,2020-06-18,estimate,0.76,0.69,0.82,0.73,0.79
-North West,2020-06-19,estimate,0.74,0.67,0.81,0.72,0.77
-North West,2020-06-20,estimate,0.73,0.66,0.8,0.7,0.76
-North West,2020-06-21,estimate,0.71,0.64,0.78,0.69,0.74
-North West,2020-06-22,estimate,0.7,0.64,0.78,0.67,0.73
-North West,2020-06-23,estimate,0.7,0.62,0.77,0.67,0.73
-North West,2020-06-24,estimate,0.69,0.61,0.76,0.67,0.73
-North West,2020-06-25,estimate,0.69,0.62,0.76,0.66,0.72
-North West,2020-06-26,estimate,0.7,0.62,0.76,0.66,0.72
-North West,2020-06-27,estimate,0.7,0.63,0.77,0.68,0.73
-North West,2020-06-28,estimate,0.71,0.64,0.78,0.69,0.75
-North West,2020-06-29,estimate,0.73,0.66,0.8,0.7,0.76
+North West,2020-06-19,estimate,0.74,0.67,0.8,0.71,0.77
+North West,2020-06-20,estimate,0.72,0.65,0.79,0.7,0.75
+North West,2020-06-21,estimate,0.71,0.65,0.78,0.68,0.74
+North West,2020-06-22,estimate,0.7,0.63,0.77,0.67,0.73
+North West,2020-06-23,estimate,0.69,0.63,0.76,0.66,0.72
+North West,2020-06-24,estimate,0.69,0.62,0.77,0.66,0.72
+North West,2020-06-25,estimate,0.69,0.62,0.76,0.67,0.73
+North West,2020-06-26,estimate,0.7,0.62,0.77,0.67,0.72
+North West,2020-06-27,estimate,0.7,0.63,0.78,0.67,0.73
+North West,2020-06-28,estimate,0.71,0.64,0.79,0.68,0.74
+North West,2020-06-29,estimate,0.73,0.66,0.81,0.7,0.76
 North West,2020-06-30,estimate,0.75,0.67,0.82,0.72,0.78
-North West,2020-07-01,estimate,0.77,0.7,0.85,0.74,0.8
+North West,2020-07-01,estimate,0.77,0.69,0.84,0.74,0.8
 North West,2020-07-02,estimate,0.8,0.72,0.87,0.77,0.83
-North West,2020-07-03,estimate,0.82,0.75,0.9,0.79,0.85
-North West,2020-07-04,estimate,0.85,0.78,0.93,0.83,0.89
-North West,2020-07-05,estimate,0.88,0.81,0.96,0.85,0.92
-North West,2020-07-06,estimate,0.92,0.84,1,0.88,0.95
-North West,2020-07-07,estimate,0.95,0.86,1.03,0.91,0.98
-North West,2020-07-08,estimate,0.98,0.89,1.06,0.93,1
-North West,2020-07-09,estimate,1,0.92,1.1,0.96,1.04
-North West,2020-07-10,estimate,1.03,0.93,1.12,0.99,1.07
-North West,2020-07-11,estimate,1.05,0.96,1.15,1.01,1.09
-North West,2020-07-12,estimate,1.07,0.97,1.17,1.03,1.11
+North West,2020-07-03,estimate,0.83,0.75,0.91,0.79,0.85
+North West,2020-07-04,estimate,0.85,0.77,0.93,0.83,0.89
+North West,2020-07-05,estimate,0.89,0.81,0.97,0.85,0.92
+North West,2020-07-06,estimate,0.92,0.83,1,0.89,0.95
+North West,2020-07-07,estimate,0.95,0.86,1.04,0.91,0.98
+North West,2020-07-08,estimate,0.98,0.89,1.07,0.95,1.02
+North West,2020-07-09,estimate,1.01,0.91,1.1,0.97,1.05
+North West,2020-07-10,estimate,1.03,0.94,1.13,0.99,1.07
+North West,2020-07-11,estimate,1.05,0.96,1.15,1,1.09
+North West,2020-07-12,estimate,1.07,0.98,1.18,1.02,1.1
 North West,2020-07-13,estimate,1.08,0.98,1.18,1.03,1.12
-North West,2020-07-14,estimate,1.09,0.99,1.19,1.05,1.13
-North West,2020-07-15,estimate,1.09,0.99,1.19,1.05,1.13
-North West,2020-07-16,estimate,1.09,0.99,1.18,1.05,1.13
-North West,2020-07-17,estimate,1.08,0.98,1.17,1.03,1.11
-North West,2020-07-18,estimate,1.07,0.98,1.16,1.02,1.1
-North West,2020-07-19,estimate,1.06,0.96,1.15,1.02,1.09
-North West,2020-07-20,estimate,1.04,0.95,1.13,1.01,1.09
-North West,2020-07-21,estimate,1.03,0.93,1.11,0.99,1.06
-North West,2020-07-22,estimate,1.01,0.92,1.09,0.97,1.05
-North West,2020-07-23,estimate,0.99,0.91,1.08,0.96,1.03
-North West,2020-07-24,estimate,0.97,0.89,1.06,0.94,1.01
-North West,2020-07-25,estimate,0.96,0.87,1.05,0.91,0.99
-North West,2020-07-26,estimate,0.94,0.85,1.03,0.91,0.98
-North West,2020-07-27,estimate,0.92,0.83,1.01,0.89,0.96
-North West,2020-07-28,estimate,0.91,0.81,0.99,0.87,0.95
-North West,2020-07-29,estimate,0.89,0.79,0.98,0.86,0.93
-North West,2020-07-30,estimate,0.88,0.78,0.97,0.84,0.91
-North West,2020-07-31,estimate,0.86,0.76,0.95,0.82,0.9
-North West,2020-08-01,estimate,0.85,0.75,0.94,0.8,0.88
-North West,2020-08-02,estimate,0.83,0.73,0.93,0.79,0.87
-North West,2020-08-03,estimate,0.82,0.72,0.92,0.77,0.86
-North West,2020-08-04,estimate,0.8,0.7,0.92,0.76,0.85
-North West,2020-08-05,estimate,0.79,0.66,0.9,0.75,0.84
-North West,2020-08-06,estimate,0.78,0.64,0.9,0.72,0.83
-North West,2020-08-07,estimate based on partial data,0.76,0.63,0.91,0.71,0.82
+North West,2020-07-14,estimate,1.09,0.99,1.19,1.04,1.12
+North West,2020-07-15,estimate,1.09,0.98,1.19,1.05,1.13
+North West,2020-07-16,estimate,1.09,0.99,1.19,1.04,1.12
+North West,2020-07-17,estimate,1.08,0.99,1.18,1.04,1.12
+North West,2020-07-18,estimate,1.07,0.98,1.17,1.03,1.11
+North West,2020-07-19,estimate,1.06,0.97,1.15,1.02,1.09
+North West,2020-07-20,estimate,1.04,0.95,1.13,1,1.08
+North West,2020-07-21,estimate,1.03,0.93,1.12,0.98,1.05
+North West,2020-07-22,estimate,1.01,0.92,1.1,0.96,1.04
+North West,2020-07-23,estimate,0.99,0.9,1.08,0.95,1.03
+North West,2020-07-24,estimate,0.97,0.88,1.06,0.93,1.01
+North West,2020-07-25,estimate,0.96,0.86,1.05,0.92,0.99
+North West,2020-07-26,estimate,0.94,0.85,1.03,0.9,0.98
+North West,2020-07-27,estimate,0.92,0.83,1.01,0.89,0.97
+North West,2020-07-28,estimate,0.91,0.82,1,0.87,0.94
+North West,2020-07-29,estimate,0.89,0.8,0.98,0.85,0.93
+North West,2020-07-30,estimate,0.88,0.78,0.97,0.84,0.92
+North West,2020-07-31,estimate,0.86,0.77,0.96,0.82,0.9
+North West,2020-08-01,estimate,0.85,0.75,0.94,0.81,0.89
+North West,2020-08-02,estimate,0.84,0.73,0.93,0.8,0.88
+North West,2020-08-03,estimate,0.82,0.72,0.93,0.77,0.85
+North West,2020-08-04,estimate,0.81,0.69,0.92,0.76,0.85
+North West,2020-08-05,estimate,0.79,0.66,0.9,0.75,0.85
+North West,2020-08-06,estimate,0.78,0.64,0.9,0.74,0.85
+North West,2020-08-07,estimate based on partial data,0.76,0.61,0.89,0.7,0.82
 North West,2020-08-08,estimate based on partial data,0.75,0.59,0.9,0.69,0.81
-North West,2020-08-09,estimate based on partial data,0.73,0.56,0.9,0.66,0.79
-North West,2020-08-10,estimate based on partial data,0.72,0.52,0.9,0.64,0.78
-North West,2020-08-11,estimate based on partial data,0.7,0.49,0.9,0.61,0.77
-North West,2020-08-12,estimate based on partial data,0.68,0.48,0.92,0.59,0.76
+North West,2020-08-09,estimate based on partial data,0.73,0.55,0.9,0.66,0.8
+North West,2020-08-10,estimate based on partial data,0.71,0.53,0.91,0.64,0.78
+North West,2020-08-11,estimate based on partial data,0.7,0.48,0.89,0.62,0.78
+North West,2020-08-12,estimate based on partial data,0.68,0.47,0.91,0.58,0.76
 North West,2020-08-13,estimate based on partial data,0.67,0.43,0.91,0.56,0.75
-North West,2020-08-14,estimate based on partial data,0.66,0.4,0.91,0.56,0.76
-North West,2020-08-15,estimate based on partial data,0.65,0.38,0.91,0.55,0.76
-North West,2020-08-16,estimate based on partial data,0.64,0.36,0.93,0.52,0.75
-North West,2020-08-17,estimate based on partial data,0.63,0.33,0.93,0.49,0.72
+North West,2020-08-14,estimate based on partial data,0.66,0.41,0.92,0.56,0.77
+North West,2020-08-15,estimate based on partial data,0.65,0.39,0.93,0.5,0.72
+North West,2020-08-16,estimate based on partial data,0.64,0.36,0.93,0.49,0.72
+North West,2020-08-17,estimate based on partial data,0.63,0.35,0.95,0.52,0.76
+South East,2020-03-19,estimate,1.56,1.37,1.73,1.47,1.61
+South East,2020-03-20,estimate,1.52,1.38,1.68,1.45,1.57
+South East,2020-03-21,estimate,1.49,1.36,1.6,1.44,1.53
+South East,2020-03-22,estimate,1.44,1.35,1.54,1.4,1.48
+South East,2020-03-23,estimate,1.4,1.32,1.47,1.37,1.43
+South East,2020-03-24,estimate,1.35,1.28,1.41,1.32,1.37
+South East,2020-03-25,estimate,1.3,1.24,1.36,1.27,1.31
+South East,2020-03-26,estimate,1.24,1.19,1.31,1.22,1.27
+South East,2020-03-27,estimate,1.2,1.14,1.26,1.18,1.23
+South East,2020-03-28,estimate,1.15,1.08,1.21,1.13,1.18
+South East,2020-03-29,estimate,1.1,1.04,1.17,1.08,1.13
+South East,2020-03-30,estimate,1.06,0.99,1.13,1.03,1.09
+South East,2020-03-31,estimate,1.02,0.95,1.1,0.99,1.05
+South East,2020-04-01,estimate,0.99,0.92,1.06,0.96,1.02
 South East,2020-04-02,estimate,0.96,0.89,1.03,0.93,0.99
-South East,2020-04-03,estimate,0.93,0.87,1,0.9,0.96
-South East,2020-04-04,estimate,0.91,0.85,0.98,0.89,0.94
-South East,2020-04-05,estimate,0.89,0.84,0.96,0.87,0.92
+South East,2020-04-03,estimate,0.93,0.87,1,0.91,0.96
+South East,2020-04-04,estimate,0.91,0.85,0.97,0.88,0.94
+South East,2020-04-05,estimate,0.89,0.83,0.95,0.87,0.92
 South East,2020-04-06,estimate,0.88,0.82,0.94,0.86,0.9
-South East,2020-04-07,estimate,0.87,0.81,0.93,0.85,0.89
-South East,2020-04-08,estimate,0.86,0.8,0.91,0.84,0.88
-South East,2020-04-09,estimate,0.86,0.81,0.91,0.84,0.88
-South East,2020-04-10,estimate,0.86,0.81,0.91,0.83,0.87
-South East,2020-04-11,estimate,0.86,0.81,0.91,0.83,0.87
-South East,2020-04-12,estimate,0.86,0.81,0.92,0.84,0.88
-South East,2020-04-13,estimate,0.86,0.8,0.91,0.84,0.89
-South East,2020-04-14,estimate,0.87,0.81,0.92,0.84,0.89
+South East,2020-04-07,estimate,0.87,0.81,0.93,0.84,0.89
+South East,2020-04-08,estimate,0.86,0.81,0.92,0.84,0.89
+South East,2020-04-09,estimate,0.86,0.8,0.91,0.84,0.88
+South East,2020-04-10,estimate,0.86,0.8,0.91,0.84,0.88
+South East,2020-04-11,estimate,0.86,0.8,0.91,0.84,0.88
+South East,2020-04-12,estimate,0.86,0.8,0.91,0.84,0.88
+South East,2020-04-13,estimate,0.86,0.81,0.92,0.84,0.88
+South East,2020-04-14,estimate,0.87,0.81,0.93,0.84,0.88
 South East,2020-04-15,estimate,0.87,0.81,0.93,0.84,0.89
-South East,2020-04-16,estimate,0.87,0.81,0.93,0.85,0.9
-South East,2020-04-17,estimate,0.88,0.82,0.93,0.85,0.9
-South East,2020-04-18,estimate,0.88,0.82,0.94,0.85,0.9
-South East,2020-04-19,estimate,0.88,0.82,0.94,0.86,0.9
+South East,2020-04-16,estimate,0.87,0.82,0.94,0.85,0.89
+South East,2020-04-17,estimate,0.88,0.82,0.94,0.85,0.89
+South East,2020-04-18,estimate,0.88,0.82,0.94,0.86,0.9
+South East,2020-04-19,estimate,0.88,0.83,0.94,0.85,0.9
 South East,2020-04-20,estimate,0.88,0.83,0.94,0.86,0.9
-South East,2020-04-21,estimate,0.88,0.83,0.94,0.85,0.9
-South East,2020-04-22,estimate,0.88,0.83,0.94,0.86,0.91
-South East,2020-04-23,estimate,0.88,0.82,0.93,0.86,0.91
-South East,2020-04-24,estimate,0.88,0.82,0.94,0.85,0.9
-South East,2020-04-25,estimate,0.88,0.82,0.93,0.86,0.9
+South East,2020-04-21,estimate,0.88,0.83,0.94,0.86,0.9
+South East,2020-04-22,estimate,0.88,0.82,0.94,0.86,0.9
+South East,2020-04-23,estimate,0.88,0.83,0.94,0.86,0.9
+South East,2020-04-24,estimate,0.88,0.82,0.94,0.86,0.9
+South East,2020-04-25,estimate,0.87,0.82,0.93,0.85,0.9
 South East,2020-04-26,estimate,0.87,0.82,0.93,0.85,0.9
-South East,2020-04-27,estimate,0.87,0.82,0.93,0.85,0.9
-South East,2020-04-28,estimate,0.87,0.82,0.93,0.85,0.9
-South East,2020-04-29,estimate,0.87,0.81,0.93,0.84,0.89
-South East,2020-04-30,estimate,0.87,0.81,0.92,0.85,0.89
-South East,2020-05-01,estimate,0.87,0.81,0.93,0.85,0.9
-South East,2020-05-02,estimate,0.87,0.82,0.93,0.85,0.89
-South East,2020-05-03,estimate,0.88,0.82,0.94,0.85,0.9
-South East,2020-05-04,estimate,0.88,0.82,0.94,0.86,0.9
-South East,2020-05-05,estimate,0.89,0.83,0.95,0.86,0.91
-South East,2020-05-06,estimate,0.89,0.83,0.95,0.87,0.91
-South East,2020-05-07,estimate,0.9,0.84,0.96,0.87,0.92
-South East,2020-05-08,estimate,0.9,0.85,0.97,0.88,0.93
-South East,2020-05-09,estimate,0.91,0.85,0.98,0.88,0.93
+South East,2020-04-27,estimate,0.87,0.81,0.93,0.85,0.89
+South East,2020-04-28,estimate,0.87,0.81,0.93,0.85,0.9
+South East,2020-04-29,estimate,0.87,0.81,0.92,0.85,0.89
+South East,2020-04-30,estimate,0.87,0.81,0.93,0.85,0.89
+South East,2020-05-01,estimate,0.87,0.81,0.93,0.84,0.89
+South East,2020-05-02,estimate,0.87,0.81,0.93,0.85,0.89
+South East,2020-05-03,estimate,0.88,0.82,0.93,0.85,0.9
+South East,2020-05-04,estimate,0.88,0.82,0.94,0.85,0.9
+South East,2020-05-05,estimate,0.89,0.83,0.94,0.86,0.91
+South East,2020-05-06,estimate,0.89,0.83,0.95,0.87,0.92
+South East,2020-05-07,estimate,0.9,0.84,0.96,0.88,0.92
+South East,2020-05-08,estimate,0.91,0.84,0.96,0.88,0.93
+South East,2020-05-09,estimate,0.91,0.85,0.97,0.88,0.93
 South East,2020-05-10,estimate,0.92,0.86,0.98,0.89,0.94
 South East,2020-05-11,estimate,0.92,0.86,0.98,0.9,0.95
 South East,2020-05-12,estimate,0.93,0.86,0.99,0.9,0.95
-South East,2020-05-13,estimate,0.93,0.87,0.99,0.9,0.96
-South East,2020-05-14,estimate,0.93,0.87,0.99,0.91,0.96
-South East,2020-05-15,estimate,0.93,0.86,0.99,0.9,0.95
+South East,2020-05-13,estimate,0.93,0.87,0.99,0.9,0.95
+South East,2020-05-14,estimate,0.93,0.87,1,0.91,0.96
+South East,2020-05-15,estimate,0.93,0.87,1,0.9,0.95
 South East,2020-05-16,estimate,0.92,0.87,0.99,0.9,0.95
-South East,2020-05-17,estimate,0.92,0.86,0.98,0.89,0.94
-South East,2020-05-18,estimate,0.91,0.85,0.97,0.89,0.94
-South East,2020-05-19,estimate,0.9,0.85,0.96,0.88,0.92
-South East,2020-05-20,estimate,0.89,0.84,0.95,0.87,0.92
-South East,2020-05-21,estimate,0.88,0.82,0.94,0.86,0.9
-South East,2020-05-22,estimate,0.87,0.81,0.93,0.84,0.89
-South East,2020-05-23,estimate,0.86,0.8,0.92,0.83,0.88
-South East,2020-05-24,estimate,0.85,0.79,0.91,0.82,0.87
-South East,2020-05-25,estimate,0.84,0.78,0.9,0.82,0.87
-South East,2020-05-26,estimate,0.83,0.77,0.89,0.8,0.85
+South East,2020-05-17,estimate,0.92,0.86,0.99,0.89,0.94
+South East,2020-05-18,estimate,0.91,0.85,0.98,0.88,0.93
+South East,2020-05-19,estimate,0.9,0.85,0.97,0.87,0.92
+South East,2020-05-20,estimate,0.89,0.83,0.96,0.87,0.92
+South East,2020-05-21,estimate,0.88,0.83,0.95,0.86,0.91
+South East,2020-05-22,estimate,0.87,0.81,0.93,0.85,0.89
+South East,2020-05-23,estimate,0.86,0.8,0.92,0.84,0.89
+South East,2020-05-24,estimate,0.85,0.79,0.91,0.83,0.88
+South East,2020-05-25,estimate,0.84,0.78,0.9,0.81,0.86
+South East,2020-05-26,estimate,0.83,0.77,0.89,0.81,0.86
 South East,2020-05-27,estimate,0.82,0.76,0.88,0.8,0.85
 South East,2020-05-28,estimate,0.82,0.76,0.88,0.79,0.84
 South East,2020-05-29,estimate,0.81,0.75,0.87,0.79,0.84
-South East,2020-05-30,estimate,0.81,0.75,0.87,0.78,0.83
-South East,2020-05-31,estimate,0.81,0.75,0.87,0.78,0.83
+South East,2020-05-30,estimate,0.81,0.75,0.87,0.79,0.84
+South East,2020-05-31,estimate,0.81,0.75,0.87,0.79,0.84
 South East,2020-06-01,estimate,0.81,0.75,0.87,0.79,0.84
-South East,2020-06-02,estimate,0.82,0.76,0.88,0.79,0.84
-South East,2020-06-03,estimate,0.82,0.76,0.89,0.8,0.85
+South East,2020-06-02,estimate,0.81,0.76,0.88,0.79,0.84
+South East,2020-06-03,estimate,0.82,0.76,0.88,0.79,0.84
 South East,2020-06-04,estimate,0.83,0.77,0.89,0.8,0.85
-South East,2020-06-05,estimate,0.84,0.78,0.9,0.82,0.87
-South East,2020-06-06,estimate,0.85,0.79,0.91,0.82,0.87
-South East,2020-06-07,estimate,0.86,0.8,0.92,0.84,0.89
+South East,2020-06-05,estimate,0.84,0.77,0.9,0.81,0.86
+South East,2020-06-06,estimate,0.85,0.78,0.91,0.82,0.87
+South East,2020-06-07,estimate,0.86,0.8,0.92,0.83,0.88
 South East,2020-06-08,estimate,0.87,0.81,0.94,0.85,0.9
-South East,2020-06-09,estimate,0.88,0.82,0.95,0.85,0.9
-South East,2020-06-10,estimate,0.9,0.83,0.96,0.87,0.93
-South East,2020-06-11,estimate,0.91,0.84,0.98,0.88,0.94
-South East,2020-06-12,estimate,0.92,0.86,0.99,0.89,0.94
-South East,2020-06-13,estimate,0.93,0.86,1,0.9,0.96
+South East,2020-06-09,estimate,0.89,0.82,0.95,0.86,0.91
+South East,2020-06-10,estimate,0.9,0.83,0.96,0.87,0.92
+South East,2020-06-11,estimate,0.91,0.84,0.98,0.88,0.93
+South East,2020-06-12,estimate,0.92,0.86,0.99,0.89,0.95
+South East,2020-06-13,estimate,0.93,0.87,1,0.9,0.95
 South East,2020-06-14,estimate,0.94,0.87,1.01,0.91,0.96
-South East,2020-06-15,estimate,0.94,0.88,1.02,0.91,0.97
-South East,2020-06-16,estimate,0.95,0.88,1.03,0.92,0.97
-South East,2020-06-17,estimate,0.95,0.88,1.02,0.92,0.98
+South East,2020-06-15,estimate,0.94,0.88,1.01,0.91,0.97
+South East,2020-06-16,estimate,0.95,0.88,1.02,0.91,0.97
+South East,2020-06-17,estimate,0.95,0.88,1.02,0.92,0.97
 South East,2020-06-18,estimate,0.95,0.88,1.02,0.92,0.98
-South East,2020-06-19,estimate,0.95,0.87,1.02,0.92,0.98
-South East,2020-06-20,estimate,0.94,0.88,1.02,0.91,0.97
+South East,2020-06-19,estimate,0.95,0.88,1.02,0.92,0.97
+South East,2020-06-20,estimate,0.94,0.88,1.01,0.91,0.97
 South East,2020-06-21,estimate,0.94,0.87,1.01,0.91,0.96
-South East,2020-06-22,estimate,0.93,0.86,1,0.9,0.96
+South East,2020-06-22,estimate,0.93,0.87,1,0.91,0.96
 South East,2020-06-23,estimate,0.92,0.86,0.99,0.89,0.95
 South East,2020-06-24,estimate,0.92,0.85,0.98,0.89,0.94
-South East,2020-06-25,estimate,0.91,0.84,0.97,0.88,0.93
-South East,2020-06-26,estimate,0.9,0.84,0.97,0.87,0.92
-South East,2020-06-27,estimate,0.89,0.83,0.96,0.86,0.92
-South East,2020-06-28,estimate,0.88,0.82,0.95,0.86,0.91
-South East,2020-06-29,estimate,0.88,0.81,0.94,0.85,0.9
-South East,2020-06-30,estimate,0.87,0.8,0.94,0.85,0.9
-South East,2020-07-01,estimate,0.87,0.8,0.94,0.84,0.89
-South East,2020-07-02,estimate,0.86,0.79,0.93,0.84,0.89
-South East,2020-07-03,estimate,0.86,0.79,0.93,0.83,0.89
-South East,2020-07-04,estimate,0.86,0.79,0.93,0.83,0.89
-South East,2020-07-05,estimate,0.86,0.79,0.93,0.83,0.89
-South East,2020-07-06,estimate,0.86,0.79,0.92,0.83,0.89
-South East,2020-07-07,estimate,0.86,0.79,0.93,0.83,0.88
-South East,2020-07-08,estimate,0.86,0.79,0.93,0.83,0.89
-South East,2020-07-09,estimate,0.86,0.8,0.94,0.84,0.89
-South East,2020-07-10,estimate,0.86,0.8,0.93,0.84,0.89
-South East,2020-07-11,estimate,0.87,0.8,0.94,0.84,0.9
+South East,2020-06-25,estimate,0.91,0.84,0.97,0.88,0.94
+South East,2020-06-26,estimate,0.9,0.84,0.97,0.88,0.93
+South East,2020-06-27,estimate,0.89,0.83,0.96,0.87,0.92
+South East,2020-06-28,estimate,0.89,0.82,0.95,0.87,0.92
+South East,2020-06-29,estimate,0.88,0.81,0.94,0.86,0.91
+South East,2020-06-30,estimate,0.87,0.81,0.94,0.84,0.9
+South East,2020-07-01,estimate,0.87,0.8,0.94,0.84,0.9
+South East,2020-07-02,estimate,0.87,0.8,0.93,0.84,0.9
+South East,2020-07-03,estimate,0.86,0.79,0.93,0.84,0.9
+South East,2020-07-04,estimate,0.86,0.79,0.93,0.84,0.9
+South East,2020-07-05,estimate,0.86,0.78,0.92,0.84,0.89
+South East,2020-07-06,estimate,0.86,0.79,0.92,0.83,0.88
+South East,2020-07-07,estimate,0.86,0.78,0.92,0.83,0.88
+South East,2020-07-08,estimate,0.86,0.79,0.93,0.83,0.88
+South East,2020-07-09,estimate,0.86,0.79,0.93,0.83,0.89
+South East,2020-07-10,estimate,0.86,0.79,0.93,0.84,0.89
+South East,2020-07-11,estimate,0.87,0.79,0.93,0.84,0.89
 South East,2020-07-12,estimate,0.87,0.8,0.94,0.84,0.9
-South East,2020-07-13,estimate,0.87,0.8,0.94,0.85,0.91
-South East,2020-07-14,estimate,0.87,0.8,0.95,0.85,0.91
-South East,2020-07-15,estimate,0.88,0.8,0.95,0.85,0.91
-South East,2020-07-16,estimate,0.88,0.81,0.95,0.84,0.91
-South East,2020-07-17,estimate,0.88,0.81,0.96,0.85,0.91
-South East,2020-07-18,estimate,0.88,0.81,0.96,0.85,0.92
-South East,2020-07-19,estimate,0.88,0.81,0.96,0.86,0.92
-South East,2020-07-20,estimate,0.89,0.8,0.96,0.85,0.92
-South East,2020-07-21,estimate,0.89,0.81,0.97,0.86,0.92
-South East,2020-07-22,estimate,0.89,0.81,0.97,0.85,0.92
-South East,2020-07-23,estimate,0.89,0.81,0.97,0.85,0.92
-South East,2020-07-24,estimate,0.89,0.81,0.97,0.85,0.92
-South East,2020-07-25,estimate,0.89,0.81,0.98,0.86,0.93
-South East,2020-07-26,estimate,0.89,0.81,0.98,0.86,0.93
-South East,2020-07-27,estimate,0.89,0.81,0.98,0.87,0.93
-South East,2020-07-28,estimate,0.9,0.82,0.98,0.86,0.92
-South East,2020-07-29,estimate,0.9,0.81,0.98,0.87,0.93
-South East,2020-07-30,estimate,0.9,0.81,0.98,0.87,0.94
-South East,2020-07-31,estimate,0.9,0.82,0.99,0.86,0.93
+South East,2020-07-13,estimate,0.87,0.8,0.95,0.84,0.9
+South East,2020-07-14,estimate,0.87,0.8,0.95,0.84,0.9
+South East,2020-07-15,estimate,0.87,0.8,0.95,0.84,0.9
+South East,2020-07-16,estimate,0.88,0.81,0.95,0.85,0.9
+South East,2020-07-17,estimate,0.88,0.81,0.96,0.85,0.9
+South East,2020-07-18,estimate,0.88,0.81,0.96,0.85,0.91
+South East,2020-07-19,estimate,0.88,0.8,0.96,0.85,0.91
+South East,2020-07-20,estimate,0.88,0.81,0.96,0.85,0.91
+South East,2020-07-21,estimate,0.89,0.81,0.96,0.86,0.92
+South East,2020-07-22,estimate,0.89,0.81,0.96,0.86,0.92
+South East,2020-07-23,estimate,0.89,0.81,0.98,0.86,0.92
+South East,2020-07-24,estimate,0.89,0.81,0.98,0.86,0.92
+South East,2020-07-25,estimate,0.89,0.81,0.98,0.86,0.92
+South East,2020-07-26,estimate,0.89,0.81,0.98,0.86,0.92
+South East,2020-07-27,estimate,0.89,0.81,0.98,0.86,0.93
+South East,2020-07-28,estimate,0.9,0.81,0.98,0.86,0.93
+South East,2020-07-29,estimate,0.9,0.82,0.99,0.86,0.92
+South East,2020-07-30,estimate,0.9,0.82,0.99,0.86,0.93
+South East,2020-07-31,estimate,0.9,0.81,0.99,0.87,0.94
 South East,2020-08-01,estimate,0.9,0.81,0.99,0.86,0.94
-South East,2020-08-02,estimate,0.9,0.81,0.99,0.87,0.95
-South East,2020-08-03,estimate,0.91,0.8,1,0.86,0.94
+South East,2020-08-02,estimate,0.9,0.81,0.99,0.86,0.94
+South East,2020-08-03,estimate,0.91,0.81,1.01,0.87,0.95
 South East,2020-08-04,estimate,0.91,0.8,1.01,0.87,0.96
-South East,2020-08-05,estimate,0.91,0.79,1.02,0.86,0.96
-South East,2020-08-06,estimate,0.91,0.78,1.04,0.85,0.96
-South East,2020-08-07,estimate based on partial data,0.91,0.78,1.06,0.86,0.97
-South East,2020-08-08,estimate based on partial data,0.91,0.76,1.08,0.85,0.97
-South East,2020-08-09,estimate based on partial data,0.91,0.74,1.09,0.84,0.98
-South East,2020-08-10,estimate based on partial data,0.91,0.73,1.1,0.83,0.98
-South East,2020-08-11,estimate based on partial data,0.91,0.71,1.12,0.83,0.99
-South East,2020-08-12,estimate based on partial data,0.91,0.69,1.13,0.82,0.99
-South East,2020-08-13,estimate based on partial data,0.91,0.68,1.16,0.82,1
-South East,2020-08-14,estimate based on partial data,0.91,0.66,1.17,0.81,1
-South East,2020-08-15,estimate based on partial data,0.91,0.64,1.18,0.8,1
-South East,2020-08-16,estimate based on partial data,0.91,0.63,1.21,0.79,1.01
-South East,2020-08-17,estimate based on partial data,0.91,0.62,1.22,0.77,1
-South West,2020-04-02,estimate,0.97,0.9,1.05,0.94,1
-South West,2020-04-03,estimate,0.94,0.87,1.02,0.91,0.97
-South West,2020-04-04,estimate,0.92,0.85,0.99,0.88,0.94
-South West,2020-04-05,estimate,0.89,0.83,0.97,0.86,0.92
+South East,2020-08-05,estimate,0.91,0.79,1.02,0.87,0.97
+South East,2020-08-06,estimate,0.91,0.78,1.04,0.86,0.97
+South East,2020-08-07,estimate based on partial data,0.91,0.77,1.05,0.85,0.96
+South East,2020-08-08,estimate based on partial data,0.91,0.76,1.07,0.84,0.96
+South East,2020-08-09,estimate based on partial data,0.91,0.74,1.08,0.83,0.96
+South East,2020-08-10,estimate based on partial data,0.91,0.73,1.1,0.83,0.97
+South East,2020-08-11,estimate based on partial data,0.91,0.72,1.13,0.83,0.99
+South East,2020-08-12,estimate based on partial data,0.91,0.7,1.14,0.83,1
+South East,2020-08-13,estimate based on partial data,0.91,0.68,1.15,0.82,1
+South East,2020-08-14,estimate based on partial data,0.91,0.66,1.17,0.8,0.99
+South East,2020-08-15,estimate based on partial data,0.91,0.66,1.19,0.79,0.99
+South East,2020-08-16,estimate based on partial data,0.91,0.64,1.21,0.78,1
+South East,2020-08-17,estimate based on partial data,0.91,0.62,1.22,0.78,1.01
+South West,2020-03-19,estimate,1.43,1.25,1.62,1.35,1.5
+South West,2020-03-20,estimate,1.41,1.26,1.57,1.35,1.47
+South West,2020-03-21,estimate,1.39,1.26,1.51,1.34,1.44
+South West,2020-03-22,estimate,1.36,1.27,1.47,1.33,1.41
+South West,2020-03-23,estimate,1.33,1.24,1.41,1.3,1.36
+South West,2020-03-24,estimate,1.3,1.23,1.37,1.26,1.32
+South West,2020-03-25,estimate,1.26,1.2,1.33,1.23,1.28
+South West,2020-03-26,estimate,1.22,1.16,1.29,1.19,1.25
+South West,2020-03-27,estimate,1.18,1.12,1.25,1.16,1.21
+South West,2020-03-28,estimate,1.15,1.08,1.21,1.12,1.17
+South West,2020-03-29,estimate,1.11,1.04,1.18,1.08,1.13
+South West,2020-03-30,estimate,1.07,1,1.14,1.05,1.1
+South West,2020-03-31,estimate,1.03,0.96,1.1,1.01,1.07
+South West,2020-04-01,estimate,1,0.93,1.07,0.97,1.03
+South West,2020-04-02,estimate,0.97,0.89,1.03,0.94,0.99
+South West,2020-04-03,estimate,0.94,0.87,1,0.91,0.97
+South West,2020-04-04,estimate,0.91,0.84,0.98,0.89,0.94
+South West,2020-04-05,estimate,0.89,0.82,0.96,0.87,0.92
 South West,2020-04-06,estimate,0.87,0.81,0.94,0.85,0.9
-South West,2020-04-07,estimate,0.86,0.79,0.92,0.83,0.89
-South West,2020-04-08,estimate,0.85,0.78,0.91,0.83,0.88
-South West,2020-04-09,estimate,0.84,0.77,0.9,0.82,0.87
+South West,2020-04-07,estimate,0.86,0.79,0.92,0.83,0.88
+South West,2020-04-08,estimate,0.84,0.78,0.91,0.82,0.87
+South West,2020-04-09,estimate,0.83,0.77,0.89,0.81,0.86
 South West,2020-04-10,estimate,0.83,0.77,0.89,0.81,0.86
-South West,2020-04-11,estimate,0.83,0.76,0.89,0.81,0.86
-South West,2020-04-12,estimate,0.83,0.76,0.89,0.8,0.85
+South West,2020-04-11,estimate,0.83,0.77,0.89,0.8,0.85
+South West,2020-04-12,estimate,0.82,0.76,0.88,0.8,0.85
 South West,2020-04-13,estimate,0.83,0.77,0.89,0.8,0.85
 South West,2020-04-14,estimate,0.83,0.77,0.89,0.8,0.85
-South West,2020-04-15,estimate,0.83,0.77,0.89,0.81,0.86
-South West,2020-04-16,estimate,0.84,0.78,0.91,0.81,0.86
-South West,2020-04-17,estimate,0.85,0.79,0.91,0.82,0.87
-South West,2020-04-18,estimate,0.85,0.79,0.91,0.83,0.88
-South West,2020-04-19,estimate,0.86,0.8,0.92,0.83,0.88
-South West,2020-04-20,estimate,0.87,0.81,0.93,0.84,0.89
-South West,2020-04-21,estimate,0.88,0.81,0.94,0.85,0.9
-South West,2020-04-22,estimate,0.88,0.82,0.95,0.86,0.91
-South West,2020-04-23,estimate,0.89,0.83,0.96,0.86,0.91
-South West,2020-04-24,estimate,0.9,0.83,0.96,0.87,0.92
-South West,2020-04-25,estimate,0.9,0.83,0.97,0.88,0.93
-South West,2020-04-26,estimate,0.91,0.84,0.98,0.88,0.93
-South West,2020-04-27,estimate,0.91,0.84,0.98,0.88,0.93
-South West,2020-04-28,estimate,0.91,0.84,0.98,0.88,0.94
-South West,2020-04-29,estimate,0.91,0.85,0.98,0.89,0.94
-South West,2020-04-30,estimate,0.92,0.85,0.99,0.89,0.94
-South West,2020-05-01,estimate,0.92,0.85,0.99,0.89,0.94
-South West,2020-05-02,estimate,0.92,0.86,0.99,0.89,0.94
-South West,2020-05-03,estimate,0.92,0.86,0.99,0.89,0.95
-South West,2020-05-04,estimate,0.93,0.86,1,0.9,0.95
-South West,2020-05-05,estimate,0.93,0.86,1,0.9,0.96
-South West,2020-05-06,estimate,0.93,0.86,1,0.91,0.96
-South West,2020-05-07,estimate,0.94,0.86,1,0.91,0.96
+South West,2020-04-15,estimate,0.83,0.77,0.89,0.81,0.85
+South West,2020-04-16,estimate,0.84,0.78,0.9,0.81,0.86
+South West,2020-04-17,estimate,0.85,0.78,0.9,0.82,0.87
+South West,2020-04-18,estimate,0.85,0.8,0.92,0.83,0.88
+South West,2020-04-19,estimate,0.86,0.8,0.92,0.84,0.89
+South West,2020-04-20,estimate,0.87,0.81,0.93,0.85,0.9
+South West,2020-04-21,estimate,0.88,0.81,0.94,0.86,0.91
+South West,2020-04-22,estimate,0.89,0.82,0.95,0.86,0.92
+South West,2020-04-23,estimate,0.89,0.82,0.95,0.86,0.91
+South West,2020-04-24,estimate,0.9,0.83,0.96,0.87,0.93
+South West,2020-04-25,estimate,0.9,0.83,0.97,0.87,0.93
+South West,2020-04-26,estimate,0.91,0.84,0.97,0.87,0.93
+South West,2020-04-27,estimate,0.91,0.84,0.98,0.88,0.94
+South West,2020-04-28,estimate,0.91,0.84,0.98,0.89,0.94
+South West,2020-04-29,estimate,0.92,0.85,0.99,0.89,0.94
+South West,2020-04-30,estimate,0.92,0.85,0.99,0.89,0.95
+South West,2020-05-01,estimate,0.92,0.85,0.99,0.9,0.95
+South West,2020-05-02,estimate,0.92,0.86,0.99,0.89,0.95
+South West,2020-05-03,estimate,0.92,0.86,1,0.89,0.95
+South West,2020-05-04,estimate,0.93,0.86,0.99,0.9,0.95
+South West,2020-05-05,estimate,0.93,0.86,0.99,0.9,0.95
+South West,2020-05-06,estimate,0.93,0.86,1,0.9,0.96
+South West,2020-05-07,estimate,0.94,0.87,1.01,0.91,0.97
 South West,2020-05-08,estimate,0.94,0.87,1.01,0.91,0.97
-South West,2020-05-09,estimate,0.94,0.88,1.01,0.91,0.97
-South West,2020-05-10,estimate,0.95,0.88,1.02,0.92,0.97
-South West,2020-05-11,estimate,0.95,0.88,1.02,0.92,0.97
-South West,2020-05-12,estimate,0.95,0.88,1.03,0.92,0.97
-South West,2020-05-13,estimate,0.95,0.89,1.03,0.92,0.98
-South West,2020-05-14,estimate,0.95,0.88,1.02,0.92,0.97
-South West,2020-05-15,estimate,0.94,0.87,1.02,0.91,0.97
-South West,2020-05-16,estimate,0.94,0.87,1.01,0.91,0.97
-South West,2020-05-17,estimate,0.93,0.86,1.01,0.9,0.96
-South West,2020-05-18,estimate,0.92,0.85,1,0.88,0.94
+South West,2020-05-09,estimate,0.94,0.87,1.01,0.92,0.98
+South West,2020-05-10,estimate,0.95,0.88,1.02,0.92,0.98
+South West,2020-05-11,estimate,0.95,0.88,1.02,0.91,0.97
+South West,2020-05-12,estimate,0.95,0.88,1.02,0.92,0.97
+South West,2020-05-13,estimate,0.95,0.88,1.02,0.92,0.98
+South West,2020-05-14,estimate,0.95,0.87,1.02,0.91,0.97
+South West,2020-05-15,estimate,0.95,0.87,1.02,0.91,0.97
+South West,2020-05-16,estimate,0.94,0.87,1.02,0.9,0.96
+South West,2020-05-17,estimate,0.93,0.85,1,0.9,0.95
+South West,2020-05-18,estimate,0.92,0.86,1,0.89,0.95
 South West,2020-05-19,estimate,0.91,0.84,0.99,0.88,0.94
-South West,2020-05-20,estimate,0.9,0.83,0.97,0.87,0.92
-South West,2020-05-21,estimate,0.88,0.81,0.96,0.85,0.9
+South West,2020-05-20,estimate,0.9,0.83,0.97,0.86,0.92
+South West,2020-05-21,estimate,0.88,0.81,0.96,0.85,0.91
 South West,2020-05-22,estimate,0.87,0.8,0.94,0.83,0.89
-South West,2020-05-23,estimate,0.85,0.78,0.92,0.82,0.87
-South West,2020-05-24,estimate,0.83,0.77,0.9,0.8,0.86
+South West,2020-05-23,estimate,0.85,0.78,0.92,0.82,0.88
+South West,2020-05-24,estimate,0.83,0.76,0.9,0.8,0.86
 South West,2020-05-25,estimate,0.81,0.75,0.88,0.79,0.84
-South West,2020-05-26,estimate,0.79,0.73,0.86,0.77,0.82
-South West,2020-05-27,estimate,0.78,0.71,0.84,0.75,0.81
-South West,2020-05-28,estimate,0.76,0.69,0.83,0.74,0.79
-South West,2020-05-29,estimate,0.75,0.68,0.82,0.72,0.78
+South West,2020-05-26,estimate,0.8,0.73,0.87,0.77,0.82
+South West,2020-05-27,estimate,0.78,0.7,0.84,0.75,0.81
+South West,2020-05-28,estimate,0.76,0.69,0.83,0.74,0.8
+South West,2020-05-29,estimate,0.75,0.68,0.82,0.73,0.78
 South West,2020-05-30,estimate,0.74,0.66,0.81,0.71,0.77
 South West,2020-05-31,estimate,0.73,0.65,0.8,0.7,0.76
-South West,2020-06-01,estimate,0.72,0.65,0.8,0.69,0.75
-South West,2020-06-02,estimate,0.71,0.64,0.79,0.69,0.75
-South West,2020-06-03,estimate,0.71,0.64,0.79,0.68,0.74
-South West,2020-06-04,estimate,0.71,0.63,0.78,0.68,0.74
-South West,2020-06-05,estimate,0.71,0.64,0.79,0.69,0.75
+South West,2020-06-01,estimate,0.72,0.64,0.79,0.69,0.75
+South West,2020-06-02,estimate,0.71,0.63,0.79,0.69,0.75
+South West,2020-06-03,estimate,0.71,0.63,0.79,0.68,0.74
+South West,2020-06-04,estimate,0.71,0.63,0.79,0.68,0.74
+South West,2020-06-05,estimate,0.71,0.63,0.78,0.69,0.75
 South West,2020-06-06,estimate,0.72,0.64,0.79,0.69,0.75
-South West,2020-06-07,estimate,0.73,0.65,0.8,0.7,0.76
-South West,2020-06-08,estimate,0.74,0.66,0.81,0.71,0.77
-South West,2020-06-09,estimate,0.75,0.68,0.82,0.72,0.78
-South West,2020-06-10,estimate,0.76,0.69,0.83,0.73,0.79
+South West,2020-06-07,estimate,0.73,0.64,0.8,0.7,0.76
+South West,2020-06-08,estimate,0.74,0.65,0.8,0.71,0.77
+South West,2020-06-09,estimate,0.75,0.67,0.82,0.72,0.78
+South West,2020-06-10,estimate,0.76,0.69,0.84,0.73,0.79
 South West,2020-06-11,estimate,0.78,0.7,0.85,0.75,0.8
 South West,2020-06-12,estimate,0.79,0.72,0.87,0.76,0.82
-South West,2020-06-13,estimate,0.81,0.73,0.89,0.78,0.85
+South West,2020-06-13,estimate,0.81,0.73,0.89,0.78,0.84
 South West,2020-06-14,estimate,0.82,0.74,0.9,0.79,0.85
-South West,2020-06-15,estimate,0.84,0.75,0.92,0.8,0.87
+South West,2020-06-15,estimate,0.84,0.76,0.93,0.8,0.87
 South West,2020-06-16,estimate,0.85,0.77,0.95,0.81,0.88
-South West,2020-06-17,estimate,0.87,0.77,0.96,0.82,0.9
-South West,2020-06-18,estimate,0.88,0.78,0.97,0.83,0.91
-South West,2020-06-19,estimate,0.89,0.79,0.99,0.85,0.92
-South West,2020-06-20,estimate,0.9,0.8,1,0.86,0.94
-South West,2020-06-21,estimate,0.9,0.81,1.01,0.85,0.93
-South West,2020-06-22,estimate,0.91,0.81,1.01,0.86,0.94
-South West,2020-06-23,estimate,0.91,0.81,1.01,0.86,0.94
-South West,2020-06-24,estimate,0.91,0.81,1,0.86,0.93
-South West,2020-06-25,estimate,0.9,0.82,1.01,0.86,0.94
-South West,2020-06-26,estimate,0.9,0.82,1,0.85,0.93
-South West,2020-06-27,estimate,0.9,0.81,1,0.86,0.93
-South West,2020-06-28,estimate,0.89,0.8,0.98,0.86,0.93
-South West,2020-06-29,estimate,0.89,0.8,0.98,0.85,0.92
-South West,2020-06-30,estimate,0.89,0.79,0.98,0.84,0.91
-South West,2020-07-01,estimate,0.88,0.79,0.97,0.84,0.92
-South West,2020-07-02,estimate,0.88,0.78,0.97,0.85,0.92
+South West,2020-06-17,estimate,0.87,0.78,0.97,0.81,0.89
+South West,2020-06-18,estimate,0.88,0.79,0.98,0.83,0.91
+South West,2020-06-19,estimate,0.89,0.8,0.99,0.84,0.92
+South West,2020-06-20,estimate,0.9,0.8,1,0.85,0.93
+South West,2020-06-21,estimate,0.9,0.81,1.01,0.86,0.94
+South West,2020-06-22,estimate,0.91,0.81,1,0.86,0.94
+South West,2020-06-23,estimate,0.91,0.81,1,0.87,0.95
+South West,2020-06-24,estimate,0.91,0.81,1,0.87,0.95
+South West,2020-06-25,estimate,0.9,0.82,1,0.87,0.94
+South West,2020-06-26,estimate,0.9,0.81,0.99,0.86,0.93
+South West,2020-06-27,estimate,0.9,0.81,0.99,0.86,0.93
+South West,2020-06-28,estimate,0.89,0.8,0.99,0.85,0.92
+South West,2020-06-29,estimate,0.88,0.8,0.98,0.85,0.92
+South West,2020-06-30,estimate,0.88,0.79,0.98,0.84,0.92
+South West,2020-07-01,estimate,0.88,0.78,0.97,0.83,0.91
+South West,2020-07-02,estimate,0.87,0.78,0.97,0.84,0.91
 South West,2020-07-03,estimate,0.87,0.78,0.97,0.84,0.91
-South West,2020-07-04,estimate,0.87,0.77,0.97,0.84,0.92
-South West,2020-07-05,estimate,0.87,0.77,0.97,0.84,0.92
-South West,2020-07-06,estimate,0.88,0.77,0.97,0.84,0.92
-South West,2020-07-07,estimate,0.88,0.78,0.98,0.85,0.92
-South West,2020-07-08,estimate,0.88,0.78,0.98,0.85,0.93
-South West,2020-07-09,estimate,0.89,0.79,0.99,0.84,0.92
-South West,2020-07-10,estimate,0.9,0.79,0.99,0.85,0.93
-South West,2020-07-11,estimate,0.9,0.8,1,0.87,0.95
-South West,2020-07-12,estimate,0.91,0.81,1.01,0.88,0.96
-South West,2020-07-13,estimate,0.92,0.82,1.02,0.88,0.96
-South West,2020-07-14,estimate,0.93,0.83,1.03,0.89,0.97
+South West,2020-07-04,estimate,0.87,0.78,0.97,0.83,0.91
+South West,2020-07-05,estimate,0.87,0.77,0.96,0.83,0.91
+South West,2020-07-06,estimate,0.87,0.78,0.97,0.84,0.92
+South West,2020-07-07,estimate,0.88,0.78,0.97,0.84,0.91
+South West,2020-07-08,estimate,0.88,0.78,0.97,0.84,0.91
+South West,2020-07-09,estimate,0.89,0.8,0.99,0.85,0.93
+South West,2020-07-10,estimate,0.89,0.8,0.99,0.86,0.93
+South West,2020-07-11,estimate,0.9,0.8,1,0.87,0.94
+South West,2020-07-12,estimate,0.91,0.81,1,0.87,0.95
+South West,2020-07-13,estimate,0.92,0.82,1.02,0.87,0.95
+South West,2020-07-14,estimate,0.93,0.83,1.03,0.88,0.96
 South West,2020-07-15,estimate,0.93,0.83,1.03,0.89,0.97
-South West,2020-07-16,estimate,0.94,0.84,1.04,0.9,0.98
-South West,2020-07-17,estimate,0.95,0.85,1.05,0.91,0.99
+South West,2020-07-16,estimate,0.94,0.84,1.05,0.9,0.98
+South West,2020-07-17,estimate,0.95,0.84,1.05,0.9,0.99
 South West,2020-07-18,estimate,0.95,0.85,1.06,0.91,1
-South West,2020-07-19,estimate,0.96,0.86,1.06,0.91,0.99
-South West,2020-07-20,estimate,0.96,0.85,1.06,0.91,0.99
-South West,2020-07-21,estimate,0.96,0.86,1.08,0.91,1
-South West,2020-07-22,estimate,0.96,0.86,1.08,0.92,1
-South West,2020-07-23,estimate,0.96,0.86,1.08,0.91,1
-South West,2020-07-24,estimate,0.96,0.85,1.07,0.92,1
-South West,2020-07-25,estimate,0.96,0.85,1.07,0.92,1.01
-South West,2020-07-26,estimate,0.96,0.85,1.07,0.9,0.99
-South West,2020-07-27,estimate,0.96,0.85,1.07,0.9,0.99
-South West,2020-07-28,estimate,0.95,0.84,1.07,0.9,0.99
-South West,2020-07-29,estimate,0.95,0.84,1.07,0.9,0.99
+South West,2020-07-19,estimate,0.96,0.84,1.06,0.91,0.99
+South West,2020-07-20,estimate,0.96,0.85,1.07,0.92,1
+South West,2020-07-21,estimate,0.97,0.86,1.08,0.92,1.01
+South West,2020-07-22,estimate,0.97,0.86,1.07,0.92,1.01
+South West,2020-07-23,estimate,0.97,0.86,1.08,0.92,1.01
+South West,2020-07-24,estimate,0.97,0.85,1.07,0.92,1.01
+South West,2020-07-25,estimate,0.97,0.85,1.07,0.92,1
+South West,2020-07-26,estimate,0.96,0.85,1.08,0.91,1
+South West,2020-07-27,estimate,0.96,0.84,1.07,0.92,1
+South West,2020-07-28,estimate,0.96,0.84,1.07,0.92,1.01
+South West,2020-07-29,estimate,0.95,0.83,1.06,0.91,1
 South West,2020-07-30,estimate,0.95,0.83,1.06,0.9,0.99
-South West,2020-07-31,estimate,0.94,0.82,1.07,0.89,0.99
-South West,2020-08-01,estimate,0.94,0.82,1.07,0.89,0.99
-South West,2020-08-02,estimate,0.94,0.82,1.08,0.88,0.99
-South West,2020-08-03,estimate,0.94,0.8,1.08,0.89,1
-South West,2020-08-04,estimate,0.94,0.79,1.1,0.88,1
-South West,2020-08-05,estimate,0.94,0.79,1.12,0.86,0.99
-South West,2020-08-06,estimate,0.94,0.77,1.12,0.85,0.99
-South West,2020-08-07,estimate based on partial data,0.94,0.76,1.14,0.85,1
-South West,2020-08-08,estimate based on partial data,0.94,0.74,1.14,0.85,1.01
-South West,2020-08-09,estimate based on partial data,0.94,0.73,1.17,0.83,1.01
-South West,2020-08-10,estimate based on partial data,0.94,0.72,1.19,0.84,1.03
-South West,2020-08-11,estimate based on partial data,0.94,0.69,1.2,0.82,1.03
-South West,2020-08-12,estimate based on partial data,0.94,0.69,1.23,0.81,1.02
-South West,2020-08-13,estimate based on partial data,0.94,0.65,1.23,0.81,1.04
-South West,2020-08-14,estimate based on partial data,0.94,0.64,1.25,0.81,1.05
-South West,2020-08-15,estimate based on partial data,0.94,0.63,1.27,0.79,1.04
-South West,2020-08-16,estimate based on partial data,0.94,0.62,1.31,0.79,1.05
-South West,2020-08-17,estimate based on partial data,0.94,0.6,1.31,0.8,1.07
+South West,2020-07-31,estimate,0.95,0.82,1.06,0.9,1
+South West,2020-08-01,estimate,0.94,0.83,1.08,0.89,0.99
+South West,2020-08-02,estimate,0.94,0.8,1.07,0.88,0.99
+South West,2020-08-03,estimate,0.94,0.81,1.09,0.87,0.98
+South West,2020-08-04,estimate,0.94,0.79,1.09,0.87,0.99
+South West,2020-08-05,estimate,0.94,0.78,1.1,0.87,1
+South West,2020-08-06,estimate,0.94,0.78,1.12,0.85,0.99
+South West,2020-08-07,estimate based on partial data,0.94,0.76,1.13,0.86,1.01
+South West,2020-08-08,estimate based on partial data,0.94,0.75,1.15,0.85,1.01
+South West,2020-08-09,estimate based on partial data,0.94,0.73,1.16,0.86,1.04
+South West,2020-08-10,estimate based on partial data,0.94,0.72,1.18,0.83,1.02
+South West,2020-08-11,estimate based on partial data,0.94,0.69,1.19,0.83,1.04
+South West,2020-08-12,estimate based on partial data,0.94,0.68,1.21,0.82,1.04
+South West,2020-08-13,estimate based on partial data,0.94,0.67,1.24,0.84,1.07
+South West,2020-08-14,estimate based on partial data,0.94,0.63,1.24,0.83,1.07
+South West,2020-08-15,estimate based on partial data,0.94,0.62,1.26,0.8,1.06
+South West,2020-08-16,estimate based on partial data,0.94,0.63,1.3,0.79,1.06
+South West,2020-08-17,estimate based on partial data,0.94,0.61,1.31,0.78,1.06

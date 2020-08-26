@@ -40,6 +40,13 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
     return(warning("Missing days in date sequence"))
   }
   
+  # Set up log
+  setup_log <- function(threshold = "INFO", file = "info.log") {
+   futile.logger::flog.threshold(threshold)
+    futile.logger::flog.appender(futile.logger::appender.tee(file))
+    return(invisible(NULL))
+  }
+  
   
   # Set up common settings --------------------------------------------------
   
@@ -50,8 +57,8 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
                            generation_time = generation_time,
                            horizon = 0,
                            samples = 4000,
-                           warmup = 500,
-                           burn_in = 14,
+                           warmup = 1000,
+                           burn_in = 0,
                            adapt_delta = 0.99,
                            cores = no_cores,
                            chains = ifelse(no_cores <= 2, 2, no_cores),
