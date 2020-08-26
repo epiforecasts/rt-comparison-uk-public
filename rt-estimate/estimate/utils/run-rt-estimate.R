@@ -4,7 +4,8 @@ library(here)
 library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
-run_rt_estimate <- function(data, count_variable, reporting_delay) {
+run_rt_estimate <- function(data, count_variable, reporting_delay,
+                            burn_in = 0, family = "neg_bin") {
   
   for(i in 1:length(count_variable)){
     
@@ -58,10 +59,11 @@ run_rt_estimate <- function(data, count_variable, reporting_delay) {
                            horizon = 0,
                            samples = 4000,
                            warmup = 1000,
-                           burn_in = 0,
+                           burn_in = burn_in,
                            adapt_delta = 0.99,
                            cores = no_cores,
                            chains = ifelse(no_cores <= 2, 2, no_cores),
+                           family = family,
                            return_estimates = FALSE, verbose = TRUE)
 
   }

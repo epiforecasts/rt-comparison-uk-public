@@ -16,15 +16,24 @@ source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 # Run estimates -----------------------------------------------------------
 
 start <- Sys.time()
-
+# Deaths - publish date for nations, date of death for regions
 run_rt_estimate(data = data,
                 count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
-                reporting_delay = deaths_delay)
+                reporting_delay = deaths_delay,
+                family = "poisson")
+# Cases - publish date for nations, test date for regions
 run_rt_estimate(data = data,
-                count_variable = c("cases_blend", "cases_hosp"), #  "cases_test", "cases_publish"),
-                reporting_delay = cases_delay)
+                count_variable = c("cases_blend"), #  "cases_test", "cases_publish"),
+                reporting_delay = cases_delay,
+                family = "poisson")
+# Hospital admissions
+run_rt_estimate(data = data,
+                count_variable = c("cases_hosp"), #  "cases_test", "cases_publish"),
+                reporting_delay = cases_delay,
+                burn_in = 11, # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases)
+                family = "poisson")
 
 end <- Sys.time()
-(runtime <- end - start)
+runtime <- end - start
 saveRDS(runtime, "rt-estimate/three_var_runtime.rds")
 
