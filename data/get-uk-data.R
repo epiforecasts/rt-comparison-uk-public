@@ -12,8 +12,9 @@ structure <- list("date", "areaName",
                   "newCasesBySpecimenDate", "newCasesByPublishDate", "newAdmissions")
 names(structure) <- structure
 areaType <- list("nhsregion" = "areaType=nhsregion",
-                 "region" = "areaType=region",
-                 "nation" = "areaType=nation")
+                 "region" = "areaType=region" #,
+                 #"nation" = "areaType=nation"
+                 )
 
 # Get data
 raw <- purrr::map(areaType, ~ ukcovid19::get_data(filters = .x, structure = structure)) 
@@ -55,15 +56,11 @@ data <- data[, c("newDeaths28DaysByPublishDate", "newCasesByPublishDate") := NA]
 data <- merge(data, raw$nhsregion, by = c("date", "areaName"))
 
 # Bind regions with national
-data <- rbind(raw$nation, data)
+# data <- rbind(raw$nation, data)
 
-# Save region names for use elsewhere
-nations <- c("England", "Scotland", "Wales", "Northern Ireland")
-nhsregions <- unique(raw$nhsregion$areaName)
-region_names <- list("nation" = nations, "nhsregion" = nhsregions)
-saveRDS(region_names, "data/region_names.rds")
 
 # Add column to identify regions vs nations
+source("utils/utils.R")
 data$region_type <- ifelse(data$areaName %in% region_names$nation, "nation", "region")
 
 
@@ -75,7 +72,7 @@ old <- unlist(structure)
 new <- c("date", "region", "deaths_death", "deaths_publish",  "cases_test", "cases_publish", "cases_hosp")
 data <- data.table::setnames(data, old, new)
 
-# Set date sequence to start from 8th March (arbitrary)
+# Set date sequence to start from 1 Feb (arbitrary)
 data$date <- lubridate::ymd(data$date)
 data <- data[, .SD[date >= lubridate::ymd("2020-02-01")]]
 
@@ -91,7 +88,8 @@ if(length(seq.Date(from = min(data$date), to = max(data$date), by = 1))
   warning("Missing days in date sequence")
 }
 
+
+# Clean environment -------------------------------------------------------
+#
 rm(old, new, structure, areaType, raw, nations, nhsregions)
-
-
 

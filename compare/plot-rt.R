@@ -19,7 +19,7 @@ source("utils/utils.R")
 
 # Set y-axis
 scale_min <- 0
-scale_max <- 3
+scale_max <- 2.5
 
 # Plot
 plot_rt <- summary %>%
@@ -29,14 +29,15 @@ plot_rt <- summary %>%
   #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
   #            alpha = 0.1, size = 0.2) +
   geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(scale_min, scale_max)) +
+  coord_cartesian(ylim = c(scale_min, scale_max),
+                  xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
   scale_fill_manual(values = colours) +
   facet_wrap("region", nrow = 1) +
-  cowplot::theme_cowplot(font_size = 11) +
+  cowplot::theme_cowplot() +
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) +
   theme(axis.text.x = element_blank()) +
-  labs(title = "Rt estimate",
+  labs(subtitle = "Rt estimate",
        y = "R", x = "", col = "Data source", fill = "Data source") +
-  theme(legend.position = "top")
+  theme(legend.position = "none")

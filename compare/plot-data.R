@@ -2,8 +2,13 @@ require(dplyr)
 require(ggplot2)
 
 # Get count data ----------------------------------------------------------
-source("data/get-uk-data.R")
-# data <- readRDS("data/200823.rds")
+# If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
+if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
+  message("--- API failure - loading saved data ---")
+  data <- readRDS("data/200823.rds")
+} else {
+  source(here::here("data", "get-uk-data.R"))
+}
 
 # Get Rt estimate dates
 min_date <- readRDS("utils/earliest_estimate.rds")
@@ -53,33 +58,34 @@ data_ma <- standardised_data %>%
                                                      "cases_blend" = "Cases",
                                                      "cases_hosp" = "Hospital admissions",
                                                      "deaths_blend" = "Deaths"))
-  
-# comment on data by date difference
 
-# National -------------------------------------------------------------
+
+# Plot --------------------------------------------------------------------
 
 # Plot 7 day MA
 plot_ma <- data_ma %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
-  facet_wrap("region", nrow = 1, scales = "free_y") +
-  cowplot::theme_cowplot(font_size = 11) +
+  facet_wrap("region", nrow = 1) + #, scales = "free_y"
+  cowplot::theme_cowplot() +
+  coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(legend.position = "none") +
+  theme(legend.position="top", legend.box = "horizontal") +
   theme(axis.text.x = element_blank()) +
-  labs(title = "Smoothed counts", y = "Centred 7-day MA", x = "")
+  labs(subtitle = "Smoothed counts", y = "Centred 7-day MA", x = "")
 
 # Plot zscore
 plot_zscore <- data_zscore %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(zscore), colour = `Data source`)) +
   geom_hline(yintercept = 0, linetype = 2) +
-  facet_wrap("region", nrow = 1, scales = "free_y") +
-  cowplot::theme_cowplot(font_size = 11) +
+  coord_cartesian(xlim = c(date_min, date_max)) +
+  facet_wrap("region", nrow = 1) +
+  cowplot::theme_cowplot() +
   scale_color_manual(values = colours) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(legend.position = "none") +
+  theme(legend.position="bottom", legend.box = "horizontal") +
   theme(axis.text.x = element_blank()) +
-  labs(title = "Standardised raw counts", y = "z-score", x = "")
+  labs(subtitle = "Standardised raw counts", y = "z-score", x = "")
 

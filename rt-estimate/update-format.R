@@ -62,8 +62,8 @@ estimate_dates <- dplyr::group_by(summary, source, region) %>%
 saveRDS(max(estimate_dates$min_date), "utils/earliest_estimate.rds")
 saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
 
-summary_wide <- summary_wide %>%
-  dplyr::filter(date >= max(estimate_dates$min_date) & date <= min(estimate_dates$max_date))
+# summary_wide <- summary_wide %>%
+#   dplyr::filter(date >= max(estimate_dates$min_date) & date <= min(estimate_dates$max_date))
 
 if(length(seq.Date(from = min(summary_wide$date), to = max(summary_wide$date), by = 1)) 
    != (length(summary_wide$date) / length(unique(summary_wide$region)))) {
