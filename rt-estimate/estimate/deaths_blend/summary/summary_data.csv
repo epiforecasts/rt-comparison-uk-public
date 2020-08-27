@@ -1,0 +1,23 @@
+region,point,lower,upper,mid_lower,mid_upper,metric,Expected change in daily cases
+England,2,0,10,0,2,New confirmed cases by infection date,Unsure
+North East and Yorkshire,1,0,4,0,1,New confirmed cases by infection date,Unsure
+North West,1,0,4,0,1,New confirmed cases by infection date,Unsure
+Northern Ireland,1,0.53,1.65,0.76,1.15,Effective reproduction no.,Unsure
+London,0.98,0.24,1.88,0.54,1.15,Effective reproduction no.,Unsure
+South West,0.97,0.42,1.64,0.68,1.13,Effective reproduction no.,Unsure
+North East and Yorkshire,0.96,0.51,1.48,0.75,1.1,Effective reproduction no.,Unsure
+Scotland,0.82,0.23,1.72,0.5,0.98,Effective reproduction no.,Unsure
+East of England,0.81,0.1,1.73,0.41,0.99,Effective reproduction no.,Unsure
+North West,0.77,0.24,1.38,0.5,0.95,Effective reproduction no.,Unsure
+Wales,0.73,0.22,1.22,0.54,0.93,Effective reproduction no.,Likely decreasing
+Midlands,0.7,0.26,1.17,0.54,0.89,Effective reproduction no.,Likely decreasing
+England,0.69,0.23,1.27,0.41,0.81,Effective reproduction no.,Unsure
+South East,0.62,0.2,1.09,0.42,0.76,Effective reproduction no.,Likely decreasing
+East of England,0,0,2,0,0,New confirmed cases by infection date,Unsure
+London,0,0,4,0,0,New confirmed cases by infection date,Unsure
+Midlands,0,0,1,0,0,New confirmed cases by infection date,Likely decreasing
+Northern Ireland,0,0,1,0,0,New confirmed cases by infection date,Unsure
+Scotland,0,0,0,0,0,New confirmed cases by infection date,Unsure
+South East,0,0,0,0,0,New confirmed cases by infection date,Likely decreasing
+South West,0,0,2,0,0,New confirmed cases by infection date,Unsure
+Wales,0,0,1,0,0,New confirmed cases by infection date,Likely decreasing

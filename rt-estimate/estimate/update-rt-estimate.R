@@ -19,19 +19,16 @@ start <- Sys.time()
 # Cases - publish date for nations, test date for regions
 run_rt_estimate(data = data,
                 count_variable = c("cases_blend"), #  "cases_test", "cases_publish"),
-                reporting_delay = cases_delay,
-                family = "poisson")
+                reporting_delay = cases_delay)
 # Hospital admissions
 run_rt_estimate(data = data,
                 count_variable = c("cases_hosp"), #  "cases_test", "cases_publish"),
                 reporting_delay = cases_delay,
-                burn_in = 11, # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases)
-                family = "poisson")
+                burn_in = 11) # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases))
 # Deaths - publish date for nations, date of death for regions
 run_rt_estimate(data = data,
                 count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
-                reporting_delay = deaths_delay,
-                family = "poisson")
+                reporting_delay = deaths_delay)
 
 
 end <- Sys.time()
