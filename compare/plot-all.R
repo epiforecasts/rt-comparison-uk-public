@@ -79,6 +79,6 @@ plot_regional <- plot_ma +
   patchwork::plot_layout(nrow=6)
 
 ggsave(here::here("figures", paste0(Sys.Date(), "-regional_rt_and_ratios.pdf")),
-       plot_regional, dpi = 330, height = 15, width = 15)
+       plot_regional, dpi = 150, height = 15, width = 15)
 
 
