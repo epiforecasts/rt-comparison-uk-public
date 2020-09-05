@@ -29,7 +29,6 @@ scale_max <- 2.5
 
 # Plot - for plotting with all six plots
 plot_rt <- summary %>%
-  dplyr::filter(region %in% region_names$nhsregions) %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
   geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
              alpha = 0.1, size = 0.2) +
@@ -51,8 +50,7 @@ plot_rt <- summary %>%
 
    
 # Plot - for plotting with data only
-plot_rt <- summary %>%
-  dplyr::filter(region %in% region_names$nhsregions) %>%
+plot_rt_data <- summary %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
   geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
               alpha = 0.1, size = 0.2) +
@@ -74,7 +72,6 @@ plot_rt <- summary %>%
 
 # Plot - single Rt plot only
 plot_rt_only <- summary %>%
-  dplyr::filter(region %in% region_names$nhsregions) %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
   geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
               alpha = 0.1, size = 0.2) +
@@ -93,3 +90,32 @@ plot_rt_only <- summary %>%
   labs(subtitle = "Rt estimate",
        y = "R", x = "", col = "Data source", fill = "Data source") +
   theme(legend.position = "none")
+
+
+
+
+
+
+# National settings
+plot_rt_national <- summary %>%
+  ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
+  geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
+              alpha = 0.1, size = 0.2) +
+  #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
+  #            alpha = 0.1, size = 0.2) +
+  geom_hline(yintercept = 1, linetype = 2) +
+  coord_cartesian(ylim = c(scale_min, 3),
+                  xlim = c(date_min, date_max)) +
+  scale_color_manual(values = colours) +
+  scale_fill_manual(values = colours) +
+  facet_wrap("region", nrow = 1) +
+  cowplot::theme_cowplot() +
+  #theme(panel.spacing.x = unit(0.5, "cm")) +
+  theme(strip.text.x = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  labs(subtitle = "Rt estimate",
+       y = "R", x = "", col = "Data source", fill = "Data source") +
+  theme(legend.position = "none")
+
+
+

@@ -24,13 +24,30 @@ dates <- tibble::tibble(week = c(35:5),
 
 setting <- readxl::read_excel(path = tf,
                       sheet = grep("Outbreaks", sheets),
-                      range = readxl::cell_limits(c(9, 2), c(NA, NA))) %>%
-  dplyr::rename(week = ...1)
+                      range = readxl::cell_limits(c(9, 2), c(NA, NA)))
+# Drop unused columns and set colnames
+setting <- setting[,1:9]
+colnames(setting) <- c("week", "care_home", "hospital", "education", "prison", "workplace", "food", "other", "total")
 
-# Trim to weeks in other covid datasets (remove weeks from last year)
+# Set dates: drop non-covid weeks from last year and attach date
 setting <- setting[18:nrow(setting),]
+setting <- merge(setting, dates, by = "week")
+setting$week <- NULL
+setting <- setting %>%
+  tidyr::pivot_longer(cols = -c(date, total))
 
+plot_setting <- setting %>%
+  ggplot(aes(date, name)) + 
+  geom_tile(aes(fill = value)) + 
+  scale_fill_gradient(low = "white", high = "steelblue") +
+  theme_classic() +
+  labs(x = "", y = "", title = "Weekly number of outbreaks of any size 
+       reported by setting in England",
+       caption = "Number of confirmed outbreaks of acute respiratory infections 
+       i.e. two or more laboratory confirmed cases (COVID-19, influenza or 
+       other respiratory pathogen) linked to a particular setting")
 
+ggsave("figures/outbreaks-by-setting.png", plot_setting, width = 5, height = 5)
 
 # By age ------------------------------------------------------------------
 # #--- Weekly incidence per 100,000 population by age group by region, weeks 31-35
@@ -97,7 +114,7 @@ plot_age <- age_rates %>%
        title = "Rate of reported Covid-19 per 100,000 in England, 
        by source of data and age")
 
-ggsave("figures/rate_by_age_source.png", plot_age, width = 5, height = 4)
+ggsave("figures/rate-by-age-source.png", plot_age, width = 5, height = 4)
 
 
 

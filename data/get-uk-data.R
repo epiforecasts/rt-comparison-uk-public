@@ -3,6 +3,8 @@ library(magrittr)
 library(data.table)
 library(ukcovid19) # remotes::install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
 
+# Get national data?
+national_data = TRUE
 
 # Get data ----------------------------------------------------------------
 
@@ -11,10 +13,14 @@ structure <- list("date", "areaName",
                   "newDeaths28DaysByDeathDate",  "newDeaths28DaysByPublishDate",
                   "newCasesBySpecimenDate", "newCasesByPublishDate", "newAdmissions")
 names(structure) <- structure
+
 areaType <- list("nhsregion" = "areaType=nhsregion",
-                 "region" = "areaType=region" #,
-                 #"nation" = "areaType=nation"
-                 )
+                 "region" = "areaType=region")
+if(national_data){
+  areaType$nation = "areaType=nation"
+}
+
+
 
 # Get data
 raw <- purrr::map(areaType, ~ ukcovid19::get_data(filters = .x, structure = structure)) 
@@ -56,7 +62,9 @@ data <- data[, c("newDeaths28DaysByPublishDate", "newCasesByPublishDate") := NA]
 data <- merge(data, raw$nhsregion, by = c("date", "areaName"))
 
 # Bind regions with national
-# data <- rbind(raw$nation, data)
+if(national_data) {
+  data <- rbind(raw$nation, data)
+}
 
 
 # Add column to identify regions vs nations
@@ -91,5 +99,5 @@ if(length(seq.Date(from = min(data$date), to = max(data$date), by = 1))
 
 # Clean environment -------------------------------------------------------
 #
-rm(old, new, structure, areaType, raw, nations, nhsregions)
+rm(old, new, structure, areaType, raw)
 
