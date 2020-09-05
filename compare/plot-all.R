@@ -2,7 +2,8 @@
 
 # source("rt-estimate/update-format.R")
 
- 
+library(ggplot2); library(magrittr)
+
 # Get region names and plotting colours
 source("utils/utils.R")
 
@@ -81,4 +82,11 @@ plot_regional <- plot_ma +
 ggsave(here::here("figures", paste0(Sys.Date(), "-regional_rt_and_ratios.pdf")),
        plot_regional, dpi = 150, height = 15, width = 15)
 
+# Plot Rt and data
+plot_rt_data <- plot_ma_only +
+  plot_rt_only +
+  patchwork::plot_layout(ncol = 3)
+
+ggsave(here::here("figures", paste0(Sys.Date(), "-regional_rt_and_data.pdf")),
+       plot_rt_data, dpi = 150, height = 15, width = 15)
 

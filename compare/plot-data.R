@@ -75,6 +75,21 @@ plot_ma <- data_ma %>%
   theme(axis.text.x = element_blank()) +
   labs(subtitle = "Smoothed counts", y = "Centred 7-day MA", x = "")
 
+# Plot 7 day MA for use with 2 rows
+plot_ma_only <- data_ma %>%
+  ggplot() +
+  geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
+  facet_wrap("region", nrow = 2) + #, scales = "free_y"
+  cowplot::theme_cowplot() +
+  coord_cartesian(xlim = c(date_min, date_max)) +
+  scale_color_manual(values = colours) +
+  #theme(panel.spacing.x = unit(0.5, "cm")) +
+  #theme(legend.position="top", legend.box = "horizontal") +
+  #theme(axis.text.x = element_blank()) +
+  labs(subtitle = "Smoothed counts", y = "Centred 7-day MA", x = "")
+
+
+
 # Plot zscore
 plot_zscore <- data_zscore %>%
   ggplot() +
