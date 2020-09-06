@@ -84,6 +84,7 @@ sapply(april_aug[2:7], sd)
 
 
 # Bland-Altman plot
+library(ggplot2); library(dplyr)
 agreement <- summary_wide[summary_wide$region == "England" 
                           & summary_wide$date >= as.Date("2020-03-30") 
                           & summary_wide$date <= as.Date("2020-08-03"),]
@@ -100,7 +101,18 @@ ggplot(agreement, aes(x = avg_med_case_deaths, y = dif_med_case_deaths)) +
   ylab("Difference between median Rt estimates") +
   xlab("Average Rt estimate") +
   labs(title = "Limits of agreement between Rt estimates from 
-       community cases and deaths")
+       community cases and deaths") +
+  theme_classic()
 
 plot(agreement$median_cases_blend, agreement$median_cases_hosp)
 abline(0,1)
+
+
+
+
+
+
+
+
+
+
