@@ -1,11 +1,14 @@
 # Filtering Rt estimates for Results section of paper
 
+library(dplyr)
+summary_wide <- readRDS("rt-estimate/summary_wide.rds")
+
 # Statement:
 
 # ---1---
 # "...transmission estimated from all data sources rapidly declined 
 #  to an average of one onward case per infection."
-library(dplyr)
+
 
 april_aug <- summary_wide %>%
   filter(region %in% region_names$nhsregions) %>%
@@ -23,6 +26,23 @@ sapply(april_aug[2:7], sd)
 
 # between April 1st and July 31st, average 90% CIs were 0.89-1 (SD 0.1, 0.1) estimated from community cases, 
 # 0.81-0.95 (SD 0.06, 0.07) from hospital admissions, and 0.71-0.98 (SD 0.07, 0.1) from deaths, over that period.
+
+# August
+august <- summary_wide %>%
+  filter(region %in% region_names$nhsregions) %>%
+  group_by(region) %>%
+  filter(date > as.Date("2020-07-31")) %>%
+  summarise(#median
+    mean_cases_blend = mean(median_cases_blend, na.rm=T),
+    sd_cases_blend = sd(lower_90_cases_blend, na.rm=T),
+    mean_cases_hosp = mean(median_cases_hosp, na.rm=T),
+    sd_cases_hosp = sd(median_cases_hosp, na.rm=T),
+    mean_deaths_blend = mean(median_deaths_blend, na.rm=T),
+    sd_deaths_blend = sd(median_deaths_blend, na.rm=T))
+
+
+sapply(august[2:length(august)], mean)
+
 
 
 # Median estimates

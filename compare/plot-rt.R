@@ -18,69 +18,27 @@ max_date <- readRDS("utils/latest_estimate.rds")
 # Set data source names
 summary <- summary %>%
   dplyr::mutate('Data source' = dplyr::recode_factor(source, 
-                                                   "cases_blend" = "Cases",
+                                                   "cases_blend" = "Community",
                                                    "cases_hosp" = "Hospital admissions",
                                                    "deaths_blend" = "Deaths"))
               
-
 
 # Get region names and plotting colours
 source("utils/utils.R")
 
 
-
 # Set y-axis
-scale_min <- 0
+scale_min <- 0.5
 scale_max <- 2.5
-
-# Plot - for plotting with all six plots
-plot_rt <- summary %>%
-  ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
-  geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-             alpha = 0.1, size = 0.2) +
-  #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-  #            alpha = 0.1, size = 0.2) +
-  geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(scale_min, scale_max),
-                  xlim = c(date_min, date_max)) +
-  scale_color_manual(values = colours) +
-  scale_fill_manual(values = colours) +
-  facet_wrap("region", nrow = 1) +
-  cowplot::theme_cowplot() +
-  theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(strip.text.x = element_blank()) +
-  #theme(axis.text.x = element_blank()) +
-  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
-  theme(legend.position = "bottom")
-
-   
-# Plot - for plotting with data only
-plot_rt_data <- summary %>%
-  ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
-  geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-              alpha = 0.1, size = 0.2) +
-  #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-  #            alpha = 0.1, size = 0.2) +
-  geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(scale_min, scale_max),
-                  xlim = c(date_min, date_max)) +
-  scale_color_manual(values = colours) +
-  scale_fill_manual(values = colours) +
-  facet_wrap("region", nrow = 1) +
-  cowplot::theme_cowplot() +
-  theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(strip.text.x = element_blank()) +
-  theme(axis.text.x = element_blank()) +
-  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
-  theme(legend.position = "none")
 
 # Plot - single Rt plot only
 plot_rt_only <- summary %>%
+  mutate(date = as.Date(date, format = "%Y%M%D")) %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
   geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-              alpha = 0.1, size = 0.2) +
-  #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-  #            alpha = 0.1, size = 0.2) +
+              alpha = 0.2, colour = NA) +
+  # geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
+  #            alpha = 0.6, colour = NA) +
   geom_hline(yintercept = 1, linetype = 2) +
   coord_cartesian(ylim = c(scale_min, scale_max),
                   xlim = c(date_min, date_max)) +
@@ -91,30 +49,30 @@ plot_rt_only <- summary %>%
   theme(panel.spacing.x = unit(0.1, "cm")) +
   theme(strip.text.x = element_blank()) +
   #theme(axis.text.x = element_blank()) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b") +
   labs(y = "R", x = "", col = "Data source", fill = "Data source") +
   theme(legend.position = "none")
-
-
-
 
 
 
 # National settings
+
 plot_rt_national <- summary %>%
+  dplyr::filter(region %in% c("England") &
+                 date >= date_min & date <= date_max) %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
   geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-              alpha = 0.1, size = 0.2) +
-  #geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-  #            alpha = 0.1, size = 0.2) +
+              alpha = 0.2, size = 0, colour = NA) +
+  # geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
+  #            alpha = 0.8, colour = NA) +
   geom_hline(yintercept = 1, linetype = 2) +
-  coord_cartesian(ylim = c(scale_min, 3),
+  coord_cartesian(ylim = c(scale_min, scale_max),
                   xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
   scale_fill_manual(values = colours) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b") +
   cowplot::theme_cowplot() +
-  guides(colour = FALSE) +
   labs(y = "R", x = "", col = "Data source", fill = "Data source") +
-  theme(legend.position = "none")
-
-
+  theme(legend.position = "bottom") +
+  guides(colour = guide_legend(override.aes = list(alpha = 1)))
 

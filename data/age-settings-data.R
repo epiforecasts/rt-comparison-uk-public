@@ -107,14 +107,19 @@ plot_age <- age_rates %>%
   ggplot(aes(x = date, group = interaction(Age, `Data source`), colour = Age)) +
   geom_line(aes(y = value, linetype = `Data source`)) +
   theme_classic() +
+  facet_wrap("Age") +
   scale_colour_brewer(palette = "Dark2") +
-  theme(legend.position = c(0.85, 0.75)) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.box = "horizontal",
+        plot.margin = unit(c(1,1,1,1), units = "lines"),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 12)) +
   labs(y = "Weekly confirmed cases per 100,000 population",
-       x = "",
-       title = "Rate of reported Covid-19 per 100,000 in England, 
-       by source of data and age")
+       x = "")
 
-ggsave("figures/rate-by-age-source.png", plot_age, width = 5, height = 4)
+ggsave("figures/rate-by-age-source.png", plot_age, width = 6, height = 5)
 
 
 

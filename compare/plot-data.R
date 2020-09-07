@@ -26,10 +26,7 @@ standardised_data <- data %>%
   # Standardise by region
   dplyr::group_by(region) %>%
   #  - z-scores
-  dplyr::mutate(zcases_blend = scale(cases_blend, center = TRUE, scale = TRUE), 
-                zcases_hosp = scale(cases_hosp, center = TRUE, scale = TRUE), 
-                zdeaths_blend = scale(deaths_blend, center = TRUE, scale = TRUE),
-   #  - 7-day moving average
+  dplyr::mutate(# 7-day moving average
                 ma_cases_blend = forecast::ma(cases_blend, order = 7), 
                 ma_cases_hosp = forecast::ma(cases_hosp, order = 7), 
                 ma_deaths_blend = forecast::ma(deaths_blend, order = 7)) %>% 
@@ -39,16 +36,6 @@ standardised_data <- data %>%
 standardised_data$region = factor(standardised_data$region, 
                                levels = region_names$region_factor)
 
-
-# Plot-ready z-scores ----------------------------------------------------------------
-data_zscore <- standardised_data %>%
-  dplyr::select(date, region, region_type, dplyr::starts_with("z")) %>%
-  tidyr::pivot_longer(cols = dplyr::starts_with("z"), names_to = "variable", values_to = "zscore") %>%
-  dplyr::mutate(variable = stringr::str_remove_all(variable, "^z")) %>%
-  dplyr::mutate('Data source' = dplyr::recode_factor(variable, 
-                                                     "cases_blend" = "Cases",
-                                                     "cases_hosp" = "Hospital admissions",
-                                                     "deaths_blend" = "Deaths"))
 
 # Plot-ready 7-day MA ----------------------------------------------------------------
 data_ma <- standardised_data %>%
@@ -63,19 +50,6 @@ data_ma <- standardised_data %>%
 
 # Plot --------------------------------------------------------------------
 
-# Plot 7 day MA
-plot_ma <- data_ma %>%
-  ggplot() +
-  geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
-  facet_wrap("region", nrow = 1) + #, scales = "free_y"
-  cowplot::theme_cowplot() +
-  coord_cartesian(xlim = c(date_min, date_max)) +
-  scale_color_manual(values = colours) +
-  theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(legend.position="none") +
-  theme(axis.text.x = element_blank()) +
-  labs(y = "7-day MA", x = "")
-
 # Plot 7 day MA for use with 2 rows
 plot_ma_only <- data_ma %>%
   ggplot() +
@@ -84,6 +58,7 @@ plot_ma_only <- data_ma %>%
   cowplot::theme_cowplot() +
   coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
         panel.spacing.y = unit(0.1, "cm"),
         axis.text.x = element_blank()) +
@@ -93,30 +68,19 @@ plot_ma_only <- data_ma %>%
 
 # National - Plot 7 day MA for use with 2 rows
 plot_ma_only_national <- data_ma %>%
+  dplyr::filter(region %in% c("England")) %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
   cowplot::theme_cowplot() +
   coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
         panel.spacing.y = unit(0.1, "cm"),
-        axis.text.x = element_blank()) +
+        #axis.text.x = element_blank()
+        ) +
   guides(colour = FALSE) +
   labs(y = "7-day MA", x = "")
 
 
-
-# Plot zscore
-plot_zscore <- data_zscore %>%
-  ggplot() +
-  geom_line(aes(x = date, y = as.numeric(zscore), colour = `Data source`)) +
-  geom_hline(yintercept = 0, linetype = 2) +
-  coord_cartesian(xlim = c(date_min, date_max)) +
-  facet_wrap("region", nrow = 1) +
-  cowplot::theme_cowplot() +
-  scale_color_manual(values = colours) +
-  theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(legend.position="bottom", legend.box = "horizontal") +
-  theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Standardised raw counts", y = "z-score", x = "")
 

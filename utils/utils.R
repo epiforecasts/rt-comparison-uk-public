@@ -1,7 +1,8 @@
 # Plot colours
 # Data: data source
 colours <- c(
-  # Cases
+  # Community cases
+  "Community" = "#1b9e77",
   "Cases" = "#1b9e77",
   "cases_blend" = "#1b9e77",
   # Admissions
