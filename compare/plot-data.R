@@ -10,18 +10,19 @@ if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
   source(here::here("data", "get-uk-data.R"))
 }
 
-# Get Rt estimate dates
-min_date <- readRDS("utils/earliest_estimate.rds")
-max_date <- readRDS("utils/latest_estimate.rds")
-
 # Get region names and plotting colours
 source("utils/utils.R")
+
+# global variables:
+# date_min <- as.Date("2020-03-01")
+# date_max <-as.Date("2020-08-20")
+# theme_set(theme_classic(base_size = 12))
 
 # Standardise ----------------------------------------------------------------
 
 standardised_data <- data %>%
   # Filter before data truncation (where Rt is "estimate" not "based on partial data")
-  dplyr::filter(date >= min_date & date <= max_date) %>%
+  dplyr::filter(date >= date_min & date <= date_max) %>%
   # Standardise by region
   dplyr::group_by(region) %>%
   #  - z-scores
@@ -71,22 +72,37 @@ plot_ma <- data_ma %>%
   coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(legend.position="top", legend.box = "horizontal") +
+  theme(legend.position="none") +
   theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Smoothed counts", y = "Centred 7-day MA", x = "")
+  labs(y = "7-day MA", x = "")
 
 # Plot 7 day MA for use with 2 rows
 plot_ma_only <- data_ma %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
-  facet_wrap("region", nrow = 2) + #, scales = "free_y"
+  facet_wrap("region", nrow = 1) + #, scales = "free_y"
   cowplot::theme_cowplot() +
   coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
-  #theme(panel.spacing.x = unit(0.5, "cm")) +
-  #theme(legend.position="top", legend.box = "horizontal") +
-  #theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Smoothed counts", y = "Centred 7-day MA", x = "")
+  theme(panel.spacing.x = unit(0.1, "cm"),
+        panel.spacing.y = unit(0.1, "cm"),
+        axis.text.x = element_blank()) +
+  guides(colour = FALSE) +
+  labs(y = "7-day MA", x = "")
+
+
+# National - Plot 7 day MA for use with 2 rows
+plot_ma_only_national <- data_ma %>%
+  ggplot() +
+  geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
+  cowplot::theme_cowplot() +
+  coord_cartesian(xlim = c(date_min, date_max)) +
+  scale_color_manual(values = colours) +
+  theme(panel.spacing.x = unit(0.1, "cm"),
+        panel.spacing.y = unit(0.1, "cm"),
+        axis.text.x = element_blank()) +
+  guides(colour = FALSE) +
+  labs(y = "7-day MA", x = "")
 
 
 

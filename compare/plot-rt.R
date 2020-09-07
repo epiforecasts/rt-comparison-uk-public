@@ -11,6 +11,10 @@ library(magrittr); library(ggplot2)
 
 summary <- readRDS("rt-estimate/summary.rds")
 
+# Get Rt estimate dates
+min_date <- readRDS("utils/earliest_estimate.rds")
+max_date <- readRDS("utils/latest_estimate.rds")
+
 # Set data source names
 summary <- summary %>%
   dplyr::mutate('Data source' = dplyr::recode_factor(source, 
@@ -22,6 +26,8 @@ summary <- summary %>%
 
 # Get region names and plotting colours
 source("utils/utils.R")
+
+
 
 # Set y-axis
 scale_min <- 0
@@ -43,10 +49,9 @@ plot_rt <- summary %>%
   cowplot::theme_cowplot() +
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) +
-  theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Rt estimate",
-       y = "R", x = "", col = "Data source", fill = "Data source") +
-  theme(legend.position = "none")
+  #theme(axis.text.x = element_blank()) +
+  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
+  theme(legend.position = "bottom")
 
    
 # Plot - for plotting with data only
@@ -66,8 +71,7 @@ plot_rt_data <- summary %>%
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) +
   theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Rt estimate",
-       y = "R", x = "", col = "Data source", fill = "Data source") +
+  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
   theme(legend.position = "none")
 
 # Plot - single Rt plot only
@@ -82,13 +86,12 @@ plot_rt_only <- summary %>%
                   xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
   scale_fill_manual(values = colours) +
-  facet_wrap("region", nrow = 2) +
+  facet_wrap("region", nrow = 1) +
   cowplot::theme_cowplot() +
-  theme(panel.spacing.x = unit(0.5, "cm")) +
-  #theme(strip.text.x = element_blank()) +
+  theme(panel.spacing.x = unit(0.1, "cm")) +
+  theme(strip.text.x = element_blank()) +
   #theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Rt estimate",
-       y = "R", x = "", col = "Data source", fill = "Data source") +
+  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
   theme(legend.position = "none")
 
 
@@ -108,13 +111,9 @@ plot_rt_national <- summary %>%
                   xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
   scale_fill_manual(values = colours) +
-  facet_wrap("region", nrow = 1) +
   cowplot::theme_cowplot() +
-  #theme(panel.spacing.x = unit(0.5, "cm")) +
-  theme(strip.text.x = element_blank()) +
-  theme(axis.text.x = element_blank()) +
-  labs(subtitle = "Rt estimate",
-       y = "R", x = "", col = "Data source", fill = "Data source") +
+  guides(colour = FALSE) +
+  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
   theme(legend.position = "none")
 
 

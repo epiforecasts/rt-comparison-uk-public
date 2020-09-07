@@ -1,6 +1,12 @@
 # Plot ratios
 library(magrittr); library(ggplot2)
 
+
+# global variables:
+# date_min <- as.Date("2020-03-01")
+# date_max <-as.Date("2020-08-20")
+# theme_set(theme_classic(base_size = 12))
+
 # Get ratios --------------------------------------------------------------
 
 summary_wide <- readRDS("rt-estimate/summary_wide.rds")
@@ -17,7 +23,7 @@ source("utils/utils.R")
 
 
 # Scale limits
-scale_min <- 0.25
+scale_min <- 0.4
 scale_max <- 2
  
 # Plot ratios -------------------------------------------------------------
@@ -41,8 +47,7 @@ plot_ratio_caseb_deathb <- summary_ratios %>%
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) + # Remove dates
   theme(axis.text.x = element_blank()) + # Remove facet region name
-  labs(subtitle = "Rt(all cases) / Rt(deaths)", 
-       y = "Ratio", x = "")
+  labs(y = "Ratio", x = "")
 
 # Hospital admissions on deaths
 plot_ratio_hosp_deathb <- summary_ratios %>%
@@ -63,8 +68,7 @@ plot_ratio_hosp_deathb <- summary_ratios %>%
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) + 
   theme(axis.text.x = element_blank()) + 
-  labs(subtitle = "Rt(hospital admissions) / Rt(deaths)", 
-       y = "Ratio", x = "")
+  labs(y = "Ratio", x = "")
 
 # Cases by report date on hospital admissions
 plot_ratio_caseb_hosp <- summary_ratios %>%
@@ -85,8 +89,7 @@ plot_ratio_caseb_hosp <- summary_ratios %>%
   theme(panel.spacing.x = unit(0.5, "cm")) +
   theme(strip.text.x = element_blank()) +
   # theme(axis.text.x = element_blank()) + # Keep dates - bottom-most plot in grid
-  labs(subtitle = "Rt(all cases) / Rt(hospital admissions)", 
-       y = "Ratio", x = "")
+  labs(y = "Ratio", x = "")
 
 
 

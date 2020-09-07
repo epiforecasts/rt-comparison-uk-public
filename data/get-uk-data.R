@@ -3,7 +3,7 @@ library(magrittr)
 library(data.table)
 library(ukcovid19) # remotes::install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
 
-# Get national data?
+# Include national data?
 national_data = TRUE
 
 # Get data ----------------------------------------------------------------
