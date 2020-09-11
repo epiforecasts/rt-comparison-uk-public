@@ -4,16 +4,14 @@ colours <- c(
   # Community cases
   "Community" = "#1b9e77",
   "Cases" = "#1b9e77",
-  "cases_blend" = "#1b9e77",
+  "cases_blend" =  "#1b9e77",
   # Admissions
-  "Hospital admissions" = "#7570b3",
-  "cases_hosp" = "#7570b3",
+  "Hospital admissions" =  "#7570b3",
+  "cases_hosp" =  "#7570b3",
   # Deaths
   "Deaths" = "#d95f02",
   "deaths_blend" = "#d95f02"
   )
-
-# saveRDS(colours, "colours.rds")
 
 
 # Order nations and regions

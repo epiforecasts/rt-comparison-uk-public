@@ -54,11 +54,11 @@ data_ma <- standardised_data %>%
 plot_ma_only <- data_ma %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
-  facet_wrap("region", nrow = 1) + #, scales = "free_y"
+  facet_wrap("region", nrow = 1, scales = "free_y") +
   cowplot::theme_cowplot() +
   coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
-  scale_x_date(date_breaks = "2 months", date_labels = "%b") +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
         panel.spacing.y = unit(0.1, "cm"),
         axis.text.x = element_blank()) +
@@ -74,9 +74,9 @@ plot_ma_only_national <- data_ma %>%
   cowplot::theme_cowplot() +
   coord_cartesian(xlim = c(date_min, date_max)) +
   scale_color_manual(values = colours) +
-  scale_x_date(date_breaks = "2 months", date_labels = "%b") +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
-        panel.spacing.y = unit(0.1, "cm"),
+        panel.spacing.y = unit(0.1, "cm") #,
         #axis.text.x = element_blank()
         ) +
   guides(colour = FALSE) +

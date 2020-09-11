@@ -10,7 +10,7 @@ source("utils/utils.R")
 # Set global variables
 # consistent date axis:
 
-date_min <- as.Date("2020-03-01")
+date_min <- as.Date("2020-04-13")
 date_max <-as.Date("2020-08-20")
 theme_set(theme_classic(base_size = 12))
 
@@ -24,13 +24,19 @@ source("compare/plot-ratios.R")
 
 # Ratios
 plot_ratio_caseb_deathb$data <- plot_ratio_caseb_deathb$data %>%
-  dplyr::filter(region %in% region_names$nhsregions) 
+  dplyr::filter(region %in% region_names$nhsregions &
+                date >= date_min &
+                date <= date_max) 
 
 plot_ratio_caseb_hosp$data <- plot_ratio_caseb_hosp$data %>%
-  dplyr::filter(region %in% region_names$nhsregions)
+  dplyr::filter(region %in% region_names$nhsregions &
+                  date >= date_min &
+                  date <= date_max)
 
 plot_ratio_hosp_deathb$data <- plot_ratio_hosp_deathb$data %>%
-  dplyr::filter(region %in% region_names$nhsregions) 
+  dplyr::filter(region %in% region_names$nhsregions &
+                  date >= date_min &
+                  date <= date_max)
 
 plot_regional_ratios <- 
   plot_ratio_caseb_deathb +
@@ -40,7 +46,8 @@ plot_regional_ratios <-
   plot_annotation(tag_levels = "A") &
   theme(panel.spacing=unit(0.1, "lines"),
         plot.margin = unit(c(0.01,0.01,0.01,0.01), "lines"),
-        text = element_text(size = 20))
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45))
 
 ggsave(here::here("figures", paste0(Sys.Date(), "-regional_ratios.png")),
        plot_regional_ratios, dpi = 50, height = 13, width = 21)
@@ -64,10 +71,11 @@ plot_rt_data_regional <- plot_ma_only +
   patchwork::plot_annotation(tag_levels = "A") &
   theme(panel.spacing.y = unit(0, "mm"),
         legend.position = "bottom",
+        axis.text = element_text(size = 20),
         text = element_text(size = 20))
 
-ggsave(here::here("figures", paste0(Sys.Date(), "-regional_rt_and_data.png")),
-       plot_rt_data_regional, dpi = 50, height = 9, width = 20)
+ggsave(here::here("figures", paste0(Sys.Date(), "-regional_rt_and_data_median.png")),
+       plot_rt_data_regional, dpi = 50, height = 10, width = 25)
 
 
 # England national --------------------------------------------------------
@@ -90,5 +98,5 @@ plot_national <-
 
 
 
-ggsave(here::here("figures", paste0(Sys.Date(), "-national_rt_and_ratios.png")),
+ggsave(here::here("figures", paste0(Sys.Date(), "-national_rt_and_ratios_median.png")),
        plot_national, dpi = 90, height = 8, width = 10)
