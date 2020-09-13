@@ -46,11 +46,10 @@ plot_regional_ratios <-
   plot_annotation(tag_levels = "A") &
   theme(panel.spacing=unit(0.1, "lines"),
         plot.margin = unit(c(0.01,0.01,0.01,0.01), "lines"),
-        text = element_text(size = 20),
-        axis.text.x = element_text(angle = 45))
+        text = element_text(size = 20))
 
-ggsave(here::here("figures", paste0(Sys.Date(), "-regional_ratios.png")),
-       plot_regional_ratios, dpi = 50, height = 13, width = 21)
+ggsave(here::here("figures", paste0(Sys.Date(), "-regional_ratios_freey.png")),
+       plot_regional_ratios, dpi = 50, height = 15, width = 25)
 
 #subtitle = "Rt(community) / Rt(deaths)"
 #subtitle = "Rt(hospital) / Rt(deaths)", 
@@ -95,8 +94,6 @@ plot_national <-
   patchwork::plot_annotation(tag_levels = c("A")) +
   plot_layout(ncol = 2, guides = "collect") &
   theme(legend.position = "bottom")
-
-
 
 ggsave(here::here("figures", paste0(Sys.Date(), "-national_rt_and_ratios_median.png")),
        plot_national, dpi = 90, height = 8, width = 10)
