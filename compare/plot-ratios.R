@@ -49,7 +49,7 @@ plot_ratio_caseb_deathb <- summary_ratios %>%
   theme(strip.text.x = element_text(size = 18)) + ## Removes facet region name
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(size = 20)) + 
-  labs(y = "Rt(community) / Rt(deaths)", x = "")
+  labs(y = "Rt(community) / Rt(deaths)", x = NULL)
 
 # Hospital admissions on deaths
 plot_ratio_hosp_deathb <- summary_ratios %>%
@@ -72,7 +72,7 @@ plot_ratio_hosp_deathb <- summary_ratios %>%
   theme(strip.text.x = element_blank()) + 
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(size = 20)) + 
-  labs(y = "Rt(hospital) / Rt(deaths)",  x = "")
+  labs(y = "Rt(hospital) / Rt(deaths)",  x = NULL)
 
 # Cases by report date on hospital admissions
 plot_ratio_caseb_hosp <- summary_ratios %>%
@@ -95,7 +95,7 @@ plot_ratio_caseb_hosp <- summary_ratios %>%
         strip.text.x = element_blank(),
         axis.text.y = element_text(size = 20),
         axis.text.x = element_text(size = 20, angle = 45, hjust = 1)) + # Keep dates - bottom-most plot in grid
-  labs(y = "Rt(community) / Rt(hospital)", x = "")
+  labs(y = "Rt(community) / Rt(hospital)", x = NULL)
 
 
 
@@ -124,7 +124,7 @@ plot_national_ratio_caseb_deathb <- summary_ratios %>%
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   cowplot::theme_cowplot() +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  labs(y = "", x = "")
+  labs(y = NULL, x = NULL)
 
 # Hospital admissions on deaths
 plot_national_hosp_deathb <- summary_ratios %>%
@@ -146,7 +146,7 @@ plot_national_hosp_deathb <- summary_ratios %>%
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   cowplot::theme_cowplot() +
   theme(panel.spacing.x = unit(0.5, "cm")) +
-  labs(y = "",  x = "")
+  labs(y = NULL,  x = NULL)
 
 # Cases by report date on hospital admissions
 plot_national_caseb_hosp <- summary_ratios %>%
@@ -168,7 +168,7 @@ plot_national_caseb_hosp <- summary_ratios %>%
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   cowplot::theme_cowplot() +
   theme(panel.spacing.x = unit(0.5, "cm")) + # Keep dates - bottom-most plot in grid
-  labs(y = "", x = "")
+  labs(y = NULL, x = NULL)
 
 
 

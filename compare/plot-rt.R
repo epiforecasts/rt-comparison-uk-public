@@ -53,7 +53,7 @@ plot_rt_only <- summary %>%
   theme(strip.text.x = element_blank()) +
   #theme(axis.text.x = element_blank()) +
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
-  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
+  labs(y = "R", x = NULL, col = "Data source", fill = "Data source") +
   theme(legend.position = "none") +
   guides(fill = guide_legend(override.aes = list(alpha = 1)))
 
@@ -78,7 +78,7 @@ plot_rt_national <- summary %>%
   scale_fill_manual(values = colours) +
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   cowplot::theme_cowplot() +
-  labs(y = "R", x = "", col = "Data source", fill = "Data source") +
+  labs(y = "R", x = NULL, col = "Data source", fill = "Data source") +
   theme(legend.position = "bottom") +
   guides(colour = guide_legend(override.aes = list(alpha = 1)))
 

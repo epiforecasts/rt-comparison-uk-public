@@ -10,7 +10,7 @@ source("utils/utils.R")
 # Set global variables
 # consistent date axis:
 
-date_min <- as.Date("2020-04-13")
+date_min <- as.Date("2020-04-04")
 date_max <-as.Date("2020-08-20")
 theme_set(theme_classic(base_size = 12))
 
