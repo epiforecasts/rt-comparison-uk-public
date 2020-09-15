@@ -12,7 +12,7 @@ source("utils/utils.R")
 
 date_min <- as.Date("2020-04-04")
 date_max <-as.Date("2020-08-20")
-theme_set(theme_classic(base_size = 12))
+theme_set(theme_classic(base_size = 15))
 
 
 # Regional ----------------------------------------------------------------
@@ -90,9 +90,9 @@ plot_national <-
   {plot_national_ratio_caseb_deathb +
      plot_national_hosp_deathb +
      plot_national_caseb_hosp +
-      plot_layout(nrow= 3)} +
+      plot_layout(ncol= 3)} +
   patchwork::plot_annotation(tag_levels = c("A")) +
-  plot_layout(ncol = 2, guides = "collect") &
+  plot_layout(nrow = 2, guides = "collect") &
   theme(legend.position = "bottom")
 
 ggsave(here::here("figures", paste0(Sys.Date(), "-national_rt_and_ratios_median.png")),

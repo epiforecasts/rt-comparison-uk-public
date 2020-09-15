@@ -53,58 +53,57 @@ ggsave("figures/outbreaks-by-setting.png", plot_setting, width = 5, height = 5)
 
 # Population by age
 # Taken from ONS mid-year 2019: "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fpopulationandmigration%2fpopulationestimates%2fdatasets%2fpopulationestimatesforukenglandandwalesscotlandandnorthernireland%2fmid2019april2020localauthoritydistrictcodes/ukmidyearestimates20192020ladcodes.xls"
-pop <- tibble::tibble(pop = c(10192089, 21335397, 19981825, 4777650),
-                      age = c("a014", "a1544", "a4574", "a75"))
+pop <- tibble::tibble(age = as.character(c("a014", "a1544", "a4574", "a75", "total")),
+                  pop = as.numeric(c(10192089, 21335397, 19981825, 4777650, 56286961)))
 
 #--- Weekly hospital admission rate per 100,000 positive tests reported through CHESS, by age group
 age_admissions_chess <- readxl::read_excel(path = tf,
                               sheet = grep("CHESS - age group", sheets),
-                              range = readxl::cell_limits(c(9, 2), c(NA, NA)))
-colnames(age_admissions_chess) <- c("week", stringr::str_c("age_", stringr::str_replace_all(colnames(age_admissions_chess[2:length(age_admissions_chess)]), "-", "_")))
+                              range = readxl::cell_limits(c(9, 2), c(NA, NA)),
+                              col_types = "numeric")
 
 # Drop second table (ICU admission rates)
-age_admissions_chess <- age_admissions_chess[1:(grep("ICU", age_admissions_chess$age_0_4)-2),]
-
-# Set numeric
-age_admissions_chess[,1:8] <- sapply(age_admissions_chess[,1:8], as.numeric)
+age_admissions_chess <- age_admissions_chess[1:24,]
 
 # Group ages
-age_admissions_chess$a014 <- rowSums(age_admissions_chess[2:5])
-age_admissions_chess$a1544 <- rowSums(age_admissions_chess[6:8])
-age_admissions_chess$a4574 <- rowSums(age_admissions_chess[6:8])
-age_admissions_chess$a75 <- rowSums(age_admissions_chess[6:8])
+age_admissions_chess$a014 <- rowSums(age_admissions_chess[2:3])
+age_admissions_chess$a1544 <- rowSums(age_admissions_chess[4])
+age_admissions_chess$a4574 <- rowSums(age_admissions_chess[5:6]) 
+age_admissions_chess$a75 <- rowSums(age_admissions_chess[7:8])
+
+age_admissions_chess_transform <- age_admissions_chess[,9:12]
 
 
-# Total counts from rates
-age_admissions_chess[,2:8] <- sapply(age_admissions_chess[,2:8], function(x) x / 100000 * eng_pop)
+age_admissions_chess_transform$`0-14` <- (age_admissions_chess_transform$a014 / 100000 * dplyr::pull(pop[pop$age=="a014",2]))
+age_admissions_chess_transform$`15-44` <- (age_admissions_chess_transform$a1544 / 100000 * dplyr::pull(pop[pop$age=="a1544",2])) 
+age_admissions_chess_transform$`45-74` <- (age_admissions_chess_transform$a4574 / 100000 * dplyr::pull(pop[pop$age=="a4574",2])) 
+age_admissions_chess_transform$`75+` <- (age_admissions_chess_transform$a75 / 100000 * dplyr::pull(pop[pop$age=="a75",2]))
+age_admissions_chess_transform$total_cases <- rowSums(age_admissions_chess_transform[,5:8])
+
+
+age_admissions_chess_transform$`0-14` <- age_admissions_chess_transform$`0-14` / age_admissions_chess_transform$total_cases * 100
+age_admissions_chess_transform$`15-44` <- age_admissions_chess_transform$`15-44` / age_admissions_chess_transform$total_cases * 100
+age_admissions_chess_transform$`45-74` <- age_admissions_chess_transform$`45-74` / age_admissions_chess_transform$total_cases * 100
+age_admissions_chess_transform$`75+` <- age_admissions_chess_transform$`75+` / age_admissions_chess_transform$total_cases * 100
+
+age_admissions_chess_transform$week <- age_admissions_chess$...1
+age_admissions_chess_transform <- merge(age_admissions_chess_transform, dates, by = "week")
+
+age_admissions_chess_transform$young <- rowSums(age_admissions_chess_transform[,6:7])
 
 
 
-#--- Join hospital admission rates and positive test rates
-age_rates <- dplyr::filter(age_nation, week >= 12) %>%
-  dplyr::bind_rows(age_admissions_chess, .id = "Data source") %>%
-  dplyr::mutate(`Data source` = ifelse(`Data source` == 1, "Community", "Hospital admissions")) %>%
-  tidyr::pivot_longer(cols = -c(week, `Data source`), names_to = "Age") %>%
-  dplyr::left_join(dates, by = "week")
-
-
-plot_age <- age_rates %>%
-  ggplot(aes(x = date, group = interaction(Age, `Data source`), colour = Age)) +
-  geom_line(aes(y = value, linetype = `Data source`)) +
-  theme_classic() +
-  facet_wrap("Age") +
-  scale_colour_brewer(palette = "Dark2") +
-  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
+plot_chess_age <- age_admissions_chess_transform[,c(11, 6:9)] %>%
+  pivot_longer(cols = -date, names_to = "Age") %>%
+  ggplot(aes(fill = Age, x = date, y = value)) +
+  geom_bar(position = "stack", stat = "identity") +
+  labs(x = NULL, y = "Weekly hospital admissions, %") +
+  scale_fill_viridis_d(option = "D", direction = -1) +
+  coord_cartesian(xlim = c(min(age_admissions_chess_transform$date), max(summary_wide$date))) +
   theme(legend.position = "bottom",
-        legend.direction = "horizontal",
-        legend.box = "horizontal",
-        plot.margin = unit(c(1,1,1,1), units = "lines"),
-        strip.background = element_blank(),
-        strip.text = element_text(size = 12)) +
-  labs(y = "Weekly confirmed cases per 100,000 population",
-       x = "")
+        legend.title = element_blank())
 
-ggsave("figures/rate-by-age-source.png", plot_age, width = 6, height = 5)
+
 
 
 
@@ -133,20 +132,42 @@ case_age <- case_age_totals %>%
 case_age <- merge(case_age, dates, by = "week")
 case_age$total_cases <- rowSums(case_age[,2:11], na.rm=T)
 case_age$`0-19` <- rowSums(case_age[,2:4], na.rm=T) / case_age$total_cases * 100
-case_age$`20-59` <- rowSums(case_age[,5:8], na.rm=T) / case_age$total_cases * 100
-case_age$`60+` <- rowSums(case_age[,9:11], na.rm=T) / case_age$total_cases * 100
+# case_age$`20-59` <- rowSums(case_age[,5:8], na.rm=T) / case_age$total_cases * 100
+# case_age$`60+` <- rowSums(case_age[,9:11], na.rm=T) / case_age$total_cases * 100
 
+case_age$`20-49` <- rowSums(case_age[,5:7], na.rm=T) / case_age$total_cases * 100
+case_age$`50-69` <- rowSums(case_age[,8:9], na.rm=T) / case_age$total_cases * 100
+case_age$`70+` <- rowSums(case_age[,10:11], na.rm=T) / case_age$total_cases * 100
 
-plot_case_age <- case_age[,13:16] %>%
+case_age$young <- rowSums(case_age[,14:15], na.rm=T)
+
+plot_case_age <- case_age[,c(12,14:17)] %>%
   pivot_longer(cols = -date, names_to = "Age") %>%
   ggplot(aes(fill = Age, x = date, y = value)) +
   geom_bar(position = "stack", stat = "identity") +
   labs(x = NULL, y = "Weekly test-positive cases, %") +
   scale_fill_viridis_d(option = "D", direction = -1) +
   coord_cartesian(xlim = c(min(case_age$date), max(summary_wide$date))) +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom",
+        legend.title.align = 0)
   
-ggsave("figures/national_testcases_by_age.png")
+
+# Combine plots
+plot_case_age +
+  plot_chess_age +
+  patchwork::plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+
+ggsave("figures/national_cases_by_age.png")
+
+
+# Compare to Rt
+eng <- summary_wide[summary_wide$region == "England",]
+eng <- merge(eng, case_age[,c(12,18)], by = "date", all.x = TRUE)
+
+wave_case_hosp <- wave_features(eng, variable = "caseb_hosp_med", window = 7)
+wave_case_death <- wave_features(eng, variable = "caseb_deathb_med", window = 7)
+wave_hosp_death <- wave_features(eng, variable = "hosp_deathb_med", window = 7)
 
 # Positivity % by PHEC ----------------------------------------------------
 
@@ -192,6 +213,12 @@ source("utils/utils.R")
 #   tidyr::pivot_longer(cols = -date, names_to = "region", values_to = "pos_perc") %>%
 #   dplyr::group_by(region, date) %>%
 #   dplyr::summarise(pos_perc = mean(pos_perc, na.rm=T))
+
+xls_url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/914814/Weekly_COVID19_report_data_w36.xlsx"
+
+httr::GET(xls_url, httr::write_disk(tf <- tempfile(fileext = ".xlsx")))
+
+sheets <- readxl::excel_sheets(tf)
 
 # # Regional pillar 2
 raw_pos_pillar2 <- readxl::read_excel(path = tf,

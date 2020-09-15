@@ -17,7 +17,7 @@ source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 
 start <- Sys.time()
 # Cases - test date
-run_rt_estimate(data = data[data$region == "England",],
+run_rt_estimate(data = data[data$region == "England" & data$date <= as.Date("2020-08-30"),],
                 count_variable = c("cases_blend"), #  "cases_test", "cases_publish"),
                 reporting_delay = cases_delay)
 # Hospital admissions
@@ -26,7 +26,7 @@ run_rt_estimate(data = data[data$region == "England",],
 #                 reporting_delay = cases_delay,
 #                 burn_in = 11) # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases))
 # Deaths - date of death
-run_rt_estimate(data = data[data$region == "England",],
+run_rt_estimate(data = data[data$region == "England" & data$date <= as.Date("2020-08-30"),],
                 count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
                 reporting_delay = deaths_delay)
 
