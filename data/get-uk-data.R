@@ -62,7 +62,7 @@ data <- merge(data, raw$nhsregion, by = c("date", "areaName"))
 if(national_data) {
   data <- rbind(raw$nation, data)
   # Keep only England of the nations
-  data <- data[!areaName %in% c("Scotland", "Wales", "Northern Ireland")]
+  data <- data[!data$areaName %in% c("Scotland", "Wales", "Northern Ireland"),]
 }
 
 
@@ -77,7 +77,7 @@ data$region_type <- ifelse(data$areaName == "England", "nation", "region")
 # Rename
 data <- data.table::as.data.table(data)
 old <- unlist(structure)
-new <- c("date", "region", "deaths_blend",  "cases_blend", "cases_hosp")
+new <- c("date", "region", "deaths_death",  "cases_test", "cases_hosp")
 data <- data.table::setnames(data, old, new)
 
 # Set date sequence to start from 1 Feb (arbitrary)
@@ -87,7 +87,7 @@ data <- data[, .SD[date >= lubridate::ymd("2020-02-01")]]
 # Check date sequence is complete
 if(length(seq.Date(from = min(data$date), to = max(data$date), by = 1)) 
    != (length(data$date) / length(unique(data$region)))){
-  warning("Missing days in date sequence")
+  print("Missing/uneven days in date sequence")
 }
 
 
