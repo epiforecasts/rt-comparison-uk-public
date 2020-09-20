@@ -30,6 +30,40 @@ rt1 <- left_join(rt1_cases, rt1_hosp, by = "region") %>%
   dplyr::filter(region %in% region_names$nhsregions)
 
 
+# STL decomposition -------------------------------------------------------
+
+eng <- data[data$region == "Midlands",]
+eng <- merge(eng, summary_wide, by = c("region", "date"))
+
+
+eng_ts <- ts(eng$median_cases_hosp, start = min(eng$date), frequency = 7)
+
+eng_ts <- eng_ts[!is.na(eng_ts)]
+
+eng_ts %>%
+  forecast::mstl(robust=TRUE) %>%
+  forecast::autoplot()
+
+sts <- StructTS(eng_ts)
+sts$coef["slope"]
+
+plot(eng_ts) + 
+  abline(min(eng_ts, na.rm=T), StructTS(eng_ts[54:length(eng_ts)])$coef["slope"])
+
+eng_stl <- forecast::mstl(eng_ts)
+
+eng_ts %>%
+  decompose(type = "multiplicative") %>%
+  forecast::autoplot()
+
+fit <- eng_ts %>%
+  seasonal::seas(x11="")
+
+fit <- eng_ts %>% forecast::mstl()
+
+tc <- forecast::trendcycle(eng_stl)
+
+
 # Find peaks --------------------------------------------------------------
 # Example:
 # data <- summary_wide[summary_wide$region == "Scotland",]
