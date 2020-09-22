@@ -33,14 +33,7 @@ run_rt_estimate <- function(data, count_variable, reporting_delay,
   data_select <- data_select[, .SD[date <= (max(date) - lubridate::days(5))], by = region]
   
   data.table::setorder(data_select, date)
-  
-  # Check full date sequence
-  if(length(data_select$date) != 
-     (length(seq.Date(from = min(data_select$date), to = max(data_select$date), by = 1)) 
-        * length(unique(data_select$region)))) {
-    return(warning("Missing days in date sequence"))
-  }
-  
+
   # Set up log
   setup_log <- function(threshold = "INFO", file = "info.log") {
    futile.logger::flog.threshold(threshold)
@@ -58,7 +51,7 @@ run_rt_estimate <- function(data, count_variable, reporting_delay,
                            generation_time = generation_time,
                            horizon = 0,
                            samples = 2000,
-                           warmup = 2000,
+                           warmup = 1000,
                            burn_in = burn_in,
                            adapt_delta = 0.99,
                            cores = no_cores,

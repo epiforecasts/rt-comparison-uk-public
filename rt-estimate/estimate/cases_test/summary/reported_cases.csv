@@ -1,0 +1,1441 @@
+region,date,confirm
+England,2020-02-01,0
+England,2020-02-02,0
+England,2020-02-03,0
+England,2020-02-04,0
+England,2020-02-05,1
+England,2020-02-06,0
+England,2020-02-07,0
+England,2020-02-08,4
+England,2020-02-09,1
+England,2020-02-10,0
+England,2020-02-11,1
+England,2020-02-12,0
+England,2020-02-13,0
+England,2020-02-14,0
+England,2020-02-15,0
+England,2020-02-16,0
+England,2020-02-17,0
+England,2020-02-18,0
+England,2020-02-19,0
+England,2020-02-20,0
+England,2020-02-21,1
+England,2020-02-22,0
+England,2020-02-23,1
+England,2020-02-24,2
+England,2020-02-25,5
+England,2020-02-26,4
+England,2020-02-27,7
+England,2020-02-28,11
+England,2020-02-29,5
+England,2020-03-01,20
+England,2020-03-02,39
+England,2020-03-03,53
+England,2020-03-04,49
+England,2020-03-05,47
+England,2020-03-06,73
+England,2020-03-07,47
+England,2020-03-08,50
+England,2020-03-09,124
+England,2020-03-10,223
+England,2020-03-11,353
+England,2020-03-12,415
+England,2020-03-13,392
+England,2020-03-14,314
+England,2020-03-15,397
+England,2020-03-16,546
+England,2020-03-17,680
+England,2020-03-18,909
+England,2020-03-19,930
+East of England,2020-03-19,56
+London,2020-03-19,333
+Midlands,2020-03-19,189
+North East and Yorkshire,2020-03-19,74
+North West,2020-03-19,98
+South East,2020-03-19,127
+South West,2020-03-19,21
+England,2020-03-20,1082
+East of England,2020-03-20,70
+London,2020-03-20,426
+Midlands,2020-03-20,204
+North East and Yorkshire,2020-03-20,85
+North West,2020-03-20,82
+South East,2020-03-20,126
+South West,2020-03-20,43
+England,2020-03-21,1034
+East of England,2020-03-21,76
+London,2020-03-21,351
+Midlands,2020-03-21,194
+North East and Yorkshire,2020-03-21,100
+North West,2020-03-21,114
+South East,2020-03-21,129
+South West,2020-03-21,42
+England,2020-03-22,1209
+East of England,2020-03-22,91
+London,2020-03-22,437
+Midlands,2020-03-22,211
+North East and Yorkshire,2020-03-22,115
+North West,2020-03-22,117
+South East,2020-03-22,169
+South West,2020-03-22,44
+England,2020-03-23,2020
+East of England,2020-03-23,196
+London,2020-03-23,689
+Midlands,2020-03-23,357
+North East and Yorkshire,2020-03-23,203
+North West,2020-03-23,176
+South East,2020-03-23,281
+South West,2020-03-23,62
+England,2020-03-24,2027
+East of England,2020-03-24,165
+London,2020-03-24,637
+Midlands,2020-03-24,386
+North East and Yorkshire,2020-03-24,232
+North West,2020-03-24,255
+South East,2020-03-24,235
+South West,2020-03-24,68
+England,2020-03-25,2266
+East of England,2020-03-25,188
+London,2020-03-25,759
+Midlands,2020-03-25,356
+North East and Yorkshire,2020-03-25,227
+North West,2020-03-25,255
+South East,2020-03-25,305
+South West,2020-03-25,104
+England,2020-03-26,2614
+East of England,2020-03-26,215
+London,2020-03-26,766
+Midlands,2020-03-26,467
+North East and Yorkshire,2020-03-26,276
+North West,2020-03-26,358
+South East,2020-03-26,320
+South West,2020-03-26,119
+England,2020-03-27,2660
+East of England,2020-03-27,244
+London,2020-03-27,822
+Midlands,2020-03-27,416
+North East and Yorkshire,2020-03-27,256
+North West,2020-03-27,332
+South East,2020-03-27,332
+South West,2020-03-27,129
+England,2020-03-28,2375
+East of England,2020-03-28,183
+London,2020-03-28,577
+Midlands,2020-03-28,482
+North East and Yorkshire,2020-03-28,320
+North West,2020-03-28,322
+South East,2020-03-28,339
+South West,2020-03-28,102
+England,2020-03-29,2440
+East of England,2020-03-29,209
+London,2020-03-29,595
+Midlands,2020-03-29,495
+North East and Yorkshire,2020-03-29,336
+North West,2020-03-29,359
+South East,2020-03-29,295
+South West,2020-03-29,101
+England,2020-03-30,3526
+East of England,2020-03-30,300
+London,2020-03-30,870
+Midlands,2020-03-30,638
+North East and Yorkshire,2020-03-30,461
+North West,2020-03-30,507
+South East,2020-03-30,476
+South West,2020-03-30,163
+England,2020-03-31,3786
+East of England,2020-03-31,322
+London,2020-03-31,936
+Midlands,2020-03-31,688
+North East and Yorkshire,2020-03-31,530
+North West,2020-03-31,556
+South East,2020-03-31,470
+South West,2020-03-31,140
+England,2020-04-01,4100
+East of England,2020-04-01,333
+London,2020-04-01,980
+Midlands,2020-04-01,706
+North East and Yorkshire,2020-04-01,606
+North West,2020-04-01,617
+South East,2020-04-01,547
+South West,2020-04-01,183
+England,2020-04-02,4074
+East of England,2020-04-02,372
+London,2020-04-02,1071
+Midlands,2020-04-02,660
+North East and Yorkshire,2020-04-02,460
+North West,2020-04-02,681
+South East,2020-04-02,486
+South West,2020-04-02,183
+England,2020-04-03,4103
+East of England,2020-04-03,352
+London,2020-04-03,981
+Midlands,2020-04-03,632
+North East and Yorkshire,2020-04-03,554
+North West,2020-04-03,683
+South East,2020-04-03,521
+South West,2020-04-03,187
+England,2020-04-04,3385
+East of England,2020-04-04,269
+London,2020-04-04,766
+Midlands,2020-04-04,535
+North East and Yorkshire,2020-04-04,457
+North West,2020-04-04,602
+South East,2020-04-04,458
+South West,2020-04-04,174
+England,2020-04-05,3084
+East of England,2020-04-05,281
+London,2020-04-05,635
+Midlands,2020-04-05,438
+North East and Yorkshire,2020-04-05,440
+North West,2020-04-05,624
+South East,2020-04-05,424
+South West,2020-04-05,153
+England,2020-04-06,4390
+East of England,2020-04-06,385
+London,2020-04-06,860
+Midlands,2020-04-06,575
+North East and Yorkshire,2020-04-06,696
+North West,2020-04-06,872
+South East,2020-04-06,593
+South West,2020-04-06,186
+England,2020-04-07,4578
+East of England,2020-04-07,389
+London,2020-04-07,953
+Midlands,2020-04-07,614
+North East and Yorkshire,2020-04-07,689
+North West,2020-04-07,790
+South East,2020-04-07,717
+South West,2020-04-07,212
+England,2020-04-08,4300
+East of England,2020-04-08,409
+London,2020-04-08,874
+Midlands,2020-04-08,549
+North East and Yorkshire,2020-04-08,610
+North West,2020-04-08,850
+South East,2020-04-08,569
+South West,2020-04-08,236
+England,2020-04-09,4067
+East of England,2020-04-09,323
+London,2020-04-09,799
+Midlands,2020-04-09,578
+North East and Yorkshire,2020-04-09,619
+North West,2020-04-09,804
+South East,2020-04-09,525
+South West,2020-04-09,246
+England,2020-04-10,3577
+East of England,2020-04-10,319
+London,2020-04-10,614
+Midlands,2020-04-10,535
+North East and Yorkshire,2020-04-10,544
+North West,2020-04-10,601
+South East,2020-04-10,577
+South West,2020-04-10,234
+England,2020-04-11,3080
+East of England,2020-04-11,271
+London,2020-04-11,521
+Midlands,2020-04-11,427
+North East and Yorkshire,2020-04-11,528
+North West,2020-04-11,610
+South East,2020-04-11,383
+South West,2020-04-11,173
+England,2020-04-12,2946
+East of England,2020-04-12,260
+London,2020-04-12,500
+Midlands,2020-04-12,453
+North East and Yorkshire,2020-04-12,470
+North West,2020-04-12,488
+South East,2020-04-12,486
+South West,2020-04-12,178
+England,2020-04-13,3440
+East of England,2020-04-13,292
+London,2020-04-13,600
+Midlands,2020-04-13,452
+North East and Yorkshire,2020-04-13,558
+North West,2020-04-13,609
+South East,2020-04-13,577
+South West,2020-04-13,194
+England,2020-04-14,3565
+East of England,2020-04-14,289
+London,2020-04-14,605
+Midlands,2020-04-14,531
+North East and Yorkshire,2020-04-14,573
+North West,2020-04-14,633
+South East,2020-04-14,553
+South West,2020-04-14,185
+England,2020-04-15,4232
+East of England,2020-04-15,296
+London,2020-04-15,660
+Midlands,2020-04-15,605
+North East and Yorkshire,2020-04-15,758
+North West,2020-04-15,695
+South East,2020-04-15,710
+South West,2020-04-15,211
+England,2020-04-16,4366
+East of England,2020-04-16,337
+London,2020-04-16,576
+Midlands,2020-04-16,778
+North East and Yorkshire,2020-04-16,670
+North West,2020-04-16,779
+South East,2020-04-16,655
+South West,2020-04-16,262
+England,2020-04-17,4072
+East of England,2020-04-17,365
+London,2020-04-17,578
+Midlands,2020-04-17,701
+North East and Yorkshire,2020-04-17,644
+North West,2020-04-17,579
+South East,2020-04-17,705
+South West,2020-04-17,240
+England,2020-04-18,4123
+East of England,2020-04-18,329
+London,2020-04-18,402
+Midlands,2020-04-18,742
+North East and Yorkshire,2020-04-18,745
+North West,2020-04-18,858
+South East,2020-04-18,522
+South West,2020-04-18,168
+England,2020-04-19,3471
+East of England,2020-04-19,316
+London,2020-04-19,396
+Midlands,2020-04-19,586
+North East and Yorkshire,2020-04-19,693
+North West,2020-04-19,607
+South East,2020-04-19,414
+South West,2020-04-19,201
+England,2020-04-20,3692
+East of England,2020-04-20,363
+London,2020-04-20,434
+Midlands,2020-04-20,588
+North East and Yorkshire,2020-04-20,716
+North West,2020-04-20,673
+South East,2020-04-20,489
+South West,2020-04-20,182
+England,2020-04-21,3971
+East of England,2020-04-21,406
+London,2020-04-21,467
+Midlands,2020-04-21,710
+North East and Yorkshire,2020-04-21,638
+North West,2020-04-21,692
+South East,2020-04-21,632
+South West,2020-04-21,226
+England,2020-04-22,4796
+East of England,2020-04-22,522
+London,2020-04-22,396
+Midlands,2020-04-22,912
+North East and Yorkshire,2020-04-22,925
+North West,2020-04-22,911
+South East,2020-04-22,693
+South West,2020-04-22,286
+England,2020-04-23,4567
+East of England,2020-04-23,475
+London,2020-04-23,523
+Midlands,2020-04-23,823
+North East and Yorkshire,2020-04-23,779
+North West,2020-04-23,859
+South East,2020-04-23,684
+South West,2020-04-23,281
+England,2020-04-24,4364
+East of England,2020-04-24,423
+London,2020-04-24,378
+Midlands,2020-04-24,780
+North East and Yorkshire,2020-04-24,924
+North West,2020-04-24,750
+South East,2020-04-24,656
+South West,2020-04-24,250
+England,2020-04-25,3375
+East of England,2020-04-25,377
+London,2020-04-25,333
+Midlands,2020-04-25,631
+North East and Yorkshire,2020-04-25,629
+North West,2020-04-25,549
+South East,2020-04-25,518
+South West,2020-04-25,200
+England,2020-04-26,3135
+East of England,2020-04-26,358
+London,2020-04-26,310
+Midlands,2020-04-26,558
+North East and Yorkshire,2020-04-26,580
+North West,2020-04-26,428
+South East,2020-04-26,501
+South West,2020-04-26,254
+England,2020-04-27,4032
+East of England,2020-04-27,511
+London,2020-04-27,417
+Midlands,2020-04-27,736
+North East and Yorkshire,2020-04-27,794
+North West,2020-04-27,623
+South East,2020-04-27,555
+South West,2020-04-27,321
+England,2020-04-28,4120
+East of England,2020-04-28,464
+London,2020-04-28,311
+Midlands,2020-04-28,649
+North East and Yorkshire,2020-04-28,846
+North West,2020-04-28,708
+South East,2020-04-28,657
+South West,2020-04-28,276
+England,2020-04-29,4740
+East of England,2020-04-29,474
+London,2020-04-29,431
+Midlands,2020-04-29,819
+North East and Yorkshire,2020-04-29,1072
+North West,2020-04-29,796
+South East,2020-04-29,690
+South West,2020-04-29,348
+England,2020-04-30,4315
+East of England,2020-04-30,424
+London,2020-04-30,425
+Midlands,2020-04-30,745
+North East and Yorkshire,2020-04-30,962
+North West,2020-04-30,772
+South East,2020-04-30,651
+South West,2020-04-30,244
+England,2020-05-01,4095
+East of England,2020-05-01,494
+London,2020-05-01,356
+Midlands,2020-05-01,763
+North East and Yorkshire,2020-05-01,895
+North West,2020-05-01,727
+South East,2020-05-01,521
+South West,2020-05-01,264
+England,2020-05-02,2741
+East of England,2020-05-02,302
+London,2020-05-02,249
+Midlands,2020-05-02,516
+North East and Yorkshire,2020-05-02,568
+North West,2020-05-02,411
+South East,2020-05-02,414
+South West,2020-05-02,208
+England,2020-05-03,2634
+East of England,2020-05-03,317
+London,2020-05-03,167
+Midlands,2020-05-03,467
+North East and Yorkshire,2020-05-03,546
+North West,2020-05-03,492
+South East,2020-05-03,368
+South West,2020-05-03,176
+England,2020-05-04,2840
+East of England,2020-05-04,392
+London,2020-05-04,244
+Midlands,2020-05-04,470
+North East and Yorkshire,2020-05-04,583
+North West,2020-05-04,427
+South East,2020-05-04,489
+South West,2020-05-04,166
+England,2020-05-05,3149
+East of England,2020-05-05,332
+London,2020-05-05,221
+Midlands,2020-05-05,602
+North East and Yorkshire,2020-05-05,691
+North West,2020-05-05,577
+South East,2020-05-05,473
+South West,2020-05-05,173
+England,2020-05-06,3269
+East of England,2020-05-06,388
+London,2020-05-06,269
+Midlands,2020-05-06,648
+North East and Yorkshire,2020-05-06,656
+North West,2020-05-06,584
+South East,2020-05-06,444
+South West,2020-05-06,201
+England,2020-05-07,3199
+East of England,2020-05-07,396
+London,2020-05-07,271
+Midlands,2020-05-07,680
+North East and Yorkshire,2020-05-07,657
+North West,2020-05-07,508
+South East,2020-05-07,418
+South West,2020-05-07,180
+England,2020-05-08,2621
+East of England,2020-05-08,229
+London,2020-05-08,207
+Midlands,2020-05-08,609
+North East and Yorkshire,2020-05-08,511
+North West,2020-05-08,483
+South East,2020-05-08,354
+South West,2020-05-08,178
+England,2020-05-09,1791
+East of England,2020-05-09,202
+London,2020-05-09,127
+Midlands,2020-05-09,339
+North East and Yorkshire,2020-05-09,395
+North West,2020-05-09,344
+South East,2020-05-09,248
+South West,2020-05-09,106
+England,2020-05-10,2007
+East of England,2020-05-10,208
+London,2020-05-10,124
+Midlands,2020-05-10,415
+North East and Yorkshire,2020-05-10,446
+North West,2020-05-10,346
+South East,2020-05-10,310
+South West,2020-05-10,134
+England,2020-05-11,3069
+East of England,2020-05-11,390
+London,2020-05-11,159
+Midlands,2020-05-11,558
+North East and Yorkshire,2020-05-11,654
+North West,2020-05-11,529
+South East,2020-05-11,481
+South West,2020-05-11,255
+England,2020-05-12,2927
+East of England,2020-05-12,315
+London,2020-05-12,195
+Midlands,2020-05-12,629
+North East and Yorkshire,2020-05-12,595
+North West,2020-05-12,548
+South East,2020-05-12,412
+South West,2020-05-12,177
+England,2020-05-13,2880
+East of England,2020-05-13,329
+London,2020-05-13,204
+Midlands,2020-05-13,542
+North East and Yorkshire,2020-05-13,548
+North West,2020-05-13,525
+South East,2020-05-13,483
+South West,2020-05-13,176
+England,2020-05-14,2209
+East of England,2020-05-14,217
+London,2020-05-14,157
+Midlands,2020-05-14,484
+North East and Yorkshire,2020-05-14,493
+North West,2020-05-14,425
+South East,2020-05-14,295
+South West,2020-05-14,93
+England,2020-05-15,2129
+East of England,2020-05-15,211
+London,2020-05-15,131
+Midlands,2020-05-15,515
+North East and Yorkshire,2020-05-15,473
+North West,2020-05-15,392
+South East,2020-05-15,262
+South West,2020-05-15,103
+England,2020-05-16,1769
+East of England,2020-05-16,175
+London,2020-05-16,74
+Midlands,2020-05-16,431
+North East and Yorkshire,2020-05-16,385
+North West,2020-05-16,407
+South East,2020-05-16,192
+South West,2020-05-16,90
+England,2020-05-17,1592
+East of England,2020-05-17,153
+London,2020-05-17,79
+Midlands,2020-05-17,374
+North East and Yorkshire,2020-05-17,342
+North West,2020-05-17,304
+South East,2020-05-17,224
+South West,2020-05-17,97
+England,2020-05-18,2217
+East of England,2020-05-18,283
+London,2020-05-18,113
+Midlands,2020-05-18,479
+North East and Yorkshire,2020-05-18,408
+North West,2020-05-18,410
+South East,2020-05-18,363
+South West,2020-05-18,118
+England,2020-05-19,2582
+East of England,2020-05-19,254
+London,2020-05-19,132
+Midlands,2020-05-19,571
+North East and Yorkshire,2020-05-19,509
+North West,2020-05-19,579
+South East,2020-05-19,385
+South West,2020-05-19,108
+England,2020-05-20,2352
+East of England,2020-05-20,243
+London,2020-05-20,144
+Midlands,2020-05-20,526
+North East and Yorkshire,2020-05-20,427
+North West,2020-05-20,499
+South East,2020-05-20,343
+South West,2020-05-20,137
+England,2020-05-21,2275
+East of England,2020-05-21,246
+London,2020-05-21,158
+Midlands,2020-05-21,507
+North East and Yorkshire,2020-05-21,513
+North West,2020-05-21,426
+South East,2020-05-21,303
+South West,2020-05-21,88
+England,2020-05-22,1797
+East of England,2020-05-22,190
+London,2020-05-22,85
+Midlands,2020-05-22,435
+North East and Yorkshire,2020-05-22,363
+North West,2020-05-22,375
+South East,2020-05-22,246
+South West,2020-05-22,82
+England,2020-05-23,1297
+East of England,2020-05-23,149
+London,2020-05-23,65
+Midlands,2020-05-23,312
+North East and Yorkshire,2020-05-23,309
+North West,2020-05-23,288
+South East,2020-05-23,121
+South West,2020-05-23,41
+England,2020-05-24,1199
+East of England,2020-05-24,102
+London,2020-05-24,51
+Midlands,2020-05-24,279
+North East and Yorkshire,2020-05-24,281
+North West,2020-05-24,262
+South East,2020-05-24,150
+South West,2020-05-24,59
+England,2020-05-25,1380
+East of England,2020-05-25,147
+London,2020-05-25,58
+Midlands,2020-05-25,330
+North East and Yorkshire,2020-05-25,313
+North West,2020-05-25,268
+South East,2020-05-25,187
+South West,2020-05-25,61
+England,2020-05-26,1461
+East of England,2020-05-26,150
+London,2020-05-26,66
+Midlands,2020-05-26,311
+North East and Yorkshire,2020-05-26,332
+North West,2020-05-26,310
+South East,2020-05-26,180
+South West,2020-05-26,81
+England,2020-05-27,1616
+East of England,2020-05-27,149
+London,2020-05-27,84
+Midlands,2020-05-27,391
+North East and Yorkshire,2020-05-27,369
+North West,2020-05-27,294
+South East,2020-05-27,203
+South West,2020-05-27,104
+England,2020-05-28,1572
+East of England,2020-05-28,163
+London,2020-05-28,74
+Midlands,2020-05-28,346
+North East and Yorkshire,2020-05-28,323
+North West,2020-05-28,325
+South East,2020-05-28,202
+South West,2020-05-28,115
+England,2020-05-29,1372
+East of England,2020-05-29,161
+London,2020-05-29,57
+Midlands,2020-05-29,325
+North East and Yorkshire,2020-05-29,270
+North West,2020-05-29,303
+South East,2020-05-29,163
+South West,2020-05-29,73
+England,2020-05-30,997
+East of England,2020-05-30,83
+London,2020-05-30,39
+Midlands,2020-05-30,255
+North East and Yorkshire,2020-05-30,210
+North West,2020-05-30,215
+South East,2020-05-30,131
+South West,2020-05-30,51
+England,2020-05-31,985
+East of England,2020-05-31,61
+London,2020-05-31,38
+Midlands,2020-05-31,226
+North East and Yorkshire,2020-05-31,222
+North West,2020-05-31,234
+South East,2020-05-31,134
+South West,2020-05-31,62
+England,2020-06-01,1313
+East of England,2020-06-01,139
+London,2020-06-01,49
+Midlands,2020-06-01,342
+North East and Yorkshire,2020-06-01,261
+North West,2020-06-01,261
+South East,2020-06-01,185
+South West,2020-06-01,51
+England,2020-06-02,1358
+East of England,2020-06-02,131
+London,2020-06-02,49
+Midlands,2020-06-02,345
+North East and Yorkshire,2020-06-02,256
+North West,2020-06-02,285
+South East,2020-06-02,221
+South West,2020-06-02,51
+England,2020-06-03,1243
+East of England,2020-06-03,123
+London,2020-06-03,79
+Midlands,2020-06-03,296
+North East and Yorkshire,2020-06-03,257
+North West,2020-06-03,257
+South East,2020-06-03,137
+South West,2020-06-03,69
+England,2020-06-04,1145
+East of England,2020-06-04,93
+London,2020-06-04,57
+Midlands,2020-06-04,279
+North East and Yorkshire,2020-06-04,238
+North West,2020-06-04,238
+South East,2020-06-04,160
+South West,2020-06-04,65
+England,2020-06-05,1021
+East of England,2020-06-05,109
+London,2020-06-05,47
+Midlands,2020-06-05,257
+North East and Yorkshire,2020-06-05,197
+North West,2020-06-05,204
+South East,2020-06-05,139
+South West,2020-06-05,51
+England,2020-06-06,722
+East of England,2020-06-06,93
+London,2020-06-06,46
+Midlands,2020-06-06,182
+North East and Yorkshire,2020-06-06,149
+North West,2020-06-06,132
+South East,2020-06-06,85
+South West,2020-06-06,23
+England,2020-06-07,664
+East of England,2020-06-07,46
+London,2020-06-07,45
+Midlands,2020-06-07,192
+North East and Yorkshire,2020-06-07,166
+North West,2020-06-07,129
+South East,2020-06-07,61
+South West,2020-06-07,18
+England,2020-06-08,989
+East of England,2020-06-08,95
+London,2020-06-08,56
+Midlands,2020-06-08,293
+North East and Yorkshire,2020-06-08,222
+North West,2020-06-08,165
+South East,2020-06-08,123
+South West,2020-06-08,23
+England,2020-06-09,1056
+East of England,2020-06-09,130
+London,2020-06-09,71
+Midlands,2020-06-09,278
+North East and Yorkshire,2020-06-09,211
+North West,2020-06-09,218
+South East,2020-06-09,113
+South West,2020-06-09,26
+England,2020-06-10,1085
+East of England,2020-06-10,118
+London,2020-06-10,53
+Midlands,2020-06-10,258
+North East and Yorkshire,2020-06-10,263
+North West,2020-06-10,224
+South East,2020-06-10,127
+South West,2020-06-10,31
+England,2020-06-11,917
+East of England,2020-06-11,71
+London,2020-06-11,47
+Midlands,2020-06-11,274
+North East and Yorkshire,2020-06-11,220
+North West,2020-06-11,176
+South East,2020-06-11,94
+South West,2020-06-11,25
+England,2020-06-12,938
+East of England,2020-06-12,66
+London,2020-06-12,54
+Midlands,2020-06-12,250
+North East and Yorkshire,2020-06-12,287
+North West,2020-06-12,168
+South East,2020-06-12,87
+South West,2020-06-12,19
+England,2020-06-13,787
+East of England,2020-06-13,90
+London,2020-06-13,39
+Midlands,2020-06-13,218
+North East and Yorkshire,2020-06-13,224
+North West,2020-06-13,128
+South East,2020-06-13,66
+South West,2020-06-13,14
+England,2020-06-14,746
+East of England,2020-06-14,73
+London,2020-06-14,31
+Midlands,2020-06-14,220
+North East and Yorkshire,2020-06-14,190
+North West,2020-06-14,148
+South East,2020-06-14,72
+South West,2020-06-14,9
+England,2020-06-15,937
+East of England,2020-06-15,112
+London,2020-06-15,41
+Midlands,2020-06-15,267
+North East and Yorkshire,2020-06-15,221
+North West,2020-06-15,164
+South East,2020-06-15,98
+South West,2020-06-15,20
+England,2020-06-16,993
+East of England,2020-06-16,107
+London,2020-06-16,47
+Midlands,2020-06-16,266
+North East and Yorkshire,2020-06-16,234
+North West,2020-06-16,211
+South East,2020-06-16,96
+South West,2020-06-16,15
+England,2020-06-17,911
+East of England,2020-06-17,77
+London,2020-06-17,43
+Midlands,2020-06-17,244
+North East and Yorkshire,2020-06-17,249
+North West,2020-06-17,183
+South East,2020-06-17,81
+South West,2020-06-17,16
+England,2020-06-18,942
+East of England,2020-06-18,82
+London,2020-06-18,46
+Midlands,2020-06-18,252
+North East and Yorkshire,2020-06-18,280
+North West,2020-06-18,178
+South East,2020-06-18,75
+South West,2020-06-18,13
+England,2020-06-19,816
+East of England,2020-06-19,74
+London,2020-06-19,37
+Midlands,2020-06-19,205
+North East and Yorkshire,2020-06-19,217
+North West,2020-06-19,168
+South East,2020-06-19,80
+South West,2020-06-19,24
+England,2020-06-20,629
+East of England,2020-06-20,31
+London,2020-06-20,28
+Midlands,2020-06-20,193
+North East and Yorkshire,2020-06-20,179
+North West,2020-06-20,118
+South East,2020-06-20,66
+South West,2020-06-20,8
+England,2020-06-21,550
+East of England,2020-06-21,57
+London,2020-06-21,27
+Midlands,2020-06-21,168
+North East and Yorkshire,2020-06-21,120
+North West,2020-06-21,99
+South East,2020-06-21,67
+South West,2020-06-21,8
+England,2020-06-22,816
+East of England,2020-06-22,74
+London,2020-06-22,51
+Midlands,2020-06-22,245
+North East and Yorkshire,2020-06-22,180
+North West,2020-06-22,159
+South East,2020-06-22,78
+South West,2020-06-22,19
+England,2020-06-23,728
+East of England,2020-06-23,44
+London,2020-06-23,49
+Midlands,2020-06-23,222
+North East and Yorkshire,2020-06-23,198
+North West,2020-06-23,127
+South East,2020-06-23,60
+South West,2020-06-23,15
+England,2020-06-24,729
+East of England,2020-06-24,61
+London,2020-06-24,46
+Midlands,2020-06-24,227
+North East and Yorkshire,2020-06-24,168
+North West,2020-06-24,159
+South East,2020-06-24,44
+South West,2020-06-24,16
+England,2020-06-25,637
+East of England,2020-06-25,38
+London,2020-06-25,57
+Midlands,2020-06-25,182
+North East and Yorkshire,2020-06-25,155
+North West,2020-06-25,125
+South East,2020-06-25,65
+South West,2020-06-25,8
+England,2020-06-26,643
+East of England,2020-06-26,59
+London,2020-06-26,48
+Midlands,2020-06-26,183
+North East and Yorkshire,2020-06-26,160
+North West,2020-06-26,105
+South East,2020-06-26,65
+South West,2020-06-26,12
+England,2020-06-27,504
+East of England,2020-06-27,20
+London,2020-06-27,32
+Midlands,2020-06-27,131
+North East and Yorkshire,2020-06-27,163
+North West,2020-06-27,93
+South East,2020-06-27,54
+South West,2020-06-27,8
+England,2020-06-28,411
+East of England,2020-06-28,25
+London,2020-06-28,22
+Midlands,2020-06-28,104
+North East and Yorkshire,2020-06-28,106
+North West,2020-06-28,95
+South East,2020-06-28,45
+South West,2020-06-28,11
+England,2020-06-29,667
+East of England,2020-06-29,49
+London,2020-06-29,58
+Midlands,2020-06-29,185
+North East and Yorkshire,2020-06-29,144
+North West,2020-06-29,123
+South East,2020-06-29,79
+South West,2020-06-29,16
+England,2020-06-30,572
+East of England,2020-06-30,34
+London,2020-06-30,52
+Midlands,2020-06-30,180
+North East and Yorkshire,2020-06-30,123
+North West,2020-06-30,103
+South East,2020-06-30,58
+South West,2020-06-30,18
+England,2020-07-01,609
+East of England,2020-07-01,40
+London,2020-07-01,42
+Midlands,2020-07-01,170
+North East and Yorkshire,2020-07-01,139
+North West,2020-07-01,116
+South East,2020-07-01,69
+South West,2020-07-01,23
+England,2020-07-02,559
+East of England,2020-07-02,61
+London,2020-07-02,38
+Midlands,2020-07-02,160
+North East and Yorkshire,2020-07-02,113
+North West,2020-07-02,98
+South East,2020-07-02,61
+South West,2020-07-02,11
+England,2020-07-03,541
+East of England,2020-07-03,60
+London,2020-07-03,38
+Midlands,2020-07-03,149
+North East and Yorkshire,2020-07-03,115
+North West,2020-07-03,98
+South East,2020-07-03,62
+South West,2020-07-03,8
+England,2020-07-04,388
+East of England,2020-07-04,43
+London,2020-07-04,32
+Midlands,2020-07-04,108
+North East and Yorkshire,2020-07-04,87
+North West,2020-07-04,72
+South East,2020-07-04,29
+South West,2020-07-04,10
+England,2020-07-05,539
+East of England,2020-07-05,36
+London,2020-07-05,51
+Midlands,2020-07-05,163
+North East and Yorkshire,2020-07-05,94
+North West,2020-07-05,115
+South East,2020-07-05,58
+South West,2020-07-05,17
+England,2020-07-06,656
+East of England,2020-07-06,56
+London,2020-07-06,53
+Midlands,2020-07-06,191
+North East and Yorkshire,2020-07-06,131
+North West,2020-07-06,142
+South East,2020-07-06,45
+South West,2020-07-06,23
+England,2020-07-07,557
+East of England,2020-07-07,38
+London,2020-07-07,59
+Midlands,2020-07-07,169
+North East and Yorkshire,2020-07-07,115
+North West,2020-07-07,94
+South East,2020-07-07,54
+South West,2020-07-07,17
+England,2020-07-08,672
+East of England,2020-07-08,76
+London,2020-07-08,57
+Midlands,2020-07-08,175
+North East and Yorkshire,2020-07-08,138
+North West,2020-07-08,114
+South East,2020-07-08,82
+South West,2020-07-08,15
+England,2020-07-09,684
+East of England,2020-07-09,55
+London,2020-07-09,54
+Midlands,2020-07-09,218
+North East and Yorkshire,2020-07-09,115
+North West,2020-07-09,129
+South East,2020-07-09,84
+South West,2020-07-09,17
+England,2020-07-10,521
+East of England,2020-07-10,50
+London,2020-07-10,40
+Midlands,2020-07-10,142
+North East and Yorkshire,2020-07-10,102
+North West,2020-07-10,87
+South East,2020-07-10,76
+South West,2020-07-10,13
+England,2020-07-11,420
+East of England,2020-07-11,42
+London,2020-07-11,19
+Midlands,2020-07-11,134
+North East and Yorkshire,2020-07-11,94
+North West,2020-07-11,77
+South East,2020-07-11,34
+South West,2020-07-11,6
+England,2020-07-12,352
+East of England,2020-07-12,34
+London,2020-07-12,38
+Midlands,2020-07-12,84
+North East and Yorkshire,2020-07-12,101
+North West,2020-07-12,54
+South East,2020-07-12,31
+South West,2020-07-12,5
+England,2020-07-13,688
+East of England,2020-07-13,64
+London,2020-07-13,85
+Midlands,2020-07-13,183
+North East and Yorkshire,2020-07-13,143
+North West,2020-07-13,104
+South East,2020-07-13,69
+South West,2020-07-13,18
+England,2020-07-14,651
+East of England,2020-07-14,81
+London,2020-07-14,62
+Midlands,2020-07-14,160
+North East and Yorkshire,2020-07-14,145
+North West,2020-07-14,109
+South East,2020-07-14,59
+South West,2020-07-14,19
+England,2020-07-15,722
+East of England,2020-07-15,55
+London,2020-07-15,76
+Midlands,2020-07-15,220
+North East and Yorkshire,2020-07-15,135
+North West,2020-07-15,146
+South East,2020-07-15,63
+South West,2020-07-15,17
+England,2020-07-16,640
+East of England,2020-07-16,62
+London,2020-07-16,70
+Midlands,2020-07-16,157
+North East and Yorkshire,2020-07-16,101
+North West,2020-07-16,149
+South East,2020-07-16,63
+South West,2020-07-16,27
+England,2020-07-17,547
+East of England,2020-07-17,51
+London,2020-07-17,48
+Midlands,2020-07-17,147
+North East and Yorkshire,2020-07-17,110
+North West,2020-07-17,110
+South East,2020-07-17,49
+South West,2020-07-17,20
+England,2020-07-18,467
+East of England,2020-07-18,28
+London,2020-07-18,48
+Midlands,2020-07-18,114
+North East and Yorkshire,2020-07-18,102
+North West,2020-07-18,106
+South East,2020-07-18,54
+South West,2020-07-18,12
+England,2020-07-19,415
+East of England,2020-07-19,22
+London,2020-07-19,41
+Midlands,2020-07-19,88
+North East and Yorkshire,2020-07-19,108
+North West,2020-07-19,93
+South East,2020-07-19,46
+South West,2020-07-19,9
+England,2020-07-20,754
+East of England,2020-07-20,81
+London,2020-07-20,97
+Midlands,2020-07-20,165
+North East and Yorkshire,2020-07-20,126
+North West,2020-07-20,164
+South East,2020-07-20,87
+South West,2020-07-20,24
+England,2020-07-21,690
+East of England,2020-07-21,66
+London,2020-07-21,82
+Midlands,2020-07-21,148
+North East and Yorkshire,2020-07-21,112
+North West,2020-07-21,156
+South East,2020-07-21,77
+South West,2020-07-21,35
+England,2020-07-22,747
+East of England,2020-07-22,54
+London,2020-07-22,80
+Midlands,2020-07-22,166
+North East and Yorkshire,2020-07-22,119
+North West,2020-07-22,208
+South East,2020-07-22,77
+South West,2020-07-22,30
+England,2020-07-23,735
+East of England,2020-07-23,51
+London,2020-07-23,71
+Midlands,2020-07-23,184
+North East and Yorkshire,2020-07-23,114
+North West,2020-07-23,183
+South East,2020-07-23,76
+South West,2020-07-23,39
+England,2020-07-24,714
+East of England,2020-07-24,79
+London,2020-07-24,82
+Midlands,2020-07-24,159
+North East and Yorkshire,2020-07-24,115
+North West,2020-07-24,160
+South East,2020-07-24,65
+South West,2020-07-24,34
+England,2020-07-25,490
+East of England,2020-07-25,28
+London,2020-07-25,54
+Midlands,2020-07-25,111
+North East and Yorkshire,2020-07-25,93
+North West,2020-07-25,137
+South East,2020-07-25,47
+South West,2020-07-25,17
+England,2020-07-26,516
+East of England,2020-07-26,28
+London,2020-07-26,65
+Midlands,2020-07-26,104
+North East and Yorkshire,2020-07-26,98
+North West,2020-07-26,157
+South East,2020-07-26,37
+South West,2020-07-26,20
+England,2020-07-27,809
+East of England,2020-07-27,65
+London,2020-07-27,100
+Midlands,2020-07-27,169
+North East and Yorkshire,2020-07-27,152
+North West,2020-07-27,189
+South East,2020-07-27,85
+South West,2020-07-27,40
+England,2020-07-28,780
+East of England,2020-07-28,56
+London,2020-07-28,98
+Midlands,2020-07-28,164
+North East and Yorkshire,2020-07-28,154
+North West,2020-07-28,200
+South East,2020-07-28,65
+South West,2020-07-28,34
+England,2020-07-29,971
+East of England,2020-07-29,66
+London,2020-07-29,98
+Midlands,2020-07-29,198
+North East and Yorkshire,2020-07-29,184
+North West,2020-07-29,288
+South East,2020-07-29,79
+South West,2020-07-29,53
+England,2020-07-30,855
+East of England,2020-07-30,52
+London,2020-07-30,101
+Midlands,2020-07-30,189
+North East and Yorkshire,2020-07-30,156
+North West,2020-07-30,221
+South East,2020-07-30,63
+South West,2020-07-30,63
+England,2020-07-31,622
+East of England,2020-07-31,31
+London,2020-07-31,73
+Midlands,2020-07-31,156
+North East and Yorkshire,2020-07-31,110
+North West,2020-07-31,177
+South East,2020-07-31,41
+South West,2020-07-31,29
+England,2020-08-01,494
+East of England,2020-08-01,22
+London,2020-08-01,58
+Midlands,2020-08-01,123
+North East and Yorkshire,2020-08-01,90
+North West,2020-08-01,158
+South East,2020-08-01,30
+South West,2020-08-01,9
+England,2020-08-02,514
+East of England,2020-08-02,36
+London,2020-08-02,75
+Midlands,2020-08-02,96
+North East and Yorkshire,2020-08-02,101
+North West,2020-08-02,168
+South East,2020-08-02,21
+South West,2020-08-02,9
+England,2020-08-03,939
+East of England,2020-08-03,68
+London,2020-08-03,86
+Midlands,2020-08-03,197
+North East and Yorkshire,2020-08-03,163
+North West,2020-08-03,299
+South East,2020-08-03,76
+South West,2020-08-03,43
+England,2020-08-04,921
+East of England,2020-08-04,56
+London,2020-08-04,104
+Midlands,2020-08-04,186
+North East and Yorkshire,2020-08-04,166
+North West,2020-08-04,278
+South East,2020-08-04,66
+South West,2020-08-04,54
+England,2020-08-05,945
+East of England,2020-08-05,53
+London,2020-08-05,115
+Midlands,2020-08-05,208
+North East and Yorkshire,2020-08-05,187
+North West,2020-08-05,262
+South East,2020-08-05,65
+South West,2020-08-05,40
+England,2020-08-06,981
+East of England,2020-08-06,44
+London,2020-08-06,106
+Midlands,2020-08-06,227
+North East and Yorkshire,2020-08-06,200
+North West,2020-08-06,278
+South East,2020-08-06,61
+South West,2020-08-06,45
+England,2020-08-07,858
+East of England,2020-08-07,70
+London,2020-08-07,119
+Midlands,2020-08-07,196
+North East and Yorkshire,2020-08-07,134
+North West,2020-08-07,237
+South East,2020-08-07,53
+South West,2020-08-07,42
+England,2020-08-08,638
+East of England,2020-08-08,44
+London,2020-08-08,55
+Midlands,2020-08-08,148
+North East and Yorkshire,2020-08-08,116
+North West,2020-08-08,216
+South East,2020-08-08,31
+South West,2020-08-08,25
+England,2020-08-09,557
+East of England,2020-08-09,23
+London,2020-08-09,67
+Midlands,2020-08-09,149
+North East and Yorkshire,2020-08-09,112
+North West,2020-08-09,158
+South East,2020-08-09,29
+South West,2020-08-09,15
+England,2020-08-10,1352
+East of England,2020-08-10,67
+London,2020-08-10,142
+Midlands,2020-08-10,367
+North East and Yorkshire,2020-08-10,243
+North West,2020-08-10,358
+South East,2020-08-10,113
+South West,2020-08-10,42
+England,2020-08-11,1213
+East of England,2020-08-11,47
+London,2020-08-11,149
+Midlands,2020-08-11,341
+North East and Yorkshire,2020-08-11,230
+North West,2020-08-11,310
+South East,2020-08-11,76
+South West,2020-08-11,41
+England,2020-08-12,1092
+East of England,2020-08-12,66
+London,2020-08-12,157
+Midlands,2020-08-12,252
+North East and Yorkshire,2020-08-12,210
+North West,2020-08-12,275
+South East,2020-08-12,83
+South West,2020-08-12,42
+England,2020-08-13,1018
+East of England,2020-08-13,61
+London,2020-08-13,124
+Midlands,2020-08-13,226
+North East and Yorkshire,2020-08-13,232
+North West,2020-08-13,236
+South East,2020-08-13,76
+South West,2020-08-13,53
+England,2020-08-14,1043
+East of England,2020-08-14,68
+London,2020-08-14,127
+Midlands,2020-08-14,258
+North East and Yorkshire,2020-08-14,192
+North West,2020-08-14,240
+South East,2020-08-14,95
+South West,2020-08-14,55
+England,2020-08-15,647
+East of England,2020-08-15,30
+London,2020-08-15,105
+Midlands,2020-08-15,151
+North East and Yorkshire,2020-08-15,127
+North West,2020-08-15,156
+South East,2020-08-15,45
+South West,2020-08-15,25
+England,2020-08-16,526
+East of England,2020-08-16,27
+London,2020-08-16,87
+Midlands,2020-08-16,130
+North East and Yorkshire,2020-08-16,90
+North West,2020-08-16,116
+South East,2020-08-16,36
+South West,2020-08-16,37
+England,2020-08-17,1137
+East of England,2020-08-17,63
+London,2020-08-17,190
+Midlands,2020-08-17,276
+North East and Yorkshire,2020-08-17,157
+North West,2020-08-17,282
+South East,2020-08-17,109
+South West,2020-08-17,48
+England,2020-08-18,925
+East of England,2020-08-18,59
+London,2020-08-18,181
+Midlands,2020-08-18,186
+North East and Yorkshire,2020-08-18,158
+North West,2020-08-18,190
+South East,2020-08-18,78
+South West,2020-08-18,58
+England,2020-08-19,1073
+East of England,2020-08-19,63
+London,2020-08-19,151
+Midlands,2020-08-19,219
+North East and Yorkshire,2020-08-19,185
+North West,2020-08-19,254
+South East,2020-08-19,115
+South West,2020-08-19,70
+England,2020-08-20,1217
+East of England,2020-08-20,81
+London,2020-08-20,202
+Midlands,2020-08-20,262
+North East and Yorkshire,2020-08-20,208
+North West,2020-08-20,225
+South East,2020-08-20,130
+South West,2020-08-20,85
+England,2020-08-21,998
+East of England,2020-08-21,63
+London,2020-08-21,165
+Midlands,2020-08-21,204
+North East and Yorkshire,2020-08-21,170
+North West,2020-08-21,209
+South East,2020-08-21,110
+South West,2020-08-21,64
+England,2020-08-22,714
+East of England,2020-08-22,48
+London,2020-08-22,118
+Midlands,2020-08-22,126
+North East and Yorkshire,2020-08-22,122
+North West,2020-08-22,173
+South East,2020-08-22,78
+South West,2020-08-22,39
+England,2020-08-23,692
+East of England,2020-08-23,52
+London,2020-08-23,144
+Midlands,2020-08-23,134
+North East and Yorkshire,2020-08-23,114
+North West,2020-08-23,116
+South East,2020-08-23,85
+South West,2020-08-23,41
+England,2020-08-24,1081
+East of England,2020-08-24,102
+London,2020-08-24,196
+Midlands,2020-08-24,214
+North East and Yorkshire,2020-08-24,169
+North West,2020-08-24,230
+South East,2020-08-24,93
+South West,2020-08-24,49
+England,2020-08-25,1054
+East of England,2020-08-25,99
+London,2020-08-25,168
+Midlands,2020-08-25,214
+North East and Yorkshire,2020-08-25,182
+North West,2020-08-25,212
+South East,2020-08-25,89
+South West,2020-08-25,50
+England,2020-08-26,1132
+East of England,2020-08-26,91
+London,2020-08-26,165
+Midlands,2020-08-26,214
+North East and Yorkshire,2020-08-26,186
+North West,2020-08-26,282
+South East,2020-08-26,114
+South West,2020-08-26,62
+England,2020-08-27,1326
+East of England,2020-08-27,121
+London,2020-08-27,229
+Midlands,2020-08-27,226
+North East and Yorkshire,2020-08-27,260
+North West,2020-08-27,285
+South East,2020-08-27,126
+South West,2020-08-27,56
+England,2020-08-28,1379
+East of England,2020-08-28,101
+London,2020-08-28,220
+Midlands,2020-08-28,252
+North East and Yorkshire,2020-08-28,226
+North West,2020-08-28,358
+South East,2020-08-28,115
+South West,2020-08-28,72
+England,2020-08-29,1034
+East of England,2020-08-29,79
+London,2020-08-29,138
+Midlands,2020-08-29,161
+North East and Yorkshire,2020-08-29,246
+North West,2020-08-29,244
+South East,2020-08-29,100
+South West,2020-08-29,50
+England,2020-08-30,968
+East of England,2020-08-30,88
+London,2020-08-30,128
+Midlands,2020-08-30,155
+North East and Yorkshire,2020-08-30,199
+North West,2020-08-30,257
+South East,2020-08-30,100
+South West,2020-08-30,33
+England,2020-08-31,1255
+East of England,2020-08-31,101
+London,2020-08-31,214
+Midlands,2020-08-31,214
+North East and Yorkshire,2020-08-31,281
+North West,2020-08-31,261
+South East,2020-08-31,117
+South West,2020-08-31,57
+England,2020-09-01,1915
+East of England,2020-09-01,122
+London,2020-09-01,308
+Midlands,2020-09-01,408
+North East and Yorkshire,2020-09-01,381
+North West,2020-09-01,446
+South East,2020-09-01,128
+South West,2020-09-01,99
+England,2020-09-02,2612
+East of England,2020-09-02,169
+London,2020-09-02,332
+Midlands,2020-09-02,586
+North East and Yorkshire,2020-09-02,501
+North West,2020-09-02,659
+South East,2020-09-02,209
+South West,2020-09-02,123
+England,2020-09-03,2657
+East of England,2020-09-03,149
+London,2020-09-03,347
+Midlands,2020-09-03,605
+North East and Yorkshire,2020-09-03,527
+North West,2020-09-03,621
+South East,2020-09-03,226
+South West,2020-09-03,150
+England,2020-09-04,2578
+East of England,2020-09-04,120
+London,2020-09-04,352
+Midlands,2020-09-04,603
+North East and Yorkshire,2020-09-04,482
+North West,2020-09-04,631
+South East,2020-09-04,231
+South West,2020-09-04,134
+England,2020-09-05,2173
+East of England,2020-09-05,93
+London,2020-09-05,270
+Midlands,2020-09-05,484
+North East and Yorkshire,2020-09-05,535
+North West,2020-09-05,530
+South East,2020-09-05,158
+South West,2020-09-05,82
+England,2020-09-06,2041
+East of England,2020-09-06,74
+London,2020-09-06,204
+Midlands,2020-09-06,456
+North East and Yorkshire,2020-09-06,470
+North West,2020-09-06,567
+South East,2020-09-06,179
+South West,2020-09-06,78
+England,2020-09-07,3431
+East of England,2020-09-07,155
+London,2020-09-07,448
+Midlands,2020-09-07,830
+North East and Yorkshire,2020-09-07,721
+North West,2020-09-07,944
+South East,2020-09-07,202
+South West,2020-09-07,100
+England,2020-09-08,2965
+East of England,2020-09-08,163
+London,2020-09-08,328
+Midlands,2020-09-08,724
+North East and Yorkshire,2020-09-08,590
+North West,2020-09-08,854
+South East,2020-09-08,192
+South West,2020-09-08,81
+England,2020-09-09,2786
