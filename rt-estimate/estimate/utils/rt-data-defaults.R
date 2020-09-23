@@ -9,10 +9,11 @@ generation_time <- readRDS(here::here("rt-estimate", "estimate", "delays", "data
 incubation_period <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "incubation_period.rds"))
 
 # Deaths delay
-deaths_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "onset_to_death_delay.rds"))
+deaths_delay <- readRDS(here::here("rt-estimate", "estimate", "delays", "data", "uk_sim_onset_to_death_delay.rds"))
 
 # Cases delay
-cases_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "onset_to_admission_delay.rds"))
+cases_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "public_onset_to_report_delay.rds"))
+
 
 # Get UK data ----------------------------------------------------------------
 # If data won't download, read in a saved hard copy of cleaned data - 23 August 2020

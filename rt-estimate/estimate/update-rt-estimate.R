@@ -4,7 +4,7 @@
 library(EpiNow2)
 
 # Update delays
-source(here::here("rt-estimate", "estimate", "delays", "update-delays.R"))
+source(here::here("rt-estimate", "estimate", "delays", "public-linelist-delays.R"))
 
 # Get delays and fresh UK data; set up cores
 source(here::here("rt-estimate", "estimate", "utils", "rt-data-defaults.R"))

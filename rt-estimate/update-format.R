@@ -8,9 +8,9 @@ library(purrr)
 
 # Get national -------------------------------------------------------------
 
-estimates <- list("cases_blend",
+estimates <- list("cases_test",
                   "cases_hosp",
-                  "deaths_blend") # deaths_death deaths_publish cases_publish cases_test
+                  "deaths_death")
 names(estimates) <- estimates
 
 # Get Rt only
@@ -20,6 +20,20 @@ summary <- estimates %>%
   # Filter out "estimate based on partial data"
   dplyr::filter(type == "estimate")
 
+# England test cases + deaths were estimated separately
+eng_cases <- readr::read_csv("rt-estimate/estimate/cases_test/region/England/2020-08-26/rt_cases_test.csv") %>%
+  dplyr::filter(type == "estimate") %>%
+  dplyr::mutate(source = "cases_test")
+
+eng_deaths <- readr::read_csv("rt-estimate/estimate/deaths_death/region/England/2020-08-26/rt_deaths_death.csv") %>%
+  dplyr::filter(type == "estimate") %>%
+  dplyr::mutate(source = "deaths_death")
+
+summary <- summary %>%
+  dplyr::filter(!(source == "cases_test" & region == "England" | 
+                    source == "deaths_death" & region == "England")) %>%
+  dplyr::bind_rows(eng_cases, eng_deaths)
+  
 # Factor regions for consistent plot alignment
 source("utils/utils.R")
 summary$region = factor(summary$region, 
@@ -33,24 +47,24 @@ summary_wide <- summary %>%
   tidyr::pivot_wider(names_from = source, 
                      values_from = c("median","lower_90", "upper_90", "lower_50", "upper_50"))  %>%
   dplyr::mutate(
-    # cases_blend / deaths
-    caseb_deathb_med = median_cases_blend / median_deaths_blend,
-    caseb_deathb_l90 = lower_90_cases_blend / lower_90_deaths_blend,
-    caseb_deathb_u90 = upper_90_cases_blend / upper_90_deaths_blend,
-    caseb_deathb_l50 = lower_50_cases_blend / lower_50_deaths_blend,
-    caseb_deathb_u50 = upper_50_cases_blend / upper_50_deaths_blend,
-    # cases_blend / cases_hosp
-    caseb_hosp_med = median_cases_blend / median_cases_hosp,
-    caseb_hosp_l90 = lower_90_cases_blend / lower_90_cases_hosp,
-    caseb_hosp_u90 = upper_90_cases_blend / upper_90_cases_hosp,
-    caseb_hosp_l50 = lower_50_cases_blend / lower_50_cases_hosp,
-    caseb_hosp_u50 = upper_50_cases_blend / upper_50_cases_hosp,
-    # cases_hosp / deaths_blend
-    hosp_deathb_med = median_cases_hosp / median_deaths_blend,
-    hosp_deathb_l90 = lower_90_cases_hosp / lower_90_deaths_blend,
-    hosp_deathb_u90 = upper_90_cases_hosp / upper_90_deaths_blend,
-    hosp_deathb_l50 = lower_50_cases_hosp / lower_50_deaths_blend,
-    hosp_deathb_u50 = upper_50_cases_hosp / upper_50_deaths_blend)
+    # cases / deaths
+    case_death_med = median_cases_test / median_deaths_death,
+    case_death_l90 = lower_90_cases_test / lower_90_deaths_death,
+    case_death_u90 = upper_90_cases_test / upper_90_deaths_death,
+    case_death_l50 = lower_50_cases_test / lower_50_deaths_death,
+    case_death_u50 = upper_50_cases_test / upper_50_deaths_death,
+    # cases / cases_hosp
+    case_hosp_med = median_cases_test / median_cases_hosp,
+    case_hosp_l90 = lower_90_cases_test / lower_90_cases_hosp,
+    case_hosp_u90 = upper_90_cases_test / upper_90_cases_hosp,
+    case_hosp_l50 = lower_50_cases_test / lower_50_cases_hosp,
+    case_hosp_u50 = upper_50_cases_test / upper_50_cases_hosp,
+    # cases_hosp / deaths_death
+    hosp_death_med = median_cases_hosp / median_deaths_death,
+    hosp_death_l90 = lower_90_cases_hosp / lower_90_deaths_death,
+    hosp_death_u90 = upper_90_cases_hosp / upper_90_deaths_death,
+    hosp_death_l50 = lower_50_cases_hosp / lower_50_deaths_death,
+    hosp_death_u50 = upper_50_cases_hosp / upper_50_deaths_death)
 
 # Filter to where all ratios are available (ie max date of deaths as that is longest delay)
 estimate_dates <- dplyr::group_by(summary, source, region) %>%
@@ -64,10 +78,5 @@ saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
 
 # summary_wide <- summary_wide %>%
 #   dplyr::filter(date >= max(estimate_dates$min_date) & date <= min(estimate_dates$max_date))
-
-if(length(seq.Date(from = min(summary_wide$date), to = max(summary_wide$date), by = 1)) 
-   != (length(summary_wide$date) / length(unique(summary_wide$region)))) {
-  warning("Not all regions have the same sequence of dates; or missing/duplicate days in sequence")
-}
 
 saveRDS(summary_wide, "rt-estimate/summary_wide.rds")
