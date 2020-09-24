@@ -1,7 +1,7 @@
 require(dplyr)
 require(ggplot2)
 
-source("data/age-settings-data.R")
+source("compare/supporting-analyses/test-positivity.R")
 
 # Get count data ----------------------------------------------------------
 # If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
@@ -16,8 +16,8 @@ if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
 source("utils/utils.R")
 
 # global variables:
-# date_min <- as.Date("2020-03-01")
-# date_max <-as.Date("2020-08-20")
+# date_min <- as.Date("2020-03-19")
+# date_max <-as.Date("2020-09-23")
 # theme_set(theme_classic(base_size = 12))
 
 # Standardise ----------------------------------------------------------------
@@ -29,7 +29,7 @@ standardised_data <- data %>%
   dplyr::group_by(region) %>%
   #  - z-scores
   dplyr::mutate(# 7-day moving average
-                ma_cases_test = forecast::ma(cases_testd, order = 7), 
+                ma_cases_test = forecast::ma(cases_test, order = 7), 
                 ma_cases_hosp = forecast::ma(cases_hosp, order = 7), 
                 ma_deaths_death = forecast::ma(deaths_death, order = 7)) %>% 
   dplyr::ungroup() 
@@ -61,8 +61,9 @@ data_ma <- standardised_data %>%
 
 # Plot --------------------------------------------------------------------
 
-# Plot 7 day MA for use with 2 rows
+# Regional
 plot_ma_only <- data_ma %>%
+  dplyr::filter(!region %in% c("England")) %>%
   ggplot() +
   geom_line(aes(x = date, y = as.numeric(ma), 
                 colour = `Data source`)) +
@@ -83,7 +84,7 @@ plot_ma_only <- data_ma %>%
   labs(y = "7-day MA", x = NULL)
 
 
-# National - Plot 7 day MA for use with 2 rows
+# National
 plot_ma_only_national <- data_ma %>%
   dplyr::filter(region %in% c("England")) %>%
   ggplot() +
@@ -100,7 +101,7 @@ plot_ma_only_national <- data_ma %>%
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
         panel.spacing.y = unit(0.1, "cm") #,
-        #axis.text.x = element_blank()
+        axis.text.x = element_blank()
         ) +
   guides(colour = FALSE) +
   labs(y = "7-day MA", x = NULL)

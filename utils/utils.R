@@ -1,16 +1,16 @@
 # Plot colours
 # Data: data source
 colours <- c(
-  # Community cases
-  "Community" = "#1b9e77",
+  # Test-positive cases
+  "Test-positive" = "#1b9e77",
   "Cases" = "#1b9e77",
-  "cases_blend" =  "#1b9e77",
+  "cases_test" =  "#1b9e77",
   # Admissions
   "Hospital admissions" =  "#7570b3",
   "cases_hosp" =  "#7570b3",
   # Deaths
   "Deaths" = "#d95f02",
-  "deaths_blend" = "#d95f02"
+  "deaths_death" = "#d95f02"
   )
 
 
@@ -33,5 +33,16 @@ region_names <- list(
 # saveRDS(region_names, "data/region_names.rds")
  
 
-
-
+# Convert week to date
+week_to_date <- function(df){
+  seq_dates <- tibble::tibble(
+    date = seq.Date(from = as.Date("2020-01-01"), length.out = 365, by = 1),
+    days = weekdays(date),
+    week = lubridate::epiweek(date)) %>%
+    dplyr::filter(week %in% df$week & 
+                    days == "Saturday") %>%
+    dplyr::select(week, week_end_date = date)
+  df_dates <- df %>%
+    dplyr::left_join(seq_dates, by = "week")
+  return(df_dates)
+}

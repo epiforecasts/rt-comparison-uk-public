@@ -18,7 +18,7 @@ max_date <- readRDS("utils/latest_estimate.rds")
 # Set data source names
 summary <- summary %>%
   dplyr::mutate('Data source' = dplyr::recode_factor(source, 
-                                                   "cases_test" = "Community",
+                                                   "cases_test" = "Test-positive",
                                                    "cases_hosp" = "Hospital admissions",
                                                    "deaths_death" = "Deaths"))
               

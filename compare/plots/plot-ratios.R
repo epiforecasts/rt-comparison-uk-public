@@ -49,7 +49,7 @@ plot_ratio_case_death <- summary_ratios %>%
   theme(strip.text.x = element_text(size = 18)) + ## Removes facet region name
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(size = 20)) + 
-  labs(y = "Rt(community) / Rt(deaths)", x = NULL)
+  labs(y = "Rt(test-positive) / Rt(deaths)", x = NULL)
 
 # Hospital admissions on deaths
 plot_ratio_hosp_death <- summary_ratios %>%
@@ -95,7 +95,7 @@ plot_ratio_case_hosp <- summary_ratios %>%
         strip.text.x = element_blank(),
         axis.text.y = element_text(size = 20),
         axis.text.x = element_text(size = 20, angle = 45, hjust = 1)) + # Keep dates - bottom-most plot in grid
-  labs(y = "Rt(community) / Rt(hospital)", x = NULL)
+  labs(y = "Rt(test-positive) / Rt(hospital)", x = NULL)
 
 
 

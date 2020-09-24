@@ -5,12 +5,21 @@ data <- as.data.frame(data)
 
 data_regional <- split(data, data$region)
 
+# Early peaks
+early_peak <- data_regional %>%
+  purrr::map(., ~ dplyr::filter(., date <= as.Date("2020-06-01")))
+
+early_peak <- data %>%
+  tidyr::pivot_wider(names_from = region, values_from = deaths_death)
+
+which.max(data_regional$`East of England`$deaths_death)
+
 # Mean difference between counts
 data_diffs <- purrr::map(data_regional, ~ 
                           dplyr::mutate(., 
-                                        diff_case_death = .$cases_blend - .$deaths_blend,
-                                        diff_case_hosp = .$cases_blend - .$cases_hosp,
-                                        diff_hosp_death = .$cases_hosp - .$deaths_blend,
+                                        diff_case_death = .$cases_test - .$deaths_death,
+                                        diff_case_hosp = .$cases_test - .$cases_hosp,
+                                        diff_hosp_death = .$cases_hosp - .$deaths_death,
                                         index = seq_len(nrow(.))) %>%
                           dplyr::filter(date <= as.Date("2020-08-10")))
 
@@ -36,9 +45,9 @@ data_mean_max <- tidyr::pivot_longer(data_mean, cols = -id, values_to = "mean") 
 source("compare/wave-features.R")
 
 data_wave <- list(
-  cases = purrr::map(data_regional, ~ wave_features(.x, "cases_blend", 7)),
+  cases = purrr::map(data_regional, ~ wave_features(.x, "cases_test", 7)),
   hosp = purrr::map(data_regional, ~ wave_features(.x, "cases_hosp", 7)),
-  deaths = purrr::map(data_regional, ~ wave_features(.x, "deaths_blend", 7)))
+  deaths = purrr::map(data_regional, ~ wave_features(.x, "deaths_death", 7)))
 
 data_wave <- data_wave %>%
   purrr::transpose() %>%

@@ -7,10 +7,10 @@
 
 library(magrittr); library(ggplot2)
 
-phe_weekly <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/916993/Weekly_COVID19_Surveillance_Report_week_37_FINAL.pdf"
-
-httr::GET(phe_weekly, httr::write_disk(tf <- tempfile(fileext = ".xlsx")))
-
+# PHE weekly surveillance report (link needs manual update)
+phe_weekly <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/919094/Weekly_COVID19_report_data_w38.xlsx"
+tf <- tempfile(fileext = ".xlsx")
+httr::GET(phe_weekly, httr::write_disk(tf, overwrite = T))
 sheets <- readxl::excel_sheets(tf)
 
 # Set up dates from weeks
