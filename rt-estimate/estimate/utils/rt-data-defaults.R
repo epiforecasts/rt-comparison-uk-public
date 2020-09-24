@@ -19,7 +19,7 @@ cases_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "p
 # If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
 if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
   message("--- API failure - loading saved data ---")
-  data <- readRDS("data/200914.rds")
+  data <- readRDS("data/200922.rds")
 } else {
   source(here::here("data", "get-uk-data.R"))
 }
