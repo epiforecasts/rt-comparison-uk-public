@@ -4,7 +4,7 @@
 library(EpiNow2)
 
 # Update delays
-source(here::here("rt-estimate", "estimate", "delays", "public-linelist-delays.R"))
+# source(here::here("rt-estimate", "estimate", "delays", "public-linelist-delays.R"))
 
 # Get delays and fresh UK data; set up cores
 source(here::here("rt-estimate", "estimate", "utils", "rt-data-defaults.R"))
@@ -12,58 +12,29 @@ source(here::here("rt-estimate", "estimate", "utils", "rt-data-defaults.R"))
 # Get function for Rts
 source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 
+# Set min/max dates for data
+data <- data[data$date >= as.Date("2020-03-19") & data$date <= Sys.Date()-2,] 
+  # regional data only available after 19 March; this trims England data to same
+  # hospital admissions always 1 day more delayed than other data
 
 # Run estimates -----------------------------------------------------------
 # Run everything everywhere
 # 
-# Cases - test date
+# Cases - by test date
 run_rt_estimate(data = data,
                 count_variable = c("cases_test"),
-                reporting_delay = cases_delay)
+                reporting_delay = cases_delay,
+                burn_in = 0)
 # Hospital admissions
 run_rt_estimate(data = data,
                 count_variable = c("cases_hosp"), 
                 reporting_delay = cases_delay,
-                burn_in = 11) # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases))
-# Deaths - date of death
+                burn_in = 0)
+# Deaths - by date of death
 run_rt_estimate(data = data,
                 count_variable = c("deaths_death"),
-                reporting_delay = deaths_delay)
+                reporting_delay = deaths_delay,
+                burn_in = 0)
 
-# 
-# National estimate -------------------------------------------------------
-
-# # Cases - test date
-# run_rt_estimate(data = data[data$region == "England" & data$date <= as.Date("2020-08-31"),],
-#                 count_variable = c("cases_blend"), #  "cases_test", "cases_publish"),
-#                 reporting_delay = cases_delay)
-# # Hospital admissions
-# # run_rt_estimate(data = data,
-# #                 count_variable = c("cases_hosp"), #  "cases_test", "cases_publish"),
-# #                 reporting_delay = cases_delay,
-# #                 burn_in = 11) # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases))
-# # Deaths - date of death
-# run_rt_estimate(data = data[data$region == "England" & data$date <= as.Date("2020-08-31"),],
-#                 count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
-#                 reporting_delay = deaths_delay)
-# 
-
-# Regional estimates ------------------------------------------------------
-# 
-# # Cases - test date
-# run_rt_estimate(data = data[!data$region == "England",],
-#                 count_variable = c("cases_blend"), #  "cases_test", "cases_publish"),
-#                 reporting_delay = cases_delay)
-# # Hospital admissions
-# run_rt_estimate(data = data,
-#                 count_variable = c("cases_hosp"), #  "cases_test", "cases_publish"),
-#                 reporting_delay = cases_delay,
-#                 burn_in = 11) # Hospital cases don't start until 11 days into the time-series for English regions (i.e. they start at eg 50 cases))
-# # Deaths - date of death
-# run_rt_estimate(data = data[!data$region = "England",],
-#                 count_variable = c("deaths_blend"), # "deaths_publish", "deaths_death"),
-#                 reporting_delay = deaths_delay)
-# 
-# 
 
 
