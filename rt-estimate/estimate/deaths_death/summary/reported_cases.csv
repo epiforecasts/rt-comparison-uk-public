@@ -1,53 +1,6 @@
 region,date,confirm
-England,2020-02-01,
-England,2020-02-02,
-England,2020-02-03,
-England,2020-02-04,
-England,2020-02-05,
-England,2020-02-06,
-England,2020-02-07,
-England,2020-02-08,
-England,2020-02-09,
-England,2020-02-10,
-England,2020-02-11,
-England,2020-02-12,
-England,2020-02-13,
-England,2020-02-14,
-England,2020-02-15,
-England,2020-02-16,
-England,2020-02-17,
-England,2020-02-18,
-England,2020-02-19,
-England,2020-02-20,
-England,2020-02-21,
-England,2020-02-22,
-England,2020-02-23,
-England,2020-02-24,
-England,2020-02-25,
-England,2020-02-26,
-England,2020-02-27,
-England,2020-02-28,
-England,2020-02-29,
-England,2020-03-01,
-England,2020-03-02,1
-England,2020-03-03,2
-England,2020-03-04,
-England,2020-03-05,3
-England,2020-03-06,
-England,2020-03-07,
-England,2020-03-08,3
-England,2020-03-09,5
-England,2020-03-10,3
-England,2020-03-11,8
-England,2020-03-12,12
-England,2020-03-13,16
-England,2020-03-14,20
-England,2020-03-15,32
-England,2020-03-16,42
-England,2020-03-17,50
-England,2020-03-18,67
 England,2020-03-19,67
-East of England,2020-03-19,4
+East of England,2020-03-19,5
 London,2020-03-19,25
 Midlands,2020-03-19,12
 North East and Yorkshire,2020-03-19,2
@@ -83,13 +36,13 @@ East of England,2020-03-23,13
 London,2020-03-23,56
 Midlands,2020-03-23,38
 North East and Yorkshire,2020-03-23,10
-North West,2020-03-23,20
+North West,2020-03-23,21
 South East,2020-03-23,24
 South West,2020-03-23,9
 England,2020-03-24,219
 East of England,2020-03-24,21
-London,2020-03-24,87
-Midlands,2020-03-24,38
+London,2020-03-24,88
+Midlands,2020-03-24,39
 North East and Yorkshire,2020-03-24,8
 North West,2020-03-24,22
 South East,2020-03-24,30
@@ -99,15 +52,15 @@ East of England,2020-03-25,22
 London,2020-03-25,116
 Midlands,2020-03-25,51
 North East and Yorkshire,2020-03-25,14
-North West,2020-03-25,21
+North West,2020-03-25,23
 South East,2020-03-25,40
 South West,2020-03-25,10
 England,2020-03-26,335
 East of England,2020-03-26,35
 London,2020-03-26,121
-Midlands,2020-03-26,68
+Midlands,2020-03-26,69
 North East and Yorkshire,2020-03-26,21
-North West,2020-03-26,31
+North West,2020-03-26,32
 South East,2020-03-26,44
 South West,2020-03-26,11
 England,2020-03-27,374
@@ -155,7 +108,7 @@ East of England,2020-04-01,74
 London,2020-04-01,189
 Midlands,2020-04-01,152
 North East and Yorkshire,2020-04-01,75
-North West,2020-04-01,92
+North West,2020-04-01,93
 South East,2020-04-01,85
 South West,2020-04-01,24
 England,2020-04-02,732
@@ -198,35 +151,35 @@ North East and Yorkshire,2020-04-06,99
 North West,2020-04-06,109
 South East,2020-04-06,104
 South West,2020-04-06,42
-England,2020-04-07,911
+England,2020-04-07,910
 East of England,2020-04-07,111
-London,2020-04-07,223
+London,2020-04-07,222
 Midlands,2020-04-07,149
 North East and Yorkshire,2020-04-07,101
 North West,2020-04-07,157
 South East,2020-04-07,118
 South West,2020-04-07,45
-England,2020-04-08,973
+England,2020-04-08,975
 East of England,2020-04-08,114
-London,2020-04-08,230
+London,2020-04-08,231
 Midlands,2020-04-08,201
 North East and Yorkshire,2020-04-08,121
 North West,2020-04-08,138
-South East,2020-04-08,112
+South East,2020-04-08,113
 South West,2020-04-08,51
-England,2020-04-09,875
+England,2020-04-09,874
 East of England,2020-04-09,96
 London,2020-04-09,198
 Midlands,2020-04-09,162
 North East and Yorkshire,2020-04-09,118
 North West,2020-04-09,129
-South East,2020-04-09,129
+South East,2020-04-09,128
 South West,2020-04-09,31
-England,2020-04-10,849
+England,2020-04-10,850
 East of England,2020-04-10,71
 London,2020-04-10,175
 Midlands,2020-04-10,160
-North East and Yorkshire,2020-04-10,126
+North East and Yorkshire,2020-04-10,127
 North West,2020-04-10,140
 South East,2020-04-10,110
 South West,2020-04-10,62
@@ -246,10 +199,10 @@ North East and Yorkshire,2020-04-12,106
 North West,2020-04-12,155
 South East,2020-04-12,117
 South West,2020-04-12,37
-England,2020-04-13,803
+England,2020-04-13,802
 East of England,2020-04-13,82
 London,2020-04-13,170
-Midlands,2020-04-13,144
+Midlands,2020-04-13,143
 North East and Yorkshire,2020-04-13,100
 North West,2020-04-13,145
 South East,2020-04-13,104
@@ -294,12 +247,12 @@ North East and Yorkshire,2020-04-18,112
 North West,2020-04-18,134
 South East,2020-04-18,77
 South West,2020-04-18,41
-England,2020-04-19,683
+England,2020-04-19,682
 East of England,2020-04-19,75
 London,2020-04-19,115
 Midlands,2020-04-19,129
 North East and Yorkshire,2020-04-19,108
-North West,2020-04-19,94
+North West,2020-04-19,93
 South East,2020-04-19,106
 South West,2020-04-19,50
 England,2020-04-20,683
@@ -310,20 +263,20 @@ North East and Yorkshire,2020-04-20,116
 North West,2020-04-20,103
 South East,2020-04-20,113
 South West,2020-04-20,41
-England,2020-04-21,647
+England,2020-04-21,648
 East of England,2020-04-21,79
 London,2020-04-21,103
 Midlands,2020-04-21,116
 North East and Yorkshire,2020-04-21,102
-North West,2020-04-21,105
+North West,2020-04-21,106
 South East,2020-04-21,90
 South West,2020-04-21,46
-England,2020-04-22,643
+England,2020-04-22,642
 East of England,2020-04-22,77
 London,2020-04-22,110
 Midlands,2020-04-22,105
 North East and Yorkshire,2020-04-22,106
-North West,2020-04-22,128
+North West,2020-04-22,127
 South East,2020-04-22,83
 South West,2020-04-22,31
 England,2020-04-23,592
@@ -366,8 +319,8 @@ North East and Yorkshire,2020-04-27,99
 North West,2020-04-27,90
 South East,2020-04-27,59
 South West,2020-04-27,33
-England,2020-04-28,497
-East of England,2020-04-28,66
+England,2020-04-28,498
+East of England,2020-04-28,67
 London,2020-04-28,58
 Midlands,2020-04-28,93
 North East and Yorkshire,2020-04-28,100
@@ -382,7 +335,7 @@ North East and Yorkshire,2020-04-29,102
 North West,2020-04-29,82
 South East,2020-04-29,70
 South West,2020-04-29,33
-England,2020-04-30,479
+England,2020-04-30,480
 East of England,2020-04-30,67
 London,2020-04-30,44
 Midlands,2020-04-30,98
@@ -390,12 +343,12 @@ North East and Yorkshire,2020-04-30,90
 North West,2020-04-30,89
 South East,2020-04-30,52
 South West,2020-04-30,38
-England,2020-05-01,478
+England,2020-05-01,477
 East of England,2020-05-01,72
 London,2020-05-01,42
 Midlands,2020-05-01,106
 North East and Yorkshire,2020-05-01,94
-North West,2020-05-01,72
+North West,2020-05-01,71
 South East,2020-05-01,76
 South West,2020-05-01,11
 England,2020-05-02,423
@@ -454,17 +407,17 @@ North East and Yorkshire,2020-05-08,73
 North West,2020-05-08,66
 South East,2020-05-08,43
 South West,2020-05-08,14
-England,2020-05-09,330
+England,2020-05-09,329
 East of England,2020-05-09,40
 London,2020-05-09,25
-Midlands,2020-05-09,71
+Midlands,2020-05-09,70
 North East and Yorkshire,2020-05-09,62
 North West,2020-05-09,48
 South East,2020-05-09,55
 South West,2020-05-09,24
-England,2020-05-10,301
+England,2020-05-10,300
 East of England,2020-05-10,34
-London,2020-05-10,28
+London,2020-05-10,27
 Midlands,2020-05-10,59
 North East and Yorkshire,2020-05-10,65
 North West,2020-05-10,70
@@ -510,8 +463,8 @@ North East and Yorkshire,2020-05-15,64
 North West,2020-05-15,58
 South East,2020-05-15,39
 South West,2020-05-15,7
-England,2020-05-16,270
-East of England,2020-05-16,36
+England,2020-05-16,269
+East of England,2020-05-16,35
 London,2020-05-16,10
 Midlands,2020-05-16,60
 North East and Yorkshire,2020-05-16,66
@@ -534,9 +487,9 @@ North East and Yorkshire,2020-05-18,64
 North West,2020-05-18,36
 South East,2020-05-18,31
 South West,2020-05-18,10
-England,2020-05-19,230
+England,2020-05-19,229
 East of England,2020-05-19,22
-London,2020-05-19,19
+London,2020-05-19,18
 Midlands,2020-05-19,49
 North East and Yorkshire,2020-05-19,47
 North West,2020-05-19,49
@@ -678,12 +631,12 @@ North East and Yorkshire,2020-06-05,23
 North West,2020-06-05,24
 South East,2020-06-05,15
 South West,2020-06-05,3
-England,2020-06-06,97
+England,2020-06-06,98
 East of England,2020-06-06,9
 London,2020-06-06,3
 Midlands,2020-06-06,23
 North East and Yorkshire,2020-06-06,20
-North West,2020-06-06,28
+North West,2020-06-06,29
 South East,2020-06-06,11
 South West,2020-06-06,3
 England,2020-06-07,111
@@ -933,7 +886,7 @@ Midlands,2020-07-07,6
 North East and Yorkshire,2020-07-07,4
 North West,2020-07-07,5
 South East,2020-07-07,5
-South West,2020-07-07,
+South West,2020-07-07,0
 England,2020-07-08,23
 East of England,2020-07-08,2
 London,2020-07-08,3
@@ -1002,7 +955,7 @@ England,2020-07-16,12
 East of England,2020-07-16,1
 London,2020-07-16,0
 Midlands,2020-07-16,4
-North East and Yorkshire,2020-07-16,
+North East and Yorkshire,2020-07-16,1
 North West,2020-07-16,2
 South East,2020-07-16,3
 South West,2020-07-16,1
@@ -1053,7 +1006,7 @@ Midlands,2020-07-22,3
 North East and Yorkshire,2020-07-22,3
 North West,2020-07-22,5
 South East,2020-07-22,2
-South West,2020-07-22,
+South West,2020-07-22,0
 England,2020-07-23,16
 East of England,2020-07-23,1
 London,2020-07-23,2
@@ -1101,7 +1054,7 @@ Midlands,2020-07-28,1
 North East and Yorkshire,2020-07-28,2
 North West,2020-07-28,2
 South East,2020-07-28,4
-South West,2020-07-28,
+South West,2020-07-28,0
 England,2020-07-29,8
 East of England,2020-07-29,0
 London,2020-07-29,0
@@ -1129,11 +1082,11 @@ South West,2020-07-31,0
 England,2020-08-01,9
 East of England,2020-08-01,1
 London,2020-08-01,2
-Midlands,2020-08-01,
+Midlands,2020-08-01,0
 North East and Yorkshire,2020-08-01,3
 North West,2020-08-01,1
 South East,2020-08-01,2
-South West,2020-08-01,
+South West,2020-08-01,0
 England,2020-08-02,8
 East of England,2020-08-02,0
 London,2020-08-02,1
@@ -1162,7 +1115,7 @@ England,2020-08-05,3
 East of England,2020-08-05,0
 London,2020-08-05,0
 Midlands,2020-08-05,0
-North East and Yorkshire,2020-08-05,
+North East and Yorkshire,2020-08-05,0
 North West,2020-08-05,1
 South East,2020-08-05,2
 South West,2020-08-05,0
@@ -1250,7 +1203,7 @@ England,2020-08-16,4
 East of England,2020-08-16,0
 London,2020-08-16,0
 Midlands,2020-08-16,0
-North East and Yorkshire,2020-08-16,
+North East and Yorkshire,2020-08-16,1
 North West,2020-08-16,1
 South East,2020-08-16,1
 South West,2020-08-16,0
@@ -1270,7 +1223,7 @@ North East and Yorkshire,2020-08-18,1
 North West,2020-08-18,2
 South East,2020-08-18,1
 South West,2020-08-18,0
-England,2020-08-19,1
+England,2020-08-19,2
 East of England,2020-08-19,0
 London,2020-08-19,0
 Midlands,2020-08-19,0
@@ -1289,11 +1242,11 @@ South West,2020-08-20,1
 England,2020-08-21,7
 East of England,2020-08-21,0
 London,2020-08-21,0
-Midlands,2020-08-21,
+Midlands,2020-08-21,1
 North East and Yorkshire,2020-08-21,2
 North West,2020-08-21,4
 South East,2020-08-21,0
-South West,2020-08-21,
+South West,2020-08-21,0
 England,2020-08-22,5
 East of England,2020-08-22,0
 London,2020-08-22,1
@@ -1314,7 +1267,7 @@ England,2020-08-24,5
 East of England,2020-08-24,1
 London,2020-08-24,0
 Midlands,2020-08-24,0
-North East and Yorkshire,2020-08-24,
+North East and Yorkshire,2020-08-24,0
 North West,2020-08-24,4
 South East,2020-08-24,0
 South West,2020-08-24,0
@@ -1333,7 +1286,7 @@ Midlands,2020-08-26,4
 North East and Yorkshire,2020-08-26,1
 North West,2020-08-26,5
 South East,2020-08-26,0
-South West,2020-08-26,
+South West,2020-08-26,0
 England,2020-08-27,8
 East of England,2020-08-27,1
 London,2020-08-27,0
@@ -1358,11 +1311,11 @@ North East and Yorkshire,2020-08-29,3
 North West,2020-08-29,0
 South East,2020-08-29,1
 South West,2020-08-29,0
-England,2020-08-30,6
+England,2020-08-30,5
 East of England,2020-08-30,0
 London,2020-08-30,0
 Midlands,2020-08-30,3
-North East and Yorkshire,2020-08-30,1
+North East and Yorkshire,2020-08-30,0
 North West,2020-08-30,2
 South East,2020-08-30,0
 South West,2020-08-30,0
@@ -1390,11 +1343,11 @@ North East and Yorkshire,2020-09-02,3
 North West,2020-09-02,1
 South East,2020-09-02,1
 South West,2020-09-02,0
-England,2020-09-03,6
+England,2020-09-03,7
 East of England,2020-09-03,1
 London,2020-09-03,1
 Midlands,2020-09-03,0
-North East and Yorkshire,2020-09-03,1
+North East and Yorkshire,2020-09-03,2
 North West,2020-09-03,2
 South East,2020-09-03,1
 South West,2020-09-03,0
@@ -1406,36 +1359,100 @@ North East and Yorkshire,2020-09-04,1
 North West,2020-09-04,0
 South East,2020-09-04,1
 South West,2020-09-04,1
-England,2020-09-05,10
+England,2020-09-05,11
 East of England,2020-09-05,0
 London,2020-09-05,0
 Midlands,2020-09-05,0
 North East and Yorkshire,2020-09-05,3
 North West,2020-09-05,7
 South East,2020-09-05,0
-South West,2020-09-05,0
-England,2020-09-06,9
+South West,2020-09-05,1
+England,2020-09-06,8
 East of England,2020-09-06,1
 London,2020-09-06,2
-Midlands,2020-09-06,2
+Midlands,2020-09-06,1
 North East and Yorkshire,2020-09-06,1
 North West,2020-09-06,3
 South East,2020-09-06,0
 South West,2020-09-06,0
-England,2020-09-07,10
+England,2020-09-07,13
 East of England,2020-09-07,0
 London,2020-09-07,0
-Midlands,2020-09-07,2
-North East and Yorkshire,2020-09-07,1
-North West,2020-09-07,6
+Midlands,2020-09-07,3
+North East and Yorkshire,2020-09-07,2
+North West,2020-09-07,8
 South East,2020-09-07,0
-South West,2020-09-07,1
-England,2020-09-08,8
+South West,2020-09-07,0
+England,2020-09-08,9
 East of England,2020-09-08,0
 London,2020-09-08,0
 Midlands,2020-09-08,3
 North East and Yorkshire,2020-09-08,0
-North West,2020-09-08,5
+North West,2020-09-08,6
 South East,2020-09-08,0
 South West,2020-09-08,0
-England,2020-09-09,8
+England,2020-09-09,9
+East of England,2020-09-09,0
+London,2020-09-09,0
+Midlands,2020-09-09,1
+North East and Yorkshire,2020-09-09,3
+North West,2020-09-09,5
+South East,2020-09-09,0
+South West,2020-09-09,0
+England,2020-09-10,12
+East of England,2020-09-10,0
+London,2020-09-10,2
+Midlands,2020-09-10,1
+North East and Yorkshire,2020-09-10,2
+North West,2020-09-10,5
+South East,2020-09-10,1
+South West,2020-09-10,1
+England,2020-09-11,11
+East of England,2020-09-11,0
+London,2020-09-11,3
+Midlands,2020-09-11,1
+North East and Yorkshire,2020-09-11,4
+North West,2020-09-11,2
+South East,2020-09-11,0
+South West,2020-09-11,0
+England,2020-09-12,16
+East of England,2020-09-12,0
+London,2020-09-12,0
+Midlands,2020-09-12,4
+North East and Yorkshire,2020-09-12,2
+North West,2020-09-12,8
+South East,2020-09-12,2
+South West,2020-09-12,0
+England,2020-09-13,13
+East of England,2020-09-13,1
+London,2020-09-13,0
+Midlands,2020-09-13,4
+North East and Yorkshire,2020-09-13,4
+North West,2020-09-13,1
+South East,2020-09-13,2
+South West,2020-09-13,1
+England,2020-09-14,15
+East of England,2020-09-14,1
+London,2020-09-14,0
+Midlands,2020-09-14,4
+North East and Yorkshire,2020-09-14,3
+North West,2020-09-14,6
+South East,2020-09-14,1
+South West,2020-09-14,0
+England,2020-09-15,16
+East of England,2020-09-15,0
+London,2020-09-15,1
+Midlands,2020-09-15,1
+North East and Yorkshire,2020-09-15,3
+North West,2020-09-15,6
+South East,2020-09-15,2
+South West,2020-09-15,2
+England,2020-09-16,22
+East of England,2020-09-16,1
+London,2020-09-16,2
+Midlands,2020-09-16,4
+North East and Yorkshire,2020-09-16,3
+North West,2020-09-16,10
+South East,2020-09-16,2
+South West,2020-09-16,0
+England,2020-09-17,21
