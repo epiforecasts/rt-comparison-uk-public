@@ -52,19 +52,12 @@ public_onset_to_report_delay$max <- 30
 saveRDS(public_onset_to_report_delay, here::here("rt-estimate", "estimate", "delays", "data", "public_onset_to_report_delay.rds"))
 
 # Fit delay from onset to deaths ------------------------------------------
-# Simulate Poisson distribution around 20 days delay onset to death
-# Source: 
-#   UK ONS 
-#   https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/bulletins/coronaviruscovid19relateddeathsbyoccupationbeforeandduringlockdownenglandandwales/deathsregisteredbetween9marchand30jun2020
 
-sim_delay_death <- rpois(1000, lambda = 20)
+# Confidential CO-CIN onset to death distribution: run locally
 
-uk_sim_onset_to_death_delay <- EpiNow2::bootstrapped_dist_fit(sim_delay_death, bootstraps = 100, bootstrap_samples = 250)
-
+# delay_death <- readRDS("onset_to_death.rds")
+# cocin_onset_to_death_delay <- EpiNow2::bootstrapped_dist_fit(delay_death, bootstraps = 100, bootstrap_samples = 250)
 ## Set max allowed delay to 30 days to truncate computation
-uk_sim_onset_to_death_delay$max <- 30
-
-saveRDS(uk_sim_onset_to_death_delay, here::here("rt-estimate", "estimate", "delays", "data", "uk_sim_onset_to_death_delay.rds"))
-
-
+# cocin_onset_to_death_delay$max <- 30
+# saveRDS(cocin_onset_to_death_delay, here::here("rt-estimate", "estimate", "delays", "data", "cocin_onset_to_death_delay.rds"))
 
