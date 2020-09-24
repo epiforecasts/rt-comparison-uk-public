@@ -1,51 +1,4 @@
 region,date,confirm
-England,2020-02-01,
-England,2020-02-02,
-England,2020-02-03,
-England,2020-02-04,
-England,2020-02-05,
-England,2020-02-06,
-England,2020-02-07,
-England,2020-02-08,
-England,2020-02-09,
-England,2020-02-10,
-England,2020-02-11,
-England,2020-02-12,
-England,2020-02-13,
-England,2020-02-14,
-England,2020-02-15,
-England,2020-02-16,
-England,2020-02-17,
-England,2020-02-18,
-England,2020-02-19,
-England,2020-02-20,
-England,2020-02-21,
-England,2020-02-22,
-England,2020-02-23,
-England,2020-02-24,
-England,2020-02-25,
-England,2020-02-26,
-England,2020-02-27,
-England,2020-02-28,
-England,2020-02-29,
-England,2020-03-01,
-England,2020-03-02,
-England,2020-03-03,
-England,2020-03-04,
-England,2020-03-05,
-England,2020-03-06,
-England,2020-03-07,
-England,2020-03-08,
-England,2020-03-09,
-England,2020-03-10,
-England,2020-03-11,
-England,2020-03-12,
-England,2020-03-13,
-England,2020-03-14,
-England,2020-03-15,
-England,2020-03-16,
-England,2020-03-17,
-England,2020-03-18,
 England,2020-03-19,586
 East of England,2020-03-19,23
 London,2020-03-19,240
@@ -1439,3 +1392,66 @@ North West,2020-09-08,20
 South East,2020-09-08,9
 South West,2020-09-08,5
 England,2020-09-09,136
+East of England,2020-09-09,5
+London,2020-09-09,17
+Midlands,2020-09-09,32
+North East and Yorkshire,2020-09-09,34
+North West,2020-09-09,26
+South East,2020-09-09,17
+South West,2020-09-09,5
+England,2020-09-10,143
+East of England,2020-09-10,5
+London,2020-09-10,19
+Midlands,2020-09-10,30
+North East and Yorkshire,2020-09-10,29
+North West,2020-09-10,43
+South East,2020-09-10,10
+South West,2020-09-10,7
+England,2020-09-11,135
+East of England,2020-09-11,6
+London,2020-09-11,13
+Midlands,2020-09-11,31
+North East and Yorkshire,2020-09-11,30
+North West,2020-09-11,41
+South East,2020-09-11,11
+South West,2020-09-11,3
+England,2020-09-12,143
+East of England,2020-09-12,11
+London,2020-09-12,19
+Midlands,2020-09-12,22
+North East and Yorkshire,2020-09-12,32
+North West,2020-09-12,46
+South East,2020-09-12,12
+South West,2020-09-12,1
+England,2020-09-13,153
+East of England,2020-09-13,4
+London,2020-09-13,23
+Midlands,2020-09-13,31
+North East and Yorkshire,2020-09-13,29
+North West,2020-09-13,51
+South East,2020-09-13,12
+South West,2020-09-13,3
+England,2020-09-14,172
+East of England,2020-09-14,11
+London,2020-09-14,31
+Midlands,2020-09-14,36
+North East and Yorkshire,2020-09-14,38
+North West,2020-09-14,47
+South East,2020-09-14,9
+South West,2020-09-14,0
+England,2020-09-15,194
+East of England,2020-09-15,13
+London,2020-09-15,26
+Midlands,2020-09-15,33
+North East and Yorkshire,2020-09-15,49
+North West,2020-09-15,62
+South East,2020-09-15,7
+South West,2020-09-15,4
+England,2020-09-16,183
+East of England,2020-09-16,8
+London,2020-09-16,25
+Midlands,2020-09-16,37
+North East and Yorkshire,2020-09-16,41
+North West,2020-09-16,54
+South East,2020-09-16,13
+South West,2020-09-16,5
