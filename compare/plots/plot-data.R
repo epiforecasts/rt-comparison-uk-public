@@ -7,7 +7,7 @@ source("compare/supporting-analyses/test-positivity.R")
 # If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
 if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
   message("--- API failure - loading saved data ---")
-  data <- readRDS("data/200914.rds")
+  data <- readRDS("data/200922.rds")
 } else {
   source(here::here("data", "get-uk-data.R"))
 }
@@ -100,7 +100,7 @@ plot_ma_only_national <- data_ma %>%
   scale_color_manual(values = colours) +
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
-        panel.spacing.y = unit(0.1, "cm") #,
+        panel.spacing.y = unit(0.1, "cm"), #,
         axis.text.x = element_blank()
         ) +
   guides(colour = FALSE) +

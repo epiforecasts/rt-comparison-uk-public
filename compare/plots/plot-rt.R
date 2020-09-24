@@ -36,10 +36,10 @@ plot_rt_only <- summary %>%
   dplyr::filter(date >= date_min & date <= date_max) %>%
   mutate(date = as.Date(date, format = "%Y%M%D")) %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
-  geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-              alpha = 0.1, size = 0, colour = NA) +
+  geom_ribbon(aes(ymin = lower_20, ymax = upper_20),
+              alpha = 0.2, size = 0, colour = NA) +
   geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-              alpha = 0.2, colour = NA) +
+              alpha = 0.1, colour = NA) +
   geom_line(aes(y = median),
             alpha = 0.9, size = 1) +
   geom_hline(yintercept = 1, linetype = 2) +
@@ -65,10 +65,10 @@ plot_rt_national <- summary %>%
   dplyr::filter(region %in% c("England") &
                  date >= date_min & date <= date_max) %>%
   ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
-  geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-              alpha = 0.1, size = 0, colour = NA) +
+  geom_ribbon(aes(ymin = lower_20, ymax = upper_20),
+              alpha = 0.2, size = 0, colour = NA) +
   geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-             alpha = 0.2, colour = NA) +
+             alpha = 0.1, colour = NA) +
   geom_line(aes(y = median),
               alpha = 0.9, size = 1) +
   geom_hline(yintercept = 1, linetype = 2) +
