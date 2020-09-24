@@ -1,0 +1,17 @@
+region,point,lower,upper,mid_lower,mid_upper,central_lower,central_upper,metric,Expected change in daily cases
+England,3047,1501,4768,2175,3517,2524,3030,New confirmed cases by infection date,Likely decreasing
+North West,1782,526,178588724742766000,1103,2022,1360,1679,New confirmed cases by infection date,Unsure
+North East and Yorkshire,690,313,1168,497,844,505,630,New confirmed cases by infection date,Unsure
+Midlands,297,93,576,161,342,229,295,New confirmed cases by infection date,Decreasing
+London,220,89,378,140,251,164,204,New confirmed cases by infection date,Decreasing
+East of England,136,56,234,86,154,103,128,New confirmed cases by infection date,Unsure
+South East,118,46,198,82,143,89,111,New confirmed cases by infection date,Decreasing
+South West,72,26,133,43,82,52,66,New confirmed cases by infection date,Likely decreasing
+North West,1.05,0.81,1.73,0.86,1.15,0.93,1.03,Effective reproduction no.,Unsure
+East of England,0.91,0.6,1.19,0.78,1,0.85,0.93,Effective reproduction no.,Unsure
+North East and Yorkshire,0.85,0.56,1.14,0.72,0.95,0.77,0.85,Effective reproduction no.,Unsure
+England,0.83,0.59,1.06,0.75,0.96,0.81,0.89,Effective reproduction no.,Likely decreasing
+South West,0.79,0.52,1.07,0.69,0.91,0.73,0.81,Effective reproduction no.,Likely decreasing
+South East,0.74,0.51,0.97,0.65,0.84,0.71,0.78,Effective reproduction no.,Decreasing
+London,0.73,0.5,0.98,0.64,0.84,0.69,0.76,Effective reproduction no.,Decreasing
+Midlands,0.57,0.33,0.87,0.47,0.68,0.53,0.6,Effective reproduction no.,Decreasing

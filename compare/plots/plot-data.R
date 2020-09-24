@@ -100,7 +100,7 @@ plot_ma_only_national <- data_ma %>%
   scale_color_manual(values = colours) +
   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
   theme(panel.spacing.x = unit(0.1, "cm"),
-        panel.spacing.y = unit(0.1, "cm") #,
+        panel.spacing.y = unit(0.1, "cm"), #,
         axis.text.x = element_blank()
         ) +
   guides(colour = FALSE) +

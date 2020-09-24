@@ -61,3 +61,6 @@ saveRDS(public_onset_to_report_delay, here::here("rt-estimate", "estimate", "del
 # cocin_onset_to_death_delay$max <- 30
 # saveRDS(cocin_onset_to_death_delay, here::here("rt-estimate", "estimate", "delays", "data", "cocin_onset_to_death_delay.rds"))
 
+# Exponentiate from lognormal distribution
+# purrr::map2_dbl(cocin_onset_to_death_delay$mean, cocin_onset_to_death_delay$sd, ~ exp(.x + .y^2/2))
+

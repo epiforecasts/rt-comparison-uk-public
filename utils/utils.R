@@ -15,7 +15,7 @@ colours <- c(
 
 
 # Order nations and regions
-nation_order <- c("England", "Scotland", "Wales", "Northern Ireland")
+nation_order <- c("England")
 nhsregion_order <- c("North East and Yorkshire" ,
                 "North West",
                 "Midlands",
