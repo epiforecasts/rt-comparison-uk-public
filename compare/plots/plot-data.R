@@ -107,4 +107,26 @@ plot_ma_only_national <- data_ma %>%
   labs(y = "7-day MA", x = NULL)
 
 
-
+# Plot function
+plot_data_fn <- function(region_name){
+  data_ma %>%
+    dplyr::filter(region %in% region_name) %>%
+    ggplot() +
+    geom_line(aes(x = date, y = as.numeric(ma), 
+                  colour = `Data source`)) +
+    geom_point(aes(x = date, y = as.numeric(pos_perc),
+                   colour = `Data source`), 
+               shape = 3, size=0.9) +
+    scale_shape_discrete(solid=FALSE) +
+    geom_vline(xintercept = as.Date("2020-05-03"), 
+               lty = 3, colour = colours["Cases"]) +
+    cowplot::theme_cowplot() +
+    coord_cartesian(xlim = c(date_min, date_max)) +
+    scale_color_manual(values = colours) +
+    scale_x_date(date_breaks = "1 month", date_labels = "%b") +
+    scale_y_continuous(breaks=seq(0, 1000, by = 200)) +
+    theme(panel.spacing.x = unit(0.1, "cm"),
+          panel.spacing.y = unit(0.1, "cm")) +
+    guides(colour = FALSE) +
+    labs(y = "7-day MA", x = NULL, subtitle = region_name)
+}

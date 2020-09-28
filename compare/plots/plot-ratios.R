@@ -13,9 +13,9 @@ summary_wide <- readRDS("rt-estimate/summary_wide.rds")
 
 summary_ratios <- summary_wide %>%
   dplyr::select(date, region, 
-                case_hosp_med, case_hosp_l20, case_hosp_u20, case_hosp_l50, case_hosp_u50,
-                case_death_med, case_death_l20, case_death_u20, case_death_l50, case_death_u50,
-                hosp_death_med, hosp_death_l20, hosp_death_u20, hosp_death_l50, hosp_death_u50)
+                case_hosp_med, case_hosp_l90, case_hosp_u90, case_hosp_l50, case_hosp_u50,
+                case_death_med, case_death_l90, case_death_u90, case_death_l50, case_death_u50,
+                hosp_death_med, hosp_death_l90, hosp_death_u90, hosp_death_l50, hosp_death_u50)
 
 
 # Get region names and plotting colours
@@ -31,9 +31,9 @@ scale_max <- 2
 # Cases on deaths
 plot_ratio_case_death <- summary_ratios %>%
   ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = case_death_l50, ymax = case_death_u50),
+  geom_ribbon(aes(ymin = case_death_l90, ymax = case_death_u90),
               alpha = 0.1) +
-  geom_ribbon(aes(ymin = case_death_l20, ymax = case_death_u20),
+  geom_ribbon(aes(ymin = case_death_l50, ymax = case_death_u50),
               alpha = 0.2, size = 0.2) +
   geom_line(aes(y = case_death_l50), alpha = 0.1) +
   geom_line(aes(y = case_death_u50), alpha = 0.1) +
@@ -54,9 +54,9 @@ plot_ratio_case_death <- summary_ratios %>%
 # Hospital admissions on deaths
 plot_ratio_hosp_death <- summary_ratios %>%
   ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = hosp_death_l50, ymax = hosp_death_u50),
+  geom_ribbon(aes(ymin = hosp_death_l90, ymax = hosp_death_u90),
               alpha = 0.1) +
-  geom_ribbon(aes(ymin = hosp_death_l20, ymax = hosp_death_u20),
+  geom_ribbon(aes(ymin = hosp_death_l50, ymax = hosp_death_u50),
               alpha = 0.2, size = 0.2) +
   geom_line(aes(y = hosp_death_l50), alpha = 0.1) +
   geom_line(aes(y = hosp_death_u50), alpha = 0.1) +
@@ -77,9 +77,9 @@ plot_ratio_hosp_death <- summary_ratios %>%
 # Cases by report date on hospital admissions
 plot_ratio_case_hosp <- summary_ratios %>%
   ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = case_hosp_l50, ymax = case_hosp_u50),
+  geom_ribbon(aes(ymin = case_hosp_l90, ymax = case_hosp_u90),
               alpha = 0.1) +
-  geom_ribbon(aes(ymin = case_hosp_l20, ymax = case_hosp_u20),
+  geom_ribbon(aes(ymin = case_hosp_l50, ymax = case_hosp_u50),
               alpha = 0.2, size = 0.2) +
   geom_line(aes(y = case_hosp_l50), alpha = 0.1) +
   geom_line(aes(y = case_hosp_u50), alpha = 0.1) +
@@ -110,9 +110,9 @@ plot_national_ratio_case_death <- summary_ratios %>%
                   date >= date_min &
                   date <= date_max) %>%
   ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = case_death_l50, ymax = case_death_u50),
+  geom_ribbon(aes(ymin = case_death_l90, ymax = case_death_u90),
               alpha = 0.1) +
-  geom_ribbon(aes(ymin = case_death_l20, ymax = case_death_u20),
+  geom_ribbon(aes(ymin = case_death_l50, ymax = case_death_u50),
               alpha = 0.2, size = 0.2) +
   geom_line(aes(y = case_death_l50), alpha = 0.1) +
   geom_line(aes(y = case_death_u50), alpha = 0.1) +
@@ -132,9 +132,9 @@ plot_national_hosp_death <- summary_ratios %>%
                   date >= date_min &
                   date <= date_max) %>%
   ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = hosp_death_l50, ymax = hosp_death_u50),
+  geom_ribbon(aes(ymin = hosp_death_l90, ymax = hosp_death_u90),
               alpha = 0.1) +
-  geom_ribbon(aes(ymin = hosp_death_l20, ymax = hosp_death_u20),
+  geom_ribbon(aes(ymin = hosp_death_l50, ymax = hosp_death_u50),
               alpha = 0.2, size = 0.2) +
   geom_line(aes(y = hosp_death_l50), alpha = 0.1) +
   geom_line(aes(y = hosp_death_u50), alpha = 0.1) +
@@ -154,9 +154,9 @@ plot_national_case_hosp <- summary_ratios %>%
                   date >= date_min &
                   date <= date_max) %>%
   ggplot(aes(x = date)) +
-  geom_ribbon(aes(ymin = case_hosp_l50, ymax = case_hosp_u50),
+  geom_ribbon(aes(ymin = case_hosp_l90, ymax = case_hosp_u90),
               alpha = 0.1) +
-  geom_ribbon(aes(ymin = case_hosp_l20, ymax = case_hosp_u20),
+  geom_ribbon(aes(ymin = case_hosp_l50, ymax = case_hosp_u50),
               alpha = 0.2, size = 0.2) +
   geom_line(aes(y = case_hosp_l50), alpha = 0.1) +
   geom_line(aes(y = case_hosp_u50), alpha = 0.1) +

@@ -6,52 +6,80 @@ library(dplyr)
 library(tidyr)
 library(purrr)
 
-# Get national -------------------------------------------------------------
+# Get Rt estimates -------------------------------------------------------------
 
-estimates <- list("cases_test",
-                  "cases_hosp",
-                  "deaths_death")
-names(estimates) <- estimates
+# Cases positive test
+summary_cases <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/cases_test/region",
+                                                      date = "2020-09-16")$estimates$summarised
 
-# Get Rt only
-summary <- estimates %>%
-  purrr::map(~ readr::read_csv(paste0("rt-estimate/estimate/", ., "/summary/rt.csv"))) %>%
-  purrr::map_dfr(~ .x, .id = "source") %>%
-  # Filter out "estimate based on partial data"
-  dplyr::filter(type == "estimate")
-  
-# Factor regions for consistent plot alignment
+summary_cases <- summary_cases %>%
+  dplyr::mutate(source = "cases_test")
+
+# Admissions -  East of England + England + all other regions
+summary_hosp <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/cases_hosp/region",
+                                               date = "2020-09-16")$estimates$summarised
+summary_hosp_eastengland <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/cases_hosp/region",
+                                                      date = "2020-09-17")$estimates$summarised
+summary_hosp <- summary_hosp %>%
+  dplyr::filter(!region %in% summary_hosp_eastengland$region) %>%
+  dplyr::bind_rows(summary_hosp_eastengland) %>%
+  dplyr::mutate(source = "cases_hosp")
+
+# Deaths - Midlands + all other regions
+summary_deaths <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/deaths_death/region",
+                                                date = "2020-09-17")$estimates$summarised
+summary_deaths_midlands <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/deaths_death/region",
+                                               date = "2020-09-16")$estimates$summarised
+summary_deaths <- summary_deaths %>%
+  dplyr::filter(!region %in% summary_deaths_midlands$region) %>%
+  dplyr::bind_rows(summary_deaths_midlands)%>%
+  dplyr::mutate(source = "deaths_death")
+
+
+rm(summary_hosp_eastengland, summary_deaths_midlands)
+
+# Format
+summary <- dplyr::bind_rows(summary_cases, summary_hosp, summary_deaths) %>%
+  dplyr::filter(variable == "R" & type == "estimate") %>%
+  dplyr::select(-strat, -variable, -mean, -sd,
+                lower_90 = bottom, upper_90 = top, 
+                lower_50 = lower, upper_50 = upper,
+                lower_20 = central_lower, upper_20 = central_upper)
+
+
+# Factor regions ----------------------------------------------------------
 source("utils/utils.R")
 summary$region = factor(summary$region, 
                         levels = region_names$region_factor)
 
+
+# Save pure summary -------------------------------------------------------
 saveRDS(summary, "rt-estimate/summary.rds")
 
 
 # Take ratios -------------------------------------------------------------
 summary_wide <- summary %>%
-  dplyr::select(-lower_90, -upper_90, -mean, -sd) %>%
   tidyr::pivot_wider(names_from = source, 
                      values_from = c("median", 
                                      "lower_50", "upper_50",
-                                     "lower_20", "upper_20"))  %>%
+                                     "lower_90", "upper_90"))  %>%
   dplyr::mutate(
     # cases / deaths
     case_death_med = median_cases_test / median_deaths_death,
-    case_death_l20 = lower_20_cases_test / lower_20_deaths_death,
-    case_death_u20 = upper_20_cases_test / upper_20_deaths_death,
+    case_death_l90 = lower_90_cases_test / lower_90_deaths_death,
+    case_death_u90 = upper_90_cases_test / upper_90_deaths_death,
     case_death_l50 = lower_50_cases_test / lower_50_deaths_death,
     case_death_u50 = upper_50_cases_test / upper_50_deaths_death,
     # cases / cases_hosp
     case_hosp_med = median_cases_test / median_cases_hosp,
-    case_hosp_l20 = lower_20_cases_test / lower_20_cases_hosp,
-    case_hosp_u20 = upper_20_cases_test / upper_20_cases_hosp,
+    case_hosp_l90 = lower_90_cases_test / lower_90_cases_hosp,
+    case_hosp_u90 = upper_90_cases_test / upper_90_cases_hosp,
     case_hosp_l50 = lower_50_cases_test / lower_50_cases_hosp,
     case_hosp_u50 = upper_50_cases_test / upper_50_cases_hosp,
     # cases_hosp / deaths_death
     hosp_death_med = median_cases_hosp / median_deaths_death,
-    hosp_death_l20 = lower_20_cases_hosp / lower_20_deaths_death,
-    hosp_death_u20 = upper_20_cases_hosp / upper_20_deaths_death,
+    hosp_death_l90 = lower_90_cases_hosp / lower_90_deaths_death,
+    hosp_death_u90 = upper_90_cases_hosp / upper_90_deaths_death,
     hosp_death_l50 = lower_50_cases_hosp / lower_50_deaths_death,
     hosp_death_u50 = upper_50_cases_hosp / upper_50_deaths_death)
 
@@ -65,7 +93,6 @@ estimate_dates <- dplyr::group_by(summary, source, region) %>%
 saveRDS(max(estimate_dates$min_date), "utils/earliest_estimate.rds")
 saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
 
-# summary_wide <- summary_wide %>%
-#   dplyr::filter(date >= max(estimate_dates$min_date) & date <= min(estimate_dates$max_date))
-
 saveRDS(summary_wide, "rt-estimate/summary_wide.rds")
+
+rm(list=ls())

@@ -85,8 +85,12 @@ ggsave("figures/carehome_outbreaks.png", height = 4, width = 10)
 
 # Deaths in care homes ----------------------------------------------------
 # Note deaths are by day of notfication ("2-3 days after death")
-# 
-url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fbirthsdeathsandmarriages%2fdeaths%2fdatasets%2fnumberofdeathsincarehomesnotifiedtothecarequalitycommissionengland%2f2020/20200913officialsensitivecoviddeathnotificationsdata20200911v1.xlsx"
+# Source: 
+# ONS: Number of care home deaths notified to the CQC
+# Available at https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/numberofdeathsincarehomesnotifiedtothecarequalitycommissionengland
+# Downloaded copy saved under "data/2020-09-27-care-home-deaths.xlsx"
+
+url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fbirthsdeathsandmarriages%2fdeaths%2fdatasets%2fnumberofdeathsincarehomesnotifiedtothecarequalitycommissionengland%2f2020/20200920officialsensitivedeathnotifsv3.xlsx"
 
 httr::GET(url, httr::write_disk(tf <- tempfile(fileext = ".xlsx")))
 
@@ -149,10 +153,63 @@ carehome_region <- carehome_la %>%
                                 "Midlands", RGN19NM),
                 region = ifelse(region == "North East" | RGN19NM == "Yorkshire and The Humber", 
                                 "North East and Yorkshire", region)) %>%
+  # Summarise deaths data by region
   dplyr::group_by(region, date) %>%
-  dplyr::summarise(deaths = sum(deaths), .groups = "drop")
+  dplyr::summarise(deaths = sum(deaths), .groups = "drop") %>%
+  dplyr::group_by(region) %>%
+  dplyr::mutate(ma = TTR::runMean(deaths, 7),
+                zsc_ma = scale(ma, center = TRUE, scale = TRUE)) %>%
+  dplyr::ungroup() %>%
+  # Fix dates - year is 2020!
+  dplyr::mutate(year = lubridate::year(Sys.Date()),
+                date = lubridate::dmy(paste(lubridate::day(date), 
+                                            lubridate::month(date), 
+                                            year, sep = "-")))
 
 
-#  
-#  
-carehome_eng <- carehome_region[carehome_region$region == "England",]
+# Fill out missing dates early in time series
+fill_dates <- tibble::tibble(
+  region = rep(names(region_list), 
+               length(seq.Date(from = as.Date("2020-03-19"), 
+                               to = min(carehome_region$date)-1, 
+                               by = 1))),
+  date = rep(seq.Date(from = as.Date("2020-03-19"), 
+                      to = min(carehome_region$date)-1, 
+                      by = 1),
+             8),
+  ma = NA)
+
+
+# Get all deaths data
+data_ma_deaths <- data %>%
+  dplyr::group_by(region) %>%
+  # Moving average of count
+  dplyr::mutate(ma = forecast::ma(deaths_death, order = 7),
+                Deaths = "All recorded by date of death") %>% 
+  dplyr::ungroup() %>%
+  dplyr::select(date, region, ma, Deaths)
+
+# Join with care homes data
+carehome_region_fill <- dplyr::bind_rows(carehome_region, fill_dates) %>%
+  dplyr::mutate(Deaths = "Care home by date of notification") %>%
+  dplyr::select(region, date, ma, Deaths) %>%
+  dplyr::bind_rows(data_ma_deaths) %>%
+  dplyr::mutate(region = factor(region, levels = region_names$region_factor))
+
+
+# Plot
+plot_carehome_deaths <- carehome_region_fill %>%
+  dplyr::filter(!region %in% "England" & 
+                  date <= date_max) %>%
+  ggplot(aes(x = date, colour = Deaths)) +
+  geom_line(aes(y = ma), lwd = 1) +
+  facet_wrap(~ region, nrow = 2, scales = "free_y") +
+  labs(x = NULL, y = "Deaths, 7-day MA") +
+  scale_colour_manual(values = colours) +
+  theme(legend.position = "bottom",
+        strip.background = element_blank(),
+        text = element_text(size = 15))
+
+ggsave(paste0("figures/", Sys.Date(), "-carehome-deaths.png"),
+       width = 12)
+

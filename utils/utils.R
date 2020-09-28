@@ -10,7 +10,10 @@ colours <- c(
   "cases_hosp" =  "#7570b3",
   # Deaths
   "Deaths" = "#d95f02",
-  "deaths_death" = "#d95f02"
+  "deaths_death" = "#d95f02",
+  # Carehomes
+  "All recorded by date of death" = "#d95f02",
+  "Care home by date of notification" = "#190C3EFF"
   )
 
 

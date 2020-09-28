@@ -2,40 +2,139 @@
 summary_wide <- readRDS("rt-estimate/summary_wide.rds")
 source("utils/utils.R")
 
+summary_wide <- readRDS("rt-estimate/summary.rds")
+summary_source_region <- split(summary, summary$source)
+summary_source_region <- purrr::map(summary_source_region, ~ split(.x, .x$region))
+
+# Time series features by region ------------------------------------------
+summary_wide_split <- split(summary_wide, summary_wide$region)
 
 
-# STL decomposition -------------------------------------------------------
+# IQR around median estimate ----------------------------------------------
+med_iqr <- purrr::map(summary_wide_split, 
+                      ~ sapply(.x[c("median_cases_test",
+                                    "median_cases_hosp",
+                                    "median_deaths_death")], IQR, na.rm=T)) %>%
+  dplyr::bind_rows(.id = "region")
+# max: 0.27, SW, cases_test
+# min: 0.06, EoE, deaths
+                           
 
-eng <- data[data$region == "Midlands",]
-eng <- merge(eng, summary_wide, by = c("region", "date"))
+# Crossing points ---------------------------------------------------------
+# Number of times cross the median of the series
+cross_points <- purrr::map(summary_wide_split, 
+                           ~ sapply(.x[c("median_cases_test",
+                                         "median_cases_hosp",
+                                         "median_deaths_death")], 
+                                    tsfeatures::crossing_points)) %>%
+  dplyr::bind_rows(.id = "region")
+
+# Mean + 95% CI of crossing points across all regions
+cross_points_mean <- apply(cross_points[2:4], 2, t.test)
 
 
-eng_ts <- ts(eng$median_cases_hosp, start = min(eng$date), frequency = 7)
+# Lumpiness
+# tsfeatures::lumpiness(summary_wide_split$England$median_cases_test, 10)
 
-eng_ts <- eng_ts[!is.na(eng_ts)]
 
-eng_ts %>%
-  forecast::mstl(robust=TRUE) %>%
-  forecast::autoplot()
+# Linearity, spikes -------------------------------------------------------
 
-sts <- StructTS(eng_ts)
-sts$coef["slope"]
+# See all TS features
+tsfeats <- purrr::map(summary_wide_split, 
+                           ~ apply(.x[4:6], 2, tsfeatures::tsfeatures)) %>%
+  purrr::map(., ~ dplyr::bind_rows(.x, .id = "source")) %>%
+  dplyr::bind_rows(., .id = "region")
 
-plot(eng_ts) + 
-  abline(min(eng_ts, na.rm=T), StructTS(eng_ts[54:length(eng_ts)])$coef["slope"])
 
-eng_stl <- forecast::mstl(eng_ts)
+# Linear trend on trend component of STL
+lm(forecast::mstl(summary_wide_split$England$median_deaths_death)[,2] ~ zoo::index(farima))
 
-eng_ts %>%
-  decompose(type = "multiplicative") %>%
-  forecast::autoplot()
 
-fit <- eng_ts %>%
-  seasonal::seas(x11="")
+# entropy
+purrr::map(englist, ~ tsfeatures::sampenc(.x, M = 2, r = 0.01777633))
+purrr::map(englist, ~ tsfeatures::entropy(.x))
 
-fit <- eng_ts %>% forecast::mstl()
 
-tc <- forecast::trendcycle(eng_stl)
+# Fluctuation
+purrr::map(englist, ~ tsfeatures::fluctanal_prop_r1(.x))
+plot(log(englist[[3]]), log(englist[[3]]))
+
+# St Dev of first derivative
+purrr::map(englist, ~ tsfeatures::std1st_der(.x))
+purrr::map(englist, ~ sd(.x, na.rm=T))
+
+# Heteroskedasticity: 
+# Change in variance (volatility) over time (eg becoming more variable with mass testing)
+# ARCH / GARCH
+
+# Heterogeneity
+# - The heterogeneity features measure the heterogeneity of the time series. 
+#   First, we pre-whiten the time series to remove the mean, trend, and 
+#   autoregressive (AR) information (Barbour & Parker 2014). Then we fit a 
+#   GARCH(1,1) model to the pre-whitened time series, xt, to measure for 
+#   autoregressive conditional heteroskedasticity (ARCH) effects. The residuals 
+#   from this model, zt, are also measured for ARCH effects using a second 
+#   GARCH(1,1) model.
+purrr::map(englist, ~ tsfeatures::heterogeneity(.x[1:163]))
+
+# Flat spots
+# - flat_spots are computed by dividing the sample space of a time series 
+#   into ten equal-sized intervals, and computing the maximum run length 
+#   within any single interval.
+unlist(purrr::map(summary_wide_split, 
+                  ~ tsfeatures::flat_spots(.x$median_cases_test)))
+
+# Crossing points: number of times the series crosses the median
+purrr::map_dbl(englist, ~ median(.x, na.rm=T))
+purrr::map_dbl(englist, ~ tsfeatures::crossing_points(.x))
+
+# Max var shift: finds the largest variance shift between two consecutive 
+# sliding windows of the time series. This is useful for finding sudden 
+# changes in the volatility of a time series.
+purrr::map(summary_source_region,
+           ~ fabletools::features(.x$median, feasts::feat_stl))
+
+
+# Nonlinearity
+# - The nonlinearity coefficient is computed using a modification of the statistic 
+#   used in Teräsvirta’s nonlinearity test. Teräsvirta’s test uses a statistic 
+#   X2=Tlog(SSE1/SSE0) where SSE1 and SSE0 are the sum of squared residuals from 
+#   a nonlinear and linear autoregression respectively. This is non-ergodic, so 
+#   instead, we define it as 10X2/T which will converge to a value indicating the 
+#   extent of nonlinearity as T→∞. This takes large values when the series is
+#   nonlinear, and values around 0 when the series is linear.
+purrr::map(englist, ~ tsfeatures::nonlinearity(.x[1:163]))
+
+# Stability
+purrr::map(englist, ~ tsfeatures::stability(.x[1:163]))
+# - & Lumpiness
+purrr::map(englist, ~ tsfeatures::lumpiness(.x))
+
+# All STL features: trend, spike, linearity, curvature
+# - spike measures the “spikiness” of a time series, and is computed 
+#   as the variance of the leave-one-out variances of the remainder component et.
+# - linearity and curvature measures the linearity and curvature of a time series 
+#   calculated based on the coefficients of an orthogonal quadratic regression.
+purrr::map(englist, ~ tsfeatures::stl_features(.x)["spike"])
+
+# All TS features
+purrr::map(englist, ~ t(tsfeatures::tsfeatures(.x)))
+
+
+
+summary_wide_split$England %>%
+  ggplot(aes(x = date)) +
+  geom_line(aes(y = median_cases_test), colour = "green") +
+  geom_line(aes(y = median_cases_hosp), colour = "orange") +
+  geom_line(aes(y = median_deaths_death), colour = "red") +
+  # geom_smooth(aes(y = median_cases_test), method = "lm", colour = "green") +
+  # geom_smooth(aes(y = median_cases_hosp), method = "lm", colour = "orange") +
+  # geom_smooth(aes(y = median_deaths_death), method = "lm", colour = "red") +
+  theme_classic()
+  
+
+acf(englist[[3]][1:163], lag.max = 163)
+
 
 
 # Find peaks --------------------------------------------------------------
@@ -113,6 +212,8 @@ all_wave <- list(
   cases = purrr::map(summary_group, ~ wave_features(.x, "median_cases_test", 7)),
   hosp = purrr::map(summary_group, ~ wave_features(.x, "median_cases_hosp", 7)),
   deaths = purrr::map(summary_group, ~ wave_features(.x, "median_deaths_death", 7)))
+
+
 
 
 
