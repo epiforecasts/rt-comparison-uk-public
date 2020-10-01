@@ -4,7 +4,10 @@ library(here)
 library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
-run_rt_estimate <- function(data, count_variable, reporting_delay,
+run_rt_estimate <- function(data, 
+                            count_variable, 
+                            reporting_delay,
+                            no_cores,
                             burn_in = 0) {
   
   for(i in 1:length(count_variable)){
@@ -44,19 +47,33 @@ run_rt_estimate <- function(data, count_variable, reporting_delay,
   
   # Set up common settings --------------------------------------------------
   
-  EpiNow2::regional_epinow(target_folder = targets,
-                           summary_dir = summary,
-                           reported_cases = data_select,
-                           delays = list(incubation_period, reporting_delay),
-                           generation_time = generation_time,
-                           horizon = 0,
-                           samples = 2000, # try 3000
-                           warmup = 1000,
-                           burn_in = burn_in,
-                           adapt_delta = 0.99, # try 0.999
-                           cores = no_cores,
-                           chains = ifelse(no_cores <= 2, 2, no_cores),
-                           return_estimates = FALSE, verbose = TRUE)
+  futile.logger::flog.trace("calling regional_epinow")
+  out <- regional_epinow(reported_cases = data_select,
+                         generation_time = generation_time,
+                         delays = list(incubation_period, 
+                                       reporting_delay),
+                         horizon = 0, 
+                         burn_in = burn_in, 
+                         samples = 4000,
+                         stan_args = list(warmup = 1000, 
+                                          cores = no_cores, 
+                                          chains = ifelse(no_cores <= 4, 4, no_cores)),
+                         target_folder = targets,
+                         return_estimates = FALSE, 
+                         summary = TRUE,
+                         return_timings = TRUE, 
+                         future = FALSE,
+                         max_execution_time = Inf)
+  
+  futile.logger::flog.debug("resetting future plan to sequential")
+  future::plan("sequential")
+  
+  futile.logger::flog.trace("generating summary data")
+  regional_summary(
+    reported_cases = data_select, 
+    results_dir = targets, 
+    summary_dir =  summary, 
+    return_summary = FALSE)
 
   }
 }

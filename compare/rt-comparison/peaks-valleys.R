@@ -151,3 +151,7 @@ summary %>%
   geom_point(aes(y = median), 
              data = peaks$deaths_death$`Midlands`, 
              colour = colours["cases_test"])
+
+# wave split
+wave_split <- split(waves, waves$region) %>%
+  purrr::map(., ~ split(., .$source))
