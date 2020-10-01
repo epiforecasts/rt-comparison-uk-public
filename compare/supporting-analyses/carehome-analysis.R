@@ -1,8 +1,6 @@
 # Care home analysis
 # 
 # Number of outbreaks in care homes --------------------------------------------------------------
-# Source for spreadsheet: "https://www.gov.uk/government/statistical-data-sets/covid-19-number-of-outbreaks-in-care-homes-management-information
-# A raw copy was downloaded on 2020-09-13 and saved to repo
 
 carehomes <- readxl::read_excel("data/Care_home_outbreaks_of_COVID-19_Management_Information.xlsx", 
                                 sheet = "PHE_centres",
@@ -212,4 +210,23 @@ plot_carehome_deaths <- carehome_region_fill %>%
 
 ggsave(paste0("figures/", Sys.Date(), "-carehome-deaths.png"),
        width = 12)
+
+
+
+# Care home admissions to hospitals ---------------------------------------
+source("data/supporting-data.R")
+
+adm_carehome <- readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"), 
+                                   sheet = 1,
+                                   range = readxl::cell_limits(c(74, 2), c(82, NA))) %>%
+  t() %>%
+  tibble::as_tibble() %>%
+  janitor::row_to_names(1) %>%
+  dplyr::mutate(date = seq.Date(from = as.Date("2020-08-01"), by = 1, length.out = nrow(.))) # Starts 1 Aug
+
+
+
+
+
+
 

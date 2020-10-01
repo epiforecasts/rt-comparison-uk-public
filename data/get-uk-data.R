@@ -3,8 +3,6 @@ library(magrittr)
 library(data.table)
 library(ukcovid19) # remotes::install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
 
-# Include national data?
-national_data = TRUE
 
 # Get data ----------------------------------------------------------------
 
@@ -16,11 +14,8 @@ structure <- list("date", "areaName",
 names(structure) <- structure
 
 areaType <- list("nhsregion" = "areaType=nhsregion",
-                 "region" = "areaType=region")
-if(national_data){
-  areaType$nation = "areaType=nation"
-}
-
+                 "region" = "areaType=region",
+                 "nation" = "areaType=nation")
 
 
 # Get data
@@ -59,17 +54,9 @@ data <- data[, "newAdmissions" := NULL]
 data <- merge(data, raw$nhsregion, by = c("date", "areaName"))
 
 # Bind regions with national
-if(national_data) {
-  data <- rbind(raw$nation, data)
-  # Keep only England of the nations
-  data <- data[!data$areaName %in% c("Scotland", "Wales", "Northern Ireland"),]
-}
-
-
-
-# Add column to identify regions vs nations
-source("utils/utils.R")
-data$region_type <- ifelse(data$areaName == "England", "nation", "region")
+data <- rbind(raw$nation, data)
+# Keep only England of the nations
+data <- data[!data$areaName %in% c("Scotland", "Wales", "Northern Ireland"),]
 
 
 # Cleaning ----------------------------------------------------------------
@@ -84,14 +71,33 @@ data <- data.table::setnames(data, old, new)
 data$date <- lubridate::ymd(data$date)
 data <- data[, .SD[date >= lubridate::ymd("2020-02-01")]]
 
-# Check date sequence is complete
-if(length(seq.Date(from = min(data$date), to = max(data$date), by = 1)) 
-   != (length(data$date) / length(unique(data$region)))){
-  print("Missing/uneven days in date sequence")
-}
 
-
-# Clean environment -------------------------------------------------------
-#
+# Clean environment
 rm(old, new, structure, areaType, raw)
+
+
+# NHS admissions data: from 1 Aug -----------------------------------------
+nhs_url <- paste0("https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/09/COVID-19-daily-admissions-",
+                  gsub("-", "", as.character(Sys.Date()-1)),
+                  ".xlsx")
+
+download.file(nhs_url, destfile = paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"), mode = "wb")
+rm(nhs_url)
+
+adm_new <- readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"),
+                                   sheet = 1,
+                                   range = readxl::cell_limits(c(13, 2), c(21, NA))) %>%
+  t() %>%
+  tibble::as_tibble() %>%
+  janitor::row_to_names(1) %>%
+  dplyr::mutate(date = seq.Date(from = as.Date("2020-08-01"), by = 1, length.out = nrow(.))) %>%
+  tidyr::pivot_longer(-date, names_to = "region", values_to = "cases_hosp_new") %>%
+  dplyr::mutate(region = ifelse(region == "ENGLAND", "England", region),
+                cases_hosp_new = as.numeric(cases_hosp_new))
+
+
+# Join NHS and dashboard data ---------------------------------------------
+
+all_data <- dplyr::left_join(data, adm_new, by = c("date", "region")) %>%
+  dplyr::mutate(region = factor(region, levels = region_names$region_factor))
 
