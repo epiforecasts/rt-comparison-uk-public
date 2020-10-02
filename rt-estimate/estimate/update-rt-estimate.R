@@ -13,44 +13,47 @@ source(here::here("rt-estimate", "estimate", "utils", "rt-data-defaults.R"))
 source(here::here("rt-estimate", "estimate", "utils",  "run-rt-estimate.R"))
 
 # Set min/max dates for data
-data <- data[data$date >= as.Date("2020-03-19") & data$date <= Sys.Date()-2,] 
+data <- data[data$date >= as.Date("2020-03-19") & data$date <= max(data$date)-1,] 
   # regional data only available after 19 March; this trims England data to same
   # hospital admissions always 1 day more delayed than other data
 
 # Run estimates -----------------------------------------------------------
 # Run everything everywhere
+# Cases - by test date
+run_rt_estimate(data = data,
+                count_variable = c("cases_test"),
+                reporting_delay = cases_delay,
+                burn_in = 0,
+                no_cores = no_cores)
+# Hospital admissions
+run_rt_estimate(data = data,
+                count_variable = c("cases_hosp"),
+                reporting_delay = cases_delay,
+                burn_in = 0,
+                no_cores = no_cores)
+# Deaths - by date of death
+run_rt_estimate(data = data,
+                count_variable = c("deaths_death"),
+                reporting_delay = deaths_delay,
+                burn_in = 0,
+                no_cores = no_cores)
+
+# Run specific regions
 # # Cases - by test date
-# run_rt_estimate(data = data,
+# run_rt_estimate(data = data[data$region %in% c("North West"),],
 #                 count_variable = c("cases_test"),
 #                 reporting_delay = cases_delay,
 #                 burn_in = 0)
 # # Hospital admissions
-# run_rt_estimate(data = data,
+# run_rt_estimate(data = data[data$region %in% c("England", "East of England"),],
 #                 count_variable = c("cases_hosp"),
 #                 reporting_delay = cases_delay,
 #                 burn_in = 0)
 # # Deaths - by date of death
-# run_rt_estimate(data = data,
+# run_rt_estimate(data = data[data$region %in% c("Midlands"),],
 #                 count_variable = c("deaths_death"),
 #                 reporting_delay = deaths_delay,
 #                 burn_in = 0)
-
-# Run specific regions
-# Cases - by test date
-run_rt_estimate(data = data[data$region %in% c("North West"),],
-                count_variable = c("cases_test"),
-                reporting_delay = cases_delay,
-                burn_in = 0)
-# Hospital admissions
-run_rt_estimate(data = data[data$region %in% c("England", "East of England"),],
-                count_variable = c("cases_hosp"),
-                reporting_delay = cases_delay,
-                burn_in = 0)
-# Deaths - by date of death
-run_rt_estimate(data = data[data$region %in% c("Midlands"),],
-                count_variable = c("deaths_death"),
-                reporting_delay = deaths_delay,
-                burn_in = 0)
 
 
 

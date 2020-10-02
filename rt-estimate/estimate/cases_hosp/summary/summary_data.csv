@@ -1,5 +1,23 @@
 region,point,lower,upper,mid_lower,mid_upper,central_lower,central_upper,metric,Expected change in daily cases
-England,398,215,646,295,460,321,379,New confirmed cases by infection date,Unsure
-East of England,28,8,55,15,31,17,23,New confirmed cases by infection date,Increasing
-East of England,1.39,0.97,1.87,1.15,1.5,1.26,1.38,Effective reproduction no.,Increasing
-England,1.15,0.88,1.47,0.98,1.22,1.07,1.16,Effective reproduction no.,Unsure
+England,437,241,678,332,498,380,442,New confirmed cases by infection date,Likely increasing
+North West,150,50,270,89,169,122,151,New confirmed cases by infection date,Likely increasing
+North East and Yorkshire,143,63,245,92,163,114,139,New confirmed cases by infection date,Likely increasing
+Midlands,63,24,111,36,70,52,64,New confirmed cases by infection date,Unsure
+London,62,23,113,39,72,49,61,New confirmed cases by infection date,Likely increasing
+Wales,44,34,55,39,47,,,New confirmed cases by infection date,Likely decreasing
+South East,24,10,42,15,27,17,21,New confirmed cases by infection date,Likely increasing
+South West,13,4,26,7,15,10,13,New confirmed cases by infection date,Likely increasing
+East of England,10,3,18,5,11,6,8,New confirmed cases by infection date,Unsure
+Northern Ireland,2,0,5,1,2,,,New confirmed cases by infection date,Unsure
+South West,1.31,0.93,1.72,1.13,1.44,1.23,1.35,Effective reproduction no.,Likely increasing
+North West,1.3,0.91,1.74,1.1,1.42,1.2,1.32,Effective reproduction no.,Likely increasing
+North East and Yorkshire,1.27,0.92,1.61,1.14,1.41,1.2,1.3,Effective reproduction no.,Likely increasing
+England,1.21,0.96,1.5,1.08,1.29,1.15,1.22,Effective reproduction no.,Likely increasing
+South East,1.21,0.92,1.55,1.07,1.32,1.15,1.24,Effective reproduction no.,Likely increasing
+London,1.18,0.83,1.54,1.05,1.32,1.09,1.19,Effective reproduction no.,Likely increasing
+Midlands,1.12,0.78,1.45,0.99,1.26,1.08,1.18,Effective reproduction no.,Unsure
+East of England,1.08,0.75,1.38,0.96,1.21,1.05,1.14,Effective reproduction no.,Unsure
+Northern Ireland,1.03,0.56,1.49,0.82,1.19,,,Effective reproduction no.,Unsure
+Wales,0.97,0.92,1.03,0.95,0.99,,,Effective reproduction no.,Likely decreasing
+Scotland,0.66,0.26,1.1,0.47,0.81,,,Effective reproduction no.,Likely decreasing
+Scotland,0,0,0,0,0,,,New confirmed cases by infection date,Likely decreasing
