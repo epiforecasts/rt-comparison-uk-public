@@ -62,8 +62,8 @@ run_rt_estimate <- function(data,
                          return_estimates = FALSE, 
                          summary = TRUE,
                          return_timings = TRUE, 
-                         future = FALSE,
-                         max_execution_time = Inf)
+                         future = TRUE,
+                         max_execution_time = 60 * 60 * 5)
   
   futile.logger::flog.debug("resetting future plan to sequential")
   future::plan("sequential")
