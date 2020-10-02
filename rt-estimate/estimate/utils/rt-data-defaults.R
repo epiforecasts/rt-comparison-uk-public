@@ -33,8 +33,8 @@ setup_future <- function(jobs) {
   }
   
   
-  plan(tweak(multiprocess, workers = min(future::availableCores(), jobs)),
-       gc = TRUE, earlySignal = TRUE)
+  plan(list(tweak(multiprocess, workers = min(future::availableCores(), jobs)), gc = TRUE, earlySignal = TRUE)
+            tweak(multiprocess, workers = max(1, round(future::availableCores() / jobs, 0)))))
   
   
   jobs <- max(1, round(future::availableCores() / jobs, 0))
