@@ -9,40 +9,29 @@ library(purrr)
 # Get Rt estimates -------------------------------------------------------------
 
 # Cases positive test
-summary_cases <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/cases_test/region",
-                                                      date = "2020-09-16")$estimates$summarised
+summary_cases <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/cases_test/region",
+                                                      date = "latest")$estimates$summarised
 
 summary_cases <- summary_cases %>%
   dplyr::mutate(source = "cases_test")
 
-# Admissions -  East of England + England + all other regions
-summary_hosp <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/cases_hosp/region",
-                                               date = "2020-09-16")$estimates$summarised
-summary_hosp_eastengland <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/cases_hosp/region",
-                                                      date = "2020-09-17")$estimates$summarised
-summary_hosp <- summary_hosp %>%
-  dplyr::filter(!region %in% summary_hosp_eastengland$region) %>%
-  dplyr::bind_rows(summary_hosp_eastengland) %>%
-  dplyr::mutate(source = "cases_hosp")
-
-# Deaths - Midlands + all other regions
-summary_deaths <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/deaths_death/region",
+# Admissions
+summary_hosp <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/cases_hosp/region",
+                                               date = "latest")$estimates$summarised
+# Deaths
+summary_deaths <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/deaths_death/region",
                                                 date = "2020-09-17")$estimates$summarised
-summary_deaths_midlands <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate/deaths_death/region",
-                                               date = "2020-09-16")$estimates$summarised
-summary_deaths <- summary_deaths %>%
-  dplyr::filter(!region %in% summary_deaths_midlands$region) %>%
-  dplyr::bind_rows(summary_deaths_midlands)%>%
-  dplyr::mutate(source = "deaths_death")
 
-
-rm(summary_hosp_eastengland, summary_deaths_midlands)
 
 # Format
-summary <- dplyr::bind_rows(summary_cases, summary_hosp, summary_deaths) %>%
+summary <- dplyr::bind_rows(summary_cases, summary_hosp, summary_deaths, .id = "source") %>%
+  dplyr::mutate(source = ifelse(source == 1, "cases_test",
+                                ifelse(source == 2, "cases_hosp",
+                                       "deaths_death"))) %>%
   dplyr::filter(variable == "R" & type == "estimate") %>%
   dplyr::select(-strat, -variable, -mean, -sd,
-                lower_90 = bottom, upper_90 = top, 
+                source,
+                lower_90 = bottom, upper_90 = top,
                 lower_50 = lower, upper_50 = upper,
                 lower_20 = central_lower, upper_20 = central_upper)
 
@@ -54,7 +43,7 @@ summary$region = factor(summary$region,
 
 
 # Save pure summary -------------------------------------------------------
-saveRDS(summary, "rt-estimate/summary.rds")
+saveRDS(summary, "rt-estimate/estimate-all-time/summary.rds")
 
 
 # Take ratios -------------------------------------------------------------
@@ -89,10 +78,8 @@ estimate_dates <- dplyr::group_by(summary, source, region) %>%
                    min_date = min(date),
                    .groups = "drop_last")
 
+saveRDS(summary_wide, "rt-estimate/estimate-all-time/summary_wide.rds")
+
 # Save for use later in plot-data.R
 saveRDS(max(estimate_dates$min_date), "utils/earliest_estimate.rds")
 saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
-
-saveRDS(summary_wide, "rt-estimate/summary_wide.rds")
-
-rm(list=ls())

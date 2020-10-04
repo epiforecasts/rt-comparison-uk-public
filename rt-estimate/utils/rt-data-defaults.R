@@ -5,14 +5,15 @@ library(future)
 
 # Update delays -----------------------------------------------------------
 
-generation_time <- readRDS(here::here("rt-estimate", "estimate", "delays", "data", "generation_time.rds"))
-incubation_period <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "incubation_period.rds"))
+function()
+generation_time <- readRDS(here::here("rt-estimate", "delays", "data", "generation_time.rds"))
+incubation_period <- readRDS(here::here("rt-estimate", "delays", "data", "incubation_period.rds"))
 
 # Deaths delay
-deaths_delay <- readRDS(here::here("rt-estimate", "estimate", "delays", "data", "cocin_onset_to_death_delay.rds"))
+deaths_delay <- readRDS(here::here("rt-estimate", "delays", "data", "cocin_onset_to_death_delay.rds"))
 
 # Cases delay
-cases_delay <- readRDS(here::here("rt-estimate","estimate", "delays", "data", "public_onset_to_report_delay.rds"))
+cases_delay <- readRDS(here::here("rt-estimate", "delays", "data", "public_onset_to_report_delay.rds"))
 
 
 # Get UK data ----------------------------------------------------------------

@@ -5,10 +5,13 @@ library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
 run_rt_estimate <- function(data, 
+                            save_loc,
                             count_variable, 
                             reporting_delay,
                             no_cores,
-                            burn_in = 0) {
+                            burn_in = 0,
+                            future = TRUE,
+                            max_execution_time = Inf) {
   
   for(i in 1:length(count_variable)){
     
@@ -16,14 +19,14 @@ run_rt_estimate <- function(data,
     
   # Set up directories for models -------------------------------------------
 
-  if(!dir.exists(here::here("rt-estimate", "estimate", 
+  if(!dir.exists(here::here(save_loc, 
                             count_variable[i]))) {
-    dir.create(here::here("rt-estimate", "estimate", 
+    dir.create(here::here(save_loc, 
                           count_variable[i]))
   }
   
-  targets <- paste0("rt-estimate/estimate/", count_variable[i], "/region")
-  summary <- paste0("rt-estimate/estimate/", count_variable[i], "/summary")
+  targets <- paste0(save_loc, count_variable[i], "/region")
+  summary <- paste0(save_loc, count_variable[i], "/summary")
   
   # Format for epinow2 ------------------------------------------------------
 
@@ -33,7 +36,7 @@ run_rt_estimate <- function(data,
   
   data_select <- data_select[, .(date, region, confirm)]
   
-  data_select <- data_select[, .SD[date <= (max(date) - lubridate::days(5))], by = region]
+  data_select <- data_select[, .SD[date <= (Sys.Date() - lubridate::days(5))], by = region]
   
   data.table::setorder(data_select, date)
 
@@ -62,8 +65,8 @@ run_rt_estimate <- function(data,
                          return_estimates = FALSE, 
                          summary = TRUE,
                          return_timings = TRUE, 
-                         future = FALSE,
-                         max_execution_time = Inf)
+                         future = future,
+                         max_execution_time = max_execution_time)
   
   futile.logger::flog.debug("resetting future plan to sequential")
   future::plan("sequential")

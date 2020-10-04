@@ -77,27 +77,31 @@ rm(old, new, structure, areaType, raw)
 
 
 # NHS admissions data: from 1 Aug -----------------------------------------
-nhs_url <- paste0("https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/09/COVID-19-daily-admissions-",
+nhs_url <- paste0("https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/",
+                  lubridate::year(Sys.Date()), "/",
+                  ifelse(lubridate::month(Sys.Date())<10, 
+                          paste0(0,lubridate::month(Sys.Date())),
+                          lubridate::month(Sys.Date())),
+                  "/COVID-19-daily-admissions-",
                   gsub("-", "", as.character(Sys.Date()-1)),
                   ".xlsx")
 
 download.file(nhs_url, destfile = paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"), mode = "wb")
 rm(nhs_url)
 
-adm_new <- readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"),
+adm_new <- suppressMessages(readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"),
                                    sheet = 1,
                                    range = readxl::cell_limits(c(13, 2), c(21, NA))) %>%
   t() %>%
-  tibble::as_tibble() %>%
+  tibble::as_tibble(.name_repair = "universal") %>%
   janitor::row_to_names(1) %>%
   dplyr::mutate(date = seq.Date(from = as.Date("2020-08-01"), by = 1, length.out = nrow(.))) %>%
   tidyr::pivot_longer(-date, names_to = "region", values_to = "cases_hosp_new") %>%
   dplyr::mutate(region = ifelse(region == "ENGLAND", "England", region),
-                cases_hosp_new = as.numeric(cases_hosp_new))
+                cases_hosp_new = as.numeric(cases_hosp_new)))
 
 
 # Join NHS and dashboard data ---------------------------------------------
-
-all_data <- dplyr::left_join(data, adm_new, by = c("date", "region")) %>%
+source("utils/utils.R")
+data <- dplyr::left_join(data, adm_new, by = c("date", "region")) %>%
   dplyr::mutate(region = factor(region, levels = region_names$region_factor))
-
