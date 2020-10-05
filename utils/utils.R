@@ -1,3 +1,7 @@
+# Latest data location
+# 4 Oct 2020
+data_save <- "data/201004.rds"
+
 # Plot colours
 # Data: data source
 colours <- c(
