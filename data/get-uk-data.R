@@ -91,7 +91,7 @@ rm(nhs_url)
 
 adm_new <- suppressMessages(readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"),
                                    sheet = 1,
-                                   range = readxl::cell_limits(c(13, 2), c(21, NA))) %>%
+                                   range = readxl::cell_limits(c(28, 2), c(36, NA))) %>%
   t() %>%
   tibble::as_tibble(.name_repair = "universal") %>%
   janitor::row_to_names(1) %>%
