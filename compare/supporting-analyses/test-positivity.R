@@ -36,9 +36,62 @@ pos_tests <- raw_pos_tests %>%
   week_to_date(.) %>%
   dplyr::rename(date = week_end_date) %>%
   dplyr::select(-week) %>%
-  tidyr::pivot_longer(cols = -date, names_to = "region", values_to = "pos_perc")
+  tidyr::pivot_longer(cols = -date, names_to = "region", values_to = "pos_perc") %>%
+  dplyr::filter(!is.na(pos_perc) & !region %in% c("West Midlands", "East Midlands",
+                                                  "Yorkshire and Humber", "North East"))
  
 # pos_tests %>%
 #   ggplot(aes(x = date)) +
 #   geom_line(aes(y = pos_perc)) +
-#   facet_wrap("region")
+#   facet_wrap("region") +
+#   theme_classic()
+
+# Above 5%
+pos_over_5 <- pos_tests %>%
+  dplyr::filter(pos_perc >= 5)
+# NE & Y / Midlands as % of days >5%
+nrow(dplyr::filter(pos_over_5, region %in% c("North East and Yorkshire", "Midlands"))) / nrow(pos_over_5)
+
+# Average by region
+pos_avg <- split(pos_tests, pos_tests$region) %>%
+  purrr::keep(., names(.) %in% c("North East and Yorkshire", 
+                                "Midlands", "England")) %>%
+  purrr::map(., ~ t.test(.$pos_perc)) %>%
+  purrr::map(., ~ purrr::keep(., names(.) %in% c("estimate", "conf.int")))
+
+
+
+# Correlate with Rt variables
+# # Average by region
+region_waves_pos <- readRDS("compare/rt-comparison/peaks_troughs.rds")$region_peaks_valleys %>%
+  dplyr::filter(source == "cases_test") %>%
+  left_join(peaks_troughs$time_between_valleys %>%
+              filter(source == "cases_test") %>%
+              group_by(region) %>%
+              summarise(mean_days_duration = as.numeric(mean(time_between_valleys, na.rm=T))),
+            by = "region")
+
+# Comparison to duration of oscillations by source
+time_between_all <- peaks_troughs$time_between_valleys %>%
+  group_by(region, source) %>%
+  summarise(mean_days_duration = as.numeric(mean(time_between_valleys, na.rm=T))) %>%
+  left_join(pos_tests %>%
+              group_by(region) %>%
+              summarise(mean_pos = mean(pos_perc)),
+            by = "region")
+
+var <- "deaths_death"
+regr_data <- time_between_all %>%
+  filter(source == var)
+  
+
+# linear regression
+pos_predicts_days <- lm(mean_days_duration ~ mean_pos, data = regr_data)
+broom::tidy(pos_predicts_days)
+broom::glance(pos_predicts_days)
+confint(pos_predicts_days)
+
+# cases_hosp: coeff = -1.91 (-5.2 - 1.3) (r2=0.26, p=0.2)
+# deaths_death: coeff = -2.13 (-4.6 - 0.3) (r2=0.5, p=0.07)
+
+

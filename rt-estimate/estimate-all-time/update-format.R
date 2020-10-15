@@ -83,3 +83,48 @@ saveRDS(summary_wide, "rt-estimate/estimate-all-time/summary_wide.rds")
 # Save for use later in plot-data.R
 saveRDS(max(estimate_dates$min_date), "utils/earliest_estimate.rds")
 saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
+
+# Get samples -------------------------------------------------------------
+regions <- as.list(region_names[["region_factor"]])
+names(regions) <- region_names[["region_factor"]]
+
+sources_regions <- list("cases_test" = regions,
+                        "cases_hosp" = regions,
+                        "deaths_death" = regions)
+
+samples_cases_test <- purrr::map(regions,
+                                 ~ readRDS(paste0(
+                                   "rt-estimate/estimate-all-time/",
+                                   "cases_test", 
+                                   "/region/", .x, 
+                                   "/latest/estimate_samples.rds"))) %>%
+  purrr::map(., 
+             ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
+  dplyr::bind_rows(.id = "region") %>%
+  dplyr::mutate(source = "cases_test")
+
+samples_cases_hosp <- purrr::map(regions,
+                                 ~ readRDS(paste0(
+                                   "rt-estimate/estimate-all-time/",
+                                   "cases_hosp", 
+                                   "/region/", .x, 
+                                   "/latest/estimate_samples.rds"))) %>%
+  purrr::map(., 
+             ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
+  dplyr::bind_rows(.id = "region") %>%
+  dplyr::mutate(source = "cases_hosp")
+
+samples_deaths <- purrr::map(regions,
+                             ~ readRDS(paste0(
+                               "rt-estimate/estimate-all-time/",
+                               "deaths_death", 
+                               "/region/", .x, 
+                               "/latest/estimate_samples.rds"))) %>%
+  purrr::map(., 
+             ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
+  dplyr::bind_rows(.id = "region") %>%
+  dplyr::mutate(source = "deaths_death")
+
+samples <- dplyr::bind_rows(samples_cases_test, samples_cases_hosp, samples_deaths)
+
+saveRDS(samples, "rt-estimate/samples.rds")
