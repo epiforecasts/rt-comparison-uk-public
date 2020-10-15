@@ -12,10 +12,6 @@ summary <- dplyr::mutate(summary,
 summary_source_region <- split(summary, summary$source)
 summary_source_region <- purrr::map(summary_source_region, ~ split(.x, .x$region))
 
-samples <- readRDS("rt-estimate/samples.rds")
-samples <- dplyr::select(samples, source, region, date, sample, value)
-
-
 # First peak -------------------------------------------------------------------------
 early_peak <- summary %>%
   select(-type) %>%

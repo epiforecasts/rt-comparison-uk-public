@@ -75,11 +75,9 @@ time_between_valleys <- dplyr::filter(summary_peaks_valleys,
   dplyr::mutate(time_between_valleys = as.Date(valley_adj) - dplyr::lag(as.Date(valley_adj), 1))
 
 time_between_peaks <- dplyr::filter(summary_peaks_valleys, 
-                                      !is.na(peak_adj)) %>%
-  dplyr::mutate(days_since_peak = as.numeric(as.Date(peak_adj) - dplyr::lag(as.Date(peak_adj), 1)),
-                median_90 = stringr::str_c(round(median, 2), 
-                                           " (", round(lower_90, 2), " - ", round(upper_90, 2), ")")) %>%
-  dplyr::select(region, source, date, median_90, days_since_peak)
+                                      !is.na(peak))%>%
+  dplyr::mutate(time_between_peaks = as.Date(peak) - dplyr::lag(as.Date(peak), 1))
+
 
 peaks_troughs <- list(
   "summary_peaks_valleys" = summary_peaks_valleys,
@@ -111,4 +109,25 @@ alloth <- peaks_troughs$time_between_valleys %>%
 alloth <- split(alloth, alloth$source) %>%
   purrr::map(., ~ t.test(.$time_between_valleys)) %>%
   purrr::map(., ~ purrr::keep(., names(.) %in% c("estimate", "conf.int")))
+
+
+# Tabulate ----------------------------------------------------------------
+
+summary_valley <- time_between_valleys %>%
+  dplyr::mutate(days_since_valley = as.numeric(as.Date(peak_adj) - dplyr::lag(as.Date(peak_adj), 1)),
+                median_90 = stringr::str_c(round(median, 2), 
+                                           " (", round(lower_90, 2), " - ", round(upper_90, 2), ")")) %>%
+  dplyr::select(region, source, date, median_90, days_since_valley)
+
+
+
+summary_peak <- time_between_peaks %>%
+  group_by(region, source) %>%
+  dplyr::mutate(days_since_peak = as.numeric(as.Date(peak_adj) - dplyr::lag(as.Date(peak_adj), 1)),
+                median_90 = stringr::str_c(round(median, 2), 
+                                           " (", round(lower_90, 2), " - ", round(upper_90, 2), ")")) %>%
+  dplyr::select(region, source, date, median_90, days_since_peak)
+
+summary_waves <- bind_rows(summary_valley, summary_peak)
+
 
