@@ -1,6 +1,6 @@
 # Positivity % by PHEC ----------------------------------------------------
-
 source("utils/utils.R")
+summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds")
 
 # PHE weekly surveillance report (link needs manual update)
 #   eg published 18 September 2020 = week 38
@@ -37,9 +37,10 @@ pos_tests <- raw_pos_tests %>%
   dplyr::rename(date = week_end_date) %>%
   dplyr::select(-week) %>%
   tidyr::pivot_longer(cols = -date, names_to = "region", values_to = "pos_perc") %>%
-  dplyr::filter(!is.na(pos_perc) & !region %in% c("West Midlands", "East Midlands",
-                                                  "Yorkshire and Humber", "North East"))
- 
+  dplyr::filter(!is.na(pos_perc) & 
+                  !region %in% c("West Midlands", "East Midlands",
+                                                  "Yorkshire and Humber", "North East") &
+                  date <= max(summary$date)) # Filter to match Rt time series
 # pos_tests %>%
 #   ggplot(aes(x = date)) +
 #   geom_line(aes(y = pos_perc)) +
@@ -63,7 +64,10 @@ pos_avg <- split(pos_tests, pos_tests$region) %>%
 
 # Correlate with Rt variables
 # # Average by region
-region_waves_pos <- readRDS("compare/rt-comparison/peaks_troughs.rds")$region_peaks_valleys %>%
+peaks_troughs <- readRDS("compare/rt-comparison/peaks_troughs.rds")
+region_peaks_valleys <- peaks_troughs$region_peaks_valleys
+
+region_waves_pos <- region_peaks_valleys %>%
   dplyr::filter(source == "cases_test") %>%
   left_join(peaks_troughs$time_between_valleys %>%
               filter(source == "cases_test") %>%

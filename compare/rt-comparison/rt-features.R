@@ -32,23 +32,23 @@ tsfeats <- purrr::map_depth(.depth = 2,
 # Rt crossing 1: end of first wave -----------------------------------------------------------------
 # Check timing of first wave cross below 1
 source("utils/utils.R")
-summary <- readRDS("rt-estimate/summary.rds")
+summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds")
 
 # Cases
 rt1 <- summary %>%
   dplyr::group_by(region, source) %>%
-  dplyr::filter(median < 1 & date > "2020-03-23" & date <= "2020-07-01") %>%
+  dplyr::filter(median < 1  & date <= "2020-07-01") %>%
   dplyr::filter(date == min(date)) %>%
   dplyr::select(source, region, rt = date) %>%
   dplyr::left_join(summary %>%
                      dplyr::group_by(region, source) %>%
-                     dplyr::filter(lower_90 < 1 & date > "2020-03-23" & date <= "2020-07-01") %>%
+                     dplyr::filter(lower_90 < 1 & date <= "2020-07-01") %>%
                      dplyr::filter(date == min(date)) %>%
                      dplyr::select(source, region, rt = date),
                    by = c("region", "source")) %>%
   dplyr::left_join(summary %>%
                      dplyr::group_by(region, source) %>%
-                     dplyr::filter(upper_90 < 1 & date > "2020-03-23" & date <= "2020-07-01") %>%
+                     dplyr::filter(upper_90 < 1 & date <= "2020-07-01") %>%
                      dplyr::filter(date == min(date)) %>%
                      dplyr::select(source, region, rt = date),
                    by = c("region", "source")) %>%
@@ -61,7 +61,7 @@ rt1 <- summary %>%
 rt1_plot <- rt1 %>%
   dplyr::mutate(source = factor(source, 
                                 levels = c("cases_test", "cases_hosp", "deaths_death"),
-                                labels = c("Test positive cases", "Hospital admissions", "Deaths"))) %>%
+                                labels = c("Test-positive", "Hospital admissions", "Deaths"))) %>%
   dplyr::rename(`Data source` = source) %>%
   ggplot(groups = region, colour = `Data source`) +
   geom_point(aes(x = median, y = region, colour = `Data source`,
@@ -69,6 +69,7 @@ rt1_plot <- rt1 %>%
   geom_linerange(aes(y = region, xmin = lower, xmax = upper, 
                      colour = `Data source`)) +
   labs(x = NULL, y = NULL) +
+  scale_color_manual(values = colours) +
   theme_classic() +
   theme(legend.position = "bottom") +
   ggsave("figures/rt-cross-1.png")

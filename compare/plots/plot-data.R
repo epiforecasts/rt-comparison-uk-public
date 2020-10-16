@@ -41,7 +41,7 @@ standardised_data$region = factor(standardised_data$region,
 
 # Plot-ready 7-day MA ----------------------------------------------------------------
 data_ma <- standardised_data %>%
-  dplyr::select(date, region, region_type, dplyr::starts_with("ma")) %>%
+  dplyr::select(date, region, dplyr::starts_with("ma")) %>%
   tidyr::pivot_longer(cols = dplyr::starts_with("ma"), names_to = "variable", values_to = "ma") %>%
   dplyr::mutate(variable = stringr::str_remove_all(variable, "^ma_")) %>%
   dplyr::mutate('Data source' = dplyr::recode_factor(variable, 
@@ -61,52 +61,6 @@ data_ma <- standardised_data %>%
 
 # Plot --------------------------------------------------------------------
 
-# Regional
-plot_ma_only <- data_ma %>%
-  dplyr::filter(!region %in% c("England")) %>%
-  ggplot() +
-  geom_line(aes(x = date, y = as.numeric(ma), 
-                colour = `Data source`)) +
-  geom_point(aes(x = date, y = as.numeric(pos_perc),
-                 colour = `Data source`), 
-             shape = 3, size=0.9) +
-  scale_shape_discrete(solid=FALSE) +
-  geom_vline(xintercept = as.Date("2020-05-03"), lty = 3, colour = colours["Cases"]) +
-  facet_wrap("region", nrow = 1, scales = "free_y") +
-  cowplot::theme_cowplot() +
-  coord_cartesian(xlim = c(date_min, date_max)) +
-  scale_color_manual(values = colours) +
-  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
-  theme(panel.spacing.x = unit(0.1, "cm"),
-        panel.spacing.y = unit(0.1, "cm"),
-        axis.text.x = element_blank()) +
-  guides(colour = FALSE) +
-  labs(y = "7-day MA", x = NULL)
-
-
-# National
-plot_ma_only_national <- data_ma %>%
-  dplyr::filter(region %in% c("England")) %>%
-  ggplot() +
-  geom_line(aes(x = date, y = as.numeric(ma), colour = `Data source`)) +
-  geom_point(aes(x = date, y = as.numeric(pos_perc),
-                 colour = `Data source`), 
-             shape = 3, size=0.9) +
-  geom_vline(xintercept = as.Date("2020-05-03"), 
-             lty = 3, colour = colours["Cases"],
-             alpha = 1) +
-  cowplot::theme_cowplot() +
-  coord_cartesian(xlim = c(date_min, date_max)) +
-  scale_color_manual(values = colours) +
-  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
-  theme(panel.spacing.x = unit(0.1, "cm"),
-        panel.spacing.y = unit(0.1, "cm"), #,
-        axis.text.x = element_blank()
-        ) +
-  guides(colour = FALSE) +
-  labs(y = "7-day MA", x = NULL)
-
-
 # Plot function
 plot_data_fn <- function(region_name){
   data_ma %>%
@@ -118,13 +72,14 @@ plot_data_fn <- function(region_name){
                    colour = `Data source`), 
                shape = 3, size=0.9) +
     scale_shape_discrete(solid=FALSE) +
+    geom_vline(xintercept = as.Date("2020-03-23"), 
+               lty = 3, colour = colours["Cases"]) +
     geom_vline(xintercept = as.Date("2020-05-03"), 
                lty = 3, colour = colours["Cases"]) +
     cowplot::theme_cowplot() +
     coord_cartesian(xlim = c(date_min, date_max)) +
     scale_color_manual(values = colours) +
     scale_x_date(date_breaks = "1 month", date_labels = "%b") +
-    scale_y_continuous(breaks=seq(0, 1000, by = 200)) +
     theme(panel.spacing.x = unit(0.1, "cm"),
           panel.spacing.y = unit(0.1, "cm")) +
     guides(colour = FALSE) +

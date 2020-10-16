@@ -1,6 +1,6 @@
 # Care home analysis
 source("utils/utils.R")
-summary <- readRDS("rt-estimate/summary.RDS")
+summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.RDS")
 
 
 
@@ -129,23 +129,6 @@ carehome_region_fill %>%
   filter(Deaths == "Care home by date of notification",
          deaths_carehomes == max(deaths_carehomes, na.rm=T))
 
-# Compare with Rt
-# 
-# Plot short section of Rt from the start of the series
-summary %>%
-  filter(date < "2020-06-01") %>%
-  ggplot(aes(x = date, fill = source)) +
-  geom_ribbon(aes(ymin = lower_90, ymax = upper_90)) +
-  facet_wrap( ~ region, scales = "free_y")
-# Rt oscillation before high care home % all deaths
-peaks_troughs <- readRDS("compare/rt-comparison/peaks_troughs.rds")$summary_peaks_valleys %>%
-  filter(source == "deaths_death" &
-           region %in% c("South East", "South West"))
-# South East - valley on 2020-04-17, median 0.82 (CrI 0.77-0.9)
-#             - peak 2020-05-04, 0.88, (0.81-0.95)
-# South West - valley 2020-04-22, median 0.8 (0.72-0.88)
-#             - small peak 2020-05-07, 0.84, 0.76-0.95
-
 
 # Plot --------------------------------------------------------------------
 
@@ -166,127 +149,127 @@ plot_carehome_deaths <- carehome_region_fill %>%
 ggsave(paste0("figures/", Sys.Date(), "-carehome-deaths.png"),
        height = 6, width = 10)
 
-# for a quick comparison of the difference that the 2-3 days delay makes:
-carehome_deaths <- carehome_region %>%
-  group_by(region) %>%
-  mutate(lead2 = lead(deaths, 2),
-         lead3 = lead(deaths, 3),
-         lead_mean = (lead2 + lead3) / 2,
-         ma = forecast::ma(lead_mean, order = 7),
-         Deaths = "Average of 2 and 3 day leading deaths") %>%
-  select(region, date, ma, Deaths) %>%
-  bind_rows(data_ma_deaths)
-
-carehome_deaths %>%
-  ggplot(aes(x = date, colour = Deaths)) +
-  geom_line(aes(y = ma)) +
-  facet_wrap( ~ region, scales = "free_y") +
-  theme_classic() +
-  theme(legend.position = "bottom",
-        strip.background = element_blank(),
-        text = element_text(size = 15))
+# # for a quick comparison of the difference that the 2-3 days delay makes:
+# carehome_deaths <- carehome_region %>%
+#   group_by(region) %>%
+#   mutate(lead2 = lead(deaths, 2),
+#          lead3 = lead(deaths, 3),
+#          lead_mean = (lead2 + lead3) / 2,
+#          ma = forecast::ma(lead_mean, order = 7),
+#          Deaths = "Average of 2 and 3 day leading deaths") %>%
+#   select(region, date, ma, Deaths) %>%
+#   bind_rows(data_ma_deaths)
+# 
+# carehome_deaths %>%
+#   ggplot(aes(x = date, colour = Deaths)) +
+#   geom_line(aes(y = ma)) +
+#   facet_wrap( ~ region, scales = "free_y") +
+#   theme_classic() +
+#   theme(legend.position = "bottom",
+#         strip.background = element_blank(),
+#         text = element_text(size = 15))
 
 
 
 # Care home admissions to hospitals ---------------------------------------
-
-adm_carehome <- readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"), 
-                                   sheet = 1,
-                                   range = readxl::cell_limits(c(74, 2), c(82, NA))) %>%
-  t() %>%
-  tibble::as_tibble() %>%
-  janitor::row_to_names(1) %>%
-  dplyr::mutate(date = seq.Date(from = as.Date("2020-08-01"), by = 1, length.out = nrow(.))) %>% # Starts 1 Aug
-  tidyr::pivot_longer(-date, names_to = "region", values_to = "carehome_admissions") %>%
-  dplyr::mutate(carehome_admissions = as.numeric(carehome_admissions))
-
-adm_carehome %>%
-  dplyr::filter(!region == "ENGLAND") %>%
-  ggplot(aes(x = date, colour = region)) +
-  geom_line(aes(y = forecast::ma(carehome_admissions, 7))) +
-  theme_classic()
-
+# 
+# adm_carehome <- readxl::read_excel(paste0("data/", Sys.Date(), "-nhs-admissions.xlsx"), 
+#                                    sheet = 1,
+#                                    range = readxl::cell_limits(c(74, 2), c(82, NA))) %>%
+#   t() %>%
+#   tibble::as_tibble() %>%
+#   janitor::row_to_names(1) %>%
+#   dplyr::mutate(date = seq.Date(from = as.Date("2020-08-01"), by = 1, length.out = nrow(.))) %>% # Starts 1 Aug
+#   tidyr::pivot_longer(-date, names_to = "region", values_to = "carehome_admissions") %>%
+#   dplyr::mutate(carehome_admissions = as.numeric(carehome_admissions))
+# 
+# adm_carehome %>%
+#   dplyr::filter(!region == "ENGLAND") %>%
+#   ggplot(aes(x = date, colour = region)) +
+#   geom_line(aes(y = forecast::ma(carehome_admissions, 7))) +
+#   theme_classic()
+# 
 
 
 
 # Number of outbreaks in care homes --------------------------------------------------------------
-
-carehomes <- readxl::read_excel("data/Care_home_outbreaks_of_COVID-19_Management_Information.xlsx", 
-                                sheet = "PHE_centres",
-                                range = readxl::cell_limits(c(2, 1), c(NA, NA))) %>%
-  select(-PHEC15CD) %>%
-  pivot_longer(cols = -c('PHE centre', 'Number of care homes'), 
-               names_to = "date", values_to = "outbreaks") %>%
-  mutate(date = as.Date(date)) %>%
-  drop_na(date) %>%
-  rename(region=1, n_carehomes=2, date=3, outbreaks=4)
-
-
-n_carehomes <- as.data.frame(distinct(carehomes, region, n_carehomes))
-Midlands <- data.frame(region = "Midlands")
-Midlands$n_carehomes <- n_carehomes$n_carehomes[n_carehomes$region == "East Midlands"] +
-  n_carehomes$n_carehomes[n_carehomes$region == "West Midlands"]
-NEY <- data.frame(region = "North East and Yorkshire")
-NEY$n_carehomes <- n_carehomes[n_carehomes$region == "Yorkshire and Humber","n_carehomes"] +
-  n_carehomes[n_carehomes$region == "North East","n_carehomes"]
-n_carehomes <- bind_rows(n_carehomes, Midlands, NEY)
-n_carehomes <- n_carehomes[n_carehomes$region %in% region_names$value$nhsregions,]
-
-region_n <- c("North East and Yorkshire (n=2238)",
-              "North West (n=1917)",
-              "Midlands (n=3227)",
-              "East of England (n=1726)",
-              "London (n=1385)",
-              "South East (n=2942)",
-              "South West (n=2041)")
-region_n_factor <- factor(region_n, levels = region_n)
-
-carehomes_outbreaks <- carehomes %>%
-  pivot_wider(-n_carehomes, names_from = region, values_from = outbreaks) %>%
-  mutate(Midlands = `East Midlands` + `West Midlands`,
-         `North East and Yorkshire` = `Yorkshire and Humber` + `North East`) %>%
-  select(date, all_of(region_names$value$nhsregions)) %>%
-  pivot_longer(-date,  names_to = "region", values_to = "outbreaks") %>%
-  left_join(n_carehomes, by = "region") %>%
-  mutate(perc_outbreak = outbreaks / n_carehomes *100,
-         region = factor(region, region_names$value$region_factor),
-         region_n = factor(paste0(region, " (n=", n_carehomes, ")"), levels = region_n_factor))
-
-full_dates <- dplyr::filter(data, region %in% region_names$value$nhsregions & 
-                              date >= min(carehomes_outbreaks$date) &
-                              date <= max(carehomes_outbreaks$date)) %>%
-  select(date, region) %>%
-  left_join(carehomes_outbreaks, by = c("date", "region")) %>%
-  group_by(region) %>%
-  fill(c(n_carehomes, perc_outbreak), .direction = "down") %>%
-  left_join(spring_peaks, by = c("date", "region")) %>%
-  mutate(peak_adm = ifelse(source == "hosp", format(as.Date(date, "%m/%d/%Y")), NA),
-         peak_deaths = ifelse(source == "deaths", format(as.Date(date, "%m/%d/%Y")), NA),
-         region = factor(region, region_names$value$region_factor),
-         region_n = factor(region_n, region_n_factor)) 
-
-# Plot
-plot_carehomes <- carehomes_outbreaks %>%
-  ggplot() +
-  geom_line(aes(x = date, y = perc_outbreak)) +
-  geom_vline(aes(xintercept = as.Date(peak_adm)), data = full_dates, lty = "dotted", lwd=1) +
-  geom_vline(aes(xintercept = as.Date(peak_deaths)), data = full_dates, lty = "dashed", lwd = 1) +
-  # geom_point(aes(x = peak_adm, y = perc_outbreak), data = full_dates, shape = 2) +
-  # geom_point(aes(x = peak_deaths, y = perc_outbreak), data = full_dates, shape = 3) +
-  facet_wrap("region_n", nrow = 2, scales = "free_y") +
-  cowplot::theme_cowplot() +
-  coord_cartesian(xlim = c(date_min, max(carehomes_outbreaks$date))) +
-  scale_color_manual(values = colours) +
-  scale_x_date(date_breaks = "1 month", date_labels = "%b") +
-  theme(panel.spacing.x = unit(0.1, "cm"),
-        panel.spacing.y = unit(0.1, "cm"),
-        axis.text.x = element_text(angle = 45, hjust = 1),
-        text = element_text(size = 15)) +
-  # Add label with N
-  guides(colour = FALSE) +
-  labs(y = "% care homes with new outbreak", x = NULL)
-
-ggsave("figures/carehome_outbreaks.png", height = 4, width = 10)
-
-
-
+# 
+# carehomes <- readxl::read_excel("data/Care_home_outbreaks_of_COVID-19_Management_Information.xlsx", 
+#                                 sheet = "PHE_centres",
+#                                 range = readxl::cell_limits(c(2, 1), c(NA, NA))) %>%
+#   select(-PHEC15CD) %>%
+#   pivot_longer(cols = -c('PHE centre', 'Number of care homes'), 
+#                names_to = "date", values_to = "outbreaks") %>%
+#   mutate(date = as.Date(date)) %>%
+#   drop_na(date) %>%
+#   rename(region=1, n_carehomes=2, date=3, outbreaks=4)
+# 
+# 
+# n_carehomes <- as.data.frame(distinct(carehomes, region, n_carehomes))
+# Midlands <- data.frame(region = "Midlands")
+# Midlands$n_carehomes <- n_carehomes$n_carehomes[n_carehomes$region == "East Midlands"] +
+#   n_carehomes$n_carehomes[n_carehomes$region == "West Midlands"]
+# NEY <- data.frame(region = "North East and Yorkshire")
+# NEY$n_carehomes <- n_carehomes[n_carehomes$region == "Yorkshire and Humber","n_carehomes"] +
+#   n_carehomes[n_carehomes$region == "North East","n_carehomes"]
+# n_carehomes <- bind_rows(n_carehomes, Midlands, NEY)
+# n_carehomes <- n_carehomes[n_carehomes$region %in% region_names$value$nhsregions,]
+# 
+# region_n <- c("North East and Yorkshire (n=2238)",
+#               "North West (n=1917)",
+#               "Midlands (n=3227)",
+#               "East of England (n=1726)",
+#               "London (n=1385)",
+#               "South East (n=2942)",
+#               "South West (n=2041)")
+# region_n_factor <- factor(region_n, levels = region_n)
+# 
+# carehomes_outbreaks <- carehomes %>%
+#   pivot_wider(-n_carehomes, names_from = region, values_from = outbreaks) %>%
+#   mutate(Midlands = `East Midlands` + `West Midlands`,
+#          `North East and Yorkshire` = `Yorkshire and Humber` + `North East`) %>%
+#   select(date, all_of(region_names$value$nhsregions)) %>%
+#   pivot_longer(-date,  names_to = "region", values_to = "outbreaks") %>%
+#   left_join(n_carehomes, by = "region") %>%
+#   mutate(perc_outbreak = outbreaks / n_carehomes *100,
+#          region = factor(region, region_names$value$region_factor),
+#          region_n = factor(paste0(region, " (n=", n_carehomes, ")"), levels = region_n_factor))
+# 
+# full_dates <- dplyr::filter(data, region %in% region_names$value$nhsregions & 
+#                               date >= min(carehomes_outbreaks$date) &
+#                               date <= max(carehomes_outbreaks$date)) %>%
+#   select(date, region) %>%
+#   left_join(carehomes_outbreaks, by = c("date", "region")) %>%
+#   group_by(region) %>%
+#   fill(c(n_carehomes, perc_outbreak), .direction = "down") %>%
+#   left_join(spring_peaks, by = c("date", "region")) %>%
+#   mutate(peak_adm = ifelse(source == "hosp", format(as.Date(date, "%m/%d/%Y")), NA),
+#          peak_deaths = ifelse(source == "deaths", format(as.Date(date, "%m/%d/%Y")), NA),
+#          region = factor(region, region_names$value$region_factor),
+#          region_n = factor(region_n, region_n_factor)) 
+# 
+# # Plot
+# plot_carehomes <- carehomes_outbreaks %>%
+#   ggplot() +
+#   geom_line(aes(x = date, y = perc_outbreak)) +
+#   geom_vline(aes(xintercept = as.Date(peak_adm)), data = full_dates, lty = "dotted", lwd=1) +
+#   geom_vline(aes(xintercept = as.Date(peak_deaths)), data = full_dates, lty = "dashed", lwd = 1) +
+#   # geom_point(aes(x = peak_adm, y = perc_outbreak), data = full_dates, shape = 2) +
+#   # geom_point(aes(x = peak_deaths, y = perc_outbreak), data = full_dates, shape = 3) +
+#   facet_wrap("region_n", nrow = 2, scales = "free_y") +
+#   cowplot::theme_cowplot() +
+#   coord_cartesian(xlim = c(date_min, max(carehomes_outbreaks$date))) +
+#   scale_color_manual(values = colours) +
+#   scale_x_date(date_breaks = "1 month", date_labels = "%b") +
+#   theme(panel.spacing.x = unit(0.1, "cm"),
+#         panel.spacing.y = unit(0.1, "cm"),
+#         axis.text.x = element_text(angle = 45, hjust = 1),
+#         text = element_text(size = 15)) +
+#   # Add label with N
+#   guides(colour = FALSE) +
+#   labs(y = "% care homes with new outbreak", x = NULL)
+# 
+# ggsave("figures/carehome_outbreaks.png", height = 4, width = 10)
+# 
+# 
+# 

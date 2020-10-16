@@ -7,7 +7,7 @@
 
 library(magrittr); library(ggplot2); library(ggsci); library(tidyr)
 
-summary <- readRDS("rt-estimate/summary.rds")
+summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds")
 
 seq_dates <- tibble::tibble(
   date = seq.Date(from = as.Date("2020-01-01"), length.out = 365, by = 1),
@@ -115,7 +115,7 @@ case_age$young <- rowSums(case_age[,c("0-19", "20-49")], na.rm=T)
 
 # Plot --------------------------------------------------------------------
 
-plot_chess_age <- age_admissions_chess_transform[,c(5:8, 11)] %>%
+plot_chess_age <- age_admissions_chess_transform[,c(5:8, 10)] %>%
   pivot_longer(cols = -date, names_to = "Age") %>%
   ggplot(aes(fill = Age, x = date, y = value)) +
   geom_bar(position = "stack", stat = "identity") +
@@ -146,14 +146,14 @@ plot_case_age +
   patchwork::plot_annotation(tag_levels = "A") &
   theme(legend.position = "bottom")
 
-ggsave("figures/national_cases_by_age.png", height = 3, width = 7)
+ggsave(filename = paste0("figures/", Sys.Date(), "_national_cases_by_age.png"), height = 3, width = 7)
 
 
 # Compare -----------------------------------------------------------------
-library(dplyr)
 # Week on week difference in proportions
 # admissions
 age_admissions_compare <- age_admissions_chess_transform %>%
+  filter(date <= max(summary$date)) %>%
   select('0-14':'75+', date) %>%
   pivot_longer(-date, names_to = "age", values_to = "percent") %>%
   group_by(age) %>%
@@ -179,14 +179,13 @@ eng_month <- mutate(eng, month = lubridate::month(date)) %>%
   summarise(mean = mean(median),
             sd = sd(median))
 
-peaks_troughs <- readRDS("compare/rt-comparison/peaks_troughs.rds")
-
 # Test-positive cases
 case_age_compare <- case_age %>%
   select(date:`70+`, -total_cases) %>%
   tidyr::pivot_longer(-date, names_to = "age", values_to = "percent") %>%
   group_by(age) %>%
-  mutate(running_diff = percent - dplyr::lag(percent, 1))
+  mutate(running_diff = percent - dplyr::lag(percent, 1)) %>%
+  filter(date <= max(summary$date))
 
 # Increase among 0-19 before and after 
 case_age_compare %>%
@@ -194,7 +193,7 @@ case_age_compare %>%
                        "March - mid-May", 
                        ifelse(date < as.Date("2020-08-01"),
                               "mid-May - end-July",
-                              "August - Sept"))) %>%
+                              "August"))) %>%
   group_by(period, age) %>%
   summarise(mean_diff = mean(running_diff, na.rm=T),
             mean_perc = mean(percent))

@@ -1,3 +1,0 @@
-region,point,lower,upper,mid_lower,mid_upper,metric,Expected change in daily cases
-England,1098,483,1792,729,1239,New confirmed cases by infection date,Unsure
-England,1.05,0.76,1.37,0.9,1.15,Effective reproduction no.,Unsure

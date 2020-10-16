@@ -3,7 +3,7 @@ library(magrittr); library(ggplot2)
 # Get summary
 source("utils/utils.R")
 
-summary <- readRDS("rt-estimate/summary.rds")
+summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds")
 summary <- dplyr::mutate(summary,
                          week = lubridate::week(date),
                          month = lubridate::month(date))

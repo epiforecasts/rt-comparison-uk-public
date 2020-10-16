@@ -5,22 +5,36 @@ library(EpiNow2, quietly = TRUE)
 library(dplyr)
 library(tidyr)
 library(purrr)
+source("utils/utils.R")
+
+# Truncation dates
+trunc_cases <- "2020-08-28"
+trunc_deaths <- "2020-08-20"
 
 # Get Rt estimates -------------------------------------------------------------
 
 # Cases positive test
 summary_cases <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/cases_test/region",
-                                                      date = "latest")$estimates$summarised
+                                                      date = "2020-09-16")$estimates$summarised
 
-summary_cases <- summary_cases %>%
-  dplyr::mutate(source = "cases_test")
+# Admissions. 2 regional estimates failed and were re-run separately
+summary_hosp_0916 <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/cases_hosp/region",
+                                               date = "2020-09-16")$estimates$summarised
 
-# Admissions
-summary_hosp <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/cases_hosp/region",
-                                               date = "latest")$estimates$summarised
-# Deaths
-summary_deaths <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/deaths_death/region",
+summary_hosp_0917 <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/cases_hosp/region",
+                                                   date = "2020-09-17")$estimates$summarised
+summary_hosp <- summary_hosp_0916 %>%
+  filter(!region %in% c("England", "East of England")) %>%
+  bind_rows(summary_hosp_0917)
+
+# Deaths. 1 region failed
+summary_deaths_0916 <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/deaths_death/region",
+                                                date = "2020-09-16")$estimates$summarised
+summary_deaths_0917 <- EpiNow2::get_regional_results(results_dir = "rt-estimate/estimate-all-time/deaths_death/region",
                                                 date = "2020-09-17")$estimates$summarised
+summary_deaths <- summary_deaths_0917 %>%
+  filter(!region %in% c("Midlands")) %>%
+  bind_rows(summary_deaths_0916)
 
 
 # Format
@@ -37,52 +51,24 @@ summary <- dplyr::bind_rows(summary_cases, summary_hosp, summary_deaths, .id = "
 
 
 # Factor regions ----------------------------------------------------------
-source("utils/utils.R")
 summary$region = factor(summary$region, 
                         levels = region_names$region_factor)
 
 
 # Save pure summary -------------------------------------------------------
-saveRDS(summary, "rt-estimate/estimate-all-time/summary.rds")
+saveRDS(summary, "rt-estimate/estimate-all-time/summary-full.rds")
 
 
-# Take ratios -------------------------------------------------------------
-summary_wide <- summary %>%
-  tidyr::pivot_wider(names_from = source, 
-                     values_from = c("median", 
-                                     "lower_50", "upper_50",
-                                     "lower_90", "upper_90"))  %>%
-  dplyr::mutate(
-    # cases / deaths
-    case_death_med = median_cases_test / median_deaths_death,
-    case_death_l90 = lower_90_cases_test / lower_90_deaths_death,
-    case_death_u90 = upper_90_cases_test / upper_90_deaths_death,
-    case_death_l50 = lower_50_cases_test / lower_50_deaths_death,
-    case_death_u50 = upper_50_cases_test / upper_50_deaths_death,
-    # cases / cases_hosp
-    case_hosp_med = median_cases_test / median_cases_hosp,
-    case_hosp_l90 = lower_90_cases_test / lower_90_cases_hosp,
-    case_hosp_u90 = upper_90_cases_test / upper_90_cases_hosp,
-    case_hosp_l50 = lower_50_cases_test / lower_50_cases_hosp,
-    case_hosp_u50 = upper_50_cases_test / upper_50_cases_hosp,
-    # cases_hosp / deaths_death
-    hosp_death_med = median_cases_hosp / median_deaths_death,
-    hosp_death_l90 = lower_90_cases_hosp / lower_90_deaths_death,
-    hosp_death_u90 = upper_90_cases_hosp / upper_90_deaths_death,
-    hosp_death_l50 = lower_50_cases_hosp / lower_50_deaths_death,
-    hosp_death_u50 = upper_50_cases_hosp / upper_50_deaths_death)
+# Truncate Rt estimates ---------------------------------------------------
+# Truncate by 5 days
+# Cases and admissions: max date is 5th Sept, so 31 August
+# Deaths: max date 27 August, so 22 August
 
-# Filter to where all ratios are available (ie max date of deaths as that is longest delay)
-estimate_dates <- dplyr::group_by(summary, source, region) %>%
-  dplyr::summarise(max_date = max(date),
-                   min_date = min(date),
-                   .groups = "drop_last")
+summary_trunc <- summary %>%
+  dplyr::filter((source %in% c("cases_test", "cases_hosp") & date < trunc_cases) |
+                  (source == "deaths_death" & date < trunc_deaths))
 
-saveRDS(summary_wide, "rt-estimate/estimate-all-time/summary_wide.rds")
-
-# Save for use later in plot-data.R
-saveRDS(max(estimate_dates$min_date), "utils/earliest_estimate.rds")
-saveRDS(min(estimate_dates$max_date), "utils/latest_estimate.rds")
+saveRDS(summary_trunc, "rt-estimate/estimate-all-time/summary_truncated.rds")
 
 # Get samples -------------------------------------------------------------
 regions <- as.list(region_names[["region_factor"]])
@@ -97,34 +83,69 @@ samples_cases_test <- purrr::map(regions,
                                    "rt-estimate/estimate-all-time/",
                                    "cases_test", 
                                    "/region/", .x, 
-                                   "/latest/estimate_samples.rds"))) %>%
+                                   "/2020-09-16/estimate_samples.rds"))) %>%
   purrr::map(., 
              ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
   dplyr::bind_rows(.id = "region") %>%
   dplyr::mutate(source = "cases_test")
 
-samples_cases_hosp <- purrr::map(regions,
-                                 ~ readRDS(paste0(
-                                   "rt-estimate/estimate-all-time/",
-                                   "cases_hosp", 
-                                   "/region/", .x, 
-                                   "/latest/estimate_samples.rds"))) %>%
+# Admissions
+samples_cases_hosp_16 <- regions %>%
+  purrr::keep(., !grepl("England|East of England", names(.))) %>%
+  purrr::map(~ readRDS(paste0(
+    "rt-estimate/estimate-all-time/",
+    "cases_hosp", "/region/", .x, 
+    "/2020-09-16/estimate_samples.rds"))) %>%
   purrr::map(., 
              ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
-  dplyr::bind_rows(.id = "region") %>%
+  dplyr::bind_rows(.id = "region") 
+
+samples_cases_hosp_17 <- regions %>%
+  purrr::keep(., grepl("England|East of England", names(.))) %>%
+  purrr::map(~ readRDS(paste0(
+    "rt-estimate/estimate-all-time/",
+    "cases_hosp", "/region/", .x, 
+    "/2020-09-17/estimate_samples.rds"))) %>%
+  purrr::map(., 
+             ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
+  dplyr::bind_rows(.id = "region") 
+
+samples_cases_hosp <- bind_rows(samples_cases_hosp_16, samples_cases_hosp_17) %>%
   dplyr::mutate(source = "cases_hosp")
 
-samples_deaths <- purrr::map(regions,
-                             ~ readRDS(paste0(
-                               "rt-estimate/estimate-all-time/",
-                               "deaths_death", 
-                               "/region/", .x, 
-                               "/latest/estimate_samples.rds"))) %>%
+rm(samples_cases_hosp_16, samples_cases_hosp_17)
+
+# Deaths
+samples_deaths_16 <- regions %>%
+  purrr::keep(., grepl("Midlands", names(.))) %>%
+  purrr::map(~ readRDS(paste0(
+    "rt-estimate/estimate-all-time/",
+    "deaths_death", "/region/", .x, 
+    "/2020-09-16/estimate_samples.rds"))) %>%
   purrr::map(., 
              ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
-  dplyr::bind_rows(.id = "region") %>%
+  dplyr::bind_rows(.id = "region") 
+
+samples_deaths_17 <- regions %>%
+  purrr::keep(., !grepl("Midlands", names(.))) %>%
+  purrr::map(~ readRDS(paste0(
+    "rt-estimate/estimate-all-time/",
+    "deaths_death", "/region/", .x, 
+    "/2020-09-17/estimate_samples.rds"))) %>%
+  purrr::map(., 
+             ~ dplyr::filter(., parameter == "R" & type == "estimate")) %>%
+  dplyr::bind_rows(.id = "region") 
+
+samples_deaths <- bind_rows(samples_deaths_16, samples_deaths_17) %>%
   dplyr::mutate(source = "deaths_death")
 
-samples <- dplyr::bind_rows(samples_cases_test, samples_cases_hosp, samples_deaths)
+rm(samples_deaths_16, samples_deaths_17)
 
-saveRDS(samples, "rt-estimate/samples.rds")
+
+# Join all samples
+samples <- dplyr::bind_rows(samples_cases_test, samples_cases_hosp, samples_deaths) %>%
+  #truncate
+  dplyr::filter((source %in% c("cases_test", "cases_hosp") & date < trunc_cases) |
+                (source == "deaths_death" & date < trunc_deaths))
+
+saveRDS(samples, "rt-estimate/samples_truncated.rds")
