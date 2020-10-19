@@ -1,5 +1,0 @@
-region,point,lower,upper,mid_lower,mid_upper,central_lower,central_upper,metric,Expected change in daily cases
-England,398,215,646,295,460,321,379,New confirmed cases by infection date,Unsure
-East of England,28,8,55,15,31,17,23,New confirmed cases by infection date,Increasing
-East of England,1.39,0.97,1.87,1.15,1.5,1.26,1.38,Effective reproduction no.,Increasing
-England,1.15,0.88,1.47,0.98,1.22,1.07,1.16,Effective reproduction no.,Unsure

@@ -1,3 +1,0 @@
-region,point,lower,upper,mid_lower,mid_upper,central_lower,central_upper,metric,Expected change in daily cases
-Midlands,5,1,13,2,6,2,3,New confirmed cases by infection date,Likely increasing
-Midlands,1.19,0.86,1.54,1.02,1.29,1.06,1.15,Effective reproduction no.,Likely increasing
