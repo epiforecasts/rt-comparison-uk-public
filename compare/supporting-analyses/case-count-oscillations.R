@@ -1,7 +1,6 @@
 # Compare case counts and oscillations
 library(dplyr); library(magrittr)
 source("utils/utils.R")
-rm(adm_new)
 
 summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds")
 peaks_troughs <- readRDS("compare/rt-comparison/peaks_troughs.rds")

@@ -72,7 +72,8 @@ rt1_plot <- rt1 %>%
   scale_color_manual(values = colours) +
   theme_classic() +
   theme(legend.position = "bottom") +
-  ggsave("figures/rt-cross-1.png")
+  ggsave(paste0("figures/", Sys.Date(), "-rt-cross-1.png"),
+         height = 2, width = 6)
 
 
 

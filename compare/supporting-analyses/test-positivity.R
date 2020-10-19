@@ -84,16 +84,15 @@ time_between_all <- peaks_troughs$time_between_valleys %>%
               summarise(mean_pos = mean(pos_perc)),
             by = "region")
 
-var <- "deaths_death"
+# linear regression
+var <- "cases_test"
 regr_data <- time_between_all %>%
   filter(source == var)
-  
 
-# linear regression
 pos_predicts_days <- lm(mean_days_duration ~ mean_pos, data = regr_data)
 broom::tidy(pos_predicts_days)
 broom::glance(pos_predicts_days)
-confint(pos_predicts_days)
+confint(pos_predicts_days, level = 0.95)
 
 # cases_hosp: coeff = -1.91 (-5.2 - 1.3) (r2=0.26, p=0.2)
 # deaths_death: coeff = -2.13 (-4.6 - 0.3) (r2=0.5, p=0.07)

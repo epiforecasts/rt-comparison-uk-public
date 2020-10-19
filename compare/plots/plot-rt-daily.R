@@ -1,16 +1,19 @@
 # Plot Rt using daily updated estimates
 source("utils/utils.R")
 
-deaths <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/deaths/summary/rt.csv")
-cases <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/cases/summary/rt.csv")
-admissions <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/admissions/summary/rt.csv")
+# deaths <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/deaths/summary/rt.csv")
+# cases <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/cases/summary/rt.csv")
+# admissions <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/admissions/summary/rt.csv")
+# 
+# summary <- dplyr::bind_rows(cases, admissions, deaths, .id = "source") %>%
+#   dplyr::mutate(`Data source` = dplyr::recode(source, 
+#                                        "1" = "Test-positive",
+#                                        "2" = "Hospital admissions",
+#                                        "3" = "Deaths")) %>%
+#   dplyr::filter(type == "estimate")
 
-summary <- dplyr::bind_rows(cases, admissions, deaths, .id = "source") %>%
-  dplyr::mutate(`Data source` = dplyr::recode(source, 
-                                       "1" = "Test-positive",
-                                       "2" = "Hospital admissions",
-                                       "3" = "Deaths")) %>%
-  dplyr::filter(type == "estimate")
+
+summary <- readr::read_csv("https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-kingdom/collated/rt/summary_latest.csv")
 
 # Set minimum date (1 August, when the NHS hospital data start)
 date_min <- min(admissions[admissions$region=="England",]$date)
@@ -44,24 +47,24 @@ plot_rt_fn <- function(region_name){
     guides(colour = guide_legend(override.aes = list(alpha = 1)))
 }
 
-region_plot_rt <- purrr::map(region_list, 
-                             ~ plot_rt_fn(region_name = .x))
-
-# Plot an individual region:
-region_plot_rt$England
-
-# Plot selected regions:
-library(patchwork)
-plot_everywhere <- region_plot_rt[[1]] +
-  region_plot_rt[[2]] +
-  region_plot_rt[[3]] +
-  region_plot_rt[[4]] +
-  region_plot_rt[[5]] +
-  region_plot_rt[[6]] +
-  region_plot_rt[[7]] +
-  region_plot_rt[[8]] +
-  plot_layout(guides = "collect") &
-  theme(legend.position = "bottom")
+# region_plot_rt <- purrr::map(region_list, 
+#                              ~ plot_rt_fn(region_name = .x))
+# 
+# # Plot an individual region:
+# region_plot_rt$England
+# 
+# # Plot selected regions:
+# library(patchwork)
+# plot_everywhere <- region_plot_rt[[1]] +
+#   region_plot_rt[[2]] +
+#   region_plot_rt[[3]] +
+#   region_plot_rt[[4]] +
+#   region_plot_rt[[5]] +
+#   region_plot_rt[[6]] +
+#   region_plot_rt[[7]] +
+#   region_plot_rt[[8]] +
+#   plot_layout(guides = "collect") &
+#   theme(legend.position = "bottom")
 
 
 
