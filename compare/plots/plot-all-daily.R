@@ -1,5 +1,5 @@
 # Plot daily updating Rt estimates against each other and data
-library(rvest); library(stringr); library(dplyr)
+library(rvest); library(stringr); library(dplyr); library(ggplot2)
 
 # global plotting variables -----------------------------------------------
 source("utils/utils.R")
