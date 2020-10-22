@@ -7,7 +7,7 @@ delays$sd # 1.458985
 purrr::map2_dbl(delays$mean, delays$sd, ~ exp(.x + .y^2/2)) # 6.393205
 
 # Using mixR:
-mixR::to_mu_sd_lnorm(delays$mean, delays$sd) # mu = 6.393205, sd = 17/39541
+mixR::to_mu_sd_lnorm(delays$mean, delays$sd) # mu = 6.393205, sd = 17.39541
 
 # source code:
 # mixR::to_mu_sd_lnorm
