@@ -2,7 +2,7 @@
 
 #source("rt-estimate/update-format.R")
 
-library(ggplot2); library(magrittr); library(patchwork)
+library(ggplot2); library(magrittr); library(patchwork); library(rvest); library(stringr)
 
 # Get region names and plotting colours
 source("utils/utils.R")
