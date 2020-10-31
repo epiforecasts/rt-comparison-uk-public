@@ -16,7 +16,7 @@ date_max <- max(summary$date)
 # Set plotting variables
 theme_set(theme_classic(base_size = 15))
 scale_min <- 0.5
-scale_max <- 2
+scale_max <- 2.5
 
 # Regions to plot
 region_list <- as.list(region_names$region_factor)

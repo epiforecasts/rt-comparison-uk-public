@@ -12,8 +12,7 @@ region_names <- factor(c("England", "Scotland", "Wales", "Northern Ireland",
 # Plot
 plot_rt_fn <- function(region_name){
   summary %>%
-    dplyr::filter(region %in% region_name &
-                    date >= date_min & date <= date_max) %>%
+    dplyr::filter(region %in% region_name) %>%
     ggplot2::ggplot(ggplot2::aes(x = date, col = `Data source`, fill = `Data source`)) +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
                 alpha = 0.2, size = 0, colour = NA) +

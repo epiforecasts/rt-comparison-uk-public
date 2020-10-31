@@ -1,7 +1,9 @@
 require(dplyr)
 require(ggplot2)
+require(rvest)
 source("utils/utils.R")
-# source("compare/supporting-analyses/test-positivity.R")
+source("compare/supporting-analyses/test-positivity.R")
+
 
 # Get count data ----------------------------------------------------------
 # If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
@@ -24,7 +26,7 @@ source("utils/utils.R")
 
 standardised_data <- data %>%
   # Filter before data truncation (where Rt is "estimate" not "based on partial data")
-  dplyr::filter(date >= date_min & date <= date_max) %>%
+  # dplyr::filter(date >= date_min & date <= date_max) %>%
   # Standardise by region
   dplyr::group_by(region) %>%
   #  - z-scores
@@ -77,7 +79,7 @@ plot_data_fn <- function(region_name){
     geom_vline(xintercept = as.Date("2020-05-03"), 
                lty = 3, colour = colours["Cases"]) +
     cowplot::theme_cowplot() +
-    coord_cartesian(xlim = c(date_min, date_max)) +
+    # coord_cartesian(xlim = c(date_min, date_max)) +
     scale_color_manual(values = colours) +
     scale_x_date(date_breaks = "1 month", date_labels = "%b") +
     theme(panel.spacing.x = unit(0.1, "cm"),
