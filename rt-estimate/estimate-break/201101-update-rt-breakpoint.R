@@ -74,24 +74,38 @@ save_loc <- "rt-estimate/estimate-break/"
 
 # Cases
 run_rt_breakpoint(data = data, 
-                truncate = 5,
+                truncate = 3,
                 count_variable = "cases_test", 
                 reporting_delay = cases_delay,
+                generation_time = generation_time,
                 save_loc = save_loc,
                 no_cores = no_cores) 
 #Admissions
 run_rt_breakpoint(data = data, 
-                truncate = 5,
+                truncate = 3,
                 count_variable = "cases_hosp", 
                 reporting_delay = cases_delay,
+                generation_time = generation_time,
                 save_loc = save_loc,
                 no_cores = no_cores) 
 # Deaths
 run_rt_breakpoint(data = data, 
-                truncate = 5,
+                truncate = 3,
                 count_variable = "deaths_death", 
                 reporting_delay = deaths_delay,
+                generation_time = generation_time,
                 save_loc = save_loc,
                 no_cores = no_cores) 
+
+
+
+
+
+
+
+
+
+
+
 
 

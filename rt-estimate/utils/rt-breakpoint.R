@@ -10,7 +10,7 @@ run_rt_breakpoint <- function(data,
                             reporting_delay,
                             save_loc,
                             no_cores,
-                            max_execution_time = 60*60) {
+                            generation_time) {
   
   for(i in 1:length(count_variable)){
     
@@ -42,31 +42,48 @@ run_rt_breakpoint <- function(data,
     data.table::setorder(data_select, date)
     
     # Set up common settings --------------------------------------------------
-    out <- regional_epinow(reported_cases = data_select,
-                           generation_time = generation_time,
-                           delays = list(incubation_period, reporting_delay),
-                           horizon = 14, 
-                           burn_in = 14, 
-                           samples = 4000,
-                           stan_args = list(warmup = 1000, 
-                                            cores = no_cores, 
-                                            chains = ifelse(no_cores <= 4, 4, no_cores)),
-                           target_folder = targets,
-                           future = TRUE,
-                           logs = "rt-estimate/logs",
-                           summary_args = list(reported_cases = data_select, 
-                                               results_dir = targets, 
-                                               summary_dir =  summary),
-                           verbose = TRUE)
+    # Website settings
+    # out <- regional_epinow(reported_cases = data_select,
+    #                        generation_time = generation_time,
+    #                        delays = list(incubation_period, reporting_delay),
+    #                        horizon = 14, 
+    #                        burn_in = 14, 
+    #                        samples = 4000,
+    #                        stan_args = list(warmup = 1000, 
+    #                                         cores = no_cores, 
+    #                                         chains = ifelse(no_cores <= 4, 4, no_cores)),
+    #                        target_folder = targets,
+    #                        future = TRUE,
+    #                        logs = "rt-estimate/logs",
+    #                        summary_args = list(reported_cases = data_select, 
+    #                                            results_dir = targets, 
+    #                                            summary_dir =  summary),
+    #                        verbose = TRUE)
+    # 
+    
+    # US forecast settings
+    regional_epinow( # standard settings (US forecast)
+      samples = 2000, 
+      horizon = 14, 
+      generation_time = generation_time,
+      delays = list(incubation_period, reporting_delay),
+      stan_args = list(warmup = 500, 
+                       cores = no_cores, 
+                       control = list(adapt_delta = 0.95,
+                                      max_treedepth = 15), 
+                       chains = ifelse(no_cores <= 4, 4, no_cores)), 
+      burn_in = 14, 
+      non_zero_points = 2,
+      max_execution_time = 60 * 30, 
+      future = TRUE,
+      output = c("region", "samples", "summary", "timing"),
+      # Custom settings
+      reported_cases = data_select,
+      target_folder = targets,
+      summary_args = list(summary_dir = summary,
+                          all_regions = FALSE),
+      logs = "rt-estimate/logs/us-settings",
+      future_rt = "latest")
+    
   }
 }
-
-
-
-
-
-
-
-
-
-

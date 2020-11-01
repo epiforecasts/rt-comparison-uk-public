@@ -1,0 +1,26 @@
+INFO [2020-11-01 22:44:51] Reporting estimates using data up to: 2020-10-27
+INFO [2020-11-01 22:44:51] Saving estimates to : rt-estimate/estimate-break/cases_test/region
+INFO [2020-11-01 22:44:51] Producing estimates for: Northern Ireland, Wales
+INFO [2020-11-01 22:44:51] Regions excluded: none
+INFO [2020-11-01 22:44:51] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-01 22:45:10] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-01 22:45:10] Reporting estimates using data up to: 2020-10-27
+INFO [2020-11-01 22:45:10] Saving estimates to : rt-estimate/estimate-break/cases_test/region
+INFO [2020-11-01 22:45:10] Producing estimates for: Northern Ireland, Wales
+INFO [2020-11-01 22:45:10] Regions excluded: none
+INFO [2020-11-01 22:45:10] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-01 22:45:16] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-01 22:45:16] Reporting estimates using data up to: 2020-10-27
+INFO [2020-11-01 22:45:16] Saving estimates to : rt-estimate/estimate-break/cases_test/region
+INFO [2020-11-01 22:45:17] Producing estimates for: Northern Ireland, Wales
+INFO [2020-11-01 22:45:17] Regions excluded: none
+INFO [2020-11-01 22:45:18] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-01 22:45:43] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-01 22:45:43] Reporting estimates using data up to: 2020-10-27
+INFO [2020-11-01 22:45:43] Saving estimates to : rt-estimate/estimate-break/cases_test/region
+INFO [2020-11-01 22:45:43] Producing estimates for: Northern Ireland, Wales
+INFO [2020-11-01 22:45:43] Regions excluded: none
+INFO [2020-11-01 22:45:43] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-01 22:51:05] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-01 22:51:12] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-01 22:51:24] Producing following optional outputs: regions, samples, summary, timing
