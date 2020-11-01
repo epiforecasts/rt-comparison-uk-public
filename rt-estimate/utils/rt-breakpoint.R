@@ -41,16 +41,7 @@ run_rt_breakpoint <- function(data,
     
     data.table::setorder(data_select, date)
     
-    # Set up log
-    setup_log <- function(threshold = "INFO", file = "info.log") {
-      futile.logger::flog.threshold(threshold)
-      futile.logger::flog.appender(futile.logger::appender.tee(file))
-      return(invisible(NULL))
-    }
-    
-    
     # Set up common settings --------------------------------------------------
-    futile.logger::flog.trace("calling regional_epinow")
     out <- regional_epinow(reported_cases = data_select,
                            generation_time = generation_time,
                            delays = list(incubation_period, reporting_delay),
@@ -60,25 +51,13 @@ run_rt_breakpoint <- function(data,
                            stan_args = list(warmup = 1000, 
                                             cores = no_cores, 
                                             chains = ifelse(no_cores <= 4, 4, no_cores)),
-                           fixed_future_rt = TRUE,
                            target_folder = targets,
-                           return_estimates = FALSE, 
-                           summary = TRUE,
-                           return_timings = TRUE, 
                            future = TRUE,
-                           max_execution_time = max_execution_time,
-                           breakpoint = TRUE)
-    
-    futile.logger::flog.debug("resetting future plan to sequential")
-    future::plan("sequential")
-    
-    futile.logger::flog.trace("generating summary data")
-    regional_summary(
-      reported_cases = data_select, 
-      results_dir = targets, 
-      summary_dir =  summary, 
-      return_summary = FALSE)
-    
+                           logs = "rt-estimate/logs",
+                           summary_args = list(reported_cases = data_select, 
+                                               results_dir = targets, 
+                                               summary_dir =  summary),
+                           verbose = TRUE)
   }
 }
 

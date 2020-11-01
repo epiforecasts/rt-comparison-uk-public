@@ -2,6 +2,7 @@
 library(EpiNow2)
 library(data.table)
 library(future)
+# install.packages("EpiNow2")
 
 # Delays -----------------------------------------------------------
 # Update
@@ -69,7 +70,7 @@ no_cores <- setup_future(length(unique(data$region)))
 source(here::here("rt-estimate", "utils",  "rt-breakpoint.R"))
 
 # Set root for saving estimates
-save_loc <- "rt-estimate/estimate-breakpoint/"
+save_loc <- "rt-estimate/estimate-break/"
 
 # Cases
 run_rt_breakpoint(data = data, 

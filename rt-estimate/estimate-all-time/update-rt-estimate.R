@@ -18,7 +18,7 @@ data <- data[data$date >= as.Date("2020-03-19") & data$date <= max(data$date)-1,
   # hospital admissions always 1 day more delayed than other data
 
 # Set root for saving estimates
-save_loc <- "rt-estimate/estimate-all-time"
+save_loc <- "rt-estimate/estimate-all-time/"
 
 # Run estimates -----------------------------------------------------------
 # Run everything everywhere

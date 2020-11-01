@@ -75,8 +75,7 @@ run_rt_estimate <- function(data,
   regional_summary(
     reported_cases = data_select, 
     results_dir = targets, 
-    summary_dir =  summary, 
-    return_summary = FALSE)
+    summary_dir =  summary)
 
   }
 }
