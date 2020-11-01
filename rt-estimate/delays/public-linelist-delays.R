@@ -1,10 +1,12 @@
 # Packages ----------------------------------------------------------------
 
 require(EpiNow2)
-require(covidregionaldata)
 require(data.table)
 require(future)
 require(lubridate)
+
+remotes::install_github("epiforecasts/covidregionaldata")
+require(covidregionaldata) 
 
 # Save incubation period and generation time ------------------------------
 
@@ -33,7 +35,7 @@ report_delay <- covidregionaldata::get_linelist(report_delay_only = TRUE)
 
 report_delay <- data.table::as.data.table(report_delay)[!(country %in% c("Mexico", "Philippines"))]
 
-public_onset_to_report_delay <- EpiNow2::bootstrapped_dist_fit(report_delay$days_onset_to_report, 
+public_onset_to_report_delay <- EpiNow2::bootstrapped_dist_fit(report_delay$delay_onset_report, 
                                                                bootstraps = 100, 
                                                                bootstrap_samples = 250,
                                                                max_value = 30)
