@@ -13,7 +13,9 @@ We highlight that policy makers should consider the source populations of Rt est
 ### Resources
 
 #### Paper highlights
+<div class="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">1/7 In the UK, the reproduction (R) number is a <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> policy headline. But what is R based on, and what does it really tell us about who is getting infected? New paper with <a href="https://twitter.com/seabbs?ref_src=twsrc%5Etfw">@seabbs</a>, <a href="https://twitter.com/sbfunk?ref_src=twsrc%5Etfw">@sbfunk</a>, and others at <a href="https://twitter.com/cmmid_lshtm?ref_src=twsrc%5Etfw">@cmmid_lshtm</a>: <a href="https://t.co/cAWEL1oKYn">https://t.co/cAWEL1oKYn</a> [NOT PEER REVIEWED] <a href="https://t.co/DfWWRCeBvk">pic.twitter.com/DfWWRCeBvk</a></p>&mdash; Katharine Sherratt (@kathsherratt) <a href="https://twitter.com/kathsherratt/status/1320836554911338500?ref_src=twsrc%5Etfw">October 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 #### Daily updating UK estimates
 We publish daily estimates of Rt from each data source across the UK, and Rt from case counts globally, at [epiforecasts.io](https://epiforecasts.io/covid/posts/national/united-kingdom/).
