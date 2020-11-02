@@ -67,7 +67,7 @@ no_cores <- setup_future(length(unique(data$region)))
 # Rt estimate -------------------------------------------------------------
 
 # Get function for Rts
-source(here::here("rt-estimate", "utils",  "rt-breakpoint.R"))
+source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint.R"))
 
 # Set root for saving estimates
 save_loc <- "rt-estimate/estimate-break/"
