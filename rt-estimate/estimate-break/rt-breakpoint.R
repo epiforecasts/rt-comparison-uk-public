@@ -83,7 +83,7 @@ run_rt_breakpoint <- function(data,
       target_folder = targets,
       summary_args = list(summary_dir = summary,
                           all_regions = FALSE),
-      logs = "rt-estimate/logs/us-settings",
+      logs = "rt-estimate/logs/breakpoint",
       future_rt = "latest")
     
   }
