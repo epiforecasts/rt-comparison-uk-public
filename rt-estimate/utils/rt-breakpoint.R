@@ -5,12 +5,13 @@ library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
 run_rt_breakpoint <- function(data, 
-                            truncate = 5,
+                            truncate = 3,
                             count_variable, 
                             reporting_delay,
                             save_loc,
                             no_cores,
-                            generation_time) {
+                            generation_time,
+                            incubation_period) {
   
   for(i in 1:length(count_variable)){
     

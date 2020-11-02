@@ -78,6 +78,7 @@ run_rt_breakpoint(data = data,
                 count_variable = "cases_test", 
                 reporting_delay = cases_delay,
                 generation_time = generation_time,
+                incubation_period = incubation_period,
                 save_loc = save_loc,
                 no_cores = no_cores) 
 #Admissions
@@ -86,6 +87,7 @@ run_rt_breakpoint(data = data,
                 count_variable = "cases_hosp", 
                 reporting_delay = cases_delay,
                 generation_time = generation_time,
+                incubation_period = incubation_period,
                 save_loc = save_loc,
                 no_cores = no_cores) 
 # Deaths
@@ -94,6 +96,7 @@ run_rt_breakpoint(data = data,
                 count_variable = "deaths_death", 
                 reporting_delay = deaths_delay,
                 generation_time = generation_time,
+                incubation_period = incubation_period,
                 save_loc = save_loc,
                 no_cores = no_cores) 
 
