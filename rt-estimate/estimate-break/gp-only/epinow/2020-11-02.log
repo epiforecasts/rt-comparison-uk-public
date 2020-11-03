@@ -1,0 +1,98 @@
+INFO [2020-11-03 17:44:40] Initialising estimates for: 9
+INFO [2020-11-03 17:44:40] Initialising estimates for: 11
+WARN [2020-11-03 17:48:27] 9 (chain: 1): There were 10 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 17:48:27] 9 (chain: 1): There were 125 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 17:48:27] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 17:48:30] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 17:48:32] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 17:49:13] 11 (chain: 1): There were 1 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 17:49:13] 11 (chain: 1): There were 1155 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 17:49:13] 11 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 17:49:16] 11 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 17:49:17] 11 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+INFO [2020-11-03 17:49:24] Initialising estimates for: 9
+INFO [2020-11-03 17:49:25] Initialising estimates for: 11
+WARN [2020-11-03 17:52:37] 9 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+WARN [2020-11-03 17:52:37] 9 (chain: 1): There were 29 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 17:52:37] 9 (chain: 1): There were 119 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 17:52:37] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 17:52:40] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 17:52:41] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 17:53:31] 11 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+WARN [2020-11-03 17:53:31] 11 (chain: 1): There were 1799 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 17:53:31] 11 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 17:53:34] 11 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 17:53:35] 11 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+INFO [2020-11-03 17:53:41] Initialising estimates for: 9
+ERROR [2020-11-03 17:53:41] Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 17:53:41] Initialising estimates for: 11
+ERROR [2020-11-03 17:53:41] Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 17:53:41] Runtime error in Wales : Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 17:53:41] Runtime error in Northern Ireland : Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 19:28:49] Initialising estimates for: 9
+INFO [2020-11-03 19:28:50] Initialising estimates for: 11
+WARN [2020-11-03 19:28:57] 11 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+ERROR [2020-11-03 19:28:57] Northern Ireland: $ operator is invalid for atomic vectors - 
+WARN [2020-11-03 19:31:18] 9 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+WARN [2020-11-03 19:31:18] 9 (chain: 1): There were 6 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 19:31:18] 9 (chain: 1): There were 272 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 19:31:18] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 19:31:21] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 19:31:22] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+INFO [2020-11-03 19:31:25] Runtime error in Northern Ireland : Northern Ireland: $ operator is invalid for atomic vectors - 
+INFO [2020-11-03 19:48:56] Initialising estimates for: 9
+INFO [2020-11-03 19:48:56] Initialising estimates for: 11
+WARN [2020-11-03 19:49:03] 11 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+ERROR [2020-11-03 19:49:03] Northern Ireland: $ operator is invalid for atomic vectors - 
+WARN [2020-11-03 19:51:18] 9 (chain: 1): There were 11 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 19:51:18] 9 (chain: 1): There were 19 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 19:51:18] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 19:51:21] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 19:51:22] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+INFO [2020-11-03 19:51:25] Runtime error in Northern Ireland : Northern Ireland: $ operator is invalid for atomic vectors - 
