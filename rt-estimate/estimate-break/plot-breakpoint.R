@@ -93,34 +93,34 @@ plot_rw <- purrr::map2(.x = regions, .y = break_dates,
                                     model_name = "random walk + breakpoint",
                                     breakpoint_date = .y))
 
-# plot_gp <- purrr::map2(.x = regions, .y = break_dates,
-#                        ~ plot_rt_fn(region_name = .x,
-#                                     model_name = "Gaussian process",
-#                                     breakpoint_date = .y))
+plot_gp <- purrr::map2(.x = regions, .y = break_dates,
+                       ~ plot_rt_fn(region_name = .x,
+                                    model_name = "Gaussian process",
+                                    breakpoint_date = .y))
 
 data_sw <- plot_data_fn(region_name = "South West", breakpoint_date = break_wales[length(break_wales)])
 data_wales <- plot_data_fn(region_name = "Wales", breakpoint_date = break_wales[length(break_wales)])
 data_ni <- plot_data_fn(region_name = "Northern Ireland", breakpoint_date = break_ni[length(break_ni)])
 
 # Join plots
-plot_breaks <- ((data_sw | data_wales | data_ni) +
-                  plot_annotation(subtitle = "A. Data")) /
-  ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]]) +
-     plot_annotation(subtitle = "B. Single breakpoint")) /
-  ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]]) +
-     plot_annotation(subtitle = "C. Random walk with breakpoint")) +
-  plot_layout(guides = "collect")  &
-  theme(legend.position = "bottom")
+# plot_breaks <- ((data_sw | data_wales | data_ni) +
+#                   plot_annotation(subtitle = "A. Data")) /
+#   ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]]) +
+#      plot_annotation(subtitle = "B. Single breakpoint")) /
+#   ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]]) +
+#      plot_annotation(subtitle = "C. Random walk with breakpoint")) +
+#   plot_layout(guides = "collect")  &
+#   theme(legend.position = "bottom")
 
-# with GP
+# # with GP
 plot_breaks <- ((data_sw | data_wales | data_ni) +
                   plot_annotation(subtitle = "A. Data")) /
-  ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]]) +
-     plot_annotation(subtitle = "B. Single breakpoint")) /
-  ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]]) +
-     plot_annotation(subtitle = "C. Random walk with breakpoint")) +
-  ((plot_gp[[1]] | plot_gp[[2]] | plot_gp[[3]]) +
-     plot_annotation(subtitle = "C. Gaussian process")) +
+  ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]] +
+     plot_annotation(subtitle = "B. Single breakpoint"))) /
+  ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]] +
+     plot_annotation(subtitle = "C. Random walk with breakpoint"))) +
+  ((plot_gp[[1]] | plot_gp[[2]] | plot_gp[[3]] +
+     plot_annotation(subtitle = "D. Gaussian process"))) +
   plot_layout(guides = "collect")  &
   theme(legend.position = "bottom")
 

@@ -24,6 +24,8 @@ First we modelled a single breakpoint in R~t~ at the start of respective lockdow
 
 We repeated this process for the South West region of England. This was included as a comparison given this region saw the lowest level of policy interventions. We included breakpoints as for Wales (i.e. 24th October).
 
+We also estimated each region using a Gaussian process without breakpoints, to provide a comparison of change at daily intervals. In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
+
 ## Results
 
 We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ when estimated from reported cases in Northern Ireland, using either a single breakpoint or a weekly random walk with a breakpoint at the firebreak. However, the strength of this firebreak effect on R~t~ was less clear across other regions (Wales and South West) and data sources (admissions and deaths), although we observed a general decline in R~t~.
@@ -31,11 +33,9 @@ We saw some evidence of an impact of the firebreak when R~t~ was modelled using 
 ```{r, fig.height = 2, fig.width = 5, fig.align='center', echo=FALSE}
 plot(readRDS(here::here("rt-estimate/estimate-break", "break-effect-size.rds")))
 ```
-
 *Figure 1. Effect size of breakpoint on R~t~, on the date of the firebreak (24th October for Wales and South West, 16th October for N Ireland), median with 90% credible intervals.*
 
-```{r, fig.height = 15, fig.width = 15, echo=FALSE}
+```{r, fig.height = 12, fig.width = 15, echo=FALSE}
 suppressWarnings(plot(readRDS(here::here("rt-estimate/estimate-break", "sw-wales-ni.rds"))))
 ```
-
-*Figure 2. A: Data for cases, hospital admissions, and deaths, in the South West, Wales, and Northern Ireland. B: R~t~ modelled using a single breakpoint: 24th October in the South West (no intervention); 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). C: R~t~ including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as in (B).*
+*Figure 2. A: Data for cases, hospital admissions, and deaths, in the South West, Wales, and Northern Ireland. B: R~t~ modelled using a single breakpoint: 24th October in the South West (no intervention); 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). C: R~t~ including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as in (B). D: R~t~ estimated using a Gaussian process.*
