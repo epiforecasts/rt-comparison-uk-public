@@ -87,6 +87,9 @@ source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint.R"))
 # Set root for saving estimates
 save_loc <- "rt-estimate/estimate-break/"
 
+
+# breakpoint only ---------------------------------------------------------
+
 # Cases
 cases <- run_rt_breakpoint(data = data, 
                            type = "breakpoint",
@@ -119,6 +122,38 @@ run_rt_breakpoint(data = data,
                 no_cores = no_cores) 
 
 
+
+# GP + breakpoint ---------------------------------------------------------
+
+# cases <- run_rt_breakpoint(data = data, 
+#                            type = "gp-breakpoint",
+#                            truncate = 3,
+#                            count_variable = "cases_test", 
+#                            reporting_delay = cases_delay,
+#                            generation_time = generation_time,
+#                            incubation_period = incubation_period,
+#                            save_loc = save_loc,
+#                            no_cores = no_cores) 
+# #Admissions
+# adm <- run_rt_breakpoint(data = data, 
+#                          type = "gp-breakpoint",
+#                          truncate = 3,
+#                          count_variable = "cases_hosp", 
+#                          reporting_delay = cases_delay,
+#                          generation_time = generation_time,
+#                          incubation_period = incubation_period,
+#                          save_loc = save_loc,
+#                          no_cores = no_cores) 
+# # Deaths
+# run_rt_breakpoint(data = data, 
+#                   type = "gp-breakpoint",
+#                   truncate = 3,
+#                   count_variable = "deaths_death", 
+#                   reporting_delay = deaths_delay,
+#                   generation_time = generation_time,
+#                   incubation_period = incubation_period,
+#                   save_loc = save_loc,
+#                   no_cores = no_cores) 
 
 
 
