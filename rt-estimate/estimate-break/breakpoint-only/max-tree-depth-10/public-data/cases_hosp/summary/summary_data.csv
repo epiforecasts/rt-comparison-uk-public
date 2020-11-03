@@ -1,0 +1,5 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases
+Wales,101 (66 -- 159),101,105,28,66,84,95,108,122,159,New confirmed cases by infection date,Unsure
+Northern Ireland,35 (19 -- 69),35,39,16,19,27,32,39,46,69,New confirmed cases by infection date,Unsure
+Northern Ireland,1 (0.9 -- 1.1),1,1,0.1,0.9,0.9,1,1,1,1.1,Effective reproduction no.,Unsure
+Wales,1 (0.9 -- 1.2),1,1,0.1,0.9,0.9,1,1,1.1,1.2,Effective reproduction no.,Unsure

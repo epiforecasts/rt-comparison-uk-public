@@ -49,7 +49,7 @@ run_rt_breakpoint <- function(data,
     # GP + breakpoint
     out <- regional_epinow(
       samples = 4000, 
-      horizon = 14, 
+      horizon = 0, 
       generation_time = generation_time,
       delays = list(incubation_period, reporting_delay),
       stan_args = list(warmup = 1000, 
@@ -65,7 +65,7 @@ run_rt_breakpoint <- function(data,
       target_folder = targets,
       summary_args = list(summary_dir = summary,
                           all_regions = FALSE),
-      logs = "rt-estimate/logs/breakpoint/gp-plus-breakpoint",
+      logs = save_loc,
       future_rt = "latest")
     
     return(out)
@@ -76,12 +76,13 @@ run_rt_breakpoint <- function(data,
     out <- regional_epinow(
       gp = list(),
       samples = 4000, 
-      horizon = 14, 
+      horizon = 0, 
       generation_time = generation_time,
       delays = list(incubation_period, reporting_delay),
       stan_args = list(warmup = 1000, 
                        cores = no_cores, 
-                       control = list(adapt_delta = 0.99), 
+                       control = list(adapt_delta = 0.99,
+                                      max_treedepth = 15), 
                        chains = ifelse(no_cores <= 4, 4, no_cores)), 
       burn_in = 14, 
       non_zero_points = 2,
@@ -92,7 +93,7 @@ run_rt_breakpoint <- function(data,
       target_folder = targets,
       summary_args = list(summary_dir = summary,
                           all_regions = FALSE),
-      logs = "rt-estimate/logs/breakpoint/gp-plus-breakpoint",
+      logs = save_loc,
       future_rt = "latest")
     
     return(out)

@@ -1,0 +1,141 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Northern Ireland,2020-08-26,,estimate,1,2,2,0,0,1,2,3,5
+Northern Ireland,2020-08-28,,estimate,1,2,2,0,0,1,2,3,6
+Northern Ireland,2020-08-29,,estimate,1,2,2,0,0,1,2,3,6
+Northern Ireland,2020-08-30,,estimate,1,2,2,0,0,1,2,3,6
+Northern Ireland,2020-08-25,,estimate,2,2,2,0,1,1,2,3,6
+Northern Ireland,2020-08-27,,estimate,2,2,2,0,1,1,2,3,7
+Wales,2020-08-23,,estimate,2,3,2,0,1,2,3,4,6
+Northern Ireland,2020-09-02,,estimate,2,3,3,0,1,1,2,4,7
+Northern Ireland,2020-09-05,,estimate,2,3,3,0,1,1,3,4,8
+Northern Ireland,2020-08-31,,estimate,2,3,3,0,1,2,3,4,8
+Northern Ireland,2020-09-04,,estimate,2,3,3,0,1,2,3,4,8
+Northern Ireland,2020-09-06,,estimate,2,3,3,0,1,2,3,4,8
+Northern Ireland,2020-09-01,,estimate,2,3,3,0,1,2,3,4,9
+Northern Ireland,2020-09-03,,estimate,2,3,3,0,1,2,3,4,9
+Wales,2020-08-24,,estimate,3,3,2,0,1,2,3,4,7
+Northern Ireland,2020-09-09,,estimate,3,4,3,0,1,2,4,5,10
+Wales,2020-08-25,,estimate,3,4,3,0,2,3,4,5,8
+Wales,2020-08-28,,estimate,3,4,3,0,2,3,4,5,9
+Wales,2020-08-29,,estimate,3,4,3,0,2,3,4,5,9
+Wales,2020-08-30,,estimate,3,4,3,0,2,3,4,5,9
+Northern Ireland,2020-09-07,,estimate,3,4,4,0,1,2,4,6,11
+Northern Ireland,2020-09-11,,estimate,3,4,4,0,1,2,4,6,11
+Northern Ireland,2020-09-12,,estimate,3,4,4,0,1,2,4,6,11
+Northern Ireland,2020-09-13,,estimate,3,4,4,0,1,3,4,6,11
+Northern Ireland,2020-09-08,,estimate,3,4,4,0,2,3,4,6,12
+Northern Ireland,2020-09-10,,estimate,3,5,4,0,2,3,5,6,12
+Wales,2020-08-26,,estimate,4,4,3,1,2,3,4,6,9
+Wales,2020-08-27,,estimate,4,4,3,1,2,3,4,6,9
+Wales,2020-08-31,,estimate,4,4,3,1,2,3,5,6,10
+Northern Ireland,2020-09-16,,estimate,4,5,5,0,2,3,5,7,14
+Northern Ireland,2020-09-19,,estimate,4,6,5,0,2,3,6,8,15
+Wales,2020-09-04,,estimate,5,5,3,1,3,4,6,7,11
+Wales,2020-09-01,,estimate,5,5,3,1,3,4,6,7,12
+Wales,2020-09-06,,estimate,5,6,3,1,3,4,6,7,12
+Wales,2020-09-05,,estimate,5,6,3,1,3,4,6,8,12
+Wales,2020-09-02,,estimate,5,6,4,1,3,5,6,8,13
+Wales,2020-09-03,,estimate,5,6,4,1,3,5,6,8,13
+Northern Ireland,2020-09-18,,estimate,5,6,5,0,2,4,6,8,15
+Northern Ireland,2020-09-20,,estimate,5,6,5,0,2,4,6,8,15
+Northern Ireland,2020-09-14,,estimate,5,6,5,0,2,4,6,8,16
+Northern Ireland,2020-09-15,,estimate,5,6,6,0,2,4,6,9,17
+Northern Ireland,2020-09-17,,estimate,5,7,6,0,3,4,7,9,17
+Wales,2020-09-07,,estimate,6,7,4,1,4,5,7,9,13
+Northern Ireland,2020-09-23,,estimate,6,8,6,1,3,5,7,10,20
+Wales,2020-09-08,,estimate,7,8,4,2,5,6,8,11,16
+Wales,2020-09-11,,estimate,7,8,4,2,5,6,8,11,16
+Wales,2020-09-12,,estimate,7,8,5,2,5,6,9,11,16
+Northern Ireland,2020-09-25,,estimate,7,8,7,1,3,5,8,12,22
+Northern Ireland,2020-09-21,,estimate,7,9,7,1,4,5,8,12,22
+Northern Ireland,2020-09-26,,estimate,7,9,7,1,4,5,8,12,22
+Northern Ireland,2020-09-27,,estimate,7,9,7,1,4,5,8,12,22
+Northern Ireland,2020-09-22,,estimate,7,9,8,1,4,6,9,13,25
+Wales,2020-09-13,,estimate,8,8,5,2,5,6,9,11,17
+Wales,2020-09-10,,estimate,8,9,5,2,5,7,9,11,18
+Wales,2020-09-09,,estimate,8,9,5,2,5,7,9,12,18
+Northern Ireland,2020-09-24,,estimate,8,10,8,1,4,6,10,13,24
+Wales,2020-09-14,,estimate,9,10,5,3,6,8,10,13,19
+Northern Ireland,2020-09-30,,estimate,9,11,9,1,5,7,11,15,28
+Northern Ireland,2020-10-03,,estimate,9,12,10,1,5,7,11,16,30
+Wales,2020-09-15,,estimate,10,11,6,3,7,9,12,15,23
+Northern Ireland,2020-10-02,,estimate,10,12,10,1,5,8,12,17,31
+Northern Ireland,2020-09-28,,estimate,10,13,10,1,5,8,12,17,32
+Northern Ireland,2020-10-04,,estimate,10,13,10,1,5,8,13,17,32
+Wales,2020-09-18,,estimate,11,12,6,3,7,9,12,15,23
+Wales,2020-09-19,,estimate,11,12,6,3,8,10,13,15,23
+Wales,2020-09-20,,estimate,11,12,6,4,8,10,12,15,23
+Northern Ireland,2020-09-29,,estimate,11,13,11,2,6,9,13,18,34
+Northern Ireland,2020-10-01,,estimate,11,14,11,1,6,9,13,18,36
+Wales,2020-09-16,,estimate,12,13,6,4,8,10,13,16,24
+Wales,2020-09-17,,estimate,12,13,6,4,8,10,13,16,24
+Wales,2020-09-21,,estimate,13,14,7,4,9,12,15,18,27
+Northern Ireland,2020-10-07,,estimate,13,16,13,2,7,10,16,21,40
+Northern Ireland,2020-10-10,,estimate,14,17,14,2,7,11,17,23,43
+Northern Ireland,2020-10-09,,estimate,14,18,14,2,8,12,17,24,44
+Northern Ireland,2020-10-11,,estimate,14,18,15,2,8,11,18,24,45
+Northern Ireland,2020-10-05,,estimate,15,18,14,2,8,12,18,25,46
+Northern Ireland,2020-10-06,,estimate,15,19,15,2,8,12,19,26,49
+Wales,2020-09-22,,estimate,16,17,8,6,11,14,18,21,32
+Wales,2020-09-25,,estimate,16,17,8,6,11,14,18,22,32
+Wales,2020-09-27,,estimate,16,17,9,6,11,14,18,22,33
+Wales,2020-09-26,,estimate,16,18,8,6,12,14,19,22,33
+Northern Ireland,2020-10-08,,estimate,16,20,16,3,9,13,20,27,50
+Wales,2020-09-23,,estimate,17,19,9,6,12,15,20,24,36
+Wales,2020-09-24,,estimate,18,19,9,7,12,15,20,24,36
+Northern Ireland,2020-10-14,,estimate,18,23,18,3,10,15,22,31,56
+Wales,2020-09-28,,estimate,19,21,10,7,14,17,22,26,39
+Northern Ireland,2020-10-17,,estimate,20,25,19,4,11,16,24,33,61
+Northern Ireland,2020-10-16,,estimate,20,25,20,3,11,17,25,33,64
+Northern Ireland,2020-10-18,,estimate,21,26,20,4,12,17,25,35,63
+Northern Ireland,2020-10-12,,estimate,21,26,20,4,12,17,26,35,63
+Wales,2020-09-29,,estimate,23,25,12,9,16,20,26,31,46
+Wales,2020-10-04,,estimate,23,25,12,9,16,21,26,31,47
+Wales,2020-10-02,,estimate,23,25,12,9,17,21,26,31,46
+Northern Ireland,2020-10-15,,estimate,23,28,21,4,12,18,28,37,72
+Northern Ireland,2020-10-13,,estimate,23,28,22,4,13,18,28,38,74
+Wales,2020-10-03,,estimate,24,26,12,9,17,21,27,32,47
+Northern Ireland,2020-10-24,,estimate based on partial data,24,29,23,4,13,19,29,39,77
+Northern Ireland,2020-10-25,,estimate based on partial data,24,30,24,5,13,20,30,40,76
+Wales,2020-10-01,,estimate,25,27,13,10,18,22,29,34,50
+Wales,2020-09-30,,estimate,25,27,13,10,18,23,29,34,51
+Northern Ireland,2020-10-21,,estimate,25,31,24,4,14,20,30,41,76
+Northern Ireland,2020-10-23,,estimate based on partial data,25,31,26,4,13,20,31,41,78
+Northern Ireland,2020-10-31,,estimate based on partial data,26,33,28,5,14,21,32,44,88
+Northern Ireland,2020-11-01,,estimate based on partial data,26,34,29,4,14,21,32,44,87
+Northern Ireland,2020-10-30,,estimate based on partial data,27,34,27,5,15,22,33,45,86
+Northern Ireland,2020-10-28,,estimate based on partial data,28,35,29,5,15,22,34,47,89
+Wales,2020-10-05,,estimate,29,31,14,12,20,26,32,39,56
+Northern Ireland,2020-10-22,,estimate,30,37,29,5,16,24,37,49,91
+Northern Ireland,2020-10-19,,estimate,30,37,29,5,16,24,37,50,92
+Northern Ireland,2020-10-20,,estimate,31,39,32,6,17,25,38,51,96
+Northern Ireland,2020-10-26,,estimate based on partial data,33,41,32,6,19,27,41,55,102
+Northern Ireland,2020-10-29,,estimate based on partial data,33,41,33,6,18,27,40,54,105
+Wales,2020-10-06,,estimate,34,36,17,14,25,30,38,46,66
+Wales,2020-10-09,,estimate,34,37,17,14,25,30,38,46,68
+Wales,2020-10-10,,estimate,35,37,17,14,26,31,39,47,69
+Wales,2020-10-11,,estimate,35,37,17,15,25,31,39,47,68
+Northern Ireland,2020-10-27,,estimate based on partial data,35,44,35,6,19,28,42,58,110
+Wales,2020-10-07,,estimate,37,40,18,16,27,33,41,50,73
+Wales,2020-10-08,,estimate,37,40,18,16,27,33,42,50,74
+Northern Ireland,2020-11-02,,estimate based on partial data,38,49,42,7,20,30,47,64,126
+Wales,2020-10-12,,estimate,41,44,20,17,30,37,46,55,82
+Wales,2020-10-13,,estimate,50,54,24,21,36,44,56,67,98
+Wales,2020-10-16,,estimate,50,54,25,21,36,45,56,67,100
+Wales,2020-10-18,,estimate,50,55,25,22,37,45,57,68,101
+Wales,2020-10-17,,estimate,51,55,25,22,37,46,57,69,101
+Wales,2020-10-14,,estimate,54,58,26,23,40,49,61,73,105
+Wales,2020-10-15,,estimate,56,60,27,23,41,50,63,75,110
+Wales,2020-10-19,,estimate,60,65,30,26,44,54,68,81,120
+Wales,2020-10-20,,estimate,73,78,35,31,53,66,82,98,142
+Wales,2020-10-23,,estimate based on partial data,74,78,35,32,54,66,81,97,142
+Wales,2020-10-25,,estimate based on partial data,75,80,36,32,54,66,83,100,148
+Wales,2020-10-24,,estimate based on partial data,75,80,36,32,54,67,83,99,146
+Wales,2020-10-21,,estimate based on partial data,80,86,38,34,60,71,89,106,157
+Wales,2020-10-22,,estimate based on partial data,80,87,39,35,59,72,90,109,159
+Wales,2020-10-26,,estimate based on partial data,87,93,42,38,63,77,98,117,172
+Wales,2020-10-30,,estimate based on partial data,103,111,50,45,75,91,113,138,204
+Wales,2020-10-31,,estimate based on partial data,104,112,51,45,77,92,116,139,208
+Wales,2020-10-27,,estimate based on partial data,106,114,51,47,77,95,119,141,207
+Wales,2020-10-28,,estimate based on partial data,115,124,55,51,85,103,128,153,222
+Wales,2020-10-29,,estimate based on partial data,116,124,54,51,85,104,129,152,223
