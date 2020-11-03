@@ -87,105 +87,105 @@ source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint.R"))
 
 # breakpoint only ---------------------------------------------------------
 # # Set root for saving estimates
-# save_loc <- "rt-estimate/estimate-break/breakpoint-only/"
+save_loc <- "rt-estimate/estimate-break/breakpoint-only/"
 # # Cases
-# cases <- run_rt_breakpoint(data = data,
-#                            type = "breakpoint",
-#                            truncate = 0,
-#                            count_variable = "cases",
-#                            reporting_delay = cases_delay,
-#                            generation_time = generation_time,
-#                            incubation_period = incubation_period,
-#                            save_loc = save_loc,
-#                            no_cores = no_cores)
-# # Admissions
-# adm <- run_rt_breakpoint(data = data,
-#                          type = "breakpoint",
-#                          truncate = 0,
-#                          count_variable = "admissions",
-#                          reporting_delay = cases_delay,
-#                          generation_time = generation_time,
-#                          incubation_period = incubation_period,
-#                          save_loc = save_loc,
-#                          no_cores = no_cores)
-# # Deaths
-# deaths <- run_rt_breakpoint(data = data,
-#                             type = "breakpoint",
-#                             truncate = 0,
-#                             count_variable = "deaths",
-#                             reporting_delay = deaths_delay,
-#                             generation_time = generation_time,
-#                             incubation_period = incubation_period,
-#                             save_loc = save_loc,
-#                             no_cores = no_cores)
-# 
+cases <- run_rt_breakpoint(data = data,
+                           type = "breakpoint",
+                           truncate = 0,
+                           count_variable = "cases",
+                           reporting_delay = cases_delay,
+                           generation_time = generation_time,
+                           incubation_period = incubation_period,
+                           save_loc = save_loc,
+                           no_cores = no_cores)
+# Admissions
+adm <- run_rt_breakpoint(data = data,
+                         type = "breakpoint",
+                         truncate = 0,
+                         count_variable = "admissions",
+                         reporting_delay = cases_delay,
+                         generation_time = generation_time,
+                         incubation_period = incubation_period,
+                         save_loc = save_loc,
+                         no_cores = no_cores)
+# Deaths
+deaths <- run_rt_breakpoint(data = data,
+                            type = "breakpoint",
+                            truncate = 0,
+                            count_variable = "deaths",
+                            reporting_delay = deaths_delay,
+                            generation_time = generation_time,
+                            incubation_period = incubation_period,
+                            save_loc = save_loc,
+                            no_cores = no_cores)
+
 
 
 # With RW -----------------------------------------------------------------
-# 
-# # # Add multiple breakpoints, weekly on Sundays, for random walk
-# sundays <- data[weekdays(data$date)=="Sunday", "date"]
-# 
-# break_ni <- as.Date("2020-10-16")
-# break_ni <- c(sundays[date <= (break_ni - 6)]$date, break_ni)
-# 
-# break_wales <- as.Date("2020-10-24")
-# break_wales <- c(sundays[date <= (break_wales - 6)]$date, break_wales)
-# 
-# data_breaks <- data[, breakpoint := data.table::fifelse((date %in% break_ni & 
-#                                                            region == "Northern Ireland") | 
-#                                                           (date %in% break_wales & 
-#                                                              region %in% 
-#                                                              c("Wales", "South West")), 
-#                                                         1, 0)]
-#
-# Run Rt
-# save_loc <- "rt-estimate/estimate-break/breakpoint-with-rw/"
-# 
-# # Cases
-# cases <- run_rt_breakpoint(data = data_breaks,
-#                            type = "breakpoint",
-#                            truncate = 0,
-#                            count_variable = "cases",
-#                            reporting_delay = cases_delay,
-#                            generation_time = generation_time,
-#                            incubation_period = incubation_period,
-#                            save_loc = save_loc,
-#                            no_cores = no_cores)
-# # Admissions
-# adm <- run_rt_breakpoint(data = data_breaks, 
-#                          type = "breakpoint",
-#                          truncate = 0,
-#                          count_variable = "admissions", 
-#                          reporting_delay = cases_delay,
-#                          generation_time = generation_time,
-#                          incubation_period = incubation_period,
-#                          save_loc = save_loc,
-#                          no_cores = no_cores) 
-# # Deaths
-# deaths <- run_rt_breakpoint(data = data_breaks, 
-#                             type = "breakpoint",
-#                             truncate = 0,
-#                             count_variable = "deaths", 
-#                             reporting_delay = deaths_delay,
-#                             generation_time = generation_time,
-#                             incubation_period = incubation_period,
-#                             save_loc = save_loc,
-#                             no_cores = no_cores) 
-# 
+
+# # Add multiple breakpoints, weekly on Sundays, for random walk
+sundays <- data[weekdays(data$date)=="Sunday", "date"]
+
+break_ni <- as.Date("2020-10-16")
+break_ni <- c(sundays[date <= (break_ni - 6)]$date, break_ni)
+
+break_wales <- as.Date("2020-10-24")
+break_wales <- c(sundays[date <= (break_wales - 6)]$date, break_wales)
+
+data_breaks <- data[, breakpoint := data.table::fifelse((date %in% break_ni &
+                                                           region == "Northern Ireland") |
+                                                          (date %in% break_wales &
+                                                             region %in%
+                                                             c("Wales", "South West")),
+                                                        1, 0)]
+
+#Run Rt
+save_loc <- "rt-estimate/estimate-break/breakpoint-with-rw/"
+
+# Cases
+cases <- run_rt_breakpoint(data = data_breaks,
+                           type = "breakpoint",
+                           truncate = 0,
+                           count_variable = "cases",
+                           reporting_delay = cases_delay,
+                           generation_time = generation_time,
+                           incubation_period = incubation_period,
+                           save_loc = save_loc,
+                           no_cores = no_cores)
+# Admissions
+adm <- run_rt_breakpoint(data = data_breaks,
+                         type = "breakpoint",
+                         truncate = 0,
+                         count_variable = "admissions",
+                         reporting_delay = cases_delay,
+                         generation_time = generation_time,
+                         incubation_period = incubation_period,
+                         save_loc = save_loc,
+                         no_cores = no_cores)
+# Deaths
+deaths <- run_rt_breakpoint(data = data_breaks,
+                            type = "breakpoint",
+                            truncate = 0,
+                            count_variable = "deaths",
+                            reporting_delay = deaths_delay,
+                            generation_time = generation_time,
+                            incubation_period = incubation_period,
+                            save_loc = save_loc,
+                            no_cores = no_cores)
+
 
 # GP + 1 breakpoint ---------------------------------------------------------
 # Set root for saving estimates
 save_loc <- "rt-estimate/estimate-break/gp-only/"
-# cases <- run_rt_breakpoint(data = data,
-#                            type = "gp",
-#                            truncate = 0,
-#                             count_variable = "cases",
-#                            reporting_delay = cases_delay,
-#                            generation_time = generation_time,
-#                            incubation_period = incubation_period,
-#                            save_loc = save_loc,
-#                            no_cores = no_cores)
+cases <- run_rt_breakpoint(data = data,
+                           type = "gp",
+                           truncate = 0,
+                            count_variable = "cases",
+                           reporting_delay = cases_delay,
+                           generation_time = generation_time,
+                           incubation_period = incubation_period,
+                           save_loc = save_loc,
+                           no_cores = no_cores)
 #Admissions
 adm <- run_rt_breakpoint(data = data,
                          type = "gp",
@@ -197,12 +197,12 @@ adm <- run_rt_breakpoint(data = data,
                          save_loc = save_loc,
                          no_cores = no_cores)
 # Deaths
-# deaths <- run_rt_breakpoint(data = data,
-#                   type = "gp",
-#                   truncate = 0,
-#                   count_variable = "deaths",
-#                   reporting_delay = deaths_delay,
-#                   generation_time = generation_time,
-#                   incubation_period = incubation_period,
-#                   save_loc = save_loc,
-#                   no_cores = no_cores)
+deaths <- run_rt_breakpoint(data = data,
+                  type = "gp",
+                  truncate = 0,
+                  count_variable = "deaths",
+                  reporting_delay = deaths_delay,
+                  generation_time = generation_time,
+                  incubation_period = incubation_period,
+                  save_loc = save_loc,
+                  no_cores = no_cores)

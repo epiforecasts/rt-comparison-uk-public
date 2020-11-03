@@ -96,3 +96,131 @@ WARN [2020-11-03 19:51:22] 9 (chain: 1): Tail Effective Samples Size (ESS) is to
 Running the chains for more iterations may help. See
 http://mc-stan.org/misc/warnings.html#tail-ess - 
 INFO [2020-11-03 19:51:25] Runtime error in Northern Ireland : Northern Ireland: $ operator is invalid for atomic vectors - 
+INFO [2020-11-03 20:06:33] Initialising estimates for: 9
+ERROR [2020-11-03 20:06:33] Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:06:33] Initialising estimates for: 6
+ERROR [2020-11-03 20:06:33] South West: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:06:33] Initialising estimates for: 11
+ERROR [2020-11-03 20:06:33] Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:06:33] Runtime error in Wales : Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:06:33] Runtime error in South West : South West: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:06:33] Runtime error in Northern Ireland : Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:07:12] Runtime error in Wales : Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:07:12] Runtime error in South West : South West: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:07:12] Runtime error in Northern Ireland : Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:07:43] Runtime error in Wales : Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:07:43] Runtime error in South West : South West: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:07:43] Runtime error in Northern Ireland : Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:11:11] Runtime error in Wales : Wales: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:11:11] Runtime error in South West : South West: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:11:11] Runtime error in Northern Ireland : Northern Ireland: NA/NaN/Inf in 'y' - lm.fit, x, y, offset, singular.ok, ...
+INFO [2020-11-03 20:32:10] Initialising estimates for: 9
+INFO [2020-11-03 20:32:10] Initialising estimates for: 6
+INFO [2020-11-03 20:32:11] Initialising estimates for: 11
+WARN [2020-11-03 20:35:44] 9 (chain: 1): There were 10 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 20:35:44] 9 (chain: 1): There were 303 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:35:44] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:35:47] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:35:48] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 20:36:21] 6 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+WARN [2020-11-03 20:36:22] 6 (chain: 1): There were 5 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 20:36:22] 6 (chain: 1): There were 478 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:36:22] 6 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:36:25] 6 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:36:26] 6 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 20:36:41] 11 (chain: 1): There were 1 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 20:36:41] 11 (chain: 1): There were 1641 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:36:41] 11 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:36:44] 11 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:36:45] 11 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+INFO [2020-11-03 20:36:50] Initialising estimates for: 9
+INFO [2020-11-03 20:36:50] Initialising estimates for: 6
+INFO [2020-11-03 20:36:51] Initialising estimates for: 11
+WARN [2020-11-03 20:39:47] 9 (chain: 1): some chains had errors; consider specifying chains = 1 to debug - .local, object, ...
+WARN [2020-11-03 20:39:47] 9 (chain: 1): There were 3 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 20:39:47] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:39:49] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:40:34] 11 (chain: 1): There were 454 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:40:34] 11 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:40:35] 11 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:40:37] 11 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 20:40:49] 6 (chain: 1): There were 2 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-03 20:40:49] 6 (chain: 1): There were 716 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:40:49] 6 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:40:50] 6 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:40:52] 6 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+INFO [2020-11-03 20:40:57] Initialising estimates for: 9
+INFO [2020-11-03 20:40:58] Initialising estimates for: 6
+INFO [2020-11-03 20:40:59] Initialising estimates for: 11
+WARN [2020-11-03 20:43:19] 11 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:43:20] 11 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 20:43:32] 9 (chain: 1): There were 48 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:43:32] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:43:34] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:43:35] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-03 20:46:09] 6 (chain: 1): There were 167 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceeded - 
+WARN [2020-11-03 20:46:09] 6 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-03 20:46:10] 6 (chain: 1): The largest R-hat is 1.13, indicating chains have not mixed.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#r-hat - 
+WARN [2020-11-03 20:46:11] 6 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-03 20:46:12] 6 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
