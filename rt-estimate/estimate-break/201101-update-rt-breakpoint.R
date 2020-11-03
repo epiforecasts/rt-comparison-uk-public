@@ -1,10 +1,12 @@
 # Format breakpoint estimates and plot
+library(data.table); library(magrittr); library(ggplot2); library(patchwork)
+
 break_ni <- as.Date("2020-10-16")
 break_wales <- as.Date("2020-10-24")
 
 
+
 # Format estimates --------------------------------------------------------
-library(magrittr)
 vars <- c("cases", "admissions", "deaths")
 models <- c("breakpoint-only",
             "breakpoint-with-rw") #,
@@ -38,6 +40,10 @@ random_walk <- dplyr::bind_rows(random_walk, .id = "source") %>%
 models <- dplyr::bind_rows(breakpoint_only, random_walk) %>%
     dplyr::select(-strat)
 
+
+
+# Save to csv -------------------------------------------------------------
+readr::write_csv(models, "rt-estimate/estimate-break/firebreak-breakpoints.csv")
 
 # Plot utils --------------------------------------------------------------
 colours <- c("cases" = "#1b9e77",  "admissions" =  "#7570b3", "deaths" = "#d95f02")
@@ -119,41 +125,35 @@ plot_rt_fn <- function(region_name, model_name, breakpoint_date = NA){
 
 
 # Combine plots -----------------------------------------------------------
-library(patchwork)
+regions <- unique(as.character(data$region))
+break_dates <- c(rep(break_wales, 2), break_ni)
 
+plot_breakpoint <- purrr::map2(.x = regions, .y = break_dates,
+                       ~ plot_rt_fn(region_name = .x,
+                                  model_name = "single breakpoint",
+                                  breakpoint_date = .y))
+plot_rw <- purrr::map2(.x = regions, .y = break_dates,
+                       ~ plot_rt_fn(region_name = .x,
+                                    model_name = "random walk + breakpoint",
+                                    breakpoint_date = .y))
 
-
-rt_single_wales <- plot_rt_fn(region_name = "Wales", 
-                              model_name = "single breakpoint",
-                              breakpoint_date = break_wales[length(break_wales)])
-rt_single_ni <- plot_rt_fn(region_name = "Northern Ireland", 
-                           model_name = "single breakpoint",
-                           breakpoint_date = break_ni[length(break_ni)])
-
-rt_rw_wales <- plot_rt_fn(region_name = "Wales", 
-                             model_name = "random walk + breakpoint",
-                             breakpoint_date = break_wales[length(break_wales)])
-rt_rw_ni <- plot_rt_fn(region_name = "Northern Ireland", 
-                          model_name = "random walk + breakpoint",
-                          breakpoint_date = break_ni[length(break_ni)])
-
-# rt_gp_wales <- plot_rt_fn(region_name = "Wales", 
-#                           model_name = "gp with breakpoint",
-#                           breakpoint_date = break_wales[length(break_wales)])
-# rt_gp_ni <- plot_rt_fn(region_name = "Northern Ireland", 
-#                        model_name = "gp with breakpoint",
-#                        breakpoint_date = break_wales[length(break_ni)])
-
+data_sw <- plot_data_fn(region_name = "South West", breakpoint_date = break_wales[length(break_wales)])
 data_wales <- plot_data_fn(region_name = "Wales", breakpoint_date = break_wales[length(break_wales)])
 data_ni <- plot_data_fn(region_name = "Northern Ireland", breakpoint_date = break_ni[length(break_ni)])
 
 # Join plots
-(data_wales | data_ni) /
-  (rt_single_wales | rt_single_ni) /
-  (rt_rw_wales | rt_rw_ni) +
-  plot_layout(guides = "collect") &
+plot_breaks <- ((data_sw | data_wales | data_ni) +
+                  plot_layout(tag_level = "new")) /
+  ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]]) +
+     plot_layout(tag_level = "new") +
+     plot_annotation(subtitle = "Single breakpoint")) /
+  ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]]) +
+     plot_layout(tag_level = "new") +
+     plot_annotation(subtitle = "Random walk with breakpoint")) +
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "A") &
   theme(legend.position = "bottom")
 
-ggsave(filename = "rt-estimate/estimate-break/wales-ni.png", 
-       height = 8, width = 10)
+ggsave(filename = "rt-estimate/estimate-break/sw-wales-ni.png", 
+       height = 8, width = 14)
 
