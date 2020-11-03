@@ -70,7 +70,7 @@ run_rt_breakpoint <- function(data,
     
     return(out)
     
-    }else{
+    }else if(type == "breakpoint"){
       
     # Single breakpoint, no GP
     out <- regional_epinow(
