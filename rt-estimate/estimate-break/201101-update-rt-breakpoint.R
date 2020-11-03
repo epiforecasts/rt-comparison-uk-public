@@ -29,11 +29,11 @@ random_walk <- dplyr::bind_rows(random_walk, .id = "source") %>%
 # # GP      
 # gp <- purrr::map(vars, 
 #                  ~ readr::read_csv(
-#                                 paste0("rt-estimate/estimate-break/", models[3], "/max-tree-depth-10/", .x, "/summary/rt.csv")))
+#                                 paste0("rt-estimate/estimate-break/", models[3], .x, "/summary/rt.csv")))
 # names(gp) <- c("cases", "admissions", "deaths")
 # gp <- dplyr::bind_rows(gp, .id = "source") %>%
-#   dplyr::mutate(model = "gp with breakpoint")
-# 
+#   dplyr::mutate(model = "Gaussian process")
+
 # # Join all & clean
 models <- dplyr::bind_rows(breakpoint_only, random_walk) %>%
     dplyr::select(-strat)
