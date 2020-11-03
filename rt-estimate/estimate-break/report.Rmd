@@ -1,17 +1,19 @@
 ---
-title: "Firebreaks in Wales and Northern Ireland"
-author: "K Sherratt"
+title: "Using R(t) to explore firebreaks in Wales and Northern Ireland"
+author: "Kath Sherratt, Sam Abbott, Epiforecasts and Seb Funk"
 date: "03/11/2020"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Using breakpoint Rt estimates to explore firebreaks
+## Rationale
 
 We aimed to explore ongoing intensive lockdowns (firebreaks) in Northern Ireland (from 16th October 2020) and Wales (24th October 2020), using the reproduction number over time (Rt). In contrast to using a smooth Gaussian Process method, we estimated Rt using breakpoints.
+
+## Methods
 
 We used government data (shown as a 7 day moving average in Fig 1A), and used two methods to estimate Rt over a ten week period, and repeated each method for each of data reported as cases, hospital admissions, and deaths.
 
@@ -19,9 +21,10 @@ First we modelled a single breakpoint in Rt at the start of respective lockdowns
 
 We repeated this process for the South West region. This was included as a comparison given this region saw the lowest level of policy interventions. We included breakpoints as for Wales (i.e. 24th October).
 
+## Results
+
 ```{r pressure, fig.height = 15, fig.width = 15, echo=FALSE}
-library(png)
-suppressMessages(plot(plot_breaks))
+suppressWarnings(plot(readRDS(here::here("rt-estimate/estimate-break", "sw-wales-ni.rds"))))
 ```
 
 *Figure 1. A: Data for cases, hospital admissions, and deaths, in the South West, Wales, and Northern Ireland. B: Rt modelled using a single breakpoint: 24th October in the South West (no intervention); 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). C: Rt including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as in (B).*
