@@ -51,20 +51,6 @@ data <- data[, breakpoint := data.table::fifelse( (date == as.Date("2020-10-16")
                                                    region == "Wales"), 
                                                   1, 0)]
 
-# Add multiple breakpoints, weekly on Friday, for random walk
-# Set breakpoints
-breakpoints <- data.frame("region" = c("Wales", "Northern Ireland"),
-                          "date" = as.Date(c("2020-10-24", "2020-10-16")))
-
-fridays <- data[weekdays(data$date)=="Monday", c("date", "region")]
-fridays <- unique(rbind(fridays, breakpoints))
-breaks <- merge(fridays, breakpoints, by = "region")
-breaks$keep <- ifelse(breaks$date.x > breaks$date.y, FALSE, TRUE)
-breaks <- breaks[breaks$keep == TRUE, c("date.x", "region")]
-
-data_break <- merge(data, breaks, by = "region")
-
-data <- data[, breakpoint := data.table::fifelse(date %in% breaks$date, 1, 0), by = region]
 
 # # # Set up cores -----------------------------------------------------
 setup_future <- function(jobs) {
@@ -84,22 +70,20 @@ no_cores <- setup_future(length(unique(data$region)))
 # Get function for Rts
 source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint.R"))
 
-# Set root for saving estimates
-save_loc <- "rt-estimate/estimate-break/"
-
 
 # breakpoint only ---------------------------------------------------------
-
+# Set root for saving estimates
+save_loc <- "rt-estimate/estimate-break/breakpoint-only/"
 # Cases
-cases <- run_rt_breakpoint(data = data, 
-                           type = "breakpoint",
-                truncate = 3,
-                count_variable = "cases_test", 
-                reporting_delay = cases_delay,
-                generation_time = generation_time,
-                incubation_period = incubation_period,
-                save_loc = save_loc,
-                no_cores = no_cores) 
+# cases <- run_rt_breakpoint(data = data, 
+#                            type = "breakpoint",
+#                 truncate = 3,
+#                 count_variable = "cases_test", 
+#                 reporting_delay = cases_delay,
+#                 generation_time = generation_time,
+#                 incubation_period = incubation_period,
+#                 save_loc = save_loc,
+#                 no_cores = no_cores) 
 #Admissions
 adm <- run_rt_breakpoint(data = data, 
                          type = "breakpoint",
@@ -123,8 +107,40 @@ run_rt_breakpoint(data = data,
 
 
 
-# GP + breakpoint ---------------------------------------------------------
+# With RW -----------------------------------------------------------------
 
+# # Add multiple breakpoints, weekly on Sundays, for random walk
+# # Set breakpoints
+break_ni <- as.Date("2020-10-16")
+break_wales <- as.Date("2020-10-24")
+
+sundays <- data[weekdays(data$date)=="Sunday", "date"]
+
+break_ni_all <- c(sundays[sundays <= (break_ni - 6)], break_ni)
+break_wales_all <- c(sundays[sundays <= (break_wales - 6)], break_wales)
+
+
+
+# breakpoints <- data.frame("region" = c("Wales", "Northern Ireland"),
+#                           "date" = as.Date(c("2020-10-24", "2020-10-16")))
+# 
+# sundays <- data[weekdays(data$date)=="Sunday", c("date", "region")]
+# sundays <- unique(rbind(sundays, breakpoints))
+# breaks <- merge(sundays, breakpoints, by = "region")
+# breaks$keep <- ifelse(breaks$date.x > breaks$date.y, FALSE, TRUE)
+# breaks <- breaks[breaks$keep == TRUE, c("date.x", "region")]
+# 
+# data_break <- merge(data, breaks, by = "region")
+# 
+# data <- data[, breakpoint := data.table::fifelse(date %in% breaks$date, 1, 0), by = region]
+
+
+
+
+
+# GP + breakpoint ---------------------------------------------------------
+# Set root for saving estimates
+# save_loc <- "rt-estimate/estimate-break/gp-breakpoint"
 # cases <- run_rt_breakpoint(data = data, 
 #                            type = "gp-breakpoint",
 #                            truncate = 3,
