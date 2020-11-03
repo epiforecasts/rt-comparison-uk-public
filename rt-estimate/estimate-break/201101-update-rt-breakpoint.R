@@ -41,5 +41,5 @@ models <- dplyr::bind_rows(breakpoint_only, random_walk) %>%
 
 
 # Save to csv -------------------------------------------------------------
-readr::write_csv(models, "rt-estimate/estimate-break/firebreak-breakpoints.csv")
+readr::write_csv(models, here::here("rt-estimate/estimate-break", "firebreak-breakpoints.csv"))
 
