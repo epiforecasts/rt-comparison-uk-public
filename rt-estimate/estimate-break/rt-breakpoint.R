@@ -5,7 +5,7 @@ library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
 run_rt_breakpoint <- function(data, 
-                              type = c("breakpoint", "gp-breakpoint"),
+                              type = c("breakpoint", "gp"),
                             truncate = 3,
                             count_variable, 
                             reporting_delay,
@@ -45,7 +45,8 @@ run_rt_breakpoint <- function(data,
     
     # Set up --------------------------------------------------
 
-    if(type == "gp-breakpoint"){
+    if(type == "gp"){
+      data_select$breakpoint <- NULL
     # GP + breakpoint
     out <- regional_epinow(
       samples = 4000, 

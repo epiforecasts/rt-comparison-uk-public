@@ -1,0 +1,30 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Wales,2020-10-04,,estimate,30,32,12,14,23,27,33,39,54
+Wales,2020-10-03,,estimate,31,32,13,15,23,28,34,39,56
+Wales,2020-10-05,,estimate,36,38,15,17,27,33,40,46,64
+Wales,2020-10-11,,estimate,39,41,16,19,30,35,43,50,70
+Wales,2020-10-10,,estimate,40,42,16,19,31,36,44,51,72
+Wales,2020-10-09,,estimate,40,42,17,19,31,36,45,52,72
+Wales,2020-10-06,,estimate,40,43,16,20,31,37,44,52,73
+Wales,2020-10-08,,estimate,42,44,17,21,32,38,46,53,74
+Wales,2020-10-07,,estimate,42,44,17,21,32,38,46,54,75
+Wales,2020-10-12,,estimate,46,48,19,23,34,41,50,58,83
+Wales,2020-10-18,,estimate,49,52,20,24,37,44,53,62,89
+Wales,2020-10-17,,estimate,51,54,20,26,39,46,56,65,91
+Wales,2020-10-16,,estimate,51,54,21,25,39,46,56,65,92
+Wales,2020-10-13,,estimate,53,56,22,26,41,48,58,68,96
+Wales,2020-10-15,,estimate,54,57,22,26,41,49,59,69,96
+Wales,2020-10-14,,estimate,54,57,22,27,42,49,59,69,97
+Wales,2020-10-19,,estimate,58,61,24,28,44,52,64,74,104
+Wales,2020-10-25,,estimate based on partial data,58,62,24,30,45,53,64,74,105
+Wales,2020-10-24,,estimate based on partial data,63,65,25,31,48,57,68,79,108
+Wales,2020-10-23,,estimate based on partial data,63,66,25,32,49,57,69,80,112
+Wales,2020-10-20,,estimate,66,69,26,33,50,59,73,84,116
+Wales,2020-10-22,,estimate based on partial data,67,70,26,34,51,61,72,84,118
+Wales,2020-10-21,,estimate based on partial data,67,71,27,34,52,61,73,86,119
+Wales,2020-10-26,,estimate based on partial data,69,72,27,35,53,62,75,88,122
+Wales,2020-10-31,,estimate based on partial data,72,75,30,35,54,65,79,92,130
+Wales,2020-10-30,,estimate based on partial data,72,76,29,36,56,66,79,93,130
+Wales,2020-10-29,,estimate based on partial data,77,81,32,39,59,70,84,99,140
+Wales,2020-10-27,,estimate based on partial data,78,82,31,39,59,70,85,100,138
+Wales,2020-10-28,,estimate based on partial data,79,83,32,39,60,72,87,102,142
