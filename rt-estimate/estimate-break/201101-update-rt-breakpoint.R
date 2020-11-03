@@ -39,7 +39,7 @@ data <- data.table::setnames(data, old, new)
 
 # Set date sequence to start from 12wks
 data$date <- lubridate::ymd(data$date)
-data <- data[, .SD[date >= max(date)-84]]
+data <- data[, .SD[date >= (max(date)-84)], by = region]
 
 # Remove England/Scotland
 data <- data[region %in% c("Wales", "Northern Ireland")]
@@ -50,6 +50,21 @@ data <- data[, breakpoint := data.table::fifelse( (date == as.Date("2020-10-16")
                                                    (date == as.Date("2020-10-24") & 
                                                    region == "Wales"), 
                                                   1, 0)]
+
+# Add multiple breakpoints, weekly on Friday, for random walk
+# Set breakpoints
+breakpoints <- data.frame("region" = c("Wales", "Northern Ireland"),
+                          "date" = as.Date(c("2020-10-24", "2020-10-16")))
+
+fridays <- data[weekdays(data$date)=="Monday", c("date", "region")]
+fridays <- unique(rbind(fridays, breakpoints))
+breaks <- merge(fridays, breakpoints, by = "region")
+breaks$keep <- ifelse(breaks$date.x > breaks$date.y, FALSE, TRUE)
+breaks <- breaks[breaks$keep == TRUE, c("date.x", "region")]
+
+data_break <- merge(data, breaks, by = "region")
+
+data <- data[, breakpoint := data.table::fifelse(date %in% breaks$date, 1, 0), by = region]
 
 # # # Set up cores -----------------------------------------------------
 setup_future <- function(jobs) {
@@ -73,7 +88,8 @@ source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint.R"))
 save_loc <- "rt-estimate/estimate-break/"
 
 # Cases
-run_rt_breakpoint(data = data, 
+cases <- run_rt_breakpoint(data = data, 
+                           type = "breakpoint",
                 truncate = 3,
                 count_variable = "cases_test", 
                 reporting_delay = cases_delay,
@@ -82,7 +98,7 @@ run_rt_breakpoint(data = data,
                 save_loc = save_loc,
                 no_cores = no_cores) 
 #Admissions
-run_rt_breakpoint(data = data, 
+adm <- run_rt_breakpoint(data = data, 
                 truncate = 3,
                 count_variable = "cases_hosp", 
                 reporting_delay = cases_delay,

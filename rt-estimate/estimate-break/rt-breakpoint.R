@@ -5,6 +5,7 @@ library(data.table)
 
 # Set up running a single Rt forecast -------------------------------------
 run_rt_breakpoint <- function(data, 
+                              type = c("breakpoint", "gp-breakpoint"),
                             truncate = 3,
                             count_variable, 
                             reporting_delay,
@@ -42,49 +43,59 @@ run_rt_breakpoint <- function(data,
     
     data.table::setorder(data_select, date)
     
-    # Set up common settings --------------------------------------------------
-    # Website settings
-    # out <- regional_epinow(reported_cases = data_select,
-    #                        generation_time = generation_time,
-    #                        delays = list(incubation_period, reporting_delay),
-    #                        horizon = 14, 
-    #                        burn_in = 14, 
-    #                        samples = 4000,
-    #                        stan_args = list(warmup = 1000, 
-    #                                         cores = no_cores, 
-    #                                         chains = ifelse(no_cores <= 4, 4, no_cores)),
-    #                        target_folder = targets,
-    #                        future = TRUE,
-    #                        logs = "rt-estimate/logs",
-    #                        summary_args = list(reported_cases = data_select, 
-    #                                            results_dir = targets, 
-    #                                            summary_dir =  summary),
-    #                        verbose = TRUE)
-    # 
-    
-    # US forecast settings
-    regional_epinow( # standard settings (US forecast)
-      samples = 2000, 
+    # Set up --------------------------------------------------
+
+    if(type == "gp-breakpoint"){
+    # GP + breakpoint
+    out <- regional_epinow(
+      samples = 4000, 
       horizon = 14, 
       generation_time = generation_time,
       delays = list(incubation_period, reporting_delay),
-      stan_args = list(warmup = 500, 
+      stan_args = list(warmup = 2000, 
                        cores = no_cores, 
-                       control = list(adapt_delta = 0.95,
-                                      max_treedepth = 15), 
+                       control = list(adapt_delta = 0.99), 
                        chains = ifelse(no_cores <= 4, 4, no_cores)), 
       burn_in = 14, 
       non_zero_points = 2,
-      max_execution_time = 60 * 30, 
-      future = TRUE,
+      max_execution_time = Inf, 
+      future = FALSE,
       output = c("region", "samples", "summary", "timing"),
-      # Custom settings
       reported_cases = data_select,
       target_folder = targets,
       summary_args = list(summary_dir = summary,
                           all_regions = FALSE),
-      logs = "rt-estimate/logs/breakpoint",
+      logs = "rt-estimate/logs/breakpoint/gp-plus-breakpoint",
       future_rt = "latest")
     
+    return(out)
+    
+    }else{
+      
+    # Single breakpoint, no GP
+    out <- regional_epinow(
+      gp = list(),
+      samples = 4000, 
+      horizon = 14, 
+      generation_time = generation_time,
+      delays = list(incubation_period, reporting_delay),
+      stan_args = list(warmup = 2000, 
+                       cores = no_cores, 
+                       control = list(adapt_delta = 0.99), 
+                       chains = ifelse(no_cores <= 4, 4, no_cores)), 
+      burn_in = 14, 
+      non_zero_points = 2,
+      max_execution_time = Inf, 
+      future = FALSE,
+      output = c("region", "samples", "summary", "timing"),
+      reported_cases = data_select,
+      target_folder = targets,
+      summary_args = list(summary_dir = summary,
+                          all_regions = FALSE),
+      logs = "rt-estimate/logs/breakpoint/gp-plus-breakpoint",
+      future_rt = "latest")
+    
+    return(out)
+    }
   }
 }
