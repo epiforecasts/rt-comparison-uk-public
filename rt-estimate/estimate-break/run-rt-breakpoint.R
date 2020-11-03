@@ -56,13 +56,13 @@ data$date <- lubridate::ymd(data$date)
 data <- data[, .SD[date >= (max(date)-42)], by = region]
 
 # Keep regions
-data <- data[region %in% c("Wales", "Northern Ireland")]
+data <- data[region %in% c("South West", "Wales", "Northern Ireland")]
 
 # Add breakpoints
 data <- data[, breakpoint := data.table::fifelse( (date == as.Date("2020-10-16") & 
                                                      region == "Northern Ireland") | 
                                                     (date == as.Date("2020-10-24") & 
-                                                       region == "Wales"), 
+                                                       region %in% c("Wales", "South West")), 
                                                   1, 0)]
 
 
