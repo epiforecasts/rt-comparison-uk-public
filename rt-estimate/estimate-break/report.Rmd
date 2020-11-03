@@ -24,4 +24,4 @@ library(png)
 suppressMessages(plot(plot_breaks))
 ```
 
-Figure 1. A: Data for cases, hospital admissions, and deaths, in the South West, Wales, and Northern Ireland. B: Rt modelled using a single breakpoint at the start of the firebreak. C: Rt including a random walk until the week before the firebreak, plus a breakpoint at the start of the firebreak.
+*Figure 1. A: Data for cases, hospital admissions, and deaths, in the South West, Wales, and Northern Ireland. B: Rt modelled using a single breakpoint: 24th October in the South West (no intervention); 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). C: Rt including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as in (B).*

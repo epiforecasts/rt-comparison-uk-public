@@ -1,6 +1,7 @@
 # Format breakpoint estimates and plot
 library(data.table); library(magrittr); library(ggplot2); library(patchwork)
 
+
 break_ni <- as.Date("2020-10-16")
 break_wales <- as.Date("2020-10-24")
 
@@ -59,7 +60,7 @@ data <- data[,c("value_date", "geography", "death_inc_line", "hospital_inc", "re
 colnames(data) <- c("date", "region", "deaths", "admissions", "cases")
 data <- as.data.table(data)
 data$date <- lubridate::ymd(data$date)
-data <- data[, .SD[date >= (max(date)-56)], by = region]
+data <- data[, .SD[date >= (max(date)-42)], by = region]
 data <- data[region %in% c("Wales", "Northern Ireland", "South West")]
 data <- data[, breakpoint := data.table::fifelse( (date == as.Date("2020-10-16") & 
                                                      region == "Northern Ireland") | 
@@ -90,8 +91,7 @@ plot_data_fn <- function(region_name, breakpoint_date = NA){
     # coord_cartesian(xlim = c(date_min, date_max)) +
     scale_color_manual(values = colours) +
     scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
-    theme(panel.spacing.x = unit(0.1, "cm"),
-          panel.spacing.y = unit(0.1, "cm")) +
+    theme(axis.text.x = ggplot2::element_text(angle = 30, hjust = 1)) +
     guides(colour = FALSE) +
     labs(y = "7-day MA", x = NULL, title = region_name)
 }
@@ -117,9 +117,9 @@ plot_rt_fn <- function(region_name, model_name, breakpoint_date = NA){
     ggplot2::scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
     #scale_y_continuous(breaks=seq(0, 1.4, by = 0.2)) +
     cowplot::theme_cowplot() +
-    ggplot2::labs(y = "R", x = NULL, subtitle = model_name) +
+    ggplot2::labs(y = "R(t)", x = NULL) +
     ggplot2::theme(legend.position = "bottom",
-                   axis.text.x = ggplot2::element_text(angle = 45, hjust = 1)) +
+                   axis.text.x = ggplot2::element_text(angle = 30, hjust = 1)) +
     ggplot2::guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
 }
 
@@ -143,15 +143,12 @@ data_ni <- plot_data_fn(region_name = "Northern Ireland", breakpoint_date = brea
 
 # Join plots
 plot_breaks <- ((data_sw | data_wales | data_ni) +
-                  plot_layout(tag_level = "new")) /
+                  plot_annotation(subtitle = "A. Data")) /
   ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]]) +
-     plot_layout(tag_level = "new") +
-     plot_annotation(subtitle = "Single breakpoint")) /
+     plot_annotation(subtitle = "B. Single breakpoint")) /
   ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]]) +
-     plot_layout(tag_level = "new") +
-     plot_annotation(subtitle = "Random walk with breakpoint")) +
-  plot_layout(guides = "collect") +
-  plot_annotation(tag_levels = "A") &
+     plot_annotation(subtitle = "C. Random walk with breakpoint")) +
+  plot_layout(guides = "collect")  &
   theme(legend.position = "bottom")
 
 ggsave(filename = "rt-estimate/estimate-break/sw-wales-ni.png", 
