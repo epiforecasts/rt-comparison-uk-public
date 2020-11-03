@@ -99,6 +99,7 @@ cases <- run_rt_breakpoint(data = data,
                 no_cores = no_cores) 
 #Admissions
 adm <- run_rt_breakpoint(data = data, 
+                         type = "breakpoint",
                 truncate = 3,
                 count_variable = "cases_hosp", 
                 reporting_delay = cases_delay,
@@ -108,6 +109,7 @@ adm <- run_rt_breakpoint(data = data,
                 no_cores = no_cores) 
 # Deaths
 run_rt_breakpoint(data = data, 
+                  type = "breakpoint",
                 truncate = 3,
                 count_variable = "deaths_death", 
                 reporting_delay = deaths_delay,
