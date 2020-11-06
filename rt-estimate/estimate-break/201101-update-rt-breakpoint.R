@@ -13,7 +13,8 @@ models <- c("breakpoint-only",
 # Single breakpoint        
 breakpoint_only <- purrr::map(vars, 
                            ~ readr::read_csv(
-                            paste0("rt-estimate/estimate-break/", models[1], "/", .x, "/summary/rt.csv")))
+                                      here::here("rt-estimate", "estimate-break",
+                                                 models[1], .x, "summary", "rt.csv")))
 names(breakpoint_only) <- c("cases", "admissions", "deaths")
 breakpoint_only <- dplyr::bind_rows(breakpoint_only, .id = "source") %>%
   dplyr::mutate(model = "single breakpoint")
@@ -21,7 +22,9 @@ breakpoint_only <- dplyr::bind_rows(breakpoint_only, .id = "source") %>%
 # Random walk         
 random_walk <- purrr::map(vars, 
                               ~ readr::read_csv(
-                                paste0("rt-estimate/estimate-break/", models[2], "/", .x, "/summary/rt.csv")))
+                                         here::here("rt-estimate",
+                                                    "estimate-break", models[2],
+                                                    .x, "summary", "rt.csv")))
 names(random_walk) <- c("cases", "admissions", "deaths")
 random_walk <- dplyr::bind_rows(random_walk, .id = "source") %>%
   dplyr::mutate(model = "random walk + breakpoint")
@@ -41,5 +44,5 @@ models <- dplyr::bind_rows(breakpoint_only, random_walk, gp) %>%
 
 
 # Save to csv -------------------------------------------------------------
-readr::write_csv(models, here::here("rt-estimate/estimate-break", "firebreak-breakpoints.csv"))
+readr::write_csv(models, here::here("rt-estimate", \"estimate-break", "firebreak-breakpoints.csv"))
 
