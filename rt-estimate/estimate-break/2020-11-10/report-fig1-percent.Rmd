@@ -26,7 +26,7 @@ We measured effect size as a multiplicative change in R~t~.
 
 ## Results
 
-We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ when estimated from reported cases or hospital admissions in Northern Ireland, using either a single breakpoint or a weekly random walk with a breakpoint at the firebreak. However, the strength of this firebreak effect on R~t~ was less clear in Wales.
+We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ by ca. 10-30% when estimated from reported cases or hospital admissions in Northern Ireland and Wales, bringing R~t~ below 1 in both cases.
 
 ```{r, fig.height = 2, fig.width = 5, fig.align='center', echo=FALSE}
 plot(readRDS(here::here("rt-estimate/estimate-break", Sys.Date(), "percent-break-effect-size.rds")))
