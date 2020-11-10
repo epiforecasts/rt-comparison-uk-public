@@ -8,9 +8,8 @@ if (!dir.exists(here::here("rt-estimate", "estimate-break", Sys.Date()))) {
 source(here::here("rt-estimate", "estimate-break", "run-rt-breakpoint.R"))
 source(here::here("rt-estimate", "estimate-break", "format-rt-breakpoint.R"))
 
-# Create plots
-source(here::here("rt-estimate", "estimate-break", "breakpoint-effects.R"))
-source(here::here("rt-estimate", "estimate-break", "plot-breakpoint.R"))
+# Format data
+source(here::here("rt-estimate", "estimate-break", "format-data.R"))
 
 # Run report
 file.copy(here::here("rt-estimate", "estimate-break", "generic-report.R"),

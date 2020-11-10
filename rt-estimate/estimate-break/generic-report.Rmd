@@ -1,7 +1,7 @@
 ---
 title: "The impact of firebreaks in Wales and Northern Ireland on reproduction numbers"
 author: "Kath Sherratt, Sam Abbott and Sebastian Funk on behalf of the CMMID Covid-19 Working Group"
-date: 
+date: "10/11/2020"
 output:
   pdf_document: default
   html_document:
@@ -9,33 +9,173 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(tidy = TRUE, tidy.opts = list(comment = FALSE))
 ```
 
 ## Rationale
 
-We aimed to explore ongoing intensive lockdowns (firebreaks) in Northern Ireland (from 16th October 2020) and Wales (24th October 2020), by analysing the reproduction number (R~t~) before and after the intervention. In order to identify any effect from these interventions, we estimated R~t~ using a different forms with set breakpoints on the dates the interventions came into place, and compared to an area in England wihtout intervention as a control.
+We aimed to explore ongoing intensive lockdowns (firebreaks) in Northern Ireland (from 16th October 2020) and Wales (24th October 2020), by analysing the reproduction number (R~t~) before and after the intervention. In order to identify any effect from these interventions, we estimated R~t~ using a different forms with set breakpoints on the dates the interventions came into place, and compared to an area in England without intervention as a control.
 
 ## Methods
 
 We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) over a ten week period using two different methods.
 
-First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention (figure 2B). Second, modeleld R~t~ using a weekly random walk  with an additional breakpoint at the start of respective lockdowns. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak.
+First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention (figure 2B). Second, we modelled R~t~ using a weekly random walk  with an additional breakpoint at the start of respective lockdowns. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak. In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
 
 We measured effect size as a multiplicative change in R~t~.
 
-We also estimated each region using a Gaussian process without breakpoints, to provide a comparison of change at daily intervals. In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
-
 ## Results
 
-We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint.
+We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ by ca. 10-30% when estimated from reported cases or hospital admissions in Northern Ireland and Wales, bringing R~t~ below 1 in both cases.
 
-```{r, fig.height = 2.5, fig.width = 5, fig.align='center', echo=FALSE}
-plot(readRDS(here::here("rt-estimate/estimate-break", "break-effect-size.rds")))
+```{r, fig.height = 2, fig.width = 5, fig.align='center', message=F, warning=F, echo=FALSE}
+ library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
+
+effects <- suppressMessages(readr::read_csv(here::here("rt-estimate", "estimate-break", Sys.Date(),
+                            "breakpoint-effects.csv")))
+effects %>%
+  dplyr::mutate_if(is.numeric, ~ 1 - .) %>%
+  ggplot() +
+  geom_point(aes(x = median, y = region, colour = model),
+             position = position_dodge(width = 0.2)) +
+  geom_linerange(aes(xmin = lower_90, xmax = upper_90,
+                     y = region, colour = model),
+                 alpha = 0.3, position = position_dodge(width = 0.2)) +
+  geom_linerange(aes(xmin = lower_50, xmax = upper_50,
+                     y = region, colour = model),
+                 alpha = 1, position = position_dodge(width = 0.2)) +
+  geom_vline(aes(xintercept = 0), lty = 3) +
+  facet_wrap(~source) +
+  labs(y = NULL, x = "Effect of intervention on Rt") +
+  scale_x_continuous(labels = scales::label_percent()) +
+  scale_colour_brewer("Model", type = "qual", palette = 2) +
+  theme_classic() +
+  theme(legend.position = "bottom",
+        strip.background = element_rect(colour = "transparent"))
 ```
-*Figure 1. Effect size (multiplicative change) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales and South West (no intervention), 16th October for N Ireland), median with 90% credible intervals.*
+*Figure 1. Effect size (multiplicative change shown as percentage) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales and South West (no intervention), 16th October for N Ireland), median with 50% (darker) and 90% (lighter) credible intervals.*
 
-```{r, fig.height = 12, fig.width = 15, echo=FALSE}
-suppressWarnings(plot(readRDS(here::here("rt-estimate/estimate-break", "sw-wales-ni.rds"))))
+
+```{r, fig.height = 12, fig.width = 15, message=F, warning=F, echo=FALSE}
+library(patchwork, quietly = TRUE)
+# Set up plot data --------------------------------------------------------------
+# Get formatted data
+data_list <- readRDS(here::here("rt-estimate", "estimate-break", Sys.Date(), 
+                              "formatted-data.RDS"))
+data <- data_list$data
+data_ma <- data_list$data_ma
+
+# Get model estimates
+models <- suppressMessages(readr::read_csv(here::here("rt-estimate", "estimate-break", Sys.Date(), 
+                                     "firebreak-breakpoints.csv")))
+
+# Set fixed values
+regions <- unique(as.character(data$region))
+break_ni <- as.Date("2020-10-16")
+break_wales <- as.Date("2020-10-24")
+break_dates <- c(rep(break_wales, 2), break_ni)
+colours <- c("cases" = "#1b9e77",  "admissions" =  "#7570b3", "deaths" = "#d95f02")
+
+# Plot data --------------------------------------------------------------------
+plot_data_fn <- function(region_name, breakpoint_date = NA, value_type, title = FALSE){
+  data_ma %>%
+    dplyr::mutate(source = factor(source)) %>%
+    dplyr::filter(region %in% region_name &
+                  date >= min(models$date),
+                  source == value_type) %>%
+    ggplot() +
+    geom_line(aes(x = date, y = (as.numeric(ma)),
+                  colour = source)) +
+    geom_vline(xintercept = as.Date(breakpoint_date),
+               lty = 3, colour = "grey50") +
+    geom_point(data = data %>%
+               dplyr::mutate(source = factor(source)) %>%
+               dplyr::filter(region %in% region_name,
+                             date >= min(models$date),
+                             source == value_type),
+               aes(x = date, y = value, colour = source)) +
+    cowplot::theme_cowplot() +
+    # coord_cartesian(xlim = c(date_min, date_max)) +
+    scale_color_manual("", values = colours, drop = FALSE) +
+    scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
+    theme(axis.text.x = ggplot2::element_text(angle = 30, hjust = 1)) +
+    guides(colour = FALSE) +
+      labs(y = value_type, x = NULL) +
+      scale_y_log10() -> p
+  if (title) {
+    p <- p + ggtitle(region_name)
+  }
+  return(p)
+}
+
+# Plot Rt  ----------------------------------------------------------
+plot_rt_fn <- function(region_name, model_name, breakpoint_date = NA){
+  models %>%
+    dplyr::filter(region %in% region_name & 
+                    model %in% model_name) %>%
+    ggplot2::ggplot(ggplot2::aes(x = date, col = source, fill = source)) +
+    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
+                         alpha = 0.2, size = 0, colour = NA) +
+    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90),
+                         alpha = 0.1, colour = NA) +
+    ggplot2::geom_line(ggplot2::aes(y = median),
+                       alpha = 0.9, size = 1) +
+    geom_vline(xintercept = as.Date(breakpoint_date), 
+               lty = 3, colour = "grey50") +
+    ggplot2::geom_hline(yintercept = 1, linetype = 2) +
+    ggplot2::scale_color_manual("", values = colours) +
+    ggplot2::scale_fill_manual("", values = colours) +
+    ggplot2::scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
+    #scale_y_continuous(breaks=seq(0, 1.4, by = 0.2)) +
+    cowplot::theme_cowplot() +
+    ggplot2::labs(y = paste("R(t)", model_name), x = NULL) +
+    ggplot2::theme(legend.position = "bottom",
+                   axis.text.x = ggplot2::element_text(angle = 30, hjust = 1)) +
+    ggplot2::guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
+}
+
+# Combine plots -----------------------------------------------------------
+plot_breakpoint <- purrr::map2(.x = regions, .y = break_dates,
+                               ~ plot_rt_fn(region_name = .x,
+                                            model_name = "single breakpoint",
+                                            breakpoint_date = .y))
+plot_rw <- purrr::map2(.x = regions, .y = break_dates,
+                       ~ plot_rt_fn(region_name = .x,
+                                    model_name = "random walk + breakpoint",
+                                    breakpoint_date = .y))
+
+plot_gp <- purrr::map2(.x = regions, .y = break_dates,
+                       ~ plot_rt_fn(region_name = .x,
+                                    model_name = "Gaussian process",
+                                    breakpoint_date = .y))
+
+admissions_sw <- plot_data_fn(region_name = "South West", breakpoint_date = break_wales[length(break_wales)], value_type = "admissions", title = TRUE)
+cases_sw <- plot_data_fn(region_name = "South West", breakpoint_date = break_wales[length(break_wales)], value_type = "cases")
+deaths_sw <- plot_data_fn(region_name = "South West", breakpoint_date = break_wales[length(break_wales)], value_type = "deaths")
+
+admissions_wales <- plot_data_fn(region_name = "Wales", breakpoint_date = break_wales[length(break_wales)], value_type = "admissions", title = TRUE)
+cases_wales <- plot_data_fn(region_name = "Wales", breakpoint_date = break_wales[length(break_wales)], value_type = "cases")
+deaths_wales <- plot_data_fn(region_name = "Wales", breakpoint_date = break_wales[length(break_wales)], value_type = "deaths")
+
+admissions_ni <- plot_data_fn(region_name = "Northern Ireland", breakpoint_date = break_ni[length(break_ni)], value_type = "admissions", title = TRUE)
+cases_ni <- plot_data_fn(region_name = "Northern Ireland", breakpoint_date = break_ni[length(break_ni)], value_type = "cases")
+deaths_ni <- plot_data_fn(region_name = "Northern Ireland", breakpoint_date = break_ni[length(break_ni)], value_type = "deaths")
+
+# Join plots
+plot_breaks <- suppressWarnings(((admissions_sw | admissions_wales | admissions_ni) +
+                  plot_annotation(subtitle = "A. Admissions")) /
+  ((cases_sw | cases_wales | cases_ni) +
+   plot_annotation(subtitle = "B. Cases")) /
+  ((deaths_sw | deaths_wales | deaths_ni) +
+   plot_annotation(subtitle = "C. Deaths")) /
+  ((plot_breakpoint[[1]] | plot_breakpoint[[2]] | plot_breakpoint[[3]]) +
+     plot_annotation(subtitle = "D. Single breakpoint")) /
+  ((plot_rw[[1]] | plot_rw[[2]] | plot_rw[[3]]) +
+     plot_annotation(subtitle = "E. Random walk with breakpoint")) +
+  plot_layout(guides = "collect")  &
+  theme(legend.position = "bottom"))
+
+plot_breaks
+
 ```
 *Figure 2. Top to bottom: Data for hospital admissions, cases, and deaths, in the South West, Wales, and Northern Ireland. R~t~ modelled using a single breakpoint: 24th October in the South West (no intervention); 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). R~t~ including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as above.*
