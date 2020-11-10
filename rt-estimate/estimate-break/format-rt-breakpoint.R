@@ -7,8 +7,7 @@ break_wales <- as.Date("2020-10-24")
 # Format estimates --------------------------------------------------------
 vars <- c("cases", "admissions", "deaths")
 models <- c("breakpoint-only",
-            "breakpoint-with-rw",
-            "gp-only")
+            "breakpoint-with-rw")
   
 # Single breakpoint        
 breakpoint_only <- purrr::map(vars, 
@@ -29,16 +28,16 @@ names(random_walk) <- c("cases", "admissions", "deaths")
 random_walk <- dplyr::bind_rows(random_walk, .id = "source") %>%
   dplyr::mutate(model = "random walk + breakpoint")
 
-# # GP      
-gp <- purrr::map(vars,
-                 ~ readr::read_csv(
-                                paste0("rt-estimate/estimate-break/", models[3], "/", .x, "/summary/rt.csv")))
-names(gp) <- c("cases", "admissions", "deaths")
-gp <- dplyr::bind_rows(gp, .id = "source") %>%
-  dplyr::mutate(model = "Gaussian process")
+# # # GP      
+# gp <- purrr::map(vars,
+#                  ~ readr::read_csv(
+#                                 paste0("rt-estimate/estimate-break/", models[3], "/", .x, "/summary/rt.csv")))
+# names(gp) <- c("cases", "admissions", "deaths")
+# gp <- dplyr::bind_rows(gp, .id = "source") %>%
+#   dplyr::mutate(model = "Gaussian process")
 
 # # Join all & clean
-models <- dplyr::bind_rows(breakpoint_only, random_walk, gp) %>%
+models <- dplyr::bind_rows(breakpoint_only, random_walk) %>% # ,gp
     dplyr::select(-strat)
 
 
