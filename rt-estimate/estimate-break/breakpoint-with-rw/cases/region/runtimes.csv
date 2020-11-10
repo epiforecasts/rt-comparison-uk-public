@@ -1,4 +1,10 @@
 region,time
+<<<<<<< HEAD
 South West,18.1
 Wales,11.7
 Northern Ireland,11.6
+=======
+South West,1.9
+Wales,1.6
+Northern Ireland,1.7
+>>>>>>> epinow2-1.3

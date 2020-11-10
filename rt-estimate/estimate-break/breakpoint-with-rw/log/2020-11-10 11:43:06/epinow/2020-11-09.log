@@ -1,0 +1,36 @@
+INFO [2020-11-10 11:43:06] Initialising estimates for: 6
+INFO [2020-11-10 11:43:07] Initialising estimates for: 9
+INFO [2020-11-10 11:43:08] Initialising estimates for: 11
+WARN [2020-11-10 11:44:13] 11 (chain: 1): There were 87 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-10 11:44:13] 11 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-10 11:44:13] 6 (chain: 1): There were 8 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-10 11:44:13] 6 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-10 11:44:14] 11 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-10 11:44:15] 6 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-10 11:44:15] 11 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-10 11:44:16] 6 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
+WARN [2020-11-10 11:44:30] 9 (chain: 1): There were 15 divergent transitions after warmup. See
+http://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. - 
+WARN [2020-11-10 11:44:30] 9 (chain: 1): Examine the pairs() plot to diagnose sampling problems
+ - 
+WARN [2020-11-10 11:44:31] 9 (chain: 1): Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#bulk-ess - 
+WARN [2020-11-10 11:44:32] 9 (chain: 1): Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
+Running the chains for more iterations may help. See
+http://mc-stan.org/misc/warnings.html#tail-ess - 
