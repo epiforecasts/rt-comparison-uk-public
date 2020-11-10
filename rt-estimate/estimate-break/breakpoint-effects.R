@@ -11,7 +11,7 @@ regions <- c("South West", "Wales", "Northern Ireland")
 regions_fn <- function(model, var, region){
   estimates <-
     readRDS(here::here("rt-estimate", "estimate-break",
-                       model, var, "region", region, "2020-11-02",
+                       model, var, "region", region, Sys.Date()-1,
                        "summarised_estimates.rds"))
   estimates$region <- region
   estimates$source <- var
