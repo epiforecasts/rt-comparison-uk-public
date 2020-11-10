@@ -11,7 +11,7 @@ regions <- c("South West", "Wales", "Northern Ireland")
 regions_fn <- function(model, var, region){
   estimates <-
     readRDS(here::here("rt-estimate", "estimate-break",
-                       model, var, "region", region, Sys.Date()-1,
+                       model, var, "region", region, "2020-11-02",
                        "summarised_estimates.rds"))
   estimates$region <- region
   estimates$source <- var
@@ -62,9 +62,9 @@ effects_plot <- ggplot(effects) +
   coord_flip()
 
 ggsave(here::here("rt-estimate", "estimate-break", 
-                  paste0(Sys.Date(), "-break-effect-size.png")),
+                  "break-effect-size.png"), 
        height = 3, width = 5)
 
 saveRDS(effects_plot, here::here("rt-estimate", "estimate-break", 
-                                 paste0(Sys.Date(), "-break-effect-size.rds")))
+                                 "break-effect-size.rds"))
 
