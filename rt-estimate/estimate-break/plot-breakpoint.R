@@ -1,7 +1,5 @@
 # Plot utils --------------------------------------------------------------
 colours <- c("cases" = "#1b9e77",  "admissions" =  "#7570b3", "deaths" = "#d95f02")
-break_ni <- as.Date("2020-10-16")
-break_wales <- as.Date("2020-10-24")
 
 # Plot data --------------------------------------------------------------------
 # get private data
@@ -72,10 +70,6 @@ plot_data_fn <- function(region_name, breakpoint_date = NA, value_type, title = 
 
 
 # Plot Rt  ----------------------------------------------------------
-# Read in formatted estimates
-models <- readr::read_csv(here::here("rt-estimate", "estimate-break", paste0(Sys.Date(), "-firebreak-breakpoints.csv")))
-
-# Plot fn
 plot_rt_fn <- function(region_name, model_name, breakpoint_date = NA){
   models %>%
     dplyr::filter(region %in% region_name & 
