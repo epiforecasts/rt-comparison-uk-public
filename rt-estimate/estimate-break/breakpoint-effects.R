@@ -48,24 +48,32 @@ effects <- summary %>%
   dplyr::ungroup()
 
 # Plot effect size
-# effects_plot <- ggplot(effects) +
-#   geom_point(aes(y = median, x = source, colour = model),
-#              position = position_dodge(width = 0.2)) +
-#   geom_linerange(aes(ymin = lower_90, ymax = upper_90,
-#                      x = source, colour = model),
-#                  alpha = 1, position = position_dodge(width = 0.2)) +
-#   geom_hline(aes(yintercept = 1), lty = 3) +
-#   facet_wrap(~region) +
-#   labs(y = NULL, x = "Effect size of intervention on Rt") +
-#   scale_colour_brewer("Model", type = "qual", palette = 2) +
-#   theme_classic() +
-#   theme(legend.position = "bottom",
-#         strip.background = element_rect(colour = "transparent")) +
-#   coord_flip()
+effects_plot <- ggplot(effects) +
+  geom_point(aes(y = median, x = source, colour = model),
+             position = position_dodge(width = 0.2)) +
+  geom_linerange(aes(ymin = lower_90, ymax = upper_90,
+                     x = source, colour = model),
+                 alpha = 1, position = position_dodge(width = 0.2)) +
+  geom_hline(aes(yintercept = 1), lty = 3) +
+  facet_wrap(~region) +
+  labs(y = NULL, x = "Effect size of intervention on Rt") +
+  scale_colour_brewer("Model", type = "qual", palette = 2) +
+  theme_classic() +
+  theme(legend.position = "bottom",
+        strip.background = element_rect(colour = "transparent")) +
+  coord_flip()
+
+ggsave(here::here("rt-estimate", "estimate-break", Sys.Date(),
+                  "break-effect-size.png"), 
+       height = 3, width = 5)
+
+saveRDS(effects_plot, here::here("rt-estimate", "estimate-break", Sys.Date(),
+                                 "break-effect-size.rds"))
+
 
 
 # Plot as % effect size
-effects %>%
+effects_plot_percent <- effects %>%
   dplyr::mutate_if(is.numeric, ~ 1 - .) %>%
   ggplot() +
   geom_point(aes(x = median, y = region, colour = model),
@@ -86,12 +94,10 @@ effects %>%
         strip.background = element_rect(colour = "transparent"))
 
 
-
-
 ggsave(here::here("rt-estimate", "estimate-break", Sys.Date(),
-                  "break-effect-size.png"), 
+                  "percent-break-effect-size.png"), 
        height = 3, width = 5)
 
-saveRDS(effects_plot, here::here("rt-estimate", "estimate-break", Sys.Date(),
-                                 "break-effect-size.rds"))
+saveRDS(effects_plot_percent, here::here("rt-estimate", "estimate-break", Sys.Date(),
+                                 "percent-break-effect-size.rds"))
 
