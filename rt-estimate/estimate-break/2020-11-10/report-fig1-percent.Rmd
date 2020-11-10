@@ -28,10 +28,10 @@ We measured effect size as a multiplicative change in R~t~.
 
 We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ when estimated from reported cases or hospital admissions in Northern Ireland, using either a single breakpoint or a weekly random walk with a breakpoint at the firebreak. However, the strength of this firebreak effect on R~t~ was less clear in Wales.
 
-```{r, fig.height = 2.5, fig.width = 5, fig.align='center', echo=FALSE}
+```{r, fig.height = 2, fig.width = 5, fig.align='center', echo=FALSE}
 plot(readRDS(here::here("rt-estimate/estimate-break", Sys.Date(), "percent-break-effect-size.rds")))
 ```
-*Figure 1. Effect size (multiplicative change) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales and South West (no intervention), 16th October for N Ireland), median with 90% credible intervals.*
+*Figure 1. Effect size (multiplicative change shown as percentage) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales and South West (no intervention), 16th October for N Ireland), median with 50% (darker) and 90% (lighter) credible intervals.*
 
 ```{r, fig.height = 12, fig.width = 15, echo=FALSE}
 suppressWarnings(plot(readRDS(here::here("rt-estimate/estimate-break", Sys.Date(), "sw-wales-ni.rds"))))
