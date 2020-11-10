@@ -37,29 +37,56 @@ summary <- dplyr::bind_rows(m) %>%
 effects <- summary %>%
   dplyr::group_by(region, model) %>%
   dplyr::filter(strat == max(strat)) %>%
-  dplyr::select(-c(variable, type, date, strat, mean, sd, lower_50:upper_50)) %>%
+  dplyr::select(-c(variable, type, date, strat, mean, sd, lower_20:upper_20)) %>%
   dplyr::mutate(region = factor(region,
                                 levels = c("South West", "Wales", "Northern Ireland"),
                                 ordered = TRUE),
                 model = factor(model,
                                 levels = c("breakpoint-only", "breakpoint-with-rw"),
                                labels = c("Single breakpoint", "Random walk + breakpoint"),
-                                ordered = TRUE))
+                                ordered = TRUE)) %>%
+  dplyr::ungroup()
 
-effects_plot <- ggplot(effects) +
-  geom_point(aes(y = median, x = source, colour = model),
+# Plot effect size
+# effects_plot <- ggplot(effects) +
+#   geom_point(aes(y = median, x = source, colour = model),
+#              position = position_dodge(width = 0.2)) +
+#   geom_linerange(aes(ymin = lower_90, ymax = upper_90,
+#                      x = source, colour = model),
+#                  alpha = 1, position = position_dodge(width = 0.2)) +
+#   geom_hline(aes(yintercept = 1), lty = 3) +
+#   facet_wrap(~region) +
+#   labs(y = NULL, x = "Effect size of intervention on Rt") +
+#   scale_colour_brewer("Model", type = "qual", palette = 2) +
+#   theme_classic() +
+#   theme(legend.position = "bottom",
+#         strip.background = element_rect(colour = "transparent")) +
+#   coord_flip()
+
+
+# Plot as % effect size
+effects %>%
+  dplyr::mutate_if(is.numeric, ~ 1 - .) %>%
+  ggplot() +
+  geom_point(aes(x = median, y = region, colour = model),
              position = position_dodge(width = 0.2)) +
-  geom_linerange(aes(ymin = lower_90, ymax = upper_90,
-                     x = source, colour = model),
+  geom_linerange(aes(xmin = lower_90, xmax = upper_90,
+                     y = region, colour = model),
+                 alpha = 0.3, position = position_dodge(width = 0.2)) +
+  geom_linerange(aes(xmin = lower_50, xmax = upper_50,
+                     y = region, colour = model),
                  alpha = 1, position = position_dodge(width = 0.2)) +
-  geom_hline(aes(yintercept = 1), lty = 3) +
-  facet_wrap(~region) +
-  labs(y = NULL, x = "Effect size of intervention on Rt") +
+  geom_vline(aes(xintercept = 0), lty = 3) +
+  facet_wrap(~source) +
+  labs(y = NULL, x = "Effect of intervention on Rt") +
+  scale_x_continuous(labels = scales::label_percent()) +
   scale_colour_brewer("Model", type = "qual", palette = 2) +
   theme_classic() +
   theme(legend.position = "bottom",
-        strip.background = element_rect(colour = "transparent")) +
-  coord_flip()
+        strip.background = element_rect(colour = "transparent"))
+
+
+
 
 ggsave(here::here("rt-estimate", "estimate-break", Sys.Date(),
                   "break-effect-size.png"), 
