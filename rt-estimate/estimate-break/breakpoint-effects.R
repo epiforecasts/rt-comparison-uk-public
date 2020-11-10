@@ -7,7 +7,7 @@ models <- c("breakpoint-only",
             "breakpoint-with-rw") #,
 regions <- c("South West", "Wales", "Northern Ireland")
 
-# Ridiculous way to get summary because can't quite get purrr to play
+# Get summary
 regions_fn <- function(model, var, region){
   estimates <-
     readRDS(here::here("rt-estimate", "estimate-break",

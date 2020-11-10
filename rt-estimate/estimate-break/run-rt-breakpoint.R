@@ -42,6 +42,7 @@ cases_delay <- readRDS(here::here("rt-estimate", "delays", "data", "public_onset
 
 # get private data --------------------------------------------------------
 raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
+
 raw$value_desc <- NULL
 data <- raw[raw$type == "Data" ,]
 data <- tidyr::pivot_wider(data, values_from = "value", names_from = "value_type")

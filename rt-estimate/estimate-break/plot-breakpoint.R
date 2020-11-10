@@ -3,7 +3,10 @@ colours <- c("cases" = "#1b9e77",  "admissions" =  "#7570b3", "deaths" = "#d95f0
 
 # Plot data --------------------------------------------------------------------
 # get private data
-raw <- readRDS(path.expand(file.path("~", "code", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
+# raw <- readRDS(path.expand(file.path("~", "code", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
+raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
+
+
 raw$value_desc <- NULL
 data <- raw[raw$type == "Data" ,]
 data <- tidyr::pivot_wider(data, values_from = "value", names_from = "value_type")
@@ -138,8 +141,8 @@ plot_breaks <- ((admissions_sw | admissions_wales | admissions_ni) +
   theme(legend.position = "bottom")
 
 # save
-saveRDS(plot_breaks, here::here("rt-estimate", "estimate-break", "sw-wales-ni.rds"))
+saveRDS(plot_breaks, here::here("rt-estimate", "estimate-break", paste0(Sys.Date(), "-sw-wales-ni.rds")))
 
-ggsave(filename = here::here("rt-estimate", "estimate-break", "sw-wales-ni.png"),
+ggsave(filename = here::here("rt-estimate", "estimate-break", paste0(Sys.Date(), "-sw-wales-ni.png")),
        height = 14, width = 14)
 
