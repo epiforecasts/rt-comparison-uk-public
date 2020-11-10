@@ -61,10 +61,10 @@ effects_plot <- ggplot(effects) +
         strip.background = element_rect(colour = "transparent")) +
   coord_flip()
 
-ggsave(here::here("rt-estimate", "estimate-break", 
+ggsave(here::here("rt-estimate", "estimate-break", Sys.Date(),
                   "break-effect-size.png"), 
        height = 3, width = 5)
 
-saveRDS(effects_plot, here::here("rt-estimate", "estimate-break", 
+saveRDS(effects_plot, here::here("rt-estimate", "estimate-break", Sys.Date(),
                                  "break-effect-size.rds"))
 

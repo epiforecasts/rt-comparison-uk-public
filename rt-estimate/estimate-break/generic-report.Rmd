@@ -1,0 +1,41 @@
+---
+title: "The impact of firebreaks in Wales and Northern Ireland on reproduction numbers"
+author: "Kath Sherratt, Sam Abbott and Sebastian Funk on behalf of the CMMID Covid-19 Working Group"
+date: 
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Rationale
+
+We aimed to explore ongoing intensive lockdowns (firebreaks) in Northern Ireland (from 16th October 2020) and Wales (24th October 2020), by analysing the reproduction number (R~t~) before and after the intervention. In order to identify any effect from these interventions, we estimated R~t~ using a different forms with set breakpoints on the dates the interventions came into place, and compared to an area in England wihtout intervention as a control.
+
+## Methods
+
+We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) over a ten week period using two different methods.
+
+First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention (figure 2B). Second, modeleld R~t~ using a weekly random walk  with an additional breakpoint at the start of respective lockdowns. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak.
+
+We measured effect size as a multiplicative change in R~t~.
+
+We also estimated each region using a Gaussian process without breakpoints, to provide a comparison of change at daily intervals. In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
+
+## Results
+
+We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint.
+
+```{r, fig.height = 2.5, fig.width = 5, fig.align='center', echo=FALSE}
+plot(readRDS(here::here("rt-estimate/estimate-break", "break-effect-size.rds")))
+```
+*Figure 1. Effect size (multiplicative change) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales and South West (no intervention), 16th October for N Ireland), median with 90% credible intervals.*
+
+```{r, fig.height = 12, fig.width = 15, echo=FALSE}
+suppressWarnings(plot(readRDS(here::here("rt-estimate/estimate-break", "sw-wales-ni.rds"))))
+```
+*Figure 2. Top to bottom: Data for hospital admissions, cases, and deaths, in the South West, Wales, and Northern Ireland. R~t~ modelled using a single breakpoint: 24th October in the South West (no intervention); 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). R~t~ including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as above.*

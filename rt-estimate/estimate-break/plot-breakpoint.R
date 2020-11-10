@@ -70,6 +70,9 @@ plot_data_fn <- function(region_name, breakpoint_date = NA, value_type, title = 
 
 
 # Plot Rt  ----------------------------------------------------------
+# Get models
+models <- readr::read_csv(here::here("rt-estimate", "estimate-break", Sys.Date(), "firebreak-breakpoints.csv"))
+
 plot_rt_fn <- function(region_name, model_name, breakpoint_date = NA){
   models %>%
     dplyr::filter(region %in% region_name & 
@@ -141,8 +144,8 @@ plot_breaks <- ((admissions_sw | admissions_wales | admissions_ni) +
   theme(legend.position = "bottom")
 
 # save
-saveRDS(plot_breaks, here::here("rt-estimate", "estimate-break", paste0(Sys.Date(), "-sw-wales-ni.rds")))
+saveRDS(plot_breaks, here::here("rt-estimate", "estimate-break", Sys.Date(), "sw-wales-ni.rds"))
 
-ggsave(filename = here::here("rt-estimate", "estimate-break", paste0(Sys.Date(), "-sw-wales-ni.png")),
+ggsave(filename = here::here("rt-estimate", "estimate-break", Sys.Date(), "sw-wales-ni.png"),
        height = 14, width = 14)
 
