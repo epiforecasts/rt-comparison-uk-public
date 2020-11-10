@@ -1,130 +1,130 @@
 region,date,confirm,breakpoint
-Wales,2020-09-19,280,0
-South West,2020-09-20,153,1
-Wales,2020-09-20,252,1
-South West,2020-09-21,154,0
-Wales,2020-09-21,309,0
-Northern Ireland,2020-09-21,135,0
-South West,2020-09-22,167,0
-Wales,2020-09-22,379,0
-Northern Ireland,2020-09-22,171,0
-South West,2020-09-23,186,0
-Wales,2020-09-23,378,0
-Northern Ireland,2020-09-23,221,0
-South West,2020-09-24,227,0
-Wales,2020-09-24,316,0
-Northern Ireland,2020-09-24,286,0
-South West,2020-09-25,238,0
-Wales,2020-09-25,385,0
-Northern Ireland,2020-09-25,245,0
-South West,2020-09-26,163,0
-Wales,2020-09-26,403,0
-Northern Ireland,2020-09-26,270,0
 South West,2020-09-27,150,1
-Wales,2020-09-27,317,1
-Northern Ireland,2020-09-27,273,1
 South West,2020-09-28,330,0
 Wales,2020-09-28,426,0
-Northern Ireland,2020-09-28,300,0
+Northern Ireland,2020-09-28,299,0
 South West,2020-09-29,293,0
 Wales,2020-09-29,466,0
-Northern Ireland,2020-09-29,397,0
-South West,2020-09-30,445,0
+Northern Ireland,2020-09-29,396,0
+South West,2020-09-30,446,0
 Wales,2020-09-30,596,0
 Northern Ireland,2020-09-30,644,0
 South West,2020-10-01,444,0
 Wales,2020-10-01,623,0
-Northern Ireland,2020-10-01,486,0
+Northern Ireland,2020-10-01,485,0
 South West,2020-10-02,454,0
 Wales,2020-10-02,599,0
-Northern Ireland,2020-10-02,702,0
-South West,2020-10-03,403,0
+Northern Ireland,2020-10-02,701,0
+South West,2020-10-03,404,0
 Wales,2020-10-03,518,0
-Northern Ireland,2020-10-03,627,0
+Northern Ireland,2020-10-03,626,0
 South West,2020-10-04,448,1
 Wales,2020-10-04,614,1
 Northern Ireland,2020-10-04,616,1
-South West,2020-10-05,628,0
+South West,2020-10-05,627,0
 Wales,2020-10-05,703,0
-Northern Ireland,2020-10-05,716,0
+Northern Ireland,2020-10-05,714,0
 South West,2020-10-06,608,0
-Wales,2020-10-06,770,0
-Northern Ireland,2020-10-06,807,0
+Wales,2020-10-06,771,0
+Northern Ireland,2020-10-06,806,0
 South West,2020-10-07,737,0
 Wales,2020-10-07,848,0
-Northern Ireland,2020-10-07,1042,0
+Northern Ireland,2020-10-07,1041,0
 South West,2020-10-08,830,0
-Wales,2020-10-08,828,0
+Wales,2020-10-08,827,0
 Northern Ireland,2020-10-08,991,0
 South West,2020-10-09,691,0
 Wales,2020-10-09,782,0
-Northern Ireland,2020-10-09,856,0
+Northern Ireland,2020-10-09,855,0
 South West,2020-10-10,533,0
 Wales,2020-10-10,619,0
-Northern Ireland,2020-10-10,806,0
+Northern Ireland,2020-10-10,805,0
 South West,2020-10-11,469,1
 Wales,2020-10-11,625,1
-Northern Ireland,2020-10-11,838,0
+Northern Ireland,2020-10-11,837,0
 South West,2020-10-12,726,0
 Wales,2020-10-12,782,0
-Northern Ireland,2020-10-12,1119,0
+Northern Ireland,2020-10-12,1115,0
 South West,2020-10-13,930,0
 Wales,2020-10-13,952,0
-Northern Ireland,2020-10-13,1099,0
+Northern Ireland,2020-10-13,1092,0
 South West,2020-10-14,838,0
 Wales,2020-10-14,904,0
-Northern Ireland,2020-10-14,1077,0
-South West,2020-10-15,681,0
+Northern Ireland,2020-10-14,1070,0
+South West,2020-10-15,684,0
 Wales,2020-10-15,791,0
-Northern Ireland,2020-10-15,1118,0
+Northern Ireland,2020-10-15,1112,0
 South West,2020-10-16,765,0
 Wales,2020-10-16,952,0
-Northern Ireland,2020-10-16,985,1
+Northern Ireland,2020-10-16,980,1
 South West,2020-10-17,636,0
 Wales,2020-10-17,708,0
-Northern Ireland,2020-10-17,856,0
+Northern Ireland,2020-10-17,850,0
 South West,2020-10-18,579,1
 Wales,2020-10-18,715,1
-Northern Ireland,2020-10-18,801,0
+Northern Ireland,2020-10-18,795,0
 South West,2020-10-19,1139,0
 Wales,2020-10-19,1110,0
-Northern Ireland,2020-10-19,1063,0
-South West,2020-10-20,1138,0
+Northern Ireland,2020-10-19,1053,0
+South West,2020-10-20,1139,0
 Wales,2020-10-20,1237,0
-Northern Ireland,2020-10-20,1088,0
-South West,2020-10-21,1348,0
-Wales,2020-10-21,1262,0
-Northern Ireland,2020-10-21,1141,0
+Northern Ireland,2020-10-20,1077,0
+South West,2020-10-21,1350,0
+Wales,2020-10-21,1263,0
+Northern Ireland,2020-10-21,1119,0
 South West,2020-10-22,1253,0
 Wales,2020-10-22,1056,0
-Northern Ireland,2020-10-22,1104,0
-South West,2020-10-23,1109,0
+Northern Ireland,2020-10-22,1092,0
+South West,2020-10-23,1110,0
 Wales,2020-10-23,1197,0
-Northern Ireland,2020-10-23,903,0
-South West,2020-10-24,788,1
+Northern Ireland,2020-10-23,889,0
+South West,2020-10-24,789,1
 Wales,2020-10-24,1024,1
-Northern Ireland,2020-10-24,781,0
-South West,2020-10-25,877,0
-Wales,2020-10-25,936,0
-Northern Ireland,2020-10-25,709,0
-South West,2020-10-26,1336,0
+Northern Ireland,2020-10-24,759,0
+South West,2020-10-25,879,0
+Wales,2020-10-25,940,0
+Northern Ireland,2020-10-25,693,0
+South West,2020-10-26,1340,0
 Wales,2020-10-26,1556,0
-Northern Ireland,2020-10-26,940,0
-South West,2020-10-27,1407,0
-Wales,2020-10-27,1472,0
-Northern Ireland,2020-10-27,860,0
-South West,2020-10-28,1365,0
-Wales,2020-10-28,1345,0
-Northern Ireland,2020-10-28,797,0
-South West,2020-10-29,1381,0
-Wales,2020-10-29,1549,0
-Northern Ireland,2020-10-29,730,0
-South West,2020-10-30,,0
-Wales,2020-10-30,,0
-Northern Ireland,2020-10-30,,0
-South West,2020-10-31,,0
-Wales,2020-10-31,,0
-Northern Ireland,2020-10-31,,0
-South West,2020-11-01,,0
-Northern Ireland,2020-11-01,,0
-Northern Ireland,2020-11-02,,0
+Northern Ireland,2020-10-26,911,0
+South West,2020-10-27,1409,0
+Wales,2020-10-27,1478,0
+Northern Ireland,2020-10-27,840,0
+South West,2020-10-28,1375,0
+Wales,2020-10-28,1355,0
+Northern Ireland,2020-10-28,776,0
+South West,2020-10-29,1401,0
+Wales,2020-10-29,1582,0
+Northern Ireland,2020-10-29,712,0
+South West,2020-10-30,1239,0
+Wales,2020-10-30,1237,0
+Northern Ireland,2020-10-30,714,0
+South West,2020-10-31,846,0
+Wales,2020-10-31,874,0
+Northern Ireland,2020-10-31,542,0
+South West,2020-11-01,719,0
+Wales,2020-11-01,947,0
+Northern Ireland,2020-11-01,482,0
+South West,2020-11-02,1772,0
+Wales,2020-11-02,1407,0
+Northern Ireland,2020-11-02,727,0
+South West,2020-11-03,1522,0
+Wales,2020-11-03,1209,0
+Northern Ireland,2020-11-03,683,0
+South West,2020-11-04,1569,0
+Wales,2020-11-04,1085,0
+Northern Ireland,2020-11-04,623,0
+South West,2020-11-05,1506,0
+Wales,2020-11-05,988,0
+Northern Ireland,2020-11-05,598,0
+South West,2020-11-06,,0
+Wales,2020-11-06,,0
+Northern Ireland,2020-11-06,,0
+South West,2020-11-07,,0
+Wales,2020-11-07,,0
+Northern Ireland,2020-11-07,,0
+South West,2020-11-08,,0
+Wales,2020-11-08,,0
+Northern Ireland,2020-11-08,,0
+Wales,2020-11-09,,0
+Northern Ireland,2020-11-09,,0

@@ -43,8 +43,8 @@ cases_delay <- readRDS(here::here("rt-estimate", "delays", "data", "public_onset
 
 
 # get private data --------------------------------------------------------
-# raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
-raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
+raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
+# raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
 
 raw$value_desc <- NULL
 data <- raw[raw$type == "Data" ,]
