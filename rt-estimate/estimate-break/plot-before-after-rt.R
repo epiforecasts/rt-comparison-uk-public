@@ -27,24 +27,20 @@ compare <- models %>%
                                     "before", "after"), 
                                     levels = c("before", "after"),
                                     ordered = TRUE)) %>%
-  dplyr::select(-c(date, type, mean, sd, lower_20, upper_20)) %>%
-  tidyr::pivot_wider(id_cols = c(model, source, region), 
-                     names_from = breakpoint, values_from = median:upper_90)
+  dplyr::select(-c(date, type, mean, sd, lower_20, upper_20))
+
 
 compare %>%
-  ggplot(aes(y = model)) +
-  geom_point(aes(x = median_before)) +
-  geom_point(aes(x = median_after)) +
-  geom_linerange(aes(xmin = median_before, xmax = median_after)) +
-  geom_linerange(aes(xmin = lower_90_before, xmax = upper_90_after),
-                 colour = "grey 50") +
-  # # uncertainty
-  # geom_jitter(aes(x = lower_90_before), colour = "grey 50", height = 2) +
-  # geom_jitter(aes(x = lower_90_after), colour = "grey 50", height = 2) +
-  # plotting
+  ggplot(aes(x = model)) +
+  geom_point(aes(y = median, colour = breakpoint)) +
+  geom_linerange(aes(ymin = lower_90, ymax = upper_90, colour = breakpoint)) +
+  geom_hline(aes(yintercept = 1), lty = 3) +
+  scale_colour_brewer(type = "qual", palette = 7) +
   facet_grid(facets = c("source", "region"), scales = "free") +
   cowplot::theme_cowplot() +
   ggplot2::labs(y = "R(t)", x = NULL) +
-  ggplot2::theme(legend.position = "bottom")
+  ggplot2::theme(legend.position = "bottom",
+                 axis.text.x = element_text())
+
 
 
