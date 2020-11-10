@@ -1,4 +1,6 @@
 # Run breakpoint estimates
+# Uses Epinow 2 v1.3
+remotes::install_github("epiforecasts/EpiNow2")
 
 # Packages -----------------------------------------------------------------
 library(EpiNow2)
@@ -41,7 +43,8 @@ cases_delay <- readRDS(here::here("rt-estimate", "delays", "data", "public_onset
 
 
 # get private data --------------------------------------------------------
-raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
+# raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
+raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
 
 raw$value_desc <- NULL
 data <- raw[raw$type == "Data" ,]
@@ -83,7 +86,7 @@ no_cores <- setup_future(length(unique(data$region)))
 # Rt estimate -------------------------------------------------------------
 
 # Get function for Rts
-source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint.R"))
+source(here::here("rt-estimate", "estimate-break",  "rt-breakpoint-epinow2-1.3.R"))
 
 
 # breakpoint only ---------------------------------------------------------
@@ -176,34 +179,34 @@ deaths <- run_rt_breakpoint(data = data_breaks,
 
 
 # GP + 1 breakpoint ---------------------------------------------------------
-# Set root for saving estimates
-save_loc <- "rt-estimate/estimate-break/gp-only/"
-cases <- run_rt_breakpoint(data = data,
-                           type = "gp",
-                           truncate = 0,
-                            count_variable = "cases",
-                           reporting_delay = cases_delay,
-                           generation_time = generation_time,
-                           incubation_period = incubation_period,
-                           save_loc = save_loc,
-                           no_cores = no_cores)
-#Admissions
-adm <- run_rt_breakpoint(data = data,
-                         type = "gp",
-                         truncate = 0,
-                         count_variable = "admissions",
-                         reporting_delay = cases_delay,
-                         generation_time = generation_time,
-                         incubation_period = incubation_period,
-                         save_loc = save_loc,
-                         no_cores = no_cores)
-# Deaths
-deaths <- run_rt_breakpoint(data = data,
-                  type = "gp",
-                  truncate = 0,
-                  count_variable = "deaths",
-                  reporting_delay = deaths_delay,
-                  generation_time = generation_time,
-                  incubation_period = incubation_period,
-                  save_loc = save_loc,
-                  no_cores = no_cores)
+# # Set root for saving estimates
+# save_loc <- "rt-estimate/estimate-break/gp-only/"
+# cases <- run_rt_breakpoint(data = data,
+#                            type = "gp",
+#                            truncate = 0,
+#                             count_variable = "cases",
+#                            reporting_delay = cases_delay,
+#                            generation_time = generation_time,
+#                            incubation_period = incubation_period,
+#                            save_loc = save_loc,
+#                            no_cores = no_cores)
+# #Admissions
+# adm <- run_rt_breakpoint(data = data,
+#                          type = "gp",
+#                          truncate = 0,
+#                          count_variable = "admissions",
+#                          reporting_delay = cases_delay,
+#                          generation_time = generation_time,
+#                          incubation_period = incubation_period,
+#                          save_loc = save_loc,
+#                          no_cores = no_cores)
+# # Deaths
+# deaths <- run_rt_breakpoint(data = data,
+#                   type = "gp",
+#                   truncate = 0,
+#                   count_variable = "deaths",
+#                   reporting_delay = deaths_delay,
+#                   generation_time = generation_time,
+#                   incubation_period = incubation_period,
+#                   save_loc = save_loc,
+#                   no_cores = no_cores)
