@@ -1,4 +1,5 @@
 # Format data
+library(data.table)
 # raw <- readRDS(path.expand(file.path("~", "code", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
 raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
 
