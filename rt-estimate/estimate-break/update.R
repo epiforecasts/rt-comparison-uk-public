@@ -7,6 +7,7 @@ if (!dir.exists(here::here("rt-estimate", "estimate-break", Sys.Date()))) {
 # Run Rt and format
 source(here::here("rt-estimate", "estimate-break", "run-rt-breakpoint.R"))
 source(here::here("rt-estimate", "estimate-break", "format-rt-breakpoint.R"))
+source(here::here("rt-estimate", "estimate-break", "breakpoint-effects.R"))
 
 # Format data
 source(here::here("rt-estimate", "estimate-break", "format-data.R"))
