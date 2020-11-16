@@ -1,3 +1,5 @@
+# For use with EpiNow2 v1.2 as used in the paper
+
 library(EpiNow2, quietly = TRUE)
 library(lubridate, quietly = TRUE)
 library(here)
