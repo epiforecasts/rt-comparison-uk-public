@@ -1,39 +1,32 @@
 # Merge plots
-
 #source("rt-estimate/update-format.R")
-
 library(ggplot2); library(magrittr); library(patchwork); library(rvest); library(stringr)
 
 # Get region names and plotting colours
 source("utils/utils.R")
 
-
-# Set global variables
-# consistent date axis:
-
-date_min <- as.Date("2020-04-04")
-date_max <- max(summary$date)
-theme_set(theme_classic(base_size = 15))
+# Get raw data  --------------------------------------------------------------
+source("compare/plots/plot-data.R")
 
 # Rt settings -------------------------------------------------------------
-# Rt
 source("compare/plots/plot-rt.R")
-summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds")
+summary <- readRDS("rt-estimate/estimate-all-time/summary_truncated.rds") %>%
+  dplyr::mutate(source = dplyr::recode_factor(source, 
+                                              "cases_test" = "Test-positive",
+                                              "cases_hosp" = "Hospital admissions",
+                                              "deaths_death" = "Deaths"))
 
-# Set data source names
-summary <- summary %>%
-  dplyr::mutate('Data source' = dplyr::recode_factor(source, 
-                                                     "cases_test" = "Test-positive",
-                                                     "cases_hosp" = "Hospital admissions",
-                                                     "deaths_death" = "Deaths"))
+# Plot settings ---------------------------------------------------------
+# consistent date axis:
+date_min <- as.Date("2020-04-04")
+date_max <- max(summary$date)
+# theme
+theme_set(theme_classic(base_size = 15))
 # Set y-axis
 scale_min <- 0.5
 scale_max <- 1.3
 
-
-# Plot with data  --------------------------------------------------------------
-source("compare/plots/plot-data.R")
-
+# Region plots ------------------------------------------------------------
 # Using functions to plot each region
 region_list <- as.list(region_names$region_factor)
 names(region_list) <- region_names$region_factor
@@ -43,7 +36,7 @@ region_plot_data <- purrr::map(region_list,
 region_plot_rt <- purrr::map(region_list, 
                              ~ plot_rt_fn(region_name = .x))
 
-# Join all regions, save 7x2
+# Join all regions, save
     
 plot_everywhere <- (region_plot_data[[1]] + region_plot_rt[[1]] +
   plot_layout(tag_level = "new",
@@ -93,8 +86,8 @@ plot_everywhere <- (region_plot_data[[1]] + region_plot_rt[[1]] +
         plot.subtitle = element_text(size = 20),
         plot.tag = element_text(size = 15))
 
-ggsave(here::here("figures", paste0(Sys.Date(), "-rt-with-data.png")),
-       plot_everywhere, dpi = 80, height = 18, width = 15)
+ggsave(here::here("figures", paste0(Sys.Date(), "-RSTB20200283-figure-1.pdf")),
+       plot_everywhere, dpi = "print", height = 18, width = 15)
     
 
 

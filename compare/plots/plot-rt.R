@@ -7,19 +7,16 @@ library(magrittr); library(ggplot2)
 # date_max <- as.Date("2020-08-20")
 # theme_set(theme_classic(base_size = 12))
 
-# Get Rt --------------------------------------------------------------
-
-
-# Plot function
+# Plot Rt --------------------------------------------------------------
 plot_rt_fn <- function(region_name){
   summary %>%
     dplyr::filter(region %in% region_name &
                     date >= date_min & date <= date_max) %>%
-    ggplot(aes(x = date, col = `Data source`, fill = `Data source`)) +
+    ggplot(aes(x = date, col = source, fill = source)) +
     geom_ribbon(aes(ymin = lower_50, ymax = upper_50),
-                alpha = 0.2, size = 0, colour = NA) +
+                alpha = 0.3, size = 0, colour = NA) +
     geom_ribbon(aes(ymin = lower_90, ymax = upper_90),
-                alpha = 0.1, colour = NA) +
+                alpha = 0.2, colour = NA) +
     geom_line(aes(y = median),
               alpha = 0.9, size = 1) +
     geom_vline(xintercept = as.Date("2020-03-23"), 
