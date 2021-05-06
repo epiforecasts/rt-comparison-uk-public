@@ -31,7 +31,7 @@ plot_rt_fn <- function(region_name){
     scale_x_date(date_breaks = "1 month", date_labels = "%b") +
     scale_y_continuous(breaks=seq(0, 1.4, by = 0.2)) +
     cowplot::theme_cowplot() +
-    labs(y = "R", x = NULL, col = "Data source", fill = "Data source") +
+    labs(y = expression(R[t]), x = NULL, col = "Data source", fill = "Data source") +
     theme(legend.position = "bottom") +
     guides(colour = guide_legend(override.aes = list(alpha = 1)))
 }
