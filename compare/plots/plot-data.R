@@ -1,13 +1,12 @@
 require(dplyr)
 require(ggplot2)
 require(rvest)
-source("utils/utils.R")
 source("compare/supporting-analyses/test-positivity.R")
 
 
 # Get count data ----------------------------------------------------------
 # If data won't download, read in a saved hard copy of cleaned data - 23 August 2020
-if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
+if (class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
   message("--- API failure - loading saved data ---")
   data <- readRDS(data_save)
 } else {
@@ -17,16 +16,21 @@ if(class(try(source(here::here("data", "get-uk-data.R")))) == "try-error") {
 # Get region names and plotting colours
 source("utils/utils.R")
 
-# global variables:
-# date_min <- as.Date("2020-03-19")
-# date_max <-as.Date("2020-09-23")
-# theme_set(theme_classic(base_size = 12))
+# Global vars for plots in plot-all.R
+if (!exists("date_min")) {
+  # consistent date axis:
+  date_min <- as.Date("2020-04-04")
+  date_max <- max(summary$date)
+  # theme
+  theme_set(theme_classic(base_size = 15))
+}
+
 
 # Standardise ----------------------------------------------------------------
 
 standardised_data <- data %>%
   # Filter before data truncation (where Rt is "estimate" not "based on partial data")
-  # dplyr::filter(date >= date_min & date <= date_max) %>%
+  dplyr::filter(date >= date_min & date <= date_max) %>%
   # Standardise by region
   dplyr::group_by(region) %>%
   #  - z-scores
@@ -72,10 +76,8 @@ plot_data_fn <- function(region_name){
                   colour = `Data source`)) +
     geom_point(aes(x = date, y = as.numeric(pos_perc),
                    colour = `Data source`), 
-               shape = 3, size=0.9) +
-    scale_shape_discrete(solid=FALSE) +
-    geom_vline(xintercept = as.Date("2020-03-23"), 
-               lty = 3, colour = colours["Cases"]) +
+               shape = 3, size = 0.9) +
+    scale_shape_discrete(solid = FALSE) +
     geom_vline(xintercept = as.Date("2020-05-03"), 
                lty = 3, colour = colours["Cases"]) +
     cowplot::theme_cowplot() +
